@@ -196,8 +196,8 @@ export function initHero() {
     if (lit) { g.shadowColor = 'rgba(255, 140, 40, 0.9)'; g.shadowBlur = 8; }
     for (const t of traces) {
       if (lit && broken && !broken.fixed && t === broken.tr) {
-        strokeSub(g, t, 0, broken.s - 7);
-        strokeSub(g, t, broken.s + 7, t.len);
+        strokeSub(g, t, 0, broken.s - 10);
+        strokeSub(g, t, broken.s + 10, t.len);
         continue;
       }
       g.beginPath();
@@ -212,10 +212,10 @@ export function initHero() {
       if (!broken.fixed && lit) {
         // Coupure brûlée : trou sombre, bords rougis, petite fissure
         g.fillStyle = '#140805';
-        g.beginPath(); g.arc(x, y, 5.5, 0, Math.PI * 2); g.fill();
-        g.strokeStyle = 'rgba(255, 75, 58, 0.9)';
-        g.lineWidth = 1.5;
-        g.beginPath(); g.arc(x, y, 7, 0, Math.PI * 2); g.stroke();
+        g.beginPath(); g.arc(x, y, 7, 0, Math.PI * 2); g.fill();
+        g.strokeStyle = 'rgba(255, 75, 58, 0.95)';
+        g.lineWidth = 2;
+        g.beginPath(); g.arc(x, y, 9, 0, Math.PI * 2); g.stroke();
         g.strokeStyle = 'rgba(255, 200, 150, 0.8)';
         g.beginPath(); g.moveTo(x - 4, y - 6); g.lineTo(x - 1, y - 1); g.lineTo(x - 3, y + 2); g.lineTo(x + 1, y + 6); g.stroke();
       } else if (broken.fixed) {
@@ -402,6 +402,24 @@ export function initHero() {
       const s = 18 + (1 - f.life) * 22;
       ctx.globalAlpha = Math.max(0, f.life);
       ctx.drawImage(glow, f.x - s, f.y - s, s * 2, s * 2);
+    }
+    // Piste coupée : petites étincelles qui crépitent, seulement quand la sonde s'en approche
+    if (broken && !broken.fixed && mouse.a > 0.05) {
+      const d = Math.hypot(mouse.sx - broken.x, mouse.sy - broken.y);
+      if (d < 170) {
+        const a = mouse.a * (1 - d / 170);
+        for (let k = 0; k < 5; k++) {
+          if (Math.random() > 0.6) continue;
+          const ang = Math.random() * Math.PI * 2;
+          const r = 4 + Math.random() * 10;
+          ctx.fillStyle = `rgba(255, ${(140 + Math.random() * 110) | 0}, 70, ${a.toFixed(2)})`;
+          ctx.beginPath();
+          ctx.arc(broken.x + Math.cos(ang) * r, broken.y + Math.sin(ang) * r, 0.8 + Math.random() * 1.6, 0, Math.PI * 2);
+          ctx.fill();
+        }
+        ctx.globalAlpha = a * (0.4 + Math.random() * 0.4);
+        ctx.drawImage(glow, broken.x - 14, broken.y - 14, 28, 28);
+      }
     }
     ctx.globalAlpha = 1;
     ctx.globalCompositeOperation = 'source-over';
