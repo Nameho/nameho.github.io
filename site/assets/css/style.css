@@ -1229,7 +1229,7 @@ button, input, select { font: inherit; color: inherit; }
 .rp-actions { display: flex; flex-wrap: wrap; gap: 8px; }
 
 /* Multimètre */
-.meter { display: flex; flex-direction: column; gap: 12px; }
+.meter { display: flex; flex-direction: column; gap: 12px; min-width: 0; }
 .meter-body {
   padding: 14px 14px 10px;
   border: 12px solid #dd7a1c;
@@ -1367,13 +1367,17 @@ button, input, select { font: inherit; color: inherit; }
 }
 .probe-select {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 8px;
+  min-width: 0;
   font: 600 0.72rem var(--mono);
   color: var(--muted);
 }
-.probe-select label { display: grid; gap: 4px; }
+.probe-select label { display: grid; gap: 4px; min-width: 0; }
 .probe-select select {
+  width: 100%;
+  min-width: 0;
+  text-overflow: ellipsis;
   padding: 6px 8px;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -2934,6 +2938,80 @@ dialog.cv-gate { width: min(520px, calc(100vw - 24px)); padding: 24px 24px 20px;
   box-shadow: 0 14px 30px -10px rgba(0, 0, 0, 0.9);
 }
 
+/* Fiches pédagogiques « Le saviez-vous ? » */
+.learn { margin: -24px 0 34px; }
+.pc-side .learn, .memo .learn, .solder-side .learn { margin: 0; }
+.info-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 14px;
+  border: 1px dashed rgba(69, 214, 255, 0.55);
+  border-radius: 999px;
+  background: rgba(69, 214, 255, 0.06);
+  color: #a9ecff;
+  font: 600 0.86rem var(--font);
+  text-align: left;
+  cursor: var(--cur-hand);
+  transition: background 0.2s, border-color 0.2s, transform 0.2s var(--spring);
+}
+.info-btn span { font-size: 1.05em; }
+.info-btn:hover { border-style: solid; border-color: var(--ch2); background: rgba(69, 214, 255, 0.12); transform: translateY(-1px); }
+.info-btn-light { border-color: #1f6f8a; background: rgba(31, 111, 138, 0.08); color: #155a72; }
+.info-btn-light:hover { border-color: #155a72; background: rgba(31, 111, 138, 0.16); }
+.skill-fact {
+  margin: 16px 0 0;
+  padding: 10px 12px;
+  border-left: 3px solid var(--ch2);
+  border-radius: 0 10px 10px 0;
+  background: rgba(69, 214, 255, 0.06);
+  font-size: 0.88rem;
+  color: var(--text);
+}
+.skill-fact b { color: #a9ecff; }
+
+.info-card {
+  position: fixed;
+  z-index: 80;
+  left: 16px; bottom: 16px;
+  width: min(440px, calc(100vw - 32px));
+  max-height: min(72vh, 620px);
+  overflow: auto;
+  padding: 20px 22px 18px;
+  border: 1px solid rgba(69, 214, 255, 0.45);
+  border-radius: 18px;
+  background: rgba(10, 29, 24, 0.97);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.9);
+  outline: none;
+}
+.info-card.is-secret { border-color: rgba(255, 179, 92, 0.6); }
+.info-card.is-in { animation: card-slide 0.45s var(--spring); }
+@keyframes card-slide { from { opacity: 0; transform: translateY(24px) scale(0.97); } }
+.info-card .dlg-close { position: absolute; top: 12px; right: 12px; width: 34px; height: 34px; font-size: 1.2rem; }
+.ic-kicker { margin: 0 44px 4px 0; font: 700 0.7rem var(--mono); letter-spacing: 0.1em; text-transform: uppercase; color: var(--ch2); }
+.info-card.is-secret .ic-kicker { color: var(--copper-hi); }
+.ic-title { margin: 0 40px 10px 0; font-size: 1.25rem; }
+.ic-body p { margin: 0 0 10px; font-size: 0.95rem; }
+.ic-body ul { display: grid; gap: 7px; margin: 4px 0 12px; padding-left: 18px; font-size: 0.9rem; color: var(--text); }
+.ic-body li::marker { color: var(--copper-hi); }
+.ic-link { display: inline-block; font-weight: 650; }
+.hud-info {
+  margin-left: auto;
+  flex: none;
+  width: 26px; height: 26px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: none;
+  color: var(--copper-hi);
+  font-size: 0.85rem;
+}
+.hud-info:hover { border-color: var(--copper-hi); }
+@media (max-width: 760px) {
+  .info-card { left: 12px; right: 12px; bottom: 74px; width: auto; max-height: 64vh; }
+}
+
 .hud-secrets-title { margin-top: 16px !important; }
 .hud-secrets li span:last-child { font-size: 0.84rem; color: var(--muted); }
 .hud-secrets li.done span:last-child { color: var(--led-green); }
@@ -3010,7 +3088,7 @@ dialog.cv-gate { width: min(520px, calc(100vw - 24px)); padding: 24px 24px 20px;
   .bench { grid-template-columns: 1fr; padding: 12px; gap: 18px; }
   .meter { display: grid; grid-template-columns: 1fr; justify-items: center; }
   .meter-body { width: min(300px, 100%); }
-  .meter .probe-select { width: min(300px, 100%); grid-template-columns: 1fr 1fr; }
+  .meter .probe-select { width: min(300px, 100%); grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
   .cc-list li { grid-template-columns: 1fr auto; }
   .cc-label { grid-column: 1 / -1; }
   .cover-warn { display: none; }

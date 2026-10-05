@@ -2,6 +2,7 @@
 
 import { $, $$, el, reducedMotion, store } from './util.js';
 import { sfx } from './audio.js';
+import { openInfo } from './info.js';
 
 const LABELS = {
   case: 'Boîtier ouvert',
@@ -26,7 +27,16 @@ const done = new Set();
 const found = new Set();
 
 const paintSecret = (id) => {
-  $(`.hud-secrets [data-secret="${id}"]`)?.classList.add('done');
+  const li = $(`.hud-secrets [data-secret="${id}"]`);
+  if (li && !li.classList.contains('done')) {
+    li.classList.add('done');
+    // Une fois trouvé, le secret devient cliquable pour relire sa fiche
+    li.appendChild(el('button', {
+      cls: 'hud-info',
+      text: 'ⓘ',
+      attrs: { type: 'button', 'data-info': `secret-${id}`, 'data-info-kicker': 'Secret débloqué', 'aria-label': `Relire la fiche du secret : ${SECRETS[id]}` },
+    }));
+  }
   const count = $('[data-secret-count]');
   if (count) count.textContent = String(found.size);
 };
@@ -46,6 +56,9 @@ export function discover(id) {
     toast(`Secret trouvé : ${SECRETS[id]} (${found.size}/${total})`);
     sfx('chime');
   }
+  // La fiche explicative du secret s'ouvre juste après
+  const n = found.size;
+  setTimeout(() => openInfo(`secret-${id}`, { kicker: `Secret débloqué · ${n}/${total}` }), 900);
   return true;
 }
 

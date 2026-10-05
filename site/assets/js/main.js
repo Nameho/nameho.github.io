@@ -2,6 +2,7 @@
 
 import { initAudio } from './audio.js';
 import { initHud } from './hud.js';
+import { initInfo } from './info.js';
 import { initNav, initReveal } from './nav.js';
 import { initExpress } from './express.js';
 import { initCv } from './cv.js';
@@ -24,6 +25,7 @@ import { initSeasons } from './seasons.js';
 const modules = {
   audio: initAudio,
   hud: initHud,
+  info: initInfo,
   nav: initNav,
   reveal: initReveal,
   express: initExpress,
