@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-05T14:01:46.653Z",
+  "updatedAt": "2026-10-05T18:06:20.721Z",
   "sources": [
     {
       "id": "ifixit",
@@ -46,6 +46,30 @@
   ],
   "items": [
     {
+      "id": "8d66e259b56b",
+      "source": "hackaday",
+      "title": "Failing to Make a Fanless PC",
+      "url": "https://hackaday.com/2026/10/05/failing-to-make-a-fanless-pc/",
+      "date": "2026-10-05T17:30:20.000Z",
+      "excerpt": "The discerning modern gamer’s quest is to find a quieter computer without sacrificing performance. That proves challenging when modern components are highly efficient at producing monumental quantities of thermal energy. …read more"
+    },
+    {
+      "id": "c7889b1e7cf1",
+      "source": "hackaday",
+      "title": "How A British Engineer Homebrewed The Quietest Carbine",
+      "url": "https://hackaday.com/2026/10/05/how-a-british-engineer-homebrewed-the-quietest-carbine/",
+      "date": "2026-10-05T17:00:36.000Z",
+      "excerpt": "An earlier wooden-stock model of the De Lisle carbine. Note the huge suppressor which takes up much of the weapon’s length. Its ability to accept a large volume of gas aids \" data-large-file=\" /> Hollywood has a lot to answer for when it…"
+    },
+    {
+      "id": "4b992d7d3379",
+      "source": "hackaday",
+      "title": "Building a Cheap, Dexterous Robot Hand",
+      "url": "https://hackaday.com/2026/10/05/building-a-cheap-dexterous-robot-hand/",
+      "date": "2026-10-05T15:30:41.000Z",
+      "excerpt": "Most of the time, assuming nothing’s gone wrong with them, we take our hands so much for granted that it’s easy to forget what remarkable pieces of engineering they are: …read more"
+    },
+    {
       "id": "7e527eef7a98",
       "source": "hackaday",
       "title": "The FPGA Chronicles: Open Source It",
@@ -84,30 +108,6 @@
       "url": "https://hackaday.com/2026/10/05/conveyor-belt-gboard-brings-the-keys-to-you/",
       "date": "2026-10-05T08:00:24.000Z",
       "excerpt": "It must be April in October again, because Google Japan has a new, hilariously impractical reimagining of the keyboard: a conveyor belt. This time it’s on GitHub with firmware, STLs, …read more"
-    },
-    {
-      "id": "cc9b16cfcb98",
-      "source": "hackaday",
-      "title": "It’s GW-BASIC, Jim, But Not as We Know It",
-      "url": "https://hackaday.com/2026/10/04/its-gw-basic-jim-but-not-as-we-know-it/",
-      "date": "2026-10-05T05:00:40.000Z",
-      "excerpt": "Back in the old days the IBM-PC, like most of its contemporary computers, shipped with BASIC in ROM. Even after it stopped living in ROM, IBM-Compatibles shipped with GW-BASIC, and …read more"
-    },
-    {
-      "id": "30ed5f309cb9",
-      "source": "hackaday",
-      "title": "Upgrading a Benchtop Laser for Megawatt Power",
-      "url": "https://hackaday.com/2026/10/04/upgrading-a-benchtop-laser-for-megawatt-power/",
-      "date": "2026-10-05T02:00:01.000Z",
-      "excerpt": "One fascinating thing about a pulsed laser is that, though the average power may be measured in watts or milliwatts, the peak power can easily reach millions of times that. …read more"
-    },
-    {
-      "id": "d004f7212147",
-      "source": "hackaday",
-      "title": "Hackaday Links: October 3, 2026",
-      "url": "https://hackaday.com/2026/10/04/hackaday-links-october-3-2026/",
-      "date": "2026-10-04T23:00:26.000Z",
-      "excerpt": "If you’re interested in aerospace, there’s an excellent chance you’ve heard the rumor that NASA is trying to get its SR-71 flying again. Or at the very least, they are …read more"
     },
     {
       "id": "977faab7e5d1",
