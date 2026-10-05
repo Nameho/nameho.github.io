@@ -1,7 +1,7 @@
 // Atelier : les bons d'intervention se font tamponner à leur arrivée à l'écran
 // et s'inclinent légèrement sous la souris.
 
-import { $$, reducedMotion } from './util.js';
+import { $, $$, reducedMotion } from './util.js';
 import { sfx } from './audio.js';
 
 export function initWorkshop() {
@@ -23,6 +23,21 @@ export function initWorkshop() {
       }, 450 + i * 280);
     });
   }, { threshold: 0.6 });
+
+  // Rapport d'évaluation : surlignage des mots-clés puis tampon « Conforme »
+  const report = $('.report');
+  if (report) {
+    const ro = new IntersectionObserver((entries) => {
+      if (!entries.some((e) => e.isIntersecting)) return;
+      ro.disconnect();
+      report.classList.add('is-marked');
+      setTimeout(() => {
+        report.classList.add('is-stamped');
+        sfx('stamp', { passive: true });
+      }, reducedMotion() ? 0 : 1600);
+    }, { threshold: 0.5 });
+    ro.observe(report);
+  }
 
   for (const t of tickets) {
     io.observe(t);

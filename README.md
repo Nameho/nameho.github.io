@@ -11,11 +11,15 @@ Un portfolio « one-page » pensé comme un banc de réparation : on ne fait pas
 | Compétences | Un boîtier à dévisser (geste circulaire ou clic), puis une carte dont chaque composant est une compétence. |
 | Trouve la panne | Un vrai petit circuit simulé et un multimètre (V, Ω, continuité avec bip, test diode). Une panne aléatoire est cachée : mesurer, trouver, remplacer, vérifier. |
 | Parcours | Un oscilloscope 2 voies (expériences / formations) avec curseurs de mesure Δt et base de temps réglable. |
-| Atelier | Des bons d'intervention tamponnés. |
+| Atelier | Des bons d'intervention tamponnés et un rapport d'évaluation d'immersion. |
+| Défis de l'atelier | « Bips du BIOS » (un PC refuse de démarrer : bips, voyants, ventilateur, écran) et un quiz chronométré du code couleur des résistances, avec mémo. |
 | Veille | Articles et vidéos sur la réparation et l'électronique, mis à jour automatiquement chaque jour, filtrables avec des interrupteurs DIP. |
-| Contact | Trois soudures à réussir pour afficher les coordonnées (protection contre les robots). |
+| Me recruter | PMSMP, POEI, formation interne expliquées sous forme de devis. |
+| Contact | Trois composants à souder (avec échelle de températures) pour afficher les coordonnées (protection contre les robots). |
 
-Un « banc de test » en bas à droite liste les 5 défis à réussir.
+- **Version express** : un résumé « recruteur pressé » en 30 secondes, imprimable (lien direct : `https://nameho.github.io/#express`).
+- **CV en PDF** : publié chiffré, déverrouillé après un petit test anti-robot (brancher la fiche dans la prise).
+- **Banc de test** en bas à droite : 7 défis… et 3 secrets à trouver.
 
 ## Technique
 
@@ -28,7 +32,8 @@ Un « banc de test » en bas à droite liste les 5 défis à réussir.
 
 - Politique de sécurité du contenu (CSP) stricte : seuls les fichiers du site peuvent être chargés.
 - Aucun cookie, aucun traceur, aucune ressource externe (polices hébergées sur le site).
-- Coordonnées absentes du code HTML : encodées, puis décodées seulement après le mini-jeu.
+- Coordonnées absentes du code HTML : encodées, puis décodées seulement après une action du visiteur.
+- CV chiffré (AES-256-GCM) : le PDF en clair n'est jamais publié, ni sur le site ni dans le dépôt.
 - Les données de veille sont nettoyées à la récupération **et** à l'affichage (texte brut uniquement, liens HTTPS vérifiés).
 - GitHub Actions : droits minimaux par tâche, actions épinglées par empreinte SHA, mises à jour proposées par Dependabot.
 
@@ -50,15 +55,18 @@ Puis ouvrir http://localhost:8080 (Node.js 20 ou plus récent).
 ## Structure
 
 ```
-site/                 ← ce qui est publié
+site/                    ← ce qui est publié
   index.html
+  mentions-legales.html
   404.html
   assets/css, js, fonts
-  data/veille.json    ← généré automatiquement
+  assets/cv/cv.bin       ← CV chiffré
+  data/veille.json       ← généré automatiquement
 scripts/
-  veille.mjs          ← robot de veille (sans dépendance)
-  veille-sources.json ← liste des flux
-  serve.mjs           ← serveur d'aperçu local
+  veille.mjs             ← robot de veille (sans dépendance)
+  veille-sources.json    ← liste des flux
+  encrypt-cv.mjs         ← chiffre le CV (prive/ → site/assets/cv/)
+  serve.mjs              ← serveur d'aperçu local
 .github/workflows/deploy.yml
 ```
 

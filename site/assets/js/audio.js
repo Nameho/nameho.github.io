@@ -90,6 +90,42 @@ export function sfx(name, { passive = false } = {}) {
   if (ac && SOUNDS[name]) SOUNDS[name](ac);
 }
 
+/**
+ * Joue une suite de bips (codes BIOS). steps = [{ f, dur, gap }] en secondes.
+ * Renvoie { total, stop } : la durée (pour synchroniser l'affichage même son coupé)
+ * et une fonction pour couper net la suite (mise en pause du défi).
+ */
+export function beepSeq(steps) {
+  const ac = audio(true);
+  const oscs = [];
+  let at = 0;
+  for (const s of steps) {
+    if (ac) {
+      // Bip tenu (pas de décroissance), comme un vrai haut-parleur de carte mère
+      const t0 = ac.currentTime + at;
+      const osc = ac.createOscillator();
+      const g = ac.createGain();
+      osc.type = 'square';
+      osc.frequency.value = s.f ?? 1000;
+      g.gain.setValueAtTime(0.0001, t0);
+      g.gain.exponentialRampToValueAtTime(0.06, t0 + 0.01);
+      g.gain.setValueAtTime(0.06, t0 + s.dur - 0.02);
+      g.gain.exponentialRampToValueAtTime(0.0001, t0 + s.dur);
+      osc.connect(g).connect(master);
+      osc.start(t0);
+      osc.stop(t0 + s.dur + 0.02);
+      oscs.push(osc);
+    }
+    at += s.dur + (s.gap ?? 0.16);
+  }
+  const stop = () => {
+    for (const o of oscs) {
+      try { o.stop(); } catch { /* déjà arrêté */ }
+    }
+  };
+  return { total: at, stop };
+}
+
 /** Sons continus (bip de continuité, grésillement du fer). */
 export function loopStart(name) {
   const ac = audio(true);

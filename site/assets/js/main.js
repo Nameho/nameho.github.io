@@ -3,28 +3,42 @@
 import { initAudio } from './audio.js';
 import { initHud } from './hud.js';
 import { initNav, initReveal } from './nav.js';
+import { initExpress } from './express.js';
+import { initCv } from './cv.js';
 import { initHero } from './hero.js';
 import { initProfile } from './profile.js';
 import { initSkills } from './skills.js';
 import { initDiag } from './diag.js';
 import { initScope } from './scope.js';
 import { initWorkshop } from './workshop.js';
+import { initDefis } from './defis.js';
+import { initBios } from './bios.js';
+import { initColors } from './colors.js';
 import { initVeille } from './veille.js';
+import { initRecruit } from './recruit.js';
 import { initContact } from './contact.js';
+import { initSecrets } from './secrets.js';
 
 const modules = {
   audio: initAudio,
   hud: initHud,
   nav: initNav,
   reveal: initReveal,
+  express: initExpress,
+  cv: initCv,
   hero: initHero,
   profil: initProfile,
   competences: initSkills,
   diagnostic: initDiag,
   parcours: initScope,
   atelier: initWorkshop,
+  defis: initDefis,
+  bios: initBios,
+  couleurs: initColors,
   veille: initVeille,
+  recruter: initRecruit,
   contact: initContact,
+  secrets: initSecrets,
 };
 
 for (const [name, init] of Object.entries(modules)) {

@@ -5,6 +5,7 @@
 
 import { $, el, mulberry32, reducedMotion, watchVisibility } from './util.js';
 import { sfx } from './audio.js';
+import { discover } from './hud.js';
 
 const G = 22; // pas de la grille (px)
 const DIRS = [[1, 0], [1, 1], [0, 1], [-1, 1], [-1, 0], [-1, -1], [0, -1], [1, -1]];
@@ -30,6 +31,8 @@ export function initHero() {
   let traces = [];
   let parts = [];
   let chip = null;
+  let broken = null; // piste coupée (secret)
+  let traceFixed = false;
   let pulses = [];
   let surges = [];
   let flashes = [];
@@ -129,6 +132,41 @@ export function initHero() {
     for (let tries = 0; traces.length < target && tries < cols * rows; tries++) {
       walk(Math.floor(rnd() * cols), Math.floor(rnd() * rows), Math.floor(rnd() * 8), 4, 18);
     }
+
+    pickBrokenTrace();
+  }
+
+  // Secret : une piste est coupée. Invisible sous le vernis, visible seulement sous la sonde.
+  function pickBrokenTrace() {
+    broken = null;
+    const hr = hero.getBoundingClientRect();
+    const blocks = ['.hero-status', '.hero-name-fx', '.hero-role', '.hero-meta', '.hero-cta', '.hero-hint', '.hero-scroll']
+      .map((s) => $(s, hero)?.getBoundingClientRect())
+      .filter((r) => r && r.width)
+      .map((r) => ({ l: r.left - hr.left - 30, t: r.top - hr.top - 30, r: r.right - hr.left + 30, b: r.bottom - hr.top + 30 }));
+    if (chip) blocks.push({ l: chip.x - 30, t: chip.y - 30, r: chip.x + chip.s + 30, b: chip.y + chip.s + 30 });
+    const free = (p) => p.x > 40 && p.x < W - 40 && p.y > 90 && p.y < H - 60 && !blocks.some((b) => p.x > b.l && p.x < b.r && p.y > b.t && p.y < b.b);
+    let best = null;
+    for (const tr of traces) {
+      if (tr.len < 120) continue;
+      const s = tr.len / 2;
+      const p = pointAt(tr, s);
+      if (free(p) && (!best || tr.len > best.tr.len)) best = { tr, s, x: p.x, y: p.y };
+    }
+    if (best) broken = { ...best, fixed: traceFixed };
+  }
+
+  // Dessine seulement la portion [s0, s1] d'une piste
+  function strokeSub(g, tr, s0, s1) {
+    const a = pointAt(tr, s0);
+    g.beginPath();
+    g.moveTo(a.x, a.y);
+    for (let i = 1; i < tr.pts.length; i++) {
+      if (tr.cum[i] > s0 && tr.cum[i] < s1) g.lineTo(tr.pts[i].x, tr.pts[i].y);
+    }
+    const b = pointAt(tr, s1);
+    g.lineTo(b.x, b.y);
+    g.stroke();
   }
 
   function makeTrace(pts, start, end, fromChip) {
@@ -157,12 +195,35 @@ export function initHero() {
     g.strokeStyle = lit ? '#ffb35c' : 'rgba(110, 215, 170, 0.15)';
     if (lit) { g.shadowColor = 'rgba(255, 140, 40, 0.9)'; g.shadowBlur = 8; }
     for (const t of traces) {
+      if (lit && broken && !broken.fixed && t === broken.tr) {
+        strokeSub(g, t, 0, broken.s - 7);
+        strokeSub(g, t, broken.s + 7, t.len);
+        continue;
+      }
       g.beginPath();
       g.moveTo(t.pts[0].x, t.pts[0].y);
       for (let i = 1; i < t.pts.length; i++) g.lineTo(t.pts[i].x, t.pts[i].y);
       g.stroke();
     }
     g.shadowBlur = 0;
+
+    if (broken) {
+      const { x, y } = broken;
+      if (!broken.fixed && lit) {
+        // Coupure brûlée : trou sombre, bords rougis, petite fissure
+        g.fillStyle = '#140805';
+        g.beginPath(); g.arc(x, y, 5.5, 0, Math.PI * 2); g.fill();
+        g.strokeStyle = 'rgba(255, 75, 58, 0.9)';
+        g.lineWidth = 1.5;
+        g.beginPath(); g.arc(x, y, 7, 0, Math.PI * 2); g.stroke();
+        g.strokeStyle = 'rgba(255, 200, 150, 0.8)';
+        g.beginPath(); g.moveTo(x - 4, y - 6); g.lineTo(x - 1, y - 1); g.lineTo(x - 3, y + 2); g.lineTo(x + 1, y + 6); g.stroke();
+      } else if (broken.fixed) {
+        // Réparée : petit pont de soudure brillant
+        g.fillStyle = lit ? '#f4f6f4' : 'rgba(220, 225, 222, 0.45)';
+        g.beginPath(); g.ellipse(x, y, 7, 4.5, 0, 0, Math.PI * 2); g.fill();
+      }
+    }
 
     const padColor = lit ? '#ffe2a8' : 'rgba(216, 178, 90, 0.4)';
     const drawEnd = (p, kind) => {
@@ -248,7 +309,14 @@ export function initHero() {
 
     for (let i = pulses.length - 1; i >= 0; i--) {
       const p = pulses[i];
+      const before = p.s;
       p.s += p.dir * p.v * dt;
+      // Sur la piste coupée, le courant s'arrête net à la coupure (petite étincelle)
+      if (broken && !broken.fixed && p.tr === broken.tr && (before - broken.s) * (p.s - broken.s) <= 0) {
+        flashes.push({ x: broken.x, y: broken.y, life: 0.8 });
+        pulses.splice(i, 1);
+        continue;
+      }
       if (p.s > p.tr.len || p.s < 0) {
         const end = p.dir === 1 ? p.tr.pts[p.tr.pts.length - 1] : p.tr.pts[0];
         flashes.push({ x: end.x, y: end.y, life: 1 });
@@ -402,6 +470,25 @@ export function initHero() {
   hero.addEventListener('click', (e) => {
     if (e.target.closest('a, button')) return;
     const p = local(e);
+
+    // Clic sur la coupure : on la répare (secret)
+    if (broken && !broken.fixed && Math.hypot(p.x - broken.x, p.y - broken.y) < 26) {
+      broken.fixed = traceFixed = true;
+      paint(dimC.getContext('2d'), false);
+      paint(litC.getContext('2d'), true);
+      sfx('tink');
+      discover('trace');
+      flashes.push({ x: broken.x, y: broken.y, life: 1 });
+      if (!still) {
+        for (let k = 0; k < 3; k++) {
+          spawnPulse(broken.tr, broken.s, 1, 200 + k * 60);
+          spawnPulse(broken.tr, broken.s, -1, 200 + k * 60);
+        }
+      }
+      draw();
+      return;
+    }
+
     sfx('zap');
     if (still) return;
     surges.push({ x: p.x, y: p.y, r: 0, life: 1 });

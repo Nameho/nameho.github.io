@@ -7,10 +7,37 @@ const LABELS = {
   case: 'Boîtier ouvert',
   repair: 'Panne réparée',
   scope: 'Oscilloscope maîtrisé',
+  bios: 'PC redémarré',
+  colors: 'Code couleur maîtrisé',
   dip: 'Veille filtrée',
   solder: 'Soudures réussies',
 };
+const SECRETS = {
+  trace: 'piste coupée réparée',
+  thermal: 'caméra thermique',
+  blueprint: 'mode schéma',
+};
 const done = new Set();
+const found = new Set();
+
+/** Secret découvert (compté à part du contrôle qualité). */
+export function discover(id) {
+  if (!SECRETS[id] || found.has(id)) return false;
+  found.add(id);
+  $(`.hud-secrets [data-secret="${id}"]`)?.classList.add('done');
+  const count = $('[data-secret-count]');
+  if (count) count.textContent = String(found.size);
+  const total = Object.keys(SECRETS).length;
+  if (found.size === total) {
+    toast('Les 3 secrets sont trouvés : un vrai fouineur d’atelier 🕵️');
+    sfx('fanfare');
+    confetti();
+  } else {
+    toast(`Secret trouvé : ${SECRETS[id]} (${found.size}/${total})`);
+    sfx('chime');
+  }
+  return true;
+}
 
 export function toast(text) {
   const box = $('.toasts');
@@ -37,7 +64,7 @@ export function achieve(id) {
 
   if (done.size === total) {
     setTimeout(() => {
-      toast('Contrôle qualité 5/5 : technicien validé, bon pour l’embauche !');
+      toast(`Contrôle qualité ${total}/${total} : technicien validé, bon pour l’embauche !`);
       sfx('fanfare');
       confetti();
     }, 900);

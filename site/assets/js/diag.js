@@ -16,43 +16,62 @@ const BAT_DEAD = 1.3;
 const BAT_RI = 1.2;
 const LEADS = 0.2; // résistance des cordons
 
+// Chaque panne indique la pièce à remplacer (part), une zone pour le dernier indice et une astuce de pro.
 const FAULTS = {
+  C1: {
+    part: 'C1',
+    name: 'le condensateur C1, gonflé et en court-circuit',
+    zone: 'du côté de la pile… et regarde bien la forme de C1',
+    tip: "Un condensateur gonflé se repère souvent à l'œil : en atelier, l'inspection visuelle vient avant toute mesure. En court-circuit, il fait s'effondrer la tension d'alimentation (ici ≈ 0 V au lieu de 9 V).",
+  },
+  D1R: {
+    part: 'D1',
+    name: 'la LED D1, montée à l’envers',
+    zone: 'entre TP4 et TP5… regarde de quel côté est le méplat de la LED',
+    tip: 'Le méplat (côté plat) et la patte la plus courte indiquent la cathode (−). Montée à l’envers, la LED bloque le courant : 9 V à ses bornes, et le test diode ne répond que pointes inversées.',
+  },
   BAT1: {
+    part: 'BAT1',
     name: 'la pile 9 V, à plat',
     zone: 'la pile elle-même (entre TP1 et TP6)',
     tip: "Toujours commencer par l'alimentation : une pile 9 V neuve mesure environ 9,5 V. Ici 1,3 V, trop peu pour allumer une LED rouge (≈ 1,9 V).",
   },
   F1: {
+    part: 'F1',
     name: 'le fusible F1, grillé',
     zone: 'entre TP2 et TP3',
     tip: 'En atelier, on ne se contente pas de changer un fusible : on cherche aussi pourquoi il a grillé (court-circuit, surconsommation…).',
   },
   R1: {
+    part: 'R1',
     name: 'la résistance R1, coupée',
     zone: 'entre TP3 et TP4',
     tip: "Une résistance coupée a souvent chauffé : on vérifie au passage qu'elle est bien dimensionnée (470 Ω : jaune, violet, marron).",
   },
   D1: {
+    part: 'D1',
     name: 'la LED D1, hors service',
     zone: 'entre TP4 et TP5',
     tip: 'Le mode test diode du multimètre allume faiblement une LED saine : pratique pour la vérifier sans alimenter le montage.',
   },
   W1: {
+    part: 'W1',
     name: 'une soudure fissurée sur le strap W1',
     zone: 'entre TP5 et TP6',
     tip: 'Les soudures sèches ou fissurées sont un grand classique : invisibles à l’œil nu, mais 9 V à leurs bornes ne mentent pas.',
   },
 };
 
-const PART_NAMES = { BAT1: 'la pile BAT1', F1: 'le fusible F1', R1: 'la résistance R1', D1: 'la LED D1', W1: 'le strap W1' };
+const PART_NAMES = { BAT1: 'la pile BAT1', C1: 'le condensateur C1', F1: 'le fusible F1', R1: 'la résistance R1', D1: 'la LED D1', W1: 'le strap W1' };
 
 const SNAP_LABELS = {
-  'bat+': 'BAT1 (+)', 'bat-': 'BAT1 (−)', 'sw1-1': 'SW1 patte 1', 'sw1-2': 'SW1 patte 2',
+  'bat+': 'BAT1 (+)', 'bat-': 'BAT1 (−)', 'c1+': 'C1 (+)', 'c1-': 'C1 (−)', 'sw1-1': 'SW1 patte 1', 'sw1-2': 'SW1 patte 2',
   'f1-1': 'F1 patte 1', 'f1-2': 'F1 patte 2', 'r1-1': 'R1 patte 1', 'r1-2': 'R1 patte 2',
   'd1-a': 'D1 anode (+)', 'd1-k': 'D1 cathode (−)', 'w1-1': 'W1 patte 1', 'w1-2': 'W1 patte 2',
 };
 
 const HINTS = [
+  'Avant de mesurer, regarde la carte : un composant abîmé ou monté à l’envers se voit parfois à l’œil nu.',
   "Commence par l'alimentation : en mode V, pointe rouge sur TP1, pointe noire sur TP6.",
   'Mesure ensuite la tension aux bornes de chaque composant, un par un (rouge côté pile +, noire côté pile −).',
   'Dans un circuit série coupé, toute la tension se retrouve aux bornes de l’élément ouvert. Cherche où sont passés les volts !',
@@ -82,6 +101,12 @@ export function initDiag() {
   const knob = $('.dial-knob', bench);
   const led = $('[data-part="D1"]', board);
   const sw = $('[data-part="SW1"]', board);
+  const cap = $('[data-part="C1"]', board);
+  // Indices visuels : condensateur gonflé, LED montée à l'envers
+  const showVisualFault = () => {
+    cap.classList.toggle('is-bulged', st.fault === 'C1');
+    led.classList.toggle('is-reversed', st.fault === 'D1R');
+  };
   const stats = Object.fromEntries($$('[data-stat]').map((n) => [n.dataset.stat, n]));
   const selects = Object.fromEntries($$('.probe-select select', bench).map((s) => [s.dataset.probe, s]));
   const reduce = reducedMotion();
@@ -107,8 +132,13 @@ export function initDiag() {
   /* =========================================================
      Simulation électrique
      ========================================================= */
-  const conducts = (part) => part !== st.fault && (part !== 'SW1' || st.power);
-  const vbat = () => (st.fault === 'BAT1' ? BAT_DEAD : BAT_V);
+  const conducts = (part) => {
+    if (part === 'SW1') return st.power;
+    if (part === 'D1' && st.fault === 'D1R') return false; // LED à l'envers : bloquée
+    return part !== st.fault;
+  };
+  // C1 en court-circuit fait s'effondrer la tension de la pile
+  const vbat = () => (st.fault === 'BAT1' ? BAT_DEAD : st.fault === 'C1' ? 0.04 : BAT_V);
 
   function solve() {
     const V = { A: 0, B: 0, C: 0, D: 0, E: 0, F: 0 };
@@ -161,9 +191,14 @@ export function initDiag() {
     const sumR = parts.reduce((s, p) => s + (RES[p] ?? 0), 0) + LEADS;
 
     if (st.mode === 'diode') {
-      if (isOpen) return { text: 'O.L', unit: 'diode', spoken: 'circuit ouvert' };
+      // La LED se teste selon son sens de montage : on regarde les autres éléments à part
+      if (parts.some((p) => p !== 'D1' && !conducts(p)) || (parts.includes('D1') && st.fault === 'D1')) {
+        return { text: 'O.L', unit: 'diode', spoken: 'circuit ouvert' };
+      }
       if (parts.includes('D1')) {
-        if (i > j) return { text: 'O.L', unit: 'diode', spoken: 'circuit ouvert, diode en inverse' };
+        const redOnBatteryPlusSide = i < j;
+        const forward = st.fault === 'D1R' ? !redOnBatteryPlusSide : redOnBatteryPlusSide;
+        if (!forward) return { text: 'O.L', unit: 'diode', spoken: 'circuit ouvert, diode en inverse' };
         const v = 1.85 + (sumR - LEADS) * 0.001;
         return { text: v.toFixed(3), unit: 'diode', ledDim: true, spoken: `${v.toFixed(3).replace('.', ',')} volt, la LED s'éclaire faiblement` };
       }
@@ -576,9 +611,10 @@ export function initDiag() {
       g.classList.add('is-new');
       sfx('tink');
       setTimeout(() => g.classList.remove('is-new'), 650);
-      if (part === st.fault) {
+      if (st.fault && part === FAULTS[st.fault].part) {
         st.fault = null;
         st.pending = 'good';
+        showVisualFault();
       } else {
         st.wasted++;
         st.pending = 'bad';
@@ -646,6 +682,7 @@ export function initDiag() {
     st.solved = st.fault;
     st.lastFault = st.fault;
     st.pending = null;
+    showVisualFault();
     st.measures = 0;
     st.lastKey = '';
     st.wasted = 0;

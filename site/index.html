@@ -32,6 +32,7 @@
       <span class="chip-logo" aria-hidden="true">AT</span>
     </a>
     <p class="topbar-current" aria-hidden="true">Accueil</p>
+    <button class="topbar-express" type="button" data-express><span aria-hidden="true">⚡</span> Express</button>
     <button class="topbar-menu" type="button" aria-expanded="false" aria-controls="menu-panel">
       <span class="sr-only">Menu</span><span class="burger" aria-hidden="true"><i></i><i></i><i></i></span>
     </button>
@@ -48,10 +49,18 @@
       <li><a href="#diagnostic"><span class="tp" aria-hidden="true"></span><span class="tp-code" aria-hidden="true">TP3</span><span class="tp-label">Trouve la panne</span></a></li>
       <li><a href="#parcours"><span class="tp" aria-hidden="true"></span><span class="tp-code" aria-hidden="true">TP4</span><span class="tp-label">Parcours</span></a></li>
       <li><a href="#atelier"><span class="tp" aria-hidden="true"></span><span class="tp-code" aria-hidden="true">TP5</span><span class="tp-label">Atelier</span></a></li>
-      <li><a href="#veille"><span class="tp" aria-hidden="true"></span><span class="tp-code" aria-hidden="true">TP6</span><span class="tp-label">Veille</span></a></li>
-      <li><a href="#contact"><span class="tp" aria-hidden="true"></span><span class="tp-code" aria-hidden="true">TP7</span><span class="tp-label">Contact</span></a></li>
+      <li><a href="#defis"><span class="tp" aria-hidden="true"></span><span class="tp-code" aria-hidden="true">TP6</span><span class="tp-label">Défis de l'atelier</span></a></li>
+      <li><a href="#veille"><span class="tp" aria-hidden="true"></span><span class="tp-code" aria-hidden="true">TP7</span><span class="tp-label">Veille</span></a></li>
+      <li><a href="#recruter"><span class="tp" aria-hidden="true"></span><span class="tp-code" aria-hidden="true">TP8</span><span class="tp-label">Me recruter</span></a></li>
+      <li><a href="#contact"><span class="tp" aria-hidden="true"></span><span class="tp-code" aria-hidden="true">TP9</span><span class="tp-label">Contact</span></a></li>
     </ol>
   </nav>
+
+  <!-- Accès rapide pour les recruteurs pressés (grand écran ; sur mobile, il est dans la barre du haut) -->
+  <button class="express-fab" type="button" data-express>
+    <span class="xf-bolt" aria-hidden="true">⚡</span>
+    <span class="xf-text"><b>Version express</b><small>Recruteur pressé ? Tout en 30 s</small></span>
+  </button>
 
   <main>
     <!-- ============ TP0 · Accueil ============ -->
@@ -71,7 +80,8 @@
         <p class="hero-meta">Saint-Georges-des-Coteaux (17) · Permis B, véhiculé</p>
         <div class="hero-cta">
           <a class="btn btn-copper" href="#diagnostic">Trouver la panne</a>
-          <a class="btn btn-ghost" href="#contact">Me contacter</a>
+          <button class="btn btn-ghost" type="button" data-express><span aria-hidden="true">⚡</span> Version express (30 s)</button>
+          <button class="btn btn-ghost" type="button" data-cv><span aria-hidden="true">↓</span> CV (PDF)</button>
         </div>
         <p class="hero-hint" aria-hidden="true"><span class="kbd">Survol</span> pour sonder les pistes · <span class="kbd">Clic</span> pour envoyer une impulsion</p>
       </div>
@@ -244,6 +254,16 @@
                     <text class="silk silk-sm" x="60" y="496">Assemblée à la main en Charente-Maritime</text>
                   </g>
 
+                  <!-- TH1 : petite thermistance… (secret) -->
+                  <g class="th1" data-secret="thermal" aria-hidden="true">
+                    <rect class="comp-hit" x="512" y="430" width="56" height="48" rx="8"/>
+                    <rect x="522" y="460" width="8" height="10" fill="#d8b25a"/>
+                    <rect x="550" y="460" width="8" height="10" fill="#d8b25a"/>
+                    <path d="M526 460 L536 452 M554 460 L544 452" stroke="#c3c6c2" stroke-width="2"/>
+                    <ellipse class="th1-bead" cx="540" cy="450" rx="9" ry="7"/>
+                    <text class="silk silk-sm" x="527" y="441">TH1</text>
+                  </g>
+
                   <!-- Composants = compétences -->
                   <g class="comp" data-skill="qualite" tabindex="-1" aria-hidden="true">
                     <rect class="comp-hit" x="72" y="56" width="160" height="70" rx="8"/>
@@ -314,6 +334,10 @@
                 </div>
                 <p class="cover-warn" aria-hidden="true">⚠ Aucune pièce réparable par l'utilisateur à l'intérieur.<br>Confier l'ouverture à un technicien… ou à vous.</p>
                 <p class="cover-hint">↺ Tournez autour d'une vis (sens inverse des aiguilles d'une montre) ou cliquez dessus.</p>
+                <span class="screw-hole" data-hole="0" aria-hidden="true"></span>
+                <span class="screw-hole" data-hole="1" aria-hidden="true"></span>
+                <span class="screw-hole" data-hole="2" aria-hidden="true"></span>
+                <span class="screw-hole" data-hole="3" aria-hidden="true"></span>
                 <button class="screw" type="button" data-screw="0" aria-label="Dévisser la vis en haut à gauche"><span class="screw-head"></span></button>
                 <button class="screw" type="button" data-screw="1" aria-label="Dévisser la vis en haut à droite"><span class="screw-head"></span></button>
                 <button class="screw" type="button" data-screw="2" aria-label="Dévisser la vis en bas à gauche"><span class="screw-head"></span></button>
@@ -408,7 +432,7 @@
 
         <div class="bench" data-reveal>
           <div class="bench-board">
-            <svg class="diag-svg" viewBox="0 0 620 390" role="group" aria-label="Circuit à dépanner : pile, interrupteur, fusible, résistance, LED et strap">
+            <svg class="diag-svg" viewBox="0 0 620 390" role="group" aria-label="Circuit à dépanner : pile, condensateur, interrupteur, fusible, résistance, LED et strap">
               <defs>
                 <radialGradient id="g-led" cx=".5" cy=".5" r=".5">
                   <stop offset="0" stop-color="#ff5a3c" stop-opacity=".95"/><stop offset=".4" stop-color="#ff3a22" stop-opacity=".45"/><stop offset="1" stop-color="#ff2a10" stop-opacity="0"/>
@@ -426,6 +450,7 @@
                 <path d="M480 80 H545 V170"/><path d="M545 120 H570"/>
                 <path d="M545 230 V320 H360"/><path d="M455 320 V346"/>
                 <path d="M300 320 H75 V278"/><path d="M190 320 V346"/>
+                <path d="M135 80 V150"/><path d="M135 250 V320"/>
               </g>
               <path class="d-flow" d="M75 122 V80 H150 M210 80 H270 M350 80 H400 M480 80 H545 V170 M545 230 V320 H360 M300 320 H75 V278" fill="none"/>
 
@@ -440,6 +465,20 @@
                 <text class="silk silk-plus" x="96" y="152">+</text>
                 <text class="silk silk-plus" x="96" y="258">−</text>
                 <text class="silk" x="28" y="306">BAT1</text>
+              </g>
+
+              <!-- C1 : condensateur de filtrage, en parallèle sur la pile -->
+              <g class="part part-cap" data-part="C1" tabindex="0" role="button" aria-label="C1, condensateur 470 microfarads">
+                <rect class="part-hit" x="118" y="140" width="66" height="122" rx="8"/>
+                <path d="M135 150 V160 M135 232 V250" stroke="#c3c6c2" stroke-width="3"/>
+                <rect x="122" y="160" width="26" height="72" rx="4" fill="#2a4fb0"/>
+                <rect x="140" y="160" width="6" height="72" fill="#cfd8ea" opacity=".85"/>
+                <path d="M141.5 176 h3 M141.5 196 h3 M141.5 216 h3" stroke="#2a4fb0" stroke-width="2"/>
+                <path class="cap-top-ok" d="M123 163 H147" stroke="#9aa3ad" stroke-width="3"/>
+                <path class="cap-top-bulged" d="M122 164 Q135 142 148 164 Z" fill="#a9b1ba" stroke="#6f7780"/>
+                <path class="cap-top-bulged" d="M128 158 q2 6 0 10 M141 156 q-1 5 1 9" stroke="#7a4a1f" stroke-width="2.5" fill="none"/>
+                <text class="silk" x="154" y="198">C1</text>
+                <text class="silk silk-sm" x="154" y="212">470 µF</text>
               </g>
 
               <!-- SW1 : interrupteur d'alimentation -->
@@ -479,7 +518,8 @@
                 <circle class="led-glow" cx="545" cy="200" r="46" fill="url(#g-led)"/>
                 <path d="M545 170 V184 M545 216 V230" stroke="#c3c6c2" stroke-width="3"/>
                 <circle class="led-body" cx="545" cy="200" r="16"/>
-                <path d="M531 210 H559" stroke="#5a1a14" stroke-width="2" opacity=".6"/>
+                <path class="led-flat-ok" d="M531 210 H559" stroke="#5a1a14" stroke-width="2.5" opacity=".7"/>
+                <path class="led-flat-rev" d="M531 190 H559" stroke="#5a1a14" stroke-width="2.5" opacity=".7"/>
                 <text class="silk" x="490" y="196">D1</text>
                 <text class="silk silk-sm" x="555" y="166">+</text>
               </g>
@@ -507,6 +547,8 @@
                 <circle class="pad" data-snap="w1-2" data-node="E" cx="360" cy="320" r="6"/>
                 <circle class="pad" data-snap="w1-1" data-node="F" cx="300" cy="320" r="6"/>
                 <circle class="pad" data-snap="bat-" data-node="F" cx="75" cy="276" r="6"/>
+                <circle class="pad" data-snap="c1+" data-node="A" cx="135" cy="150" r="6"/>
+                <circle class="pad" data-snap="c1-" data-node="F" cx="135" cy="250" r="6"/>
               </g>
               <g class="tps">
                 <circle class="tp-pad" data-snap="tp1" data-node="A" cx="112" cy="46" r="9"/>
@@ -752,14 +794,230 @@
             <p class="t-stamp" aria-label="Statut : terminé">OK</p>
           </article>
         </div>
+
+        <figure class="report" data-reveal>
+          <header class="rp-head">
+            <p class="rp-tag">Rapport d'évaluation · Immersion 2026</p>
+            <p class="rp-org">Les Ateliers du Bocage · Pôle informatique</p>
+          </header>
+          <blockquote class="rp-quote">
+            <p>« Nous avons pu constater une personne <mark>très motivée</mark> par cette immersion, il a de <mark>vraies compétences</mark> et une <mark>réelle appétence</mark> pour cette activité. Nous avons pu lui proposer des activités diverses dans le contenu et aussi dans la complexité sans aucun souci bloquant. Il est <mark>sérieux, ordonné et rigoureux</mark>. Aucun souci de communication, globalement son immersion s'est très bien passée pour lui et pour nous. »</p>
+          </blockquote>
+          <figcaption>Les responsables de l'atelier · Les Ateliers du Bocage, La Boujalière (Le Pin)</figcaption>
+          <ul class="rp-checks" aria-label="Points relevés">
+            <li>Motivation</li>
+            <li>Compétences</li>
+            <li>Rigueur</li>
+            <li>Communication</li>
+          </ul>
+          <p class="rp-stamp" aria-hidden="true">Conforme</p>
+        </figure>
       </div>
     </section>
 
-    <!-- ============ TP6 · Veille ============ -->
-    <section id="veille" class="section">
+    <!-- ============ TP6 · Défis de l'atelier ============ -->
+    <section id="defis" class="section">
       <div class="wrap">
         <header class="sec-head" data-reveal>
           <span class="sec-tp">TP6</span>
+          <h2>Défis de l'atelier</h2>
+          <span class="sec-trace" aria-hidden="true"></span>
+        </header>
+        <p class="sec-intro" data-reveal>Deux défis express&nbsp;: diagnostiquer un PC qui refuse de démarrer, puis lire le code couleur des résistances contre la montre.</p>
+
+        <div class="defis" data-reveal>
+          <div class="defis-tabs" role="tablist" aria-label="Choisir un défi">
+            <button type="button" role="tab" id="tab-bios" aria-controls="panel-bios" aria-selected="true"><span aria-hidden="true">🖥</span> Bips du BIOS</button>
+            <button type="button" role="tab" id="tab-colors" aria-controls="panel-colors" aria-selected="false" tabindex="-1"><span aria-hidden="true">🎨</span> Code couleur</button>
+          </div>
+
+          <!-- Défi 1 : PC qui ne démarre pas -->
+          <div class="defi defi-bios" id="panel-bios" role="tabpanel" aria-labelledby="tab-bios">
+            <div class="pc-board">
+              <svg class="pc-svg" viewBox="0 0 520 400" role="group" aria-label="Carte mère sur banc de test : cliquez sur le composant à remplacer">
+                <defs>
+                  <linearGradient id="g-mobo" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#26343a"/><stop offset="1" stop-color="#162024"/></linearGradient>
+                </defs>
+                <rect x="6" y="6" width="508" height="388" rx="14" fill="url(#g-mobo)" stroke="#0c1316" stroke-width="2"/>
+                <g class="pc-traces" fill="none">
+                  <path d="M262 125 H300 M262 140 H300 M262 155 H300 M262 170 H300"/>
+                  <path d="M205 182 V250 M220 182 V250 M235 182 V250"/>
+                  <path d="M440 260 V285 M455 260 V285"/>
+                  <path d="M120 120 H150 M120 135 H150"/>
+                </g>
+
+                <g class="pc-part" data-pc="CPU" tabindex="0" role="button" aria-label="Processeur (CPU)">
+                  <rect class="part-hit" x="140" y="62" width="132" height="132" rx="10"/>
+                  <rect x="150" y="72" width="112" height="112" rx="6" fill="#2b2f31" stroke="#5c6366"/>
+                  <rect x="170" y="92" width="72" height="72" rx="4" fill="#c7cbcc"/>
+                  <text class="pc-chip-txt" x="206" y="126" text-anchor="middle">AT-17</text>
+                  <text class="pc-chip-txt pc-chip-sm" x="206" y="142" text-anchor="middle">4 GHz</text>
+                  <text class="silk" x="150" y="58">CPU</text>
+                </g>
+
+                <g class="pc-part" data-pc="FAN" tabindex="0" role="button" aria-label="Ventilateur du processeur">
+                  <rect class="part-hit" x="296" y="56" width="108" height="108" rx="10"/>
+                  <rect x="302" y="62" width="96" height="96" rx="10" fill="#1d2326" stroke="#42494c"/>
+                  <g class="fan-rotor">
+                    <circle cx="350" cy="110" r="40" fill="#2a3134"/>
+                    <path d="M350 110 C342 92 352 78 364 76 C360 92 356 100 350 110 Z M350 110 C368 104 380 112 382 124 C366 120 358 116 350 110 Z M350 110 C356 128 346 142 334 144 C338 128 342 120 350 110 Z M350 110 C332 116 320 108 318 96 C334 100 342 104 350 110 Z" fill="#5d666a"/>
+                    <circle cx="350" cy="110" r="10" fill="#e0821f"/>
+                  </g>
+                  <text class="silk silk-sm" x="302" y="176">CPU_FAN</text>
+                </g>
+
+                <g class="pc-part" data-pc="RAM" tabindex="0" role="button" aria-label="Barrettes de mémoire (RAM)">
+                  <rect class="part-hit" x="416" y="34" width="66" height="226" rx="8"/>
+                  <rect x="424" y="42" width="20" height="210" rx="3" fill="#121718"/>
+                  <rect x="454" y="42" width="20" height="210" rx="3" fill="#121718"/>
+                  <rect x="427" y="50" width="14" height="194" rx="2" fill="#2f7d4f"/>
+                  <g fill="#15191a">
+                    <rect x="429" y="60" width="10" height="20"/><rect x="429" y="90" width="10" height="20"/><rect x="429" y="120" width="10" height="20"/><rect x="429" y="150" width="10" height="20"/><rect x="429" y="180" width="10" height="20"/><rect x="429" y="210" width="10" height="20"/>
+                  </g>
+                  <text class="silk silk-sm" x="420" y="272">DIMM_A1 · B1</text>
+                </g>
+
+                <g class="pc-part" data-pc="GPU" tabindex="0" role="button" aria-label="Carte graphique (GPU)">
+                  <rect class="part-hit" x="40" y="280" width="350" height="74" rx="10"/>
+                  <rect x="48" y="290" width="334" height="56" rx="8" fill="#191d1f" stroke="#3b4245"/>
+                  <circle cx="140" cy="318" r="22" fill="#262c2f" stroke="#4a5255"/><circle cx="140" cy="318" r="5" fill="#e0821f"/>
+                  <circle cx="230" cy="318" r="22" fill="#262c2f" stroke="#4a5255"/><circle cx="230" cy="318" r="5" fill="#e0821f"/>
+                  <rect x="290" y="306" width="74" height="24" rx="3" fill="#0f1213"/>
+                  <text class="pc-chip-txt pc-chip-sm" x="327" y="322" text-anchor="middle">GPU</text>
+                  <rect x="60" y="346" width="200" height="6" fill="#d8b25a"/>
+                  <text class="silk silk-sm" x="48" y="372">PCIE_1 · CARTE GRAPHIQUE</text>
+                </g>
+
+                <g class="pc-part" data-pc="PSU" tabindex="0" role="button" aria-label="Alimentation (ATX 24 broches)">
+                  <rect class="part-hit" x="404" y="276" width="104" height="100" rx="8"/>
+                  <rect x="430" y="284" width="36" height="26" rx="3" fill="#e9ebe6"/>
+                  <g fill="#9aa09c"><rect x="434" y="288" width="5" height="5"/><rect x="442" y="288" width="5" height="5"/><rect x="450" y="288" width="5" height="5"/><rect x="458" y="288" width="5" height="5"/><rect x="434" y="299" width="5" height="5"/><rect x="442" y="299" width="5" height="5"/><rect x="450" y="299" width="5" height="5"/><rect x="458" y="299" width="5" height="5"/></g>
+                  <path d="M448 310 C448 330 470 330 470 344" stroke="#1d1f20" stroke-width="7" fill="none"/>
+                  <rect x="420" y="340" width="84" height="32" rx="4" fill="#2c3235" stroke="#4d5558"/>
+                  <text class="pc-chip-txt pc-chip-sm" x="462" y="360" text-anchor="middle">ALIM 550 W</text>
+                </g>
+
+                <!-- Haut-parleur et voyants de diagnostic (comme sur les cartes mères récentes) -->
+                <g class="pc-spk">
+                  <circle cx="70" cy="80" r="20" fill="#121617" stroke="#4a5255"/>
+                  <circle cx="70" cy="80" r="7" fill="#2c3235"/>
+                  <circle class="spk-wave" cx="70" cy="80" r="26"/>
+                  <text class="silk silk-sm" x="54" y="116">SPK1</text>
+                </g>
+                <g class="qled">
+                  <text class="silk silk-sm" x="40" y="150">DEBUG</text>
+                  <g><rect class="ql" data-ql="CPU" x="40" y="160" width="14" height="8" rx="2"/><text class="silk silk-sm" x="60" y="168">CPU</text></g>
+                  <g><rect class="ql" data-ql="DRAM" x="40" y="178" width="14" height="8" rx="2"/><text class="silk silk-sm" x="60" y="186">DRAM</text></g>
+                  <g><rect class="ql" data-ql="VGA" x="40" y="196" width="14" height="8" rx="2"/><text class="silk silk-sm" x="60" y="204">VGA</text></g>
+                  <g><rect class="ql" data-ql="BOOT" x="40" y="214" width="14" height="8" rx="2"/><text class="silk silk-sm" x="60" y="222">BOOT</text></g>
+                  <g><rect class="ql ql-pwr" x="40" y="240" width="14" height="8" rx="2"/><text class="silk silk-sm" x="60" y="248">PWR</text></g>
+                </g>
+              </svg>
+              <div class="pc-pop" role="dialog" aria-labelledby="pc-pop-title" hidden>
+                <p class="rp-title" id="pc-pop-title"></p>
+                <div class="rp-actions">
+                  <button class="btn btn-copper btn-sm" type="button" data-pc-ok>Remplacer</button>
+                  <button class="btn btn-ghost btn-sm" type="button" data-pc-cancel>Annuler</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="pc-side">
+              <div class="monitor" aria-live="polite">
+                <div class="monitor-screen"><pre class="monitor-text"></pre></div>
+                <span class="monitor-led" aria-hidden="true"></span>
+              </div>
+              <div class="pc-controls">
+                <button class="btn btn-copper" type="button" data-pc-power><span aria-hidden="true">⏻</span> Allumer le PC</button>
+                <button class="btn btn-ghost btn-sm" type="button" data-pc-replay disabled>Réécouter</button>
+              </div>
+              <p class="beep-tape" aria-live="polite"><span class="bt-label">Signal&nbsp;:</span> <span class="bt-signal">—</span></p>
+              <details class="manual" open>
+                <summary>Manuel de la carte mère AT-17 · codes de démarrage</summary>
+                <table>
+                  <thead><tr><th scope="col">Signal</th><th scope="col">Voyant</th><th scope="col">Signification</th></tr></thead>
+                  <tbody>
+                    <tr><td>1 bip court</td><td>—</td><td>Démarrage normal</td></tr>
+                    <tr><td>Bips longs répétés</td><td>DRAM</td><td>Mémoire vive absente ou défectueuse</td></tr>
+                    <tr><td>1 long + 2 courts</td><td>VGA</td><td>Carte graphique non détectée</td></tr>
+                    <tr><td>Aucun bip</td><td>CPU</td><td>Processeur défectueux</td></tr>
+                    <tr><td>Sirène + « CPU Fan Error »</td><td>—</td><td>Ventilateur du processeur à l'arrêt</td></tr>
+                    <tr><td>Rien du tout (ni voyant ni ventilateur)</td><td>—</td><td>Pas d'alimentation</td></tr>
+                  </tbody>
+                </table>
+                <p class="manual-note">Les codes varient selon les fabricants : on vérifie toujours le manuel de la carte.</p>
+              </details>
+              <p class="pc-msg" aria-live="polite">Appuie sur le bouton d'alimentation, écoute… et observe.</p>
+              <p class="pc-stats">Pannes trouvées <b data-pc-stat="ok">0</b> · Pièces gaspillées <b data-pc-stat="wasted">0</b> <button class="btn btn-ghost btn-sm" type="button" data-pc-new>Nouvelle panne</button></p>
+            </div>
+          </div>
+
+          <!-- Défi 2 : code couleur des résistances -->
+          <div class="defi defi-colors" id="panel-colors" role="tabpanel" aria-labelledby="tab-colors" hidden>
+            <div class="cq">
+              <div class="cq-head">
+                <p class="cq-round">Question <b data-cq="round">1</b>/10</p>
+                <p class="cq-score">Score <b data-cq="score">0</b></p>
+                <p class="cq-time"><span aria-hidden="true">⏱</span> <b data-cq="time">0,0</b> s</p>
+              </div>
+              <div class="cq-timer" aria-hidden="true"><span></span></div>
+              <svg class="cq-res" viewBox="0 0 420 120" role="img" aria-labelledby="cq-res-desc">
+                <desc id="cq-res-desc">Résistance</desc>
+                <path d="M10 60 H110 M310 60 H410" stroke="#c3c6c2" stroke-width="6" stroke-linecap="round"/>
+                <path d="M110 30 Q110 18 128 18 H150 Q160 30 175 30 H245 Q260 30 270 18 H292 Q310 18 310 30 V90 Q310 102 292 102 H270 Q260 90 245 90 H175 Q160 90 150 102 H128 Q110 102 110 90 Z" fill="#d8c59c" stroke="#b9a476" stroke-width="2"/>
+                <rect class="cq-band" x="132" y="18" width="16" height="84"/>
+                <rect class="cq-band" x="172" y="30" width="14" height="60"/>
+                <rect class="cq-band" x="204" y="30" width="14" height="60"/>
+                <rect class="cq-band" x="272" y="18" width="14" height="84"/>
+                <path d="M118 36 Q200 26 300 36" stroke="#fff" stroke-opacity=".35" stroke-width="4" fill="none"/>
+              </svg>
+              <p class="cq-question">Quelle est la valeur de cette résistance&nbsp;?</p>
+              <div class="cq-answers"></div>
+              <p class="cq-feedback" aria-live="polite"></p>
+              <div class="cq-end" hidden>
+                <p class="cq-end-title"></p>
+                <p class="cq-end-best"></p>
+                <button class="btn btn-copper" type="button" data-cq-restart>Rejouer</button>
+              </div>
+              <button class="btn btn-copper cq-start" type="button" data-cq-start>Lancer le quiz (10 questions)</button>
+              <div class="cq-pause" hidden>
+                <p class="cq-pause-title">⏸ Quiz en pause</p>
+                <p class="cq-pause-text">Le chrono est arrêté.</p>
+                <button class="btn btn-copper" type="button" data-cq-resume>▶ Reprendre</button>
+              </div>
+            </div>
+
+            <aside class="memo" aria-labelledby="memo-title">
+              <h3 id="memo-title">Mémo · code couleur</h3>
+              <p class="memo-mnemo">« <b>N</b>e <b>M</b>angez <b>R</b>ien <b>O</b>u <b>J</b>e <b>V</b>ous <b>B</b>rûle <b>V</b>otre <b>G</b>rande <b>B</b>arbe »</p>
+              <table class="memo-table">
+                <thead><tr><th scope="col">Couleur</th><th scope="col">Chiffre</th><th scope="col">Multiplicateur</th></tr></thead>
+                <tbody>
+                  <tr><td><i class="sw-c c-noir"></i>Noir</td><td>0</td><td>× 1</td></tr>
+                  <tr><td><i class="sw-c c-marron"></i>Marron</td><td>1</td><td>× 10</td></tr>
+                  <tr><td><i class="sw-c c-rouge"></i>Rouge</td><td>2</td><td>× 100</td></tr>
+                  <tr><td><i class="sw-c c-orange"></i>Orange</td><td>3</td><td>× 1 k</td></tr>
+                  <tr><td><i class="sw-c c-jaune"></i>Jaune</td><td>4</td><td>× 10 k</td></tr>
+                  <tr><td><i class="sw-c c-vert"></i>Vert</td><td>5</td><td>× 100 k</td></tr>
+                  <tr><td><i class="sw-c c-bleu"></i>Bleu</td><td>6</td><td>× 1 M</td></tr>
+                  <tr><td><i class="sw-c c-violet"></i>Violet</td><td>7</td><td>—</td></tr>
+                  <tr><td><i class="sw-c c-gris"></i>Gris</td><td>8</td><td>—</td></tr>
+                  <tr><td><i class="sw-c c-blanc"></i>Blanc</td><td>9</td><td>—</td></tr>
+                </tbody>
+              </table>
+              <p class="memo-how"><b>Lecture :</b> 1<sup>er</sup> anneau = 1<sup>er</sup> chiffre, 2<sup>e</sup> = 2<sup>e</sup> chiffre, 3<sup>e</sup> = multiplicateur. Le 4<sup>e</sup> anneau, souvent <span class="t-or">or</span> (±5 %) ou <span class="t-argent">argent</span> (±10 %), indique la tolérance et se place à droite.</p>
+              <p class="memo-ex"><b>Exemple :</b> jaune · violet · marron · or = 47 × 10 = <b>470 Ω</b> ±5 %</p>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TP7 · Veille ============ -->
+    <section id="veille" class="section">
+      <div class="wrap">
+        <header class="sec-head" data-reveal>
+          <span class="sec-tp">TP7</span>
           <h2>Veille technologique</h2>
           <span class="sec-trace" aria-hidden="true"></span>
         </header>
@@ -794,11 +1052,58 @@
       </div>
     </section>
 
-    <!-- ============ TP7 · Contact ============ -->
+    <!-- ============ TP8 · Me recruter ============ -->
+    <section id="recruter" class="section">
+      <div class="wrap">
+        <header class="sec-head" data-reveal>
+          <span class="sec-tp">TP8</span>
+          <h2>Me recruter</h2>
+          <span class="sec-trace" aria-hidden="true"></span>
+        </header>
+        <p class="sec-intro" data-reveal>PMSMP, POEI… des sigles qui font peur, mais qui simplifient beaucoup une embauche. Choisissez une formule&nbsp;: voici le devis.</p>
+
+        <div class="hire" data-reveal>
+          <div class="hire-plans" role="tablist" aria-label="Formules de recrutement">
+            <button type="button" role="tab" id="plan-pmsmp" aria-controls="devis" aria-selected="true" data-plan="pmsmp"><b>Immersion</b><small>PMSMP · 0 €</small></button>
+            <button type="button" role="tab" id="plan-poei" aria-controls="devis" aria-selected="false" tabindex="-1" data-plan="poei"><b>Formation avant embauche</b><small>POEI · formation financée</small></button>
+            <button type="button" role="tab" id="plan-interne" aria-controls="devis" aria-selected="false" tabindex="-1" data-plan="interne"><b>Embauche directe</b><small>+ formation interne</small></button>
+          </div>
+
+          <article class="devis" id="devis" role="tabpanel" aria-labelledby="plan-pmsmp" aria-live="polite">
+            <header class="dv-head"><span>Devis n° 2026-17</span><span>Recrutement · technicien réparateur</span></header>
+            <h3 class="dv-title">Immersion professionnelle (PMSMP)</h3>
+            <p class="dv-desc">Vous me prenez à l'essai dans votre atelier, sans engagement.</p>
+            <table class="dv-lines">
+              <tbody>
+                <tr><th scope="row">Durée</th><td>Jusqu'à 1 mois (renouvelable sous conditions)</td></tr>
+                <tr><th scope="row">Rémunération</th><td>Aucune : je garde mon statut et mes allocations</td></tr>
+                <tr><th scope="row">Accident du travail</th><td>Je reste couvert</td></tr>
+                <tr><th scope="row">Formalités</th><td>Convention en ligne avec France Travail (« Immersion facilitée »)</td></tr>
+              </tbody>
+            </table>
+            <p class="dv-total"><span>Coût pour vous</span><b class="dv-amount">0 €</b></p>
+            <p class="dv-ideal"><b>Idéal pour :</b> me voir à l'œuvre avant de décider.</p>
+          </article>
+
+          <aside class="hire-steps">
+            <h3>Comment faire&nbsp;?</h3>
+            <ol>
+              <li>Contactez-moi, ou votre conseiller entreprise France Travail.</li>
+              <li>On choisit ensemble la formule la plus simple pour vous.</li>
+              <li>France Travail prépare la convention&nbsp;: il ne reste qu'à signer.</li>
+            </ol>
+            <a class="btn btn-copper" href="#contact">Me contacter</a>
+            <p class="hire-src">Informations indicatives, d'après France Travail (2026)&nbsp;: <a href="https://www.francetravail.fr/employeur/solution-recrutement/immersion-professionnelle.html" target="_blank" rel="noopener noreferrer external">immersion professionnelle</a> · <a href="https://www.francetravail.fr/employeur/aides-aux-recrutements/les-aides-a-la-formation/la-preparation-operationnelle-a.html" target="_blank" rel="noopener noreferrer external">POEI</a>.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TP9 · Contact ============ -->
     <section id="contact" class="section">
       <div class="wrap">
         <header class="sec-head" data-reveal>
-          <span class="sec-tp">TP7</span>
+          <span class="sec-tp">TP9</span>
           <h2>Contact</h2>
           <span class="sec-trace" aria-hidden="true"></span>
         </header>
@@ -922,11 +1227,13 @@
 
           <div class="solder-side">
             <p class="solder-status" aria-live="polite">Soudures : <b data-solder-count>0</b> / 3</p>
+            <p class="solder-temp" aria-hidden="true"><span>Pastille</span><b data-solder-temp>25 °C</b></p>
             <ul class="solder-legend">
-              <li><span class="sw sw-cold"></span>Trop tôt : soudure froide, mate</li>
-              <li><span class="sw sw-good"></span>Parfait : soudure brillante</li>
-              <li><span class="sw sw-hot"></span>Trop chaud : le flux brûle</li>
+              <li><span class="sw sw-cold"></span><span><b>Trop tôt · sous 250 °C</b>Soudure froide : l'étain n'a pas bien « mouillé » la pastille. Aspect mat et granuleux, contact fragile.</span></li>
+              <li><span class="sw sw-good"></span><span><b>Parfait · 250 à 320 °C</b>2 à 3 secondes : l'étain coule autour de la patte. Aspect brillant, en petit cône.</span></li>
+              <li><span class="sw sw-hot"></span><span><b>Trop chaud · au-delà de 320 °C</b>Le flux brûle, la pastille peut se décoller et le composant chauffer.</span></li>
             </ul>
+            <p class="solder-memo"><b>Mémo :</b> fer réglé vers 330-350 °C. L'étain sans plomb fond vers 217 °C, l'étain-plomb vers 183 °C.</p>
             <p class="solder-msg" aria-live="polite"></p>
             <button class="btn btn-ghost btn-sm" type="button" data-solder-skip>Pas de fer à souder&nbsp;? Afficher directement</button>
           </div>
@@ -953,6 +1260,7 @@
           <li><span class="cf-k">Secteur</span>Saint-Georges-des-Coteaux (17) et alentours</li>
           <li><span class="cf-k">Mobilité</span>Permis B, véhiculé</li>
           <li><span class="cf-k">Recherche</span>Poste en atelier · PMSMP · formation interne · POEI</li>
+          <li><span class="cf-k">CV</span><button class="link-btn" type="button" data-cv>Télécharger mon CV (PDF)</button></li>
           <li><span class="cf-k">GitHub</span><a href="https://github.com/Nameho" rel="noopener noreferrer me">github.com/Nameho</a></li>
         </ul>
         <noscript><p class="noscript">Mes coordonnées s'affichent avec JavaScript (protection contre les robots). Vous pouvez aussi me retrouver sur <a href="https://github.com/Nameho">GitHub</a>.</p></noscript>
@@ -964,11 +1272,11 @@
     <div class="wrap footer-inner">
       <p>© 2026 Alexis Trudelle · Conçu et assemblé à la main</p>
       <p class="footer-sec"><span class="led led-green" aria-hidden="true"></span>Aucun cookie, aucun traceur, aucune ressource externe.</p>
-      <p><a href="https://github.com/Nameho/nameho.github.io" rel="noopener noreferrer">Code source</a> · <span class="silk-txt">RÉV. 2026.10</span></p>
+      <p class="footer-links"><button class="link-btn" type="button" data-express>Version express</button> · <button class="link-btn" type="button" data-cv>CV (PDF)</button> · <a href="mentions-legales.html">Mentions légales</a> · <a href="https://github.com/Nameho/nameho.github.io" rel="noopener noreferrer">Code source</a> · <span class="silk-txt rev-tag">RÉV. 2026.10</span></p>
     </div>
   </footer>
 
-  <!-- ============ Banc de test (succès) + son ============ -->
+  <!-- ============ Banc de test (succès + secrets) + réglages ============ -->
   <aside class="hud" aria-label="Banc de test">
     <div class="hud-panel" id="hud-panel" hidden>
       <p class="hud-title">Banc de test · contrôle qualité</p>
@@ -976,19 +1284,156 @@
         <li data-ach="case"><span class="led"></span><a href="#competences">Ouvrir le boîtier</a></li>
         <li data-ach="repair"><span class="led"></span><a href="#diagnostic">Réparer la panne</a></li>
         <li data-ach="scope"><span class="led"></span><a href="#parcours">Mesurer 3 impulsions</a></li>
+        <li data-ach="bios"><span class="led"></span><a href="#defis">Faire redémarrer le PC</a></li>
+        <li data-ach="colors"><span class="led"></span><a href="#defis">7/10 au code couleur</a></li>
         <li data-ach="dip"><span class="led"></span><a href="#veille">Basculer un interrupteur DIP</a></li>
         <li data-ach="solder"><span class="led"></span><a href="#contact">Réussir les 3 soudures</a></li>
+      </ol>
+      <p class="hud-title hud-secrets-title">Secrets <b data-secret-count>0</b>/3</p>
+      <ol class="hud-list hud-secrets">
+        <li data-secret="trace"><span class="led"></span><span>Une piste est coupée sur l'accueil… seule la sonde la révèle.</span></li>
+        <li data-secret="thermal"><span class="led"></span><span>Un capteur de température dort sur une carte ouverte.</span></li>
+        <li data-secret="blueprint"><span class="led"></span><span>Les vieux joueurs connaissent un code… ↑ ↑ ↓ ↓</span></li>
       </ol>
     </div>
     <div class="hud-row">
       <button class="hud-toggle" type="button" aria-expanded="false" aria-controls="hud-panel">
-        <span class="hud-leds" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
-        <span class="hud-count"><b>0</b>/5<span class="sr-only"> tests réussis, afficher la liste</span></span>
+        <span class="hud-leds" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+        <span class="hud-count"><b>0</b>/7<span class="sr-only"> tests réussis, afficher la liste</span></span>
       </button>
       <button class="motion-toggle" type="button" aria-pressed="true"><span class="sr-only">Animations complètes</span><span class="snd-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 12c2.5-6 5.5-6 8 0s5.5 6 8 0 3-3 4-3"/><path class="snd-off" d="M4 4l16 16"/></svg></span></button>
       <button class="sound-toggle" type="button" aria-pressed="true"><span class="sr-only">Son</span><span class="snd-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path class="snd-body" d="M3 9.5h4l5-4v13l-5-4H3z"/><path class="snd-on" d="M15.5 9a4 4 0 0 1 0 6M18.5 6a8.5 8.5 0 0 1 0 12"/><path class="snd-off" d="M16 9.5l5 5M21 9.5l-5 5"/></svg></span></button>
     </div>
   </aside>
   <div class="toasts" aria-live="polite"></div>
+
+  <!-- ============ Version express (recruteurs pressés) ============ -->
+  <dialog class="express" id="express" aria-labelledby="xp-title">
+    <div class="xp-sheet">
+      <header class="xp-head">
+        <div>
+          <p class="xp-kicker">Version express · lecture 30 s</p>
+          <h2 id="xp-title">Alexis Trudelle</h2>
+          <p class="xp-role">Technicien réparateur en électronique · en reconversion</p>
+          <p class="xp-meta">Saint-Georges-des-Coteaux (17) · Permis B, véhiculé · Français, anglais B1</p>
+        </div>
+        <button class="dlg-close" type="button" data-dlg-close aria-label="Fermer la version express">×</button>
+      </header>
+
+      <p class="xp-avail"><span class="led led-green" aria-hidden="true"></span><b>Disponible</b> pour un poste en atelier, une immersion (PMSMP), une POEI ou une formation interne.</p>
+
+      <div class="xp-grid">
+        <section class="xp-block">
+          <h3>En bref</h3>
+          <ul>
+            <li>3 titres professionnels en informatique (AFPA) + Bac Pro maintenance</li>
+            <li>Immersion réussie en atelier de reconditionnement de PC (2026)</li>
+            <li>Méthode : mesurer → isoler → réparer (multimètre, soudure : bases)</li>
+            <li>Minutieux, calme, rigoureux, ponctuel</li>
+          </ul>
+        </section>
+        <section class="xp-block">
+          <h3>Compétences</h3>
+          <ul>
+            <li><b>Diagnostic :</b> recherche de panne méthodique, mesures au multimètre, dépannage logiciel</li>
+            <li><b>Matériel :</b> démontage, montage et remplacement de composants de PC</li>
+            <li><b>Outillage :</b> multimètre, fer à souder (bases), tournevis de précision</li>
+            <li><b>Qualité :</b> gestes précis, contrôle visuel, respect des procédures</li>
+          </ul>
+        </section>
+        <section class="xp-block">
+          <h3>Expériences</h3>
+          <ul class="xp-dated">
+            <li><span>2026</span>Immersion · pôle informatique, Les Ateliers du Bocage</li>
+            <li><span>En continu</span>Projets perso : dépannage d'un spa, montage de PC</li>
+            <li><span>2022</span>Développeur web (stage), Code-Expérience</li>
+            <li><span>2012-2016</span>Porteur funéraire, Lotte-Baudouin</li>
+          </ul>
+        </section>
+        <section class="xp-block">
+          <h3>Formations</h3>
+          <ul class="xp-dated">
+            <li><span>2023</span>Titre pro Concepteur Développeur d'Applications</li>
+            <li><span>2022-23</span>Titre pro Développeur Web et Web Mobile</li>
+            <li><span>2020</span>Titre pro Technicien Helpdesk</li>
+            <li><span>2011</span>Bac Pro Maintenance des véhicules et matériels</li>
+          </ul>
+        </section>
+      </div>
+
+      <blockquote class="xp-quote">
+        <p>« Il est sérieux, ordonné et rigoureux. […] Son immersion s'est très bien passée pour lui et pour nous. »</p>
+        <footer>Les responsables de l'atelier, Les Ateliers du Bocage</footer>
+      </blockquote>
+
+      <section class="xp-block xp-hire">
+        <h3>Me recruter simplement</h3>
+        <ul>
+          <li><b>PMSMP :</b> immersion jusqu'à 1 mois, 0 € pour vous.</li>
+          <li><b>POEI :</b> formation avant embauche financée par France Travail.</li>
+          <li><b>Formation interne :</b> je me forme à vos méthodes et à vos appareils.</li>
+        </ul>
+      </section>
+
+      <div class="xp-contact">
+        <div class="xp-coords" hidden>
+          <button class="cc-value" type="button" data-xp-copy="email"></button>
+          <button class="cc-value" type="button" data-xp-copy="phone"></button>
+        </div>
+        <p class="xp-print-only">Contact : voir le CV · https://nameho.github.io</p>
+        <div class="xp-actions">
+          <button class="btn btn-copper" type="button" data-xp-reveal>Afficher mes coordonnées</button>
+          <button class="btn btn-ghost" type="button" data-cv><span aria-hidden="true">↓</span> CV (PDF)</button>
+          <button class="btn btn-ghost" type="button" data-xp-print><span aria-hidden="true">⎙</span> Imprimer</button>
+          <button class="btn btn-ghost" type="button" data-dlg-close>Voir le site complet</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- ============ CV : test anti-robot ============ -->
+  <dialog class="cv-gate" aria-labelledby="cvg-title">
+    <button class="dlg-close" type="button" data-dlg-close aria-label="Fermer">×</button>
+    <h2 id="cvg-title">Télécharger mon CV</h2>
+    <p class="cvg-intro">Petit contrôle anti-robot&nbsp;: <b>branchez la fiche dans la prise</b> pour alimenter le téléchargement.</p>
+    <div class="plug-track">
+      <span class="plug-cable" aria-hidden="true"></span>
+      <span class="plug" role="slider" tabindex="0" aria-label="Fiche électrique : faites-la glisser vers la prise (ou flèche droite)" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <i></i><i></i>
+      </span>
+      <!-- Prise murale vue de côté : les broches s'enfoncent dans la cavité -->
+      <span class="socket" aria-hidden="true"><span class="socket-hole"></span><span class="socket-led"></span></span>
+    </div>
+    <p class="cvg-status" aria-live="polite"></p>
+    <div class="cvg-after" hidden>
+      <a class="btn btn-ghost btn-sm" data-cv-open href="#" target="_blank" rel="noopener">Ouvrir le PDF</a>
+      <button class="btn btn-ghost btn-sm" type="button" data-cv-retry>Retélécharger</button>
+    </div>
+    <p class="cvg-note">Le fichier est chiffré sur le serveur&nbsp;: les robots et les moteurs de recherche ne peuvent pas le lire.</p>
+  </dialog>
+
+  <!-- ============ Caméra thermique (secret) ============ -->
+  <div class="thermal-ui" hidden>
+    <div class="th-frame" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    <div class="th-reticle" aria-hidden="true"><span class="th-temp">--,- °C</span></div>
+    <div class="th-bar">
+      <span class="th-brand">AT-IR17 · Caméra thermique</span>
+      <span class="th-scale" aria-hidden="true"><b>20 °C</b><i></i><b>90 °C</b></span>
+      <button class="btn btn-ghost btn-sm" type="button" data-thermal-off>Quitter (Échap)</button>
+    </div>
+  </div>
+  <div class="blueprint-grid" aria-hidden="true"></div>
+
+  <!-- Filtres graphiques (caméra thermique, mode schéma) -->
+  <svg class="fx-defs" aria-hidden="true" focusable="false">
+    <filter id="f-thermal" color-interpolation-filters="sRGB">
+      <feColorMatrix type="matrix" values="0.30 0.55 0.15 0 0  0.30 0.55 0.15 0 0  0.30 0.55 0.15 0 0  0 0 0 1 0"/>
+      <feComponentTransfer>
+        <feFuncR type="table" tableValues="0.02 0.22 0.55 0.88 1 1 1"/>
+        <feFuncG type="table" tableValues="0 0 0.04 0.22 0.55 0.85 1"/>
+        <feFuncB type="table" tableValues="0.12 0.42 0.55 0.32 0.08 0.25 0.92"/>
+      </feComponentTransfer>
+    </filter>
+  </svg>
 </body>
 </html>

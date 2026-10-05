@@ -3,13 +3,10 @@
 // encodées et ne sont décodées qu'une fois le circuit fermé (les robots qui
 // aspirent les pages ne les trouvent pas).
 
-import { $, $$, svg, clamp, copyText, reducedMotion } from './util.js';
+import { $, $$, svg, clamp, reducedMotion } from './util.js';
 import { sfx, loopStart, loopStop } from './audio.js';
-import { achieve, toast } from './hud.js';
-
-const KEY = 'pcb-17-solder';
-const ENC = { email: 'EQ8HVVhEAwcdGQAAHhwGUxpxUEASBgBKBh0d', phone: 'W1BRGgkGFUJaXlxX' };
-const decode = (b64) => [...atob(b64)].map((c, i) => String.fromCharCode(c.charCodeAt(0) ^ KEY.charCodeAt(i % KEY.length))).join('');
+import { achieve } from './hud.js';
+import { getContact, copyContact } from './contact-data.js';
 
 const HEAT_TIME = 1.55; // secondes pour remplir la jauge
 const GOOD_MIN = 0.55;
@@ -56,9 +53,24 @@ export function initContact() {
     setTimeout(() => p.remove(), 1500);
   }
 
+  // Température de la pastille (pédagogique) : froide < 250 °C, idéale 250-320 °C, trop chaude au-delà
+  const tempBox = $('.solder-temp', root);
+  const tempEl = $('[data-solder-temp]', root);
+  const tempOf = (h) => (h < GOOD_MIN
+    ? 25 + (h / GOOD_MIN) * 225
+    : h <= GOOD_MAX
+      ? 250 + ((h - GOOD_MIN) / (GOOD_MAX - GOOD_MIN)) * 70
+      : 320 + ((Math.min(h, 1) - GOOD_MAX) / (1 - GOOD_MAX)) * 110);
+  const showTemp = (h) => {
+    const t = tempOf(h);
+    tempEl.textContent = `${Math.round(t)} °C`;
+    tempBox.dataset.zone = h < GOOD_MIN ? 'cold' : h <= GOOD_MAX ? 'good' : 'hot';
+  };
+
   function paintJoint(i) {
     const j = joints[i];
     const h = st[i].heat;
+    showTemp(h);
     j.style.setProperty('--p', (h * 100).toFixed(1));
     j.style.setProperty('--melt', clamp((h - 0.22) / 0.2, 0, 1).toFixed(2));
     j.style.setProperty('--grow', (0.3 + 0.7 * clamp((h - 0.25) / 0.35, 0, 1)).toFixed(2));
@@ -144,6 +156,8 @@ export function initContact() {
       say('Trop chaud ! Le flux a brûlé et la pastille souffre… Nettoie et recommence.', 'bad');
     }
     if (!matchMedia('(pointer: fine)').matches) setTimeout(() => boardBox.classList.remove('has-iron'), 500);
+    // La pastille refroidit doucement après le passage du fer
+    setTimeout(() => { if (active === -1) { tempEl.textContent = '25 °C'; tempBox.dataset.zone = ''; } }, 2500);
   }
 
   /* ---------- Révélation des coordonnées ---------- */
@@ -153,9 +167,7 @@ export function initContact() {
     skip.hidden = true;
     root.classList.add('is-live');
     boardBox.classList.remove('has-iron');
-    const email = decode(ENC.email);
-    const phone = decode(ENC.phone);
-    const phoneTxt = phone.replace(/^\+33/, '0').replace(/(\d{2})(?=\d)/g, '$1 ');
+    const { email, phone, phoneTxt } = getContact();
     if (earned) {
       achieve('solder');
       sfx('chime');
@@ -163,17 +175,7 @@ export function initContact() {
 
     // Copie au clic (sur la carte de contact comme sur l'écran OLED)
     const values = { email, phone: phoneTxt };
-    const copy = async (kind, source) => {
-      const ok = await copyText(values[kind]);
-      sfx(ok ? 'ok' : 'buzz');
-      toast(ok
-        ? (kind === 'email' ? 'Adresse e-mail copiée dans le presse-papiers ✔' : 'Numéro de téléphone copié ✔')
-        : 'Copie impossible : sélectionnez le texte à la main');
-      if (ok && source) {
-        source.classList.add('is-copied');
-        setTimeout(() => source.classList.remove('is-copied'), 1800);
-      }
-    };
+    const copy = (kind, source) => copyContact(kind, source);
 
     const lines = [
       ['> INIT ........ OK', 'o-dim', 80],

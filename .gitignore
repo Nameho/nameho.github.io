@@ -1,6 +1,10 @@
 # Notes personnelles (non publiées)
 TUTORIEL-GITHUB.md
 
+# CV original en clair : JAMAIS publié (seule la version chiffrée site/assets/cv/cv.bin l'est)
+prive/
+*.pdf
+
 # Fichiers de l'éditeur / du système
 .claude/
 .vscode/
