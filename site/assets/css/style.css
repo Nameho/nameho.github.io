@@ -440,7 +440,100 @@ button, input, select { font: inherit; color: inherit; }
   position: relative;
   z-index: 2;
   padding-block: 96px 120px;
+  pointer-events: none; /* le circuit du fond reste sondable autour de la carte */
+}
+.hero-inner .info-board,
+.hero-inner a,
+.hero-inner button { pointer-events: auto; }
+
+/* Carte fille : le bloc d'infos */
+.info-board {
+  position: relative;
+  width: fit-content;
+  max-width: 100%;
+  padding: 34px 44px 30px 40px;
+  border: 1px solid rgba(216, 178, 90, 0.4);
+  border-radius: 16px;
+  background:
+    radial-gradient(circle at 1px 1px, rgba(190, 230, 214, 0.07) 1px, transparent 1.6px) 0 0 / 18px 18px,
+    linear-gradient(160deg, rgba(21, 74, 61, 0.95), rgba(10, 40, 33, 0.97));
+  box-shadow:
+    inset 0 0 0 5px rgba(10, 29, 24, 0.55),
+    inset 0 0 0 6px rgba(216, 178, 90, 0.16),
+    0 0 0 1px #071814,
+    0 46px 80px -34px rgba(0, 0, 0, 0.9);
   cursor: var(--cur-arrow);
+}
+/* Trous de fixation : pastille dorée + vis cruciforme (décoratives, non cliquables) */
+.ib-hole {
+  position: absolute;
+  width: 22px; height: 22px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #e3c46e 0 60%, #a8863a 64%, rgba(0, 0, 0, 0.35) 70%, transparent 74%);
+  pointer-events: none;
+}
+.ib-hole::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  border-radius: 50%;
+  background:
+    linear-gradient(#34383a, #34383a) center / 58% 15% no-repeat,
+    linear-gradient(#34383a, #34383a) center / 15% 58% no-repeat,
+    radial-gradient(circle at 34% 30%, #ffffff 0%, #d5d9db 28%, #8b9093 72%, #5d6265 100%);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.65), inset 0 -1px 2px rgba(0, 0, 0, 0.3);
+  transform: rotate(var(--r, 0deg));
+}
+.ib-tl { top: 9px; left: 9px; --r: 14deg; }
+.ib-tr { top: 9px; right: 9px; --r: 58deg; }
+.ib-bl { bottom: 9px; left: 9px; --r: -22deg; }
+.ib-br { bottom: 9px; right: 9px; --r: 37deg; }
+.ib-silk {
+  position: absolute;
+  font: 600 0.62rem var(--mono);
+  letter-spacing: 0.12em;
+  color: rgba(241, 245, 239, 0.42);
+  white-space: nowrap;
+  pointer-events: none;
+}
+.ib-silk-top { top: 13px; right: 38px; }
+.ib-silk-bottom { bottom: 13px; right: 38px; }
+/* Connecteur de nappe (type ZIF) sur le bord de la carte, avec son levier marron côté nappe */
+.ib-conn {
+  position: absolute;
+  z-index: 1;
+  right: -13px; top: 50%;
+  width: 24px; height: 124px;
+  margin-top: -62px;
+  border-radius: 3px;
+  background: linear-gradient(90deg, #2a2e2f, #141616);
+  box-shadow: inset -6px 0 0 #6b4320, inset -7px 0 0 #3a230f, 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+.ib-conn i {
+  position: absolute;
+  inset: 8px 10px 8px 4px;
+  background: repeating-linear-gradient(180deg, rgba(216, 178, 90, 0.8) 0 2px, transparent 2px 5px);
+}
+/* Nappe plate (FFC) : film orange, conducteurs cuivre, renforts bleus */
+.hero-ribbon { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; }
+.rb-shadow { fill: rgba(0, 0, 0, 0.35); filter: blur(6px); }
+.rb-film { opacity: 0.94; }
+.rb-wire { stroke: rgba(255, 222, 165, 0.6); stroke-width: 1.2; }
+.rb-pin1 { stroke: #2b6fd6; stroke-width: 2; }
+.rb-stiff { fill: rgba(43, 95, 176, 0.88); }
+.rb-data { stroke: rgba(255, 248, 225, 0.75); stroke-width: 2; stroke-linecap: round; stroke-dasharray: 2 34; animation: rb-flow 1.2s linear infinite; }
+.rb-conn { fill: #1b1d1e; stroke: #0b0c0c; }
+.rb-latch { fill: #6b4320; }
+.rb-label { fill: rgba(241, 245, 239, 0.5); font: 700 10px var(--mono); }
+@keyframes rb-flow { to { stroke-dashoffset: -36; } }
+@media (max-width: 760px) {
+  /* Sur téléphone : pas de carte fille, le texte s'affiche directement comme avant */
+  .info-board { width: auto; padding: 0; border: 0; background: none; box-shadow: none; }
+  .ib-hole, .ib-silk, .ib-conn { display: none; }
+}
+/* Curseur « fer à souder » au-dessus de la piste coupée */
+.hero.is-solder {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cpath d='M2 30 L6 24 L8 26 Z' fill='%23ff7a2a' stroke='%23fff3c4' stroke-width='.6'/%3E%3Cpath d='M6 24 L12 18 L14 20 L8 26 Z' fill='%23c3c6c2' stroke='%23111' stroke-width='.5'/%3E%3Cpath d='M12 18 L15 15 L17 17 L14 20 Z' fill='%236c706d'/%3E%3Cpath d='M15 15 L26 4 Q28 2 30 4 Q31 6 29 8 L17 17 Z' fill='%23e0821f' stroke='%231a0d02' stroke-width='.8'/%3E%3Cpath d='M17 14 L25 6 M19 16 L27 8' stroke='%239c5510' stroke-width='1.2'/%3E%3C/svg%3E") 2 30, pointer;
 }
 .hero-status {
   display: inline-flex;

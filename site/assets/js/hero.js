@@ -31,6 +31,7 @@ export function initHero() {
   let traces = [];
   let parts = [];
   let chip = null;
+  let link = null; // nappe entre la carte d'infos et le connecteur J3 du fond
   let broken = null; // piste coupée (secret)
   let traceFixed = false;
   let pulses = [];
@@ -97,10 +98,42 @@ export function initHero() {
       traces.push(makeTrace(pts, head ? 'none' : rnd() < 0.5 ? 'pad' : 'via', rnd() < 0.55 ? 'pad' : 'via', !!head));
     };
 
-    // Puce centrale : seulement s'il reste de la place à droite du nom
+    // Carte fille (bloc d'infos, sur ordinateur) : un connecteur J3 est soudé sur le fond,
+    // relié au connecteur de la carte par une nappe. Sur téléphone, le connecteur est masqué.
+    const hr = hero.getBoundingClientRect();
+    const card = $('.info-board', hero);
+    const conn = $('.ib-conn', hero);
+    link = null;
+    let reserveRight = 0;
+    if (card && conn && conn.offsetParent !== null) {
+      const kr = card.getBoundingClientRect();
+      const c2 = conn.getBoundingClientRect();
+      const connH = c2.height;
+      const fromX = c2.right - hr.left;
+      const midY = c2.top + connH / 2 - hr.top;
+      const PINS = 5;
+      const hc = Math.round((kr.right - hr.left + 170) / G);
+      const r0 = Math.round(midY / G) - 2;
+      if (hc + 3 < cols && r0 > 1 && r0 + PINS < rows) {
+        // J3 : même taille que le connecteur de la carte, à la même hauteur (la nappe reste droite)
+        const box = { x: hc * G - 12, y: midY - connH / 2, w: 24, h: connH };
+        const rTop = Math.floor(box.y / G) - 1;
+        const rBot = Math.ceil((box.y + box.h) / G) + 1;
+        const cFrom = Math.floor(fromX / G);
+        for (let r = rTop; r <= rBot; r++) for (let c = cFrom; c <= hc + 1; c++) if (inside(c, r)) occ[id(c, r)] = 1;
+        link = { fromX, midY, connH, box, pins: [] };
+        for (let k = 0; k < PINS; k++) {
+          const p = { x: hc * G, y: (r0 + k) * G };
+          link.pins.push(p);
+          walk(hc + 2, r0 + k, 0, 4, 22, { x: p.x + 12, y: p.y });
+        }
+        reserveRight = 250;
+      }
+    }
+
+    // Puce centrale : seulement s'il reste de la place à droite de la carte (et de la nappe)
     const size = W > 1400 ? 10 : 8;
-    const name = $('.hero-name-fx');
-    const textRight = name ? name.getBoundingClientRect().right - hero.getBoundingClientRect().left : W * 0.6;
+    const textRight = card ? card.getBoundingClientRect().right - hr.left + reserveRight : W * 0.6;
     const room = W - textRight;
     if (room >= size * G + 140) {
       const cc = Math.round((textRight + room / 2) / G) - size / 2;
@@ -140,11 +173,17 @@ export function initHero() {
   function pickBrokenTrace() {
     broken = null;
     const hr = hero.getBoundingClientRect();
-    const blocks = ['.hero-status', '.hero-name-fx', '.hero-role', '.hero-meta', '.hero-cta', '.hero-hint', '.hero-scroll']
+    const blocks = ['.info-board', '.hero-hint', '.hero-scroll']
       .map((s) => $(s, hero)?.getBoundingClientRect())
       .filter((r) => r && r.width)
       .map((r) => ({ l: r.left - hr.left - 30, t: r.top - hr.top - 30, r: r.right - hr.left + 30, b: r.bottom - hr.top + 30 }));
     if (chip) blocks.push({ l: chip.x - 30, t: chip.y - 30, r: chip.x + chip.s + 30, b: chip.y + chip.s + 30 });
+    if (link) {
+      // Ni sous la nappe ni sous le connecteur
+      const xs = [link.fromX, link.box.x + link.box.w + 12];
+      const ys = [link.box.y, link.box.y + link.box.h];
+      blocks.push({ l: Math.min(...xs) - 40, t: Math.min(...ys) - 40, r: Math.max(...xs) + 40, b: Math.max(...ys) + 40 });
+    }
     const free = (p) => p.x > 40 && p.x < W - 40 && p.y > 90 && p.y < H - 60 && !blocks.some((b) => p.x > b.l && p.x < b.r && p.y > b.t && p.y < b.b);
     let best = null;
     for (const tr of traces) {
@@ -256,6 +295,13 @@ export function initHero() {
         g.font = '600 8px "JetBrains Mono", monospace';
         g.fillText(p.label, p.x - 2, p.y - 9);
       }
+    }
+
+    // Connecteur J3 : ses pattes soudées sortent à droite (le boîtier est dessiné en SVG, par-dessus la nappe)
+    if (link) {
+      const { box, pins } = link;
+      g.fillStyle = lit ? '#ffe2a8' : 'rgba(216, 178, 90, 0.75)';
+      for (const p of pins) g.fillRect(box.x + box.w - 2, p.y - 3, 10, 6);
     }
 
     if (chip) {
@@ -457,6 +503,7 @@ export function initHero() {
     generate();
     paint(dimC.getContext('2d'), false);
     paint(litC.getContext('2d'), true);
+    drawRibbon();
     pulses = [];
     surges = [];
     flashes = [];
@@ -467,6 +514,52 @@ export function initHero() {
     draw();
   }
 
+  // Nappe souple (FFC) entre le connecteur de la carte d'infos et J3, en SVG au-dessus du circuit
+  function drawRibbon() {
+    const ribbon = $('.hero-ribbon', hero);
+    if (!ribbon) return;
+    ribbon.replaceChildren();
+    ribbon.setAttribute('viewBox', `0 0 ${W} ${H}`);
+    if (!link) return;
+    const { fromX, midY, connH, box } = link;
+    const rw = connH - 10; // la nappe est à peine moins large que ses connecteurs
+    const top = midY - rw / 2;
+    const x0 = fromX - 8; // les extrémités glissent sous les deux connecteurs
+    const x1 = box.x + 8;
+
+    // Dégradé : plus clair au milieu, comme une nappe qui se soulève en arc
+    const defs = svgEl('defs', {}, ribbon);
+    const grad = svgEl('linearGradient', { id: 'rb-shade', x1: '0', y1: '0', x2: '1', y2: '0' }, defs);
+    [['0', '#9c5414'], ['0.18', '#d9852c'], ['0.5', '#f6b25c'], ['0.82', '#d9852c'], ['1', '#9c5414']]
+      .forEach(([o, c]) => svgEl('stop', { offset: o, 'stop-color': c }, grad));
+
+    svgEl('rect', { class: 'rb-shadow', x: x0 + 10, y: top + 10, width: x1 - x0 - 20, height: rw, rx: 4 }, ribbon);
+    svgEl('rect', { class: 'rb-film', x: x0, y: top, width: x1 - x0, height: rw, fill: 'url(#rb-shade)' }, ribbon);
+    for (let y = top + 5; y <= top + rw - 5; y += 4.6) {
+      svgEl('line', { class: 'rb-wire', x1: x0, x2: x1, y1: y.toFixed(1), y2: y.toFixed(1) }, ribbon);
+    }
+    svgEl('line', { class: 'rb-pin1', x1: x0, x2: x1, y1: top + 2, y2: top + 2 }, ribbon);
+    for (let k = 1; k <= 3; k++) {
+      const y = (top + (rw * k) / 4).toFixed(1);
+      svgEl('line', { class: 'rb-data', x1: x0, x2: x1, y1: y, y2: y }, ribbon);
+    }
+    // Renforts bleus aux extrémités (comme sur les vraies nappes FFC)
+    svgEl('rect', { class: 'rb-stiff', x: x0, y: top, width: 22, height: rw }, ribbon);
+    svgEl('rect', { class: 'rb-stiff', x: x1 - 22, y: top, width: 22, height: rw }, ribbon);
+
+    // Boîtier de J3 par-dessus la nappe, avec son levier de verrouillage
+    svgEl('rect', { class: 'rb-conn', x: box.x, y: box.y, width: box.w, height: box.h, rx: 3 }, ribbon);
+    svgEl('rect', { class: 'rb-latch', x: box.x - 3, y: box.y + 4, width: 6, height: box.h - 8, rx: 2 }, ribbon);
+    const label = svgEl('text', { class: 'rb-label', x: box.x - 4, y: box.y - 8 }, ribbon);
+    label.textContent = 'J3';
+  }
+  const svgEl = (tag, attrs, parent) => {
+    const n = document.createElementNS('http://www.w3.org/2000/svg', tag);
+    for (const [k, v] of Object.entries(attrs)) n.setAttribute(k, v);
+    parent.appendChild(n);
+    return n;
+  };
+
   /* ---------- Interactions ---------- */
   const local = (e) => {
     const r = hero.getBoundingClientRect();
@@ -475,6 +568,8 @@ export function initHero() {
 
   hero.addEventListener('pointermove', (e) => {
     const p = local(e);
+    // Au-dessus de la coupure, le curseur devient un fer à souder
+    hero.classList.toggle('is-solder', !!broken && !broken.fixed && Math.hypot(p.x - broken.x, p.y - broken.y) < 26);
     mouse.x = p.x;
     mouse.y = p.y;
     if (!mouse.on && !running) { mouse.sx = p.x; mouse.sy = p.y; }
@@ -486,12 +581,13 @@ export function initHero() {
     if (still) { mouse.a = 0; requestAnimationFrame(draw); }
   });
   hero.addEventListener('click', (e) => {
-    if (e.target.closest('a, button')) return;
+    if (e.target.closest('a, button, .info-board')) return;
     const p = local(e);
 
     // Clic sur la coupure : on la répare (secret)
     if (broken && !broken.fixed && Math.hypot(p.x - broken.x, p.y - broken.y) < 26) {
       broken.fixed = traceFixed = true;
+      hero.classList.remove('is-solder');
       paint(dimC.getContext('2d'), false);
       paint(litC.getContext('2d'), true);
       sfx('tink');
