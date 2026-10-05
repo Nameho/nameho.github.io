@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-05T13:03:19.254Z",
+  "updatedAt": "2026-10-05T14:01:46.653Z",
   "sources": [
     {
       "id": "ifixit",
@@ -45,6 +45,14 @@
     }
   ],
   "items": [
+    {
+      "id": "7e527eef7a98",
+      "source": "hackaday",
+      "title": "The FPGA Chronicles: Open Source It",
+      "url": "https://hackaday.com/2026/10/05/the-fpga-chronicles-open-source-it/",
+      "date": "2026-10-05T14:00:38.000Z",
+      "excerpt": "Last time, we looked at getting started with the GOWIN tools and a Tang Nano 20K FPGA. The software from GOWIN isn’t bad, but it isn’t open source, and there …read more"
+    },
     {
       "id": "7e3a8406d137",
       "source": "hackaday",
@@ -100,14 +108,6 @@
       "url": "https://hackaday.com/2026/10/04/hackaday-links-october-3-2026/",
       "date": "2026-10-04T23:00:26.000Z",
       "excerpt": "If you’re interested in aerospace, there’s an excellent chance you’ve heard the rumor that NASA is trying to get its SR-71 flying again. Or at the very least, they are …read more"
-    },
-    {
-      "id": "c57f5664b274",
-      "source": "hackaday",
-      "title": "Tearing Down a Heavy Oscilloscope",
-      "url": "https://hackaday.com/2026/10/04/tearing-down-a-heavy-oscilloscope/",
-      "date": "2026-10-04T20:00:49.000Z",
-      "excerpt": "When [Thomas] showed his 1960s-era Tektronix 545A oscilloscope in a recent video, it made us both nostalgic and happy. Nostalgic because we miss the days when our oscilloscopes were “mainframes” …read more"
     },
     {
       "id": "977faab7e5d1",
