@@ -1,0 +1,7 @@
+# Dependabot propose chaque mois une mise à jour des actions épinglées (correctifs de sécurité).
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly

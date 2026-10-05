@@ -1,0 +1,297 @@
+{
+  "updatedAt": "2026-10-05T13:03:19.254Z",
+  "sources": [
+    {
+      "id": "ifixit",
+      "nom": "iFixit",
+      "site": "https://www.ifixit.com/News",
+      "theme": "Réparation",
+      "langue": "EN"
+    },
+    {
+      "id": "hop",
+      "nom": "HOP",
+      "site": "https://www.halteobsolescence.org/",
+      "theme": "Droit à la réparation",
+      "langue": "FR"
+    },
+    {
+      "id": "learnrepair",
+      "nom": "Learn Electronics Repair",
+      "site": "https://www.youtube.com/@LearnElectronicsRepair",
+      "theme": "Réparation (vidéo)",
+      "langue": "EN"
+    },
+    {
+      "id": "electrobidouilleur",
+      "nom": "Électro-Bidouilleur",
+      "site": "https://www.youtube.com/@Electro-Bidouilleur",
+      "theme": "Électronique (vidéo)",
+      "langue": "FR"
+    },
+    {
+      "id": "hackaday",
+      "nom": "Hackaday",
+      "site": "https://hackaday.com/",
+      "theme": "Électronique",
+      "langue": "EN"
+    },
+    {
+      "id": "framboise314",
+      "nom": "Framboise314",
+      "site": "https://www.framboise314.fr/",
+      "theme": "Électronique",
+      "langue": "FR"
+    }
+  ],
+  "items": [
+    {
+      "id": "7e3a8406d137",
+      "source": "hackaday",
+      "title": "Porting Video Games to VHS",
+      "url": "https://hackaday.com/2026/10/05/porting-video-games-to-vhs/",
+      "date": "2026-10-05T11:00:16.000Z",
+      "excerpt": "Although VHS-based games have existed for about as long as VHS players have sat in millions of living rooms, they always tended to be rather sparse gaming experiences. For example, …read more"
+    },
+    {
+      "id": "b0eeb09536f2",
+      "source": "learnrepair",
+      "title": "Crest CA12 Amplifier Stuck In Protect. Let's Fix It",
+      "url": "https://www.youtube.com/watch?v=Ea8d_1gVyP4",
+      "date": "2026-10-05T09:40:09.000Z",
+      "excerpt": "I have a Crest CA12 Amplifier with a Protect Fault on one channel. This is final part of this repair, the first two parts are linked below Part One Here Part Two Here Discount Codes 👉Click on the link enter the search code [AYDBN7] on…"
+    },
+    {
+      "id": "4855dfeec236",
+      "source": "ifixit",
+      "title": "“I Used to Just Call a Guy”: The Struggle to Get Repair Information",
+      "url": "https://www.ifixit.com/News/119622/i-used-to-just-call-a-guy-the-struggle-to-get-repair-information",
+      "date": "2026-10-05T08:10:50.000Z",
+      "excerpt": "Appliance repairer Jacob D'Hollander qualifies for repair information under EU Ecodesign rules. Eight months of requests later, only one brand group has delivered."
+    },
+    {
+      "id": "07e1223f5acd",
+      "source": "hackaday",
+      "title": "Conveyor Belt GBoard Brings the Keys to You",
+      "url": "https://hackaday.com/2026/10/05/conveyor-belt-gboard-brings-the-keys-to-you/",
+      "date": "2026-10-05T08:00:24.000Z",
+      "excerpt": "It must be April in October again, because Google Japan has a new, hilariously impractical reimagining of the keyboard: a conveyor belt. This time it’s on GitHub with firmware, STLs, …read more"
+    },
+    {
+      "id": "cc9b16cfcb98",
+      "source": "hackaday",
+      "title": "It’s GW-BASIC, Jim, But Not as We Know It",
+      "url": "https://hackaday.com/2026/10/04/its-gw-basic-jim-but-not-as-we-know-it/",
+      "date": "2026-10-05T05:00:40.000Z",
+      "excerpt": "Back in the old days the IBM-PC, like most of its contemporary computers, shipped with BASIC in ROM. Even after it stopped living in ROM, IBM-Compatibles shipped with GW-BASIC, and …read more"
+    },
+    {
+      "id": "30ed5f309cb9",
+      "source": "hackaday",
+      "title": "Upgrading a Benchtop Laser for Megawatt Power",
+      "url": "https://hackaday.com/2026/10/04/upgrading-a-benchtop-laser-for-megawatt-power/",
+      "date": "2026-10-05T02:00:01.000Z",
+      "excerpt": "One fascinating thing about a pulsed laser is that, though the average power may be measured in watts or milliwatts, the peak power can easily reach millions of times that. …read more"
+    },
+    {
+      "id": "d004f7212147",
+      "source": "hackaday",
+      "title": "Hackaday Links: October 3, 2026",
+      "url": "https://hackaday.com/2026/10/04/hackaday-links-october-3-2026/",
+      "date": "2026-10-04T23:00:26.000Z",
+      "excerpt": "If you’re interested in aerospace, there’s an excellent chance you’ve heard the rumor that NASA is trying to get its SR-71 flying again. Or at the very least, they are …read more"
+    },
+    {
+      "id": "c57f5664b274",
+      "source": "hackaday",
+      "title": "Tearing Down a Heavy Oscilloscope",
+      "url": "https://hackaday.com/2026/10/04/tearing-down-a-heavy-oscilloscope/",
+      "date": "2026-10-04T20:00:49.000Z",
+      "excerpt": "When [Thomas] showed his 1960s-era Tektronix 545A oscilloscope in a recent video, it made us both nostalgic and happy. Nostalgic because we miss the days when our oscilloscopes were “mainframes” …read more"
+    },
+    {
+      "id": "977faab7e5d1",
+      "source": "learnrepair",
+      "title": "Burnt PCB Repair Crest Audio CA12 Amplifier",
+      "url": "https://www.youtube.com/watch?v=aipkMyT8_Xs",
+      "date": "2026-10-03T09:52:19.000Z",
+      "excerpt": "I have a Crest CA12 Amplifier with a Protect Fault on one channel. Let's find the fault. This amplifier had multiple faults, I split the video into three parts wile fixing each problem. This i s part 2. Yes, the Amplifier does work at the…"
+    },
+    {
+      "id": "baeb32d4b46a",
+      "source": "learnrepair",
+      "title": "What Can Happen When You Swap Good Working Boards With Bad Ones To Diagnose A Fault. Crest CA12",
+      "url": "https://www.youtube.com/watch?v=kgl9VEGOjDE",
+      "date": "2026-10-02T10:47:31.000Z",
+      "excerpt": "I have a Crest CA12 Amplifier with a Protect Fault on one channel. Let's find the fault. This amplifier had multiple faults, I split the video into three parts wile fixing each problem. Yes, the Amplifier does work at the end of the third…"
+    },
+    {
+      "id": "28804f0bcf0b",
+      "source": "learnrepair",
+      "title": "I Salvaged Components From 1970s, 1990s & 2000s PCBs. Which Was The Best?",
+      "url": "https://www.youtube.com/watch?v=aBfo4kOVnpY",
+      "date": "2026-09-30T11:27:03.000Z",
+      "excerpt": "I'm trying to clear some space in my workshop and salvaged a load of components from boards dating back from the 1970s to he 2000s. Which gave me the most interesting or most useful haul? Discount Codes 👉Click on the link enter the…"
+    },
+    {
+      "id": "0b2027fe02f6",
+      "source": "ifixit",
+      "title": "AirPods 5 Are the Least Unrepairable AirPods Yet",
+      "url": "https://www.ifixit.com/News/119587/airpods-5-are-the-least-unrepairable-airpods-yet",
+      "date": "2026-09-29T20:25:43.000Z",
+      "excerpt": "We’ve bled for AirPods. We’ve sliced them, melted them, cursed at them. For ten years, Apple’s wireless earbuds have earned a well-deserved 0 out of 10 for repairability. The AirPods…"
+    },
+    {
+      "id": "e9e789195163",
+      "source": "hop",
+      "title": "80 % des smartphones vendus en Europe ne respectent pas ce critère obligatoire",
+      "url": "https://www.halteobsolescence.org/80-des-smartphones-vendus-en-europe-ne-respectent-pas-ce-critere-obligatoire/",
+      "date": "2026-09-29T14:48:46.000Z",
+      "excerpt": "Début septembre, nos collègues européens de la campagne Right to Repair ont publié une enquête sur la mise en place de l'indice de réparabilité des téléphones et l'obligation d'afficher les informations de réparation. HOP vous la…"
+    },
+    {
+      "id": "d646e50d222c",
+      "source": "learnrepair",
+      "title": "Cheap DIY Operational Transconductance Amplifier OTA Tester : Now A Shared Project On PCBway",
+      "url": "https://www.youtube.com/watch?v=CrTq0XjvPdc",
+      "date": "2026-09-29T08:47:58.000Z",
+      "excerpt": "I have the prototype PCBs for the OTA Tester. Let's see if they work as expected... For All Your PCB needs: free $5 discount coupon Links: OTA Tester Shared Project OTA Tester prototype Schematic for this project (play along) Discount…"
+    },
+    {
+      "id": "1323b59ec2ef",
+      "source": "electrobidouilleur",
+      "title": "EB_#723 Découverte - Ma Balise Radio à 10 GHz, Ce qui m'a tenu occupé cet été!",
+      "url": "https://www.youtube.com/watch?v=8HB54UkC2ZY",
+      "date": "2026-09-26T20:25:21.000Z",
+      "excerpt": "Plusieurs me l'ont demandé durant le Live du mois d'août, je vous présente le projet qui m'a tenu occupé cet été: Ma balise radio amateur à 10 GHz. Peut-être y trouverez-vous quelques astuces de conception ou de construction. Série de…"
+    },
+    {
+      "id": "9f3d9a2e500c",
+      "source": "ifixit",
+      "title": "Steam Frame Teardown: We’re Fans. Except of the Fan",
+      "url": "https://www.ifixit.com/News/119488/steam-frame-teardown-were-fans-except-of-the-fan",
+      "date": "2026-09-23T16:01:11.000Z",
+      "excerpt": "Finally, finally, the Steam Frame is here! Five years ago, rumors of an internal Valve project codenamed Deckard rocked the VR enthusiast world. Since then, gamers have salivated over the…"
+    },
+    {
+      "id": "2a997835deb1",
+      "source": "hop",
+      "title": "L’Europe s’attaque au greenwashing et à l’obsolescence “précoce”",
+      "url": "https://www.halteobsolescence.org/directive-ue-greenwashing-obsolescence/",
+      "date": "2026-09-22T14:01:57.000Z",
+      "excerpt": "À partir du 27 septembre 2026, les États membres de l’Union européenne doivent appliquer la Directive 2024/825, visant à mieux informer les consommateur·ices, et à les protéger davantage contre les pratiques commerciales déloyales…"
+    },
+    {
+      "id": "dc8e1c062d50",
+      "source": "framboise314",
+      "title": "Test des lunettes EnChroma : gadget marketing ou réelle aide optique pour makers daltoniens ?",
+      "url": "https://www.framboise314.fr/test-lunettes-enchroma-daltonien/",
+      "date": "2026-09-22T09:32:04.000Z",
+      "excerpt": "Si vous pratiquez l’électronique ou que vous intervenez sur le matériel électronique/informatique tout en étant daltonien, vous connaissez ce grand classique : la résistance quart de watt indéchiffrable sous la loupe ou la LED d’état…"
+    },
+    {
+      "id": "2b477e45c473",
+      "source": "electrobidouilleur",
+      "title": "EB_#722 Électro-Bidouilleur \"En Direct\" - Rediffusion Lundi 21 Septembre 2026",
+      "url": "https://www.youtube.com/watch?v=g2exPic0sIM",
+      "date": "2026-09-21T19:11:10.000Z",
+      "excerpt": "Rediffusion de la Session \"En Direct\" de la chaîne Électro-Bidouilleur du Lundi 21 Septembre 2026. Merci à tous les participants! Les fichiers pertinents aux vidéos (code source, schémas, etc.) sont placés ici sous format .ZIP: La chaîne…"
+    },
+    {
+      "id": "94683c605272",
+      "source": "ifixit",
+      "title": "Inside the Tiny Unfixable Eye: iPhone 18 Pro and Pro Max Teardown",
+      "url": "https://www.ifixit.com/News/119329/inside-the-tiny-unfixable-eye-iphone-18-pro-and-pro-max-teardown",
+      "date": "2026-09-20T22:00:57.000Z",
+      "excerpt": "The iPhone 18 Pro’s little mechanical pupil is irresistible. A bunch of moving parts make for a good excuse to put our brand new camera under the microscope. We weren’t…"
+    },
+    {
+      "id": "b8cd6d4a850a",
+      "source": "hop",
+      "title": "Devenez ambassadeur·ice des Journées Nationales de la Réparation 2026",
+      "url": "https://www.halteobsolescence.org/ambassadeur-reparation-jnr/",
+      "date": "2026-09-18T10:39:25.000Z",
+      "excerpt": "Envie de vous impliquez dans les Journées nationales de la réparation et en devenir ambassadeur ou ambassadrice pour les faire connaître ? On vous explique comment. L’article Devenez ambassadeur·ice des Journées Nationales de la…"
+    },
+    {
+      "id": "7882aa4cb152",
+      "source": "ifixit",
+      "title": "Repair in the Wild: A Summer With Europe’s Repair Communities",
+      "url": "https://www.ifixit.com/News/119297/repair-in-the-wild-a-summer-with-europes-repair-communities",
+      "date": "2026-09-18T01:28:55.000Z",
+      "excerpt": "From a spring kickoff in Italy to a summer full of hacker camps and Maker Faires, iFixit tools and the Street Team showed up at events across Europe this year.…"
+    },
+    {
+      "id": "4003bee24e58",
+      "source": "hop",
+      "title": "Réparation : construire ensemble un modèle pour changer d’échelle",
+      "url": "https://www.halteobsolescence.org/colloque-jnr-4/",
+      "date": "2026-09-15T16:21:41.000Z",
+      "excerpt": "Pour inaugurer la 4e édition des Journées Nationales de la Réparation, les deux co-organisateurs vous invitent à un colloque à l’Académie du Climat le jeudi 15 octobre. On vous donne le programme. L’article Réparation : construire…"
+    },
+    {
+      "id": "01cbb9ba09f6",
+      "source": "ifixit",
+      "title": "One Year Into EU Ecodesign Rules, 80% of Smartphones Still Lack Required Repair Information",
+      "url": "https://www.ifixit.com/News/119217/one-year-into-eu-ecodesign-rules-80-of-smartphones-lack-repair-info",
+      "date": "2026-09-10T12:41:36.000Z",
+      "excerpt": "A year after the EU began requiring smartphones to carry a repairability score and publish repair information, we reviewed 2334 EPREL records. Only about 18% actually point to spare parts…"
+    },
+    {
+      "id": "0baa6303524d",
+      "source": "electrobidouilleur",
+      "title": "EB_#721 Mini-Plaquette - La WiFi et console texte avec la ESP-01S",
+      "url": "https://www.youtube.com/watch?v=GDYgp0KCChQ",
+      "date": "2026-09-01T14:44:41.000Z",
+      "excerpt": "J'avais besoin d'une liaison de console texte en WiFi pour superviser à distance ma balise 10 GHz. Je vous présente la mini-plaquette ESP-01S qui, chargée du firmware esp-link, fait tout ce que j'ai besoin. La plaquette ESP-01S est…"
+    },
+    {
+      "id": "d19a723b8b18",
+      "source": "framboise314",
+      "title": "Remplacement de la pile du minuteur Tefal Oleoclean : Un cas d’école d’obsolescence programmée ?",
+      "url": "https://www.framboise314.fr/remplacer-pile-minuteur-tefal-oleoclean/",
+      "date": "2026-08-26T14:04:09.000Z",
+      "excerpt": "Le minuteur de votre friteuse Tefal Oleoclean n’affiche plus rien ? Plus le moindre chiffre sur l’écran LCD et plus un seul bip à l’horizon ? C’est le symptôme classique de la pile interne arrivée en fin de vie. Face à ce boîtier muet…"
+    },
+    {
+      "id": "3a32f3438b30",
+      "source": "electrobidouilleur",
+      "title": "EB_#720 Électro-Bidouilleur \"En Direct\" - Rediffusion - Dimanche 23 Août 2026",
+      "url": "https://www.youtube.com/watch?v=GUHfAAh9p4g",
+      "date": "2026-08-23T19:10:29.000Z",
+      "excerpt": "Rediffusion de la Session \"En Direct\" de la chaîne Électro-Bidouilleur du Dimanche 23 Août 2026. Merci à tous les participants! Les fichiers pertinents aux vidéos (code source, schémas, etc.) sont placés ici sous format .ZIP: La chaîne…"
+    },
+    {
+      "id": "2f0e4c1b6629",
+      "source": "framboise314",
+      "title": "Tuto : Décodage APRS avec Raspberry Pi 4 et RTL-SDR",
+      "url": "https://www.framboise314.fr/decoder-aprs-raspberry-pi-direwolf/",
+      "date": "2026-08-19T14:46:13.000Z",
+      "excerpt": "Transformer un Raspberry Pi 4 en station de réception radioamateur performante exige de la rigueur. Après avoir validé le fonctionnement de la clé RTL-SDR v4, ce nouveau dossier technique s’attaque au décodage des trames APRS (Automatic…"
+    },
+    {
+      "id": "7622dbc13c3d",
+      "source": "framboise314",
+      "title": "RTL-SDR V4 sur Raspberry Pi 4 : Installer et configurer GQRX",
+      "url": "https://www.framboise314.fr/rtl-sdr-v4-scanner-radio-raspberry-pi-4/",
+      "date": "2026-08-18T14:08:20.000Z",
+      "excerpt": "Après avoir validé le bon fonctionnement de notre clé RTL-SDR V4 sous Windows 11 dans un précédent article, nous allons aujourd’hui passer à l’étape suivante : son installation sur Raspberry Pi. Pour ce tutoriel, j’ai choisi de travailler…"
+    },
+    {
+      "id": "1146da82b615",
+      "source": "framboise314",
+      "title": "RTL-SDR V4 sur Windows : Installer et configurer SDR# (Tuto Débutant)",
+      "url": "https://www.framboise314.fr/rtl-sdr-v4-windows-installation-sdrsharp/",
+      "date": "2026-08-16T12:42:47.000Z",
+      "excerpt": "Le monde des ondes radio vous intrigue ? Avec une simple clé USB comme le RTL-SDR V4, on peut transformer un ordinateur en véritable station de réception. Que ce soit pour écouter la bande FM, capter les avions en vol, ou même visualiser…"
+    },
+    {
+      "id": "08348b681f96",
+      "source": "electrobidouilleur",
+      "title": "EB_#719 Analyse - Testeur de Bracelet Antistatique ARC 200, Astucieux!",
+      "url": "https://www.youtube.com/watch?v=XIH7VT8jgwY",
+      "date": "2026-08-12T15:46:40.000Z",
+      "excerpt": "Vous avez été plusieurs à me demander de faire une vidéo d'analyse de ce petit testeur de bracelet antistatique de marque ARC Associates modèle 200. Comme vous le verrez, il est bien conçu, et un peu plus complexe que ce que l'on pourrait…"
+    }
+  ]
+}

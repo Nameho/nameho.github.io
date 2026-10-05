@@ -1,0 +1,5 @@
+# Fins de ligne homogènes (Windows / Linux) et fichiers binaires jamais modifiés
+* text=auto eol=lf
+*.woff2 binary
+*.png binary
+*.ico binary

@@ -1,0 +1,56 @@
+[
+  {
+    "id": "ifixit",
+    "nom": "iFixit",
+    "url": "https://www.ifixit.com/News/rss",
+    "site": "https://www.ifixit.com/News",
+    "theme": "Réparation",
+    "langue": "EN",
+    "max": 6
+  },
+  {
+    "id": "hop",
+    "nom": "HOP",
+    "url": "https://www.halteobsolescence.org/feed/",
+    "site": "https://www.halteobsolescence.org/",
+    "theme": "Droit à la réparation",
+    "langue": "FR",
+    "max": 6
+  },
+  {
+    "id": "learnrepair",
+    "nom": "Learn Electronics Repair",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCFX1Z9N6aPWuCN_KR8UZ2vg",
+    "site": "https://www.youtube.com/@LearnElectronicsRepair",
+    "theme": "Réparation (vidéo)",
+    "langue": "EN",
+    "max": 5
+  },
+  {
+    "id": "electrobidouilleur",
+    "nom": "Électro-Bidouilleur",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCvv3bLR4Ws1GVycHG-t3dJw",
+    "site": "https://www.youtube.com/@Electro-Bidouilleur",
+    "theme": "Électronique (vidéo)",
+    "langue": "FR",
+    "max": 5
+  },
+  {
+    "id": "hackaday",
+    "nom": "Hackaday",
+    "url": "https://hackaday.com/feed/",
+    "site": "https://hackaday.com/",
+    "theme": "Électronique",
+    "langue": "EN",
+    "max": 6
+  },
+  {
+    "id": "framboise314",
+    "nom": "Framboise314",
+    "url": "https://www.framboise314.fr/feed/",
+    "site": "https://www.framboise314.fr/",
+    "theme": "Électronique",
+    "langue": "FR",
+    "max": 5
+  }
+]

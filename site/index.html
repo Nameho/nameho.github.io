@@ -1,0 +1,994 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Politique de sécurité : seules les ressources de ce site peuvent être chargées. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Alexis Trudelle — Technicien réparateur en électronique</title>
+  <meta name="description" content="Portfolio d'Alexis Trudelle, technicien réparateur en électronique en reconversion : diagnostic de pannes, mesures au multimètre, montage et reconditionnement de PC. Charente-Maritime (17).">
+  <meta name="author" content="Alexis Trudelle">
+  <meta name="theme-color" content="#0a1d18">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Alexis Trudelle — Technicien réparateur en électronique">
+  <meta property="og:description" content="Un portfolio à dépanner : trouvez la panne au multimètre, ouvrez le boîtier, soudez pour obtenir mes coordonnées.">
+  <meta property="og:url" content="https://nameho.github.io/">
+  <link rel="canonical" href="https://nameho.github.io/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/jetbrains-mono-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/boot.js"></script>
+  <script type="module" src="assets/js/main.js"></script>
+</head>
+<body>
+  <a class="skip" href="#profil">Aller au contenu</a>
+
+  <!-- ============ Barre du haut (mobile / tablette) ============ -->
+  <header class="topbar">
+    <a class="topbar-logo" href="#accueil" aria-label="Retour en haut de page">
+      <span class="chip-logo" aria-hidden="true">AT</span>
+    </a>
+    <p class="topbar-current" aria-hidden="true">Accueil</p>
+    <button class="topbar-menu" type="button" aria-expanded="false" aria-controls="menu-panel">
+      <span class="sr-only">Menu</span><span class="burger" aria-hidden="true"><i></i><i></i><i></i></span>
+    </button>
+    <span class="topbar-progress" aria-hidden="true"></span>
+  </header>
+
+  <!-- ============ Navigation : une piste avec des points de test ============ -->
+  <nav class="trace-nav" id="menu-panel" aria-label="Sections du portfolio">
+    <span class="trace-rail" aria-hidden="true"><span class="trace-fill"></span><span class="trace-spark"></span></span>
+    <ol>
+      <li><a href="#accueil"><span class="tp" aria-hidden="true"></span><span class="tp-code" aria-hidden="true">TP0</span><span class="tp-label">Accueil</span></a></li>
+      <li><a href="#profil"><span class="tp" aria-hidden="true"></span><span class="tp-code" aria-hidden="true">TP1</span><span class="tp-label">Profil</span></a></li>
+      <li><a href="#competences"><span class="tp" aria-hidden="true"></span><span class="tp-code" aria-hidden="true">TP2</span><span class="tp-label">Compétences</span></a></li>
+      <li><a href="#diagnostic"><span class="tp" aria-hidden="true"></span><span class="tp-code" aria-hidden="true">TP3</span><span class="tp-label">Trouve la panne</span></a></li>
+      <li><a href="#parcours"><span class="tp" aria-hidden="true"></span><span class="tp-code" aria-hidden="true">TP4</span><span class="tp-label">Parcours</span></a></li>
+      <li><a href="#atelier"><span class="tp" aria-hidden="true"></span><span class="tp-code" aria-hidden="true">TP5</span><span class="tp-label">Atelier</span></a></li>
+      <li><a href="#veille"><span class="tp" aria-hidden="true"></span><span class="tp-code" aria-hidden="true">TP6</span><span class="tp-label">Veille</span></a></li>
+      <li><a href="#contact"><span class="tp" aria-hidden="true"></span><span class="tp-code" aria-hidden="true">TP7</span><span class="tp-label">Contact</span></a></li>
+    </ol>
+  </nav>
+
+  <main>
+    <!-- ============ TP0 · Accueil ============ -->
+    <section id="accueil" class="hero">
+      <canvas class="hero-canvas" aria-hidden="true"></canvas>
+      <div class="hero-veil" aria-hidden="true"></div>
+      <div class="wrap hero-inner">
+        <p class="hero-status"><span class="led led-green" aria-hidden="true"></span>Disponible · immersion (PMSMP), formation interne ou POEI</p>
+        <h1 class="hero-name">
+          <span class="sr-only">Alexis Trudelle</span>
+          <span class="hero-name-fx" aria-hidden="true">Alexis Trudelle</span>
+        </h1>
+        <p class="hero-role">
+          <span class="sr-only">Technicien réparateur en électronique</span>
+          <span class="hero-role-fx" aria-hidden="true">Technicien réparateur en électronique</span>
+        </p>
+        <p class="hero-meta">Saint-Georges-des-Coteaux (17) · Permis B, véhiculé</p>
+        <div class="hero-cta">
+          <a class="btn btn-copper" href="#diagnostic">Trouver la panne</a>
+          <a class="btn btn-ghost" href="#contact">Me contacter</a>
+        </div>
+        <p class="hero-hint" aria-hidden="true"><span class="kbd">Survol</span> pour sonder les pistes · <span class="kbd">Clic</span> pour envoyer une impulsion</p>
+      </div>
+      <a class="hero-scroll" href="#profil"><span class="sr-only">Descendre vers le profil</span><span class="scroll-res" aria-hidden="true"><i></i><i></i><i></i></span></a>
+    </section>
+
+    <!-- ============ TP1 · Profil ============ -->
+    <section id="profil" class="section">
+      <div class="wrap">
+        <header class="sec-head" data-reveal>
+          <span class="sec-tp">TP1</span>
+          <h2>Profil</h2>
+          <span class="sec-trace" aria-hidden="true"></span>
+        </header>
+
+        <article class="datasheet" data-reveal>
+          <header class="ds-head">
+            <p class="ds-ref">AT-2026</p>
+            <p class="ds-title">Technicien réparateur en électronique<br><span>Fiche technique · Rév. 10/2026</span></p>
+            <p class="ds-state"><span class="led led-green" aria-hidden="true"></span>En recherche active</p>
+          </header>
+
+          <div class="ds-grid">
+            <div class="ds-desc">
+              <h3>Description générale</h3>
+              <p>Titulaire de trois titres professionnels en informatique et d'un Bac Pro maintenance, je me reconvertis vers la réparation électronique. Une immersion en atelier de reconditionnement informatique a confirmé ce projet.</p>
+              <p>Minutieux, calme et rigoureux, je cherche un poste en atelier pour diagnostiquer et réparer tout type d'appareil électronique. Ouvert à une immersion (PMSMP), une formation interne ou une POEI.</p>
+
+              <h3>Caractéristiques</h3>
+              <table class="ds-table">
+                <thead>
+                  <tr><th scope="col">Paramètre</th><th scope="col">Valeur</th><th scope="col">Conditions</th></tr>
+                </thead>
+                <tbody>
+                  <tr><th scope="row">Formation</th><td>3 titres pro + Bac Pro</td><td>Informatique &amp; maintenance</td></tr>
+                  <tr><th scope="row">Méthode</th><td>Mesurer → isoler → réparer</td><td>Multimètre en main</td></tr>
+                  <tr><th scope="row">Mobilité</th><td>Permis B, véhiculé</td><td>Charente-Maritime (17)</td></tr>
+                  <tr><th scope="row">Langues</th><td>Français · Anglais</td><td>Langue maternelle · niveau B1</td></tr>
+                  <tr><th scope="row">Centres d'intérêt</th><td>Électronique, dépannage</td><td>Assemblage de PC, bricolage de précision</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <figure class="ds-pinout">
+              <figcaption>Brochage <span>(vue de dessus)</span></figcaption>
+              <div class="dip8">
+                <div class="dip8-col dip8-left">
+                  <button class="pin" type="button" data-desc="Minutie : chaque vis, chaque nappe, chaque soudure à sa place."><span class="pin-num">1</span><span class="pin-name">MIN</span></button>
+                  <button class="pin" type="button" data-desc="Calme : une panne se règle à tête reposée, pas dans la précipitation."><span class="pin-num">2</span><span class="pin-name">CLM</span></button>
+                  <button class="pin" type="button" data-desc="Rigueur : procédures et consignes de sécurité respectées à la lettre."><span class="pin-num">3</span><span class="pin-name">RIG</span></button>
+                  <button class="pin" type="button" data-desc="GND : les pieds sur terre. Je mesure avant de conclure."><span class="pin-num">4</span><span class="pin-name">GND</span></button>
+                </div>
+                <div class="dip8-body" aria-hidden="true">
+                  <span class="dip8-notch"></span>
+                  <span class="dip8-text">AT-2026<br><small>REPAIR</small></span>
+                  <span class="dip8-dot"></span>
+                </div>
+                <div class="dip8-col dip8-right">
+                  <button class="pin" type="button" data-desc="VCC : la motivation qui alimente toute la reconversion."><span class="pin-num">8</span><span class="pin-name">VCC</span></button>
+                  <button class="pin" type="button" data-desc="CLK : ponctualité. L'horloge interne ne dérive pas."><span class="pin-num">7</span><span class="pin-name">CLK</span></button>
+                  <button class="pin" type="button" data-desc="Travail en équipe : de jour comme de nuit, j'ai appris à compter sur les autres et à être fiable."><span class="pin-num">6</span><span class="pin-name">EQP</span></button>
+                  <button class="pin" type="button" data-desc="Autonomie : je sais avancer seul sur un diagnostic, et demander quand il le faut."><span class="pin-num">5</span><span class="pin-name">AUT</span></button>
+                </div>
+              </div>
+              <p class="pin-caption" aria-live="polite">Survolez ou touchez une broche.</p>
+            </figure>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ TP2 · Compétences ============ -->
+    <section id="competences" class="section">
+      <div class="wrap">
+        <header class="sec-head" data-reveal>
+          <span class="sec-tp">TP2</span>
+          <h2>Compétences</h2>
+          <span class="sec-trace" aria-hidden="true"></span>
+        </header>
+        <p class="sec-intro" data-reveal>Mes compétences sont rangées dans ce boîtier. Dévissez-le pour inspecter la carte&nbsp;: chaque composant correspond à une compétence.</p>
+
+        <div class="skills" data-reveal>
+          <div class="skills-stage">
+            <div class="case" data-state="closed">
+              <div class="case-board">
+                <svg class="board-svg" viewBox="0 0 900 520" role="img" aria-labelledby="board-title">
+                  <title id="board-title">Carte électronique : chaque composant représente une compétence</title>
+                  <defs>
+                    <linearGradient id="g-mask" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0" stop-color="#1c6956"/><stop offset="1" stop-color="#0f4337"/>
+                    </linearGradient>
+                    <linearGradient id="g-chip" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0" stop-color="#2a2e2e"/><stop offset="1" stop-color="#121414"/>
+                    </linearGradient>
+                    <linearGradient id="g-can" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0" stop-color="#f3f4f0"/><stop offset=".45" stop-color="#b7bab5"/><stop offset="1" stop-color="#6d716e"/>
+                    </linearGradient>
+                    <radialGradient id="g-cap" cx=".4" cy=".35" r=".75">
+                      <stop offset="0" stop-color="#3d6fd1"/><stop offset="1" stop-color="#173777"/>
+                    </radialGradient>
+                  </defs>
+
+                  <rect x="6" y="6" width="888" height="508" rx="18" fill="url(#g-mask)" stroke="#0b2e25" stroke-width="2"/>
+
+                  <g class="b-holes" fill="#081411" stroke="#d8b25a" stroke-width="6">
+                    <circle cx="40" cy="40" r="13"/><circle cx="860" cy="40" r="13"/>
+                    <circle cx="40" cy="480" r="13"/><circle cx="860" cy="480" r="13"/>
+                  </g>
+
+                  <g class="b-traces" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path class="trc trc-power" pathLength="1" d="M64 90 H80"/>
+                    <path class="trc trc-power" pathLength="1" d="M220 90 H262 L300 128 V204 H326"/>
+                    <path class="trc" pathLength="1" d="M180 190 H300"/>
+                    <path class="trc" pathLength="1" d="M172 290 H326"/>
+                    <path class="trc" pathLength="1" d="M248 228 H326"/>
+                    <path class="trc" pathLength="1" d="M248 240 H326"/>
+                    <path class="trc" pathLength="1" d="M248 252 H326"/>
+                    <path class="trc" pathLength="1" d="M504 192 H528 L548 172 H600"/>
+                    <path class="trc" pathLength="1" d="M504 204 H528 L548 184 H600"/>
+                    <path class="trc" pathLength="1" d="M504 216 H528 L548 196 H600"/>
+                    <path class="trc" pathLength="1" d="M504 228 H528 L548 208 H600"/>
+                    <path class="trc" pathLength="1" d="M504 240 H528 L548 220 H600"/>
+                    <path class="trc" pathLength="1" d="M504 252 H528 L548 232 H600"/>
+                    <path class="trc" pathLength="1" d="M504 276 H520 L540 296 H650"/>
+                    <path class="trc" pathLength="1" d="M504 288 H520 L540 308 H650"/>
+                    <path class="trc" pathLength="1" d="M504 300 H520 L540 320 H650"/>
+                    <path class="trc" pathLength="1" d="M400 166 V104"/>
+                    <path class="trc" pathLength="1" d="M436 166 V104"/>
+                    <path class="trc" pathLength="1" d="M472 166 V104"/>
+                    <path class="trc" pathLength="1" d="M376 344 V395"/>
+                    <path class="trc" pathLength="1" d="M424 344 V395"/>
+                    <path class="trc" pathLength="1" d="M484 344 V364 L525 405 H700"/>
+                    <path class="trc" pathLength="1" d="M472 344 V366 L521 415 H700"/>
+                    <path class="trc" pathLength="1" d="M460 344 V368 L517 425 H700"/>
+                  </g>
+                  <g class="b-flow" fill="none" stroke-linecap="round">
+                    <path class="trc-flow" pathLength="1" d="M64 90 H80 M220 90 H262 L300 128 V204 H326"/>
+                    <path class="trc-flow" pathLength="1" d="M504 204 H528 L548 184 H600"/>
+                    <path class="trc-flow" pathLength="1" d="M504 288 H520 L540 308 H650"/>
+                    <path class="trc-flow" pathLength="1" d="M472 344 V366 L521 415 H700"/>
+                  </g>
+
+                  <!-- Passifs décoratifs -->
+                  <g class="b-passives">
+                    <rect x="14" y="72" width="50" height="36" rx="4" fill="#1a1d1d"/>
+                    <circle cx="36" cy="90" r="9" fill="#060808" stroke="#8d918e" stroke-width="2"/>
+                    <text class="silk silk-sm" x="16" y="126">J0 · 12V</text>
+                    <circle cx="150" cy="190" r="30" fill="url(#g-cap)" stroke="#0d1f45" stroke-width="2"/>
+                    <path d="M150 160 A30 30 0 0 1 150 220" fill="none" stroke="#cfd8ea" stroke-width="7" opacity=".55"/>
+                    <path d="M138 184 L150 196 M150 184 L138 196" stroke="#0d1f45" stroke-width="2"/>
+                    <text class="silk silk-sm" x="118" y="238">C1</text>
+                    <circle cx="150" cy="290" r="22" fill="url(#g-cap)" stroke="#0d1f45" stroke-width="2"/>
+                    <path d="M150 268 A22 22 0 0 1 150 312" fill="none" stroke="#cfd8ea" stroke-width="5" opacity=".55"/>
+                    <text class="silk silk-sm" x="124" y="330">C2</text>
+                    <g fill="#d8b25a"><rect x="218" y="223" width="6" height="10"/><rect x="242" y="223" width="6" height="10"/><rect x="218" y="235" width="6" height="10"/><rect x="242" y="235" width="6" height="10"/><rect x="218" y="247" width="6" height="10"/><rect x="242" y="247" width="6" height="10"/></g>
+                    <g fill="#222"><rect x="224" y="224" width="18" height="8" rx="1"/><rect x="224" y="236" width="18" height="8" rx="1"/><rect x="224" y="248" width="18" height="8" rx="1"/></g>
+                    <text class="silk silk-sm" x="214" y="214">R1–R3</text>
+                    <g fill="#d8b25a"><rect x="368" y="434" width="6" height="10"/><rect x="384" y="434" width="6" height="10"/><rect x="416" y="434" width="6" height="10"/><rect x="432" y="434" width="6" height="10"/></g>
+                    <g fill="#9a7a4c"><rect x="374" y="435" width="10" height="8" rx="1"/><rect x="422" y="435" width="10" height="8" rx="1"/></g>
+                    <text class="silk silk-sm" x="370" y="462">C7  C8</text>
+                    <g class="b-leds">
+                      <rect class="bled bled-1" x="392" y="92" width="16" height="10" rx="2"/>
+                      <rect class="bled bled-2" x="428" y="92" width="16" height="10" rx="2"/>
+                      <rect class="bled bled-3" x="464" y="92" width="16" height="10" rx="2"/>
+                      <text class="silk silk-sm" x="388" y="82">PWR</text>
+                      <text class="silk silk-sm" x="422" y="82">DIAG</text>
+                      <text class="silk silk-sm" x="466" y="82">OK</text>
+                    </g>
+                    <text class="silk" x="60" y="478">AT-2026 · CARTE COMPÉTENCES · RÉV. A</text>
+                    <text class="silk silk-sm" x="60" y="496">Assemblée à la main en Charente-Maritime</text>
+                  </g>
+
+                  <!-- Composants = compétences -->
+                  <g class="comp" data-skill="qualite" tabindex="-1" aria-hidden="true">
+                    <rect class="comp-hit" x="72" y="56" width="160" height="70" rx="8"/>
+                    <rect x="80" y="76" width="22" height="28" rx="3" fill="#c9ccc7"/>
+                    <rect x="198" y="76" width="22" height="28" rx="3" fill="#c9ccc7"/>
+                    <rect x="102" y="80" width="96" height="20" rx="9" fill="#d9f1ec" fill-opacity=".28" stroke="#e9fffa" stroke-opacity=".6"/>
+                    <path d="M102 90 C130 82, 170 98, 198 90" fill="none" stroke="#f3e2c0" stroke-width="2"/>
+                    <text class="silk" x="80" y="68">F1 · FUSIBLE</text>
+                  </g>
+
+                  <g class="comp" data-skill="diagnostic" tabindex="-1" aria-hidden="true">
+                    <rect class="comp-hit" x="316" y="156" width="198" height="198" rx="10"/>
+                    <g class="qfp-pins" fill="#cfd2cf">
+                      <path d="M352 166 h5 v14 h-5z M364 166 h5 v14 h-5z M376 166 h5 v14 h-5z M388 166 h5 v14 h-5z M400 166 h5 v14 h-5z M412 166 h5 v14 h-5z M424 166 h5 v14 h-5z M436 166 h5 v14 h-5z M448 166 h5 v14 h-5z M460 166 h5 v14 h-5z M472 166 h5 v14 h-5z M484 166 h5 v14 h-5z" transform="translate(-2.5 0)"/>
+                      <path d="M352 330 h5 v14 h-5z M364 330 h5 v14 h-5z M376 330 h5 v14 h-5z M388 330 h5 v14 h-5z M400 330 h5 v14 h-5z M412 330 h5 v14 h-5z M424 330 h5 v14 h-5z M436 330 h5 v14 h-5z M448 330 h5 v14 h-5z M460 330 h5 v14 h-5z M472 330 h5 v14 h-5z M484 330 h5 v14 h-5z" transform="translate(-2.5 0)"/>
+                      <path d="M326 192 v5 h14 v-5z M326 204 v5 h14 v-5z M326 216 v5 h14 v-5z M326 228 v5 h14 v-5z M326 240 v5 h14 v-5z M326 252 v5 h14 v-5z M326 264 v5 h14 v-5z M326 276 v5 h14 v-5z M326 288 v5 h14 v-5z M326 300 v5 h14 v-5z M326 312 v5 h14 v-5z M326 324 v5 h14 v-5z" transform="translate(0 -2.5)"/>
+                      <path d="M490 192 v5 h14 v-5z M490 204 v5 h14 v-5z M490 216 v5 h14 v-5z M490 228 v5 h14 v-5z M490 240 v5 h14 v-5z M490 252 v5 h14 v-5z M490 264 v5 h14 v-5z M490 276 v5 h14 v-5z M490 288 v5 h14 v-5z M490 300 v5 h14 v-5z M490 312 v5 h14 v-5z M490 324 v5 h14 v-5z" transform="translate(0 -2.5)"/>
+                    </g>
+                    <rect class="u1-body" x="340" y="180" width="150" height="150" rx="6" fill="url(#g-chip)"/>
+                    <circle cx="356" cy="196" r="5" fill="#0b0c0c" stroke="#3a3f3f"/>
+                    <text class="chip-txt" x="415" y="248" text-anchor="middle">DIAG-01</text>
+                    <text class="chip-txt chip-txt-sm" x="415" y="268" text-anchor="middle">MESURER · ISOLER</text>
+                    <text class="chip-txt chip-txt-sm" x="415" y="284" text-anchor="middle">RÉPARER</text>
+                    <text class="silk" x="316" y="150">U1</text>
+                  </g>
+
+                  <g class="comp" data-skill="materiel" tabindex="-1" aria-hidden="true">
+                    <rect class="comp-hit" x="588" y="40" width="102" height="322" rx="8"/>
+                    <rect x="600" y="50" width="26" height="300" rx="3" fill="#151818"/>
+                    <rect x="650" y="50" width="26" height="300" rx="3" fill="#151818"/>
+                    <rect x="604" y="62" width="18" height="276" rx="2" fill="#2f7d4f"/>
+                    <rect x="654" y="62" width="18" height="276" rx="2" fill="#2f7d4f"/>
+                    <g fill="#1b1d1d">
+                      <rect x="606" y="72" width="14" height="26" rx="1"/><rect x="606" y="106" width="14" height="26" rx="1"/><rect x="606" y="140" width="14" height="26" rx="1"/><rect x="606" y="174" width="14" height="26" rx="1"/><rect x="606" y="234" width="14" height="26" rx="1"/><rect x="606" y="268" width="14" height="26" rx="1"/><rect x="606" y="302" width="14" height="26" rx="1"/>
+                      <rect x="656" y="72" width="14" height="26" rx="1"/><rect x="656" y="106" width="14" height="26" rx="1"/><rect x="656" y="140" width="14" height="26" rx="1"/><rect x="656" y="174" width="14" height="26" rx="1"/><rect x="656" y="234" width="14" height="26" rx="1"/><rect x="656" y="268" width="14" height="26" rx="1"/><rect x="656" y="302" width="14" height="26" rx="1"/>
+                    </g>
+                    <g fill="#eceee9"><rect x="598" y="44" width="30" height="8" rx="2"/><rect x="598" y="348" width="30" height="8" rx="2"/><rect x="648" y="44" width="30" height="8" rx="2"/><rect x="648" y="348" width="30" height="8" rx="2"/></g>
+                    <text class="silk" x="700" y="200">J2 · DIMM</text>
+                  </g>
+
+                  <g class="comp" data-skill="outillage" tabindex="-1" aria-hidden="true">
+                    <rect class="comp-hit" x="690" y="372" width="150" height="76" rx="8"/>
+                    <rect x="700" y="395" width="128" height="40" rx="3" fill="#151818"/>
+                    <g fill="#e2c26a">
+                      <rect x="709" y="401" width="8" height="8"/><rect x="729" y="401" width="8" height="8"/><rect x="749" y="401" width="8" height="8"/><rect x="769" y="401" width="8" height="8"/><rect x="789" y="401" width="8" height="8"/><rect x="809" y="401" width="8" height="8"/>
+                      <rect x="709" y="421" width="8" height="8"/><rect x="729" y="421" width="8" height="8"/><rect x="749" y="421" width="8" height="8"/><rect x="769" y="421" width="8" height="8"/><rect x="789" y="421" width="8" height="8"/><rect x="809" y="421" width="8" height="8"/>
+                    </g>
+                    <text class="silk" x="700" y="388">J1 · OUTILS</text>
+                  </g>
+
+                  <g class="comp" data-skill="savoir" tabindex="-1" aria-hidden="true">
+                    <rect class="comp-hit" x="350" y="380" width="100" height="56" rx="8"/>
+                    <rect x="360" y="395" width="80" height="28" rx="14" fill="url(#g-can)" stroke="#5c605d"/>
+                    <rect x="368" y="400" width="64" height="18" rx="9" fill="none" stroke="#ffffff" stroke-opacity=".35"/>
+                    <text class="can-txt" x="400" y="413" text-anchor="middle">32.768</text>
+                    <text class="silk" x="300" y="414">X1</text>
+                  </g>
+                </svg>
+              </div>
+
+              <div class="case-cover">
+                <span class="cover-vents" aria-hidden="true"></span>
+                <div class="cover-label" aria-hidden="true">
+                  <p class="cl-brand">AT-2026</p>
+                  <p class="cl-model">Technicien réparateur · Modèle 17</p>
+                  <p class="cl-barcode"></p>
+                  <p class="cl-sn">S/N 17-2026-FR · Fabriqué en Charente-Maritime</p>
+                </div>
+                <p class="cover-warn" aria-hidden="true">⚠ Aucune pièce réparable par l'utilisateur à l'intérieur.<br>Confier l'ouverture à un technicien… ou à vous.</p>
+                <p class="cover-hint">↺ Tournez autour d'une vis (sens inverse des aiguilles d'une montre) ou cliquez dessus.</p>
+                <button class="screw" type="button" data-screw="0" aria-label="Dévisser la vis en haut à gauche"><span class="screw-head"></span></button>
+                <button class="screw" type="button" data-screw="1" aria-label="Dévisser la vis en haut à droite"><span class="screw-head"></span></button>
+                <button class="screw" type="button" data-screw="2" aria-label="Dévisser la vis en bas à gauche"><span class="screw-head"></span></button>
+                <button class="screw" type="button" data-screw="3" aria-label="Dévisser la vis en bas à droite"><span class="screw-head"></span></button>
+              </div>
+            </div>
+
+            <div class="case-tools">
+              <div class="tray" aria-hidden="true">
+                <span class="tray-label">Bac magnétique</span>
+                <span class="tray-slot"></span><span class="tray-slot"></span><span class="tray-slot"></span><span class="tray-slot"></span>
+              </div>
+              <button class="btn btn-ghost btn-sm" type="button" data-case-open>Ouvrir sans tournevis</button>
+              <button class="btn btn-ghost btn-sm" type="button" data-case-close hidden>Refermer le boîtier</button>
+            </div>
+          </div>
+
+          <div class="inspector">
+            <p class="insp-head"><span class="insp-lens" aria-hidden="true"></span>Inspection des composants</p>
+            <div class="insp-tabs" role="tablist" aria-label="Composants de la carte">
+              <button type="button" role="tab" id="tab-diagnostic" aria-controls="skill-diagnostic" data-skill="diagnostic">U1</button>
+              <button type="button" role="tab" id="tab-materiel" aria-controls="skill-materiel" data-skill="materiel">J2</button>
+              <button type="button" role="tab" id="tab-outillage" aria-controls="skill-outillage" data-skill="outillage">J1</button>
+              <button type="button" role="tab" id="tab-qualite" aria-controls="skill-qualite" data-skill="qualite">F1</button>
+              <button type="button" role="tab" id="tab-savoir" aria-controls="skill-savoir" data-skill="savoir">X1</button>
+            </div>
+
+            <article class="skill" id="skill-diagnostic" role="tabpanel" aria-labelledby="tab-diagnostic">
+              <p class="skill-ref">U1 · Processeur</p>
+              <h3>Diagnostic</h3>
+              <p class="skill-why">Le cerveau de la carte : mesurer, comparer, isoler la panne.</p>
+              <ul>
+                <li>Recherche de panne méthodique</li>
+                <li>Mesures au multimètre</li>
+                <li>Dépannage logiciel</li>
+              </ul>
+            </article>
+            <article class="skill" id="skill-materiel" role="tabpanel" aria-labelledby="tab-materiel">
+              <p class="skill-ref">J2 · Barrettes mémoire</p>
+              <h3>Matériel informatique</h3>
+              <p class="skill-why">Une barrette, ça se démonte et se remonte. Le reste du PC aussi.</p>
+              <ul>
+                <li>Démontage et montage de PC</li>
+                <li>Remplacement de composants</li>
+              </ul>
+            </article>
+            <article class="skill" id="skill-outillage" role="tabpanel" aria-labelledby="tab-outillage">
+              <p class="skill-ref">J1 · Connecteur de test</p>
+              <h3>Outillage</h3>
+              <p class="skill-why">Le connecteur où viennent se brancher les outils de l'atelier.</p>
+              <ul>
+                <li>Multimètre (continuité, tension)</li>
+                <li>Fer à souder (bases)</li>
+                <li>Tournevis de précision</li>
+              </ul>
+            </article>
+            <article class="skill" id="skill-qualite" role="tabpanel" aria-labelledby="tab-qualite">
+              <p class="skill-ref">F1 · Fusible</p>
+              <h3>Qualité et sécurité</h3>
+              <p class="skill-why">Il protège tout le circuit : la sécurité passe avant tout.</p>
+              <ul>
+                <li>Gestes précis</li>
+                <li>Contrôle visuel</li>
+                <li>Respect des procédures et des consignes</li>
+              </ul>
+            </article>
+            <article class="skill" id="skill-savoir" role="tabpanel" aria-labelledby="tab-savoir">
+              <p class="skill-ref">X1 · Quartz</p>
+              <h3>Savoir-être</h3>
+              <p class="skill-why">Le quartz donne le rythme : régulier, fiable, ponctuel.</p>
+              <ul>
+                <li>Patience et concentration</li>
+                <li>Autonomie</li>
+                <li>Travail en équipe</li>
+                <li>Ponctualité</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TP3 · Trouve la panne ============ -->
+    <section id="diagnostic" class="section section-bench">
+      <div class="wrap">
+        <header class="sec-head" data-reveal>
+          <span class="sec-tp">TP3</span>
+          <h2>Trouve la panne</h2>
+          <span class="sec-trace" aria-hidden="true"></span>
+        </header>
+        <p class="sec-intro" data-reveal>Ma méthode de dépannage, en version jeu. La LED <strong>D1</strong> devrait s'allumer… mais elle reste éteinte. Branche les pointes du multimètre, mesure, trouve le composant défectueux et remplace-le. C'est comme ça que j'ai trouvé la pompe HS d'un spa&nbsp;: mesurer, isoler, remplacer.</p>
+
+        <div class="bench" data-reveal>
+          <div class="bench-board">
+            <svg class="diag-svg" viewBox="0 0 620 390" role="group" aria-label="Circuit à dépanner : pile, interrupteur, fusible, résistance, LED et strap">
+              <defs>
+                <radialGradient id="g-led" cx=".5" cy=".5" r=".5">
+                  <stop offset="0" stop-color="#ff5a3c" stop-opacity=".95"/><stop offset=".4" stop-color="#ff3a22" stop-opacity=".45"/><stop offset="1" stop-color="#ff2a10" stop-opacity="0"/>
+                </radialGradient>
+                <linearGradient id="g-bat" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0" stop-color="#1b1d1e"/><stop offset=".5" stop-color="#34383a"/><stop offset="1" stop-color="#151718"/>
+                </linearGradient>
+              </defs>
+              <rect x="4" y="4" width="612" height="382" rx="16" fill="#124437" stroke="#0b2e25" stroke-width="2"/>
+
+              <g class="d-traces" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M75 122 V80 H150"/><path d="M112 80 V54"/>
+                <path d="M210 80 H270"/><path d="M240 80 V54"/>
+                <path d="M350 80 H400"/><path d="M375 80 V54"/>
+                <path d="M480 80 H545 V170"/><path d="M545 120 H570"/>
+                <path d="M545 230 V320 H360"/><path d="M455 320 V346"/>
+                <path d="M300 320 H75 V278"/><path d="M190 320 V346"/>
+              </g>
+              <path class="d-flow" d="M75 122 V80 H150 M210 80 H270 M350 80 H400 M480 80 H545 V170 M545 230 V320 H360 M300 320 H75 V278" fill="none"/>
+
+              <!-- BAT1 -->
+              <g class="part" data-part="BAT1" tabindex="0" role="button" aria-label="BAT1, pile 9 volts">
+                <rect class="part-hit" x="30" y="108" width="90" height="184" rx="10"/>
+                <rect x="40" y="134" width="70" height="132" rx="8" fill="url(#g-bat)"/>
+                <rect x="40" y="170" width="70" height="56" fill="#e0821f"/>
+                <text class="bat-txt" x="75" y="206" text-anchor="middle">9V</text>
+                <rect x="62" y="122" width="26" height="14" rx="3" fill="#b9bdb9"/>
+                <rect x="62" y="264" width="26" height="14" rx="3" fill="#8d918e"/>
+                <text class="silk silk-plus" x="96" y="152">+</text>
+                <text class="silk silk-plus" x="96" y="258">−</text>
+                <text class="silk" x="28" y="306">BAT1</text>
+              </g>
+
+              <!-- SW1 : interrupteur d'alimentation -->
+              <g class="part part-switch is-on" data-part="SW1" tabindex="0" role="switch" aria-checked="true" aria-label="SW1, interrupteur d'alimentation">
+                <rect class="part-hit" x="146" y="58" width="68" height="46" rx="8"/>
+                <rect x="156" y="68" width="48" height="24" rx="5" fill="#1d2021" stroke="#4b5150"/>
+                <rect class="sw-knob" x="160" y="71" width="18" height="18" rx="3" fill="#e6e7e2"/>
+                <text class="silk" x="160" y="118">SW1</text>
+                <text class="silk silk-sm sw-state" x="188" y="118">ON</text>
+              </g>
+
+              <!-- F1 -->
+              <g class="part" data-part="F1" tabindex="0" role="button" aria-label="F1, fusible 500 milliampères">
+                <rect class="part-hit" x="264" y="60" width="92" height="40" rx="8"/>
+                <rect x="270" y="70" width="16" height="20" rx="2" fill="#c3c6c2"/>
+                <rect x="334" y="70" width="16" height="20" rx="2" fill="#c3c6c2"/>
+                <rect x="286" y="72" width="48" height="16" rx="7" fill="#d9f1ec" fill-opacity=".25" stroke="#e9fffa" stroke-opacity=".55"/>
+                <path d="M286 80 C298 74, 322 86, 334 80" fill="none" stroke="#efdcb5" stroke-width="1.6"/>
+                <text class="silk" x="276" y="118">F1 · 500 mA</text>
+              </g>
+
+              <!-- R1 : jaune violet marron or = 470 Ω -->
+              <g class="part" data-part="R1" tabindex="0" role="button" aria-label="R1, résistance 470 ohms">
+                <rect class="part-hit" x="394" y="60" width="92" height="40" rx="8"/>
+                <path d="M400 80 H414 M466 80 H480" stroke="#c3c6c2" stroke-width="3"/>
+                <rect x="414" y="70" width="52" height="20" rx="9" fill="#d8c59c"/>
+                <rect x="422" y="70" width="5" height="20" fill="#f2c400"/>
+                <rect x="432" y="70" width="5" height="20" fill="#8b3fd1"/>
+                <rect x="442" y="70" width="5" height="20" fill="#7a4a1f"/>
+                <rect x="455" y="70" width="5" height="20" fill="#c9a23a"/>
+                <text class="silk" x="408" y="118">R1 · 470 Ω</text>
+              </g>
+
+              <!-- D1 : LED rouge -->
+              <g class="part part-led" data-part="D1" tabindex="0" role="button" aria-label="D1, LED rouge">
+                <rect class="part-hit" x="515" y="164" width="60" height="72" rx="8"/>
+                <circle class="led-glow" cx="545" cy="200" r="46" fill="url(#g-led)"/>
+                <path d="M545 170 V184 M545 216 V230" stroke="#c3c6c2" stroke-width="3"/>
+                <circle class="led-body" cx="545" cy="200" r="16"/>
+                <path d="M531 210 H559" stroke="#5a1a14" stroke-width="2" opacity=".6"/>
+                <text class="silk" x="490" y="196">D1</text>
+                <text class="silk silk-sm" x="555" y="166">+</text>
+              </g>
+
+              <!-- W1 : strap (fil soudé) -->
+              <g class="part" data-part="W1" tabindex="0" role="button" aria-label="W1, strap soudé">
+                <rect class="part-hit" x="290" y="282" width="80" height="54" rx="8"/>
+                <path d="M300 320 C310 294, 350 294, 360 320" fill="none" stroke="#cfd3cf" stroke-width="4"/>
+                <circle cx="300" cy="320" r="8" fill="#d9dcd7"/>
+                <circle cx="360" cy="320" r="8" fill="#d9dcd7"/>
+                <text class="silk" x="318" y="286">W1</text>
+              </g>
+
+              <!-- Pastilles et points de test (là où se posent les pointes) -->
+              <g class="pads">
+                <circle class="pad" data-snap="bat+" data-node="A" cx="75" cy="124" r="6"/>
+                <circle class="pad" data-snap="sw1-1" data-node="A" cx="150" cy="80" r="6"/>
+                <circle class="pad" data-snap="sw1-2" data-node="B" cx="210" cy="80" r="6"/>
+                <circle class="pad" data-snap="f1-1" data-node="B" cx="270" cy="80" r="6"/>
+                <circle class="pad" data-snap="f1-2" data-node="C" cx="350" cy="80" r="6"/>
+                <circle class="pad" data-snap="r1-1" data-node="C" cx="400" cy="80" r="6"/>
+                <circle class="pad" data-snap="r1-2" data-node="D" cx="480" cy="80" r="6"/>
+                <circle class="pad" data-snap="d1-a" data-node="D" cx="545" cy="170" r="6"/>
+                <circle class="pad" data-snap="d1-k" data-node="E" cx="545" cy="230" r="6"/>
+                <circle class="pad" data-snap="w1-2" data-node="E" cx="360" cy="320" r="6"/>
+                <circle class="pad" data-snap="w1-1" data-node="F" cx="300" cy="320" r="6"/>
+                <circle class="pad" data-snap="bat-" data-node="F" cx="75" cy="276" r="6"/>
+              </g>
+              <g class="tps">
+                <circle class="tp-pad" data-snap="tp1" data-node="A" cx="112" cy="46" r="9"/>
+                <circle class="tp-pad" data-snap="tp2" data-node="B" cx="240" cy="46" r="9"/>
+                <circle class="tp-pad" data-snap="tp3" data-node="C" cx="375" cy="46" r="9"/>
+                <circle class="tp-pad" data-snap="tp4" data-node="D" cx="578" cy="120" r="9"/>
+                <circle class="tp-pad" data-snap="tp5" data-node="E" cx="455" cy="354" r="9"/>
+                <circle class="tp-pad" data-snap="tp6" data-node="F" cx="190" cy="354" r="9"/>
+                <text class="silk silk-sm" x="126" y="40">TP1</text>
+                <text class="silk silk-sm" x="254" y="40">TP2</text>
+                <text class="silk silk-sm" x="389" y="40">TP3</text>
+                <text class="silk silk-sm" x="566" y="146">TP4</text>
+                <text class="silk silk-sm" x="469" y="372">TP5</text>
+                <text class="silk silk-sm" x="204" y="372">TP6</text>
+              </g>
+            </svg>
+
+            <div class="replace-pop" role="dialog" aria-modal="false" aria-labelledby="replace-title" hidden>
+              <p class="rp-title" id="replace-title"></p>
+              <p class="rp-text"></p>
+              <div class="rp-actions">
+                <button class="btn btn-copper btn-sm" type="button" data-rp="ok">Remplacer</button>
+                <button class="btn btn-ghost btn-sm" type="button" data-rp="cancel">Annuler</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="meter">
+            <div class="meter-body">
+              <div class="meter-top">
+                <span class="meter-brand">AT-17</span>
+                <span class="meter-model">Multimètre · True RMS</span>
+                <button class="meter-light" type="button" aria-pressed="false" aria-label="Rétroéclairage de l'écran">✺</button>
+              </div>
+              <div class="lcd">
+                <svg class="lcd-svg" viewBox="0 0 230 88" aria-hidden="true"></svg>
+              </div>
+              <div class="dial">
+                <div class="dial-knob" aria-hidden="true"><span class="dial-grip"></span><span class="dial-pointer"></span></div>
+                <fieldset class="dial-modes">
+                  <legend class="sr-only">Calibre du multimètre</legend>
+                  <label class="mode m-off"><input type="radio" name="meter-mode" value="off"><span>OFF</span></label>
+                  <label class="mode m-v"><input type="radio" name="meter-mode" value="v" checked><span>V<small>DC</small></span></label>
+                  <label class="mode m-ohm"><input type="radio" name="meter-mode" value="ohm"><span>Ω</span></label>
+                  <label class="mode m-cont"><input type="radio" name="meter-mode" value="cont"><span aria-hidden="true">•)))</span><span class="sr-only">Continuité</span></label>
+                  <label class="mode m-diode"><input type="radio" name="meter-mode" value="diode"><span aria-hidden="true">▶|</span><span class="sr-only">Test diode</span></label>
+                </fieldset>
+              </div>
+              <div class="jacks" aria-hidden="true">
+                <span class="jack jack-com"><i></i>COM</span>
+                <span class="jack jack-v"><i></i>VΩ</span>
+              </div>
+              <div class="probe-dock" aria-hidden="true"><span class="dock dock-black"></span><span class="dock dock-red"></span></div>
+            </div>
+            <div class="probe-select">
+              <label>Pointe rouge
+                <select data-probe="red">
+                  <option value="">Au repos</option>
+                  <option value="tp1">TP1</option><option value="tp2">TP2</option><option value="tp3">TP3</option>
+                  <option value="tp4">TP4</option><option value="tp5">TP5</option><option value="tp6">TP6</option>
+                </select>
+              </label>
+              <label>Pointe noire
+                <select data-probe="black">
+                  <option value="">Au repos</option>
+                  <option value="tp1">TP1</option><option value="tp2">TP2</option><option value="tp3">TP3</option>
+                  <option value="tp4">TP4</option><option value="tp5">TP5</option><option value="tp6">TP6</option>
+                </select>
+              </label>
+            </div>
+            <p class="sr-only" aria-live="polite" data-meter-live></p>
+          </div>
+
+          <svg class="bench-overlay" aria-hidden="true"></svg>
+
+          <div class="bench-success" role="status" hidden>
+            <p class="bs-badge">Réparé ✔</p>
+            <p class="bs-title"></p>
+            <p class="bs-stats"></p>
+            <p class="bs-tip"></p>
+            <button class="btn btn-copper btn-sm" type="button" data-new>Nouvelle panne</button>
+          </div>
+        </div>
+
+        <div class="bench-bar">
+          <p class="bench-stats">
+            <span>Mesures <b data-stat="measures">0</b></span>
+            <span>Chrono <b data-stat="time">0:00</b></span>
+            <span>Pièces gaspillées <b data-stat="wasted">0</b></span>
+          </p>
+          <p class="bench-msg" aria-live="polite">Glisse les pointes rouge et noire sur les pastilles dorées.</p>
+          <div class="bench-actions">
+            <button class="btn btn-ghost btn-sm" type="button" data-hint>Indice</button>
+            <button class="btn btn-ghost btn-sm" type="button" data-new>Nouvelle panne</button>
+          </div>
+        </div>
+
+        <details class="bench-help">
+          <summary>Comment jouer&nbsp;?</summary>
+          <ol>
+            <li>Le multimètre est sur <strong>V</strong> (tension). Pose la pointe <strong>rouge</strong> côté + et la <strong>noire</strong> côté − d'un composant.</li>
+            <li>Dans un circuit en série coupé quelque part, presque toute la tension se retrouve aux bornes de l'élément ouvert.</li>
+            <li>Pour vérifier un composant sans tension, coupe l'alimentation avec <strong>SW1</strong> puis passe en <strong>Ω</strong>, <strong>continuité</strong> ou <strong>test diode</strong>.</li>
+            <li>Clique sur un composant pour le remplacer (alimentation coupée&nbsp;!), puis remets sous tension pour vérifier.</li>
+          </ol>
+        </details>
+      </div>
+    </section>
+
+    <!-- ============ TP4 · Parcours ============ -->
+    <section id="parcours" class="section">
+      <div class="wrap">
+        <header class="sec-head" data-reveal>
+          <span class="sec-tp">TP4</span>
+          <h2>Parcours</h2>
+          <span class="sec-trace" aria-hidden="true"></span>
+        </header>
+        <p class="sec-intro" data-reveal>Mon parcours sur deux voies, comme sur un oscilloscope&nbsp;: <span class="ch1-txt">CH1</span> pour l'expérience, <span class="ch2-txt">CH2</span> pour la formation. Cliquez sur une impulsion pour la mesurer, tournez le bouton TIME/DIV pour zoomer.</p>
+
+        <div class="scope" data-reveal>
+          <div class="scope-screen">
+            <svg class="scope-svg" aria-hidden="true"></svg>
+            <div class="scope-readout" aria-live="polite"></div>
+          </div>
+          <div class="scope-controls">
+            <p class="scope-brand">AT-SCOPE <span>2 CH · 100 MHz</span></p>
+            <div class="scope-ch">
+              <button class="ch-btn" type="button" data-ch="1" aria-pressed="true"><span class="ch-led"></span>CH1 · Expériences</button>
+              <button class="ch-btn" type="button" data-ch="2" aria-pressed="true"><span class="ch-led"></span>CH2 · Formations</button>
+            </div>
+            <div class="scope-time">
+              <button class="knob" type="button" data-knob><span class="knob-mark"></span><span class="sr-only">Changer la base de temps</span></button>
+              <p class="knob-label">TIME/DIV<b data-timediv>2 ans</b></p>
+            </div>
+            <div class="scope-nav">
+              <button class="btn btn-ghost btn-sm" type="button" data-step="-1" aria-label="Mesure précédente">◀</button>
+              <button class="btn btn-ghost btn-sm" type="button" data-step="1" aria-label="Mesure suivante">▶</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl" data-reveal>
+          <div class="tl-col">
+            <h3 class="tl-head" data-ch="1">CH1 · Expériences</h3>
+            <ol class="tl-list">
+              <li class="tl-item" data-ch="1" data-span="2026.42-2026.44" data-label="2026 · 1 semaine">
+                <p class="tl-date">2026 · 1 semaine</p>
+                <h4><button class="tl-btn" type="button">Immersion professionnelle – Pôle informatique</button></h4>
+                <p class="tl-org">Les Ateliers du Bocage, La Boujalière (Le Pin)</p>
+                <ul>
+                  <li>Démontage d'anciens PC et tri des composants récupérables</li>
+                  <li>Remontage de PC reconditionnés à partir de ces composants</li>
+                  <li>Retour positif des responsables de l'atelier</li>
+                </ul>
+              </li>
+              <li class="tl-item" data-ch="1" data-continuous="true" data-label="En continu">
+                <p class="tl-date">En continu</p>
+                <h4><button class="tl-btn" type="button">Projets personnels – dépannage et informatique</button></h4>
+                <ul>
+                  <li>Dépannage d'un spa au multimètre (continuité, tension) : pompe hors service identifiée et remplacée</li>
+                  <li>Montage de PC personnels et dépannage logiciel</li>
+                </ul>
+              </li>
+              <li class="tl-item" data-ch="1" data-start="2022-10" data-end="2022-12" data-label="Oct. – déc. 2022">
+                <p class="tl-date">Oct. – déc. 2022</p>
+                <h4><button class="tl-btn" type="button">Développeur web (stage)</button></h4>
+                <p class="tl-org">Code-Expérience</p>
+                <ul><li>Mise à jour d'un site vitrine, participation à un site communautaire</li></ul>
+              </li>
+              <li class="tl-item" data-ch="1" data-start="2012-04" data-end="2016-08" data-label="Avr. 2012 – août 2016">
+                <p class="tl-date">Avr. 2012 – août 2016</p>
+                <h4><button class="tl-btn" type="button">Porteur funéraire</button></h4>
+                <p class="tl-org">Entreprise Lotte-Baudouin</p>
+                <ul><li>Travail en équipe, de jour comme de nuit : rigueur, discrétion, respect strict des procédures</li></ul>
+              </li>
+            </ol>
+          </div>
+          <div class="tl-col">
+            <h3 class="tl-head" data-ch="2">CH2 · Formations</h3>
+            <ol class="tl-list">
+              <li class="tl-item" data-ch="2" data-span="2023.3-2023.9" data-label="AFPA · 2023">
+                <p class="tl-date">AFPA · 2023</p>
+                <h4><button class="tl-btn" type="button">Titre pro Concepteur Développeur d'Applications</button></h4>
+              </li>
+              <li class="tl-item" data-ch="2" data-span="2022.4-2023.25" data-label="AFPA · 2022-2023">
+                <p class="tl-date">AFPA · 2022-2023</p>
+                <h4><button class="tl-btn" type="button">Titre pro Développeur Web et Web Mobile</button></h4>
+              </li>
+              <li class="tl-item" data-ch="2" data-span="2020.2-2020.7" data-label="AFPA · 2020">
+                <p class="tl-date">AFPA · 2020</p>
+                <h4><button class="tl-btn" type="button">Titre pro Technicien Helpdesk</button></h4>
+                <ul><li>Recherche de pannes simulées</li></ul>
+              </li>
+              <li class="tl-item" data-ch="2" data-span="2011.2-2011.6" data-label="Pons · 2011">
+                <p class="tl-date">Pons · 2011</p>
+                <h4><button class="tl-btn" type="button">Bac Pro Maintenance des véhicules et matériels</button></h4>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TP5 · Atelier ============ -->
+    <section id="atelier" class="section">
+      <div class="wrap">
+        <header class="sec-head" data-reveal>
+          <span class="sec-tp">TP5</span>
+          <h2>Atelier</h2>
+          <span class="sec-trace" aria-hidden="true"></span>
+        </header>
+        <p class="sec-intro" data-reveal>Quelques bons d'intervention, pour du concret.</p>
+
+        <div class="tickets">
+          <article class="ticket" data-reveal>
+            <header class="t-head"><span class="t-no">Bon n° 0001</span><span class="t-tag">Électrique</span></header>
+            <h3>Dépannage d'un spa</h3>
+            <dl class="t-fields">
+              <div><dt>Outil</dt><dd>Multimètre : continuité et tension</dd></div>
+              <div><dt>Diagnostic</dt><dd>Pompe hors service, identifiée par les mesures</dd></div>
+              <div><dt>Intervention</dt><dd>Remplacement de la pompe</dd></div>
+            </dl>
+            <p class="t-stamp" aria-label="Statut : réparé">Réparé</p>
+          </article>
+          <article class="ticket" data-reveal>
+            <header class="t-head"><span class="t-no">Bon n° 0002</span><span class="t-tag">Reconditionnement</span></header>
+            <h3>PC reconditionnés · Les Ateliers du Bocage</h3>
+            <dl class="t-fields">
+              <div><dt>Démontage</dt><dd>Anciens PC, tri des composants récupérables</dd></div>
+              <div><dt>Remontage</dt><dd>PC reconditionnés à partir de ces composants</dd></div>
+              <div><dt>Retour</dt><dd>Positif de la part des responsables de l'atelier</dd></div>
+            </dl>
+            <p class="t-stamp" aria-label="Statut : validé">Validé</p>
+          </article>
+          <article class="ticket" data-reveal>
+            <header class="t-head"><span class="t-no">Bon n° 0003</span><span class="t-tag">Informatique</span></header>
+            <h3>Montage &amp; dépannage de PC</h3>
+            <dl class="t-fields">
+              <div><dt>Matériel</dt><dd>Montage de PC personnels, remplacement de composants</dd></div>
+              <div><dt>Logiciel</dt><dd>Dépannage et remise en état</dd></div>
+              <div><dt>Base</dt><dd>Titre pro Technicien Helpdesk : recherche de pannes simulées</dd></div>
+            </dl>
+            <p class="t-stamp" aria-label="Statut : terminé">OK</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TP6 · Veille ============ -->
+    <section id="veille" class="section">
+      <div class="wrap">
+        <header class="sec-head" data-reveal>
+          <span class="sec-tp">TP6</span>
+          <h2>Veille technologique</h2>
+          <span class="sec-trace" aria-hidden="true"></span>
+        </header>
+        <p class="sec-intro" data-reveal>Ce que je lis et regarde pour progresser&nbsp;: réparation, droit à la réparation et électronique. Mise à jour automatique chaque matin.</p>
+
+        <div class="ticker" data-reveal aria-hidden="true"><canvas class="ticker-canvas"></canvas></div>
+
+        <div class="veille-bar" data-reveal>
+          <fieldset class="dip" hidden>
+            <legend>Sources <span>(interrupteurs DIP)</span></legend>
+            <div class="dip-body">
+              <span class="dip-on" aria-hidden="true">ON ▲</span>
+              <div class="dip-switches"></div>
+            </div>
+          </fieldset>
+          <p class="veille-meta" aria-live="polite">Chargement du flux…</p>
+        </div>
+
+        <ul class="veille-grid"></ul>
+        <p class="veille-more-wrap"><button class="btn btn-ghost" type="button" data-more hidden>Afficher plus d'articles</button></p>
+
+        <noscript>
+          <p class="noscript">Activez JavaScript pour voir les derniers articles. Mes sources&nbsp;:
+            <a href="https://www.ifixit.com/News" rel="noopener noreferrer">iFixit</a>,
+            <a href="https://www.halteobsolescence.org/" rel="noopener noreferrer">HOP</a>,
+            <a href="https://www.youtube.com/@LearnElectronicsRepair" rel="noopener noreferrer">Learn Electronics Repair</a>,
+            <a href="https://www.youtube.com/@Electro-Bidouilleur" rel="noopener noreferrer">Électro-Bidouilleur</a>,
+            <a href="https://hackaday.com/" rel="noopener noreferrer">Hackaday</a>,
+            <a href="https://www.framboise314.fr/" rel="noopener noreferrer">Framboise314</a>.
+          </p>
+        </noscript>
+      </div>
+    </section>
+
+    <!-- ============ TP7 · Contact ============ -->
+    <section id="contact" class="section">
+      <div class="wrap">
+        <header class="sec-head" data-reveal>
+          <span class="sec-tp">TP7</span>
+          <h2>Contact</h2>
+          <span class="sec-trace" aria-hidden="true"></span>
+        </header>
+        <p class="sec-intro" data-reveal>Mes coordonnées sont protégées contre les robots. Il manque une soudure sur chacun des 3 composants&nbsp;: soudez-les pour fermer le circuit et allumer l'écran. Maintenez le fer sur la pastille, relâchez quand la jauge est dans le <span class="good-txt">vert</span>.</p>
+
+        <div class="solder" data-reveal>
+          <div class="solder-board">
+            <svg class="solder-svg" viewBox="0 0 760 270" role="group" aria-label="Circuit de contact à souder">
+              <defs>
+                <radialGradient id="g-coin" cx=".38" cy=".32" r=".8">
+                  <stop offset="0" stop-color="#fbfbf8"/><stop offset=".5" stop-color="#b9bcb8"/><stop offset="1" stop-color="#70746f"/>
+                </radialGradient>
+                <radialGradient id="g-solder" cx=".35" cy=".3" r=".75">
+                  <stop offset="0" stop-color="#ffffff"/><stop offset=".35" stop-color="#d7dbd8"/><stop offset="1" stop-color="#7d8380"/>
+                </radialGradient>
+              </defs>
+              <rect x="4" y="4" width="752" height="262" rx="16" fill="#124437" stroke="#0b2e25" stroke-width="2"/>
+              <g class="s-traces" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M126 120 H160"/><path d="M250 120 H290"/><path d="M380 120 H420"/><path d="M490 120 H516"/>
+                <path d="M516 196 H476 V236 H80 V170"/>
+              </g>
+              <path class="s-flow" d="M126 120 H160 M250 120 H290 M380 120 H420 M490 120 H516 M516 196 H476 V236 H80 V170" fill="none"/>
+
+              <g class="coin">
+                <circle cx="80" cy="120" r="48" fill="url(#g-coin)" stroke="#5b5f5c" stroke-width="2"/>
+                <circle cx="80" cy="120" r="38" fill="none" stroke="#ffffff" stroke-opacity=".35"/>
+                <text class="coin-txt" x="80" y="116" text-anchor="middle">CR2032</text>
+                <text class="coin-txt coin-txt-sm" x="80" y="134" text-anchor="middle">3V +</text>
+              </g>
+
+              <!-- Composants traversants : une patte déjà soudée, l'autre à souder -->
+              <g class="th-part">
+                <path class="lead-wire" d="M160 120 H182 M228 120 H250"/>
+                <rect x="182" y="109" width="46" height="22" rx="10" fill="#d8c59c"/>
+                <rect x="190" y="109" width="5" height="22" fill="#d9342b"/>
+                <rect x="199" y="109" width="5" height="22" fill="#d9342b"/>
+                <rect x="208" y="109" width="5" height="22" fill="#7a4a1f"/>
+                <rect x="219" y="109" width="5" height="22" fill="#c9a23a"/>
+                <circle class="solder-done" cx="160" cy="120" r="10"/>
+                <text class="silk" x="182" y="98">R1</text>
+                <text class="silk silk-sm" x="204" y="98">220 Ω</text>
+              </g>
+              <g class="th-part">
+                <path class="lead-wire" d="M290 120 H312 M358 120 H380"/>
+                <rect x="312" y="111" width="46" height="18" rx="4" fill="#1d1f20"/>
+                <rect x="347" y="111" width="6" height="18" fill="#c9ccc7"/>
+                <circle class="solder-done" cx="290" cy="120" r="10"/>
+                <text class="silk" x="312" y="98">D1</text>
+                <text class="silk silk-sm" x="334" y="98">1N4148</text>
+              </g>
+              <g class="th-part s-led">
+                <circle class="led-glow" cx="455" cy="120" r="46" fill="url(#g-led)"/>
+                <path class="lead-wire" d="M420 120 H438 M472 120 H490"/>
+                <circle class="led-body" cx="455" cy="120" r="17"/>
+                <path d="M447 104 V136" stroke="#3a0d09" stroke-width="2" opacity=".5"/>
+                <circle class="solder-done" cx="420" cy="120" r="10"/>
+                <text class="silk" x="430" y="94">D2</text>
+                <text class="silk silk-sm" x="452" y="94">LED</text>
+              </g>
+
+              <g class="joint" data-joint="0" data-name="la patte de R1" tabindex="0" role="button" aria-label="Patte droite de la résistance R1 : maintenir pour souder">
+                <rect class="joint-hit" x="216" y="86" width="68" height="68" rx="12"/>
+                <circle class="pad-ring" cx="250" cy="120" r="10"/>
+                <circle class="pad-hole" cx="250" cy="120" r="4.5"/>
+                <circle class="lead" cx="250" cy="120" r="2.6"/>
+                <circle class="blob" cx="250" cy="120" r="11"/>
+                <circle class="gauge-bg" cx="250" cy="120" r="28" pathLength="100"/>
+                <circle class="gauge-cold" cx="250" cy="120" r="28" pathLength="100"/>
+                <circle class="gauge-good" cx="250" cy="120" r="28" pathLength="100"/>
+                <circle class="gauge-hot" cx="250" cy="120" r="28" pathLength="100"/>
+                <circle class="gauge-val" cx="250" cy="120" r="23" pathLength="100"/>
+              </g>
+              <g class="joint" data-joint="1" data-name="la patte de D1" tabindex="0" role="button" aria-label="Patte droite de la diode D1 : maintenir pour souder">
+                <rect class="joint-hit" x="346" y="86" width="68" height="68" rx="12"/>
+                <circle class="pad-ring" cx="380" cy="120" r="10"/>
+                <circle class="pad-hole" cx="380" cy="120" r="4.5"/>
+                <circle class="lead" cx="380" cy="120" r="2.6"/>
+                <circle class="blob" cx="380" cy="120" r="11"/>
+                <circle class="gauge-bg" cx="380" cy="120" r="28" pathLength="100"/>
+                <circle class="gauge-cold" cx="380" cy="120" r="28" pathLength="100"/>
+                <circle class="gauge-good" cx="380" cy="120" r="28" pathLength="100"/>
+                <circle class="gauge-hot" cx="380" cy="120" r="28" pathLength="100"/>
+                <circle class="gauge-val" cx="380" cy="120" r="23" pathLength="100"/>
+              </g>
+              <g class="joint" data-joint="2" data-name="la patte de la LED D2" tabindex="0" role="button" aria-label="Patte droite de la LED D2 : maintenir pour souder">
+                <rect class="joint-hit" x="456" y="86" width="68" height="68" rx="12"/>
+                <circle class="pad-ring" cx="490" cy="120" r="10"/>
+                <circle class="pad-hole" cx="490" cy="120" r="4.5"/>
+                <circle class="lead" cx="490" cy="120" r="2.6"/>
+                <circle class="blob" cx="490" cy="120" r="11"/>
+                <circle class="gauge-bg" cx="490" cy="120" r="28" pathLength="100"/>
+                <circle class="gauge-cold" cx="490" cy="120" r="28" pathLength="100"/>
+                <circle class="gauge-good" cx="490" cy="120" r="28" pathLength="100"/>
+                <circle class="gauge-hot" cx="490" cy="120" r="28" pathLength="100"/>
+                <circle class="gauge-val" cx="490" cy="120" r="23" pathLength="100"/>
+              </g>
+
+              <g class="oled">
+                <rect x="516" y="28" width="220" height="214" rx="10" fill="#0f3a6b" stroke="#082445" stroke-width="2"/>
+                <circle cx="530" cy="42" r="5" fill="#082445" stroke="#d8b25a" stroke-width="2"/>
+                <circle cx="722" cy="42" r="5" fill="#082445" stroke="#d8b25a" stroke-width="2"/>
+                <circle cx="530" cy="228" r="5" fill="#082445" stroke="#d8b25a" stroke-width="2"/>
+                <circle cx="722" cy="228" r="5" fill="#082445" stroke="#d8b25a" stroke-width="2"/>
+                <rect class="oled-glass" x="530" y="58" width="192" height="150" rx="4"/>
+                <g class="oled-text"></g>
+                <text class="silk silk-sm" x="546" y="227">OLED · 128×64</text>
+              </g>
+              <g class="smoke"></g>
+            </svg>
+            <div class="iron" aria-hidden="true">
+              <svg viewBox="0 0 120 120" width="120" height="120">
+                <path class="iron-tip" d="M4 116 L18 96 L26 104 Z"/>
+                <path d="M18 96 L40 74 L48 82 L26 104 Z" fill="#b8bcb8"/>
+                <path d="M40 74 L52 62 L60 70 L48 82 Z" fill="#6c706d"/>
+                <path d="M52 62 L92 22 Q100 16 106 22 Q112 28 104 36 L60 70 Z" fill="#e0821f"/>
+                <path d="M62 56 L90 28 M68 62 L96 34" stroke="#9c5510" stroke-width="3"/>
+                <path d="M104 22 L118 8" stroke="#2a2d2d" stroke-width="7" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+
+          <div class="solder-side">
+            <p class="solder-status" aria-live="polite">Soudures : <b data-solder-count>0</b> / 3</p>
+            <ul class="solder-legend">
+              <li><span class="sw sw-cold"></span>Trop tôt : soudure froide, mate</li>
+              <li><span class="sw sw-good"></span>Parfait : soudure brillante</li>
+              <li><span class="sw sw-hot"></span>Trop chaud : le flux brûle</li>
+            </ul>
+            <p class="solder-msg" aria-live="polite"></p>
+            <button class="btn btn-ghost btn-sm" type="button" data-solder-skip>Pas de fer à souder&nbsp;? Afficher directement</button>
+          </div>
+        </div>
+
+        <div class="contact-card" hidden>
+          <p class="cc-title"><span class="led led-green" aria-hidden="true"></span>Circuit fermé : coordonnées déverrouillées</p>
+          <ul class="cc-list">
+            <li>
+              <span class="cc-label">E-mail</span>
+              <button class="cc-value" type="button" data-copy="email" title="Cliquer pour copier l'adresse">…</button>
+              <a class="btn btn-ghost btn-sm" data-contact="email" href="#contact">Écrire</a>
+            </li>
+            <li>
+              <span class="cc-label">Téléphone</span>
+              <button class="cc-value" type="button" data-copy="phone" title="Cliquer pour copier le numéro">…</button>
+              <a class="btn btn-ghost btn-sm" data-contact="phone" href="#contact">Appeler</a>
+            </li>
+          </ul>
+          <p class="cc-hint">Astuce : cliquez sur l'adresse ou sur le numéro (ici ou sur l'écran) pour les copier.</p>
+        </div>
+
+        <ul class="contact-facts" data-reveal>
+          <li><span class="cf-k">Secteur</span>Saint-Georges-des-Coteaux (17) et alentours</li>
+          <li><span class="cf-k">Mobilité</span>Permis B, véhiculé</li>
+          <li><span class="cf-k">Recherche</span>Poste en atelier · PMSMP · formation interne · POEI</li>
+          <li><span class="cf-k">GitHub</span><a href="https://github.com/Nameho" rel="noopener noreferrer me">github.com/Nameho</a></li>
+        </ul>
+        <noscript><p class="noscript">Mes coordonnées s'affichent avec JavaScript (protection contre les robots). Vous pouvez aussi me retrouver sur <a href="https://github.com/Nameho">GitHub</a>.</p></noscript>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <p>© 2026 Alexis Trudelle · Conçu et assemblé à la main</p>
+      <p class="footer-sec"><span class="led led-green" aria-hidden="true"></span>Aucun cookie, aucun traceur, aucune ressource externe.</p>
+      <p><a href="https://github.com/Nameho/nameho.github.io" rel="noopener noreferrer">Code source</a> · <span class="silk-txt">RÉV. 2026.10</span></p>
+    </div>
+  </footer>
+
+  <!-- ============ Banc de test (succès) + son ============ -->
+  <aside class="hud" aria-label="Banc de test">
+    <div class="hud-panel" id="hud-panel" hidden>
+      <p class="hud-title">Banc de test · contrôle qualité</p>
+      <ol class="hud-list">
+        <li data-ach="case"><span class="led"></span><a href="#competences">Ouvrir le boîtier</a></li>
+        <li data-ach="repair"><span class="led"></span><a href="#diagnostic">Réparer la panne</a></li>
+        <li data-ach="scope"><span class="led"></span><a href="#parcours">Mesurer 3 impulsions</a></li>
+        <li data-ach="dip"><span class="led"></span><a href="#veille">Basculer un interrupteur DIP</a></li>
+        <li data-ach="solder"><span class="led"></span><a href="#contact">Réussir les 3 soudures</a></li>
+      </ol>
+    </div>
+    <div class="hud-row">
+      <button class="hud-toggle" type="button" aria-expanded="false" aria-controls="hud-panel">
+        <span class="hud-leds" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+        <span class="hud-count"><b>0</b>/5<span class="sr-only"> tests réussis, afficher la liste</span></span>
+      </button>
+      <button class="motion-toggle" type="button" aria-pressed="true"><span class="sr-only">Animations complètes</span><span class="snd-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 12c2.5-6 5.5-6 8 0s5.5 6 8 0 3-3 4-3"/><path class="snd-off" d="M4 4l16 16"/></svg></span></button>
+      <button class="sound-toggle" type="button" aria-pressed="true"><span class="sr-only">Son</span><span class="snd-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path class="snd-body" d="M3 9.5h4l5-4v13l-5-4H3z"/><path class="snd-on" d="M15.5 9a4 4 0 0 1 0 6M18.5 6a8.5 8.5 0 0 1 0 12"/><path class="snd-off" d="M16 9.5l5 5M21 9.5l-5 5"/></svg></span></button>
+    </div>
+  </aside>
+  <div class="toasts" aria-live="polite"></div>
+</body>
+</html>

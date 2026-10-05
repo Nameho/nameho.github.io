@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#17594a"/>
+  <g fill="#d8b25a">
+    <rect x="8" y="18" width="8" height="5" rx="1"/><rect x="8" y="29.5" width="8" height="5" rx="1"/><rect x="8" y="41" width="8" height="5" rx="1"/>
+    <rect x="48" y="18" width="8" height="5" rx="1"/><rect x="48" y="29.5" width="8" height="5" rx="1"/><rect x="48" y="41" width="8" height="5" rx="1"/>
+  </g>
+  <rect x="15" y="12" width="34" height="40" rx="4" fill="#141616"/>
+  <circle cx="21" cy="18" r="2.4" fill="#e0821f"/>
+  <text x="32" y="38" text-anchor="middle" font-family="Consolas, monospace" font-weight="700" font-size="14" fill="#f1f5ef">AT</text>
+</svg>

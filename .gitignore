@@ -1,0 +1,10 @@
+# Notes personnelles (non publiées)
+TUTORIEL-GITHUB.md
+
+# Fichiers de l'éditeur / du système
+.claude/
+.vscode/
+Thumbs.db
+desktop.ini
+.DS_Store
+node_modules/

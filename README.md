@@ -1,0 +1,67 @@
+# Portfolio — Alexis Trudelle, technicien réparateur en électronique
+
+**Site en ligne : https://nameho.github.io**
+
+Un portfolio « one-page » pensé comme un banc de réparation : on ne fait pas que lire, on dépanne.
+
+| Section | Interaction |
+| --- | --- |
+| Accueil | Circuit imprimé généré en temps réel : la souris révèle le cuivre sous le vernis, un clic envoie une impulsion de courant. |
+| Profil | Fiche technique façon *datasheet*, avec le brochage d'un circuit intégré (une qualité par broche). |
+| Compétences | Un boîtier à dévisser (geste circulaire ou clic), puis une carte dont chaque composant est une compétence. |
+| Trouve la panne | Un vrai petit circuit simulé et un multimètre (V, Ω, continuité avec bip, test diode). Une panne aléatoire est cachée : mesurer, trouver, remplacer, vérifier. |
+| Parcours | Un oscilloscope 2 voies (expériences / formations) avec curseurs de mesure Δt et base de temps réglable. |
+| Atelier | Des bons d'intervention tamponnés. |
+| Veille | Articles et vidéos sur la réparation et l'électronique, mis à jour automatiquement chaque jour, filtrables avec des interrupteurs DIP. |
+| Contact | Trois soudures à réussir pour afficher les coordonnées (protection contre les robots). |
+
+Un « banc de test » en bas à droite liste les 5 défis à réussir.
+
+## Technique
+
+- HTML, CSS et JavaScript natifs : **aucune bibliothèque, aucun framework, aucune dépendance npm**.
+- Animations en Canvas 2D, SVG et Web Animations API ; sons synthétisés avec Web Audio (rien à télécharger).
+- Accessible : navigation au clavier, lecteurs d'écran (mesures annoncées), alternative aux glisser-déposer, respect du réglage « animations réduites » (modifiable avec le bouton ∿).
+- Responsive : téléphone, tablette, ordinateur.
+
+## Sécurité et vie privée
+
+- Politique de sécurité du contenu (CSP) stricte : seuls les fichiers du site peuvent être chargés.
+- Aucun cookie, aucun traceur, aucune ressource externe (polices hébergées sur le site).
+- Coordonnées absentes du code HTML : encodées, puis décodées seulement après le mini-jeu.
+- Les données de veille sont nettoyées à la récupération **et** à l'affichage (texte brut uniquement, liens HTTPS vérifiés).
+- GitHub Actions : droits minimaux par tâche, actions épinglées par empreinte SHA, mises à jour proposées par Dependabot.
+
+## Veille automatique
+
+[`scripts/veille.mjs`](scripts/veille.mjs) lit les flux RSS listés dans [`scripts/veille-sources.json`](scripts/veille-sources.json) et écrit `site/data/veille.json`.
+Le workflow [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) le lance chaque matin puis republie le site.
+
+Sources actuelles : iFixit, HOP (Halte à l'obsolescence programmée), Learn Electronics Repair, Électro-Bidouilleur, Hackaday, Framboise314.
+
+## Aperçu en local
+
+```bash
+node scripts/serve.mjs
+```
+
+Puis ouvrir http://localhost:8080 (Node.js 20 ou plus récent).
+
+## Structure
+
+```
+site/                 ← ce qui est publié
+  index.html
+  404.html
+  assets/css, js, fonts
+  data/veille.json    ← généré automatiquement
+scripts/
+  veille.mjs          ← robot de veille (sans dépendance)
+  veille-sources.json ← liste des flux
+  serve.mjs           ← serveur d'aperçu local
+.github/workflows/deploy.yml
+```
+
+## Crédits
+
+Polices [Bricolage Grotesque](https://github.com/ateliertriay/bricolage) et [JetBrains Mono](https://github.com/JetBrains/JetBrainsMono), sous licence SIL Open Font License 1.1 (voir `site/assets/fonts/`).
