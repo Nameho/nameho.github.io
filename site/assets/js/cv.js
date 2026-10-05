@@ -54,7 +54,12 @@ export function initCv() {
   // Course maximale : la collerette de la fiche vient buter contre la façade de la prise,
   // les broches (qui dépassent) s'enfoncent alors dans la cavité.
   const socket = $('.socket', dlg);
-  const measure = () => { max = Math.max(0, socket.offsetLeft - plug.offsetLeft - plug.offsetWidth - 6); };
+  // On lit la position CSS de départ (et non offsetLeft, faussé par l'animation d'indication)
+  const measure = () => {
+    const left = parseFloat(getComputedStyle(plug).left) || 0;
+    max = Math.max(0, socket.offsetLeft - left - plug.offsetWidth - 6);
+  };
+  const stopHint = () => plug.classList.remove('is-hint');
   const place = (v, animate = false) => {
     x = clamp(v, 0, max);
     plug.classList.toggle('is-spring', animate);
@@ -65,6 +70,8 @@ export function initCv() {
 
   async function success() {
     unlocked = true;
+    stopHint();
+    measure();
     place(max, true);
     track.classList.add('is-connected');
     sfx('snap');
@@ -102,6 +109,7 @@ export function initCv() {
   plug.addEventListener('pointerdown', (e) => {
     if (unlocked) return;
     e.preventDefault();
+    stopHint();
     measure();
     pid = e.pointerId;
     try { plug.setPointerCapture(pid); } catch { /* suivi via la fenêtre */ }
@@ -132,6 +140,7 @@ export function initCv() {
     if (unlocked) return;
     if (e.key === 'ArrowRight' || e.key === 'ArrowUp') {
       e.preventDefault();
+      stopHint();
       measure();
       keySteps++;
       place(x + max / 5);
@@ -155,8 +164,8 @@ export function initCv() {
     sfx('click');
     if (!dlg.open) dlg.showModal();
     reset();
-    if (!reduce) plug.classList.add('is-hint');
-    setTimeout(() => plug.classList.remove('is-hint'), 1600);
+    if (!reduce && !unlocked) plug.classList.add('is-hint');
+    setTimeout(stopHint, 1600);
     (unlocked ? $('[data-cv-retry]', dlg) : plug).focus();
     if (unlocked) toast('CV déjà déverrouillé ✔');
   });
