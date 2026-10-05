@@ -618,6 +618,9 @@ button, input, select { font: inherit; color: inherit; }
   100% { opacity: 0; transform: scale(2.6); }
 }
 @keyframes tag-glow { 50% { box-shadow: 0 0 14px rgba(255, 179, 92, 0.45); border-color: var(--copper-hi); } }
+.hero-role-fx .rest { visibility: hidden; }
+.hero-role-fx.is-typing::after { content: none; }
+.hero-role-fx.is-typing .typed::after,
 .hero-role-fx::after {
   content: "▍";
   margin-left: 2px;

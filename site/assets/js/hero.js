@@ -691,11 +691,18 @@ function typeRole() {
     tag?.classList.add('is-on');
     return;
   }
+  // Le texte complet garde sa place dès le départ (lettres non tapées invisibles) :
+  // la largeur de la carte d'infos ne bouge donc pas pendant la frappe.
   const full = fx.textContent.trim();
-  fx.textContent = '';
+  const typed = el('span', { cls: 'typed' });
+  const rest = el('span', { cls: 'rest', text: full });
+  fx.replaceChildren(typed, rest);
+  fx.classList.add('is-typing');
   let i = 0;
   const step = () => {
-    fx.textContent = full.slice(0, ++i);
+    i++;
+    typed.textContent = full.slice(0, i);
+    rest.textContent = full.slice(i);
     if (i < full.length) setTimeout(step, 26 + Math.random() * 42);
     else setTimeout(() => tag?.classList.add('is-on'), 250); // l'étiquette s'allume après la frappe
   };
