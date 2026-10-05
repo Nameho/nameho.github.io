@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-05T18:06:20.721Z",
+  "updatedAt": "2026-10-05T21:50:07.802Z",
   "sources": [
     {
       "id": "ifixit",
@@ -45,6 +45,14 @@
     }
   ],
   "items": [
+    {
+      "id": "15478ec11f61",
+      "source": "hackaday",
+      "title": "How to Grow a Giant Crystal from Copper Sulfate",
+      "url": "https://hackaday.com/2026/10/05/how-to-grow-a-giant-crystal-from-copper-sulfate/",
+      "date": "2026-10-05T20:00:29.000Z",
+      "excerpt": "Copper sulfate crystals are probably among one of the prettiest crystals you can grow at home, with even just a simple setup with some copper scrap and vinegar already capable …read more"
+    },
     {
       "id": "8d66e259b56b",
       "source": "hackaday",
@@ -100,14 +108,6 @@
       "url": "https://www.ifixit.com/News/119622/i-used-to-just-call-a-guy-the-struggle-to-get-repair-information",
       "date": "2026-10-05T08:10:50.000Z",
       "excerpt": "Appliance repairer Jacob D'Hollander qualifies for repair information under EU Ecodesign rules. Eight months of requests later, only one brand group has delivered."
-    },
-    {
-      "id": "07e1223f5acd",
-      "source": "hackaday",
-      "title": "Conveyor Belt GBoard Brings the Keys to You",
-      "url": "https://hackaday.com/2026/10/05/conveyor-belt-gboard-brings-the-keys-to-you/",
-      "date": "2026-10-05T08:00:24.000Z",
-      "excerpt": "It must be April in October again, because Google Japan has a new, hilariously impractical reimagining of the keyboard: a conveyor belt. This time it’s on GitHub with firmware, STLs, …read more"
     },
     {
       "id": "977faab7e5d1",
