@@ -4,7 +4,7 @@
 
 import { $, $$, svg, el, clamp, reducedMotion } from './util.js';
 import { sfx, loopStart, loopStop } from './audio.js';
-import { achieve } from './hud.js';
+import { achieve, discover } from './hud.js';
 
 const NODES = ['A', 'B', 'C', 'D', 'E', 'F'];
 const CHAIN = ['SW1', 'F1', 'R1', 'D1', 'W1']; // CHAIN[i] relie NODES[i] et NODES[i + 1]
@@ -180,6 +180,11 @@ export function initDiag() {
       return { text, neg: v < -0.004, unit: 'V', spoken: `${v < -0.004 ? 'moins ' : ''}${text.replace('.', ',')} ${a < 2 ? 'volt' : 'volts'}` };
     }
 
+    // Secret : les deux pointes sur la même pastille = test des cordons (on lit leur résistance)
+    if (red === black && (st.mode === 'ohm' || st.mode === 'cont')) {
+      return { text: LEADS.toFixed(1), unit: 'ohm', beep: st.mode === 'cont', leadsTest: true, spoken: `${LEADS.toFixed(1).replace('.', ',')} ohm : test des cordons` };
+    }
+
     if (st.power) return { text: 'Err', warn: 'power', spoken: 'erreur : circuit sous tension' };
     const pair = [nr, nb].sort().join('');
     if (pair === 'AF') return { text: 'Err', warn: 'battery', spoken: 'erreur : mesure aux bornes de la pile' };
@@ -267,6 +272,10 @@ export function initDiag() {
 
     if (m.warn === 'power') say("Coupe d'abord l'alimentation avec SW1 : on ne mesure jamais une résistance sous tension.", 'warn');
     else if (m.warn === 'battery') say("On ne mesure pas une pile à l'ohmmètre : passe en V pour vérifier sa tension.", 'warn');
+    else if (m.leadsTest) {
+      say('Bon réflexe : on vérifie toujours ses cordons avant de mesurer ! 0,2 Ω, c’est la résistance des fils : à retrancher des petites mesures.', 'good');
+      discover('cordons');
+    }
 
     if (count && both && st.mode !== 'off') {
       const key = `${st.mode}|${st.probes.red}|${st.probes.black}|${st.power}|${st.fault}`;
@@ -641,6 +650,16 @@ export function initDiag() {
 
   $$('.part', board).forEach((g) => {
     const act = () => {
+      // Secret : 10 clics rapides sur le fusible F1… il finit par sauter
+      if (g.dataset.part === 'F1') {
+        const now = Date.now();
+        fuseClicks = fuseClicks.filter((t) => now - t < 3000).concat(now);
+        if (fuseClicks.length >= 10) {
+          fuseClicks = [];
+          fuseAbuse();
+          return;
+        }
+      }
       if (st.done) return;
       startClock();
       if (g.dataset.part === 'SW1') {
@@ -653,6 +672,50 @@ export function initDiag() {
       if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); act(); }
     });
   });
+
+  /* ---------- Secret : le fusible maltraité ---------- */
+  let fuseClicks = [];
+  let fuseBusy = false;
+  function fuseAbuse() {
+    if (fuseBusy) return;
+    fuseBusy = true;
+    closePop();
+    const f1 = $('[data-part="F1"]', board);
+    f1.classList.add('is-blown');
+    bench.classList.add('is-glitch');
+    lcdBox.classList.add('is-off');
+    loopStop('beep');
+    sfx('zap');
+    sfx('hiss');
+    const c = centerOf(f1);
+    for (let k = 0; k < 7; k++) {
+      setTimeout(() => {
+        const p = svg('circle', { class: 'puff puff-dark', cx: c.x + (Math.random() - 0.5) * 30, cy: c.y - 4, r: 6 }, overlay);
+        p.style.setProperty('--dx', `${((Math.random() - 0.5) * 50).toFixed(0)}px`);
+        setTimeout(() => p.remove(), 1500);
+      }, k * 90);
+    }
+    say('Clac ! Le fusible a sauté… Un fusible, ça protège : ça ne se martyrise pas 😅', 'warn');
+    discover('fuse');
+
+    setTimeout(() => {
+      bench.classList.remove('is-glitch');
+      f1.classList.remove('is-blown');
+      f1.classList.add('is-new');
+      setTimeout(() => f1.classList.remove('is-new'), 650);
+      sfx('tink');
+      // Redémarrage : comme un vrai multimètre, tous les segments s'allument un instant
+      lcdBox.classList.remove('is-off');
+      lcd.digits.forEach((d) => { Object.values(d.segs).forEach((s) => s.classList.add('on')); d.dp.classList.add('on'); });
+      lcd.minus.classList.add('on');
+      Object.values(lcd.ann).forEach((a) => a.classList.add('on'));
+      say('Fusible neuf posé par le technicien de garde. Le banc redémarre…');
+      setTimeout(() => {
+        fuseBusy = false;
+        update();
+      }, 900);
+    }, reduce ? 300 : 1500);
+  }
 
   /* =========================================================
      Victoire, indices, nouvelle panne

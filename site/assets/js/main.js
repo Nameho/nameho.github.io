@@ -18,6 +18,8 @@ import { initVeille } from './veille.js';
 import { initRecruit } from './recruit.js';
 import { initContact } from './contact.js';
 import { initSecrets } from './secrets.js';
+import { initConsole } from './console.js';
+import { initSeasons } from './seasons.js';
 
 const modules = {
   audio: initAudio,
@@ -39,6 +41,8 @@ const modules = {
   recruter: initRecruit,
   contact: initContact,
   secrets: initSecrets,
+  console: initConsole,
+  saisons: initSeasons,
 };
 
 for (const [name, init] of Object.entries(modules)) {

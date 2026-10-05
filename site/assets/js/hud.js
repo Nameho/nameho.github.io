@@ -16,20 +16,30 @@ const SECRETS = {
   trace: 'piste coupée réparée',
   thermal: 'caméra thermique',
   blueprint: 'mode schéma',
+  cordons: 'test des cordons',
+  fuse: 'fusible maltraité',
+  console: 'console du développeur',
+  page404: 'page 404 réparée',
 };
+const SECRETS_KEY = 'at-secrets';
 const done = new Set();
 const found = new Set();
 
-/** Secret découvert (compté à part du contrôle qualité). */
-export function discover(id) {
-  if (!SECRETS[id] || found.has(id)) return false;
-  found.add(id);
+const paintSecret = (id) => {
   $(`.hud-secrets [data-secret="${id}"]`)?.classList.add('done');
   const count = $('[data-secret-count]');
   if (count) count.textContent = String(found.size);
+};
+
+/** Secret découvert (compté à part du contrôle qualité, mémorisé dans ce navigateur). */
+export function discover(id) {
+  if (!SECRETS[id] || found.has(id)) return false;
+  found.add(id);
+  store.set(SECRETS_KEY, JSON.stringify([...found]));
+  paintSecret(id);
   const total = Object.keys(SECRETS).length;
   if (found.size === total) {
-    toast('Les 3 secrets sont trouvés : un vrai fouineur d’atelier 🕵️');
+    toast(`Les ${total} secrets sont trouvés : un vrai fouineur d’atelier 🕵️`);
     sfx('fanfare');
     confetti();
   } else {
@@ -146,6 +156,20 @@ function confetti() {
 }
 
 export function initHud() {
+  // Secrets déjà trouvés lors d'une visite précédente (affichés sans fanfare)
+  let saved = [];
+  try { saved = JSON.parse(store.get(SECRETS_KEY, '[]')); } catch { saved = []; }
+  if (Array.isArray(saved)) {
+    for (const id of saved) {
+      if (SECRETS[id]) { found.add(id); paintSecret(id); }
+    }
+  }
+  // Retour depuis la page 404 réparée
+  if (store.get('at-404-fixed') === '1') {
+    store.set('at-404-fixed', '0');
+    setTimeout(() => discover('page404') || toast('Circuit 404 rétabli : bon retour à l’atelier !'), 1200);
+  }
+
   // Choix des animations (prioritaire sur le réglage du système)
   const motion = $('.motion-toggle');
   if (motion) {

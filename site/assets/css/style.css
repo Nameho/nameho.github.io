@@ -480,6 +480,51 @@ button, input, select { font: inherit; color: inherit; }
   font: 600 clamp(1.05rem, 2.3vw, 1.55rem) var(--mono);
   color: var(--copper-hi);
 }
+.role-tag {
+  display: inline-block;
+  margin-left: 12px;
+  padding: 3px 10px;
+  border: 1px solid rgba(255, 179, 92, 0.55);
+  border-radius: 999px;
+  font: 600 0.62em var(--mono);
+  letter-spacing: 0.04em;
+  vertical-align: 0.25em;
+  color: var(--copper-hi);
+  background: rgba(224, 130, 31, 0.1);
+  white-space: nowrap;
+}
+/* Arrivée de « en reconversion » : étincelle, scintillement de mise sous tension, puis lueur */
+.role-tag { position: relative; }
+.js .role-tag:not(.is-on) { opacity: 0; }
+.role-tag.is-on { animation: tag-power 1s ease-out both, tag-glow 2.2s ease-in-out 1s 2; }
+.role-tag::before {
+  content: "";
+  position: absolute;
+  left: -5px; top: 50%;
+  width: 9px; height: 9px;
+  margin-top: -4.5px;
+  border-radius: 50%;
+  background: #fff3c4;
+  box-shadow: 0 0 10px 4px rgba(255, 179, 92, 0.9);
+  opacity: 0;
+  pointer-events: none;
+}
+.role-tag.is-on::before { animation: tag-spark 0.55s ease-out both; }
+@keyframes tag-power {
+  0% { opacity: 0; transform: translateX(-16px) scale(0.85); }
+  18% { opacity: 1; transform: none; }
+  28% { opacity: 0.2; }
+  42% { opacity: 1; }
+  52% { opacity: 0.45; }
+  66% { opacity: 1; box-shadow: 0 0 16px rgba(255, 179, 92, 0.7); }
+  100% { opacity: 1; transform: none; box-shadow: none; }
+}
+@keyframes tag-spark {
+  0% { opacity: 1; transform: scale(0.4); }
+  60% { opacity: 1; transform: scale(1.8); }
+  100% { opacity: 0; transform: scale(2.6); }
+}
+@keyframes tag-glow { 50% { box-shadow: 0 0 14px rgba(255, 179, 92, 0.45); border-color: var(--copper-hi); } }
 .hero-role-fx::after {
   content: "▍";
   margin-left: 2px;
@@ -1123,6 +1168,28 @@ button, input, select { font: inherit; color: inherit; }
   stroke: var(--copper-hi);
   fill: rgba(255, 179, 92, 0.08);
 }
+/* Secret : fusible maltraité (parasites à l'écran) */
+.part.is-blown { filter: brightness(0.35) sepia(1) saturate(3); }
+.bench.is-glitch { animation: glitch 0.14s steps(2) infinite; }
+.bench.is-glitch::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+  border-radius: inherit;
+  background: repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.07) 0 2px, transparent 2px 5px);
+  mix-blend-mode: screen;
+  pointer-events: none;
+  animation: scan-move 0.25s linear infinite;
+}
+@keyframes glitch {
+  0% { transform: translate(0, 0); filter: none; }
+  25% { transform: translate(-3px, 1px); filter: hue-rotate(40deg) contrast(1.4); }
+  50% { transform: translate(2px, -2px); filter: saturate(2) brightness(1.3); }
+  75% { transform: translate(-1px, 2px); filter: hue-rotate(-30deg); }
+  100% { transform: translate(0, 0); filter: none; }
+}
+@keyframes scan-move { to { background-position: 0 10px; } }
 .cap-top-bulged { display: none; }
 .part-cap.is-bulged .cap-top-bulged { display: inline; }
 .part-cap.is-bulged .cap-top-ok { display: none; }
@@ -2102,7 +2169,22 @@ button, input, select { font: inherit; color: inherit; }
   padding: 24px;
   text-align: center;
 }
-.e404 svg { width: min(520px, 100%); height: auto; }
+.e404 svg { width: min(560px, 100%); height: auto; }
+.e404-led { fill: #1f3a28; stroke: #0b2018; stroke-width: 2; transition: fill 0.3s; }
+.e404-glow { opacity: 0; transition: opacity 0.4s; }
+.e404-fixed .e404-led { fill: #52ff86; }
+.e404-fixed .e404-glow { opacity: 1; }
+.e404-flow path { opacity: 0; }
+.e404-fixed .e404-flow path { opacity: 1; animation: dash-run 0.6s linear infinite; }
+.e404-ring { fill: none; stroke: #ffd27a; stroke-width: 2; opacity: 0.8; transform-box: fill-box; transform-origin: center; animation: ring 1.4s ease-out infinite; }
+.e404-fixed .e404-ring { display: none; }
+.e404-svg.is-near .e404-target { filter: drop-shadow(0 0 6px #ffd27a); }
+.e404-tip { cursor: grab; touch-action: none; outline: none; }
+.e404-tip.is-drag { cursor: grabbing; }
+.e404-tip:focus-visible rect { stroke: #fff; stroke-width: 2; }
+.e404-grab { fill: transparent; }
+.e404-lcd { fill: #172015; font: 700 20px var(--mono); }
+.e404-skip { font-size: 0.9rem; color: var(--muted); }
 .e404 h1 { margin: 18px 0 8px; font-size: clamp(2rem, 6vw, 3.4rem); }
 .e404 p { margin: 0 0 24px; color: var(--muted); }
 
@@ -2812,6 +2894,45 @@ dialog.cv-gate { width: min(520px, calc(100vw - 24px)); padding: 24px 24px 20px;
 .legal h2 { margin: 0 0 8px; font-size: 1.15rem; color: var(--copper-hi); }
 .legal p, .legal ul { margin: 0 0 8px; }
 .legal ul { display: grid; gap: 6px; padding-left: 20px; }
+
+/* Saisons : guirlande de décembre, 1er avril */
+.garland {
+  position: fixed;
+  z-index: 48;
+  left: 0; right: 0; top: 58px;
+  display: flex;
+  justify-content: space-around;
+  height: 16px;
+  pointer-events: none;
+  background: radial-gradient(ellipse 60% 100% at 50% 0, transparent 60%, rgba(30, 40, 35, 0.9) 61%, transparent 66%) 0 -6px / 60px 16px repeat-x;
+}
+.garland i {
+  width: 8px; height: 12px;
+  margin-top: 4px;
+  border-radius: 50% 50% 45% 45%;
+  background: var(--c);
+  box-shadow: 0 0 8px var(--c), 0 0 16px var(--c);
+  animation: bulb 1.5s ease-in-out var(--d) infinite;
+}
+@keyframes bulb { 50% { opacity: 0.25; box-shadow: none; } }
+@media (min-width: 1240px) {
+  .garland {
+    left: 30px; right: auto; top: 56px; bottom: 56px;
+    flex-direction: column;
+    width: 20px; height: auto;
+    background: none;
+  }
+  .garland i { margin: 0 0 0 6px; }
+}
+.april main,
+.april .footer { transform: rotate(180deg); }
+.april-fix {
+  position: fixed;
+  z-index: 95;
+  left: 50%; top: 70px;
+  transform: translateX(-50%);
+  box-shadow: 0 14px 30px -10px rgba(0, 0, 0, 0.9);
+}
 
 .hud-secrets-title { margin-top: 16px !important; }
 .hud-secrets li span:last-child { font-size: 0.84rem; color: var(--muted); }

@@ -3,28 +3,53 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self' data:; font-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; base-uri 'none'; form-action 'none'">
   <meta name="robots" content="noindex">
   <title>Circuit ouvert — Alexis Trudelle</title>
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="/assets/js/404.js" defer></script>
 </head>
 <body>
   <main class="e404">
     <div>
-      <svg viewBox="0 0 520 160" aria-hidden="true">
-        <rect x="2" y="2" width="516" height="156" rx="16" fill="#124437" stroke="#0b2e25" stroke-width="2"/>
-        <path d="M30 80 H210" stroke="#c97b2a" stroke-width="8" stroke-linecap="round"/>
-        <path d="M310 80 H490" stroke="#c97b2a" stroke-width="8" stroke-linecap="round"/>
-        <path d="M210 80 L232 66 M310 80 L290 96" stroke="#c97b2a" stroke-width="8" stroke-linecap="round"/>
-        <circle cx="30" cy="80" r="11" fill="#d8b25a"/>
-        <circle cx="490" cy="80" r="11" fill="#d8b25a"/>
-        <text x="260" y="88" text-anchor="middle" fill="#ffb35c" font-family="Consolas, monospace" font-size="22" font-weight="700">O.L</text>
-        <text x="260" y="136" text-anchor="middle" fill="rgba(241,245,239,.75)" font-family="Consolas, monospace" font-size="13">ERREUR 404 · PISTE COUPÉE</text>
+      <svg class="e404-svg" viewBox="0 0 520 220" role="img" aria-labelledby="e404-desc">
+        <desc id="e404-desc">Une piste de circuit est coupée : rebranchez le fil sur la pastille de droite pour fermer le circuit.</desc>
+        <defs>
+          <radialGradient id="g-led404" cx=".5" cy=".5" r=".5">
+            <stop offset="0" stop-color="#52ff86" stop-opacity=".9"/><stop offset="1" stop-color="#52ff86" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <rect x="2" y="2" width="516" height="216" rx="16" fill="#124437" stroke="#0b2e25" stroke-width="2"/>
+        <g fill="none" stroke="#c97b2a" stroke-width="8" stroke-linecap="round">
+          <path d="M40 110 H200"/>
+          <path d="M320 110 H430 V70"/>
+          <path d="M430 50 V30 H40 V80"/>
+        </g>
+        <g class="e404-flow" fill="none" stroke="#ffe0ad" stroke-width="3" stroke-linecap="round" stroke-dasharray="1 15">
+          <path d="M40 110 H200 M320 110 H430 V70 M430 50 V30 H40 V80"/>
+        </g>
+        <rect x="22" y="80" width="36" height="30" rx="5" fill="#e0821f"/>
+        <text class="silk" x="28" y="100">9V</text>
+        <circle class="e404-glow" cx="430" cy="60" r="34" fill="url(#g-led404)"/>
+        <circle class="e404-led" cx="430" cy="60" r="11"/>
+        <text class="silk silk-sm" x="448" y="64">LED</text>
+        <rect x="360" y="150" width="120" height="40" rx="6" fill="#b6c4a1" stroke="#0f1112" stroke-width="3"/>
+        <text class="e404-lcd" x="420" y="178" text-anchor="middle">O.L</text>
+        <text class="silk silk-sm" x="40" y="204">ERREUR 404 · PISTE COUPÉE</text>
+        <circle cx="200" cy="110" r="11" fill="#d8b25a"/>
+        <circle class="e404-target" cx="320" cy="110" r="11" fill="#d8b25a"/>
+        <circle class="e404-ring" cx="320" cy="110" r="18"/>
+        <path class="e404-wire" d="M200 110 C210 160 220 166 227 164" fill="none" stroke="#c4241b" stroke-width="5" stroke-linecap="round"/>
+        <g class="e404-tip" tabindex="0" role="button" aria-label="Extrémité du fil : glissez-la sur la pastille de droite (ou appuyez sur Entrée)">
+          <circle class="e404-grab" cx="0" cy="0" r="24"/>
+          <rect x="-9" y="-6" width="18" height="12" rx="3" fill="#c4241b"/>
+          <rect x="7" y="-3" width="9" height="6" rx="1" fill="#d9dcd8"/>
+        </g>
       </svg>
       <h1>Circuit ouvert</h1>
-      <p>Cette page n'existe pas (ou la piste a été coupée). Le multimètre affiche O.L.</p>
-      <a class="btn btn-copper" href="/">Retour à l'accueil</a>
+      <p class="e404-msg" aria-live="polite">Cette page n'existe pas : la piste est coupée. <strong>Rebranchez le fil</strong> sur la pastille de droite pour retrouver le chemin de l'accueil.</p>
+      <p><a class="e404-skip" href="/">Ou retourner directement à l'accueil</a></p>
     </div>
   </main>
 </body>

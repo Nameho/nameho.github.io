@@ -590,13 +590,18 @@ function splitName() {
 
 function typeRole() {
   const fx = $('.hero-role-fx');
-  if (!fx || reducedMotion()) return;
+  const tag = $('.role-tag');
+  if (!fx || reducedMotion()) {
+    tag?.classList.add('is-on');
+    return;
+  }
   const full = fx.textContent.trim();
   fx.textContent = '';
   let i = 0;
   const step = () => {
     fx.textContent = full.slice(0, ++i);
     if (i < full.length) setTimeout(step, 26 + Math.random() * 42);
+    else setTimeout(() => tag?.classList.add('is-on'), 250); // l'étiquette s'allume après la frappe
   };
   setTimeout(step, 1100);
 }
