@@ -19,7 +19,7 @@ Un portfolio « one-page » pensé comme un banc de réparation : on ne fait pas
 
 - **Version express** : un résumé « recruteur pressé » en 30 secondes, imprimable (lien direct : `https://nameho.github.io/#express`).
 - **CV en PDF** : publié chiffré, déverrouillé après un petit test anti-robot (brancher la fiche dans la prise).
-- **Banc de test** en bas à droite : 7 défis… et 7 secrets à trouver (indices dans le panneau).
+- **Banc de test** en bas à droite : 8 défis… et 7 secrets à trouver (indices dans le panneau).
 - **Surprises de saison** : en décembre et le 1er avril.
 
 ## Technique

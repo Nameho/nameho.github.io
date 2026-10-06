@@ -48,6 +48,7 @@
   <link rel="modulepreload" href="assets/js/defis.js">
   <link rel="modulepreload" href="assets/js/bios.js">
   <link rel="modulepreload" href="assets/js/colors.js">
+  <link rel="modulepreload" href="assets/js/teardown.js">
   <link rel="modulepreload" href="assets/js/veille.js">
   <link rel="modulepreload" href="assets/js/recruit.js">
   <link rel="modulepreload" href="assets/js/contact.js">
@@ -1066,12 +1067,13 @@
           <h2>Défis de l'atelier</h2>
           <span class="sec-trace" aria-hidden="true"></span>
         </header>
-        <p class="sec-intro" data-reveal>Deux défis express&nbsp;: diagnostiquer un PC qui refuse de démarrer, puis lire le code couleur des résistances contre la montre.</p>
+        <p class="sec-intro" data-reveal>Trois défis&nbsp;: diagnostiquer un PC qui refuse de démarrer, lire le code couleur des résistances contre la montre, puis démonter un PC portable en toute sécurité, comme pendant mon immersion en atelier.</p>
 
         <div class="defis" data-reveal>
           <div class="defis-tabs" role="tablist" aria-label="Choisir un défi">
             <button type="button" role="tab" id="tab-bios" aria-controls="panel-bios" aria-selected="true"><span aria-hidden="true">🖥</span> Bips du BIOS</button>
             <button type="button" role="tab" id="tab-colors" aria-controls="panel-colors" aria-selected="false" tabindex="-1"><span aria-hidden="true">🎨</span> Code couleur</button>
+            <button type="button" role="tab" id="tab-laptop" aria-controls="panel-laptop" aria-selected="false" tabindex="-1"><span aria-hidden="true">💻</span> Démontage portable</button>
           </div>
 
           <!-- Défi 1 : PC qui ne démarre pas -->
@@ -1380,6 +1382,43 @@
               <p class="memo-how"><b>Lecture :</b> 1<sup>er</sup> anneau = 1<sup>er</sup> chiffre, 2<sup>e</sup> = 2<sup>e</sup> chiffre, 3<sup>e</sup> = multiplicateur. Le 4<sup>e</sup> anneau, souvent <span class="t-or">or</span> (±5 %) ou <span class="t-argent">argent</span> (±10 %), indique la tolérance et se place à droite.</p>
               <p class="memo-ex"><b>Exemple :</b> jaune · violet · marron · or = 47 × 10 = <b>470 Ω</b> ±5 %</p>
               <p class="learn"><button class="info-btn info-btn-light" type="button" data-info="couleurs"><span aria-hidden="true">ⓘ</span> Pourquoi des couleurs&nbsp;?</button></p>
+            </aside>
+          </div>
+
+          <!-- Défi 3 : démonter un PC portable, comme en atelier de reconditionnement -->
+          <div class="defi defi-laptop" id="panel-laptop" role="tabpanel" aria-labelledby="tab-laptop" hidden>
+            <div class="lt-main">
+              <div class="lt-scene">
+                <div class="lt-flip">
+                  <svg class="lt-face lt-top" viewBox="-80 0 800 420" role="group" aria-label="PC portable fermé, vu de dessus, chargeur branché"></svg>
+                  <svg class="lt-face lt-bottom" viewBox="-80 0 800 420" role="group" aria-label="PC portable retourné, vu de dessous"></svg>
+                </div>
+                <p class="lt-esd-badge" aria-hidden="true">⏚ Bracelet relié à la terre</p>
+                <div class="lt-end" role="status" hidden>
+                  <p class="lt-end-title">PC entièrement démonté&nbsp;!</p>
+                  <p class="lt-end-stats"></p>
+                  <p class="lt-end-tip">Au remontage&nbsp;: ordre inverse, chaque vis à sa place (merci le bac), nappes enfoncées bien droites avant de rabattre les loquets, pâte thermique neuve.</p>
+                  <button class="btn btn-copper btn-sm" type="button" data-lt-reset>Recommencer</button>
+                </div>
+              </div>
+              <p class="lt-msg" aria-live="polite"></p>
+              <div class="lt-bar">
+                <button class="btn btn-copper btn-sm" type="button" data-lt-flip>↻ Retourner le PC</button>
+                <button class="btn btn-ghost btn-sm" type="button" data-lt-hint>Indice</button>
+                <button class="btn btn-ghost btn-sm" type="button" data-lt-reset>Recommencer</button>
+                <p class="lt-stats"><span aria-hidden="true">⏱</span> <b data-lt="time">0:00</b> · Erreurs <b data-lt="errors">0</b> · Vis <b data-lt="screws">0</b></p>
+              </div>
+            </div>
+
+            <aside class="lt-side" aria-label="Établi">
+              <p class="lt-side-title">Établi</p>
+              <button class="lt-wrist" type="button" data-lt-wrist aria-pressed="false">Bracelet antistatique</button>
+              <div class="lt-tools" role="group" aria-label="Outils"></div>
+              <p class="lt-side-title">Bac magnétique <small>(rangement automatique)</small></p>
+              <ul class="lt-tray"></ul>
+              <p class="lt-side-title">Pièces déposées <b data-lt="parts">0</b>/<span data-lt="total">14</span></p>
+              <ol class="lt-parts"></ol>
+              <p class="learn"><button class="info-btn" type="button" data-info="teardown"><span aria-hidden="true">ⓘ</span> Démonter un portable en sécurité</button></p>
             </aside>
           </div>
         </div>
@@ -1741,6 +1780,7 @@
         <li data-ach="scope"><span class="led"></span><a href="#parcours">Mesurer 3 impulsions</a></li>
         <li data-ach="bios"><span class="led"></span><a href="#defis">Faire redémarrer le PC</a></li>
         <li data-ach="colors"><span class="led"></span><a href="#defis">7/10 au code couleur</a></li>
+        <li data-ach="teardown"><span class="led"></span><a href="#defis">Démonter le PC portable</a></li>
         <li data-ach="dip"><span class="led"></span><a href="#veille">Basculer un interrupteur DIP</a></li>
         <li data-ach="solder"><span class="led"></span><a href="#contact">Réussir les 3 soudures</a></li>
       </ol>
@@ -1757,8 +1797,8 @@
     </div>
     <div class="hud-row">
       <button class="hud-toggle" type="button" aria-expanded="false" aria-controls="hud-panel">
-        <span class="hud-leds" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
-        <span class="hud-count"><b>0</b>/7<span class="sr-only"> tests réussis, afficher la liste</span></span>
+        <span class="hud-leds" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+        <span class="hud-count"><b>0</b>/8<span class="sr-only"> tests réussis, afficher la liste</span></span>
       </button>
       <button class="motion-toggle" type="button" aria-pressed="true"><span class="sr-only">Animations complètes</span><span class="snd-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 12c2.5-6 5.5-6 8 0s5.5 6 8 0 3-3 4-3"/><path class="snd-off" d="M4 4l16 16"/></svg></span></button>
       <button class="sound-toggle" type="button" aria-pressed="true"><span class="sr-only">Son</span><span class="snd-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path class="snd-body" d="M3 9.5h4l5-4v13l-5-4H3z"/><path class="snd-on" d="M15.5 9a4 4 0 0 1 0 6M18.5 6a8.5 8.5 0 0 1 0 12"/><path class="snd-off" d="M16 9.5l5 5M21 9.5l-5 5"/></svg></span></button>
@@ -1957,6 +1997,9 @@
     <linearGradient id="hd-orange" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8a470b"/><stop offset=".3" stop-color="#f6a447"/><stop offset=".62" stop-color="#e0821f"/><stop offset="1" stop-color="#7c3f09"/></linearGradient>
     <filter id="hd-shadow" x="-25%" y="-25%" width="150%" height="170%"><feDropShadow dx="0" dy="2" stdDeviation="1.6" flood-color="#000000" flood-opacity=".55"/></filter>
     <filter id="hd-shadow-lg" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="1" dy="5" stdDeviation="4" flood-color="#000000" flood-opacity=".5"/></filter>
+    <!-- Contour vert / rouge qui épouse la silhouette (démontage du portable) -->
+    <filter id="hd-glow-ok" x="-50%" y="-50%" width="200%" height="200%"><feMorphology in="SourceAlpha" operator="dilate" radius="2.2" result="d"/><feFlood flood-color="#52ff86"/><feComposite in2="d" operator="in" result="o"/><feGaussianBlur in="o" stdDeviation="2.4" result="g"/><feMerge><feMergeNode in="g"/><feMergeNode in="o"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="hd-glow-no" x="-50%" y="-50%" width="200%" height="200%"><feMorphology in="SourceAlpha" operator="dilate" radius="2.2" result="d"/><feFlood flood-color="#ff4b3e"/><feComposite in2="d" operator="in" result="o"/><feGaussianBlur in="o" stdDeviation="2.4" result="g"/><feMerge><feMergeNode in="g"/><feMergeNode in="o"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
     <filter id="f-thermal" color-interpolation-filters="sRGB">
       <feColorMatrix type="matrix" values="0.30 0.55 0.15 0 0  0.30 0.55 0.15 0 0  0.30 0.55 0.15 0 0  0 0 0 1 0"/>
       <feComponentTransfer>

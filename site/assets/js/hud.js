@@ -10,6 +10,7 @@ const LABELS = {
   scope: 'Oscilloscope maîtrisé',
   bios: 'PC redémarré',
   colors: 'Code couleur maîtrisé',
+  teardown: 'PC portable démonté',
   dip: 'Veille filtrée',
   solder: 'Soudures réussies',
 };

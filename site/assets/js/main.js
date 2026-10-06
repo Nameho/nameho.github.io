@@ -15,6 +15,7 @@ import { initWorkshop } from './workshop.js';
 import { initDefis } from './defis.js';
 import { initBios } from './bios.js';
 import { initColors } from './colors.js';
+import { initTeardown } from './teardown.js';
 import { initVeille } from './veille.js';
 import { initRecruit } from './recruit.js';
 import { initContact } from './contact.js';
@@ -39,6 +40,7 @@ const modules = {
   defis: initDefis,
   bios: initBios,
   couleurs: initColors,
+  demontage: initTeardown,
   veille: initVeille,
   recruter: initRecruit,
   contact: initContact,

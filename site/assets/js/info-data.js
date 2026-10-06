@@ -218,4 +218,19 @@ export const INFO = {
     ],
     link: { href: W('Fer_%C3%A0_souder'), label: 'Le fer à souder sur Wikipédia' },
   },
+  teardown: {
+    icon: '💻',
+    title: 'Démonter un portable en sécurité',
+    text: [
+      'Un PC portable se démonte toujours dans le même ordre : couper l’alimentation, se protéger de l’électricité statique, ouvrir le capot sans casser ses clips, puis débrancher la batterie avant de toucher quoi que ce soit d’autre.',
+    ],
+    facts: [
+      'Batterie d’abord : tant qu’elle est branchée, la carte mère reste sous tension, même PC éteint. Un tournevis qui glisse peut alors provoquer un court-circuit.',
+      'Une batterie lithium gonflée ou percée peut prendre feu : on ne la plie pas, on ne la perce pas, et elle part au recyclage dans un bac adapté.',
+      'Les vis n’ont pas toutes la même longueur : les constructeurs comme Dell marquent leur taille près des trous (M2×3 = 2 mm de diamètre, 3 mm de long). Un bac magnétique à compartiments évite les erreurs au remontage.',
+      'Une nappe à loquet (ZIF, « Zero Insertion Force ») ne se tire jamais sans avoir soulevé son loquet : on arracherait ses pistes.',
+      'Les manuels de service des constructeurs détaillent chaque étape du démontage, avec l’emplacement et la taille de chaque vis.',
+    ],
+    link: { href: W('Zero_insertion_force'), label: 'Les connecteurs ZIF sur Wikipédia' },
+  },
 };
