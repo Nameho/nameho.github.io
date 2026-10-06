@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-05T21:50:07.802Z",
+  "updatedAt": "2026-10-06T06:26:50.915Z",
   "sources": [
     {
       "id": "ifixit",
@@ -46,6 +46,30 @@
   ],
   "items": [
     {
+      "id": "629f79bce5f9",
+      "source": "hackaday",
+      "title": "Two Microcontrollers Talking, All It Needs is an LED",
+      "url": "https://hackaday.com/2026/10/05/two-microcontrollers-talking-all-it-needs-is-an-led/",
+      "date": "2026-10-06T05:00:26.000Z",
+      "excerpt": "There are some projects that seem at first sight to be easy, but anyone who tries them finds a whole heap of unexpected problems and turns to the off-the-shelf device. …read more"
+    },
+    {
+      "id": "cad1c479110a",
+      "source": "hackaday",
+      "title": "3D-Printed Filter Removes Most Microplastics From Water",
+      "url": "https://hackaday.com/2026/10/05/3d-printed-filter-removes-most-microplastics-from-water/",
+      "date": "2026-10-06T02:00:57.000Z",
+      "excerpt": "With the rise of synthetic polymers in everywhere from clothing, packaging and beyond, we have also seen a corresponding rise in fragments of these polymers in the environment. These micro- …read more"
+    },
+    {
+      "id": "bc1349960f66",
+      "source": "hackaday",
+      "title": "Ambition, Thy Name is a 3D Printed Transonic R/C Jet",
+      "url": "https://hackaday.com/2026/10/05/ambition-thy-name-is-a-3d-printed-transonic-r-c-jet/",
+      "date": "2026-10-05T23:00:10.000Z",
+      "excerpt": "Building anything that flies from scratch is an ambitious undertaking, even if it’s ‘just’ radio-controlled. 3D printing the aircraft isn’t that odd these days, but putting a hot jet engine …read more"
+    },
+    {
       "id": "15478ec11f61",
       "source": "hackaday",
       "title": "How to Grow a Giant Crystal from Copper Sulfate",
@@ -68,30 +92,6 @@
       "url": "https://hackaday.com/2026/10/05/how-a-british-engineer-homebrewed-the-quietest-carbine/",
       "date": "2026-10-05T17:00:36.000Z",
       "excerpt": "An earlier wooden-stock model of the De Lisle carbine. Note the huge suppressor which takes up much of the weapon’s length. Its ability to accept a large volume of gas aids \" data-large-file=\" /> Hollywood has a lot to answer for when it…"
-    },
-    {
-      "id": "4b992d7d3379",
-      "source": "hackaday",
-      "title": "Building a Cheap, Dexterous Robot Hand",
-      "url": "https://hackaday.com/2026/10/05/building-a-cheap-dexterous-robot-hand/",
-      "date": "2026-10-05T15:30:41.000Z",
-      "excerpt": "Most of the time, assuming nothing’s gone wrong with them, we take our hands so much for granted that it’s easy to forget what remarkable pieces of engineering they are: …read more"
-    },
-    {
-      "id": "7e527eef7a98",
-      "source": "hackaday",
-      "title": "The FPGA Chronicles: Open Source It",
-      "url": "https://hackaday.com/2026/10/05/the-fpga-chronicles-open-source-it/",
-      "date": "2026-10-05T14:00:38.000Z",
-      "excerpt": "Last time, we looked at getting started with the GOWIN tools and a Tang Nano 20K FPGA. The software from GOWIN isn’t bad, but it isn’t open source, and there …read more"
-    },
-    {
-      "id": "7e3a8406d137",
-      "source": "hackaday",
-      "title": "Porting Video Games to VHS",
-      "url": "https://hackaday.com/2026/10/05/porting-video-games-to-vhs/",
-      "date": "2026-10-05T11:00:16.000Z",
-      "excerpt": "Although VHS-based games have existed for about as long as VHS players have sat in millions of living rooms, they always tended to be rather sparse gaming experiences. For example, …read more"
     },
     {
       "id": "b0eeb09536f2",
