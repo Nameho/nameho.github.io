@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-06T11:19:34.891Z",
+  "updatedAt": "2026-10-06T13:00:48.590Z",
   "sources": [
     {
       "id": "ifixit",
@@ -45,6 +45,14 @@
     }
   ],
   "items": [
+    {
+      "id": "37e638652ca9",
+      "source": "hop",
+      "title": "40 mesures pour l’environnement et les consommateur·ices en vue de 2027",
+      "url": "https://www.halteobsolescence.org/livre-blanc-obsolescence-presidentielle-2027/",
+      "date": "2026-10-06T12:55:01.000Z",
+      "excerpt": "L’association HOP - Halte à l’Obsolescence Programmée publie un nouveau livre blanc à l’approche des élections présidentielles de 2027. Son but : proposer aux décideurs politiques 40 mesures au service de l’environnement et des…"
+    },
     {
       "id": "586b3aa6fde1",
       "source": "hackaday",
@@ -220,14 +228,6 @@
       "url": "https://www.ifixit.com/News/119297/repair-in-the-wild-a-summer-with-europes-repair-communities",
       "date": "2026-09-18T01:28:55.000Z",
       "excerpt": "From a spring kickoff in Italy to a summer full of hacker camps and Maker Faires, iFixit tools and the Street Team showed up at events across Europe this year.…"
-    },
-    {
-      "id": "4003bee24e58",
-      "source": "hop",
-      "title": "Réparation : construire ensemble un modèle pour changer d’échelle",
-      "url": "https://www.halteobsolescence.org/colloque-jnr-4/",
-      "date": "2026-09-15T16:21:41.000Z",
-      "excerpt": "Pour inaugurer la 4e édition des Journées Nationales de la Réparation, les deux co-organisateurs vous invitent à un colloque à l’Académie du Climat le jeudi 15 octobre. On vous donne le programme. L’article Réparation : construire…"
     },
     {
       "id": "01cbb9ba09f6",
