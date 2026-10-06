@@ -2453,6 +2453,97 @@ dialog.express { width: min(980px, calc(100vw - 24px)); max-height: calc(100dvh 
 /* CV : test anti-robot (brancher la fiche) */
 dialog.cv-gate { width: min(520px, calc(100vw - 24px)); padding: 24px 24px 20px; }
 .cv-gate .dlg-close { position: absolute; top: 14px; right: 14px; }
+
+/* Poste de soudure (rework), ouvert depuis « Trouve la panne » */
+dialog.rework { width: min(1000px, calc(100vw - 24px)); max-height: calc(100dvh - 24px); overflow: auto; }
+.rw-sheet { display: grid; gap: 14px; padding: clamp(16px, 2.6vw, 26px); }
+.rw-head { display: flex; justify-content: space-between; gap: 16px; align-items: flex-start; }
+.rw-kicker { margin: 0; font: 600 0.72rem var(--mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--copper-hi); }
+.rw-head h3 { margin: 2px 0 0; font-size: 1.35rem; }
+.rw-main { display: grid; grid-template-columns: minmax(0, 1fr) 250px; gap: 16px; align-items: start; }
+.rw-view { position: relative; overflow: hidden; border: 1px solid var(--line); border-radius: 14px; background: #0b1714; }
+.rw-svg { display: block; width: 100%; height: auto; touch-action: none; user-select: none; -webkit-user-select: none; }
+.rw-temp { position: absolute; top: 10px; right: 12px; margin: 0; padding: 4px 10px; border-radius: 999px; background: rgba(0, 0, 0, 0.55); font: 600 0.8rem var(--mono); color: var(--muted); }
+.rw-temp[data-zone="cold"] { color: #7cc0ff; }
+.rw-temp[data-zone="ok"] { color: var(--led-green); }
+.rw-temp[data-zone="hot"] { color: #ff6b5a; }
+.rw-side-title { margin: 0 0 6px; font: 600 0.72rem var(--mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--copper-hi); }
+.rw-steps { display: grid; gap: 5px; margin: 0; padding-left: 22px; font-size: 0.86rem; color: var(--muted); }
+.rw-steps small { font-weight: 400; color: var(--muted); }
+.rw-steps .is-now { font-weight: 700; color: var(--silk); }
+.rw-steps .is-done { color: var(--led-green); }
+.rw-steps .is-done::after { content: " ✔"; }
+.rw-part { display: grid; gap: 8px; margin-top: 14px; padding: 12px; border: 1px dashed rgba(255, 179, 92, 0.45); border-radius: 12px; }
+.rw-part-svg { justify-self: center; width: 116px; height: auto; }
+.rw-part-help { margin: 0; font-size: 0.82rem; color: var(--muted); }
+.rw-part-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.rw-tools { display: flex; flex-wrap: wrap; gap: 8px; }
+.rw-tool {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text);
+  font: 600 0.86rem var(--font);
+  cursor: var(--cur-hand);
+  transition: border-color 0.15s, background 0.15s;
+}
+.rw-tool:hover { border-color: var(--gold); }
+.rw-tool[aria-pressed="true"] { border-color: var(--copper); background: rgba(224, 130, 31, 0.16); color: var(--silk); box-shadow: 0 0 0 2px rgba(224, 130, 31, 0.25); }
+.rw-msg { min-height: 3em; margin: 0; font-size: 0.92rem; }
+.rw-msg.is-warn { color: #ffb09e; }
+.rw-msg.is-good { color: var(--led-green); }
+.rw-report { padding: 14px; border: 1px solid var(--line); border-radius: 14px; background: rgba(255, 255, 255, 0.03); }
+.rw-checks { display: grid; gap: 6px; margin: 0 0 12px; padding: 0; list-style: none; font-size: 0.9rem; }
+.rw-checks li { display: flex; gap: 8px; }
+.rw-checks .is-ok span:first-child { color: var(--led-green); }
+.rw-checks .is-bad span:first-child { color: #ff6b5a; }
+.rw-checks .is-warn span:first-child { color: var(--gold); }
+.rw-checks .is-info span:first-child { color: #7cc0ff; }
+.rw-foot { display: flex; flex-wrap: wrap; gap: 10px; justify-content: space-between; align-items: center; }
+
+/* Vue en coupe (SVG) : seules les zones « rw-hit » réagissent au pointeur */
+.rw-svg :is(.rw-comp, .rw-joint, .rw-fx) { pointer-events: none; }
+.rw-bg { fill: #0d1b17; }
+.rw-label { font: 600 8px var(--mono); fill: #6f8f84; }
+.rw-board { fill: #1d6b50; stroke: #0f3f2e; }
+.rw-pad { fill: #c8873a; transition: transform 0.3s; }
+.rw-pad.is-lifted { fill: #e05a3a; transform-box: fill-box; transform-origin: left center; transform: translateY(6px) rotate(-12deg); }
+.rw-silk { font: 700 10px var(--mono); fill: #e8efe9; }
+.rw-lead { fill: none; stroke: #c3c6c2; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+.rw-lead.rw-strap { stroke: #cfd3cf; stroke-width: 4; }
+.rw-cap { fill: #2a4fb0; }
+.rw-cap-stripe { fill: #cfd8ea; opacity: 0.9; }
+.rw-cap-minus { fill: #2a4fb0; }
+.rw-cap-bulge { fill: #a9b1ba; stroke: #6f7780; }
+.rw-res { fill: #d8c59c; }
+.rw-led { fill: rgba(220, 40, 30, 0.55); stroke: rgba(255, 120, 100, 0.6); }
+.rw-led-rim { fill: rgba(200, 30, 25, 0.75); }
+.rw-led-metal { fill: #9aa0a3; }
+.rw-led-flat { stroke: #5a1a14; stroke-width: 2.5; }
+.rw-fillet { stroke: rgba(0, 0, 0, 0.3); stroke-width: 0.8; fill: url(#rw-solder); }
+.rw-fillet.q-cold { fill: url(#rw-cold); stroke-dasharray: 2 1.5; }
+.rw-crack { fill: none; stroke: #161a18; stroke-width: 1.6; }
+.rw-flux { fill: rgba(222, 170, 70, 0.5); stroke: rgba(255, 210, 120, 0.7); }
+.rw-residue { fill: rgba(150, 100, 40, 0.5); }
+.rw-braid { fill: #c8873a; stroke: #8a5a22; stroke-dasharray: 2 2; }
+.rw-braid-silver { fill: #dfe4e6; }
+.rw-iron-tip { stroke: #c9cdd0; stroke-width: 5; stroke-linecap: round; }
+.rw-iron-shaft { stroke: #7d8387; stroke-width: 8; stroke-linecap: round; }
+.rw-iron-grip { stroke: #e0821f; stroke-width: 17; stroke-linecap: round; }
+.rw-iron-glow { fill: #ff7a2a; }
+.rw-wire { fill: none; stroke: #d5dadc; stroke-width: 3.5; stroke-linecap: round; }
+.rw-hit { fill: transparent; cursor: var(--cur-hand); outline: none; }
+.rw-hit:focus-visible { stroke: var(--gold); stroke-width: 2; stroke-dasharray: 5 4; }
+@media (max-width: 760px) {
+  .rw-main { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+  /* Sur téléphone, seule l'étape en cours reste affichée : les outils restent à portée de pouce */
+  .rw-steps { list-style: none; padding-left: 0; }
+  .rw-steps li:not(.is-now) { display: none; }
+}
 .cv-gate h2 { margin: 0 44px 8px 0; font-size: 1.5rem; }
 .cvg-intro { margin: 0 0 18px; color: var(--muted); }
 .plug-track {
@@ -3100,7 +3191,7 @@ dialog.cv-gate { width: min(520px, calc(100vw - 24px)); padding: 24px 24px 20px;
 }
 
 /* Fiches pédagogiques « Le saviez-vous ? » */
-.learn { margin: -24px 0 34px; }
+.learn { display: flex; flex-wrap: wrap; gap: 8px; margin: -24px 0 34px; }
 .pc-side .learn, .memo .learn, .solder-side .learn { margin: 0; }
 .info-btn {
   display: inline-flex;

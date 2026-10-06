@@ -9,7 +9,7 @@ Un portfolio « one-page » pensé comme un banc de réparation : on ne fait pas
 | Accueil | Circuit imprimé généré en temps réel : la souris révèle le cuivre sous le vernis, un clic envoie une impulsion de courant. |
 | Profil | Fiche technique façon *datasheet*, avec le brochage d'un circuit intégré (une qualité par broche). |
 | Compétences | Un boîtier à dévisser (geste circulaire ou clic), puis une carte dont chaque composant est une compétence. |
-| Trouve la panne | Un vrai petit circuit simulé et un multimètre (V, Ω, continuité avec bip, test diode). Une panne aléatoire est cachée : mesurer, trouver, remplacer, vérifier. |
+| Trouve la panne | Un vrai petit circuit simulé et un multimètre (V, Ω, continuité avec bip, test diode). Une panne aléatoire est cachée : mesurer, trouver, remplacer, vérifier. Les pièces soudées se remplacent au **poste de soudure** (vue en coupe) : flux, tresse et fer pour dessouder, pose dans le bon sens, soudure fer puis étain, coupe des pattes, nettoyage à l'alcool, contrôle qualité. Une soudure froide ou un composant à l'envers se paient à la mise sous tension. |
 | Parcours | Un oscilloscope 2 voies (expériences / formations) avec curseurs de mesure Δt et base de temps réglable. |
 | Atelier | Des bons d'intervention tamponnés et un rapport d'évaluation d'immersion. |
 | Défis de l'atelier | « Bips du BIOS » (un PC refuse de démarrer : bips, voyants, ventilateur, écran) et un quiz chronométré du code couleur des résistances, avec mémo. |

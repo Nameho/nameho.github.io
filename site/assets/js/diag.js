@@ -5,6 +5,7 @@
 import { $, $$, svg, el, clamp, reducedMotion } from './util.js';
 import { sfx, loopStart, loopStop } from './audio.js';
 import { achieve, discover } from './hud.js';
+import { openRework } from './rework.js';
 
 const NODES = ['A', 'B', 'C', 'D', 'E', 'F'];
 const CHAIN = ['SW1', 'F1', 'R1', 'D1', 'W1']; // CHAIN[i] relie NODES[i] et NODES[i + 1]
@@ -61,6 +62,9 @@ const FAULTS = {
     tip: 'Les soudures sèches ou fissurées sont un grand classique : invisibles à l’œil nu, mais 9 V à leurs bornes ne mentent pas.',
   },
 };
+
+// Pièces soudées sur la carte (remplacées au poste de soudure) ; la pile est sur un clip, le fusible dans un porte-fusible
+const SOLDERED = new Set(['C1', 'R1', 'D1', 'W1']);
 
 const PART_NAMES = { BAT1: 'la pile BAT1', C1: 'le condensateur C1', F1: 'le fusible F1', R1: 'la résistance R1', D1: 'la LED D1', W1: 'le strap W1' };
 
@@ -120,6 +124,7 @@ export function initDiag() {
     power: true,
     mode: $('input[name="meter-mode"]:checked', bench)?.value ?? 'v',
     pending: null,
+    capReversed: false, // condensateur neuf monté à l'envers : il lâchera à la mise sous tension
     measures: 0,
     lastKey: '',
     wasted: 0,
@@ -560,8 +565,13 @@ export function initDiag() {
       say("Alimentation coupée : tu peux mesurer en Ω, en continuité ou en test diode… et remplacer une pièce.");
       return;
     }
-    if (st.fault === null && !st.done) succeed();
-    else if (st.pending === 'bad') {
+    if (st.capReversed) capPop();
+    else if (st.fault === null && !st.done) succeed();
+    else if (st.pending === 'rework') {
+      st.pending = null;
+      sfx('buzz');
+      say('La LED reste éteinte… Tu as changé la bonne pièce, mais vérifie ton travail : sens de montage, soudures. Mesure à nouveau !', 'warn');
+    } else if (st.pending === 'bad') {
       st.pending = null;
       sfx('buzz');
       say('La LED reste éteinte… La pièce remplacée était bonne : on mesure toujours avant de remplacer !', 'warn');
@@ -583,7 +593,11 @@ export function initDiag() {
       ok.textContent = 'Couper SW1';
       ok.dataset.action = 'power';
     } else {
-      text.textContent = 'Dessoudage, pose d’une pièce neuve… puis remise sous tension pour vérifier.';
+      text.textContent = SOLDERED.has(part)
+        ? 'Direction le poste de soudure : flux, tresse, fer, étain… comme en atelier.'
+        : part === 'BAT1'
+          ? 'La pile est sur un clip : pas besoin de souder.'
+          : 'Le fusible est dans un porte-fusible : il se change à la main.';
       ok.textContent = 'Remplacer';
       ok.dataset.action = 'replace';
     }
@@ -613,25 +627,74 @@ export function initDiag() {
     pop.hidden = true;
     popPart = null;
     g.classList.remove('is-picked');
+    if (SOLDERED.has(part)) {
+      // Pièce soudée : direction le poste de soudure (le geste compte !)
+      openRework({
+        part,
+        bulged: part === 'C1' && st.fault === 'C1',
+        oldFlip: part === 'D1' && st.fault === 'D1R',
+        cracked: part === 'W1' && st.fault === 'W1',
+        onDone: (r) => fitted(part, r),
+        onCancel: () => { say('Remplacement annulé : la carte est comme avant.'); g.focus(); },
+      });
+      return;
+    }
     sfx('hiss');
     g.classList.add('is-desolder');
     setTimeout(() => {
       g.classList.remove('is-desolder');
-      g.classList.add('is-new');
-      sfx('tink');
-      setTimeout(() => g.classList.remove('is-new'), 650);
-      if (st.fault && part === FAULTS[st.fault].part) {
-        st.fault = null;
-        st.pending = 'good';
-        showVisualFault();
-      } else {
-        st.wasted++;
-        st.pending = 'bad';
+      fitted(part, { quick: true, polarityOk: true, conductive: true });
+    }, reduce ? 0 : 560);
+  }
+
+  /** Pièce neuve en place : selon la qualité du travail, la panne disparaît… ou change de visage. */
+  function fitted(part, r) {
+    const g = $(`[data-part="${part}"]`, board);
+    g.classList.add('is-new');
+    sfx('tink');
+    setTimeout(() => g.classList.remove('is-new'), 650);
+    if (st.fault && part === FAULTS[st.fault].part) {
+      st.fault = null;
+      if (part === 'C1' && !r.polarityOk) st.capReversed = true; // il « explosera » à la mise sous tension
+      else if (part === 'D1' && !r.polarityOk) st.fault = 'D1R';
+      else if (part !== 'C1' && !r.conductive) st.fault = part; // soudure ratée : circuit ouvert à cet endroit
+      st.pending = st.fault ? 'rework' : 'good';
+      showVisualFault();
+    } else {
+      st.wasted++;
+      st.pending = 'bad';
+    }
+    renderStats();
+    update();
+    const done = {
+      BAT1: 'Pile neuve clipsée.',
+      F1: 'Fusible neuf posé dans son porte-fusible.',
+    }[part] ?? (r.quick ? 'Pièce remplacée.' : 'Carte remise sur le banc.');
+    say(`${done} Remets sous tension avec SW1 pour vérifier.`);
+    g.focus();
+  }
+
+  /** Condensateur chimique monté à l'envers : à la mise sous tension, il gonfle et lâche. */
+  function capPop() {
+    st.capReversed = false;
+    setTimeout(() => {
+      st.fault = 'C1';
+      st.wasted++;
+      showVisualFault();
+      sfx('zap');
+      sfx('hiss');
+      const c = centerOf(cap);
+      for (let k = 0; k < 6; k++) {
+        setTimeout(() => {
+          const p = svg('circle', { class: 'puff puff-dark', cx: c.x + (Math.random() - 0.5) * 24, cy: c.y - 30, r: 6 }, overlay);
+          p.style.setProperty('--dx', `${((Math.random() - 0.5) * 50).toFixed(0)}px`);
+          setTimeout(() => p.remove(), 1500);
+        }, k * 90);
       }
       renderStats();
       update();
-      say('Pièce remplacée. Remets sous tension avec SW1 pour vérifier.');
-    }, reduce ? 0 : 560);
+      say('Pop ! Le condensateur était monté à l’envers : il a gonflé et s’est mis en court-circuit. La bande « − » doit être côté −. Coupe SW1 et recommence…', 'warn');
+    }, reduce ? 0 : 700);
   }
 
   $('[data-rp="ok"]', pop).addEventListener('click', (e) => {
@@ -745,6 +808,7 @@ export function initDiag() {
     st.solved = st.fault;
     st.lastFault = st.fault;
     st.pending = null;
+    st.capReversed = false;
     showVisualFault();
     st.measures = 0;
     st.lastKey = '';

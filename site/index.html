@@ -38,6 +38,7 @@
   <link rel="modulepreload" href="assets/js/profile.js">
   <link rel="modulepreload" href="assets/js/skills.js">
   <link rel="modulepreload" href="assets/js/diag.js">
+  <link rel="modulepreload" href="assets/js/rework.js">
   <link rel="modulepreload" href="assets/js/scope.js">
   <link rel="modulepreload" href="assets/js/workshop.js">
   <link rel="modulepreload" href="assets/js/defis.js">
@@ -516,8 +517,8 @@
           <h2>Trouve la panne</h2>
           <span class="sec-trace" aria-hidden="true"></span>
         </header>
-        <p class="sec-intro" data-reveal>Ma méthode de dépannage, en version jeu. La LED <strong>D1</strong> devrait s'allumer… mais elle reste éteinte. Branche les pointes du multimètre, mesure, trouve le composant défectueux et remplace-le. C'est comme ça que j'ai trouvé la pompe HS d'un spa&nbsp;: mesurer, isoler, remplacer.</p>
-        <p class="learn" data-reveal><button class="info-btn" type="button" data-info="multimetre"><span aria-hidden="true">ⓘ</span> Le saviez-vous&nbsp;? Le multimètre et la loi d'Ohm</button></p>
+        <p class="sec-intro" data-reveal>Ma méthode de dépannage, en version jeu. La LED <strong>D1</strong> devrait s'allumer… mais elle reste éteinte. Branche les pointes du multimètre, mesure, trouve le composant défectueux… puis remplace-le au poste de soudure&nbsp;: flux, tresse, fer, étain, comme en atelier. C'est comme ça que j'ai trouvé la pompe HS d'un spa&nbsp;: mesurer, isoler, remplacer.</p>
+        <p class="learn" data-reveal><button class="info-btn" type="button" data-info="multimetre"><span aria-hidden="true">ⓘ</span> Le saviez-vous&nbsp;? Le multimètre et la loi d'Ohm</button> <button class="info-btn" type="button" data-info="rework"><span aria-hidden="true">ⓘ</span> Souder et dessouder comme un pro</button></p>
 
         <div class="bench" data-reveal>
           <div class="bench-board">
@@ -741,7 +742,8 @@
             <li>Le multimètre est sur <strong>V</strong> (tension). Pose la pointe <strong>rouge</strong> côté + et la <strong>noire</strong> côté − d'un composant.</li>
             <li>Dans un circuit en série coupé quelque part, presque toute la tension se retrouve aux bornes de l'élément ouvert.</li>
             <li>Pour vérifier un composant sans tension, coupe l'alimentation avec <strong>SW1</strong> puis passe en <strong>Ω</strong>, <strong>continuité</strong> ou <strong>test diode</strong>.</li>
-            <li>Clique sur un composant pour le remplacer (alimentation coupée&nbsp;!), puis remets sous tension pour vérifier.</li>
+            <li>Clique sur un composant pour le remplacer (alimentation coupée&nbsp;!)&nbsp;: les pièces soudées passent au poste de soudure. Dessoude (flux, tresse et fer), pose la pièce neuve dans le bon sens, soude-la (le fer d'abord, puis l'étain), coupe les pattes, nettoie le flux.</li>
+            <li>Remets sous tension pour vérifier. Une soudure ratée ou une pièce à l'envers&nbsp;? Le multimètre te le dira.</li>
           </ol>
         </details>
       </div>
@@ -1420,6 +1422,53 @@
   <div class="toasts" aria-live="polite"></div>
 
   <!-- ============ Version express (recruteurs pressés) ============ -->
+  <!-- ============ Poste de soudure (rework), ouvert depuis « Trouve la panne » ============ -->
+  <dialog class="rework" id="rework" aria-labelledby="rw-title">
+    <div class="rw-sheet">
+      <header class="rw-head">
+        <div>
+          <p class="rw-kicker">Poste de soudure · vue en coupe</p>
+          <h3 id="rw-title">Remplacer un composant</h3>
+        </div>
+        <button class="dlg-close" type="button" data-rw-close aria-label="Fermer le poste de soudure (le remplacement est annulé)">×</button>
+      </header>
+      <div class="rw-main">
+        <div class="rw-view">
+          <svg class="rw-svg" viewBox="140 46 360 236" role="group" aria-label="Vue en coupe : le composant au-dessus de la carte, ses deux soudures en dessous"></svg>
+          <p class="rw-temp" aria-hidden="true" hidden></p>
+        </div>
+        <div class="rw-side">
+          <p class="rw-side-title">Étapes</p>
+          <ol class="rw-steps"></ol>
+          <div class="rw-part" hidden>
+            <p class="rw-side-title">Pièce neuve</p>
+            <svg class="rw-part-svg" viewBox="236 40 168 172" aria-hidden="true"></svg>
+            <p class="rw-part-help"></p>
+            <div class="rw-part-actions">
+              <button class="btn btn-ghost btn-sm" type="button" data-rw-rotate>↻ Tourner</button>
+              <button class="btn btn-copper btn-sm" type="button" data-rw-insert>Insérer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rw-tools" role="group" aria-label="Outils du poste de soudure"></div>
+      <p class="rw-msg" aria-live="polite"></p>
+      <div class="rw-report" hidden>
+        <p class="rw-side-title">Contrôle qualité</p>
+        <ul class="rw-checks"></ul>
+        <div class="rw-part-actions">
+          <button class="btn btn-copper btn-sm" type="button" data-rw-bench>Remettre la carte sur le banc</button>
+          <button class="btn btn-ghost btn-sm" type="button" data-rw-back>Reprendre le travail</button>
+          <button class="btn btn-copper btn-sm" type="button" data-rw-restart hidden>Recommencer</button>
+        </div>
+      </div>
+      <div class="rw-foot">
+        <button class="link-btn" type="button" data-rw-quick>Remplacement rapide (sans le geste)</button>
+        <button class="btn btn-copper btn-sm" type="button" data-rw-finish>Terminer : contrôle qualité</button>
+      </div>
+    </div>
+  </dialog>
+
   <dialog class="express" id="express" aria-labelledby="xp-title">
     <div class="xp-sheet">
       <header class="xp-head">

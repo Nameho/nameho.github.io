@@ -202,4 +202,20 @@ export const INFO = {
     ],
     link: { href: W('D%C3%A9charge_%C3%A9lectrostatique'), label: 'La décharge électrostatique sur Wikipédia' },
   },
+  rework: {
+    icon: '🔥',
+    title: 'Souder et dessouder comme un pro',
+    text: [
+      'Pour remplacer un composant traversant, on retire d’abord l’étain de ses soudures, puis on le sort de la carte. La tresse à dessouder, faite de fins fils de cuivre, « boit » l’étain fondu par capillarité, comme un buvard.',
+    ],
+    facts: [
+      'Le flux, souvent à base de colophane (une résine de pin), dissout l’oxydation : l’étain s’étale et « mouille » bien le cuivre. Le fil d’étain en contient déjà en son cœur.',
+      'Le bon ordre : le fer chauffe la pastille et la patte, on apporte l’étain sur la soudure (pas sur la panne du fer), on retire l’étain, puis le fer. 2 à 3 secondes suffisent.',
+      'Une bonne soudure est brillante et forme un petit volcan ; une soudure froide est terne et granuleuse, et finit souvent en faux contact.',
+      'Trop chauffer décolle les pastilles de cuivre : c’est l’erreur classique du débutant.',
+      'Un condensateur chimique monté à l’envers peut gonfler, voire éclater : la bande sur son boîtier marque la patte négative.',
+      'Autre outil de dessoudage : la pompe à dessouder, qui aspire l’étain fondu d’un coup de piston.',
+    ],
+    link: { href: W('Fer_%C3%A0_souder'), label: 'Le fer à souder sur Wikipédia' },
+  },
 };
