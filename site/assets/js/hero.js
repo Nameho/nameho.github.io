@@ -636,11 +636,15 @@ export function initHero() {
     resizeTimer = setTimeout(() => { lastW = w; build(); }, 160);
   }).observe(hero);
 
-  lastW = hero.clientWidth;
-  build();
-  // Les polices changent la largeur du nom (et donc la place de la puce) : on régénère
-  document.fonts?.ready.then(build);
-  start();
+  // Le circuit (calcul assez lourd) est généré juste après le premier affichage :
+  // le nom et le texte apparaissent sans attendre.
+  requestAnimationFrame(() => setTimeout(() => {
+    lastW = hero.clientWidth;
+    build();
+    start();
+    // Les polices changent la largeur du nom (et donc la place de la puce) : on régénère
+    document.fonts?.ready.then(build);
+  }, 0));
 }
 
 function roundRect(g, x, y, w, h, r) {

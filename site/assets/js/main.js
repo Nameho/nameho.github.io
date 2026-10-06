@@ -47,10 +47,16 @@ const modules = {
   saisons: initSeasons,
 };
 
+// Tout ce qui est visible à l'arrivée (jusqu'à l'en-tête) démarre avant le premier affichage ;
+// le reste attend que la page soit peinte, pour qu'elle apparaisse sans délai sur les petits téléphones.
+const FIRST_SCREEN = 'hero';
+const nextPaint = () => new Promise((done) => requestAnimationFrame(() => setTimeout(done, 0)));
+
 for (const [name, init] of Object.entries(modules)) {
   try {
     init();
   } catch (err) {
     console.error(`[${name}]`, err);
   }
+  if (name === FIRST_SCREEN) await nextPaint();
 }

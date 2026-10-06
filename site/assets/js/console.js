@@ -18,7 +18,7 @@ export function initConsole() {
   console.log(`%c${CHIP}`, 'font: 12px monospace; color: #e0821f;');
   console.log('%cVous inspectez le code ? Excellent réflexe de technicien 😉', title);
   console.log(
-    '%cCe site est fait main : HTML, CSS et JavaScript, sans aucune bibliothèque.\nCode source : https://github.com/Nameho/nameho.github.io\n\nUn diagnostic complet du candidat vous attend : tapez %cdiagnostic()%c puis Entrée.',
+    '%cCe site est écrit en HTML, CSS et JavaScript natifs, sans aucune bibliothèque, et codé avec l’IA Claude à partir des idées d’Alexis.\nCode source : https://github.com/Nameho/nameho.github.io\n\nUn diagnostic complet du candidat vous attend : tapez %cdiagnostic()%c puis Entrée.',
     text, code, text,
   );
 

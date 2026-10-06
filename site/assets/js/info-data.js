@@ -80,7 +80,7 @@ export const INFO = {
     ],
     facts: [
       'Tous les grands navigateurs en ont : Chrome, Firefox, Edge, Safari.',
-      'Ce site n’utilise aucune bibliothèque : tout est écrit à la main en HTML, CSS et JavaScript.',
+      'Ce site n’utilise aucune bibliothèque : tout est écrit directement en HTML, CSS et JavaScript (codé avec l’IA Claude, à partir des idées d’Alexis).',
       'Conseil de sécurité : ne collez jamais dans la console un code que vous ne comprenez pas. C’est une arnaque courante pour voler des comptes.',
     ],
     link: { href: 'https://github.com/Nameho/nameho.github.io', label: 'Le code source de ce site' },

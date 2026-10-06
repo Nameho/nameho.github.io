@@ -28,6 +28,8 @@ Un portfolio « one-page » pensé comme un banc de réparation : on ne fait pas
 - Animations en Canvas 2D, SVG et Web Animations API ; sons synthétisés avec Web Audio (rien à télécharger).
 - Accessible : navigation au clavier, lecteurs d'écran (mesures annoncées), alternative aux glisser-déposer, respect du réglage « animations réduites » (modifiable avec le bouton ∿).
 - Responsive : téléphone, tablette, ordinateur.
+- Référencement : données structurées schema.org (ProfilePage / Person), plan du site `sitemap.xml`, aperçu de lien (Open Graph).
+- Audit Lighthouse (octobre 2026) : accessibilité, bonnes pratiques et SEO à 100 ; performance 99 sur ordinateur.
 
 ## Sécurité et vie privée
 
@@ -60,6 +62,7 @@ site/                    ← ce qui est publié
   index.html
   mentions-legales.html
   404.html
+  robots.txt, sitemap.xml
   assets/css, js, fonts
   assets/cv/cv.bin       ← CV chiffré
   data/veille.json       ← généré automatiquement
@@ -72,5 +75,7 @@ scripts/
 ```
 
 ## Crédits
+
+Code écrit avec [Claude](https://www.anthropic.com/claude) (IA d'Anthropic), à partir des idées, des demandes et des contenus d'Alexis Trudelle, qui a tout testé et fait retoucher au fil des versions.
 
 Polices [Bricolage Grotesque](https://github.com/ateliertriay/bricolage) et [JetBrains Mono](https://github.com/JetBrains/JetBrainsMono), sous licence SIL Open Font License 1.1 (voir `site/assets/fonts/`).

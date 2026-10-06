@@ -12,7 +12,8 @@
   <meta name="theme-color" content="#0a1d18">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="fr_FR">
-  <meta property="og:title" content="Alexis Trudelle — Technicien réparateur en électronique">
+  <meta property="og:site_name" content="Portfolio de Alexis Trudelle">
+  <meta property="og:title" content="Portfolio de Alexis Trudelle">
   <meta property="og:description" content="Un portfolio à dépanner : trouvez la panne au multimètre, ouvrez le boîtier, soudez pour obtenir mes coordonnées.">
   <meta property="og:url" content="https://nameho.github.io/">
   <link rel="canonical" href="https://nameho.github.io/">
@@ -22,13 +23,81 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <script src="assets/js/boot.js"></script>
   <script type="module" src="assets/js/main.js"></script>
+  <!-- Préchargement : le navigateur télécharge tous les modules en parallèle au lieu de les découvrir en cascade -->
+  <link rel="modulepreload" href="assets/js/util.js">
+  <link rel="modulepreload" href="assets/js/audio.js">
+  <link rel="modulepreload" href="assets/js/hud.js">
+  <link rel="modulepreload" href="assets/js/info.js">
+  <link rel="modulepreload" href="assets/js/info-data.js">
+  <link rel="modulepreload" href="assets/js/nav.js">
+  <link rel="modulepreload" href="assets/js/express.js">
+  <link rel="modulepreload" href="assets/js/contact-data.js">
+  <link rel="modulepreload" href="assets/js/cv.js">
+  <link rel="modulepreload" href="assets/js/cv-key.js">
+  <link rel="modulepreload" href="assets/js/hero.js">
+  <link rel="modulepreload" href="assets/js/profile.js">
+  <link rel="modulepreload" href="assets/js/skills.js">
+  <link rel="modulepreload" href="assets/js/diag.js">
+  <link rel="modulepreload" href="assets/js/scope.js">
+  <link rel="modulepreload" href="assets/js/workshop.js">
+  <link rel="modulepreload" href="assets/js/defis.js">
+  <link rel="modulepreload" href="assets/js/bios.js">
+  <link rel="modulepreload" href="assets/js/colors.js">
+  <link rel="modulepreload" href="assets/js/veille.js">
+  <link rel="modulepreload" href="assets/js/recruit.js">
+  <link rel="modulepreload" href="assets/js/contact.js">
+  <link rel="modulepreload" href="assets/js/secrets.js">
+  <link rel="modulepreload" href="assets/js/console.js">
+  <link rel="modulepreload" href="assets/js/seasons.js">
+  <!-- Données structurées : aident Google à comprendre qui vous êtes (sans e-mail ni téléphone) -->
+  <!-- Données structurées pour les moteurs de recherche : nom du site + fiche « Personne » -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Portfolio de Alexis Trudelle",
+    "alternateName": ["Alexis Trudelle", "nameho.github.io"],
+    "url": "https://nameho.github.io/"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "url": "https://nameho.github.io/",
+    "inLanguage": "fr-FR",
+    "dateModified": "2026-10-06",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Alexis Trudelle",
+      "jobTitle": "Technicien réparateur en électronique (en reconversion)",
+      "description": "Technicien en reconversion vers la réparation électronique : diagnostic de pannes, mesures au multimètre, montage et reconditionnement de PC. Ouvert à une immersion (PMSMP), une formation interne ou une POEI.",
+      "url": "https://nameho.github.io/",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Saint-Georges-des-Coteaux",
+        "addressRegion": "Charente-Maritime",
+        "addressCountry": "FR"
+      },
+      "knowsLanguage": ["fr", "en"],
+      "knowsAbout": ["Réparation électronique", "Diagnostic de pannes", "Multimètre", "Soudure", "Montage de PC", "Reconditionnement informatique", "Dépannage informatique"],
+      "hasCredential": [
+        { "@type": "EducationalOccupationalCredential", "name": "Titre professionnel Concepteur Développeur d'Applications", "credentialCategory": "Titre professionnel" },
+        { "@type": "EducationalOccupationalCredential", "name": "Titre professionnel Développeur Web et Web Mobile", "credentialCategory": "Titre professionnel" },
+        { "@type": "EducationalOccupationalCredential", "name": "Titre professionnel Technicien d'assistance en informatique", "credentialCategory": "Titre professionnel" },
+        { "@type": "EducationalOccupationalCredential", "name": "Bac Pro Maintenance des véhicules et matériels", "credentialCategory": "Diplôme" }
+      ],
+      "sameAs": ["https://github.com/Nameho"]
+    }
+  }
+  </script>
 </head>
 <body>
   <a class="skip" href="#profil">Aller au contenu</a>
 
   <!-- ============ Barre du haut (mobile / tablette) ============ -->
   <header class="topbar">
-    <a class="topbar-logo" href="#accueil" aria-label="Retour en haut de page">
+    <a class="topbar-logo" href="#accueil" aria-label="AT, retour en haut de page">
       <span class="chip-logo" aria-hidden="true">AT</span>
     </a>
     <p class="topbar-current" aria-hidden="true">Accueil</p>
@@ -377,7 +446,7 @@
               <button type="button" role="tab" id="tab-savoir" aria-controls="skill-savoir" data-skill="savoir">X1</button>
             </div>
 
-            <article class="skill" id="skill-diagnostic" role="tabpanel" aria-labelledby="tab-diagnostic">
+            <div class="skill" id="skill-diagnostic" role="tabpanel" aria-labelledby="tab-diagnostic">
               <p class="skill-ref">U1 · Processeur</p>
               <h3>Diagnostic</h3>
               <p class="skill-why">Le cerveau de la carte : mesurer, comparer, isoler la panne.</p>
@@ -387,8 +456,8 @@
                 <li>Dépannage logiciel</li>
               </ul>
               <p class="skill-fact"><b>Le saviez-vous ?</b> Un processeur actuel contient des milliards de transistors, gravés à l'échelle de quelques nanomètres.</p>
-            </article>
-            <article class="skill" id="skill-materiel" role="tabpanel" aria-labelledby="tab-materiel">
+            </div>
+            <div class="skill" id="skill-materiel" role="tabpanel" aria-labelledby="tab-materiel">
               <p class="skill-ref">J2 · Barrettes mémoire</p>
               <h3>Matériel informatique</h3>
               <p class="skill-why">Une barrette, ça se démonte et se remonte. Le reste du PC aussi.</p>
@@ -397,8 +466,8 @@
                 <li>Remplacement de composants</li>
               </ul>
               <p class="skill-fact"><b>Le saviez-vous ?</b> DIMM signifie « Dual Inline Memory Module » : les contacts des deux faces de la barrette sont indépendants, contrairement aux anciennes barrettes SIMM.</p>
-            </article>
-            <article class="skill" id="skill-outillage" role="tabpanel" aria-labelledby="tab-outillage">
+            </div>
+            <div class="skill" id="skill-outillage" role="tabpanel" aria-labelledby="tab-outillage">
               <p class="skill-ref">J1 · Connecteur de test</p>
               <h3>Outillage</h3>
               <p class="skill-why">Le connecteur où viennent se brancher les outils de l'atelier.</p>
@@ -408,8 +477,8 @@
                 <li>Tournevis de précision</li>
               </ul>
               <p class="skill-fact"><b>Le saviez-vous ?</b> Beaucoup de cartes ont un connecteur de test (souvent JTAG) qui permet aux techniciens de dialoguer directement avec les puces.</p>
-            </article>
-            <article class="skill" id="skill-qualite" role="tabpanel" aria-labelledby="tab-qualite">
+            </div>
+            <div class="skill" id="skill-qualite" role="tabpanel" aria-labelledby="tab-qualite">
               <p class="skill-ref">F1 · Fusible</p>
               <h3>Qualité et sécurité</h3>
               <p class="skill-why">Il protège tout le circuit : la sécurité passe avant tout.</p>
@@ -419,8 +488,8 @@
                 <li>Respect des procédures et des consignes</li>
               </ul>
               <p class="skill-fact"><b>Le saviez-vous ?</b> Un fusible est un point faible volontaire : un fil calibré qui fond en cas de surintensité, pour protéger tout le reste.</p>
-            </article>
-            <article class="skill" id="skill-savoir" role="tabpanel" aria-labelledby="tab-savoir">
+            </div>
+            <div class="skill" id="skill-savoir" role="tabpanel" aria-labelledby="tab-savoir">
               <p class="skill-ref">X1 · Quartz</p>
               <h3>Savoir-être</h3>
               <p class="skill-why">Le quartz donne le rythme : régulier, fiable, ponctuel.</p>
@@ -431,7 +500,7 @@
                 <li>Ponctualité</li>
               </ul>
               <p class="skill-fact"><b>Le saviez-vous ?</b> Pourquoi 32 768 Hz ? C'est 2<sup>15</sup> : en divisant 15 fois par deux, on obtient exactement une impulsion par seconde. C'est le cœur de presque toutes les montres.</p>
-            </article>
+            </div>
           </div>
         </div>
       </div>
@@ -790,7 +859,7 @@
               <div><dt>Diagnostic</dt><dd>Pompe hors service, identifiée par les mesures</dd></div>
               <div><dt>Intervention</dt><dd>Remplacement de la pompe</dd></div>
             </dl>
-            <p class="t-stamp" aria-label="Statut : réparé">Réparé</p>
+            <p class="t-stamp"><span class="sr-only">Statut : </span>Réparé</p>
           </article>
           <article class="ticket" data-reveal>
             <header class="t-head"><span class="t-no">Bon n° 0002</span><span class="t-tag">Reconditionnement</span></header>
@@ -800,7 +869,7 @@
               <div><dt>Remontage</dt><dd>PC reconditionnés à partir de ces composants</dd></div>
               <div><dt>Retour</dt><dd>Positif de la part des responsables de l'atelier</dd></div>
             </dl>
-            <p class="t-stamp" aria-label="Statut : validé">Validé</p>
+            <p class="t-stamp"><span class="sr-only">Statut : </span>Validé</p>
           </article>
           <article class="ticket" data-reveal>
             <header class="t-head"><span class="t-no">Bon n° 0003</span><span class="t-tag">Informatique</span></header>
@@ -810,11 +879,11 @@
               <div><dt>Logiciel</dt><dd>Dépannage et remise en état</dd></div>
               <div><dt>Base</dt><dd>Titre pro Technicien d'assistance en informatique (Helpdesk) : recherche de pannes simulées</dd></div>
             </dl>
-            <p class="t-stamp" aria-label="Statut : terminé">OK</p>
+            <p class="t-stamp"><span class="sr-only">Statut : terminé</span><span aria-hidden="true">OK</span></p>
           </article>
         </div>
 
-        <figure class="report" data-reveal>
+        <div class="report" data-reveal>
           <header class="rp-head">
             <p class="rp-tag">Rapport d'évaluation · Immersion 2026</p>
             <p class="rp-org">Les Ateliers du Bocage · Pôle informatique</p>
@@ -822,7 +891,7 @@
           <blockquote class="rp-quote">
             <p>« Nous avons pu constater une personne <mark>très motivée</mark> par cette immersion, il a de <mark>vraies compétences</mark> et une <mark>réelle appétence</mark> pour cette activité. Nous avons pu lui proposer des activités diverses dans le contenu et aussi dans la complexité sans aucun souci bloquant. Il est <mark>sérieux, ordonné et rigoureux</mark>. Aucun souci de communication, globalement son immersion s'est très bien passée pour lui et pour nous. »</p>
           </blockquote>
-          <figcaption>Les responsables de l'atelier · Les Ateliers du Bocage, La Boujalière (Le Pin)</figcaption>
+          <p class="rp-from">Les responsables de l'atelier · Les Ateliers du Bocage, La Boujalière (Le Pin)</p>
           <ul class="rp-checks" aria-label="Points relevés">
             <li>Motivation</li>
             <li>Compétences</li>
@@ -830,7 +899,7 @@
             <li>Communication</li>
           </ul>
           <p class="rp-stamp" aria-hidden="true">Conforme</p>
-        </figure>
+        </div>
       </div>
     </section>
 
@@ -1091,7 +1160,7 @@
             <button type="button" role="tab" id="plan-interne" aria-controls="devis" aria-selected="false" tabindex="-1" data-plan="interne"><b>Embauche directe</b><small>+ formation interne</small></button>
           </div>
 
-          <article class="devis" id="devis" role="tabpanel" aria-labelledby="plan-pmsmp" aria-live="polite">
+          <div class="devis" id="devis" role="tabpanel" aria-labelledby="plan-pmsmp" aria-live="polite">
             <header class="dv-head"><span>Devis n° 2026-17</span><span>Recrutement · technicien réparateur</span></header>
             <h3 class="dv-title">Immersion professionnelle (PMSMP)</h3>
             <p class="dv-desc">Vous me prenez à l'essai dans votre atelier, sans engagement.</p>
@@ -1105,7 +1174,7 @@
             </table>
             <p class="dv-total"><span>Coût pour vous</span><b class="dv-amount">0 €</b></p>
             <p class="dv-ideal"><b>Idéal pour :</b> me voir à l'œuvre avant de décider.</p>
-          </article>
+          </div>
 
           <aside class="hire-steps">
             <h3>Comment faire&nbsp;?</h3>
@@ -1292,8 +1361,15 @@
   </main>
 
   <footer class="footer">
+    <div class="wrap">
+      <div class="colophon">
+        <p class="colophon-title"><span class="led" aria-hidden="true"></span>Coulisses du site</p>
+        <p>Ce portfolio a été codé par <strong>Claude</strong>, une intelligence artificielle d’Anthropic, à partir de mes idées et de mes demandes. De mon côté, j’ai imaginé l’univers «&nbsp;atelier&nbsp;», choisi les mini-jeux et les secrets, fourni tout le contenu (parcours, compétences, témoignage), puis testé et fait retoucher chaque détail, comme un montage qu’on peaufine le week-end.</p>
+        <p>Je l’ai fait pour le plaisir, et je préfère être transparent là-dessus.</p>
+      </div>
+    </div>
     <div class="wrap footer-inner">
-      <p>© 2026 Alexis Trudelle · Conçu et assemblé à la main</p>
+      <p>© 2026 Alexis Trudelle · Codé avec l’IA Claude</p>
       <p class="footer-sec"><span class="led led-green" aria-hidden="true"></span>Aucun cookie, aucun traceur, aucune ressource externe.</p>
       <p class="footer-links"><button class="link-btn" type="button" data-express>Version express</button> · <button class="link-btn" type="button" data-cv>CV (PDF)</button> · <a href="mentions-legales.html">Mentions légales</a> · <a href="https://github.com/Nameho/nameho.github.io" rel="noopener noreferrer">Code source</a> · <span class="silk-txt rev-tag">RÉV. 2026.10</span></p>
     </div>

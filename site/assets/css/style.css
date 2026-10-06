@@ -2169,6 +2169,29 @@ button, input, select { font: inherit; color: inherit; }
 }
 .footer-inner { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px 24px; }
 .footer p { display: flex; align-items: center; gap: 8px; margin: 0; }
+
+/* Encart « Coulisses du site » : transparence sur la fabrication */
+.colophon {
+  max-width: 760px;
+  margin-bottom: 26px;
+  padding: 14px 18px 16px;
+  border: 1px dashed rgba(255, 179, 92, 0.4);
+  border-radius: 10px;
+  background: rgba(255, 179, 92, 0.04);
+  line-height: 1.6;
+}
+.footer .colophon p { display: block; }
+.footer .colophon p + p { margin-top: 8px; }
+.footer .colophon .colophon-title {
+  display: flex;
+  margin-bottom: 8px;
+  font: 600 0.72rem var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--copper-hi);
+}
+.colophon-title .led { background: var(--copper-hi); box-shadow: 0 0 8px rgba(255, 179, 92, 0.7); }
+.colophon strong { color: var(--silk); }
 .silk-txt { font: 600 0.75rem var(--mono); }
 
 .hud {
@@ -2572,7 +2595,7 @@ dialog.cv-gate { width: min(520px, calc(100vw - 24px)); padding: 24px 24px 20px;
 .report.is-marked mark:nth-of-type(2) { transition-delay: 0.3s; }
 .report.is-marked mark:nth-of-type(3) { transition-delay: 0.6s; }
 .report.is-marked mark:nth-of-type(4) { transition-delay: 0.9s; }
-.report figcaption { margin-top: 12px; font: 600 0.82rem var(--mono); color: #4d625b; }
+.report .rp-from { margin-top: 12px; font: 600 0.82rem var(--mono); color: #4d625b; }
 .rp-checks { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 0; padding: 0; list-style: none; }
 .rp-checks li {
   padding: 4px 12px 4px 26px;
