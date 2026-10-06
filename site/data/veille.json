@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-06T06:26:50.915Z",
+  "updatedAt": "2026-10-06T10:04:23.889Z",
   "sources": [
     {
       "id": "ifixit",
@@ -46,6 +46,14 @@
   ],
   "items": [
     {
+      "id": "34cbb5b04342",
+      "source": "hackaday",
+      "title": "A New Type of LLM on the Block: Decision-Making Models",
+      "url": "https://hackaday.com/2026/10/06/a-new-type-of-llm-on-the-block-decision-making-models/",
+      "date": "2026-10-06T08:00:29.000Z",
+      "excerpt": "Large language models (LLMs) output language, but they are commonly tasked with making a decision or classification of some kind instead of writing an essay or chat reply. An LLM …read more"
+    },
+    {
       "id": "629f79bce5f9",
       "source": "hackaday",
       "title": "Two Microcontrollers Talking, All It Needs is an LED",
@@ -84,14 +92,6 @@
       "url": "https://hackaday.com/2026/10/05/failing-to-make-a-fanless-pc/",
       "date": "2026-10-05T17:30:20.000Z",
       "excerpt": "The discerning modern gamer’s quest is to find a quieter computer without sacrificing performance. That proves challenging when modern components are highly efficient at producing monumental quantities of thermal energy. …read more"
-    },
-    {
-      "id": "c7889b1e7cf1",
-      "source": "hackaday",
-      "title": "How A British Engineer Homebrewed The Quietest Carbine",
-      "url": "https://hackaday.com/2026/10/05/how-a-british-engineer-homebrewed-the-quietest-carbine/",
-      "date": "2026-10-05T17:00:36.000Z",
-      "excerpt": "An earlier wooden-stock model of the De Lisle carbine. Note the huge suppressor which takes up much of the weapon’s length. Its ability to accept a large volume of gas aids \" data-large-file=\" /> Hollywood has a lot to answer for when it…"
     },
     {
       "id": "b0eeb09536f2",
