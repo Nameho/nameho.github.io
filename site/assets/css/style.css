@@ -2842,7 +2842,7 @@ dialog.rework { width: min(1000px, calc(100vw - 24px)); max-height: calc(100dvh 
 @keyframes lt-hint { 50% { stroke: var(--copper-hi); fill: rgba(255, 179, 92, 0.22); box-shadow: 0 0 0 4px rgba(255, 179, 92, 0.45); } }
 .lt-logo { fill: #9aa1a5; font: 800 26px var(--font); letter-spacing: 0.06em; }
 .lt-led { fill: #2a2f33; }
-.lt-led.is-on { fill: #ff9a2e; filter: drop-shadow(0 0 4px #ff9a2e); }
+.lt-led.is-on { fill: #f4f7f2; filter: drop-shadow(0 0 4px #ffffff); }
 .lt-cable { fill: none; stroke: #141618; stroke-width: 6; stroke-linecap: round; }
 .lt-charger { transition: transform 0.5s var(--out), opacity 0.5s; }
 .lt-charger-l.is-out { transform: translateX(-46px); opacity: 0; }
@@ -2854,16 +2854,26 @@ dialog.rework { width: min(1000px, calc(100vw - 24px)); max-height: calc(100dvh 
 .lt-num { fill: #ffd27a; font: 800 9px var(--mono); pointer-events: none; }
 .lt-size { fill: rgba(241, 245, 239, 0.8); font: 700 6.5px var(--mono); pointer-events: none; }
 .lt-wire-pair { fill: none; stroke: #1a1c1d; stroke-width: 2.6; stroke-linecap: round; }
-.lt-tape { fill: rgba(240, 190, 60, 0.35); stroke: rgba(255, 215, 120, 0.65); pointer-events: none; }
-.lt-tape.is-off { display: none; }
+/* adhésifs (câble de la batterie, antennes sur le caloduc) : ils se décollent et s'envolent */
+.lt-tape { fill: rgba(240, 190, 60, 0.5); stroke: rgba(255, 215, 120, 0.8); stroke-width: 0.8; transform-box: fill-box; transform-origin: left top; transition: transform 0.35s var(--out), opacity 0.35s; }
+.lt-item.is-out .lt-tape { transform: translate(-6px, -8px) rotate(-16deg); opacity: 0; }
+.lt-ant-tape { fill: #7a4a24; opacity: 0.85; }
+/* câbles qui restent dans le châssis (vers l'écran) : on clique au travers */
+.lt-cables { pointer-events: none; }
+.lt-ants { transition: transform 0.4s var(--out); }
+.lt-ants.is-free { transform: translate(0, -4px); }
+.lt-ants.is-free .lt-ant-tape { display: none; }
+.lt-ants.is-away { display: none; }
+.lt-captive-mark { fill: none; stroke: rgba(241, 245, 239, 0.45); stroke-width: 0.9; stroke-dasharray: 2 2; pointer-events: none; }
+.lt-screw.is-out .lt-captive-mark { display: none; }
+.lt-engrave { fill: rgba(0, 0, 0, 0.4); font: 700 12px var(--mono); letter-spacing: 0.2em; }
 .lt-latch { fill: #3b2b1d; transition: fill 0.2s; }
 .lt-zif.is-open .lt-latch { fill: #c9a36a; }
 .lt-item.is-out .lt-hit,
 .lt-screw.is-out .lt-screw-head { display: none; }
 .lt-screw-head { transform-box: fill-box; transform-origin: center; }
 .lt-cscrew.is-loose .lt-screw-head { filter: brightness(1.25) drop-shadow(0 2px 1px rgba(0, 0, 0, 0.7)); }
-.lt-foot { fill: #121416; stroke: #000000; stroke-width: 1; transform-box: fill-box; transition: transform 0.5s var(--out), opacity 0.5s; }
-.lt-foot.is-peeled { transform: translate(-60px, -10px) rotate(-6deg); opacity: 0.55; }
+.lt-foot { fill: #121416; stroke: #000000; stroke-width: 1; }
 .lt-clip { display: none; }
 .lt-cover.is-ready .lt-clip { display: inline; }
 .lt-clip-mark { fill: none; stroke: var(--copper-hi); stroke-width: 3.5; stroke-linecap: round; stroke-linejoin: round; animation: glow-pulse 1.4s ease-in-out infinite; }
