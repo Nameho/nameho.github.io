@@ -186,4 +186,20 @@ export const INFO = {
     ],
     link: { href: 'https://www.ecologie.gouv.fr/politiques-publiques/indice-reparabilite', label: 'L’indice de réparabilité (ministère)' },
   },
+  esd: {
+    icon: '🖐️',
+    title: 'Démonter un portable sans l’abîmer',
+    text: [
+      'Notre corps se charge d’électricité statique : un simple mouvement peut produire une charge d’environ 10 000 volts. En touchant une carte électronique, cette charge se décharge d’un coup dans les composants : c’est une décharge électrostatique (ESD en anglais).',
+      'Le bracelet antistatique évite cela : relié à la terre, il évacue la charge en douceur, en continu, pendant tout le démontage.',
+    ],
+    facts: [
+      'On ne sent une décharge qu’à partir d’environ 3 000 volts, alors que certains composants sensibles peuvent être abîmés par moins de 100 volts : on peut griller une puce sans rien sentir.',
+      'Le dégât peut être caché : le composant semble marcher, puis lâche des semaines plus tard. On parle de défaut latent.',
+      'Le fil du bracelet contient une résistance d’environ 1 mégaohm : la charge s’écoule lentement, et le technicien reste protégé s’il touche un fil sous tension.',
+      'Le spudger, spatule en plastique, ouvre les coques clipsées sans les rayer ; isolant, il ne risque pas de court-circuiter la carte comme un tournevis en métal.',
+      'Les gammes professionnelles (Dell Latitude, HP EliteBook) sont faites pour être entretenues : leurs fabricants publient des manuels de service qui détaillent le démontage pièce par pièce.',
+    ],
+    link: { href: W('D%C3%A9charge_%C3%A9lectrostatique'), label: 'La décharge électrostatique sur Wikipédia' },
+  },
 };

@@ -80,7 +80,7 @@
         "addressCountry": "FR"
       },
       "knowsLanguage": ["fr", "en"],
-      "knowsAbout": ["Réparation électronique", "Diagnostic de pannes", "Multimètre", "Soudure", "Montage de PC", "Reconditionnement informatique", "Dépannage informatique"],
+      "knowsAbout": ["Réparation électronique", "Diagnostic de pannes", "Multimètre", "Soudure", "Montage de PC", "Reconditionnement informatique", "Réparation de PC portables", "Remplacement d'écran de PC portable", "Protection antistatique (ESD)", "Dépannage informatique"],
       "hasCredential": [
         { "@type": "EducationalOccupationalCredential", "name": "Titre professionnel Concepteur Développeur d'Applications", "credentialCategory": "Titre professionnel" },
         { "@type": "EducationalOccupationalCredential", "name": "Titre professionnel Développeur Web et Web Mobile", "credentialCategory": "Titre professionnel" },
@@ -462,8 +462,9 @@
               <h3>Matériel informatique</h3>
               <p class="skill-why">Une barrette, ça se démonte et se remonte. Le reste du PC aussi.</p>
               <ul>
-                <li>Démontage et montage de PC</li>
-                <li>Remplacement de composants</li>
+                <li>Démontage et montage de PC fixes et portables</li>
+                <li>Remplacement de dalle d'écran, clavier, carte fille</li>
+                <li>Récupération et tri de pièces détachées</li>
               </ul>
               <p class="skill-fact"><b>Le saviez-vous ?</b> DIMM signifie « Dual Inline Memory Module » : les contacts des deux faces de la barrette sont indépendants, contrairement aux anciennes barrettes SIMM.</p>
             </div>
@@ -474,7 +475,7 @@
               <ul>
                 <li>Multimètre (continuité, tension)</li>
                 <li>Fer à souder (bases)</li>
-                <li>Tournevis de précision</li>
+                <li>Tournevis de précision, spudger (ouverture des coques)</li>
               </ul>
               <p class="skill-fact"><b>Le saviez-vous ?</b> Beaucoup de cartes ont un connecteur de test (souvent JTAG) qui permet aux techniciens de dialoguer directement avec les puces.</p>
             </div>
@@ -484,6 +485,7 @@
               <p class="skill-why">Il protège tout le circuit : la sécurité passe avant tout.</p>
               <ul>
                 <li>Gestes précis</li>
+                <li>Protection antistatique (bracelet ESD)</li>
                 <li>Contrôle visuel</li>
                 <li>Respect des procédures et des consignes</li>
               </ul>
@@ -787,8 +789,9 @@
                 <h4><button class="tl-btn" type="button">Immersion professionnelle – Pôle informatique</button></h4>
                 <p class="tl-org">Les Ateliers du Bocage, La Boujalière (Le Pin)</p>
                 <ul>
-                  <li>Démontage d'anciens PC et tri des composants récupérables</li>
-                  <li>Remontage de PC reconditionnés à partir de ces composants</li>
+                  <li>Démontage de 7 à 8 PC portables professionnels (Dell Latitude, HP EliteBook) pour récupérer les pièces réutilisables</li>
+                  <li>Réparations par échange de pièces : dalle d'écran hors service, carte fille et clavier défectueux remplacés par des pièces saines</li>
+                  <li>Ouverture des coques au spudger, bracelet antistatique au démontage comme au remontage</li>
                   <li>Retour positif des responsables de l'atelier</li>
                 </ul>
               </li>
@@ -849,6 +852,7 @@
           <span class="sec-trace" aria-hidden="true"></span>
         </header>
         <p class="sec-intro" data-reveal>Quelques bons d'intervention, pour du concret.</p>
+        <p class="learn" data-reveal><button class="info-btn" type="button" data-info="esd"><span aria-hidden="true">ⓘ</span> Le saviez-vous&nbsp;? Démonter un portable sans l'abîmer</button></p>
 
         <div class="tickets">
           <article class="ticket" data-reveal>
@@ -863,11 +867,11 @@
           </article>
           <article class="ticket" data-reveal>
             <header class="t-head"><span class="t-no">Bon n° 0002</span><span class="t-tag">Reconditionnement</span></header>
-            <h3>PC reconditionnés · Les Ateliers du Bocage</h3>
+            <h3>PC portables reconditionnés&nbsp;· Les Ateliers du Bocage</h3>
             <dl class="t-fields">
-              <div><dt>Démontage</dt><dd>Anciens PC, tri des composants récupérables</dd></div>
-              <div><dt>Remontage</dt><dd>PC reconditionnés à partir de ces composants</dd></div>
-              <div><dt>Retour</dt><dd>Positif de la part des responsables de l'atelier</dd></div>
+              <div><dt>Démontage</dt><dd>7 à 8 PC portables pro (Dell Latitude, HP EliteBook), tri des pièces réutilisables</dd></div>
+              <div><dt>Réparations</dt><dd>Dalle d'écran HS, carte fille et clavier défectueux remplacés par des pièces saines</dd></div>
+              <div><dt>Méthode</dt><dd>Ouverture au spudger, bracelet antistatique, remontage puis test</dd></div>
             </dl>
             <p class="t-stamp"><span class="sr-only">Statut : </span>Validé</p>
           </article>
@@ -1160,6 +1164,9 @@
             <button type="button" role="tab" id="plan-interne" aria-controls="devis" aria-selected="false" tabindex="-1" data-plan="interne"><b>Embauche directe</b><small>+ formation interne</small></button>
           </div>
 
+          <div class="printer">
+            <div class="printer-head" aria-hidden="true"><span class="printer-led"></span><span class="printer-slot"></span></div>
+            <div class="printer-out">
           <div class="devis" id="devis" role="tabpanel" aria-labelledby="plan-pmsmp" aria-live="polite">
             <header class="dv-head"><span>Devis n° 2026-17</span><span>Recrutement · technicien réparateur</span></header>
             <h3 class="dv-title">Immersion professionnelle (PMSMP)</h3>
@@ -1174,6 +1181,8 @@
             </table>
             <p class="dv-total"><span>Coût pour vous</span><b class="dv-amount">0 €</b></p>
             <p class="dv-ideal"><b>Idéal pour :</b> me voir à l'œuvre avant de décider.</p>
+          </div>
+            </div>
           </div>
 
           <aside class="hire-steps">
@@ -1261,11 +1270,11 @@
                 <circle class="pad-hole" cx="250" cy="120" r="4.5"/>
                 <circle class="lead" cx="250" cy="120" r="2.6"/>
                 <circle class="blob" cx="250" cy="120" r="11"/>
-                <circle class="gauge-bg" cx="250" cy="120" r="28" pathLength="100"/>
-                <circle class="gauge-cold" cx="250" cy="120" r="28" pathLength="100"/>
-                <circle class="gauge-good" cx="250" cy="120" r="28" pathLength="100"/>
-                <circle class="gauge-hot" cx="250" cy="120" r="28" pathLength="100"/>
-                <circle class="gauge-val" cx="250" cy="120" r="23" pathLength="100"/>
+                <path class="gauge-bg" pathLength="100" d="M278 120 A28 28 0 1 1 222 120 A28 28 0 1 1 278 120"/>
+                <path class="gauge-cold" pathLength="100" d="M278 120 A28 28 0 1 1 222 120 A28 28 0 1 1 278 120"/>
+                <path class="gauge-good" pathLength="100" d="M278 120 A28 28 0 1 1 222 120 A28 28 0 1 1 278 120"/>
+                <path class="gauge-hot" pathLength="100" d="M278 120 A28 28 0 1 1 222 120 A28 28 0 1 1 278 120"/>
+                <path class="gauge-val" pathLength="100" d="M273 120 A23 23 0 1 1 227 120 A23 23 0 1 1 273 120"/>
               </g>
               <g class="joint" data-joint="1" data-name="la patte de D1" tabindex="0" role="button" aria-label="Patte droite de la diode D1 : maintenir pour souder">
                 <rect class="joint-hit" x="346" y="86" width="68" height="68" rx="12"/>
@@ -1273,11 +1282,11 @@
                 <circle class="pad-hole" cx="380" cy="120" r="4.5"/>
                 <circle class="lead" cx="380" cy="120" r="2.6"/>
                 <circle class="blob" cx="380" cy="120" r="11"/>
-                <circle class="gauge-bg" cx="380" cy="120" r="28" pathLength="100"/>
-                <circle class="gauge-cold" cx="380" cy="120" r="28" pathLength="100"/>
-                <circle class="gauge-good" cx="380" cy="120" r="28" pathLength="100"/>
-                <circle class="gauge-hot" cx="380" cy="120" r="28" pathLength="100"/>
-                <circle class="gauge-val" cx="380" cy="120" r="23" pathLength="100"/>
+                <path class="gauge-bg" pathLength="100" d="M408 120 A28 28 0 1 1 352 120 A28 28 0 1 1 408 120"/>
+                <path class="gauge-cold" pathLength="100" d="M408 120 A28 28 0 1 1 352 120 A28 28 0 1 1 408 120"/>
+                <path class="gauge-good" pathLength="100" d="M408 120 A28 28 0 1 1 352 120 A28 28 0 1 1 408 120"/>
+                <path class="gauge-hot" pathLength="100" d="M408 120 A28 28 0 1 1 352 120 A28 28 0 1 1 408 120"/>
+                <path class="gauge-val" pathLength="100" d="M403 120 A23 23 0 1 1 357 120 A23 23 0 1 1 403 120"/>
               </g>
               <g class="joint" data-joint="2" data-name="la patte de la LED D2" tabindex="0" role="button" aria-label="Patte droite de la LED D2 : maintenir pour souder">
                 <rect class="joint-hit" x="456" y="86" width="68" height="68" rx="12"/>
@@ -1285,11 +1294,11 @@
                 <circle class="pad-hole" cx="490" cy="120" r="4.5"/>
                 <circle class="lead" cx="490" cy="120" r="2.6"/>
                 <circle class="blob" cx="490" cy="120" r="11"/>
-                <circle class="gauge-bg" cx="490" cy="120" r="28" pathLength="100"/>
-                <circle class="gauge-cold" cx="490" cy="120" r="28" pathLength="100"/>
-                <circle class="gauge-good" cx="490" cy="120" r="28" pathLength="100"/>
-                <circle class="gauge-hot" cx="490" cy="120" r="28" pathLength="100"/>
-                <circle class="gauge-val" cx="490" cy="120" r="23" pathLength="100"/>
+                <path class="gauge-bg" pathLength="100" d="M518 120 A28 28 0 1 1 462 120 A28 28 0 1 1 518 120"/>
+                <path class="gauge-cold" pathLength="100" d="M518 120 A28 28 0 1 1 462 120 A28 28 0 1 1 518 120"/>
+                <path class="gauge-good" pathLength="100" d="M518 120 A28 28 0 1 1 462 120 A28 28 0 1 1 518 120"/>
+                <path class="gauge-hot" pathLength="100" d="M518 120 A28 28 0 1 1 462 120 A28 28 0 1 1 518 120"/>
+                <path class="gauge-val" pathLength="100" d="M513 120 A23 23 0 1 1 467 120 A23 23 0 1 1 513 120"/>
               </g>
 
               <g class="oled">
@@ -1430,7 +1439,7 @@
           <h3>En bref</h3>
           <ul>
             <li>3 titres professionnels en informatique (AFPA) + Bac Pro maintenance</li>
-            <li>Immersion réussie en atelier de reconditionnement de PC (2026)</li>
+            <li>Immersion réussie en atelier de reconditionnement (2026) : 7 à 8 PC portables démontés, écran, clavier et carte fille remplacés</li>
             <li>Méthode : mesurer → isoler → réparer (multimètre, soudure : bases)</li>
             <li>Minutieux, calme, rigoureux, ponctuel</li>
           </ul>
@@ -1439,9 +1448,9 @@
           <h3>Compétences</h3>
           <ul>
             <li><b>Diagnostic :</b> recherche de panne méthodique, mesures au multimètre, dépannage logiciel</li>
-            <li><b>Matériel :</b> démontage, montage et remplacement de composants de PC</li>
-            <li><b>Outillage :</b> multimètre, fer à souder (bases), tournevis de précision</li>
-            <li><b>Qualité :</b> gestes précis, contrôle visuel, respect des procédures</li>
+            <li><b>Matériel :</b> démontage et montage de PC fixes et portables, remplacement de dalle d'écran, clavier, carte fille</li>
+            <li><b>Outillage :</b> multimètre, fer à souder (bases), tournevis de précision, spudger</li>
+            <li><b>Qualité :</b> gestes précis, protection antistatique (bracelet ESD), contrôle visuel, respect des procédures</li>
           </ul>
         </section>
         <section class="xp-block">

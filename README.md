@@ -15,7 +15,7 @@ Un portfolio « one-page » pensé comme un banc de réparation : on ne fait pas
 | Défis de l'atelier | « Bips du BIOS » (un PC refuse de démarrer : bips, voyants, ventilateur, écran) et un quiz chronométré du code couleur des résistances, avec mémo. |
 | Veille | Articles et vidéos sur la réparation et l'électronique, mis à jour automatiquement chaque jour, filtrables avec des interrupteurs DIP. |
 | Me recruter | PMSMP, POEI, formation interne expliquées sous forme de devis. |
-| Contact | Trois composants à souder (avec échelle de températures) pour afficher les coordonnées (protection contre les robots). |
+| Contact | Trois composants à souder (avec échelle de températures) ; l'écran OLED démarre alors (barre de chargement irrégulière, journal de démarrage, le fameux 99 %) puis affiche les coordonnées (protection contre les robots). |
 
 - **Version express** : un résumé « recruteur pressé » en 30 secondes, imprimable (lien direct : `https://nameho.github.io/#express`).
 - **CV en PDF** : publié chiffré, déverrouillé après un petit test anti-robot (brancher la fiche dans la prise).

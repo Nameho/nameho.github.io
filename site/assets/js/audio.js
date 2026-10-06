@@ -82,6 +82,10 @@ const SOUNDS = {
   buzz: (ac) => tone(ac, { f: 140, dur: 0.28, type: 'sawtooth', vol: 0.1 }),
   ok: (ac) => { tone(ac, { f: 880, dur: 0.1, vol: 0.15 }); tone(ac, { f: 1320, dur: 0.14, vol: 0.15, at: 0.08 }); },
   hiss: (ac) => noise(ac, { dur: 0.5, freq: 4500, q: 0.8, vol: 0.18 }),
+  post: (ac) => tone(ac, { f: 1000, dur: 0.16, type: 'square', vol: 0.05 }), // le « bip » d'un démarrage réussi
+  // Papier qui se déchire le long d'une lame : une suite de petits craquements
+  rip: (ac) => [0, 0.06, 0.11, 0.17, 0.22].forEach((at, i) => noise(ac, { dur: 0.07, freq: 2200 + i * 450, q: 0.6, vol: 0.42, at })),
+  feed: (ac) => noise(ac, { dur: 0.05, freq: 2600, q: 4, vol: 0.22 }), // un pas du moteur d'avance papier
 };
 
 /** Joue un bruitage. passive = n'ouvre pas le son si le visiteur n'a encore rien touché. */

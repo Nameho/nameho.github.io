@@ -12,6 +12,67 @@ const HEAT_TIME = 1.55; // secondes pour remplir la jauge
 const GOOD_MIN = 0.55;
 const GOOD_MAX = 0.82;
 
+// Démarrage de l'écran OLED : [libellé en cours, nom dans le journal, état, % atteint en fin d'étape]
+const BOOT_STEPS = [
+  ['Mise sous tension', 'Alimentation', 'OK', 12],
+  ['Test mémoire', 'Mémoire', 'OK', 37],
+  ['Chargement des pilotes', 'Pilotes', 'OK', 63],
+  ['Décodage du contact', 'Contact', 'DÉCODÉ', 90],
+  ['Finalisation', 'Système', 'PRÊT', 99],
+];
+const BOOT_TIME = 3400; // ms, durée totale du démarrage
+const BAR_BLOCKS = 21; // la barre avance par blocs de 8 px, façon BIOS
+const LOG_ROWS = 4;
+const SPINNER = ['|', '/', '-', '\\'];
+
+/**
+ * Une vraie barre de chargement n'avance jamais régulièrement : rafales quand
+ * tout est en cache, petits pas, blocages pendant une lecture… et le fameux 99 %
+ * qui se fait attendre. Le plan est tiré au hasard à chaque partie, puis remis
+ * à l'échelle pour durer exactement `total` ms.
+ */
+function bootPlan(total) {
+  const rnd = (a, b) => a + Math.random() * (b - a);
+  const keys = [{ t: 0, p: 0 }];
+  const stages = [];
+  let t = 0;
+  let p = 0;
+  for (const [, , , target] of BOOT_STEPS) {
+    while (p < target) {
+      const burst = Math.random() < 0.3;
+      p = Math.min(target, p + (burst ? rnd(9, 20) : rnd(1, 5)));
+      t += burst ? rnd(70, 140) : rnd(40, 110);
+      keys.push({ t, p });
+      if (Math.random() < 0.28) { t += rnd(180, 520); keys.push({ t, p }); } // blocage
+    }
+    t += rnd(60, 160); // petite pause entre deux étapes
+    keys.push({ t, p });
+    stages.push({ end: t });
+  }
+  t += rnd(500, 800); // 99 %… 99 %… 99 %…
+  keys.push({ t, p: 99 });
+  t += 90;
+  keys.push({ t, p: 100 });
+  stages[stages.length - 1].end = t; // « Système … PRÊT » seulement une fois à 100 %
+  const k = total / t;
+  keys.forEach((key) => { key.t *= k; });
+  stages.forEach((s) => { s.end *= k; });
+  return { keys, stages, total };
+}
+
+/** Avancement (%) à l'instant `ms` : chaque à-coup démarre vite puis ralentit. */
+function progressAt(keys, ms) {
+  for (let i = 1; i < keys.length; i++) {
+    const a = keys[i - 1];
+    const b = keys[i];
+    if (ms < b.t) {
+      const u = b.t > a.t ? (ms - a.t) / (b.t - a.t) : 1;
+      return a.p + (b.p - a.p) * (1 - (1 - u) ** 2);
+    }
+  }
+  return 100;
+}
+
 export function initContact() {
   const root = $('.solder');
   if (!root) return;
@@ -160,6 +221,53 @@ export function initContact() {
     setTimeout(() => { if (active === -1) { tempEl.textContent = '25 °C'; tempBox.dataset.zone = ''; } }, 2500);
   }
 
+  /* ---------- Démarrage de l'écran (après les 3 soudures) ---------- */
+  function boot(done) {
+    const plan = bootPlan(BOOT_TIME);
+    oled.replaceChildren();
+    svg('text', { x: 538, y: 76, class: 'o-dim o-sm' }, oled).textContent = 'AT-BIOS v2.6 · démarrage';
+    const logs = [];
+    const label = svg('text', { x: 538, y: 157, class: 'o-sm' }, oled);
+    const pct = svg('text', { x: 714, y: 157, class: 'o-sm', 'text-anchor': 'end' }, oled);
+    svg('rect', { x: 538, y: 163, width: 176, height: 14, rx: 2, class: 'o-frame' }, oled);
+    const bar = svg('line', { x1: 541, y1: 170, x2: 541, y2: 170, class: 'o-bar' }, oled);
+
+    const addLog = (k) => {
+      const [, name, status] = BOOT_STEPS[k];
+      const t = svg('text', { x: 538, class: 'o-dim o-sm' }, oled);
+      t.textContent = `${name} ${'.'.repeat(Math.max(2, 24 - name.length - status.length))} ${status}`;
+      logs.push(t);
+      if (logs.length > LOG_ROWS) logs.shift().remove(); // le journal défile vers le haut
+      logs.forEach((line, i) => line.setAttribute('y', String(94 + i * 14)));
+      sfx('click', { passive: true });
+    };
+
+    let elapsed = 0;
+    let last = performance.now();
+    let logged = 0;
+    const frame = (now) => {
+      // Onglet masqué : rAF s'arrête et le démarrage attend (pas de saut au retour)
+      elapsed += clamp(now - last, 0, 50);
+      last = now;
+      while (logged < plan.stages.length && elapsed >= plan.stages[logged].end) addLog(logged++);
+      const p = progressAt(plan.keys, elapsed);
+      const blocks = Math.floor((p / 100) * BAR_BLOCKS);
+      bar.setAttribute('x2', String(blocks ? 541 + blocks * 8 - 2 : 541));
+      pct.textContent = `${Math.floor(p)} %`;
+      if (elapsed < plan.total) {
+        const step = BOOT_STEPS[Math.min(logged, BOOT_STEPS.length - 1)][0];
+        // Le curseur tourne même quand la barre est bloquée : « ça travaille »
+        label.textContent = `${step}… ${SPINNER[Math.floor(elapsed / 90) % SPINNER.length]}`;
+        requestAnimationFrame(frame);
+        return;
+      }
+      label.textContent = 'Prêt.';
+      sfx('post', { passive: true });
+      setTimeout(done, 420);
+    };
+    requestAnimationFrame(frame);
+  }
+
   /* ---------- Révélation des coordonnées ---------- */
   function reveal(earned) {
     if (revealed) return;
@@ -167,10 +275,20 @@ export function initContact() {
     skip.hidden = true;
     root.classList.add('is-live');
     boardBox.classList.remove('has-iron');
+    if (earned && !reduce) {
+      say('Circuit fermé ! L’écran démarre…', 'good');
+      boot(() => showInfo(earned));
+    } else {
+      showInfo(earned);
+    }
+  }
+
+  function showInfo(earned) {
     const { email, phone, phoneTxt } = getContact();
     if (earned) {
       achieve('solder');
       sfx('chime');
+      say('Circuit fermé ! Coordonnées affichées ✔', 'good');
     }
 
     // Copie au clic (sur la carte de contact comme sur l'écran OLED)
