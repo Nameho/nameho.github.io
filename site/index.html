@@ -15,6 +15,11 @@
   <meta property="og:title" content="Portfolio de Alexis Trudelle">
   <meta property="og:description" content="Un portfolio à dépanner : trouvez la panne au multimètre, ouvrez le boîtier, soudez pour obtenir mes coordonnées.">
   <meta property="og:url" content="https://nameho.github.io/">
+  <meta property="og:image" content="https://nameho.github.io/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Portfolio d'Alexis Trudelle, technicien réparateur en électronique : une carte électronique avec une LED allumée">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://nameho.github.io/">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="assets/fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
@@ -248,161 +253,245 @@
           <div class="skills-stage">
             <div class="case" data-state="closed">
               <div class="case-board">
-                <svg class="board-svg" viewBox="0 0 900 520" role="img" aria-labelledby="board-title">
-                  <title id="board-title">Carte électronique : chaque composant représente une compétence</title>
-                  <defs>
-                    <linearGradient id="g-mask" x1="0" y1="0" x2="1" y2="1">
-                      <stop offset="0" stop-color="#1c6956"/><stop offset="1" stop-color="#0f4337"/>
-                    </linearGradient>
-                    <linearGradient id="g-chip" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="0" stop-color="#2a2e2e"/><stop offset="1" stop-color="#121414"/>
-                    </linearGradient>
-                    <linearGradient id="g-can" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="0" stop-color="#f3f4f0"/><stop offset=".45" stop-color="#b7bab5"/><stop offset="1" stop-color="#6d716e"/>
-                    </linearGradient>
-                    <radialGradient id="g-cap" cx=".4" cy=".35" r=".75">
-                      <stop offset="0" stop-color="#3d6fd1"/><stop offset="1" stop-color="#173777"/>
-                    </radialGradient>
-                  </defs>
-
-                  <rect x="6" y="6" width="888" height="508" rx="18" fill="url(#g-mask)" stroke="#0b2e25" stroke-width="2"/>
-
-                  <g class="b-holes" fill="#081411" stroke="#d8b25a" stroke-width="6">
-                    <circle cx="40" cy="40" r="13"/><circle cx="860" cy="40" r="13"/>
-                    <circle cx="40" cy="480" r="13"/><circle cx="860" cy="480" r="13"/>
-                  </g>
-
-                  <g class="b-traces" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path class="trc trc-power" pathLength="1" d="M64 90 H80"/>
-                    <path class="trc trc-power" pathLength="1" d="M220 90 H262 L300 128 V204 H326"/>
-                    <path class="trc" pathLength="1" d="M180 190 H326"/>
-                    <path class="trc" pathLength="1" d="M172 290 H326"/>
-                    <path class="trc" pathLength="1" d="M248 228 H326"/>
-                    <path class="trc" pathLength="1" d="M248 240 H326"/>
-                    <path class="trc" pathLength="1" d="M248 252 H326"/>
-                    <path class="trc" pathLength="1" d="M504 192 H528 L548 172 H600"/>
-                    <path class="trc" pathLength="1" d="M504 204 H528 L548 184 H600"/>
-                    <path class="trc" pathLength="1" d="M504 216 H528 L548 196 H600"/>
-                    <path class="trc" pathLength="1" d="M504 228 H528 L548 208 H600"/>
-                    <path class="trc" pathLength="1" d="M504 240 H528 L548 220 H600"/>
-                    <path class="trc" pathLength="1" d="M504 252 H528 L548 232 H600"/>
-                    <path class="trc" pathLength="1" d="M504 276 H520 L540 296 H650"/>
-                    <path class="trc" pathLength="1" d="M504 288 H520 L540 308 H650"/>
-                    <path class="trc" pathLength="1" d="M504 300 H520 L540 320 H650"/>
-                    <path class="trc" pathLength="1" d="M400 166 V104"/>
-                    <path class="trc" pathLength="1" d="M436 166 V104"/>
-                    <path class="trc" pathLength="1" d="M472 166 V104"/>
-                    <path class="trc" pathLength="1" d="M376 344 V395"/>
-                    <path class="trc" pathLength="1" d="M424 344 V395"/>
-                    <path class="trc" pathLength="1" d="M484 344 V364 L525 405 H700"/>
-                    <path class="trc" pathLength="1" d="M472 344 V366 L521 415 H700"/>
-                    <path class="trc" pathLength="1" d="M460 344 V368 L517 425 H700"/>
-                  </g>
-                  <g class="b-flow" fill="none" stroke-linecap="round">
-                    <path class="trc-flow" pathLength="1" d="M64 90 H80 M220 90 H262 L300 128 V204 H326"/>
-                    <path class="trc-flow" pathLength="1" d="M504 204 H528 L548 184 H600"/>
-                    <path class="trc-flow" pathLength="1" d="M504 288 H520 L540 308 H650"/>
-                    <path class="trc-flow" pathLength="1" d="M472 344 V366 L521 415 H700"/>
-                  </g>
-
-                  <!-- Passifs décoratifs -->
-                  <g class="b-passives">
-                    <rect x="14" y="72" width="50" height="36" rx="4" fill="#1a1d1d"/>
-                    <circle cx="36" cy="90" r="9" fill="#060808" stroke="#8d918e" stroke-width="2"/>
-                    <text class="silk silk-sm" x="16" y="126">J0 · 12V</text>
-                    <circle cx="150" cy="190" r="30" fill="url(#g-cap)" stroke="#0d1f45" stroke-width="2"/>
-                    <path d="M150 160 A30 30 0 0 1 150 220" fill="none" stroke="#cfd8ea" stroke-width="7" opacity=".55"/>
-                    <path d="M138 184 L150 196 M150 184 L138 196" stroke="#0d1f45" stroke-width="2"/>
-                    <text class="silk silk-sm" x="118" y="238">C1</text>
-                    <circle cx="150" cy="290" r="22" fill="url(#g-cap)" stroke="#0d1f45" stroke-width="2"/>
-                    <path d="M150 268 A22 22 0 0 1 150 312" fill="none" stroke="#cfd8ea" stroke-width="5" opacity=".55"/>
-                    <text class="silk silk-sm" x="124" y="330">C2</text>
-                    <g fill="#d8b25a"><rect x="218" y="223" width="6" height="10"/><rect x="242" y="223" width="6" height="10"/><rect x="218" y="235" width="6" height="10"/><rect x="242" y="235" width="6" height="10"/><rect x="218" y="247" width="6" height="10"/><rect x="242" y="247" width="6" height="10"/></g>
-                    <g fill="#222"><rect x="224" y="224" width="18" height="8" rx="1"/><rect x="224" y="236" width="18" height="8" rx="1"/><rect x="224" y="248" width="18" height="8" rx="1"/></g>
-                    <text class="silk silk-sm" x="214" y="214">R1–R3</text>
-                    <g fill="#d8b25a"><rect x="368" y="434" width="6" height="10"/><rect x="384" y="434" width="6" height="10"/><rect x="416" y="434" width="6" height="10"/><rect x="432" y="434" width="6" height="10"/></g>
-                    <g fill="#9a7a4c"><rect x="374" y="435" width="10" height="8" rx="1"/><rect x="422" y="435" width="10" height="8" rx="1"/></g>
-                    <text class="silk silk-sm" x="370" y="462">C7  C8</text>
-                    <g class="b-leds">
-                      <rect class="bled bled-1" x="392" y="92" width="16" height="10" rx="2"/>
-                      <rect class="bled bled-2" x="428" y="92" width="16" height="10" rx="2"/>
-                      <rect class="bled bled-3" x="464" y="92" width="16" height="10" rx="2"/>
-                      <text class="silk silk-sm" x="388" y="82">PWR</text>
-                      <text class="silk silk-sm" x="422" y="82">DIAG</text>
-                      <text class="silk silk-sm" x="466" y="82">OK</text>
+                  <svg class="board-svg" viewBox="0 0 900 520" role="img" aria-labelledby="board-title">
+                    <title id="board-title">Carte électronique : chaque composant représente une compétence</title>
+                    <defs>
+                      <linearGradient id="g-chip" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3a3f42"/><stop offset=".5" stop-color="#1c1f21"/><stop offset="1" stop-color="#0e1011"/></linearGradient>
+                      <linearGradient id="g-can" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3f4f0"/><stop offset=".45" stop-color="#b7bab5"/><stop offset="1" stop-color="#6d716e"/></linearGradient>
+                      <radialGradient id="g-cap" cx=".4" cy=".35" r=".75"><stop offset="0" stop-color="#4f80e8"/><stop offset=".7" stop-color="#2a4fb0"/><stop offset="1" stop-color="#132a63"/></radialGradient>
+                      <radialGradient id="g-captop" cx=".38" cy=".32" r=".8"><stop offset="0" stop-color="#fafbfb"/><stop offset=".55" stop-color="#c5cbcf"/><stop offset="1" stop-color="#858d92"/></radialGradient>
+                      <linearGradient id="g-smd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a3d3f"/><stop offset="1" stop-color="#0d0e0f"/></linearGradient>
+                      <linearGradient id="g-mlcc" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d4b083"/><stop offset="1" stop-color="#8a6a43"/></linearGradient>
+                    </defs>
+                  
+                    <!-- Carte : vernis épargne, trame de la fibre de verre, pistes, reflet -->
+                    <rect x="6" y="6" width="888" height="508" rx="18" fill="url(#hd-mask)" stroke="#0a2a20" stroke-width="2"/>
+                    <rect x="6" y="6" width="888" height="508" rx="18" fill="url(#hd-weave)"/>
+                    <g class="b-traces-edge" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path class="trc-edge trc-edge-power" d="M64 90 H80"/>
+                      <path class="trc-edge trc-edge-power" d="M220 90 H262 L300 128 V204 H326"/>
+                      <path class="trc-edge" d="M180 190 H326"/>
+                      <path class="trc-edge" d="M172 290 H326"/>
+                      <path class="trc-edge" d="M250 228 H326"/>
+                      <path class="trc-edge" d="M250 240 H326"/>
+                      <path class="trc-edge" d="M250 252 H326"/>
+                      <path class="trc-edge" d="M504 192 H528 L548 172 H600"/>
+                      <path class="trc-edge" d="M504 204 H528 L548 184 H600"/>
+                      <path class="trc-edge" d="M504 216 H528 L548 196 H600"/>
+                      <path class="trc-edge" d="M504 228 H528 L548 208 H600"/>
+                      <path class="trc-edge" d="M504 240 H528 L548 220 H600"/>
+                      <path class="trc-edge" d="M504 252 H528 L548 232 H600"/>
+                      <path class="trc-edge" d="M504 276 H520 L540 296 H650"/>
+                      <path class="trc-edge" d="M504 288 H520 L540 308 H650"/>
+                      <path class="trc-edge" d="M504 300 H520 L540 320 H650"/>
+                      <path class="trc-edge" d="M400 166 V104"/>
+                      <path class="trc-edge" d="M436 166 V104"/>
+                      <path class="trc-edge" d="M472 166 V104"/>
+                      <path class="trc-edge" d="M376 344 V395"/>
+                      <path class="trc-edge" d="M424 344 V395"/>
+                      <path class="trc-edge" d="M484 344 V364 L525 405 H700"/>
+                      <path class="trc-edge" d="M472 344 V366 L521 415 H700"/>
+                      <path class="trc-edge" d="M460 344 V368 L517 425 H700"/>
                     </g>
-                    <text class="silk" x="60" y="478">AT-2026 · CARTE COMPÉTENCES · RÉV. A</text>
-                    <text class="silk silk-sm" x="60" y="496">Assemblée à la main en Charente-Maritime</text>
-                  </g>
-
-                  <!-- TH1 : petite thermistance… (secret) -->
-                  <g class="th1" data-secret="thermal" aria-hidden="true">
-                    <rect class="comp-hit" x="512" y="430" width="56" height="48" rx="8"/>
-                    <rect x="522" y="460" width="8" height="10" fill="#d8b25a"/>
-                    <rect x="550" y="460" width="8" height="10" fill="#d8b25a"/>
-                    <path d="M526 460 L536 452 M554 460 L544 452" stroke="#c3c6c2" stroke-width="2"/>
-                    <ellipse class="th1-bead" cx="540" cy="450" rx="9" ry="7"/>
-                    <text class="silk silk-sm" x="527" y="441">TH1</text>
-                  </g>
-
-                  <!-- Composants = compétences -->
-                  <g class="comp" data-skill="qualite" tabindex="-1" aria-hidden="true">
-                    <rect class="comp-hit" x="72" y="56" width="160" height="70" rx="8"/>
-                    <rect x="80" y="76" width="22" height="28" rx="3" fill="#c9ccc7"/>
-                    <rect x="198" y="76" width="22" height="28" rx="3" fill="#c9ccc7"/>
-                    <rect x="102" y="80" width="96" height="20" rx="9" fill="#d9f1ec" fill-opacity=".28" stroke="#e9fffa" stroke-opacity=".6"/>
-                    <path d="M102 90 C130 82, 170 98, 198 90" fill="none" stroke="#f3e2c0" stroke-width="2"/>
-                    <text class="silk" x="80" y="68">F1 · FUSIBLE</text>
-                  </g>
-
-                  <g class="comp" data-skill="diagnostic" tabindex="-1" aria-hidden="true">
-                    <rect class="comp-hit" x="316" y="156" width="198" height="198" rx="10"/>
-                    <g class="qfp-pins" fill="#cfd2cf">
-                      <path d="M352 166 h5 v14 h-5z M364 166 h5 v14 h-5z M376 166 h5 v14 h-5z M388 166 h5 v14 h-5z M400 166 h5 v14 h-5z M412 166 h5 v14 h-5z M424 166 h5 v14 h-5z M436 166 h5 v14 h-5z M448 166 h5 v14 h-5z M460 166 h5 v14 h-5z M472 166 h5 v14 h-5z M484 166 h5 v14 h-5z" transform="translate(-2.5 0)"/>
-                      <path d="M352 330 h5 v14 h-5z M364 330 h5 v14 h-5z M376 330 h5 v14 h-5z M388 330 h5 v14 h-5z M400 330 h5 v14 h-5z M412 330 h5 v14 h-5z M424 330 h5 v14 h-5z M436 330 h5 v14 h-5z M448 330 h5 v14 h-5z M460 330 h5 v14 h-5z M472 330 h5 v14 h-5z M484 330 h5 v14 h-5z" transform="translate(-2.5 0)"/>
-                      <path d="M326 192 v5 h14 v-5z M326 204 v5 h14 v-5z M326 216 v5 h14 v-5z M326 228 v5 h14 v-5z M326 240 v5 h14 v-5z M326 252 v5 h14 v-5z M326 264 v5 h14 v-5z M326 276 v5 h14 v-5z M326 288 v5 h14 v-5z M326 300 v5 h14 v-5z M326 312 v5 h14 v-5z M326 324 v5 h14 v-5z" transform="translate(0 -2.5)"/>
-                      <path d="M490 192 v5 h14 v-5z M490 204 v5 h14 v-5z M490 216 v5 h14 v-5z M490 228 v5 h14 v-5z M490 240 v5 h14 v-5z M490 252 v5 h14 v-5z M490 264 v5 h14 v-5z M490 276 v5 h14 v-5z M490 288 v5 h14 v-5z M490 300 v5 h14 v-5z M490 312 v5 h14 v-5z M490 324 v5 h14 v-5z" transform="translate(0 -2.5)"/>
+                    <g class="b-traces" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path class="trc trc-power" pathLength="1" d="M64 90 H80"/>
+                      <path class="trc trc-power" pathLength="1" d="M220 90 H262 L300 128 V204 H326"/>
+                      <path class="trc" pathLength="1" d="M180 190 H326"/>
+                      <path class="trc" pathLength="1" d="M172 290 H326"/>
+                      <path class="trc" pathLength="1" d="M250 228 H326"/>
+                      <path class="trc" pathLength="1" d="M250 240 H326"/>
+                      <path class="trc" pathLength="1" d="M250 252 H326"/>
+                      <path class="trc" pathLength="1" d="M504 192 H528 L548 172 H600"/>
+                      <path class="trc" pathLength="1" d="M504 204 H528 L548 184 H600"/>
+                      <path class="trc" pathLength="1" d="M504 216 H528 L548 196 H600"/>
+                      <path class="trc" pathLength="1" d="M504 228 H528 L548 208 H600"/>
+                      <path class="trc" pathLength="1" d="M504 240 H528 L548 220 H600"/>
+                      <path class="trc" pathLength="1" d="M504 252 H528 L548 232 H600"/>
+                      <path class="trc" pathLength="1" d="M504 276 H520 L540 296 H650"/>
+                      <path class="trc" pathLength="1" d="M504 288 H520 L540 308 H650"/>
+                      <path class="trc" pathLength="1" d="M504 300 H520 L540 320 H650"/>
+                      <path class="trc" pathLength="1" d="M400 166 V104"/>
+                      <path class="trc" pathLength="1" d="M436 166 V104"/>
+                      <path class="trc" pathLength="1" d="M472 166 V104"/>
+                      <path class="trc" pathLength="1" d="M376 344 V395"/>
+                      <path class="trc" pathLength="1" d="M424 344 V395"/>
+                      <path class="trc" pathLength="1" d="M484 344 V364 L525 405 H700"/>
+                      <path class="trc" pathLength="1" d="M472 344 V366 L521 415 H700"/>
+                      <path class="trc" pathLength="1" d="M460 344 V368 L517 425 H700"/>
                     </g>
-                    <rect class="u1-body" x="340" y="180" width="150" height="150" rx="6" fill="url(#g-chip)"/>
-                    <circle cx="356" cy="196" r="5" fill="#0b0c0c" stroke="#3a3f3f"/>
-                    <text class="chip-txt" x="415" y="248" text-anchor="middle">DIAG-01</text>
-                    <text class="chip-txt chip-txt-sm" x="415" y="268" text-anchor="middle">MESURER · ISOLER</text>
-                    <text class="chip-txt chip-txt-sm" x="415" y="284" text-anchor="middle">RÉPARER</text>
-                    <text class="silk" x="316" y="150">U1</text>
-                  </g>
-
-                  <g class="comp" data-skill="materiel" tabindex="-1" aria-hidden="true">
-                    <rect class="comp-hit" x="588" y="40" width="102" height="322" rx="8"/>
-                    <rect x="600" y="50" width="26" height="300" rx="3" fill="#151818"/>
-                    <rect x="650" y="50" width="26" height="300" rx="3" fill="#151818"/>
-                    <rect x="604" y="62" width="18" height="276" rx="2" fill="#2f7d4f"/>
-                    <rect x="654" y="62" width="18" height="276" rx="2" fill="#2f7d4f"/>
-                    <g fill="#1b1d1d">
-                      <rect x="606" y="72" width="14" height="26" rx="1"/><rect x="606" y="106" width="14" height="26" rx="1"/><rect x="606" y="140" width="14" height="26" rx="1"/><rect x="606" y="174" width="14" height="26" rx="1"/><rect x="606" y="234" width="14" height="26" rx="1"/><rect x="606" y="268" width="14" height="26" rx="1"/><rect x="606" y="302" width="14" height="26" rx="1"/>
-                      <rect x="656" y="72" width="14" height="26" rx="1"/><rect x="656" y="106" width="14" height="26" rx="1"/><rect x="656" y="140" width="14" height="26" rx="1"/><rect x="656" y="174" width="14" height="26" rx="1"/><rect x="656" y="234" width="14" height="26" rx="1"/><rect x="656" y="268" width="14" height="26" rx="1"/><rect x="656" y="302" width="14" height="26" rx="1"/>
+                    <g class="b-flow" fill="none" stroke-linecap="round">
+                      <path class="trc-flow" pathLength="1" d="M64 90 H80 M220 90 H262 L300 128 V204 H326"/>
+                      <path class="trc-flow" pathLength="1" d="M504 204 H528 L548 184 H600"/>
+                      <path class="trc-flow" pathLength="1" d="M504 288 H520 L540 308 H650"/>
+                      <path class="trc-flow" pathLength="1" d="M472 344 V366 L521 415 H700"/>
                     </g>
-                    <g fill="#eceee9"><rect x="598" y="44" width="30" height="8" rx="2"/><rect x="598" y="348" width="30" height="8" rx="2"/><rect x="648" y="44" width="30" height="8" rx="2"/><rect x="648" y="348" width="30" height="8" rx="2"/></g>
-                    <text class="silk" x="700" y="200">J2 · DIMM</text>
-                  </g>
-
-                  <g class="comp" data-skill="outillage" tabindex="-1" aria-hidden="true">
-                    <rect class="comp-hit" x="690" y="372" width="150" height="76" rx="8"/>
-                    <rect x="700" y="395" width="128" height="40" rx="3" fill="#151818"/>
-                    <g fill="#e2c26a">
-                      <rect x="709" y="401" width="8" height="8"/><rect x="729" y="401" width="8" height="8"/><rect x="749" y="401" width="8" height="8"/><rect x="769" y="401" width="8" height="8"/><rect x="789" y="401" width="8" height="8"/><rect x="809" y="401" width="8" height="8"/>
-                      <rect x="709" y="421" width="8" height="8"/><rect x="729" y="421" width="8" height="8"/><rect x="749" y="421" width="8" height="8"/><rect x="769" y="421" width="8" height="8"/><rect x="789" y="421" width="8" height="8"/><rect x="809" y="421" width="8" height="8"/>
+                    <rect x="6" y="6" width="888" height="508" rx="18" fill="url(#hd-sheen)"/>
+                    <rect x="9.5" y="9.5" width="881" height="501" rx="15" fill="none" stroke="#6fe0b0" stroke-opacity=".12"/>
+                  
+                    <!-- Trous de fixation, vias, mires -->
+                    <g class="b-holes" aria-hidden="true">
+                      <circle cx="40" cy="40" r="16" fill="url(#hd-gold)"/><circle cx="40" cy="40" r="9.5" fill="#04100c"/>
+                      <circle cx="860" cy="40" r="16" fill="url(#hd-gold)"/><circle cx="860" cy="40" r="9.5" fill="#04100c"/>
+                      <circle cx="40" cy="480" r="16" fill="url(#hd-gold)"/><circle cx="40" cy="480" r="9.5" fill="#04100c"/>
+                      <circle cx="860" cy="480" r="16" fill="url(#hd-gold)"/><circle cx="860" cy="480" r="9.5" fill="#04100c"/>
+                      <circle cx="300" cy="128" r="4.2" fill="url(#hd-gold)"/><circle cx="300" cy="128" r="1.8" fill="#04100c"/>
+                      <circle cx="548" cy="172" r="4.2" fill="url(#hd-gold)"/><circle cx="548" cy="172" r="1.8" fill="#04100c"/>
+                      <circle cx="540" cy="296" r="4.2" fill="url(#hd-gold)"/><circle cx="540" cy="296" r="1.8" fill="#04100c"/>
+                      <circle cx="525" cy="405" r="4.2" fill="url(#hd-gold)"/><circle cx="525" cy="405" r="1.8" fill="#04100c"/>
+                      <circle cx="262" cy="90" r="4.2" fill="url(#hd-gold)"/><circle cx="262" cy="90" r="1.8" fill="#04100c"/>
+                      <circle cx="528" cy="192" r="4.2" fill="url(#hd-gold)"/><circle cx="528" cy="192" r="1.8" fill="#04100c"/>
+                      <circle cx="84" cy="40" r="7" fill="#0c3427"/><circle cx="84" cy="40" r="3" fill="url(#hd-gold-r)"/>
+                      <circle cx="816" cy="480" r="7" fill="#0c3427"/><circle cx="816" cy="480" r="3" fill="url(#hd-gold-r)"/>
                     </g>
-                    <text class="silk" x="700" y="388">J1 · OUTILS</text>
-                  </g>
-
-                  <g class="comp" data-skill="savoir" tabindex="-1" aria-hidden="true">
-                    <rect class="comp-hit" x="350" y="380" width="100" height="56" rx="8"/>
-                    <rect x="360" y="395" width="80" height="28" rx="14" fill="url(#g-can)" stroke="#5c605d"/>
-                    <rect x="368" y="400" width="64" height="18" rx="9" fill="none" stroke="#ffffff" stroke-opacity=".35"/>
-                    <text class="can-txt" x="400" y="413" text-anchor="middle">32.768</text>
-                    <text class="silk" x="300" y="414">X1</text>
-                  </g>
-                </svg>
+                  
+                    <!-- Passifs décoratifs -->
+                    <g class="b-passives">
+                      <g filter="url(#hd-shadow)"><rect x="12" y="72" width="52" height="36" rx="4" fill="url(#hd-plastic)"/></g>
+                      <circle cx="35" cy="90" r="11" fill="#050707" stroke="url(#hd-metal-x)" stroke-width="3"/>
+                      <circle cx="35" cy="90" r="3.2" fill="url(#hd-alu)"/>
+                      <text class="silk silk-sm" x="16" y="126">J0 · 12V</text>
+                      <g filter="url(#hd-shadow-lg)"><circle cx="150" cy="190" r="30" fill="url(#g-cap)" stroke="#0d1f45" stroke-width="1.5"/></g>
+                      <path d="M150 163 A27 27 0 0 1 150 217" fill="none" stroke="#dbe4f4" stroke-width="6" opacity=".85"/>
+                      <circle cx="150" cy="190" r="24" fill="url(#g-captop)" stroke="#6d757a" stroke-width="1"/>
+                      <path d="M136.8 190 H163.2 M150 176.8 V203.2" stroke="#7b8388" stroke-width="1.6" stroke-linecap="round"/>
+                      <circle cx="150" cy="190" r="24" fill="url(#hd-sheen)"/>
+                      <text class="silk silk-sm" x="118" y="238">C1</text>
+                      <g filter="url(#hd-shadow-lg)"><circle cx="150" cy="290" r="22" fill="url(#g-cap)" stroke="#0d1f45" stroke-width="1.5"/></g>
+                      <path d="M150 271 A19 19 0 0 1 150 309" fill="none" stroke="#dbe4f4" stroke-width="4.5" opacity=".85"/>
+                      <circle cx="150" cy="290" r="16" fill="url(#g-captop)" stroke="#6d757a" stroke-width="1"/>
+                      <path d="M141.2 290 H158.8 M150 281.2 V298.8" stroke="#7b8388" stroke-width="1.6" stroke-linecap="round"/>
+                      <circle cx="150" cy="290" r="16" fill="url(#hd-sheen)"/>
+                      <text class="silk silk-sm" x="124" y="330">C2</text>
+                      <rect x="215" y="223" width="10" height="10" fill="url(#hd-gold)"/><rect x="241" y="223" width="10" height="10" fill="url(#hd-gold)"/>
+                      <rect x="219" y="224" width="28" height="8" rx="1" fill="url(#hd-metal-x)"/>
+                      <rect x="224" y="224" width="18" height="8" fill="url(#g-smd)"/>
+                      <text class="smd-txt" x="233" y="230" text-anchor="middle">471</text>
+                      <rect x="215" y="235" width="10" height="10" fill="url(#hd-gold)"/><rect x="241" y="235" width="10" height="10" fill="url(#hd-gold)"/>
+                      <rect x="219" y="236" width="28" height="8" rx="1" fill="url(#hd-metal-x)"/>
+                      <rect x="224" y="236" width="18" height="8" fill="url(#g-smd)"/>
+                      <text class="smd-txt" x="233" y="242" text-anchor="middle">471</text>
+                      <rect x="215" y="247" width="10" height="10" fill="url(#hd-gold)"/><rect x="241" y="247" width="10" height="10" fill="url(#hd-gold)"/>
+                      <rect x="219" y="248" width="28" height="8" rx="1" fill="url(#hd-metal-x)"/>
+                      <rect x="224" y="248" width="18" height="8" fill="url(#g-smd)"/>
+                      <text class="smd-txt" x="233" y="254" text-anchor="middle">471</text>
+                      <text class="silk silk-sm" x="214" y="214">R1–R3</text>
+                      <rect x="366" y="434" width="8" height="10" fill="url(#hd-gold)"/><rect x="382" y="434" width="8" height="10" fill="url(#hd-gold)"/>
+                      <rect x="369" y="435" width="18" height="8" rx="1" fill="url(#hd-metal-x)"/>
+                      <rect x="373" y="435" width="10" height="8" fill="url(#g-mlcc)"/>
+                      <rect x="414" y="434" width="8" height="10" fill="url(#hd-gold)"/><rect x="430" y="434" width="8" height="10" fill="url(#hd-gold)"/>
+                      <rect x="417" y="435" width="18" height="8" rx="1" fill="url(#hd-metal-x)"/>
+                      <rect x="421" y="435" width="10" height="8" fill="url(#g-mlcc)"/>
+                      <text class="silk silk-sm" x="370" y="462">C7  C8</text>
+                      <g class="b-leds">
+                        <rect class="bled-case" x="389" y="89" width="22" height="16" rx="2"/>
+                        <rect class="bled bled-1" x="392" y="92" width="16" height="10" rx="2"/>
+                        <rect class="bled-case" x="425" y="89" width="22" height="16" rx="2"/>
+                        <rect class="bled bled-2" x="428" y="92" width="16" height="10" rx="2"/>
+                        <rect class="bled-case" x="461" y="89" width="22" height="16" rx="2"/>
+                        <rect class="bled bled-3" x="464" y="92" width="16" height="10" rx="2"/>
+                        <text class="silk silk-sm" x="388" y="82">PWR</text>
+                        <text class="silk silk-sm" x="422" y="82">DIAG</text>
+                        <text class="silk silk-sm" x="466" y="82">OK</text>
+                      </g>
+                      <text class="silk" x="60" y="478">AT-2026 · CARTE COMPÉTENCES · RÉV. A</text>
+                      <text class="silk silk-sm" x="60" y="496">Assemblée à la main en Charente-Maritime</text>
+                    </g>
+                  
+                    <!-- TH1 : petite thermistance… (secret) -->
+                    <g class="th1" data-secret="thermal" aria-hidden="true">
+                      <title>TH1 · thermistance NTC : elle sent la chaleur… et si on regardait la carte en infrarouge ?</title>
+                      <!-- Repères en sérigraphie : symbole normalisé de la thermistance (−t°) et thermomètre -->
+                      <g class="th1-silk">
+                        <rect x="574" y="446" width="20" height="8" rx="1"/>
+                        <path d="M568 450 H574 M594 450 H600 M572 461 L577 461 L593 440"/>
+                        <text x="597" y="466">−t°</text>
+                        <circle cx="616" cy="468" r="4.2"/>
+                        <path d="M613.8 465 V444 a2.2 2.2 0 0 1 4.4 0 V465 M619.5 449 h3 M619.5 454 h3 M619.5 459 h3"/>
+                        <text x="572" y="482">NTC 10k</text>
+                      </g>
+                      <circle class="th1-heat" cx="540" cy="450" r="16"/>
+                      <rect class="comp-hit" x="512" y="430" width="56" height="48" rx="8"/>
+                      <rect x="521" y="460" width="10" height="11" fill="url(#hd-gold)"/><rect x="549" y="460" width="10" height="11" fill="url(#hd-gold)"/>
+                      <path d="M526 464 L536 452 M554 464 L544 452" stroke="#c3c6c2" stroke-width="2" stroke-linecap="round"/>
+                      <circle cx="526" cy="465" r="3.2" fill="url(#hd-solder)"/><circle cx="554" cy="465" r="3.2" fill="url(#hd-solder)"/>
+                      <g filter="url(#hd-shadow)"><ellipse class="th1-bead" cx="540" cy="450" rx="9" ry="7"/></g>
+                      <ellipse cx="537" cy="447" rx="3.5" ry="2" fill="#ffffff" opacity=".45" pointer-events="none"/>
+                      <text class="silk silk-sm" x="527" y="441">TH1</text>
+                    </g>
+                  
+                    <!-- Composants = compétences -->
+                    <g class="comp" data-skill="qualite" tabindex="-1" aria-hidden="true">
+                      <rect class="comp-hit" x="72" y="56" width="160" height="70" rx="8"/>
+                      <g filter="url(#hd-shadow)">
+                        <rect x="78" y="72" width="26" height="36" rx="3" fill="url(#hd-metal-x)"/>
+                        <rect x="196" y="72" width="26" height="36" rx="3" fill="url(#hd-metal-x)"/>
+                        <rect x="94" y="77" width="18" height="26" rx="3" fill="url(#hd-metal-x)"/>
+                        <rect x="188" y="77" width="18" height="26" rx="3" fill="url(#hd-metal-x)"/>
+                        <rect x="111" y="79" width="78" height="22" fill="#cfeef3" fill-opacity=".16"/>
+                        <path d="M111 90 C133 81, 167 99, 189 90" fill="none" stroke="#f3e2c0" stroke-width="1.8"/>
+                        <rect x="111" y="79" width="78" height="22" fill="url(#hd-glass)"/>
+                        <path d="M114 83.5 H186" stroke="#ffffff" stroke-opacity=".75" stroke-width="1.6" stroke-linecap="round"/>
+                      </g>
+                      <text class="silk" x="80" y="68">F1 · FUSIBLE</text>
+                    </g>
+                  
+                    <g class="comp" data-skill="diagnostic" tabindex="-1" aria-hidden="true">
+                      <rect class="comp-hit" x="316" y="156" width="198" height="198" rx="10"/>
+                      <path d="M348.5 163 h7 v20 h-7z M348.5 327 h7 v20 h-7z M360.5 163 h7 v20 h-7z M360.5 327 h7 v20 h-7z M372.5 163 h7 v20 h-7z M372.5 327 h7 v20 h-7z M384.5 163 h7 v20 h-7z M384.5 327 h7 v20 h-7z M396.5 163 h7 v20 h-7z M396.5 327 h7 v20 h-7z M408.5 163 h7 v20 h-7z M408.5 327 h7 v20 h-7z M420.5 163 h7 v20 h-7z M420.5 327 h7 v20 h-7z M432.5 163 h7 v20 h-7z M432.5 327 h7 v20 h-7z M444.5 163 h7 v20 h-7z M444.5 327 h7 v20 h-7z M456.5 163 h7 v20 h-7z M456.5 327 h7 v20 h-7z M468.5 163 h7 v20 h-7z M468.5 327 h7 v20 h-7z M480.5 163 h7 v20 h-7z M480.5 327 h7 v20 h-7z M323 188.5 h20 v7 h-20z M487 188.5 h20 v7 h-20z M323 200.5 h20 v7 h-20z M487 200.5 h20 v7 h-20z M323 212.5 h20 v7 h-20z M487 212.5 h20 v7 h-20z M323 224.5 h20 v7 h-20z M487 224.5 h20 v7 h-20z M323 236.5 h20 v7 h-20z M487 236.5 h20 v7 h-20z M323 248.5 h20 v7 h-20z M487 248.5 h20 v7 h-20z M323 260.5 h20 v7 h-20z M487 260.5 h20 v7 h-20z M323 272.5 h20 v7 h-20z M487 272.5 h20 v7 h-20z M323 284.5 h20 v7 h-20z M487 284.5 h20 v7 h-20z M323 296.5 h20 v7 h-20z M487 296.5 h20 v7 h-20z M323 308.5 h20 v7 h-20z M487 308.5 h20 v7 h-20z M323 320.5 h20 v7 h-20z M487 320.5 h20 v7 h-20z" fill="url(#hd-gold)"/>
+                      <g class="qfp-pins">
+                        <path d="M349.5 166 h5 v14 h-5z M349.5 330 h5 v14 h-5z M361.5 166 h5 v14 h-5z M361.5 330 h5 v14 h-5z M373.5 166 h5 v14 h-5z M373.5 330 h5 v14 h-5z M385.5 166 h5 v14 h-5z M385.5 330 h5 v14 h-5z M397.5 166 h5 v14 h-5z M397.5 330 h5 v14 h-5z M409.5 166 h5 v14 h-5z M409.5 330 h5 v14 h-5z M421.5 166 h5 v14 h-5z M421.5 330 h5 v14 h-5z M433.5 166 h5 v14 h-5z M433.5 330 h5 v14 h-5z M445.5 166 h5 v14 h-5z M445.5 330 h5 v14 h-5z M457.5 166 h5 v14 h-5z M457.5 330 h5 v14 h-5z M469.5 166 h5 v14 h-5z M469.5 330 h5 v14 h-5z M481.5 166 h5 v14 h-5z M481.5 330 h5 v14 h-5z M326 189.5 h14 v5 h-14z M490 189.5 h14 v5 h-14z M326 201.5 h14 v5 h-14z M490 201.5 h14 v5 h-14z M326 213.5 h14 v5 h-14z M490 213.5 h14 v5 h-14z M326 225.5 h14 v5 h-14z M490 225.5 h14 v5 h-14z M326 237.5 h14 v5 h-14z M490 237.5 h14 v5 h-14z M326 249.5 h14 v5 h-14z M490 249.5 h14 v5 h-14z M326 261.5 h14 v5 h-14z M490 261.5 h14 v5 h-14z M326 273.5 h14 v5 h-14z M490 273.5 h14 v5 h-14z M326 285.5 h14 v5 h-14z M490 285.5 h14 v5 h-14z M326 297.5 h14 v5 h-14z M490 297.5 h14 v5 h-14z M326 309.5 h14 v5 h-14z M490 309.5 h14 v5 h-14z M326 321.5 h14 v5 h-14z M490 321.5 h14 v5 h-14z" fill="#b9c0c4"/>
+                        <path d="M350.5 167 h1.4 v12 h-1.4z M350.5 331 h1.4 v12 h-1.4z M362.5 167 h1.4 v12 h-1.4z M362.5 331 h1.4 v12 h-1.4z M374.5 167 h1.4 v12 h-1.4z M374.5 331 h1.4 v12 h-1.4z M386.5 167 h1.4 v12 h-1.4z M386.5 331 h1.4 v12 h-1.4z M398.5 167 h1.4 v12 h-1.4z M398.5 331 h1.4 v12 h-1.4z M410.5 167 h1.4 v12 h-1.4z M410.5 331 h1.4 v12 h-1.4z M422.5 167 h1.4 v12 h-1.4z M422.5 331 h1.4 v12 h-1.4z M434.5 167 h1.4 v12 h-1.4z M434.5 331 h1.4 v12 h-1.4z M446.5 167 h1.4 v12 h-1.4z M446.5 331 h1.4 v12 h-1.4z M458.5 167 h1.4 v12 h-1.4z M458.5 331 h1.4 v12 h-1.4z M470.5 167 h1.4 v12 h-1.4z M470.5 331 h1.4 v12 h-1.4z M482.5 167 h1.4 v12 h-1.4z M482.5 331 h1.4 v12 h-1.4z M327 190.5 h12 v1.4 h-12z M491 190.5 h12 v1.4 h-12z M327 202.5 h12 v1.4 h-12z M491 202.5 h12 v1.4 h-12z M327 214.5 h12 v1.4 h-12z M491 214.5 h12 v1.4 h-12z M327 226.5 h12 v1.4 h-12z M491 226.5 h12 v1.4 h-12z M327 238.5 h12 v1.4 h-12z M491 238.5 h12 v1.4 h-12z M327 250.5 h12 v1.4 h-12z M491 250.5 h12 v1.4 h-12z M327 262.5 h12 v1.4 h-12z M491 262.5 h12 v1.4 h-12z M327 274.5 h12 v1.4 h-12z M491 274.5 h12 v1.4 h-12z M327 286.5 h12 v1.4 h-12z M491 286.5 h12 v1.4 h-12z M327 298.5 h12 v1.4 h-12z M491 298.5 h12 v1.4 h-12z M327 310.5 h12 v1.4 h-12z M491 310.5 h12 v1.4 h-12z M327 322.5 h12 v1.4 h-12z M491 322.5 h12 v1.4 h-12z" fill="#f4f6f7"/>
+                      </g>
+                      <g filter="url(#hd-shadow-lg)">
+                        <rect class="u1-body" x="340" y="180" width="150" height="150" rx="6" fill="url(#g-chip)"/>
+                      </g>
+                      <rect x="343" y="183" width="144" height="144" rx="5" fill="none" stroke="#ffffff" stroke-opacity=".07" stroke-width="2"/>
+                      <circle cx="356" cy="196" r="5" fill="#0a0b0c" stroke="#3a3f3f"/>
+                      <text class="chip-txt" x="415" y="248" text-anchor="middle">DIAG-01</text>
+                      <text class="chip-txt chip-txt-sm" x="415" y="268" text-anchor="middle">MESURER · ISOLER</text>
+                      <text class="chip-txt chip-txt-sm" x="415" y="284" text-anchor="middle">RÉPARER</text>
+                      <text class="chip-txt chip-txt-sm" x="415" y="314" text-anchor="middle">AT · 2617 · FR</text>
+                      <text class="silk" x="316" y="150">U1</text>
+                    </g>
+                  
+                    <g class="comp" data-skill="materiel" tabindex="-1" aria-hidden="true">
+                      <rect class="comp-hit" x="588" y="40" width="102" height="322" rx="8"/>
+                      <rect x="600" y="50" width="26" height="300" rx="3" fill="url(#hd-plastic-y)"/>
+                      <rect x="650" y="50" width="26" height="300" rx="3" fill="url(#hd-plastic-y)"/>
+                      <g filter="url(#hd-shadow)"><rect x="604" y="60" width="18" height="280" rx="2" fill="url(#hd-mask)"/></g>
+                      <rect x="604" y="60" width="18" height="280" rx="2" fill="url(#hd-weave)"/>
+                      <path d="M605 68 V332" stroke="#d9a441" stroke-width="2" stroke-dasharray="1.4 1.6"/>
+                      <g fill="url(#g-chip)"><rect x="607" y="72" width="14" height="26" rx="1"/><rect x="607" y="106" width="14" height="26" rx="1"/><rect x="607" y="140" width="14" height="26" rx="1"/><rect x="607" y="174" width="14" height="26" rx="1"/><rect x="607" y="234" width="14" height="26" rx="1"/><rect x="607" y="268" width="14" height="26" rx="1"/><rect x="607" y="302" width="14" height="26" rx="1"/></g>
+                      <rect x="607" y="204" width="14" height="24" rx="1" fill="#eceee9"/>
+                      <g filter="url(#hd-shadow)"><rect x="654" y="60" width="18" height="280" rx="2" fill="url(#hd-mask)"/></g>
+                      <rect x="654" y="60" width="18" height="280" rx="2" fill="url(#hd-weave)"/>
+                      <path d="M655 68 V332" stroke="#d9a441" stroke-width="2" stroke-dasharray="1.4 1.6"/>
+                      <g fill="url(#g-chip)"><rect x="657" y="72" width="14" height="26" rx="1"/><rect x="657" y="106" width="14" height="26" rx="1"/><rect x="657" y="140" width="14" height="26" rx="1"/><rect x="657" y="174" width="14" height="26" rx="1"/><rect x="657" y="234" width="14" height="26" rx="1"/><rect x="657" y="268" width="14" height="26" rx="1"/><rect x="657" y="302" width="14" height="26" rx="1"/></g>
+                      <rect x="657" y="204" width="14" height="24" rx="1" fill="#eceee9"/>
+                      <g fill="url(#hd-ivory)"><rect x="598" y="44" width="30" height="8" rx="2"/><rect x="598" y="348" width="30" height="8" rx="2"/><rect x="648" y="44" width="30" height="8" rx="2"/><rect x="648" y="348" width="30" height="8" rx="2"/></g>
+                      <text class="silk" x="700" y="200">J2 · DIMM</text>
+                    </g>
+                  
+                    <g class="comp" data-skill="outillage" tabindex="-1" aria-hidden="true">
+                      <rect class="comp-hit" x="690" y="372" width="150" height="76" rx="8"/>
+                      <g filter="url(#hd-shadow)"><rect x="700" y="393" width="128" height="44" rx="3" fill="url(#hd-plastic)"/></g>
+                      <rect x="705" y="398" width="118" height="34" rx="2" fill="#070808"/>
+                      <rect x="752" y="432" width="24" height="5" fill="#070808"/>
+                      <g fill="url(#hd-gold)"><rect x="709" y="401" width="8" height="8" rx="1"/><rect x="729" y="401" width="8" height="8" rx="1"/><rect x="749" y="401" width="8" height="8" rx="1"/><rect x="769" y="401" width="8" height="8" rx="1"/><rect x="789" y="401" width="8" height="8" rx="1"/><rect x="809" y="401" width="8" height="8" rx="1"/><rect x="709" y="421" width="8" height="8" rx="1"/><rect x="729" y="421" width="8" height="8" rx="1"/><rect x="749" y="421" width="8" height="8" rx="1"/><rect x="769" y="421" width="8" height="8" rx="1"/><rect x="789" y="421" width="8" height="8" rx="1"/><rect x="809" y="421" width="8" height="8" rx="1"/></g>
+                      <path d="M710 402 h2.5 v6 h-2.5z M730 402 h2.5 v6 h-2.5z M750 402 h2.5 v6 h-2.5z M770 402 h2.5 v6 h-2.5z M790 402 h2.5 v6 h-2.5z M810 402 h2.5 v6 h-2.5z M710 422 h2.5 v6 h-2.5z M730 422 h2.5 v6 h-2.5z M750 422 h2.5 v6 h-2.5z M770 422 h2.5 v6 h-2.5z M790 422 h2.5 v6 h-2.5z M810 422 h2.5 v6 h-2.5z" fill="#fff6d0" opacity=".7"/>
+                      <path d="M703 396 l6 0 l-6 6 z" fill="#e8efe9" opacity=".8"/>
+                      <text class="silk" x="700" y="388">J1 · OUTILS</text>
+                    </g>
+                  
+                    <g class="comp" data-skill="savoir" tabindex="-1" aria-hidden="true">
+                      <rect class="comp-hit" x="350" y="380" width="100" height="56" rx="8"/>
+                      <g filter="url(#hd-shadow)"><rect x="360" y="395" width="80" height="28" rx="14" fill="url(#g-can)" stroke="#5c605d"/></g>
+                      <rect x="368" y="400" width="64" height="18" rx="9" fill="none" stroke="#ffffff" stroke-opacity=".45"/>
+                      <rect x="360" y="395" width="80" height="28" rx="14" fill="url(#hd-cyl-x)" opacity=".6"/>
+                      <text class="can-txt" x="400" y="413" text-anchor="middle">32.768</text>
+                      <text class="silk" x="300" y="414">X1</text>
+                    </g>
+                  </svg>
               </div>
 
               <div class="case-cover">
@@ -994,7 +1083,7 @@
                   <linearGradient id="g-choke" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#727a7e"/><stop offset="1" stop-color="#3b4145"/></linearGradient>
                   <linearGradient id="g-blade" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7d868a"/><stop offset="1" stop-color="#3f4649"/></linearGradient>
                   <linearGradient id="g-shroud" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3b4246"/><stop offset=".5" stop-color="#22272a"/><stop offset="1" stop-color="#15181a"/></linearGradient>
-                  <linearGradient id="g-chip" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2e3336"/><stop offset="1" stop-color="#0f1112"/></linearGradient>
+                  <linearGradient id="pc-chip" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2e3336"/><stop offset="1" stop-color="#0f1112"/></linearGradient>
                   <!-- Pale de ventilateur (réutilisée avec rotation) -->
                   <path id="pc-blade" d="M350 110 C351 99 357 86 368 78 C373 88 371 100 360 108 Z"/>
                   <path id="gpu-blade" d="M0 0 C1 -8 5 -17 13 -21 C16 -14 14 -6 6 -1 Z"/>
@@ -1046,7 +1135,7 @@
                     <rect x="106" y="165" width="18" height="18" rx="2" fill="url(#g-choke)"/>
                   </g>
                   <g fill="none" stroke="#262b2e" stroke-width="1"><rect x="110" y="73" width="10" height="10"/><rect x="110" y="97" width="10" height="10"/><rect x="110" y="121" width="10" height="10"/><rect x="110" y="145" width="10" height="10"/><rect x="110" y="169" width="10" height="10"/></g>
-                  <g fill="url(#g-chip)"><rect x="127" y="74" width="10" height="8" rx="1"/><rect x="127" y="98" width="10" height="8" rx="1"/><rect x="127" y="122" width="10" height="8" rx="1"/><rect x="127" y="146" width="10" height="8" rx="1"/><rect x="127" y="170" width="10" height="8" rx="1"/></g>
+                  <g fill="url(#pc-chip)"><rect x="127" y="74" width="10" height="8" rx="1"/><rect x="127" y="98" width="10" height="8" rx="1"/><rect x="127" y="122" width="10" height="8" rx="1"/><rect x="127" y="146" width="10" height="8" rx="1"/><rect x="127" y="170" width="10" height="8" rx="1"/></g>
                   <g filter="url(#hd-shadow)">
                     <circle cx="94" cy="132" r="6.5" fill="url(#hd-alu)"/><circle cx="94" cy="156" r="6.5" fill="url(#hd-alu)"/><circle cx="94" cy="180" r="6.5" fill="url(#hd-alu)"/>
                   </g>
@@ -1124,7 +1213,7 @@
                   <g filter="url(#hd-shadow)">
                     <rect x="426.5" y="47" width="15" height="200" rx="1.5" fill="url(#hd-mask)"/>
                   </g>
-                  <g fill="url(#g-chip)">
+                  <g fill="url(#pc-chip)">
                     <rect x="428.5" y="56" width="11" height="22" rx="1"/><rect x="428.5" y="86" width="11" height="22" rx="1"/><rect x="428.5" y="116" width="11" height="22" rx="1"/><rect x="428.5" y="156" width="11" height="22" rx="1"/><rect x="428.5" y="186" width="11" height="22" rx="1"/><rect x="428.5" y="216" width="11" height="22" rx="1"/>
                   </g>
                   <rect x="429" y="141" width="10" height="11" rx="1" fill="#e9ebe6"/>

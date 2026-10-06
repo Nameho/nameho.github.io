@@ -71,6 +71,7 @@ scripts/
   veille-sources.json    ← liste des flux
   encrypt-cv.mjs         ← chiffre le CV (prive/ → site/assets/cv/)
   serve.mjs              ← serveur d'aperçu local
+  og-image.html / .mjs   ← image d'aperçu des liens (node scripts/og-image.mjs → site/assets/og-image.png)
 .github/workflows/deploy.yml
 ```
 

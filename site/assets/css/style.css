@@ -676,6 +676,13 @@ button, input, select { font: inherit; color: inherit; }
   position: relative;
   padding-block: clamp(76px, 10vw, 130px);
 }
+/* Allègement : une section loin de l'écran n'est ni mise en page ni dessinée tant qu'on ne
+   s'en approche pas (gros gain sur téléphone : ~2 500 éléments et des dessins détaillés).
+   « auto » fait mémoriser au navigateur la vraie hauteur une fois la section affichée. */
+main > .section:not(#profil) {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 1100px;
+}
 .sec-head {
   display: flex;
   align-items: center;
@@ -920,8 +927,13 @@ button, input, select { font: inherit; color: inherit; }
 .chip-txt-sm { font-size: 10px; font-weight: 600; fill: #8f9692; letter-spacing: 0.08em; }
 .can-txt { fill: #3c403e; font: 700 10px var(--mono); }
 
-.trc { stroke: #2f8d6f; stroke-width: 4; }
+/* Pistes sous le vernis (bord sombre + cuivre), qui passent au cuivre vif sous tension */
+.trc-edge { stroke: #0b3527; stroke-width: 6.5; }
+.trc-edge-power { stroke-width: 10.5; }
+.trc { stroke: #2a8a60; stroke-width: 4; }
 .trc-power { stroke-width: 8; }
+.smd-txt { fill: #e9ebe6; font: 700 5.5px var(--mono); }
+.bled-case { fill: #e6e9e5; stroke: #9aa09c; stroke-width: 0.6; }
 .trc-flow {
   stroke: #ffd18e;
   stroke-width: 3;
@@ -2310,7 +2322,7 @@ button, input, select { font: inherit; color: inherit; }
   text-align: center;
 }
 .e404 svg { width: min(560px, 100%); height: auto; }
-.e404-led { fill: #1f3a28; stroke: #0b2018; stroke-width: 2; transition: fill 0.3s; }
+.e404-led { fill: url(#e-led-off); stroke: #0b2018; stroke-width: 1; transition: fill 0.3s; }
 .e404-glow { opacity: 0; transition: opacity 0.4s; }
 .e404-fixed .e404-led { fill: #52ff86; }
 .e404-fixed .e404-glow { opacity: 1; }
@@ -3075,6 +3087,13 @@ dialog.rework { width: min(1000px, calc(100vw - 24px)); max-height: calc(100dvh 
 .th1 { cursor: var(--cur-hand); }
 .case:not(.is-powered) .th1 { pointer-events: none; }
 .th1-bead { fill: #23409a; transition: fill 0.3s, filter 0.3s; }
+/* Repères de TH1 : sérigraphie (symbole de thermistance, thermomètre) et chaleur qui « respire » */
+.th1-silk { fill: none; stroke: rgba(241, 245, 239, 0.8); stroke-width: 1.3; stroke-linecap: round; stroke-linejoin: round; }
+.th1-silk text { fill: rgba(241, 245, 239, 0.85); stroke: none; font: 700 9px var(--mono); }
+.th1-heat { fill: #ff8a3c; opacity: 0; pointer-events: none; filter: blur(5px); }
+.case.is-powered .th1-heat { animation: th1-heat 3.2s ease-in-out 1.6s infinite; }
+@keyframes th1-heat { 0%, 100% { opacity: 0; } 50% { opacity: 0.45; } }
+.reduce-motion .case.is-powered .th1-heat { animation: none; opacity: 0.25; }
 .th1:hover .th1-bead { fill: #4a7bff; filter: drop-shadow(0 0 4px #6fa0ff); }
 
 .thermal main,
