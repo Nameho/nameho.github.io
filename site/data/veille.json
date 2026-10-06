@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-06T10:04:23.889Z",
+  "updatedAt": "2026-10-06T11:19:34.891Z",
   "sources": [
     {
       "id": "ifixit",
@@ -46,6 +46,14 @@
   ],
   "items": [
     {
+      "id": "586b3aa6fde1",
+      "source": "hackaday",
+      "title": "USB-C PD Tamed with this Analyzer",
+      "url": "https://hackaday.com/2026/10/06/usb-c-pd-tamed-with-this-analyzer/",
+      "date": "2026-10-06T11:00:31.000Z",
+      "excerpt": "USB-C Power Delivery (PD) has been a boon to anyone working with low-voltage DC power, because at a stroke it replaces a vast array of wall warts, power supplies, and …read more"
+    },
+    {
       "id": "34cbb5b04342",
       "source": "hackaday",
       "title": "A New Type of LLM on the Block: Decision-Making Models",
@@ -84,14 +92,6 @@
       "url": "https://hackaday.com/2026/10/05/how-to-grow-a-giant-crystal-from-copper-sulfate/",
       "date": "2026-10-05T20:00:29.000Z",
       "excerpt": "Copper sulfate crystals are probably among one of the prettiest crystals you can grow at home, with even just a simple setup with some copper scrap and vinegar already capable …read more"
-    },
-    {
-      "id": "8d66e259b56b",
-      "source": "hackaday",
-      "title": "Failing to Make a Fanless PC",
-      "url": "https://hackaday.com/2026/10/05/failing-to-make-a-fanless-pc/",
-      "date": "2026-10-05T17:30:20.000Z",
-      "excerpt": "The discerning modern gamer’s quest is to find a quieter computer without sacrificing performance. That proves challenging when modern components are highly efficient at producing monumental quantities of thermal energy. …read more"
     },
     {
       "id": "b0eeb09536f2",
