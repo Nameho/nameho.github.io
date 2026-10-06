@@ -12,7 +12,6 @@
   <meta name="theme-color" content="#0a1d18">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="fr_FR">
-  <meta property="og:site_name" content="Portfolio de Alexis Trudelle">
   <meta property="og:title" content="Portfolio de Alexis Trudelle">
   <meta property="og:description" content="Un portfolio à dépanner : trouvez la panne au multimètre, ouvrez le boîtier, soudez pour obtenir mes coordonnées.">
   <meta property="og:url" content="https://nameho.github.io/">
@@ -276,7 +275,7 @@
                   <g class="b-traces" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path class="trc trc-power" pathLength="1" d="M64 90 H80"/>
                     <path class="trc trc-power" pathLength="1" d="M220 90 H262 L300 128 V204 H326"/>
-                    <path class="trc" pathLength="1" d="M180 190 H300"/>
+                    <path class="trc" pathLength="1" d="M180 190 H326"/>
                     <path class="trc" pathLength="1" d="M172 290 H326"/>
                     <path class="trc" pathLength="1" d="M248 228 H326"/>
                     <path class="trc" pathLength="1" d="M248 240 H326"/>
@@ -527,103 +526,164 @@
                 <radialGradient id="g-led" cx=".5" cy=".5" r=".5">
                   <stop offset="0" stop-color="#ff5a3c" stop-opacity=".95"/><stop offset=".4" stop-color="#ff3a22" stop-opacity=".45"/><stop offset="1" stop-color="#ff2a10" stop-opacity="0"/>
                 </radialGradient>
-                <linearGradient id="g-bat" x1="0" y1="0" x2="1" y2="0">
-                  <stop offset="0" stop-color="#1b1d1e"/><stop offset=".5" stop-color="#34383a"/><stop offset="1" stop-color="#151718"/>
-                </linearGradient>
+                <!-- Pistes (dessinées deux fois : bord sombre puis cuivre sous le vernis) -->
+                <g id="d-tr">
+                  <path d="M75 122 V80 H150"/><path d="M112 80 V54"/>
+                  <path d="M210 80 H270"/><path d="M240 80 V54"/>
+                  <path d="M350 80 H400"/><path d="M375 80 V54"/>
+                  <path d="M480 80 H545 V170"/><path d="M545 120 H570"/>
+                  <path d="M545 230 V320 H360"/><path d="M455 320 V346"/>
+                  <path d="M300 320 H75 V278"/><path d="M190 320 V346"/>
+                  <path d="M135 80 V150"/><path d="M135 250 V320"/>
+                </g>
+                <clipPath id="d-r1-clip"><path d="M420 70 C415 70 413 74 413 80 C413 86 415 90 420 90 C424 90 425 88 428 88 H452 C455 88 456 90 460 90 C465 90 467 86 467 80 C467 74 465 70 460 70 C456 70 455 72 452 72 H428 C425 72 424 70 420 70 Z"/></clipPath>
               </defs>
-              <rect x="4" y="4" width="612" height="382" rx="16" fill="#124437" stroke="#0b2e25" stroke-width="2"/>
 
-              <g class="d-traces" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M75 122 V80 H150"/><path d="M112 80 V54"/>
-                <path d="M210 80 H270"/><path d="M240 80 V54"/>
-                <path d="M350 80 H400"/><path d="M375 80 V54"/>
-                <path d="M480 80 H545 V170"/><path d="M545 120 H570"/>
-                <path d="M545 230 V320 H360"/><path d="M455 320 V346"/>
-                <path d="M300 320 H75 V278"/><path d="M190 320 V346"/>
-                <path d="M135 80 V150"/><path d="M135 250 V320"/>
-              </g>
+              <!-- Carte : vernis épargne, trame de la fibre de verre, pistes, reflet -->
+              <rect x="4" y="4" width="612" height="382" rx="16" fill="url(#hd-mask)" stroke="#0a2a20" stroke-width="2"/>
+              <rect x="4" y="4" width="612" height="382" rx="16" fill="url(#hd-weave)"/>
+              <use href="#d-tr" class="d-tr-edge"/>
+              <use href="#d-tr" class="d-tr"/>
               <path class="d-flow" d="M75 122 V80 H150 M210 80 H270 M350 80 H400 M480 80 H545 V170 M545 230 V320 H360 M300 320 H75 V278" fill="none"/>
+              <rect x="4" y="4" width="612" height="382" rx="16" fill="url(#hd-sheen)"/>
+              <rect x="7.5" y="7.5" width="605" height="375" rx="13" fill="none" stroke="#6fe0b0" stroke-opacity=".12"/>
+              <g class="hd-holes" aria-hidden="true">
+                <circle cx="22" cy="22" r="8.5" fill="url(#hd-gold)"/><circle cx="22" cy="22" r="5" fill="#04100c"/>
+                <circle cx="598" cy="22" r="8.5" fill="url(#hd-gold)"/><circle cx="598" cy="22" r="5" fill="#04100c"/>
+                <circle cx="22" cy="368" r="8.5" fill="url(#hd-gold)"/><circle cx="22" cy="368" r="5" fill="#04100c"/>
+                <circle cx="598" cy="368" r="8.5" fill="url(#hd-gold)"/><circle cx="598" cy="368" r="5" fill="#04100c"/>
+                <circle cx="50" cy="22" r="5.5" fill="#0c3427"/><circle cx="50" cy="22" r="2.3" fill="url(#hd-gold-r)"/>
+                <circle cx="570" cy="368" r="5.5" fill="#0c3427"/><circle cx="570" cy="368" r="2.3" fill="url(#hd-gold-r)"/>
+              </g>
+              <text class="silk silk-sm" x="246" y="378">BANC DE TEST AT-17 · RÉV. B</text>
 
-              <!-- BAT1 -->
+              <!-- BAT1 : pile 9 V et son coupleur à pression (fil rouge vers +, noir vers −) -->
               <g class="part" data-part="BAT1" tabindex="0" role="button" aria-label="BAT1, pile 9 volts">
                 <rect class="part-hit" x="30" y="108" width="90" height="184" rx="10"/>
-                <rect x="40" y="134" width="70" height="132" rx="8" fill="url(#g-bat)"/>
-                <rect x="40" y="170" width="70" height="56" fill="#e0821f"/>
-                <text class="bat-txt" x="75" y="206" text-anchor="middle">9V</text>
-                <rect x="62" y="122" width="26" height="14" rx="3" fill="#b9bdb9"/>
-                <rect x="62" y="264" width="26" height="14" rx="3" fill="#8d918e"/>
-                <text class="silk silk-plus" x="96" y="152">+</text>
-                <text class="silk silk-plus" x="96" y="258">−</text>
+                <path class="wire wire-black" d="M86 135 C88 128, 100 128, 108 134 C113 138, 113 146, 113 156 V258 C113 270, 100 276, 81 276"/>
+                <path class="wire-hi" d="M86 134 C88 127, 100 127, 107.5 133 C112 137, 112 146, 112 156 V258"/>
+                <path class="wire wire-red" d="M64 135 C64 129, 69 126, 73 125"/>
+                <g filter="url(#hd-shadow)">
+                  <rect x="44" y="150" width="62" height="118" rx="5" fill="url(#hd-plastic-y)"/>
+                  <rect x="44" y="180" width="62" height="58" fill="url(#hd-orange)"/>
+                  <rect x="46" y="263" width="58" height="7" rx="2.5" fill="url(#hd-metal-y)"/>
+                  <rect x="46" y="147" width="58" height="7" rx="2.5" fill="url(#hd-metal-y)"/>
+                  <rect x="50" y="133" width="50" height="17" rx="4" fill="url(#hd-plastic)"/>
+                  <rect x="55" y="138" width="40" height="2.5" rx="1.2" fill="#000000" opacity=".45"/>
+                </g>
+                <text class="bat-txt" x="75" y="214" text-anchor="middle">9V</text>
+                <text class="bat-sub" x="75" y="229" text-anchor="middle">ALKALINE</text>
+                <text class="silk silk-plus" x="86" y="120">+</text>
+                <text class="silk silk-plus" x="88" y="296">−</text>
                 <text class="silk" x="28" y="306">BAT1</text>
               </g>
 
-              <!-- C1 : condensateur de filtrage, en parallèle sur la pile -->
+              <!-- C1 : condensateur chimique axial (les flèches de la bande montrent la patte −) -->
               <g class="part part-cap" data-part="C1" tabindex="0" role="button" aria-label="C1, condensateur 470 microfarads">
                 <rect class="part-hit" x="118" y="140" width="66" height="122" rx="8"/>
-                <path d="M135 150 V160 M135 232 V250" stroke="#c3c6c2" stroke-width="3"/>
-                <rect x="122" y="160" width="26" height="72" rx="4" fill="#2a4fb0"/>
-                <rect x="140" y="160" width="6" height="72" fill="#cfd8ea" opacity=".85"/>
-                <path d="M141.5 176 h3 M141.5 196 h3 M141.5 216 h3" stroke="#2a4fb0" stroke-width="2"/>
-                <path class="cap-top-ok" d="M123 163 H147" stroke="#9aa3ad" stroke-width="3"/>
-                <path class="cap-top-bulged" d="M122 164 Q135 142 148 164 Z" fill="#a9b1ba" stroke="#6f7780"/>
-                <path class="cap-top-bulged" d="M128 158 q2 6 0 10 M141 156 q-1 5 1 9" stroke="#7a4a1f" stroke-width="2.5" fill="none"/>
-                <text class="silk" x="154" y="198">C1</text>
-                <text class="silk silk-sm" x="154" y="212">470 µF</text>
+                <rect class="silk-line" x="117" y="155" width="36" height="88" rx="4"/>
+                <rect x="133.6" y="150" width="2.8" height="12" fill="url(#hd-metal-y)"/>
+                <rect x="133.6" y="236" width="2.8" height="14" fill="url(#hd-metal-y)"/>
+                <g filter="url(#hd-shadow)">
+                  <rect x="121" y="160" width="28" height="78" rx="6" fill="url(#hd-cap-blue)"/>
+                  <rect x="140.5" y="160" width="7.5" height="78" fill="#dbe4f4" opacity=".92"/>
+                  <path d="M144.3 179 l-2.4 -3.6 h4.8 z M144.3 201 l-2.4 -3.6 h4.8 z M144.3 223 l-2.4 -3.6 h4.8 z" fill="#2a4fb0"/>
+                  <path d="M122 169 H148" stroke="#0c1b40" stroke-width="1.6" opacity=".75"/>
+                  <rect x="121" y="160" width="28" height="78" rx="6" fill="url(#hd-cyl-y)"/>
+                  <rect x="123.5" y="233" width="23" height="5" rx="2" fill="url(#hd-alu)"/>
+                </g>
+                <path class="cap-top-ok" d="M124.5 161.6 H145.5" stroke="#8d969e" stroke-width="3" stroke-linecap="round"/>
+                <path class="cap-top-bulged" d="M121 166 Q135 140 149 166 Z" fill="url(#hd-alu)" stroke="#6f7780"/>
+                <path class="cap-top-bulged" d="M128 158 q2 6 0 10 M141 156 q-1 5 1 9" stroke="#7a4a1f" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                <text class="silk silk-sm" x="145" y="152">+</text>
+                <text class="silk" x="158" y="198">C1</text>
+                <text class="silk silk-sm" x="158" y="212">470 µF</text>
               </g>
 
-              <!-- SW1 : interrupteur d'alimentation -->
+              <!-- SW1 : interrupteur à glissière (boîtier métal, curseur en plastique) -->
               <g class="part part-switch is-on" data-part="SW1" tabindex="0" role="switch" aria-checked="true" aria-label="SW1, interrupteur d'alimentation">
                 <rect class="part-hit" x="146" y="58" width="68" height="46" rx="8"/>
-                <rect x="156" y="68" width="48" height="24" rx="5" fill="#1d2021" stroke="#4b5150"/>
-                <rect class="sw-knob" x="160" y="71" width="18" height="18" rx="3" fill="#e6e7e2"/>
+                <rect class="silk-line" x="152" y="62" width="56" height="36" rx="3"/>
+                <rect x="150" y="78.6" width="8" height="2.8" fill="url(#hd-metal-x)"/>
+                <rect x="202" y="78.6" width="8" height="2.8" fill="url(#hd-metal-x)"/>
+                <g filter="url(#hd-shadow)">
+                  <rect x="156" y="66" width="48" height="28" rx="3" fill="url(#hd-metal-x)"/>
+                  <rect x="159" y="69" width="42" height="22" rx="2" fill="#121516" stroke="#000000" stroke-opacity=".5"/>
+                </g>
+                <g class="sw-knob">
+                  <rect x="161" y="71" width="16" height="18" rx="2.5" fill="url(#hd-ivory)"/>
+                  <path d="M165 74 V86 M169 74 V86 M173 74 V86" stroke="#9a9d97" stroke-width="1"/>
+                </g>
                 <text class="silk" x="160" y="118">SW1</text>
                 <text class="silk silk-sm sw-state" x="188" y="118">ON</text>
               </g>
 
-              <!-- F1 -->
+              <!-- F1 : fusible en verre 5×20 dans son porte-fusible à clips -->
               <g class="part" data-part="F1" tabindex="0" role="button" aria-label="F1, fusible 500 milliampères">
-                <rect class="part-hit" x="264" y="60" width="92" height="40" rx="8"/>
-                <rect x="270" y="70" width="16" height="20" rx="2" fill="#c3c6c2"/>
-                <rect x="334" y="70" width="16" height="20" rx="2" fill="#c3c6c2"/>
-                <rect x="286" y="72" width="48" height="16" rx="7" fill="#d9f1ec" fill-opacity=".25" stroke="#e9fffa" stroke-opacity=".55"/>
-                <path d="M286 80 C298 74, 322 86, 334 80" fill="none" stroke="#efdcb5" stroke-width="1.6"/>
+                <rect class="part-hit" x="258" y="60" width="104" height="40" rx="8"/>
+                <g filter="url(#hd-shadow)">
+                  <rect x="262" y="67" width="16" height="26" rx="2" fill="url(#hd-metal-x)"/>
+                  <rect x="342" y="67" width="16" height="26" rx="2" fill="url(#hd-metal-x)"/>
+                  <rect x="274" y="71" width="15" height="18" rx="2" fill="url(#hd-metal-x)"/>
+                  <rect x="331" y="71" width="15" height="18" rx="2" fill="url(#hd-metal-x)"/>
+                  <rect x="288" y="72.5" width="44" height="15" fill="#cfeef3" fill-opacity=".16"/>
+                  <path class="fuse-wire" d="M288 80 C300 74, 320 86, 332 80" fill="none" stroke="#efdcb5" stroke-width="1.3"/>
+                  <rect x="288" y="72.5" width="44" height="15" fill="url(#hd-glass)"/>
+                  <path d="M290 75.6 H330" stroke="#ffffff" stroke-opacity=".75" stroke-width="1.2" stroke-linecap="round"/>
+                </g>
                 <text class="silk" x="276" y="118">F1 · 500 mA</text>
               </g>
 
-              <!-- R1 : jaune violet marron or = 470 Ω -->
+              <!-- R1 : résistance carbone 470 Ω (jaune, violet, marron, or) -->
               <g class="part" data-part="R1" tabindex="0" role="button" aria-label="R1, résistance 470 ohms">
                 <rect class="part-hit" x="394" y="60" width="92" height="40" rx="8"/>
-                <path d="M400 80 H414 M466 80 H480" stroke="#c3c6c2" stroke-width="3"/>
-                <rect x="414" y="70" width="52" height="20" rx="9" fill="#d8c59c"/>
-                <rect x="422" y="70" width="5" height="20" fill="#f2c400"/>
-                <rect x="432" y="70" width="5" height="20" fill="#8b3fd1"/>
-                <rect x="442" y="70" width="5" height="20" fill="#7a4a1f"/>
-                <rect x="455" y="70" width="5" height="20" fill="#c9a23a"/>
+                <rect class="silk-line" x="408" y="65" width="64" height="30" rx="4"/>
+                <rect x="400" y="78.6" width="15" height="2.8" fill="url(#hd-metal-x)"/>
+                <rect x="465" y="78.6" width="15" height="2.8" fill="url(#hd-metal-x)"/>
+                <g filter="url(#hd-shadow)">
+                  <path d="M420 70 C415 70 413 74 413 80 C413 86 415 90 420 90 C424 90 425 88 428 88 H452 C455 88 456 90 460 90 C465 90 467 86 467 80 C467 74 465 70 460 70 C456 70 455 72 452 72 H428 C425 72 424 70 420 70 Z" fill="url(#hd-res)"/>
+                  <g clip-path="url(#d-r1-clip)">
+                    <rect x="420" y="68" width="5" height="24" fill="#f2c400"/>
+                    <rect x="432" y="68" width="4.5" height="24" fill="#8b3fd1"/>
+                    <rect x="442" y="68" width="4.5" height="24" fill="#7a4a1f"/>
+                    <rect x="456" y="68" width="4.5" height="24" fill="url(#hd-gold)"/>
+                    <rect x="410" y="68" width="60" height="24" fill="url(#hd-cyl-x)"/>
+                  </g>
+                </g>
                 <text class="silk" x="408" y="118">R1 · 470 Ω</text>
               </g>
 
-              <!-- D1 : LED rouge -->
+              <!-- D1 : LED rouge 5 mm vue de dessus (méplat = cathode, la grosse « enclume » interne aussi) -->
               <g class="part part-led" data-part="D1" tabindex="0" role="button" aria-label="D1, LED rouge">
                 <rect class="part-hit" x="515" y="164" width="60" height="72" rx="8"/>
                 <circle class="led-glow" cx="545" cy="200" r="46" fill="url(#g-led)"/>
-                <path d="M545 170 V184 M545 216 V230" stroke="#c3c6c2" stroke-width="3"/>
-                <circle class="led-body" cx="545" cy="200" r="16"/>
-                <path class="led-flat-ok" d="M531 210 H559" stroke="#5a1a14" stroke-width="2.5" opacity=".7"/>
-                <path class="led-flat-rev" d="M531 190 H559" stroke="#5a1a14" stroke-width="2.5" opacity=".7"/>
+                <rect x="543.6" y="170" width="2.8" height="14" fill="url(#hd-metal-y)"/>
+                <rect x="543.6" y="216" width="2.8" height="14" fill="url(#hd-metal-y)"/>
+                <path class="silk-line led-flat-ok" d="M528 213.6 A21.5 21.5 0 1 1 562 213.6 Z"/>
+                <path class="silk-line led-flat-rev" d="M528 186.4 A21.5 21.5 0 1 0 562 186.4 Z"/>
+                <g filter="url(#hd-shadow)">
+                  <path class="led-rim led-flat-ok" d="M530.27 212 A19 19 0 1 1 559.73 212 Z"/>
+                  <path class="led-rim led-flat-rev" d="M530.27 188 A19 19 0 1 0 559.73 188 Z"/>
+                  <circle class="led-body" cx="545" cy="200" r="15.5"/>
+                </g>
+                <path class="led-inner led-flat-ok" d="M537.5 203.5 h15 v4.5 h-15 z M543 191 h4 v5.5 h-4 z"/>
+                <path class="led-inner led-flat-rev" d="M537.5 192 h15 v4.5 h-15 z M543 203.5 h4 v5.5 h-4 z"/>
+                <ellipse class="led-spec" cx="539" cy="193" rx="5" ry="3" transform="rotate(-35 539 193)"/>
                 <text class="silk" x="490" y="196">D1</text>
                 <text class="silk silk-sm" x="555" y="166">+</text>
               </g>
 
-              <!-- W1 : strap (fil soudé) -->
+              <!-- W1 : strap (fil étamé) -->
               <g class="part" data-part="W1" tabindex="0" role="button" aria-label="W1, strap soudé">
                 <rect class="part-hit" x="290" y="282" width="80" height="54" rx="8"/>
-                <path d="M300 320 C310 294, 350 294, 360 320" fill="none" stroke="#cfd3cf" stroke-width="4"/>
-                <circle cx="300" cy="320" r="8" fill="#d9dcd7"/>
-                <circle cx="360" cy="320" r="8" fill="#d9dcd7"/>
+                <g filter="url(#hd-shadow)">
+                  <path d="M300 320 C310 294, 350 294, 360 320" fill="none" stroke="#7b8388" stroke-width="4.6" stroke-linecap="round"/>
+                  <path d="M301 318 C311 293.5, 349 293.5, 359 318" fill="none" stroke="#f3f5f6" stroke-width="1.4" stroke-linecap="round" opacity=".85"/>
+                </g>
                 <text class="silk" x="318" y="286">W1</text>
               </g>
 
-              <!-- Pastilles et points de test (là où se posent les pointes) -->
+              <!-- Soudures et points de test (là où se posent les pointes) -->
               <g class="pads">
                 <circle class="pad" data-snap="bat+" data-node="A" cx="75" cy="124" r="6"/>
                 <circle class="pad" data-snap="sw1-1" data-node="A" cx="150" cy="80" r="6"/>
@@ -930,81 +990,209 @@
             <div class="pc-board">
               <svg class="pc-svg" viewBox="0 0 520 400" role="group" aria-label="Carte mère sur banc de test : cliquez sur le composant à remplacer">
                 <defs>
-                  <linearGradient id="g-mobo" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#26343a"/><stop offset="1" stop-color="#162024"/></linearGradient>
+                  <linearGradient id="g-ihs" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#eef1f2"/><stop offset=".45" stop-color="#c3c8cb"/><stop offset=".55" stop-color="#d7dbdd"/><stop offset="1" stop-color="#9aa1a5"/></linearGradient>
+                  <linearGradient id="g-choke" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#727a7e"/><stop offset="1" stop-color="#3b4145"/></linearGradient>
+                  <linearGradient id="g-blade" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7d868a"/><stop offset="1" stop-color="#3f4649"/></linearGradient>
+                  <linearGradient id="g-shroud" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3b4246"/><stop offset=".5" stop-color="#22272a"/><stop offset="1" stop-color="#15181a"/></linearGradient>
+                  <linearGradient id="g-chip" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2e3336"/><stop offset="1" stop-color="#0f1112"/></linearGradient>
+                  <!-- Pale de ventilateur (réutilisée avec rotation) -->
+                  <path id="pc-blade" d="M350 110 C351 99 357 86 368 78 C373 88 371 100 360 108 Z"/>
+                  <path id="gpu-blade" d="M0 0 C1 -8 5 -17 13 -21 C16 -14 14 -6 6 -1 Z"/>
                 </defs>
-                <rect x="6" y="6" width="508" height="388" rx="14" fill="url(#g-mobo)" stroke="#0c1316" stroke-width="2"/>
+
+                <!-- Carte mère : vernis noir mat, trame, reflet, trous de fixation -->
+                <rect x="6" y="6" width="508" height="388" rx="12" fill="url(#hd-mask-black)" stroke="#0a0d0e" stroke-width="2"/>
+                <rect x="6" y="6" width="508" height="388" rx="12" fill="url(#hd-weave)"/>
+                <rect x="6" y="6" width="508" height="388" rx="12" fill="url(#hd-sheen)"/>
+                <g aria-hidden="true">
+                  <circle cx="22" cy="22" r="7.5" fill="url(#hd-gold)"/><circle cx="22" cy="22" r="4.2" fill="#050607"/>
+                  <circle cx="500" cy="22" r="7.5" fill="url(#hd-gold)"/><circle cx="500" cy="22" r="4.2" fill="#050607"/>
+                  <circle cx="22" cy="378" r="7.5" fill="url(#hd-gold)"/><circle cx="22" cy="378" r="4.2" fill="#050607"/>
+                  <circle cx="394" cy="382" r="7.5" fill="url(#hd-gold)"/><circle cx="394" cy="382" r="4.2" fill="#050607"/>
+                </g>
+                <text class="silk silk-sm" x="150" y="30">AT-17 PRO · ATX · RÉV. 1.02</text>
+
+                <!-- Pistes : chaque ligne relie deux composants -->
                 <g class="pc-traces" fill="none">
-                  <path d="M262 125 H300 M262 140 H300 M262 155 H300 M262 170 H300"/>
-                  <path d="M205 182 V250 M220 182 V250 M235 182 V250"/>
-                  <path d="M440 260 V285 M455 260 V285"/>
-                  <path d="M120 120 H150 M120 135 H150"/>
+                  <!-- Bus mémoire : processeur → slots DIMM (avec méandres d'égalisation de longueur) -->
+                  <path d="M266 166 H424"/>
+                  <path d="M266 171 H330 v-3 h4 v6 h4 v-6 h4 v6 h4 v-3 H424"/>
+                  <path d="M266 176 H424"/>
+                  <path d="M266 181 H360 v-3 h4 v6 h4 v-6 h4 v6 h4 v-3 H424"/>
+                  <path d="M266 186 H424"/>
+                  <!-- Lignes PCIe : processeur → slot de la carte graphique -->
+                  <path d="M190 188 V244 L172 262 V292"/>
+                  <path d="M196 188 V246 L178 264 V292"/>
+                  <path d="M202 188 V248 L184 266 V292"/>
+                  <path d="M208 188 V250 L190 268 V292"/>
+                  <path d="M214 188 V252 L196 270 V292"/>
+                  <!-- Liaison processeur → chipset -->
+                  <path d="M244 188 V198 L262 216 H300"/>
+                  <path d="M250 188 V196 L264 210 H300"/>
+                  <path d="M256 188 V194 L266 204 H300"/>
+                  <!-- Alimentation du processeur (étage VRM) -->
+                  <path d="M137 78 H146 M137 102 H146 M137 126 H146 M137 150 H146 M137 174 H146"/>
+                  <!-- Voyants de diagnostic → chipset -->
+                  <path d="M56 164 H96 V234 L118 256 H292 L300 248"/>
+                </g>
+
+                <!-- Étage d'alimentation du processeur : condensateurs, bobines, transistors -->
+                <g aria-hidden="true">
+                  <g filter="url(#hd-shadow)">
+                    <rect x="106" y="69" width="18" height="18" rx="2" fill="url(#g-choke)"/>
+                    <rect x="106" y="93" width="18" height="18" rx="2" fill="url(#g-choke)"/>
+                    <rect x="106" y="117" width="18" height="18" rx="2" fill="url(#g-choke)"/>
+                    <rect x="106" y="141" width="18" height="18" rx="2" fill="url(#g-choke)"/>
+                    <rect x="106" y="165" width="18" height="18" rx="2" fill="url(#g-choke)"/>
+                  </g>
+                  <g fill="none" stroke="#262b2e" stroke-width="1"><rect x="110" y="73" width="10" height="10"/><rect x="110" y="97" width="10" height="10"/><rect x="110" y="121" width="10" height="10"/><rect x="110" y="145" width="10" height="10"/><rect x="110" y="169" width="10" height="10"/></g>
+                  <g fill="url(#g-chip)"><rect x="127" y="74" width="10" height="8" rx="1"/><rect x="127" y="98" width="10" height="8" rx="1"/><rect x="127" y="122" width="10" height="8" rx="1"/><rect x="127" y="146" width="10" height="8" rx="1"/><rect x="127" y="170" width="10" height="8" rx="1"/></g>
+                  <g filter="url(#hd-shadow)">
+                    <circle cx="94" cy="132" r="6.5" fill="url(#hd-alu)"/><circle cx="94" cy="156" r="6.5" fill="url(#hd-alu)"/><circle cx="94" cy="180" r="6.5" fill="url(#hd-alu)"/>
+                  </g>
+                  <g fill="#3b2a5c"><circle cx="94" cy="132" r="4.6"/><circle cx="94" cy="156" r="4.6"/><circle cx="94" cy="180" r="4.6"/></g>
+                  <path d="M91 132 h6 M94 129 v6 M91 156 h6 M94 153 v6 M91 180 h6 M94 177 v6" stroke="#9c8fc0" stroke-width=".8"/>
+                </g>
+
+                <!-- Pile du BIOS (CMOS) et chipset sous son radiateur -->
+                <g aria-hidden="true">
+                  <circle cx="132" cy="236" r="16" fill="url(#hd-plastic)"/>
+                  <circle cx="132" cy="236" r="12.5" fill="url(#g-coin)" stroke="#5b5f5c"/>
+                  <text class="pc-tiny" x="132" y="238" text-anchor="middle">CR2032</text>
+                  <text class="silk silk-sm" x="114" y="266">BAT</text>
+                  <g filter="url(#hd-shadow)"><rect x="300" y="200" width="74" height="60" rx="4" fill="url(#hd-metal-x)"/></g>
+                  <path d="M306 204 V256 M313 204 V256 M320 204 V256 M327 204 V256 M334 204 V256 M341 204 V256 M348 204 V256 M355 204 V256 M362 204 V256 M369 204 V256" stroke="#5e6468" stroke-width="2" opacity=".7"/>
+                  <rect x="324" y="220" width="26" height="20" rx="2" fill="#1c2023"/>
+                  <text class="pc-tiny pc-tiny-light" x="337" y="233" text-anchor="middle">AT-17</text>
+                  <text class="silk silk-sm" x="352" y="276">PCH</text>
                 </g>
 
                 <g class="pc-part" data-pc="CPU" tabindex="0" role="button" aria-label="Processeur (CPU)">
                   <rect class="part-hit" x="140" y="62" width="132" height="132" rx="10"/>
-                  <rect x="150" y="72" width="112" height="112" rx="6" fill="#2b2f31" stroke="#5c6366"/>
-                  <rect x="170" y="92" width="72" height="72" rx="4" fill="#c7cbcc"/>
-                  <text class="pc-chip-txt" x="206" y="126" text-anchor="middle">AT-17</text>
-                  <text class="pc-chip-txt pc-chip-sm" x="206" y="142" text-anchor="middle">4 GHz</text>
+                  <g filter="url(#hd-shadow)">
+                    <rect x="146" y="68" width="120" height="120" rx="5" fill="#16191b" stroke="#40474b"/>
+                  </g>
+                  <rect x="151" y="73" width="110" height="110" rx="3" fill="none" stroke="url(#hd-metal-x)" stroke-width="3"/>
+                  <path d="M266 80 V178 M266 80 h5 v6" stroke="url(#hd-metal-y)" stroke-width="3" fill="none" stroke-linecap="round"/>
+                  <g filter="url(#hd-shadow)">
+                    <rect x="162" y="84" width="88" height="88" rx="5" fill="url(#g-ihs)"/>
+                  </g>
+                  <path d="M165 88 l7 0 l-7 7 z" fill="url(#hd-gold)"/>
+                  <text class="pc-chip-txt" x="206" y="124" text-anchor="middle">AT-17</text>
+                  <text class="pc-chip-txt pc-chip-sm" x="206" y="140" text-anchor="middle">4 GHz</text>
+                  <text class="pc-tiny" x="206" y="160" text-anchor="middle">LOT 2026-17 · 65 W</text>
                   <text class="silk" x="150" y="58">CPU</text>
                 </g>
 
                 <g class="pc-part" data-pc="FAN" tabindex="0" role="button" aria-label="Ventilateur du processeur">
                   <rect class="part-hit" x="296" y="56" width="108" height="108" rx="10"/>
-                  <rect x="302" y="62" width="96" height="96" rx="10" fill="#1d2326" stroke="#42494c"/>
-                  <g class="fan-rotor">
-                    <circle cx="350" cy="110" r="40" fill="#2a3134"/>
-                    <path d="M350 110 C342 92 352 78 364 76 C360 92 356 100 350 110 Z M350 110 C368 104 380 112 382 124 C366 120 358 116 350 110 Z M350 110 C356 128 346 142 334 144 C338 128 342 120 350 110 Z M350 110 C332 116 320 108 318 96 C334 100 342 104 350 110 Z" fill="#5d666a"/>
-                    <circle cx="350" cy="110" r="10" fill="#e0821f"/>
+                  <!-- câble du ventilateur vers son connecteur CPU_FAN (entre le socket et le ventilateur) -->
+                  <path d="M303 128 C296 130, 294 138, 290 141" stroke="#111314" stroke-width="2.4" fill="none"/>
+                  <path d="M303 131 C297 134, 295 141, 290 144" stroke="#c8231b" stroke-width="1.4" fill="none"/>
+                  <path d="M303 125 C295 126, 293 134, 290 138" stroke="#e6c229" stroke-width="1.4" fill="none"/>
+                  <rect x="276" y="134" width="14" height="16" rx="1.5" fill="url(#hd-ivory)"/>
+                  <g filter="url(#hd-shadow-lg)">
+                    <rect x="302" y="62" width="96" height="96" rx="9" fill="url(#hd-plastic)"/>
                   </g>
-                  <text class="silk silk-sm" x="302" y="176">CPU_FAN</text>
+                  <circle cx="350" cy="110" r="44" fill="#08090a"/>
+                  <g fill="#050607"><circle cx="311" cy="71" r="3.5"/><circle cx="389" cy="71" r="3.5"/><circle cx="311" cy="149" r="3.5"/><circle cx="389" cy="149" r="3.5"/></g>
+                  <g class="fan-rotor">
+                    <circle cx="350" cy="110" r="41" fill="none"/>
+                    <use href="#pc-blade" fill="url(#g-blade)"/>
+                    <use href="#pc-blade" fill="url(#g-blade)" transform="rotate(51.43 350 110)"/>
+                    <use href="#pc-blade" fill="url(#g-blade)" transform="rotate(102.86 350 110)"/>
+                    <use href="#pc-blade" fill="url(#g-blade)" transform="rotate(154.29 350 110)"/>
+                    <use href="#pc-blade" fill="url(#g-blade)" transform="rotate(205.71 350 110)"/>
+                    <use href="#pc-blade" fill="url(#g-blade)" transform="rotate(257.14 350 110)"/>
+                    <use href="#pc-blade" fill="url(#g-blade)" transform="rotate(308.57 350 110)"/>
+                    <circle cx="350" cy="110" r="12" fill="#e0821f"/>
+                    <circle cx="350" cy="110" r="12" fill="url(#hd-sheen)"/>
+                    <text class="pc-tiny" x="350" y="112.5" text-anchor="middle">AT</text>
+                  </g>
+                  <path d="M350 66 V76 M350 144 V154 M306 110 H316 M384 110 H394" stroke="#2a2f32" stroke-width="3"/>
+                  <text class="silk silk-sm" x="330" y="55">CPU_FAN</text>
                 </g>
 
                 <g class="pc-part" data-pc="RAM" tabindex="0" role="button" aria-label="Barrettes de mémoire (RAM)">
                   <rect class="part-hit" x="416" y="34" width="66" height="226" rx="8"/>
-                  <rect x="424" y="42" width="20" height="210" rx="3" fill="#121718"/>
-                  <rect x="454" y="42" width="20" height="210" rx="3" fill="#121718"/>
-                  <rect x="427" y="50" width="14" height="194" rx="2" fill="#2f7d4f"/>
-                  <g fill="#15191a">
-                    <rect x="429" y="60" width="10" height="20"/><rect x="429" y="90" width="10" height="20"/><rect x="429" y="120" width="10" height="20"/><rect x="429" y="150" width="10" height="20"/><rect x="429" y="180" width="10" height="20"/><rect x="429" y="210" width="10" height="20"/>
+                  <!-- deux slots DIMM avec leurs loquets ; une barrette dans A1, B1 vide -->
+                  <rect x="424" y="42" width="20" height="210" rx="2" fill="url(#hd-plastic-y)"/>
+                  <rect x="454" y="42" width="20" height="210" rx="2" fill="url(#hd-plastic-y)"/>
+                  <rect x="461" y="50" width="6" height="194" rx="1" fill="#050607"/>
+                  <path d="M464 52 V242" stroke="#d9a441" stroke-width="2" stroke-dasharray="1.2 2.2"/>
+                  <g fill="url(#hd-ivory)"><rect x="421" y="36" width="26" height="9" rx="2"/><rect x="421" y="249" width="26" height="9" rx="2"/><rect x="451" y="36" width="26" height="9" rx="2"/><rect x="451" y="249" width="26" height="9" rx="2"/></g>
+                  <g filter="url(#hd-shadow)">
+                    <rect x="426.5" y="47" width="15" height="200" rx="1.5" fill="url(#hd-mask)"/>
                   </g>
+                  <g fill="url(#g-chip)">
+                    <rect x="428.5" y="56" width="11" height="22" rx="1"/><rect x="428.5" y="86" width="11" height="22" rx="1"/><rect x="428.5" y="116" width="11" height="22" rx="1"/><rect x="428.5" y="156" width="11" height="22" rx="1"/><rect x="428.5" y="186" width="11" height="22" rx="1"/><rect x="428.5" y="216" width="11" height="22" rx="1"/>
+                  </g>
+                  <rect x="429" y="141" width="10" height="11" rx="1" fill="#e9ebe6"/>
                   <text class="silk silk-sm" x="420" y="272">DIMM_A1 · B1</text>
                 </g>
 
+                <!-- Slot PCIe x16 (sur la carte mère) -->
+                <rect x="56" y="345" width="250" height="8" rx="1.5" fill="#0c0e0f" aria-hidden="true"/>
+                <rect x="306" y="343" width="12" height="12" rx="2" fill="url(#hd-ivory)" aria-hidden="true"/>
+
                 <g class="pc-part" data-pc="GPU" tabindex="0" role="button" aria-label="Carte graphique (GPU)">
                   <rect class="part-hit" x="40" y="280" width="350" height="74" rx="10"/>
-                  <rect x="48" y="290" width="334" height="56" rx="8" fill="#191d1f" stroke="#3b4245"/>
-                  <circle cx="140" cy="318" r="22" fill="#262c2f" stroke="#4a5255"/><circle cx="140" cy="318" r="5" fill="#e0821f"/>
-                  <circle cx="230" cy="318" r="22" fill="#262c2f" stroke="#4a5255"/><circle cx="230" cy="318" r="5" fill="#e0821f"/>
-                  <rect x="290" y="306" width="74" height="24" rx="3" fill="#0f1213"/>
+                  <rect x="64" y="344" width="200" height="5" fill="url(#hd-gold)"/>
+                  <rect x="40" y="284" width="8" height="66" rx="1" fill="url(#hd-metal-y)"/>
+                  <g filter="url(#hd-shadow-lg)">
+                    <path d="M56 290 H370 L382 302 V336 L372 346 H56 L48 338 V298 Z" fill="url(#g-shroud)" stroke="#475055"/>
+                  </g>
+                  <path d="M60 296 H180 L188 302 M250 302 L258 296 H366" stroke="#e0821f" stroke-width="1.6" fill="none" opacity=".8"/>
+                  <circle cx="140" cy="318" r="24" fill="#08090a" stroke="#3a4246"/>
+                  <circle cx="230" cy="318" r="24" fill="#08090a" stroke="#3a4246"/>
+                  <g fill="url(#g-blade)">
+                    <use href="#gpu-blade" transform="translate(140 318)"/><use href="#gpu-blade" transform="translate(140 318) rotate(40)"/><use href="#gpu-blade" transform="translate(140 318) rotate(80)"/><use href="#gpu-blade" transform="translate(140 318) rotate(120)"/><use href="#gpu-blade" transform="translate(140 318) rotate(160)"/><use href="#gpu-blade" transform="translate(140 318) rotate(200)"/><use href="#gpu-blade" transform="translate(140 318) rotate(240)"/><use href="#gpu-blade" transform="translate(140 318) rotate(280)"/><use href="#gpu-blade" transform="translate(140 318) rotate(320)"/>
+                    <use href="#gpu-blade" transform="translate(230 318)"/><use href="#gpu-blade" transform="translate(230 318) rotate(40)"/><use href="#gpu-blade" transform="translate(230 318) rotate(80)"/><use href="#gpu-blade" transform="translate(230 318) rotate(120)"/><use href="#gpu-blade" transform="translate(230 318) rotate(160)"/><use href="#gpu-blade" transform="translate(230 318) rotate(200)"/><use href="#gpu-blade" transform="translate(230 318) rotate(240)"/><use href="#gpu-blade" transform="translate(230 318) rotate(280)"/><use href="#gpu-blade" transform="translate(230 318) rotate(320)"/>
+                  </g>
+                  <circle cx="140" cy="318" r="6" fill="#e0821f"/><circle cx="230" cy="318" r="6" fill="#e0821f"/>
+                  <rect x="290" y="306" width="74" height="24" rx="3" fill="#0b0d0e" stroke="#3a4246"/>
                   <text class="pc-chip-txt pc-chip-sm" x="327" y="322" text-anchor="middle">GPU</text>
-                  <rect x="60" y="346" width="200" height="6" fill="#d8b25a"/>
+                  <rect x="352" y="291" width="16" height="7" rx="1" fill="#0b0d0e" stroke="#555d61" stroke-width=".8"/>
                   <text class="silk silk-sm" x="48" y="372">PCIE_1 · CARTE GRAPHIQUE</text>
                 </g>
 
                 <g class="pc-part" data-pc="PSU" tabindex="0" role="button" aria-label="Alimentation (ATX 24 broches)">
                   <rect class="part-hit" x="404" y="276" width="104" height="100" rx="8"/>
-                  <rect x="430" y="284" width="36" height="26" rx="3" fill="#e9ebe6"/>
-                  <g fill="#9aa09c"><rect x="434" y="288" width="5" height="5"/><rect x="442" y="288" width="5" height="5"/><rect x="450" y="288" width="5" height="5"/><rect x="458" y="288" width="5" height="5"/><rect x="434" y="299" width="5" height="5"/><rect x="442" y="299" width="5" height="5"/><rect x="450" y="299" width="5" height="5"/><rect x="458" y="299" width="5" height="5"/></g>
-                  <path d="M448 310 C448 330 470 330 470 344" stroke="#1d1f20" stroke-width="7" fill="none"/>
-                  <rect x="420" y="340" width="84" height="32" rx="4" fill="#2c3235" stroke="#4d5558"/>
+                  <!-- faisceau de fils de l'alimentation vers le connecteur ATX 24 broches -->
+                  <g fill="none" stroke-width="2.2" stroke-linecap="round">
+                    <path d="M434 302 C434 318, 452 322, 452 340" stroke="#e6c229"/>
+                    <path d="M441 302 C441 318, 455 322, 455 340" stroke="#111314"/>
+                    <path d="M448 302 C448 318, 458 322, 458 340" stroke="#c8231b"/>
+                    <path d="M455 302 C455 318, 461 322, 461 340" stroke="#111314"/>
+                    <path d="M462 302 C462 318, 464 322, 464 340" stroke="#e08a1f"/>
+                    <path d="M469 302 C469 318, 467 322, 467 340" stroke="#111314"/>
+                    <path d="M476 302 C476 318, 470 322, 470 340" stroke="#e6c229"/>
+                    <path d="M483 302 C483 318, 473 322, 473 340" stroke="#2f9d4a"/>
+                  </g>
+                  <g filter="url(#hd-shadow)"><rect x="428" y="280" width="60" height="22" rx="2" fill="url(#hd-ivory)"/></g>
+                  <path d="M431.5 285 H485 M431.5 293 H485" stroke="#5d625e" stroke-width="4.5" stroke-dasharray="3.2 1.8"/>
+                  <g filter="url(#hd-shadow-lg)"><rect x="418" y="338" width="88" height="36" rx="4" fill="url(#hd-metal-x)"/></g>
+                  <rect x="418" y="338" width="88" height="36" rx="4" fill="#20262a" opacity=".55"/>
+                  <rect x="424" y="344" width="76" height="24" rx="3" fill="#15191b" stroke="#4d5558"/>
                   <text class="pc-chip-txt pc-chip-sm" x="462" y="360" text-anchor="middle">ALIM 550 W</text>
                 </g>
 
-                <!-- Haut-parleur et voyants de diagnostic (comme sur les cartes mères récentes) -->
+                <!-- Buzzer et voyants de diagnostic (comme sur les cartes mères récentes) -->
                 <g class="pc-spk">
-                  <circle cx="70" cy="80" r="20" fill="#121617" stroke="#4a5255"/>
-                  <circle cx="70" cy="80" r="7" fill="#2c3235"/>
-                  <circle class="spk-wave" cx="70" cy="80" r="26"/>
-                  <text class="silk silk-sm" x="54" y="116">SPK1</text>
+                  <g filter="url(#hd-shadow)"><circle cx="58" cy="74" r="17" fill="url(#hd-plastic)"/></g>
+                  <circle cx="58" cy="74" r="10" fill="#0b0d0e"/>
+                  <circle cx="58" cy="74" r="3" fill="#2c3235"/>
+                  <text class="pc-tiny pc-tiny-light" x="68" y="62">+</text>
+                  <circle class="spk-wave" cx="58" cy="74" r="24"/>
+                  <text class="silk silk-sm" x="44" y="106">SPK1</text>
                 </g>
                 <g class="qled">
                   <text class="silk silk-sm" x="40" y="150">DEBUG</text>
-                  <g><rect class="ql" data-ql="CPU" x="40" y="160" width="14" height="8" rx="2"/><text class="silk silk-sm" x="60" y="168">CPU</text></g>
-                  <g><rect class="ql" data-ql="DRAM" x="40" y="178" width="14" height="8" rx="2"/><text class="silk silk-sm" x="60" y="186">DRAM</text></g>
-                  <g><rect class="ql" data-ql="VGA" x="40" y="196" width="14" height="8" rx="2"/><text class="silk silk-sm" x="60" y="204">VGA</text></g>
-                  <g><rect class="ql" data-ql="BOOT" x="40" y="214" width="14" height="8" rx="2"/><text class="silk silk-sm" x="60" y="222">BOOT</text></g>
-                  <g><rect class="ql ql-pwr" x="40" y="240" width="14" height="8" rx="2"/><text class="silk silk-sm" x="60" y="248">PWR</text></g>
+                  <g><rect class="ql-case" x="38" y="158" width="18" height="12" rx="1.5"/><rect class="ql" data-ql="CPU" x="40" y="160" width="14" height="8" rx="2"/><text class="silk silk-sm" x="62" y="168">CPU</text></g>
+                  <g><rect class="ql-case" x="38" y="176" width="18" height="12" rx="1.5"/><rect class="ql" data-ql="DRAM" x="40" y="178" width="14" height="8" rx="2"/><text class="silk silk-sm" x="62" y="186">DRAM</text></g>
+                  <g><rect class="ql-case" x="38" y="194" width="18" height="12" rx="1.5"/><rect class="ql" data-ql="VGA" x="40" y="196" width="14" height="8" rx="2"/><text class="silk silk-sm" x="62" y="204">VGA</text></g>
+                  <g><rect class="ql-case" x="38" y="212" width="18" height="12" rx="1.5"/><rect class="ql" data-ql="BOOT" x="40" y="214" width="14" height="8" rx="2"/><text class="silk silk-sm" x="62" y="222">BOOT</text></g>
+                  <g><rect class="ql-case" x="38" y="238" width="18" height="12" rx="1.5"/><rect class="ql ql-pwr" x="40" y="240" width="14" height="8" rx="2"/><text class="silk silk-sm" x="62" y="248">PWR</text></g>
                 </g>
               </svg>
               <div class="pc-pop" role="dialog" aria-labelledby="pc-pop-title" hidden>
@@ -1221,47 +1409,98 @@
                 <radialGradient id="g-solder" cx=".35" cy=".3" r=".75">
                   <stop offset="0" stop-color="#ffffff"/><stop offset=".35" stop-color="#d7dbd8"/><stop offset="1" stop-color="#7d8380"/>
                 </radialGradient>
+                <linearGradient id="g-1n4148" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#ffc58a"/><stop offset=".3" stop-color="#f08a3a"/><stop offset=".7" stop-color="#c4501a"/><stop offset="1" stop-color="#8a300c"/>
+                </linearGradient>
+                <linearGradient id="g-oled-glass" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#ffffff" stop-opacity=".1"/><stop offset=".28" stop-color="#ffffff" stop-opacity=".04"/><stop offset=".3" stop-color="#ffffff" stop-opacity="0"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+                </linearGradient>
+                <g id="s-tr">
+                  <path d="M126 120 H160"/><path d="M250 120 H290"/><path d="M380 120 H420"/><path d="M490 120 H522"/>
+                  <path d="M522 196 H476 V236 H80 V170"/>
+                </g>
+                <clipPath id="s-r1-clip"><path d="M187 109 C183 109 181 113 181 120 C181 127 183 131 187 131 C190 131 191 129 194 129 H216 C219 129 220 131 223 131 C227 131 229 127 229 120 C229 113 227 109 223 109 C220 109 219 111 216 111 H194 C191 111 190 109 187 109 Z"/></clipPath>
               </defs>
-              <rect x="4" y="4" width="752" height="262" rx="16" fill="#124437" stroke="#0b2e25" stroke-width="2"/>
-              <g class="s-traces" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M126 120 H160"/><path d="M250 120 H290"/><path d="M380 120 H420"/><path d="M490 120 H516"/>
-                <path d="M516 196 H476 V236 H80 V170"/>
-              </g>
-              <path class="s-flow" d="M126 120 H160 M250 120 H290 M380 120 H420 M490 120 H516 M516 196 H476 V236 H80 V170" fill="none"/>
 
+              <!-- Carte : vernis épargne, pistes, reflet, trous de fixation -->
+              <rect x="4" y="4" width="752" height="262" rx="16" fill="url(#hd-mask)" stroke="#0a2a20" stroke-width="2"/>
+              <rect x="4" y="4" width="752" height="262" rx="16" fill="url(#hd-weave)"/>
+              <use href="#s-tr" class="d-tr-edge"/>
+              <use href="#s-tr" class="d-tr"/>
+              <path class="s-flow" d="M126 120 H160 M250 120 H290 M380 120 H420 M490 120 H522 M522 196 H476 V236 H80 V170" fill="none"/>
+              <rect x="4" y="4" width="752" height="262" rx="16" fill="url(#hd-sheen)"/>
+              <rect x="7.5" y="7.5" width="745" height="255" rx="13" fill="none" stroke="#6fe0b0" stroke-opacity=".12"/>
+              <g aria-hidden="true">
+                <circle cx="22" cy="22" r="8.5" fill="url(#hd-gold)"/><circle cx="22" cy="22" r="5" fill="#04100c"/>
+                <circle cx="22" cy="248" r="8.5" fill="url(#hd-gold)"/><circle cx="22" cy="248" r="5" fill="#04100c"/>
+                <circle cx="496" cy="250" r="5.5" fill="#0c3427"/><circle cx="496" cy="250" r="2.3" fill="url(#hd-gold-r)"/>
+              </g>
+              <text class="silk silk-sm" x="180" y="258">MODULE CONTACT · AT-17 · RÉV. A</text>
+
+              <!-- Pile bouton CR2032 dans son support (la languette touche le +) -->
               <g class="coin">
-                <circle cx="80" cy="120" r="48" fill="url(#g-coin)" stroke="#5b5f5c" stroke-width="2"/>
-                <circle cx="80" cy="120" r="38" fill="none" stroke="#ffffff" stroke-opacity=".35"/>
-                <text class="coin-txt" x="80" y="116" text-anchor="middle">CR2032</text>
-                <text class="coin-txt coin-txt-sm" x="80" y="134" text-anchor="middle">3V +</text>
+                <g filter="url(#hd-shadow)">
+                  <circle cx="80" cy="120" r="54" fill="url(#hd-plastic)"/>
+                  <circle cx="80" cy="120" r="47" fill="url(#g-coin)" stroke="#5b5f5c" stroke-width="1.5"/>
+                </g>
+                <circle cx="80" cy="120" r="41" fill="none" stroke="#ffffff" stroke-opacity=".35"/>
+                <circle cx="80" cy="120" r="43.5" fill="none" stroke="#000000" stroke-opacity=".12"/>
+                <text class="coin-txt" x="72" y="116" text-anchor="middle">CR2032</text>
+                <text class="coin-txt coin-txt-sm" x="72" y="134" text-anchor="middle">3V +</text>
+                <g filter="url(#hd-shadow)">
+                  <path d="M100 109 H124 Q132 109 132 116 V124 Q132 131 124 131 H100 Q95 131 95 126 V114 Q95 109 100 109 Z" fill="url(#hd-metal-x)"/>
+                </g>
+                <path d="M101 112.5 H125" stroke="#ffffff" stroke-opacity=".7" stroke-width="1.2" stroke-linecap="round"/>
               </g>
 
               <!-- Composants traversants : une patte déjà soudée, l'autre à souder -->
               <g class="th-part">
-                <path class="lead-wire" d="M160 120 H182 M228 120 H250"/>
-                <rect x="182" y="109" width="46" height="22" rx="10" fill="#d8c59c"/>
-                <rect x="190" y="109" width="5" height="22" fill="#d9342b"/>
-                <rect x="199" y="109" width="5" height="22" fill="#d9342b"/>
-                <rect x="208" y="109" width="5" height="22" fill="#7a4a1f"/>
-                <rect x="219" y="109" width="5" height="22" fill="#c9a23a"/>
-                <circle class="solder-done" cx="160" cy="120" r="10"/>
+                <rect x="160" y="118.6" width="23" height="2.8" fill="url(#hd-metal-x)"/>
+                <rect x="227" y="118.6" width="23" height="2.8" fill="url(#hd-metal-x)"/>
+                <g filter="url(#hd-shadow)">
+                  <path d="M187 109 C183 109 181 113 181 120 C181 127 183 131 187 131 C190 131 191 129 194 129 H216 C219 129 220 131 223 131 C227 131 229 127 229 120 C229 113 227 109 223 109 C220 109 219 111 216 111 H194 C191 111 190 109 187 109 Z" fill="url(#hd-res)"/>
+                  <g clip-path="url(#s-r1-clip)">
+                    <rect x="188" y="107" width="5" height="26" fill="#d9342b"/>
+                    <rect x="198" y="107" width="4.5" height="26" fill="#d9342b"/>
+                    <rect x="207" y="107" width="4.5" height="26" fill="#7a4a1f"/>
+                    <rect x="220" y="107" width="4.5" height="26" fill="url(#hd-gold)"/>
+                    <rect x="178" y="107" width="56" height="26" fill="url(#hd-cyl-x)"/>
+                  </g>
+                </g>
+                <circle cx="160" cy="120" r="12" fill="url(#hd-gold)"/>
+                <circle class="solder-done" cx="160" cy="120" r="9.5"/>
                 <text class="silk" x="182" y="98">R1</text>
                 <text class="silk silk-sm" x="204" y="98">220 Ω</text>
               </g>
+              <!-- D1 : diode 1N4148 en verre ambré, bague noire = cathode -->
               <g class="th-part">
-                <path class="lead-wire" d="M290 120 H312 M358 120 H380"/>
-                <rect x="312" y="111" width="46" height="18" rx="4" fill="#1d1f20"/>
-                <rect x="347" y="111" width="6" height="18" fill="#c9ccc7"/>
-                <circle class="solder-done" cx="290" cy="120" r="10"/>
+                <rect x="290" y="118.6" width="24" height="2.8" fill="url(#hd-metal-x)"/>
+                <rect x="356" y="118.6" width="24" height="2.8" fill="url(#hd-metal-x)"/>
+                <g filter="url(#hd-shadow)">
+                  <rect x="312" y="111" width="46" height="18" rx="7" fill="url(#g-1n4148)" opacity=".95"/>
+                  <rect x="318" y="119" width="34" height="2" fill="#7a4a1f" opacity=".7"/>
+                  <rect x="331" y="116.5" width="7" height="7" rx="1" fill="#2b1a10" opacity=".8"/>
+                  <rect x="346" y="111" width="6" height="18" fill="#151617"/>
+                  <rect x="312" y="111" width="46" height="18" rx="7" fill="url(#hd-cyl-x)" opacity=".8"/>
+                </g>
+                <circle cx="290" cy="120" r="12" fill="url(#hd-gold)"/>
+                <circle class="solder-done" cx="290" cy="120" r="9.5"/>
                 <text class="silk" x="312" y="98">D1</text>
                 <text class="silk silk-sm" x="334" y="98">1N4148</text>
               </g>
+              <!-- D2 : LED rouge vue de dessus (méplat à droite = cathode) -->
               <g class="th-part s-led">
                 <circle class="led-glow" cx="455" cy="120" r="46" fill="url(#g-led)"/>
-                <path class="lead-wire" d="M420 120 H438 M472 120 H490"/>
-                <circle class="led-body" cx="455" cy="120" r="17"/>
-                <path d="M447 104 V136" stroke="#3a0d09" stroke-width="2" opacity=".5"/>
-                <circle class="solder-done" cx="420" cy="120" r="10"/>
+                <rect x="420" y="118.6" width="18" height="2.8" fill="url(#hd-metal-x)"/>
+                <rect x="472" y="118.6" width="18" height="2.8" fill="url(#hd-metal-x)"/>
+                <g filter="url(#hd-shadow)">
+                  <path class="led-rim" d="M467 105.27 A19 19 0 1 0 467 134.73 Z"/>
+                  <circle class="led-body" cx="455" cy="120" r="15.5"/>
+                </g>
+                <path class="led-inner" d="M458 112.5 h4.5 v15 h-4.5 z M446 118 h5.5 v4 h-5.5 z"/>
+                <ellipse class="led-spec" cx="449" cy="113" rx="5" ry="3" transform="rotate(-35 449 113)"/>
+                <circle cx="420" cy="120" r="12" fill="url(#hd-gold)"/>
+                <circle class="solder-done" cx="420" cy="120" r="9.5"/>
                 <text class="silk" x="430" y="94">D2</text>
                 <text class="silk silk-sm" x="452" y="94">LED</text>
               </g>
@@ -1303,14 +1542,31 @@
                 <path class="gauge-val" pathLength="100" d="M513 120 A23 23 0 1 1 467 120 A23 23 0 1 1 513 120"/>
               </g>
 
+              <!-- Module OLED 128×64 : circuit bleu, dalle de verre, connecteur 4 broches, nappe souple -->
               <g class="oled">
-                <rect x="516" y="28" width="220" height="214" rx="10" fill="#0f3a6b" stroke="#082445" stroke-width="2"/>
-                <circle cx="530" cy="42" r="5" fill="#082445" stroke="#d8b25a" stroke-width="2"/>
-                <circle cx="722" cy="42" r="5" fill="#082445" stroke="#d8b25a" stroke-width="2"/>
-                <circle cx="530" cy="228" r="5" fill="#082445" stroke="#d8b25a" stroke-width="2"/>
-                <circle cx="722" cy="228" r="5" fill="#082445" stroke="#d8b25a" stroke-width="2"/>
+                <g filter="url(#hd-shadow-lg)">
+                  <rect x="516" y="28" width="220" height="214" rx="8" fill="url(#hd-mask-blue)" stroke="#0a2550" stroke-width="1.5"/>
+                </g>
+                <rect x="516" y="28" width="220" height="214" rx="8" fill="url(#hd-weave)"/>
+                <circle cx="530" cy="42" r="5.5" fill="url(#hd-gold)"/><circle cx="530" cy="42" r="3" fill="#06142c"/>
+                <circle cx="722" cy="42" r="5.5" fill="url(#hd-gold)"/><circle cx="722" cy="42" r="3" fill="#06142c"/>
+                <circle cx="530" cy="228" r="5.5" fill="url(#hd-gold)"/><circle cx="530" cy="228" r="3" fill="#06142c"/>
+                <circle cx="722" cy="228" r="5.5" fill="url(#hd-gold)"/><circle cx="722" cy="228" r="3" fill="#06142c"/>
+                <!-- Connecteur : broches GND, VCC, SCL, SDA -->
+                <g aria-hidden="true">
+                  <rect x="518" y="114" width="9" height="12" rx="1.5" fill="url(#hd-gold)"/><circle cx="522.5" cy="120" r="3" fill="url(#hd-solder)"/>
+                  <rect x="518" y="139" width="9" height="12" rx="1.5" fill="url(#hd-gold)"/><circle cx="522.5" cy="145" r="3" fill="url(#hd-solder)"/>
+                  <rect x="518" y="164" width="9" height="12" rx="1.5" fill="url(#hd-gold)"/><circle cx="522.5" cy="170" r="3" fill="url(#hd-solder)"/>
+                  <rect x="518" y="190" width="9" height="12" rx="1.5" fill="url(#hd-gold)"/><circle cx="522.5" cy="196" r="3" fill="url(#hd-solder)"/>
+                </g>
+                <g filter="url(#hd-shadow)">
+                  <rect x="526" y="52" width="200" height="162" rx="5" fill="#07090c" stroke="#2a3346" stroke-width="1"/>
+                </g>
                 <rect class="oled-glass" x="530" y="58" width="192" height="150" rx="4"/>
                 <g class="oled-text"></g>
+                <rect x="526" y="52" width="200" height="162" rx="5" fill="url(#g-oled-glass)" pointer-events="none"/>
+                <rect x="662" y="214" width="44" height="12" fill="#c98a2b" opacity=".9"/>
+                <path d="M666 214 V226 M672 214 V226 M678 214 V226 M684 214 V226 M690 214 V226 M696 214 V226 M702 214 V226" stroke="#7a4a12" stroke-width=".8" opacity=".8"/>
                 <text class="silk silk-sm" x="546" y="227">OLED · 128×64</text>
               </g>
               <g class="smoke"></g>
@@ -1587,6 +1843,31 @@
 
   <!-- Filtres graphiques (caméra thermique, mode schéma) -->
   <svg class="fx-defs" aria-hidden="true" focusable="false">
+    <!-- Matières « HD » partagées par toutes les cartes électroniques du site -->
+    <linearGradient id="hd-mask" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1e6c50"/><stop offset=".55" stop-color="#175a42"/><stop offset="1" stop-color="#104533"/></linearGradient>
+    <linearGradient id="hd-mask-black" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2a3134"/><stop offset=".6" stop-color="#1c2124"/><stop offset="1" stop-color="#141819"/></linearGradient>
+    <linearGradient id="hd-mask-blue" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1d4f9c"/><stop offset="1" stop-color="#123a78"/></linearGradient>
+    <pattern id="hd-weave" width="5" height="5" patternUnits="userSpaceOnUse"><path d="M0 2.5 H5 M2.5 0 V5" stroke="#ffffff" stroke-opacity=".03" stroke-width=".8"/></pattern>
+    <radialGradient id="hd-sheen" cx=".22" cy=".12" r=".95"><stop offset="0" stop-color="#ffffff" stop-opacity=".1"/><stop offset=".5" stop-color="#ffffff" stop-opacity=".02"/><stop offset="1" stop-color="#000000" stop-opacity=".12"/></radialGradient>
+    <linearGradient id="hd-gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff0b8"/><stop offset=".35" stop-color="#e2b34f"/><stop offset=".7" stop-color="#b07d22"/><stop offset="1" stop-color="#e9c66a"/></linearGradient>
+    <radialGradient id="hd-gold-r" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#fff3c4"/><stop offset=".45" stop-color="#e0ad48"/><stop offset="1" stop-color="#9c6b1f"/></radialGradient>
+    <radialGradient id="hd-solder" cx=".36" cy=".3" r=".75"><stop offset="0" stop-color="#ffffff"/><stop offset=".3" stop-color="#e1e5e7"/><stop offset=".75" stop-color="#9aa3a8"/><stop offset="1" stop-color="#6d767b"/></radialGradient>
+    <linearGradient id="hd-metal-x" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6f7579"/><stop offset=".3" stop-color="#f2f4f4"/><stop offset=".55" stop-color="#b9bfc2"/><stop offset="1" stop-color="#5e6468"/></linearGradient>
+    <linearGradient id="hd-metal-y" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#6f7579"/><stop offset=".3" stop-color="#f2f4f4"/><stop offset=".55" stop-color="#b9bfc2"/><stop offset="1" stop-color="#5e6468"/></linearGradient>
+    <linearGradient id="hd-cyl-x" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000000" stop-opacity=".35"/><stop offset=".26" stop-color="#ffffff" stop-opacity=".45"/><stop offset=".5" stop-color="#ffffff" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity=".45"/></linearGradient>
+    <linearGradient id="hd-cyl-y" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#000000" stop-opacity=".35"/><stop offset=".26" stop-color="#ffffff" stop-opacity=".45"/><stop offset=".5" stop-color="#ffffff" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity=".45"/></linearGradient>
+    <linearGradient id="hd-res" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9c8a63"/><stop offset=".32" stop-color="#f3e6c4"/><stop offset=".6" stop-color="#d9c59a"/><stop offset="1" stop-color="#8b7853"/></linearGradient>
+    <linearGradient id="hd-cap-blue" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#132a63"/><stop offset=".3" stop-color="#4170e6"/><stop offset=".62" stop-color="#2a4fb0"/><stop offset="1" stop-color="#0f214c"/></linearGradient>
+    <radialGradient id="hd-alu" cx=".4" cy=".35" r=".7"><stop offset="0" stop-color="#f4f6f7"/><stop offset=".6" stop-color="#b5bcc1"/><stop offset="1" stop-color="#7f878c"/></radialGradient>
+    <linearGradient id="hd-glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8fbff" stop-opacity=".6"/><stop offset=".35" stop-color="#bfe9f0" stop-opacity=".16"/><stop offset=".7" stop-color="#8fcad6" stop-opacity=".22"/><stop offset="1" stop-color="#e8fbff" stop-opacity=".45"/></linearGradient>
+    <radialGradient id="hd-led-red" cx=".38" cy=".32" r=".78"><stop offset="0" stop-color="#ff9c88"/><stop offset=".35" stop-color="#d8352a"/><stop offset=".8" stop-color="#8e160f"/><stop offset="1" stop-color="#4d0805"/></radialGradient>
+    <radialGradient id="hd-led-red-on" cx=".4" cy=".35" r=".75"><stop offset="0" stop-color="#fff3e0"/><stop offset=".3" stop-color="#ff7a5a"/><stop offset=".72" stop-color="#ec3420"/><stop offset="1" stop-color="#a51b10"/></radialGradient>
+    <linearGradient id="hd-plastic" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#454b4e"/><stop offset=".45" stop-color="#202426"/><stop offset="1" stop-color="#0e1011"/></linearGradient>
+    <linearGradient id="hd-plastic-y" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0e1011"/><stop offset=".3" stop-color="#3f4548"/><stop offset=".6" stop-color="#202426"/><stop offset="1" stop-color="#0b0c0d"/></linearGradient>
+    <linearGradient id="hd-ivory" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset=".5" stop-color="#e6e7e2"/><stop offset="1" stop-color="#a9aca6"/></linearGradient>
+    <linearGradient id="hd-orange" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8a470b"/><stop offset=".3" stop-color="#f6a447"/><stop offset=".62" stop-color="#e0821f"/><stop offset="1" stop-color="#7c3f09"/></linearGradient>
+    <filter id="hd-shadow" x="-25%" y="-25%" width="150%" height="170%"><feDropShadow dx="0" dy="2" stdDeviation="1.6" flood-color="#000000" flood-opacity=".55"/></filter>
+    <filter id="hd-shadow-lg" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="1" dy="5" stdDeviation="4" flood-color="#000000" flood-opacity=".5"/></filter>
     <filter id="f-thermal" color-interpolation-filters="sRGB">
       <feColorMatrix type="matrix" values="0.30 0.55 0.15 0 0  0.30 0.55 0.15 0 0  0.30 0.55 0.15 0 0  0 0 0 1 0"/>
       <feComponentTransfer>

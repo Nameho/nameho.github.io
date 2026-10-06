@@ -1232,7 +1232,15 @@ button, input, select { font: inherit; color: inherit; }
 }
 .bench-board { position: relative; align-self: center; }
 .diag-svg { display: block; width: 100%; height: auto; }
-.d-traces path { stroke: #c97b2a; stroke-width: 5; opacity: 0.6; }
+/* Pistes en cuivre sous le vernis : un bord sombre puis la piste, un peu plus claire que la carte */
+.d-tr-edge { fill: none; stroke: #0b3527; stroke-width: 8; stroke-linecap: round; stroke-linejoin: round; }
+.d-tr { fill: none; stroke: #2a8a60; stroke-width: 5.4; stroke-linecap: round; stroke-linejoin: round; }
+.silk-line { fill: none; stroke: rgba(241, 245, 239, 0.7); stroke-width: 1.2; }
+.wire { fill: none; stroke-width: 4.2; stroke-linecap: round; }
+.wire-red { stroke: #b4231a; }
+.wire-black { stroke: #17191a; }
+.wire-hi { fill: none; stroke: rgba(255, 255, 255, 0.28); stroke-width: 1.1; stroke-linecap: round; }
+.bat-sub { fill: #3a1e05; font: 700 6.5px var(--mono); letter-spacing: 0.12em; }
 .d-flow {
   stroke: #ffe0ad;
   stroke-width: 3;
@@ -1245,8 +1253,9 @@ button, input, select { font: inherit; color: inherit; }
 @keyframes dash-run { to { stroke-dashoffset: -16; } }
 .bat-txt { fill: #1a0d02; font: 800 22px var(--font); }
 
-.pad { fill: var(--gold); transition: filter 0.2s; }
-.tp-pad { fill: #0e3a2f; stroke: var(--gold); stroke-width: 5; transition: filter 0.2s; }
+/* Soudure étamée sur sa pastille dorée ; points de test : anneau doré percé */
+.pad { fill: url(#hd-solder); stroke: url(#hd-gold); stroke-width: 2.6; transition: filter 0.2s; }
+.tp-pad { fill: #04100c; stroke: url(#hd-gold); stroke-width: 5; transition: filter 0.2s; }
 .pad.is-target,
 .tp-pad.is-target { filter: drop-shadow(0 0 5px #ffd27a) drop-shadow(0 0 10px #ff9a2e); }
 
@@ -1296,11 +1305,17 @@ button, input, select { font: inherit; color: inherit; }
 .part-switch.is-on .sw-knob { transform: translateX(22px); }
 .sw-state { fill: var(--led-green); }
 .part-switch:not(.is-on) .sw-state { fill: #ff8a7a; }
-.led-body { fill: #6b1e17; stroke: #3a0d09; stroke-width: 2; transition: fill 0.2s; }
+/* LED 5 mm vue de dessus : dôme en époxy rouge, collerette avec méplat, intérieur, reflet */
+.led-body { fill: url(#hd-led-red); stroke: #3a0d09; stroke-width: 1; transition: filter 0.2s; }
+.led-rim { fill: #7a1810; stroke: #3a0d09; stroke-width: 1; }
+.led-inner { fill: #3d0603; opacity: 0.5; pointer-events: none; }
+.led-spec { fill: #ffffff; opacity: 0.55; pointer-events: none; }
 .led-glow { opacity: 0; transition: opacity 0.3s; pointer-events: none; }
-.part-led.is-lit .led-body { fill: #ff5a3c; }
+.part-led.is-lit .led-body { fill: url(#hd-led-red-on); }
+.part-led.is-lit .led-rim { fill: #c4321f; }
+.part-led.is-lit .led-inner { opacity: 0.25; }
 .part-led.is-lit .led-glow { opacity: 1; animation: glow-pulse 2.2s ease-in-out infinite; }
-.part-led.is-dim .led-body { fill: #a3392b; }
+.part-led.is-dim .led-body { filter: brightness(1.45); }
 .part-led.is-dim .led-glow { opacity: 0.22; }
 @keyframes glow-pulse { 50% { opacity: 0.75; } }
 .part.is-desolder { animation: desolder 0.55s ease-in forwards; }
@@ -2006,20 +2021,20 @@ button, input, select { font: inherit; color: inherit; }
   .solder-board .joint { cursor: none; }
 }
 .solder-svg { display: block; width: 100%; height: auto; }
-.s-traces path { stroke: #c97b2a; stroke-width: 6; opacity: 0.55; }
 .s-flow { stroke: #ffe0ad; stroke-width: 3; stroke-linecap: round; stroke-dasharray: 1 15; opacity: 0; }
 .solder.is-live .s-flow { opacity: 0.95; animation: dash-run 0.6s linear infinite; }
 .coin-txt { fill: #3a3e3c; font: 700 11px var(--mono); }
 .coin-txt-sm { font-size: 10px; }
-.lead-wire { fill: none; stroke: #c3c6c2; stroke-width: 3; stroke-linecap: round; }
-.solder-done { fill: url(#g-solder); }
-.pad-ring { fill: var(--gold); transition: filter 0.2s; }
-.pad-hole { fill: #0b2219; }
-.lead { fill: #d8dcd8; }
+.solder-done { fill: url(#hd-solder); }
+.pad-ring { fill: url(#hd-gold); transition: filter 0.2s; }
+.pad-hole { fill: #04100c; }
+.lead { fill: url(#hd-metal-y); }
 .joint { outline: none; }
 .joint:hover .pad-ring,
 .joint:focus-visible .pad-ring { filter: drop-shadow(0 0 5px #ffd27a); }
-.solder.is-live .s-led .led-body { fill: #ff5a3c; }
+.solder.is-live .s-led .led-body { fill: url(#hd-led-red-on); }
+.solder.is-live .s-led .led-rim { fill: #c4321f; }
+.solder.is-live .s-led .led-inner { opacity: 0.25; }
 .solder.is-live .s-led .led-glow { opacity: 1; animation: glow-pulse 2.2s ease-in-out infinite; }
 .joint-hit { fill: transparent; }
 .joint:focus-visible .joint-hit { stroke: #fff; stroke-width: 2; stroke-dasharray: 4 4; }
@@ -2031,7 +2046,7 @@ button, input, select { font: inherit; color: inherit; }
   transform: scale(var(--grow, 0.3));
 }
 .joint.is-heating .blob { opacity: var(--melt, 0); }
-.joint.is-good .blob { opacity: 1; fill: url(#g-solder); transform: scale(1); animation: shine 0.6s ease; }
+.joint.is-good .blob { opacity: 1; fill: url(#hd-solder); transform: scale(1); animation: shine 0.6s ease; }
 .joint.is-cold .blob { opacity: 1; fill: #858b88; stroke: #5d6360; stroke-width: 2; stroke-dasharray: 2 3; transform: scale(0.82); }
 .joint.is-burnt .blob { opacity: 1; fill: #4a3424; stroke: #2a1c12; stroke-width: 2; transform: scale(0.9); }
 .joint.is-good { pointer-events: none; }
@@ -2749,7 +2764,11 @@ dialog.rework { width: min(1000px, calc(100vw - 24px)); max-height: calc(100dvh 
 .defi-bios { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(280px, 1fr); gap: 24px; align-items: start; }
 .pc-board { position: relative; }
 .pc-svg { display: block; width: 100%; height: auto; }
-.pc-traces path { stroke: #4b6a64; stroke-width: 3; opacity: 0.7; }
+/* Carte mère : pistes fines et brillantes sous le vernis noir */
+.pc-traces path { stroke: #4a6862; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; opacity: 0.85; }
+.pc-tiny { fill: #2a2d2e; font: 700 5.5px var(--mono); letter-spacing: 0.04em; }
+.pc-tiny-light { fill: #c9cdc9; }
+.ql-case { fill: #e3e6e2; stroke: #9aa09c; stroke-width: 0.6; }
 .pc-chip-txt { fill: #2a2d2e; font: 700 14px var(--mono); }
 .pc-chip-sm { font-size: 10px; fill: #c9cdc9; }
 .pc-part[data-pc="CPU"] .pc-chip-sm { fill: #4a4f50; }
