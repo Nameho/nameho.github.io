@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-06T13:00:48.590Z",
+  "updatedAt": "2026-10-06T14:08:58.597Z",
   "sources": [
     {
       "id": "ifixit",
@@ -45,6 +45,14 @@
     }
   ],
   "items": [
+    {
+      "id": "a510996c6c4c",
+      "source": "hackaday",
+      "title": "Using LineageOS for Phones and DIY Smart TVs is Pretty Nifty",
+      "url": "https://hackaday.com/2026/10/06/using-lineageos-for-phones-and-diy-smart-tvs-is-pretty-nifty/",
+      "date": "2026-10-06T14:00:21.000Z",
+      "excerpt": "Although Android is essentially just another Linux distribution, most people only experience it in the form of the rather restrictive and proprietary versions found on smartphones, tablets and smart TVs. …read more"
+    },
     {
       "id": "37e638652ca9",
       "source": "hop",
@@ -92,14 +100,6 @@
       "url": "https://hackaday.com/2026/10/05/ambition-thy-name-is-a-3d-printed-transonic-r-c-jet/",
       "date": "2026-10-05T23:00:10.000Z",
       "excerpt": "Building anything that flies from scratch is an ambitious undertaking, even if it’s ‘just’ radio-controlled. 3D printing the aircraft isn’t that odd these days, but putting a hot jet engine …read more"
-    },
-    {
-      "id": "15478ec11f61",
-      "source": "hackaday",
-      "title": "How to Grow a Giant Crystal from Copper Sulfate",
-      "url": "https://hackaday.com/2026/10/05/how-to-grow-a-giant-crystal-from-copper-sulfate/",
-      "date": "2026-10-05T20:00:29.000Z",
-      "excerpt": "Copper sulfate crystals are probably among one of the prettiest crystals you can grow at home, with even just a simple setup with some copper scrap and vinegar already capable …read more"
     },
     {
       "id": "b0eeb09536f2",
