@@ -118,6 +118,76 @@ const TIPS = {
   keyboard: 'Clavier déposé ✔ 17 vis M2×2 tiennent son support ; à l’établi, on le retourne et 4 vis de plus séparent le clavier du support.',
 };
 
+// Fiche de chaque pièce déposée : à quoi elle sert, ce qu'on vérifie en atelier, un détail à retenir
+const RAM_INFO = {
+  role: 'La mémoire vive : le processeur y range tout ce qu’il est en train d’utiliser (programmes ouverts, onglets…). Elle s’efface dès qu’on éteint.',
+  shop: 'Écrans bleus, bips au démarrage ? On teste la mémoire (MemTest86), ou on essaie une barrette à la fois pour trouver la fautive.',
+};
+const INFO = {
+  cover: {
+    role: 'Il ferme le dessous du PC, le protège des chocs et de la poussière, et guide l’air : la grille, juste devant le ventilateur, est l’entrée d’air frais.',
+    shop: 'On vérifie que ses clips ne sont pas cassés et que la grille n’est pas colmatée de poussière : un PC qui chauffe commence souvent par là.',
+    fact: 'Ses 8 vis sont « imperdables » : une petite bague les retient dans le capot, impossible de les égarer.',
+  },
+  battery: {
+    role: 'Elle stocke l’énergie : 54 Wh sous 11,4 V. Un circuit de protection intégré surveille la charge, la température et l’équilibre de ses cellules.',
+    shop: 'On lit son usure (capacité restante, nombre de cycles) dans le BIOS ou avec un logiciel, et on vérifie qu’elle ne gonfle pas : gonflée, elle part au recyclage, jamais dans un PC.',
+    fact: '11,4 V, ce sont 3 cellules lithium-ion de 3,8 V en série. Et 54 Wh, de quoi allumer une ampoule LED de 5 W pendant près de 11 heures.',
+  },
+  ram1: { ...RAM_INFO, fact: 'SO-DIMM, c’est le petit format des portables (69,6 mm de long). L’encoche des contacts n’est pas au même endroit en DDR4 et en DDR5 : impossible de se tromper de slot.' },
+  ram2: { ...RAM_INFO, fact: 'Deux barrettes identiques travaillent en « double canal » : le processeur lit les deux à la fois, ce qui double presque le débit.' },
+  ssd: {
+    role: 'Le stockage : Windows, les logiciels et les fichiers du client. Sans pièce mobile, il est bien plus rapide et plus solide qu’un disque dur.',
+    shop: 'On vérifie sa santé (données SMART : usure, erreurs). En reconditionnement, ses données sont effacées de façon sécurisée avant la revente.',
+    fact: 'NVMe : il dialogue directement avec le processeur par le bus PCIe, d’où des débits de plusieurs milliers de Mo/s. 2230 = 22 mm de large, 30 mm de long.',
+  },
+  wifi: {
+    role: 'La carte réseau sans fil (Wi-Fi 6E et Bluetooth). Ses deux câbles montent jusqu’aux antennes cachées dans le cadre de l’écran.',
+    shop: 'Wi-Fi qui décroche ? On vérifie d’abord les antennes : un petit connecteur à moitié déclipsé suffit à couper le signal.',
+    fact: 'Avec deux antennes (MAIN et AUX), la carte émet et reçoit sur deux voies à la fois (MIMO) : plus de débit et une meilleure portée.',
+  },
+  fan: {
+    role: 'Il aspire l’air frais sous le PC et le souffle à travers les ailettes du dissipateur, vers l’arrière.',
+    shop: 'PC bruyant ou brûlant : on dépoussière au pinceau et à l’air sec, en bloquant les pales. S’il frotte ou grince, on le remplace.',
+    fact: 'On bloque les pales pendant le soufflage : à trop haute vitesse, on use ses paliers, et son moteur entraîné se met à produire du courant, comme une petite dynamo.',
+  },
+  heatsink: {
+    role: 'Il évacue la chaleur du processeur : la plaque froide la capte, le caloduc la transporte jusqu’aux ailettes, et le ventilateur les refroidit.',
+    shop: 'Pâte thermique sèche = processeur qui chauffe et ralentit. On nettoie à l’alcool isopropylique et on remet une fine couche de pâte neuve.',
+    fact: 'Un caloduc est un tube creux contenant un peu de liquide : il s’évapore côté chaud, se condense côté froid et revient par capillarité. Aucune pièce mobile.',
+  },
+  cmos: {
+    role: 'Une pile bouton CR2032 (3 V) qui garde l’heure et les réglages du BIOS quand le PC est éteint et sa batterie débranchée.',
+    shop: 'Le PC perd l’heure ou ses réglages ? On mesure la pile au multimètre : vers 2,5 V, on la remplace.',
+    fact: 'La débrancher quelques minutes remet le BIOS à zéro : une vieille astuce pour annuler un réglage qui empêche de démarrer.',
+  },
+  speakers: {
+    role: 'Deux petits haut-parleurs dans des caissons fermés : l’air enfermé dans le caisson aide à rendre les sons graves.',
+    shop: 'Son qui grésille ? On teste gauche et droite séparément (réglage de balance) pour trouver le coupable avant de le changer.',
+    fact: 'Les silentblocs bleus en caoutchouc absorbent leurs vibrations : sans eux, tout le châssis résonnerait.',
+  },
+  frame: {
+    role: 'Un cadre en plastique vissé au repose-poignets, sous la batterie : il rigidifie l’ensemble et guide les câbles (haut-parleurs, antennes).',
+    shop: 'Avant de le retirer, on note le passage des câbles : un câble pincé au remontage peut couper le son ou le Wi-Fi.',
+    fact: 'Dans le manuel Dell, c’est le « cadre interne de l’assemblage » : 8 vis M2×3, toutes identiques.',
+  },
+  mb: {
+    role: 'Le cœur du PC : processeur, circuits d’alimentation, contrôleurs (USB, son, réseau) et tous les connecteurs. Sur ce modèle, les ports sont soudés directement dessus.',
+    shop: 'C’est la pièce la plus chère. Avant de la condamner, on cherche les causes simples au multimètre et à la loupe : court-circuit, port arraché, oxydation. La micro-soudure permet souvent de réparer.',
+    fact: 'Le processeur est soudé (boîtier BGA : des centaines de billes d’étain sous la puce). On ne le change pas comme sur un PC fixe.',
+  },
+  power: {
+    role: 'Le bouton d’allumage, avec ici un lecteur d’empreintes pour se connecter sans mot de passe.',
+    shop: 'Bouton qui ne répond plus : on vérifie sa nappe et son connecteur avant de changer la pièce.',
+    fact: 'L’empreinte n’est pas gardée en photo : seul un modèle chiffré est stocké, dans une puce de sécurité (chez Dell, la carte USH).',
+  },
+  keyboard: {
+    role: 'Le clavier et son rétroéclairage, une nappe pour chacun. Il est vissé sur un support métallique qui le rend rigide.',
+    shop: 'Une touche morte vient parfois d’une nappe mal enfoncée : on la reclipse avant de changer le clavier. Après un liquide renversé, on démonte vite pour limiter l’oxydation.',
+    fact: 'Les touches forment une grille de lignes et de colonnes : le clavier signale un croisement, que la puce de gestion du clavier, sur la carte mère, traduit en lettre.',
+  },
+};
+
 // [id, nom, à quoi il sert]
 const TOOLS = [
   ['hand', 'Main', 'connecteurs, nappes, adhésifs, pièces'],
@@ -148,6 +218,13 @@ export function initTeardown() {
   const trayEl = $('.lt-tray', root);
   const partsEl = $('.lt-parts', root);
   const endEl = $('.lt-end', root);
+  const scene = $('.lt-scene', root);
+  const view = $('.lt-view', root);
+  const zoomBtn = $('[data-lt-zoom]', root);
+  const card = {
+    root: $('.lt-card', root), pic: $('.lt-card-pic', root), kicker: $('.lt-card-kicker', root),
+    title: $('.lt-card-title', root), intro: $('.lt-card-intro', root), facts: $('.lt-card-facts', root),
+  };
   const stat = Object.fromEntries($$('[data-lt]', root).map((n) => [n.dataset.lt, n]));
   const N_PARTS = Object.keys(PARTS).length + 1; // + le capot
 
@@ -155,6 +232,8 @@ export function initTeardown() {
   let refs;
   let hovered = null; // élément cliquable survolé (ou focalisé au clavier)
   let lit = null; // ce qui est entouré en vert ou en rouge
+  let snaps = {}; // dessin de chaque pièce déposée, pour sa fiche
+  let shown = null; // pièce dont la fiche est affichée
   let timer = 0;
   let visible = !root.hidden;
 
@@ -170,7 +249,40 @@ export function initTeardown() {
   flipBtn.addEventListener('click', doFlip);
   $('[data-lt-hint]', root).addEventListener('click', hint);
   $$('[data-lt-reset]', root).forEach((b) => b.addEventListener('click', () => { sfx('click'); reset(); }));
+  zoomBtn.addEventListener('click', () => setZoom(!scene.classList.contains('is-zoomed')));
   if (stat.total) stat.total.textContent = String(N_PARTS);
+
+  // Loupe : on fait glisser la vue à la souris (au doigt, le défilement natif suffit) ;
+  // un glisser ne compte pas comme un clic sur la pièce en dessous
+  let pan = null;
+  let swallowClick = false;
+  view.addEventListener('pointerdown', (e) => {
+    swallowClick = false;
+    if (!scene.classList.contains('is-zoomed') || e.pointerType !== 'mouse' || e.button !== 0) return;
+    pan = { id: e.pointerId, x: e.clientX, y: e.clientY, left: view.scrollLeft, top: view.scrollTop, moved: false };
+  });
+  view.addEventListener('pointermove', (e) => {
+    if (!pan) return;
+    const dx = e.clientX - pan.x;
+    const dy = e.clientY - pan.y;
+    if (!pan.moved && Math.hypot(dx, dy) < 6) return;
+    if (!pan.moved) { pan.moved = true; view.classList.add('is-panning'); view.setPointerCapture(pan.id); light(null); }
+    view.scrollLeft = pan.left - dx;
+    view.scrollTop = pan.top - dy;
+  });
+  const endPan = () => {
+    if (pan?.moved) swallowClick = true;
+    pan = null;
+    view.classList.remove('is-panning');
+  };
+  view.addEventListener('pointerup', endPan);
+  view.addEventListener('pointercancel', endPan);
+  view.addEventListener('click', (e) => {
+    if (!swallowClick) return;
+    swallowClick = false;
+    e.stopPropagation();
+    e.preventDefault();
+  }, true);
 
   // Clics et clavier sur les deux faces (délégation)
   for (const face of [top, bottom]) {
@@ -227,6 +339,13 @@ export function initTeardown() {
     bottom.inert = true;
     endEl.hidden = true;
     refs = { parts: {}, items: {}, cover: {} };
+    snaps = {};
+    shown = null;
+    card.kicker.textContent = 'Fiche pièce';
+    card.title.textContent = 'Chaque pièce a son rôle';
+    card.intro.hidden = false;
+    card.facts.hidden = true;
+    card.pic.replaceChildren();
     drawTop();
     drawBottom();
     pickTool('hand', { quiet: true });
@@ -257,7 +376,7 @@ export function initTeardown() {
   /** Fiche USB-C du chargeur sur le flanc (side = -1 : à gauche, 1 : à droite). */
   function charger(face, x, y, side) {
     const g = S('g', { class: `lt-charger ${side < 0 ? 'lt-charger-l' : 'lt-charger-r'}` }, face);
-    S('path', { d: `M${x + side * 22} ${y} C${x + side * 60} ${y}, ${x + side * 60} ${y + 70}, ${x + side * 120} ${y + 80}`, class: 'lt-cable' }, g);
+    S('path', { d: `M${x + side * 22} ${y} C${x + side * 42} ${y}, ${x + side * 46} ${y + 40}, ${x + side * 40} ${y + 110}`, class: 'lt-cable' }, g);
     S('rect', { x: side < 0 ? x - 24 : x + 4, y: y - 8, width: 20, height: 16, rx: 4, fill: 'url(#hd-plastic)' }, g);
     S('rect', { x: side < 0 ? x - 6 : x, y: y - 3, width: 6, height: 6, rx: 2, fill: 'url(#hd-metal-x)' }, g);
     S('rect', {
@@ -815,7 +934,9 @@ export function initTeardown() {
     st.cover.off = true;
     st.removed.add('cover');
     flipBtn.disabled = true;
+    snapshot('cover');
     lift(refs.cover.g);
+    showCard('cover', true);
     renderSide();
     return say('Capot déposé ✔ Premier réflexe, avant de toucher à quoi que ce soit : décoller l’adhésif du câble de la batterie, puis débrancher ce câble.', 'good');
   }
@@ -973,17 +1094,20 @@ export function initTeardown() {
       return say(text, 'good');
     }
     st.removed.add(id);
+    snapshot(id);
     lift(refs.parts[id].g);
     let extra = '';
     // la pile CMOS est collée sur la carte mère : si elle y est encore, elle part avec
     if (id === 'mb' && !st.removed.has('cmos')) {
       st.removed.add('cmos');
+      snapshot('cmos');
       lift(refs.parts.cmos.g);
       extra = ' La pile CMOS, collée dessus, est partie avec elle.';
     }
     // sans la carte mère ni le dissipateur pour les guider, les câbles d'antenne sont écartés vers les charnières
     if (id === 'mb') refs.ants.classList.add('is-away');
     sfx('whoosh', { passive: true });
+    showCard(id, true);
     renderSide();
     if (st.removed.size === N_PARTS) return finish();
     return say(TIPS[id] + extra, 'good');
@@ -1030,16 +1154,17 @@ export function initTeardown() {
     sfx('click');
     startClock();
     const show = (node, text) => {
+      $$('.is-hint', root).forEach((n) => n.classList.remove('is-hint')); // un seul indice à la fois
       if (node) {
-        node.classList.remove('is-hint');
         void node.getBoundingClientRect();
         node.classList.add('is-hint');
         setTimeout(() => node.classList.remove('is-hint'), 2600);
+        if (view.contains(node)) reveal(node);
       }
       say(`Indice : ${text}`);
     };
     if (st.charger) return show(refs.plugTop.querySelector('.lt-hit'), 'débranche le chargeur (main, sur la fiche USB-C).');
-    if (!st.esd) return show(wristBtn, 'mets le bracelet antistatique (à droite).');
+    if (!st.esd) return show(wristBtn, 'mets le bracelet antistatique (au-dessus du PC, avec les outils).');
     if (!st.flipped) return show(flipBtn, 'retourne le PC.');
     if (!st.cover.off) {
       const i = st.cover.screws.findIndex((s) => !s);
@@ -1065,12 +1190,77 @@ export function initTeardown() {
     trayEl.replaceChildren(...Object.entries(TRAY).map(([k, [label, size, total]]) => el('li', { cls: st.tray[k] ? 'has' : '', attrs: { title: `${label} : ${total} vis ${size}` } }, [
       el('span', { text: label }), el('small', { text: size }), el('b', { text: `${st.tray[k]}/${total}` }),
     ])));
+    // les pièces déposées deviennent des boutons qui rouvrent leur fiche
     const all = [['cover', 'Capot inférieur'], ...ORDER.map((id) => [id, PARTS[id].name])];
-    partsEl.replaceChildren(...all.map(([id, name]) => el('li', { cls: st.removed.has(id) ? 'is-done' : '', text: name })));
+    partsEl.replaceChildren(...all.map(([id, name]) => {
+      if (!st.removed.has(id)) return el('li', { text: name });
+      const b = el('button', { cls: 'lt-part-btn', text: name, attrs: { type: 'button', ...(shown === id ? { 'aria-current': 'true' } : {}) } });
+      b.addEventListener('click', () => {
+        sfx('click');
+        showCard(id);
+        renderSide();
+        $('[aria-current="true"]', partsEl)?.focus();
+      });
+      return el('li', { cls: 'is-done' }, [b]);
+    }));
     stat.parts.textContent = String(st.removed.size);
     stat.errors.textContent = String(st.errors);
     stat.screws.textContent = String(st.screws);
     stat.time.textContent = fmt(st.elapsed);
+  }
+
+  /* ---------- Fiche pièce : dessin de la pièce et ce qu'il faut en savoir ---------- */
+  /** Garde le dessin d'une pièce au moment où elle sort (avant qu'elle disparaisse de la scène). */
+  function snapshot(id) {
+    const src = id === 'cover' ? refs.cover.g : refs.parts[id].art;
+    let box;
+    try { box = src.getBBox(); } catch { return; }
+    if (!box.width || !box.height) return;
+    const pad = Math.max(box.width, box.height) * 0.06;
+    const s = S('svg', { viewBox: `${box.x - pad} ${box.y - pad} ${box.width + pad * 2} ${box.height + pad * 2}`, 'aria-hidden': 'true', focusable: 'false' });
+    const copy = src.cloneNode(true);
+    copy.removeAttribute('display');
+    copy.querySelectorAll('.lt-hit, .lt-clip, .lt-ssd-plate').forEach((n) => n.remove()); // ni zones cliquables, ni capot du SSD
+    s.append(copy);
+    snaps[id] = s;
+  }
+
+  function showCard(id, fresh = false) {
+    const info = INFO[id];
+    shown = id;
+    card.kicker.textContent = fresh ? `Pièce déposée · ${st.removed.size}/${N_PARTS}` : 'Fiche pièce';
+    card.title.textContent = id === 'cover' ? 'Capot inférieur' : PARTS[id].name;
+    card.intro.hidden = true;
+    card.facts.hidden = false;
+    card.facts.replaceChildren(...[['À quoi ça sert', info.role], ['En atelier', info.shop], ['Le saviez-vous ?', info.fact]]
+      .flatMap(([k, v]) => [el('dt', { text: k }), el('dd', { text: v })]));
+    card.pic.replaceChildren(...(snaps[id] ? [snaps[id].cloneNode(true)] : []));
+    if (fresh && !reducedMotion()) {
+      card.root.classList.remove('is-new');
+      void card.root.offsetWidth;
+      card.root.classList.add('is-new');
+    }
+  }
+
+  /* ---------- Loupe ×2 ---------- */
+  function setZoom(on) {
+    scene.classList.toggle('is-zoomed', on);
+    zoomBtn.setAttribute('aria-pressed', String(on));
+    sfx('click');
+    // en entrant, on part du centre du PC ; en sortant, la vue revient à l'origine
+    view.scrollLeft = on ? (view.scrollWidth - view.clientWidth) / 2 : 0;
+    view.scrollTop = on ? (view.scrollHeight - view.clientHeight) / 2 : 0;
+  }
+  /** Avec la loupe, amène un élément au centre de la vue. */
+  function reveal(node) {
+    if (!scene.classList.contains('is-zoomed')) return;
+    const v = view.getBoundingClientRect();
+    const r = node.getBoundingClientRect();
+    view.scrollBy({
+      left: r.left + r.width / 2 - (v.left + v.width / 2),
+      top: r.top + r.height / 2 - (v.top + v.height / 2),
+      behavior: reducedMotion() ? 'auto' : 'smooth',
+    });
   }
 
   function finish() {

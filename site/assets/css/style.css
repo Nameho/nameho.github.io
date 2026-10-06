@@ -2779,9 +2779,21 @@ dialog.rework { width: min(1000px, calc(100vw - 24px)); max-height: calc(100dvh 
 .defis-tabs [aria-selected="true"] { background: var(--copper); color: #1a0d02; }
 
 /* Démontage d'un PC portable */
-.defi-laptop { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(250px, 0.7fr); gap: 22px; align-items: start; }
-.lt-scene { position: relative; perspective: 1700px; }
-.lt-flip { position: relative; aspect-ratio: 800 / 420; transform-style: preserve-3d; transition: transform 0.9s var(--out); }
+/* outils en haut, le PC en grand, puis la fiche pièce et le bac */
+.defi-laptop { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(260px, 1fr); grid-template-areas: "bench bench" "main main" "card side"; gap: 16px 22px; align-items: start; }
+.lt-bench { grid-area: bench; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 3fr); gap: 8px; }
+.lt-main { grid-area: main; }
+.lt-card { grid-area: card; }
+.lt-side { grid-area: side; }
+/* le PC prend toute la largeur, sans dépasser la hauteur de l'écran */
+.lt-scene { position: relative; width: min(100%, max(560px, 128vh)); margin-inline: auto; }
+.lt-view { perspective: 1700px; border-radius: 16px; }
+.lt-flip { position: relative; aspect-ratio: 736 / 420; transform-style: preserve-3d; transition: transform 0.9s var(--out); }
+/* loupe ×2 : la vue garde sa taille et défile (glisser à la souris, au doigt ou à la molette) */
+.lt-scene.is-zoomed .lt-view { aspect-ratio: 736 / 420; overflow: auto; overscroll-behavior: contain; scrollbar-width: thin; background: #0b100e; }
+.lt-scene.is-zoomed .lt-flip { width: 200%; }
+.lt-view.is-panning, .lt-view.is-panning * { cursor: grabbing !important; }
+[data-lt-zoom][aria-pressed="true"] { border-color: var(--copper); background: rgba(224, 130, 31, 0.18); color: var(--silk); }
 .lt-flip.is-flipped { transform: rotateY(180deg); }
 .reduce-motion .lt-flip { transition: none; }
 .lt-face { position: absolute; inset: 0; display: block; width: 100%; height: 100%; backface-visibility: hidden; -webkit-backface-visibility: hidden; user-select: none; -webkit-user-select: none; }
@@ -2804,7 +2816,7 @@ dialog.rework { width: min(1000px, calc(100vw - 24px)); max-height: calc(100dvh 
 .lt-side-title { margin: 6px 0 0; font: 600 0.72rem var(--mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--copper-hi); }
 .lt-side-title small { text-transform: none; letter-spacing: 0; color: var(--muted); }
 .lt-side-title b { color: var(--silk); }
-.lt-tools { display: grid; gap: 6px; }
+.lt-tools { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
 .lt-wrist,
 .lt-tool { display: flex; align-items: center; gap: 10px; width: 100%; padding: 9px 12px; border: 1px solid var(--line); border-radius: 12px; background: rgba(255, 255, 255, 0.03); color: var(--text); font: 600 0.88rem var(--font); text-align: left; cursor: var(--cur-hand); transition: border-color 0.15s, background 0.15s; }
 .lt-wrist:hover,
@@ -2828,6 +2840,24 @@ dialog.rework { width: min(1000px, calc(100vw - 24px)); max-height: calc(100dvh 
 .lt-parts .is-done { color: var(--led-green); }
 .lt-parts .is-done::after { content: " ✔"; }
 .lt-side .learn { margin: 4px 0 0; }
+.lt-part-btn { padding: 0; border: 0; background: none; color: inherit; font: inherit; text-align: left; text-decoration: underline dotted; text-underline-offset: 3px; cursor: var(--cur-hand); }
+.lt-part-btn:hover,
+.lt-part-btn[aria-current="true"] { color: var(--silk); text-decoration-style: solid; }
+/* Fiche pièce : le dessin de la pièce déposée et ce qu'il faut en savoir */
+.lt-card { display: grid; gap: 14px; padding: 18px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--bg-2); }
+/* le dessin de la pièce en bandeau : les pièces larges (batterie, carte mère, clavier) restent lisibles */
+.lt-card-pic { display: grid; place-items: center; height: 170px; padding: 14px; border-radius: 14px; background: radial-gradient(ellipse at 50% 40%, #26322e, #0c1110 75%); }
+.lt-card-pic:empty::before { content: "🔧"; font-size: 2.4rem; opacity: 0.45; }
+.lt-card-pic svg { display: block; width: 100%; height: 100%; filter: drop-shadow(0 6px 8px rgba(0, 0, 0, 0.6)); }
+.lt-card-kicker { margin: 0; font: 600 0.72rem var(--mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--copper-hi); }
+.lt-card-title { margin: 2px 0 10px; font: 750 1.2rem var(--font); color: var(--silk); }
+.lt-card-intro { margin: 0; font-size: 0.92rem; color: var(--muted); }
+.lt-card-facts { display: grid; gap: 10px; margin: 0; }
+.lt-card-facts[hidden] { display: none; }
+.lt-card-facts dt { font: 650 0.76rem var(--mono); letter-spacing: 0.04em; color: var(--gold); }
+.lt-card-facts dd { margin: 2px 0 0; font-size: 0.92rem; line-height: 1.5; color: var(--text); }
+.lt-card.is-new { animation: lt-card-in 0.45s var(--out); }
+@keyframes lt-card-in { from { opacity: 0; transform: translateY(8px); } }
 /* SVG du portable */
 .lt-hit { fill: transparent; stroke: transparent; stroke-width: 2.5; cursor: var(--cur-hand); outline: none; }
 .lt-hit:focus-visible { stroke: var(--gold); stroke-dasharray: 5 4; }
@@ -2893,11 +2923,15 @@ dialog.rework { width: min(1000px, calc(100vw - 24px)); max-height: calc(100dvh 
 .lt-screw.is-loose .lt-screw-head { filter: brightness(1.25) drop-shadow(0 2px 1px rgba(0, 0, 0, 0.7)); }
 .lt-label-light { fill: #d9dcd8; }
 @media (max-width: 900px) {
-  .defi-laptop { grid-template-columns: minmax(0, 1fr); gap: 14px; }
+  .defi-laptop { grid-template-columns: minmax(0, 1fr); grid-template-areas: "bench" "main" "card" "side"; gap: 14px; }
   .lt-stats { margin-left: 0; }
-  /* Sur téléphone, les outils tiennent sur une rangée, juste sous le PC */
+  /* Sur téléphone : le bracelet sur une ligne, les 3 outils sur la suivante, juste au-dessus du PC */
+  .lt-bench { grid-template-columns: minmax(0, 1fr); }
   .lt-side { padding: 12px; }
-  .lt-tools { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .lt-card { padding: 14px; }
+  /* le PC est petit sur téléphone : le bilan de fin s'affiche dessous plutôt que par-dessus */
+  .lt-end { position: static; margin-top: 10px; }
+  .lt-card-pic { height: 130px; }
   .lt-tool { flex-direction: column; gap: 4px; padding: 8px 4px; font-size: 0.76rem; text-align: center; }
   .lt-tool .lt-tool-art { width: 100%; max-width: 84px; }
   .lt-tool .lt-tool-name small { display: none; }

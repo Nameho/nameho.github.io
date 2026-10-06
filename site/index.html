@@ -1387,11 +1387,18 @@
 
           <!-- Défi 3 : démonter un PC portable, comme en atelier de reconditionnement -->
           <div class="defi defi-laptop" id="panel-laptop" role="tabpanel" aria-labelledby="tab-laptop" hidden>
+            <div class="lt-bench" role="group" aria-label="Établi">
+              <button class="lt-wrist" type="button" data-lt-wrist aria-pressed="false">Bracelet antistatique</button>
+              <div class="lt-tools" role="group" aria-label="Outils"></div>
+            </div>
+
             <div class="lt-main">
               <div class="lt-scene">
-                <div class="lt-flip">
-                  <svg class="lt-face lt-top" viewBox="-80 0 800 420" role="group" aria-label="PC portable fermé, vu de dessus, chargeur branché"></svg>
-                  <svg class="lt-face lt-bottom" viewBox="-80 0 800 420" role="group" aria-label="PC portable retourné, vu de dessous"></svg>
+                <div class="lt-view">
+                  <div class="lt-flip">
+                    <svg class="lt-face lt-top" viewBox="-48 0 736 420" role="group" aria-label="PC portable fermé, vu de dessus, chargeur branché"></svg>
+                    <svg class="lt-face lt-bottom" viewBox="-48 0 736 420" role="group" aria-label="PC portable retourné, vu de dessous"></svg>
+                  </div>
                 </div>
                 <p class="lt-esd-badge" aria-hidden="true">⏚ Bracelet relié à la terre</p>
                 <div class="lt-end" role="status" hidden>
@@ -1405,15 +1412,24 @@
               <div class="lt-bar">
                 <button class="btn btn-copper btn-sm" type="button" data-lt-flip>↻ Retourner le PC</button>
                 <button class="btn btn-ghost btn-sm" type="button" data-lt-hint>Indice</button>
+                <button class="btn btn-ghost btn-sm" type="button" data-lt-zoom aria-pressed="false"><span aria-hidden="true">🔍</span> Loupe ×2</button>
                 <button class="btn btn-ghost btn-sm" type="button" data-lt-reset>Recommencer</button>
                 <p class="lt-stats"><span aria-hidden="true">⏱</span> <b data-lt="time">0:00</b> · Erreurs <b data-lt="errors">0</b> · Vis <b data-lt="screws">0</b></p>
               </div>
             </div>
 
-            <aside class="lt-side" aria-label="Établi">
-              <p class="lt-side-title">Établi</p>
-              <button class="lt-wrist" type="button" data-lt-wrist aria-pressed="false">Bracelet antistatique</button>
-              <div class="lt-tools" role="group" aria-label="Outils"></div>
+            <!-- Fiche de la dernière pièce déposée (les pièces de la liste la rouvrent) -->
+            <section class="lt-card" aria-labelledby="lt-card-title">
+              <div class="lt-card-pic" aria-hidden="true"></div>
+              <div class="lt-card-body">
+                <p class="lt-card-kicker">Fiche pièce</p>
+                <h3 class="lt-card-title" id="lt-card-title">Chaque pièce a son rôle</h3>
+                <p class="lt-card-intro">À chaque pièce déposée, sa fiche s’affiche ici&nbsp;: à quoi elle sert, ce qu’on vérifie en atelier, et un détail à retenir. Les pièces de la liste «&nbsp;Pièces déposées&nbsp;» rouvrent leur fiche.</p>
+                <dl class="lt-card-facts" hidden></dl>
+              </div>
+            </section>
+
+            <aside class="lt-side" aria-label="Bac à vis et pièces déposées">
               <p class="lt-side-title">Bac magnétique <small>(rangement automatique)</small></p>
               <ul class="lt-tray"></ul>
               <p class="lt-side-title">Pièces déposées <b data-lt="parts">0</b>/<span data-lt="total">14</span></p>
