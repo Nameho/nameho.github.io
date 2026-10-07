@@ -198,6 +198,7 @@ export const INFO = {
       'Le dégât peut être caché : le composant semble marcher, puis lâche des semaines plus tard. On parle de défaut latent.',
       'Le fil du bracelet contient une résistance d’environ 1 mégaohm : la charge s’écoule lentement, et le technicien reste protégé s’il touche un fil sous tension.',
       'Le spudger, spatule en plastique, ouvre les coques clipsées sans les rayer ; isolant, il ne risque pas de court-circuiter la carte comme un tournevis en métal.',
+      'Il existe aussi des tournevis ESD, comme la gamme Kraftform Micro ESD de Wera : leur manche, légèrement conducteur (résistance de surface ≤ 10⁹ ohms), ne se charge pas en frottant et évacue doucement la charge par la main. Ils complètent le bracelet sans le remplacer : c’est le bracelet, relié à la terre, qui décharge le corps.',
       'Les gammes professionnelles (Dell Latitude, HP EliteBook) sont faites pour être entretenues : leurs fabricants publient des manuels de service qui détaillent le démontage pièce par pièce.',
     ],
     link: { href: W('D%C3%A9charge_%C3%A9lectrostatique'), label: 'La décharge électrostatique sur Wikipédia' },

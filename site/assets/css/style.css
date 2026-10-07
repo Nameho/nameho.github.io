@@ -2481,7 +2481,8 @@ dialog.express { width: min(980px, calc(100vw - 24px)); max-height: calc(100dvh 
 .xp-contact { display: grid; gap: 14px; padding-top: 16px; border-top: 1px dashed var(--line); }
 .xp-coords { display: flex; flex-wrap: wrap; gap: 10px 26px; }
 .xp-actions { display: flex; flex-wrap: wrap; gap: 10px; }
-.xp-print-only { display: none; }
+.xp-print-only,
+.xp-print { display: none; }
 
 /* CV : test anti-robot (brancher la fiche) */
 dialog.cv-gate { width: min(520px, calc(100vw - 24px)); padding: 24px 24px 20px; }
@@ -3472,31 +3473,133 @@ dialog.rework { width: min(1000px, calc(100vw - 24px)); max-height: calc(100dvh 
 .hud-secrets li.done span:last-child { color: var(--led-green); }
 
 /* ==========================================================================
-   v2 · Impression de la version express (Ctrl+P ou bouton « Imprimer »)
+   Impression de la version express (Ctrl+P ou bouton « Imprimer ») : un CV d'une page A4.
+   Fond blanc, texte presque noir et quelques touches de couleur seulement, pour épargner
+   les cartouches : titres verts, puces et filets cuivre, QR code vers le portfolio.
    ========================================================================== */
 @media print {
-  @page { margin: 12mm; }
-  html, body { background: #fff !important; }
-  body { padding: 0 !important; color: #111; }
+  @page { size: A4; margin: 11mm 12mm; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  html, body { background: #ffffff !important; }
+  body { margin: 0; padding: 0 !important; }
   body > *:not(.express) { display: none !important; }
   dialog.express {
     display: block !important;
     position: static;
+    inset: auto;
     width: auto;
+    height: auto;
     max-width: none;
     max-height: none;
+    margin: 0;
+    padding: 0;
     overflow: visible;
     border: 0;
     box-shadow: none;
-    background: #fff;
+    background: #ffffff;
+    color: #1f2826;
+    font: 400 10pt/1.5 var(--font);
   }
-  .express *, .express *::before { color: #111 !important; background: transparent !important; box-shadow: none !important; text-shadow: none !important; }
-  .express .dlg-close, .express .xp-actions { display: none !important; }
-  .express .xp-block h3, .express .xp-kicker, .express .xp-role { color: #17594a !important; }
-  .express .xp-quote { border-left-color: #e0821f !important; }
+  dialog.express::backdrop { display: none; }
+  dialog.express,
+  .express * { outline: none !important; text-shadow: none !important; box-shadow: none !important; }
+  .express .dlg-close,
+  .express .xp-actions,
+  .express .xp-kicker,
+  .express .led { display: none !important; }
+  .express .xp-print { display: block; }
   .express:not(.has-coords) .xp-print-only { display: block; }
+
+  /* en-tête sur toute la largeur, puis colonne latérale (contact, QR, recrutement) et colonne principale */
+  .xp-sheet {
+    display: grid;
+    grid-template-columns: 54mm minmax(0, 1fr);
+    grid-template-areas:
+      "head head"
+      "side avail"
+      "side bref"
+      "side comp"
+      "hire exp"
+      "hire form"
+      "hire quote"
+      "foot foot";
+    column-gap: 8mm;
+    padding: 0;
+  }
+  .xp-grid { display: contents; }
+  .xp-grid > :nth-child(1) { grid-area: bref; }
+  .xp-grid > :nth-child(2) { grid-area: comp; }
+  .xp-grid > :nth-child(3) { grid-area: exp; }
+  .xp-grid > :nth-child(4) { grid-area: form; }
+  .xp-grid > .xp-block,
+  .express .xp-avail { margin: 0 0 6mm; }
+
+  /* en-tête : puce « AT » au trait, nom, métier, infos pratiques, filet cuivre */
+  .express .xp-head { grid-area: head; display: flex; align-items: center; justify-content: flex-start; gap: 5.5mm; margin: 0 0 6.5mm; padding: 0 0 5mm; border-bottom: 0.6mm solid #e0821f; }
+  .express .xp-head::before {
+    content: "AT";
+    flex: none;
+    display: grid;
+    place-items: center;
+    width: 13mm;
+    height: 14.5mm;
+    border: 0.35mm solid #1f2826;
+    border-inline: 1.1mm dotted #1f2826;
+    border-radius: 1.6mm;
+    font: 700 11pt var(--mono);
+    color: #1f2826;
+  }
+  .express .xp-head h2 { margin: 0; font: 800 26pt/1.05 var(--font); letter-spacing: -0.01em; color: #121b18; }
+  .express .xp-role { margin: 1.6mm 0 0; font: 600 11pt var(--mono); color: #b0601a; }
+  .express .xp-meta { margin: 1.2mm 0 0; font-size: 9.6pt; color: #55625e; }
+
+  /* disponibilité : simple cadre fin */
+  .express .xp-avail { grid-area: avail; display: block; padding: 2.4mm 3.6mm; border: 0.3mm solid #2e8a5b; border-radius: 1.6mm; background: none; font-size: 10pt; }
+  .express .xp-avail::before { content: "●"; margin-right: 1.6mm; color: #2e8a5b; }
+  .express .xp-avail b { color: #1e6b47; }
+
+  /* titres de section : petites capitales vertes, filet gris qui file jusqu'au bord */
+  .express h3 { display: flex; align-items: center; gap: 2.5mm; margin: 0 0 2.8mm; padding: 0; border: 0; font: 700 8.2pt var(--mono); letter-spacing: 0.12em; text-transform: uppercase; color: #17594a; }
+  .express h3::after { content: ""; flex: 1; border-top: 0.25mm solid #d5dfdb; }
+  .express h3.xp-print { display: flex; }
+
+  /* listes : petites puces carrées cuivre */
+  .express .xp-block ul { display: grid; gap: 1.7mm; margin: 0; padding: 0; list-style: none; font-size: 10pt; }
+  .express .xp-block li { position: relative; padding-left: 3.6mm; }
+  .express .xp-block li::before { content: ""; position: absolute; left: 0.3mm; top: 0.6em; width: 1.3mm; height: 1.3mm; border-radius: 0.3mm; background: #e0821f; }
+  .express .xp-block li b { color: #121b18; }
+
+  /* expériences et formations : frise (fil gris, ronds verts au trait) */
+  .express .xp-block .xp-dated { gap: 2mm; margin-left: 0.8mm; border-left: 0.3mm solid #cfdcd6; }
+  .express .xp-dated li { display: grid; grid-template-columns: 22mm minmax(0, 1fr); padding-left: 3.4mm; }
+  .express .xp-dated li::before { left: -1.15mm; top: 0.5em; width: 1.4mm; height: 1.4mm; border: 0.35mm solid #17594a; border-radius: 50%; background: #ffffff; }
+  .express .xp-dated span { min-width: 0; font: 700 8.6pt var(--mono); color: #17594a; }
+
+  /* témoignage : filet cuivre à gauche, sans fond */
+  .express .xp-quote { grid-area: quote; margin: 0.6mm 0 0; padding: 0.6mm 0 0.6mm 4mm; border-left: 0.6mm solid #e0821f; border-radius: 0; background: none; }
+  .express .xp-quote p { font-size: 10.6pt; font-style: italic; color: #1f2826; }
+  .express .xp-quote footer { margin-top: 1.4mm; font: 500 8.2pt var(--mono); color: #55625e; }
+
+  /* colonne latérale : séparée par un filet, sans aplat de couleur */
+  .express .xp-contact { grid-area: side; display: block; padding: 0 6mm 4mm 0; border: 0; border-right: 0.3mm solid #d5dfdb; }
+  .express .xp-hire { grid-area: hire; margin: 0; padding: 0 6mm 0 0; border-right: 0.3mm solid #d5dfdb; }
+  .express .xp-hire ul { font-size: 9.4pt; }
+  .express.has-coords .xp-coords { display: grid; gap: 2.8mm; }
+  .express .cc-value { display: block; padding: 0; border: 0; background: none; font: 600 8.1pt var(--mono); color: #1f2826; white-space: nowrap; }
   .express .cc-value::after { content: none !important; }
-  .express .led { display: none; }
+  .express .cc-value::before,
+  .express .xp-site::before { display: block; margin-bottom: 0.3mm; font: 700 6.6pt var(--mono); letter-spacing: 0.1em; text-transform: uppercase; color: #17594a; }
+  .express [data-xp-copy="email"]::before { content: "E-mail"; }
+  .express [data-xp-copy="phone"]::before { content: "Téléphone"; }
+  .express .xp-site { margin: 2.8mm 0 0; font: 600 8.6pt var(--mono); color: #1f2826; }
+  .express .xp-site::before { content: "Portfolio"; }
+  .express .xp-print-only { margin: 0; font-size: 8.6pt; color: #55625e; }
+  .express .xp-qr { display: grid; gap: 2mm; justify-items: start; margin: 4mm 0 0; }
+  .express .xp-qr svg { display: block; width: 26mm; height: 26mm; }
+  .express .xp-qr figcaption { font-size: 7.8pt; line-height: 1.35; color: #55625e; }
+
+  /* pied de page */
+  .express .xp-foot { grid-area: foot; margin: 5mm 0 0; padding-top: 2.4mm; border-top: 0.3mm solid #d5dfdb; font: 500 7.4pt var(--mono); letter-spacing: 0.04em; text-align: center; color: #6b7774; }
 }
 
 @media (max-width: 1080px) {
