@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-06T20:32:24.264Z",
+  "updatedAt": "2026-10-07T09:35:28.449Z",
   "sources": [
     {
       "id": "ifixit",
@@ -46,6 +46,38 @@
   ],
   "items": [
     {
+      "id": "d64263d87edb",
+      "source": "hackaday",
+      "title": "The Commodore 64 Keyboard Font, For Everyone",
+      "url": "https://hackaday.com/2026/10/07/the-commodore-64-keyboard-font-for-everyone/",
+      "date": "2026-10-07T08:00:50.000Z",
+      "excerpt": "There are some classic fonts which appeared in one place and became almost iconic, yet never made it into the digital age. The font on the Commodore 64 keyboard for …read more"
+    },
+    {
+      "id": "13d0988c45de",
+      "source": "hackaday",
+      "title": "Don’t Worry, This R/C Airship is Supposed To Be On Fire",
+      "url": "https://hackaday.com/2026/10/06/dont-worry-this-r-c-airship-is-supposed-to-be-on-fire/",
+      "date": "2026-10-07T05:00:19.000Z",
+      "excerpt": "We’ve had a lot of flying hacks here over the years, and that includes just about any way to get airborne you can think of — but very few of …read more"
+    },
+    {
+      "id": "d1dcde801b2b",
+      "source": "hackaday",
+      "title": "Upgrading An iPhone Lens To The Max",
+      "url": "https://hackaday.com/2026/10/06/upgrading-an-iphone-lens-to-the-max/",
+      "date": "2026-10-07T02:00:37.000Z",
+      "excerpt": "The camera in a typical mobile phone is now at a standard at which it can be considered a serious device rather than a toy, such has been the effort …read more"
+    },
+    {
+      "id": "34e60580282b",
+      "source": "hackaday",
+      "title": "DIY Algae Biodiesel is Harder Than You Think",
+      "url": "https://hackaday.com/2026/10/06/diy-algae-biodiesel-is-harder-than-you-think/",
+      "date": "2026-10-06T23:00:22.000Z",
+      "excerpt": "There’s one thing [Silent H] wants you to know before you watch his video about making biodiesel, embedded below: he started this project before he’d even heard of the Strait …read more"
+    },
+    {
       "id": "c2e9a9eda28a",
       "source": "hackaday",
       "title": "SmallTV Hacking With Surprisingly Little Fuss",
@@ -70,44 +102,12 @@
       "excerpt": "Digital Illustration of Planet Neptune \" data-large-file=\" /> One of the problems with planetary science is that you generally cannot easily investigate the exact conditions in their interior, so you’re left to extrapolate what is…"
     },
     {
-      "id": "1356153ca7ed",
-      "source": "hackaday",
-      "title": "A Headset Fit For A Hackaday Writer",
-      "url": "https://hackaday.com/2026/10/06/a-headset-fit-for-a-hackaday-writer/",
-      "date": "2026-10-06T17:00:15.000Z",
-      "excerpt": "I started writing this from a commuter train passing at speed through the outskirts of London, and my headset had just broken. The flexible joint that attaches one earpiece to …read more"
-    },
-    {
-      "id": "5dbc44b733d8",
-      "source": "hackaday",
-      "title": "The EDG C++ Compiler Frontend has been Open Sourced",
-      "url": "https://hackaday.com/2026/10/06/the-edg-c-compiler-frontend-has-been-open-sourced/",
-      "date": "2026-10-06T15:30:03.000Z",
-      "excerpt": "Recently [John Spicer] of the EDG C++ compiler front-end project announced that the project will be made open source, from now on managed by the non-profit C++ Alliance. Related source …read more"
-    },
-    {
-      "id": "a510996c6c4c",
-      "source": "hackaday",
-      "title": "Using LineageOS for Phones and DIY Smart TVs is Pretty Nifty",
-      "url": "https://hackaday.com/2026/10/06/using-lineageos-for-phones-and-diy-smart-tvs-is-pretty-nifty/",
-      "date": "2026-10-06T14:00:21.000Z",
-      "excerpt": "Although Android is essentially just another Linux distribution, most people only experience it in the form of the rather restrictive and proprietary versions found on smartphones, tablets and smart TVs. …read more"
-    },
-    {
       "id": "37e638652ca9",
       "source": "hop",
       "title": "40 mesures pour l’environnement et les consommateur·ices en vue de 2027",
       "url": "https://www.halteobsolescence.org/livre-blanc-obsolescence-presidentielle-2027/",
       "date": "2026-10-06T12:55:01.000Z",
       "excerpt": "L’association HOP - Halte à l’Obsolescence Programmée publie un nouveau livre blanc à l’approche des élections présidentielles de 2027. Son but : proposer aux décideurs politiques 40 mesures au service de l’environnement et des…"
-    },
-    {
-      "id": "586b3aa6fde1",
-      "source": "hackaday",
-      "title": "USB-C PD Tamed with this Analyzer",
-      "url": "https://hackaday.com/2026/10/06/usb-c-pd-tamed-with-this-analyzer/",
-      "date": "2026-10-06T11:00:31.000Z",
-      "excerpt": "USB-C Power Delivery (PD) has been a boon to anyone working with low-voltage DC power, because at a stroke it replaces a vast array of wall warts, power supplies, and …read more"
     },
     {
       "id": "b0eeb09536f2",
