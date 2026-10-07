@@ -3478,7 +3478,9 @@ dialog.rework { width: min(1000px, calc(100vw - 24px)); max-height: calc(100dvh 
    les cartouches : titres verts, puces et filets cuivre, QR code vers le portfolio.
    ========================================================================== */
 @media print {
-  @page { size: A4; margin: 11mm 12mm; }
+  /* marges portées par la mise en page (pas par @page) : correctes même avec des marges d'impression « Aucune » ;
+     sans marge @page, le navigateur n'ajoute pas non plus sa date ni son adresse en haut et en bas */
+  @page { size: A4; margin: 0; }
   html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   html, body { background: #ffffff !important; }
   body { margin: 0; padding: 0 !important; }
@@ -3513,18 +3515,18 @@ dialog.rework { width: min(1000px, calc(100vw - 24px)); max-height: calc(100dvh 
   /* en-tête sur toute la largeur, puis colonne latérale (contact, QR, recrutement) et colonne principale */
   .xp-sheet {
     display: grid;
-    grid-template-columns: 54mm minmax(0, 1fr);
+    grid-template-columns: 52mm minmax(0, 1fr);
     grid-template-areas:
       "head head"
       "side avail"
       "side bref"
       "side comp"
-      "hire exp"
-      "hire form"
-      "hire quote"
+      "form exp"
+      "form hire"
+      "form quote"
       "foot foot";
-    column-gap: 8mm;
-    padding: 0;
+    column-gap: 9mm;
+    padding: 14mm 15mm 11mm;
   }
   .xp-grid { display: contents; }
   .xp-grid > :nth-child(1) { grid-area: bref; }
@@ -3532,10 +3534,11 @@ dialog.rework { width: min(1000px, calc(100vw - 24px)); max-height: calc(100dvh 
   .xp-grid > :nth-child(3) { grid-area: exp; }
   .xp-grid > :nth-child(4) { grid-area: form; }
   .xp-grid > .xp-block,
-  .express .xp-avail { margin: 0 0 5mm; }
+  .express .xp-hire,
+  .express .xp-avail { margin: 0 0 6mm; }
 
   /* en-tête : puce « AT » au trait, nom, métier, infos pratiques, filet cuivre */
-  .express .xp-head { grid-area: head; display: flex; align-items: center; justify-content: flex-start; gap: 5.5mm; margin: 0 0 5.5mm; padding: 0 0 4.5mm; border-bottom: 0.6mm solid #e0821f; }
+  .express .xp-head { grid-area: head; display: flex; align-items: center; justify-content: flex-start; gap: 5.5mm; margin: 0 0 7mm; padding: 0 0 5mm; border-bottom: 0.6mm solid #e0821f; }
   .express .xp-head::before {
     content: "AT";
     flex: none;
@@ -3564,13 +3567,13 @@ dialog.rework { width: min(1000px, calc(100vw - 24px)); max-height: calc(100dvh 
   .express h3.xp-print { display: flex; }
 
   /* listes : petites puces carrées cuivre */
-  .express .xp-block ul { display: grid; gap: 1.4mm; margin: 0; padding: 0; list-style: none; font-size: 10pt; }
+  .express .xp-block ul { display: grid; gap: 1.8mm; margin: 0; padding: 0; list-style: none; font-size: 10pt; }
   .express .xp-block li { position: relative; padding-left: 3.6mm; }
   .express .xp-block li::before { content: ""; position: absolute; left: 0.3mm; top: 0.6em; width: 1.3mm; height: 1.3mm; border-radius: 0.3mm; background: #e0821f; }
   .express .xp-block li b { color: #121b18; }
 
   /* expériences et formations : frise (fil gris, ronds verts au trait) */
-  .express .xp-block .xp-dated { gap: 1.6mm; margin-left: 0.8mm; border-left: 0.3mm solid #cfdcd6; }
+  .express .xp-block .xp-dated { gap: 2mm; margin-left: 0.8mm; border-left: 0.3mm solid #cfdcd6; }
   .express .xp-dated li { display: grid; grid-template-columns: 22mm minmax(0, 1fr); padding-left: 3.4mm; }
   .express .xp-dated li::before { left: -1.15mm; top: 0.5em; width: 1.4mm; height: 1.4mm; border: 0.35mm solid #17594a; border-radius: 50%; background: #ffffff; }
   .express .xp-dated span { min-width: 0; font: 700 8.6pt var(--mono); color: #17594a; }
@@ -3581,9 +3584,13 @@ dialog.rework { width: min(1000px, calc(100vw - 24px)); max-height: calc(100dvh 
   .express .xp-quote footer { margin-top: 1.4mm; font: 500 8.2pt var(--mono); color: #55625e; }
 
   /* colonne latérale : séparée par un filet, sans aplat de couleur */
-  .express .xp-contact { grid-area: side; display: block; padding: 0 6mm 4mm 0; border: 0; border-right: 0.3mm solid #d5dfdb; }
-  .express .xp-hire { grid-area: hire; margin: 0; padding: 0 6mm 0 0; border-right: 0.3mm solid #d5dfdb; }
-  .express .xp-hire ul { font-size: 9.4pt; }
+  .express .xp-contact { grid-area: side; display: block; padding: 0 6mm 6mm 0; border: 0; border-right: 0.3mm solid #d5dfdb; }
+  .express .xp-hire { grid-area: hire; }
+  .xp-grid > .xp-block:nth-child(4) { margin: 0; padding: 2mm 6mm 0 0; border-right: 0.3mm solid #d5dfdb; }
+  /* formations en colonne étroite : la date au-dessus de l'intitulé */
+  .xp-grid > .xp-block:nth-child(4) .xp-dated { gap: 3mm; }
+  .xp-grid > .xp-block:nth-child(4) .xp-dated li { display: block; font-size: 9pt; line-height: 1.4; }
+  .xp-grid > .xp-block:nth-child(4) .xp-dated span { display: block; margin-bottom: 0.4mm; }
   .express.has-coords .xp-coords { display: grid; gap: 2.8mm; }
   .express .cc-value { display: block; padding: 0; border: 0; background: none; font: 600 8.1pt var(--mono); color: #1f2826; white-space: nowrap; }
   .express .cc-value::after { content: none !important; }
@@ -3599,7 +3606,7 @@ dialog.rework { width: min(1000px, calc(100vw - 24px)); max-height: calc(100dvh 
   .express .xp-qr figcaption { font-size: 7.8pt; line-height: 1.35; color: #55625e; }
 
   /* pied de page */
-  .express .xp-foot { grid-area: foot; margin: 4mm 0 0; padding-top: 2.4mm; border-top: 0.3mm solid #d5dfdb; font: 500 7.4pt var(--mono); letter-spacing: 0.04em; text-align: center; color: #6b7774; }
+  .express .xp-foot { grid-area: foot; margin: 3mm 0 0; padding-top: 2.4mm; border-top: 0.3mm solid #d5dfdb; font: 500 7.4pt var(--mono); letter-spacing: 0.04em; text-align: center; color: #6b7774; }
 }
 
 @media (max-width: 1080px) {
