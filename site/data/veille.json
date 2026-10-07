@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-07T09:35:28.449Z",
+  "updatedAt": "2026-10-07T11:45:43.345Z",
   "sources": [
     {
       "id": "ifixit",
@@ -45,6 +45,14 @@
     }
   ],
   "items": [
+    {
+      "id": "0a2335f9102a",
+      "source": "hackaday",
+      "title": "Don’t Try this At Home, Transcranial Magnetic Stimulation Edition",
+      "url": "https://hackaday.com/2026/10/07/dont-try-this-at-home-transcranial-magnetic-stimulation-edition/",
+      "date": "2026-10-07T11:00:24.000Z",
+      "excerpt": "Transcranial magnetic stimulation is one of those things that seems too wacky to be true. Depression not responding to treatment? Let’s smack you upside the head with strong magnetic fields! …read more"
+    },
     {
       "id": "d64263d87edb",
       "source": "hackaday",
@@ -92,14 +100,6 @@
       "url": "https://www.ifixit.com/News/119658/apple-watch-series-12-and-ultra-4-teardown-reveals-a-gap-in-right-to-repair-coverage",
       "date": "2026-10-06T19:31:33.000Z",
       "excerpt": "We just tore down the two latest Apple Watches. And Apple, we need to have a talk. Let’s cut to the chase: there’s no big repairability news here. The Series…"
-    },
-    {
-      "id": "fb79e62afe35",
-      "source": "hackaday",
-      "title": "Scientists Create Hexagonal Packed Ice at Extreme Pressures",
-      "url": "https://hackaday.com/2026/10/06/scientists-create-hexagonal-packed-ice-at-extreme-pressures/",
-      "date": "2026-10-06T18:30:11.000Z",
-      "excerpt": "Digital Illustration of Planet Neptune \" data-large-file=\" /> One of the problems with planetary science is that you generally cannot easily investigate the exact conditions in their interior, so you’re left to extrapolate what is…"
     },
     {
       "id": "37e638652ca9",
