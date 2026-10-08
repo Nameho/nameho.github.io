@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-07T11:45:43.345Z",
+  "updatedAt": "2026-10-08T12:00:22.251Z",
   "sources": [
     {
       "id": "ifixit",
@@ -46,52 +46,60 @@
   ],
   "items": [
     {
-      "id": "0a2335f9102a",
+      "id": "e3692731bfb3",
       "source": "hackaday",
-      "title": "Don’t Try this At Home, Transcranial Magnetic Stimulation Edition",
-      "url": "https://hackaday.com/2026/10/07/dont-try-this-at-home-transcranial-magnetic-stimulation-edition/",
-      "date": "2026-10-07T11:00:24.000Z",
-      "excerpt": "Transcranial magnetic stimulation is one of those things that seems too wacky to be true. Depression not responding to treatment? Let’s smack you upside the head with strong magnetic fields! …read more"
+      "title": "2026 Retrocomputing Challenge: Retro Terminal Bartop Arcade Topper",
+      "url": "https://hackaday.com/2026/10/08/2026-retrocomputing-challenge-retro-terminal-bartop-arcade-topper/",
+      "date": "2026-10-08T08:00:41.000Z",
+      "excerpt": "Retrocomputing is more than just hardware. It’s also a feel, a vibe, and [valkyrie0528]’s Retro Terminal Bartop Arcade Topper has it in spades. Here’s how it happened. The gorgeous device …read more"
     },
     {
-      "id": "d64263d87edb",
+      "id": "804835409667",
       "source": "hackaday",
-      "title": "The Commodore 64 Keyboard Font, For Everyone",
-      "url": "https://hackaday.com/2026/10/07/the-commodore-64-keyboard-font-for-everyone/",
-      "date": "2026-10-07T08:00:50.000Z",
-      "excerpt": "There are some classic fonts which appeared in one place and became almost iconic, yet never made it into the digital age. The font on the Commodore 64 keyboard for …read more"
+      "title": "Solve Your TTL Video Woes With An RP2350",
+      "url": "https://hackaday.com/2026/10/07/solve-your-ttl-video-woes-with-an-rp2350/",
+      "date": "2026-10-08T05:00:42.000Z",
+      "excerpt": "Before HDMI and DVI there was VGA, and before that? TTL RGB, in which instead of analogue voltages, the connector carried TTL logic voltages. TTL monitors used to be ten …read more"
     },
     {
-      "id": "13d0988c45de",
+      "id": "b13178e6c8ca",
       "source": "hackaday",
-      "title": "Don’t Worry, This R/C Airship is Supposed To Be On Fire",
-      "url": "https://hackaday.com/2026/10/06/dont-worry-this-r-c-airship-is-supposed-to-be-on-fire/",
-      "date": "2026-10-07T05:00:19.000Z",
-      "excerpt": "We’ve had a lot of flying hacks here over the years, and that includes just about any way to get airborne you can think of — but very few of …read more"
+      "title": "Keep That Old Radio Alive With An ESP32",
+      "url": "https://hackaday.com/2026/10/07/keep-that-old-radio-alive-with-an-esp32/",
+      "date": "2026-10-08T02:00:32.000Z",
+      "excerpt": "As the legacy AM broadcast bands fade away, what happens to the millions of devices built to receive them? Many of them will go into e-waste, but with a century …read more"
     },
     {
-      "id": "d1dcde801b2b",
+      "id": "62a6655a4a36",
       "source": "hackaday",
-      "title": "Upgrading An iPhone Lens To The Max",
-      "url": "https://hackaday.com/2026/10/06/upgrading-an-iphone-lens-to-the-max/",
-      "date": "2026-10-07T02:00:37.000Z",
-      "excerpt": "The camera in a typical mobile phone is now at a standard at which it can be considered a serious device rather than a toy, such has been the effort …read more"
+      "title": "Streaming Games Means the Nintendo DSi Will Never Be Obsolete",
+      "url": "https://hackaday.com/2026/10/07/streaming-games-means-the-nintendo-dsi-will-never-be-obsolete/",
+      "date": "2026-10-07T23:00:21.000Z",
+      "excerpt": "There comes a point where you have to acknowledge that your beloved console is out of date and– barring the odd homebrew title– won’t be playing new games ever again. …read more"
     },
     {
-      "id": "34e60580282b",
+      "id": "6175a4a556eb",
       "source": "hackaday",
-      "title": "DIY Algae Biodiesel is Harder Than You Think",
-      "url": "https://hackaday.com/2026/10/06/diy-algae-biodiesel-is-harder-than-you-think/",
-      "date": "2026-10-06T23:00:22.000Z",
-      "excerpt": "There’s one thing [Silent H] wants you to know before you watch his video about making biodiesel, embedded below: he started this project before he’d even heard of the Strait …read more"
+      "title": "Handheld Atari 2600 Packs a CRT",
+      "url": "https://hackaday.com/2026/10/07/handheld-atari-2600-packs-a-crt/",
+      "date": "2026-10-07T20:00:21.000Z",
+      "excerpt": "We covered [Nick Bild]’s mini Atari console using original devices not so long ago, and today he’s back with the same console wrapped up with a CRT as a handheld. …read more"
     },
     {
-      "id": "c2e9a9eda28a",
+      "id": "63f7cfdd21fb",
       "source": "hackaday",
-      "title": "SmallTV Hacking With Surprisingly Little Fuss",
-      "url": "https://hackaday.com/2026/10/06/smalltv-hacking-with-surprisingly-little-fuss/",
-      "date": "2026-10-06T20:00:47.000Z",
-      "excerpt": "We’ve seen the GeekMagic SmallTV line of devices before — these cheap gadgets combine a microcontroller and a display in a little plastic case that can be used to show …read more"
+      "title": "Repairing a Couple of Very Expensive Registered DDR5 RAM Sticks",
+      "url": "https://hackaday.com/2026/10/07/repairing-a-couple-of-very-expensive-registered-ddr5-ram-sticks/",
+      "date": "2026-10-07T18:30:36.000Z",
+      "excerpt": "It’s definitely a sign of the times when repair shops get handed sticks of registered ECC DDR5 RAM by businesses to try and fix, rather than just tossing the defective …read more"
+    },
+    {
+      "id": "3bdc8ebfa864",
+      "source": "learnrepair",
+      "title": "Vertical Smoke Machine Radio Remote Control Repair",
+      "url": "https://www.youtube.com/watch?v=bIJ42Va9IPo",
+      "date": "2026-10-07T12:50:19.000Z",
+      "excerpt": "I have a couple of RF remotes from Disco/Stage Smoke machines. One works and one doesn't. Cam I get them both working quickly and save the show tomorrow night? Discount Codes 👉Click on the link enter the search code [AYDBN7] on the…"
     },
     {
       "id": "c54cd4402720",
@@ -164,14 +172,6 @@
       "url": "https://www.halteobsolescence.org/80-des-smartphones-vendus-en-europe-ne-respectent-pas-ce-critere-obligatoire/",
       "date": "2026-09-29T14:48:46.000Z",
       "excerpt": "Début septembre, nos collègues européens de la campagne Right to Repair ont publié une enquête sur la mise en place de l'indice de réparabilité des téléphones et l'obligation d'afficher les informations de réparation. HOP vous la…"
-    },
-    {
-      "id": "d646e50d222c",
-      "source": "learnrepair",
-      "title": "Cheap DIY Operational Transconductance Amplifier OTA Tester : Now A Shared Project On PCBway",
-      "url": "https://www.youtube.com/watch?v=CrTq0XjvPdc",
-      "date": "2026-09-29T08:47:58.000Z",
-      "excerpt": "I have the prototype PCBs for the OTA Tester. Let's see if they work as expected... For All Your PCB needs: free $5 discount coupon Links: OTA Tester Shared Project OTA Tester prototype Schematic for this project (play along) Discount…"
     },
     {
       "id": "1323b59ec2ef",
