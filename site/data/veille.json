@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-08T12:00:22.251Z",
+  "updatedAt": "2026-10-09T11:52:34.854Z",
   "sources": [
     {
       "id": "ifixit",
@@ -46,52 +46,76 @@
   ],
   "items": [
     {
-      "id": "e3692731bfb3",
-      "source": "hackaday",
-      "title": "2026 Retrocomputing Challenge: Retro Terminal Bartop Arcade Topper",
-      "url": "https://hackaday.com/2026/10/08/2026-retrocomputing-challenge-retro-terminal-bartop-arcade-topper/",
-      "date": "2026-10-08T08:00:41.000Z",
-      "excerpt": "Retrocomputing is more than just hardware. It’s also a feel, a vibe, and [valkyrie0528]’s Retro Terminal Bartop Arcade Topper has it in spades. Here’s how it happened. The gorgeous device …read more"
+      "id": "148e859fdd0e",
+      "source": "learnrepair",
+      "title": "What do All The Strange Patterns On Curve Tracer Mean? Understand Huntron Tracker / Octopus Curves",
+      "url": "https://www.youtube.com/watch?v=_OWa5hT-qYY",
+      "date": "2026-10-09T11:33:00.000Z",
+      "excerpt": "Many of us use a Curve Tracer as a comparison tool between two PCBs to help us find faults. To do this we are looking for differences between a good and bad PCB. But what do all those funny curves actually mean? In this video I look at…"
     },
     {
-      "id": "804835409667",
+      "id": "a38e6cacca3c",
       "source": "hackaday",
-      "title": "Solve Your TTL Video Woes With An RP2350",
-      "url": "https://hackaday.com/2026/10/07/solve-your-ttl-video-woes-with-an-rp2350/",
-      "date": "2026-10-08T05:00:42.000Z",
-      "excerpt": "Before HDMI and DVI there was VGA, and before that? TTL RGB, in which instead of analogue voltages, the connector carried TTL logic voltages. TTL monitors used to be ten …read more"
+      "title": "Margret Hamilton, Pioneering Software Engineer, Dies Aged 90",
+      "url": "https://hackaday.com/2026/10/09/margret-hamilton-pioneering-software-engineer-dies-aged-90/",
+      "date": "2026-10-09T11:00:01.000Z",
+      "excerpt": "As Director of the Software Engineering Division at the MIT Instrumentation Laboratory, Margret Hamilton was responsible for the software for the Apollo program. The code she was responsible for ran …read more"
     },
     {
-      "id": "b13178e6c8ca",
+      "id": "e069a8820f2a",
       "source": "hackaday",
-      "title": "Keep That Old Radio Alive With An ESP32",
-      "url": "https://hackaday.com/2026/10/07/keep-that-old-radio-alive-with-an-esp32/",
-      "date": "2026-10-08T02:00:32.000Z",
-      "excerpt": "As the legacy AM broadcast bands fade away, what happens to the millions of devices built to receive them? Many of them will go into e-waste, but with a century …read more"
+      "title": "Belt File from Old Mixer and Junk Bin Parts",
+      "url": "https://hackaday.com/2026/10/09/belt-file-from-old-mixer-and-junk-bin-parts/",
+      "date": "2026-10-09T08:00:37.000Z",
+      "excerpt": "Making one’s own power tools can be a rewarding way to upcycle parts, and [bluesyann] does exactly that with a belt file made from an old mixer. We like how …read more"
     },
     {
-      "id": "62a6655a4a36",
+      "id": "7777fbf5d7fd",
       "source": "hackaday",
-      "title": "Streaming Games Means the Nintendo DSi Will Never Be Obsolete",
-      "url": "https://hackaday.com/2026/10/07/streaming-games-means-the-nintendo-dsi-will-never-be-obsolete/",
-      "date": "2026-10-07T23:00:21.000Z",
-      "excerpt": "There comes a point where you have to acknowledge that your beloved console is out of date and– barring the odd homebrew title– won’t be playing new games ever again. …read more"
+      "title": "Low Current Density Nickel Plating",
+      "url": "https://hackaday.com/2026/10/08/low-current-density-nickel-plating/",
+      "date": "2026-10-09T05:00:06.000Z",
+      "excerpt": "We imagine that electroplating is like making PC boards or soldering surface-mount chips. Before you’ve done it, it seems like a lot. Afterward, you can’t remember why it was such …read more"
     },
     {
-      "id": "6175a4a556eb",
+      "id": "0656d08b5754",
       "source": "hackaday",
-      "title": "Handheld Atari 2600 Packs a CRT",
-      "url": "https://hackaday.com/2026/10/07/handheld-atari-2600-packs-a-crt/",
-      "date": "2026-10-07T20:00:21.000Z",
-      "excerpt": "We covered [Nick Bild]’s mini Atari console using original devices not so long ago, and today he’s back with the same console wrapped up with a CRT as a handheld. …read more"
+      "title": "Introducing the Garlic-Powered Door and Window Sensor",
+      "url": "https://hackaday.com/2026/10/08/introducing-the-garlic-powered-door-and-window-sensor/",
+      "date": "2026-10-09T02:00:05.000Z",
+      "excerpt": "Most home security sensors require a chemical battery or external power source to operate, which can be a point of weakness. If the battery in a window or door sensor …read more"
     },
     {
-      "id": "63f7cfdd21fb",
+      "id": "972cfbfcc090",
       "source": "hackaday",
-      "title": "Repairing a Couple of Very Expensive Registered DDR5 RAM Sticks",
-      "url": "https://hackaday.com/2026/10/07/repairing-a-couple-of-very-expensive-registered-ddr5-ram-sticks/",
-      "date": "2026-10-07T18:30:36.000Z",
-      "excerpt": "It’s definitely a sign of the times when repair shops get handed sticks of registered ECC DDR5 RAM by businesses to try and fix, rather than just tossing the defective …read more"
+      "title": "Turning a Run-Over Samsung Galaxy S23 into a Gaming PC",
+      "url": "https://hackaday.com/2026/10/08/turning-a-run-over-samsung-galaxy-s23-into-a-gaming-pc/",
+      "date": "2026-10-08T23:00:44.000Z",
+      "excerpt": "Repurposing old smartphones for more general purpose computing isn’t a new thing, but the project by [LastComputer] ups the ante by going from a Samsung Galaxy S23 that looks like …read more"
+    },
+    {
+      "id": "79ba1ef35987",
+      "source": "hackaday",
+      "title": "The 80s Called: They Say This DIY Phone Is, Like, Totally Rad",
+      "url": "https://hackaday.com/2026/10/08/the-80s-called-they-say-this-diy-phone-is-like-totally-rad/",
+      "date": "2026-10-08T20:00:31.000Z",
+      "excerpt": "Like more than a few of us , [Kevin Noki] is sick of being pulled out of flow state by that annoyingly addictive black rectangle we all carry around. His …read more"
+    },
+    {
+      "id": "ee3e1608bf26",
+      "source": "hop",
+      "title": "HOP appelle à tirer des leçons de l’arrêt de la 2G-3G",
+      "url": "https://www.halteobsolescence.org/lecons-arret-2g-3g/",
+      "date": "2026-10-08T17:01:38.000Z",
+      "excerpt": "L’arrêt des réseaux de télécommunication de 2G-3G a des conséquences sociales, économiques et environnementales calamiteuses. Ce cas doit faire précédent. HOP formule des propositions concrètes pour un encadrement effectif par les…"
+    },
+    {
+      "id": "e5f3a331b255",
+      "source": "hop",
+      "title": "Le Sénat se penche sur l’empreinte environnementale de l’intelligence artificielle",
+      "url": "https://www.halteobsolescence.org/empreinte-environnementale-ia-senat/",
+      "date": "2026-10-08T12:29:23.000Z",
+      "excerpt": "Le 16 septembre 2026, la commission de l'aménagement du territoire et du développement durable du sénat a adopté le rapport d'information sur l’empreinte environnementale de l'intelligence artificielle, auquel HOP avait participé par le…"
     },
     {
       "id": "3bdc8ebfa864",
@@ -99,7 +123,7 @@
       "title": "Vertical Smoke Machine Radio Remote Control Repair",
       "url": "https://www.youtube.com/watch?v=bIJ42Va9IPo",
       "date": "2026-10-07T12:50:19.000Z",
-      "excerpt": "I have a couple of RF remotes from Disco/Stage Smoke machines. One works and one doesn't. Cam I get them both working quickly and save the show tomorrow night? Discount Codes 👉Click on the link enter the search code [AYDBN7] on the…"
+      "excerpt": "I have a couple of RF remotes from Disco/Stage Smoke machines. One works and one doesn't. Can I get them both working quickly and save the show tomorrow night? Discount Codes 👉Click the link or enter the search code [AYK1F1]on the…"
     },
     {
       "id": "c54cd4402720",
@@ -123,7 +147,7 @@
       "title": "Crest CA12 Amplifier Stuck In Protect. Let's Fix It",
       "url": "https://www.youtube.com/watch?v=Ea8d_1gVyP4",
       "date": "2026-10-05T09:40:09.000Z",
-      "excerpt": "I have a Crest CA12 Amplifier with a Protect Fault on one channel. This is final part of this repair, the first two parts are linked below Part One Here Part Two Here Discount Codes 👉Click on the link enter the search code [AYDBN7] on…"
+      "excerpt": "I have a Crest CA12 Amplifier with a Protect Fault on one channel. This is final part of this repair, the first two parts are linked below Part One Here Part Two Here Discount Codes 👉Click the link or enter the search code [AYK1F1]on the…"
     },
     {
       "id": "4855dfeec236",
@@ -148,14 +172,6 @@
       "url": "https://www.youtube.com/watch?v=kgl9VEGOjDE",
       "date": "2026-10-02T10:47:31.000Z",
       "excerpt": "I have a Crest CA12 Amplifier with a Protect Fault on one channel. Let's find the fault. This amplifier had multiple faults, I split the video into three parts wile fixing each problem. Yes, the Amplifier does work at the end of the third…"
-    },
-    {
-      "id": "28804f0bcf0b",
-      "source": "learnrepair",
-      "title": "I Salvaged Components From 1970s, 1990s & 2000s PCBs. Which Was The Best?",
-      "url": "https://www.youtube.com/watch?v=aBfo4kOVnpY",
-      "date": "2026-09-30T11:27:03.000Z",
-      "excerpt": "I'm trying to clear some space in my workshop and salvaged a load of components from boards dating back from the 1970s to he 2000s. Which gave me the most interesting or most useful haul? Discount Codes 👉Click on the link enter the…"
     },
     {
       "id": "0b2027fe02f6",
@@ -190,14 +206,6 @@
       "excerpt": "Finally, finally, the Steam Frame is here! Five years ago, rumors of an internal Valve project codenamed Deckard rocked the VR enthusiast world. Since then, gamers have salivated over the…"
     },
     {
-      "id": "2a997835deb1",
-      "source": "hop",
-      "title": "L’Europe s’attaque au greenwashing et à l’obsolescence “précoce”",
-      "url": "https://www.halteobsolescence.org/directive-ue-greenwashing-obsolescence/",
-      "date": "2026-09-22T14:01:57.000Z",
-      "excerpt": "À partir du 27 septembre 2026, les États membres de l’Union européenne doivent appliquer la Directive 2024/825, visant à mieux informer les consommateur·ices, et à les protéger davantage contre les pratiques commerciales déloyales…"
-    },
-    {
       "id": "dc8e1c062d50",
       "source": "framboise314",
       "title": "Test des lunettes EnChroma : gadget marketing ou réelle aide optique pour makers daltoniens ?",
@@ -220,14 +228,6 @@
       "url": "https://www.ifixit.com/News/119329/inside-the-tiny-unfixable-eye-iphone-18-pro-and-pro-max-teardown",
       "date": "2026-09-20T22:00:57.000Z",
       "excerpt": "The iPhone 18 Pro’s little mechanical pupil is irresistible. A bunch of moving parts make for a good excuse to put our brand new camera under the microscope. We weren’t…"
-    },
-    {
-      "id": "b8cd6d4a850a",
-      "source": "hop",
-      "title": "Devenez ambassadeur·ice des Journées Nationales de la Réparation 2026",
-      "url": "https://www.halteobsolescence.org/ambassadeur-reparation-jnr/",
-      "date": "2026-09-18T10:39:25.000Z",
-      "excerpt": "Envie de vous impliquez dans les Journées nationales de la réparation et en devenir ambassadeur ou ambassadrice pour les faire connaître ? On vous explique comment. L’article Devenez ambassadeur·ice des Journées Nationales de la…"
     },
     {
       "id": "7882aa4cb152",
