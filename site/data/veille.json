@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-10T11:09:26.326Z",
+  "updatedAt": "2026-10-11T11:22:55.561Z",
   "sources": [
     {
       "id": "ifixit",
@@ -46,52 +46,68 @@
   ],
   "items": [
     {
-      "id": "206c5bbf666e",
+      "id": "54c8c0c9f0d4",
       "source": "hackaday",
-      "title": "Why Every Microwave Has a “Popcorn” Button, But Every Bag Warns You Not to Use It",
-      "url": "https://hackaday.com/2026/10/10/why-every-microwave-has-a-popcorn-button-but-every-bag-warns-you-not-to-use-it/",
-      "date": "2026-10-10T11:00:35.000Z",
-      "excerpt": "[Hyperfixed] has a podcast episode that does a deep dive into exactly why bags of microwave popcorn advise against using your microwave’s popcorn setting (in North America, anyway.) The answer …read more"
+      "title": "Improving an Autorouter with a Hexagonal Grid",
+      "url": "https://hackaday.com/2026/10/11/improving-an-autorouter-with-a-hexagonal-grid/",
+      "date": "2026-10-11T11:00:24.000Z",
+      "excerpt": "Despite the recent leaps forward in other forms of computer-driven design, the reliability of PCB autorouters remains questionable; on the positive side, though, the lack of massive training data makes …read more"
     },
     {
-      "id": "3113db1845f4",
-      "source": "hackaday",
-      "title": "Another IKEA Product Yields an LED Matrix",
-      "url": "https://hackaday.com/2026/10/10/another-ikea-product-yields-an-led-matrix/",
-      "date": "2026-10-10T08:00:36.000Z",
-      "excerpt": "The IKEA Kortlinje is a digital clock that costs around 20 dollars, featuring a hygrometer and thermometer. It’s another cheap appliance, you might think, were it not that the display …read more"
+      "id": "19f9e514d5a6",
+      "source": "learnrepair",
+      "title": "TEC 26-10-11",
+      "url": "https://www.youtube.com/watch?v=m0kVB1P55uU",
+      "date": "2026-10-11T09:04:46.000Z",
+      "excerpt": "LER And Friends - 11th of October 2026. We'll stream bi-weekly on sundays, starting at 17:00 BST."
     },
     {
-      "id": "8f4d96c5642d",
+      "id": "fefccb146759",
       "source": "hackaday",
-      "title": "Super Mario 64 Comes to the Microsoft Zune",
-      "url": "https://hackaday.com/2026/10/09/super-mario-64-comes-to-the-microsoft-zune/",
-      "date": "2026-10-10T05:00:39.000Z",
-      "excerpt": "As a portable media player, Microsoft’s Zune simply couldn’t compete with Apple’s juggernaut iPod — the latter essentially becoming the de facto personal media player until smartphones took over. But …read more"
+      "title": "Mars Pathfinder: What Really Happened?",
+      "url": "https://hackaday.com/2026/10/11/mars-pathfinder-what-really-happened/",
+      "date": "2026-10-11T08:00:04.000Z",
+      "excerpt": "You’ve probably heard of Mars Pathfinder, the NASA lander and its Sojourner rover that took up residence on Mars in 1997. At first, all was well, but after a few …read more"
     },
     {
-      "id": "4237b97ae59f",
+      "id": "93b9054b6302",
       "source": "hackaday",
-      "title": "2026 Retrocomputing Challenge: NEC 286 Laptop Rides Again",
-      "url": "https://hackaday.com/2026/10/09/2026-retrocomputing-challenge-nec-286-laptop-rides-again/",
-      "date": "2026-10-10T02:00:45.000Z",
-      "excerpt": "The sad reality is that all consumer electronics are going to be e-waste eventually. [Cory Whitesell] was determined his old NEC ProSpeed 286 Laptop wouldn’t meet that fate until absolutely …read more"
+      "title": "Slim Type for Small Screens, with PixelFonts",
+      "url": "https://hackaday.com/2026/10/10/slim-type-for-small-screens-with-pixelfonts/",
+      "date": "2026-10-11T05:00:55.000Z",
+      "excerpt": "Small displays are affordable and easy to use, but their size can present a challenge. To help address this, [mcer12] created PixelFonts, a family of condensed fonts designed specifically for …read more"
     },
     {
-      "id": "63271135805e",
+      "id": "fc3098f162f6",
       "source": "hackaday",
-      "title": "Embedded 3D Printing with Liquids on a Bricked Prusa FDM Printer",
-      "url": "https://hackaday.com/2026/10/09/embedded-3d-printing-with-liquids-on-a-bricked-prusa-fdm-printer/",
-      "date": "2026-10-09T23:00:03.000Z",
-      "excerpt": "Recently [Riley] got his paws on an old Prusa i3 FDM printer that had clearly seen better days, with a hot-end that had suffered an explosive blow-out. For the project …read more"
+      "title": "Unique Archeological Discovery Sheds Light on Neanderthal Wooden Tool Usage",
+      "url": "https://hackaday.com/2026/10/10/unique-archeological-discovery-sheds-light-on-neanderthal-wooden-tool-usage/",
+      "date": "2026-10-11T02:00:46.000Z",
+      "excerpt": "The Abric Romaní site in Spain is rather unique in archeology for one simple reason: the caves in its limestone-rich cliff have seen humanoid occupation for thousands of years. A …read more"
     },
     {
-      "id": "62a4926a3a64",
+      "id": "ae0af851247e",
       "source": "hackaday",
-      "title": "Two-Component H-shifter for Racing Sims",
-      "url": "https://hackaday.com/2026/10/09/two-component-h-shifter-for-racing-sims/",
-      "date": "2026-10-09T20:00:03.000Z",
-      "excerpt": "Flying and driving simulators can go as far as money will take you, and at some point it might end up being cheaper to buy a plane or race car …read more"
+      "title": "Poking at the Radxa Dragon Q8B Raspberry Pi 5 Killer",
+      "url": "https://hackaday.com/2026/10/10/poking-at-the-radxa-dragon-q8b-raspberry-pi-5-killer/",
+      "date": "2026-10-10T23:00:10.000Z",
+      "excerpt": "Although the asking price of $209 plus shipping seems high for the Radxa Dragon Q8B, featuring the Qualcomm SC8280XP and 8 GB of LPDDR4X, this is 2026, and amid the …read more"
+    },
+    {
+      "id": "17bdfb3f7679",
+      "source": "hackaday",
+      "title": "Valve Releases Hardware and CAD Reference For New VR Headset",
+      "url": "https://hackaday.com/2026/10/10/valve-releases-hardware-and-cad-reference-for-new-vr-headset/",
+      "date": "2026-10-10T20:00:54.000Z",
+      "excerpt": "Valve recently began shipping its long-awaited VR headset, the Steam Frame. Now, there is a hardware reference repository that includes everything a budding modder might need, and then some. Want …read more"
+    },
+    {
+      "id": "90bc4a89f7b6",
+      "source": "electrobidouilleur",
+      "title": "Électro-Bidouilleur \"En Direct\" - Dimanche 11 Octobre 2026 @ 17h UTC",
+      "url": "https://www.youtube.com/watch?v=jnwDWUVpUYg",
+      "date": "2026-10-10T15:18:39.000Z",
+      "excerpt": "Session \"En Direct\" de la chaîne Électro-Bidouilleur du Dimanche 11 Octobre 2026 à 17h00 UTC (19h00 en France, 13h00 au Québec). Mon fils Vincent et moi répondrons à vos questions touchant l'électronique. Les fichiers pertinents aux…"
     },
     {
       "id": "148e859fdd0e",
@@ -164,14 +180,6 @@
       "url": "https://www.youtube.com/watch?v=aipkMyT8_Xs",
       "date": "2026-10-03T09:52:19.000Z",
       "excerpt": "I have a Crest CA12 Amplifier with a Protect Fault on one channel. Let's find the fault. This amplifier had multiple faults, I split the video into three parts wile fixing each problem. This i s part 2. Yes, the Amplifier does work at the…"
-    },
-    {
-      "id": "baeb32d4b46a",
-      "source": "learnrepair",
-      "title": "What Can Happen When You Swap Good Working Boards With Bad Ones To Diagnose A Fault. Crest CA12",
-      "url": "https://www.youtube.com/watch?v=kgl9VEGOjDE",
-      "date": "2026-10-02T10:47:31.000Z",
-      "excerpt": "I have a Crest CA12 Amplifier with a Protect Fault on one channel. Let's find the fault. This amplifier had multiple faults, I split the video into three parts wile fixing each problem. Yes, the Amplifier does work at the end of the third…"
     },
     {
       "id": "0b2027fe02f6",
@@ -284,14 +292,6 @@
       "url": "https://www.framboise314.fr/rtl-sdr-v4-windows-installation-sdrsharp/",
       "date": "2026-08-16T12:42:47.000Z",
       "excerpt": "Le monde des ondes radio vous intrigue ? Avec une simple clé USB comme le RTL-SDR V4, on peut transformer un ordinateur en véritable station de réception. Que ce soit pour écouter la bande FM, capter les avions en vol, ou même visualiser…"
-    },
-    {
-      "id": "08348b681f96",
-      "source": "electrobidouilleur",
-      "title": "EB_#719 Analyse - Testeur de Bracelet Antistatique ARC 200, Astucieux!",
-      "url": "https://www.youtube.com/watch?v=XIH7VT8jgwY",
-      "date": "2026-08-12T15:46:40.000Z",
-      "excerpt": "Vous avez été plusieurs à me demander de faire une vidéo d'analyse de ce petit testeur de bracelet antistatique de marque ARC Associates modèle 200. Comme vous le verrez, il est bien conçu, et un peu plus complexe que ce que l'on pourrait…"
     }
   ]
 }
