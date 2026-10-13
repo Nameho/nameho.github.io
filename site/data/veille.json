@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-11T11:22:55.561Z",
+  "updatedAt": "2026-10-13T12:40:55.013Z",
   "sources": [
     {
       "id": "ifixit",
@@ -46,68 +46,76 @@
   ],
   "items": [
     {
-      "id": "54c8c0c9f0d4",
+      "id": "fa7164c9dada",
       "source": "hackaday",
-      "title": "Improving an Autorouter with a Hexagonal Grid",
-      "url": "https://hackaday.com/2026/10/11/improving-an-autorouter-with-a-hexagonal-grid/",
-      "date": "2026-10-11T11:00:24.000Z",
-      "excerpt": "Despite the recent leaps forward in other forms of computer-driven design, the reliability of PCB autorouters remains questionable; on the positive side, though, the lack of massive training data makes …read more"
+      "title": "A Modern Browser for the PlayStation Portable",
+      "url": "https://hackaday.com/2026/10/13/a-modern-browser-for-the-playstation-portable/",
+      "date": "2026-10-13T11:00:29.000Z",
+      "excerpt": "The Sony PlayStation Portable, better known as the PSP, is now over two decades old. In its day it was an impressive handheld gaming machine, not least because of the …read more"
+    },
+    {
+      "id": "1451b68fc43e",
+      "source": "hackaday",
+      "title": "Open Firmware Fixes Dead Onkyo AV Receivers",
+      "url": "https://hackaday.com/2026/10/13/open-firmware-fixes-dead-onkyo-av-receivers/",
+      "date": "2026-10-13T08:00:27.000Z",
+      "excerpt": "If you’ve been reading Hackaday for any length of time, you’ll know we love seeing hackers replacing the stock firmware on their devices with open source alternatives. Usually this is …read more"
+    },
+    {
+      "id": "a2aeef6c7ace",
+      "source": "hackaday",
+      "title": "Emulating a Floppy Drive By Emulating The Drive Itself",
+      "url": "https://hackaday.com/2026/10/12/emulating-a-floppy-drive-by-emulating-the-drive-itself/",
+      "date": "2026-10-13T05:00:53.000Z",
+      "excerpt": "The Commodore 1541 is famously the floppy drive for the Commodore 64 series of 8-bit computers, and can be found with relative ease. Not so well known is its 1551 …read more"
+    },
+    {
+      "id": "aed0b5ff8c14",
+      "source": "hackaday",
+      "title": "Using Kirigami Techniques to Make Functional Designs",
+      "url": "https://hackaday.com/2026/10/12/using-kirigami-techniques-to-make-functional-designs/",
+      "date": "2026-10-13T02:00:49.000Z",
+      "excerpt": "The variant of origami called kirigami (‘cut paper’ in Japanese) also starts off with a sheet of paper, but it allows for cutting the paper to increase the number of …read more"
+    },
+    {
+      "id": "88a8407ad86f",
+      "source": "hackaday",
+      "title": "WiFi Router Does Software-Defined Radio",
+      "url": "https://hackaday.com/2026/10/12/wifi-router-does-software-defined-radio/",
+      "date": "2026-10-12T23:00:26.000Z",
+      "excerpt": "Perhaps the most famous of software-defined radios is the RTL-SDR, which is very cheap because it’s a digital TV receiver that’s been pressed into service delivering raw I and Q …read more"
+    },
+    {
+      "id": "da46863a7184",
+      "source": "hackaday",
+      "title": "The Prusa Core One+ INDX, a Troubled Multi-Extruder Upgrade?",
+      "url": "https://hackaday.com/2026/10/12/the-prusa-core-one-indx-a-troubled-multi-extruder-upgrade/",
+      "date": "2026-10-12T20:00:52.000Z",
+      "excerpt": "The Prusa Core One+ INDX is an interesting upgrade to the base FDM printer by Prusa, featuring eight independent extruders – hence the INDX – that in theory should allow …read more"
+    },
+    {
+      "id": "6629b109e7ee",
+      "source": "learnrepair",
+      "title": "Aluminium PCB Rework : DJM KON 300 Moving Head LED Strobe Light Repair Did Not Go Totally To Plan!",
+      "url": "https://www.youtube.com/watch?v=H6JlnFKG_wE",
+      "date": "2026-10-12T10:22:12.000Z",
+      "excerpt": "I have to repair a fault on an Aluminium PCB. How can I do this and what equipment should I use? Well clearly not what I tried because this did not go as expected. Discount Codes 👉Click the link or enter the search code [AYK1F1]on the…"
+    },
+    {
+      "id": "90bc4a89f7b6",
+      "source": "electrobidouilleur",
+      "title": "EB_#724 Électro-Bidouilleur \"En Direct\" - Dimanche 11 Octobre 2026 - Rediffusion",
+      "url": "https://www.youtube.com/watch?v=jnwDWUVpUYg",
+      "date": "2026-10-12T07:19:45.000Z",
+      "excerpt": "Rediffusion de la Session \"En Direct\" de la chaîne Électro-Bidouilleur du Dimanche 11 Octobre 2026. Merci à tous les participants! Les fichiers pertinents aux vidéos (code source, schémas, etc.) sont placés ici sous format .ZIP: La chaîne…"
     },
     {
       "id": "19f9e514d5a6",
       "source": "learnrepair",
       "title": "TEC 26-10-11",
       "url": "https://www.youtube.com/watch?v=m0kVB1P55uU",
-      "date": "2026-10-11T09:04:46.000Z",
+      "date": "2026-10-12T05:44:26.000Z",
       "excerpt": "LER And Friends - 11th of October 2026. We'll stream bi-weekly on sundays, starting at 17:00 BST."
-    },
-    {
-      "id": "fefccb146759",
-      "source": "hackaday",
-      "title": "Mars Pathfinder: What Really Happened?",
-      "url": "https://hackaday.com/2026/10/11/mars-pathfinder-what-really-happened/",
-      "date": "2026-10-11T08:00:04.000Z",
-      "excerpt": "You’ve probably heard of Mars Pathfinder, the NASA lander and its Sojourner rover that took up residence on Mars in 1997. At first, all was well, but after a few …read more"
-    },
-    {
-      "id": "93b9054b6302",
-      "source": "hackaday",
-      "title": "Slim Type for Small Screens, with PixelFonts",
-      "url": "https://hackaday.com/2026/10/10/slim-type-for-small-screens-with-pixelfonts/",
-      "date": "2026-10-11T05:00:55.000Z",
-      "excerpt": "Small displays are affordable and easy to use, but their size can present a challenge. To help address this, [mcer12] created PixelFonts, a family of condensed fonts designed specifically for …read more"
-    },
-    {
-      "id": "fc3098f162f6",
-      "source": "hackaday",
-      "title": "Unique Archeological Discovery Sheds Light on Neanderthal Wooden Tool Usage",
-      "url": "https://hackaday.com/2026/10/10/unique-archeological-discovery-sheds-light-on-neanderthal-wooden-tool-usage/",
-      "date": "2026-10-11T02:00:46.000Z",
-      "excerpt": "The Abric Romaní site in Spain is rather unique in archeology for one simple reason: the caves in its limestone-rich cliff have seen humanoid occupation for thousands of years. A …read more"
-    },
-    {
-      "id": "ae0af851247e",
-      "source": "hackaday",
-      "title": "Poking at the Radxa Dragon Q8B Raspberry Pi 5 Killer",
-      "url": "https://hackaday.com/2026/10/10/poking-at-the-radxa-dragon-q8b-raspberry-pi-5-killer/",
-      "date": "2026-10-10T23:00:10.000Z",
-      "excerpt": "Although the asking price of $209 plus shipping seems high for the Radxa Dragon Q8B, featuring the Qualcomm SC8280XP and 8 GB of LPDDR4X, this is 2026, and amid the …read more"
-    },
-    {
-      "id": "17bdfb3f7679",
-      "source": "hackaday",
-      "title": "Valve Releases Hardware and CAD Reference For New VR Headset",
-      "url": "https://hackaday.com/2026/10/10/valve-releases-hardware-and-cad-reference-for-new-vr-headset/",
-      "date": "2026-10-10T20:00:54.000Z",
-      "excerpt": "Valve recently began shipping its long-awaited VR headset, the Steam Frame. Now, there is a hardware reference repository that includes everything a budding modder might need, and then some. Want …read more"
-    },
-    {
-      "id": "90bc4a89f7b6",
-      "source": "electrobidouilleur",
-      "title": "Électro-Bidouilleur \"En Direct\" - Dimanche 11 Octobre 2026 @ 17h UTC",
-      "url": "https://www.youtube.com/watch?v=jnwDWUVpUYg",
-      "date": "2026-10-10T15:18:39.000Z",
-      "excerpt": "Session \"En Direct\" de la chaîne Électro-Bidouilleur du Dimanche 11 Octobre 2026 à 17h00 UTC (19h00 en France, 13h00 au Québec). Mon fils Vincent et moi répondrons à vos questions touchant l'électronique. Les fichiers pertinents aux…"
     },
     {
       "id": "148e859fdd0e",
@@ -172,14 +180,6 @@
       "url": "https://www.ifixit.com/News/119622/i-used-to-just-call-a-guy-the-struggle-to-get-repair-information",
       "date": "2026-10-05T08:10:50.000Z",
       "excerpt": "Appliance repairer Jacob D'Hollander qualifies for repair information under EU Ecodesign rules. Eight months of requests later, only one brand group has delivered."
-    },
-    {
-      "id": "977faab7e5d1",
-      "source": "learnrepair",
-      "title": "Burnt PCB Repair Crest Audio CA12 Amplifier",
-      "url": "https://www.youtube.com/watch?v=aipkMyT8_Xs",
-      "date": "2026-10-03T09:52:19.000Z",
-      "excerpt": "I have a Crest CA12 Amplifier with a Protect Fault on one channel. Let's find the fault. This amplifier had multiple faults, I split the video into three parts wile fixing each problem. This i s part 2. Yes, the Amplifier does work at the…"
     },
     {
       "id": "0b2027fe02f6",
