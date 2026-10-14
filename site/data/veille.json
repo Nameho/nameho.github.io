@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-13T12:40:55.013Z",
+  "updatedAt": "2026-10-14T10:09:21.398Z",
   "sources": [
     {
       "id": "ifixit",
@@ -46,52 +46,60 @@
   ],
   "items": [
     {
-      "id": "fa7164c9dada",
+      "id": "1fb17afcaa84",
       "source": "hackaday",
-      "title": "A Modern Browser for the PlayStation Portable",
-      "url": "https://hackaday.com/2026/10/13/a-modern-browser-for-the-playstation-portable/",
-      "date": "2026-10-13T11:00:29.000Z",
-      "excerpt": "The Sony PlayStation Portable, better known as the PSP, is now over two decades old. In its day it was an impressive handheld gaming machine, not least because of the …read more"
+      "title": "Rendering 3D Prints From G-Code",
+      "url": "https://hackaday.com/2026/10/14/rendering-3d-prints-from-g-code/",
+      "date": "2026-10-14T08:00:29.000Z",
+      "excerpt": "Your CAD software generally has some rudimentary tools for rending images of your parts, from simply-textured models to more photo-realistic options. However, those renders are of the geometry you created—not …read more"
     },
     {
-      "id": "1451b68fc43e",
+      "id": "499e82ec04e3",
       "source": "hackaday",
-      "title": "Open Firmware Fixes Dead Onkyo AV Receivers",
-      "url": "https://hackaday.com/2026/10/13/open-firmware-fixes-dead-onkyo-av-receivers/",
-      "date": "2026-10-13T08:00:27.000Z",
-      "excerpt": "If you’ve been reading Hackaday for any length of time, you’ll know we love seeing hackers replacing the stock firmware on their devices with open source alternatives. Usually this is …read more"
+      "title": "Does It Run… Duke Nukem 3D?",
+      "url": "https://hackaday.com/2026/10/13/does-it-run-duke-nukem-3d/",
+      "date": "2026-10-14T05:00:38.000Z",
+      "excerpt": "When id Software released DOOM back in 1993 it helped define the genre, but it was hardly the only hit first-person shooter of that decade. There was also 3D Realms’ 1996 Duke …read more"
     },
     {
-      "id": "a2aeef6c7ace",
+      "id": "7a2f5eb70cf5",
       "source": "hackaday",
-      "title": "Emulating a Floppy Drive By Emulating The Drive Itself",
-      "url": "https://hackaday.com/2026/10/12/emulating-a-floppy-drive-by-emulating-the-drive-itself/",
-      "date": "2026-10-13T05:00:53.000Z",
-      "excerpt": "The Commodore 1541 is famously the floppy drive for the Commodore 64 series of 8-bit computers, and can be found with relative ease. Not so well known is its 1551 …read more"
+      "title": "2026 Retrocomputing Challenge: USBSID-Pico has Two SIDs, Many Inputs",
+      "url": "https://hackaday.com/2026/10/13/2026-retrocomputing-challenge-usbsid-pico-has-two-sids-many-inputs/",
+      "date": "2026-10-14T02:00:08.000Z",
+      "excerpt": "We’ll give you three guesses what the most important bits of silicon in [LouD]’s USBSID-Pico are, and two don’t count. Yes, there’s a Raspberry Pi Pico, and a pair of …read more"
     },
     {
-      "id": "aed0b5ff8c14",
-      "source": "hackaday",
-      "title": "Using Kirigami Techniques to Make Functional Designs",
-      "url": "https://hackaday.com/2026/10/12/using-kirigami-techniques-to-make-functional-designs/",
-      "date": "2026-10-13T02:00:49.000Z",
-      "excerpt": "The variant of origami called kirigami (‘cut paper’ in Japanese) also starts off with a sheet of paper, but it allows for cutting the paper to increase the number of …read more"
+      "id": "d40dca9a7354",
+      "source": "ifixit",
+      "title": "Scars Can Be Mended: Repair Lessons from the USS Hornet",
+      "url": "https://www.ifixit.com/News/119742/scars-can-be-mended-repair-lessons-from-the-uss-hornet",
+      "date": "2026-10-14T00:24:56.000Z",
+      "excerpt": "Talking line inspection and repairability inside an 80-year-old aircraft carrier"
     },
     {
-      "id": "88a8407ad86f",
+      "id": "16a4631f8790",
       "source": "hackaday",
-      "title": "WiFi Router Does Software-Defined Radio",
-      "url": "https://hackaday.com/2026/10/12/wifi-router-does-software-defined-radio/",
-      "date": "2026-10-12T23:00:26.000Z",
-      "excerpt": "Perhaps the most famous of software-defined radios is the RTL-SDR, which is very cheap because it’s a digital TV receiver that’s been pressed into service delivering raw I and Q …read more"
+      "title": "JawnCon 0x3 Kicks off in Philadelphia this Friday",
+      "url": "https://hackaday.com/2026/10/13/jawncon-0x3-kicks-off-in-philadelphia-this-friday/",
+      "date": "2026-10-13T23:00:05.000Z",
+      "excerpt": "Philadelphia’s homegrown hacker con returns this weekend, and this time it’s starting a day early to pack in even more talks, demos, and activities. Tickets are still available for anyone …read more"
     },
     {
-      "id": "da46863a7184",
+      "id": "5a7f83531d74",
       "source": "hackaday",
-      "title": "The Prusa Core One+ INDX, a Troubled Multi-Extruder Upgrade?",
-      "url": "https://hackaday.com/2026/10/12/the-prusa-core-one-indx-a-troubled-multi-extruder-upgrade/",
-      "date": "2026-10-12T20:00:52.000Z",
-      "excerpt": "The Prusa Core One+ INDX is an interesting upgrade to the base FDM printer by Prusa, featuring eight independent extruders – hence the INDX – that in theory should allow …read more"
+      "title": "ESP-SDR Can Now Transmit",
+      "url": "https://hackaday.com/2026/10/13/esp-sdr-can-now-transmit/",
+      "date": "2026-10-13T20:00:21.000Z",
+      "excerpt": "Well, that was fast! Last week, we reported on two apparently simultaneous hacks using the 2.4 GHz radio inside many ESP32 variants that enabled raw access to the radio samples, …read more"
+    },
+    {
+      "id": "a15a7199dad6",
+      "source": "hackaday",
+      "title": "Using a Waffle to Check the Health of your Wii U’s NAND Flash",
+      "url": "https://hackaday.com/2026/10/13/using-a-waffle-to-check-the-health-of-your-wii-us-nand-flash/",
+      "date": "2026-10-13T18:00:50.000Z",
+      "excerpt": "Game consoles tend to have a weak spot or two that will take certain units out sooner than they would due to normal parts aging. In the case of the …read more"
     },
     {
       "id": "6629b109e7ee",
@@ -236,14 +244,6 @@
       "url": "https://www.ifixit.com/News/119329/inside-the-tiny-unfixable-eye-iphone-18-pro-and-pro-max-teardown",
       "date": "2026-09-20T22:00:57.000Z",
       "excerpt": "The iPhone 18 Pro’s little mechanical pupil is irresistible. A bunch of moving parts make for a good excuse to put our brand new camera under the microscope. We weren’t…"
-    },
-    {
-      "id": "7882aa4cb152",
-      "source": "ifixit",
-      "title": "Repair in the Wild: A Summer With Europe’s Repair Communities",
-      "url": "https://www.ifixit.com/News/119297/repair-in-the-wild-a-summer-with-europes-repair-communities",
-      "date": "2026-09-18T01:28:55.000Z",
-      "excerpt": "From a spring kickoff in Italy to a summer full of hacker camps and Maker Faires, iFixit tools and the Street Team showed up at events across Europe this year.…"
     },
     {
       "id": "0baa6303524d",
