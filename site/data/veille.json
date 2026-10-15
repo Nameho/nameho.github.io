@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-14T10:09:21.398Z",
+  "updatedAt": "2026-10-15T09:51:59.511Z",
   "sources": [
     {
       "id": "ifixit",
@@ -46,28 +46,60 @@
   ],
   "items": [
     {
-      "id": "1fb17afcaa84",
+      "id": "77fff86e5e59",
       "source": "hackaday",
-      "title": "Rendering 3D Prints From G-Code",
-      "url": "https://hackaday.com/2026/10/14/rendering-3d-prints-from-g-code/",
-      "date": "2026-10-14T08:00:29.000Z",
-      "excerpt": "Your CAD software generally has some rudimentary tools for rending images of your parts, from simply-textured models to more photo-realistic options. However, those renders are of the geometry you created—not …read more"
+      "title": "Building An M7 Pan Tilt Head Controller",
+      "url": "https://hackaday.com/2026/10/15/building-an-m7-pan-tilt-head-controller/",
+      "date": "2026-10-15T08:00:43.000Z",
+      "excerpt": "The Soonpho M7 Pan Tilt Head is a useful photography tool for remotely aiming a decently-sized camera. Only, [Kyle Housley] wanted a little more control than was available out of …read more"
     },
     {
-      "id": "499e82ec04e3",
+      "id": "a374774b6e04",
       "source": "hackaday",
-      "title": "Does It Run… Duke Nukem 3D?",
-      "url": "https://hackaday.com/2026/10/13/does-it-run-duke-nukem-3d/",
-      "date": "2026-10-14T05:00:38.000Z",
-      "excerpt": "When id Software released DOOM back in 1993 it helped define the genre, but it was hardly the only hit first-person shooter of that decade. There was also 3D Realms’ 1996 Duke …read more"
+      "title": "Pager Converted to Meshtastic Node",
+      "url": "https://hackaday.com/2026/10/14/pager-converted-to-meshtastic-node/",
+      "date": "2026-10-15T05:00:22.000Z",
+      "excerpt": "Text messaging has been around on cellular networks en masse for around three decades now. It’s so common that it’s difficult to remember a time without it. Its two-way quick …read more"
     },
     {
-      "id": "7a2f5eb70cf5",
+      "id": "c2be07b344b7",
       "source": "hackaday",
-      "title": "2026 Retrocomputing Challenge: USBSID-Pico has Two SIDs, Many Inputs",
-      "url": "https://hackaday.com/2026/10/13/2026-retrocomputing-challenge-usbsid-pico-has-two-sids-many-inputs/",
-      "date": "2026-10-14T02:00:08.000Z",
-      "excerpt": "We’ll give you three guesses what the most important bits of silicon in [LouD]’s USBSID-Pico are, and two don’t count. Yes, there’s a Raspberry Pi Pico, and a pair of …read more"
+      "title": "AI Controls iPhone Via ESP32",
+      "url": "https://hackaday.com/2026/10/14/ai-controls-iphone-via-esp32/",
+      "date": "2026-10-15T02:00:25.000Z",
+      "excerpt": "Do you want to get an AI agent to do something to an iPhone? You could try and jailbreak the device and do some heavy software hacking, or… you could …read more"
+    },
+    {
+      "id": "94d978057eba",
+      "source": "hackaday",
+      "title": "Single Button, Handheld Gaming Console",
+      "url": "https://hackaday.com/2026/10/14/single-button-handheld-gaming-console/",
+      "date": "2026-10-14T23:00:53.000Z",
+      "excerpt": "Those of us who grew up in the 70s and 80s might be familiar with the Atari 2600 console and its now relatively unrecognizable (by modern standards) controller with only …read more"
+    },
+    {
+      "id": "76e044273358",
+      "source": "hackaday",
+      "title": "Using an ESP32-C3’s RF Hardware for DVB-S2 Video Transmission",
+      "url": "https://hackaday.com/2026/10/14/using-an-esp32-c3s-rf-hardware-for-dvb-s2-video-transmission/",
+      "date": "2026-10-14T20:00:15.000Z",
+      "excerpt": "Generally the DVB-S and -S2 standards require a satellite somewhere in Earth orbit to provide a signal to receive, but you can also transmit your own DVB-S2 stream with any …read more"
+    },
+    {
+      "id": "1916f01b26d2",
+      "source": "hackaday",
+      "title": "Tiny e-Paper Display Delivers 30 FPS of Game Boy Fun",
+      "url": "https://hackaday.com/2026/10/14/tiny-e-paper-display-delivers-30-fps-of-game-boy-fun/",
+      "date": "2026-10-14T18:30:02.000Z",
+      "excerpt": "Slow refresh, ghosting and low-contrast — wait, are we talking about passive matrix LCDs, or e-paper displays? That might be why e-paper Game Boy emulators are a thing: the limitations …read more"
+    },
+    {
+      "id": "797e3c59e19c",
+      "source": "learnrepair",
+      "title": "DB Technologies SUB 618 Active Subwoofer Will Not Start. Dead. No Power.",
+      "url": "https://www.youtube.com/watch?v=BhWWzQDOk3U",
+      "date": "2026-10-14T13:11:12.000Z",
+      "excerpt": "I have a Class D Amplifier from an active subwoofer. This one will not power up. Can we fix it? Discount Codes 👉Click the link or enter the search code [AYK1F1]on the AliExpress homepage or use the exclusive discount codes below. These…"
     },
     {
       "id": "d40dca9a7354",
@@ -76,30 +108,6 @@
       "url": "https://www.ifixit.com/News/119742/scars-can-be-mended-repair-lessons-from-the-uss-hornet",
       "date": "2026-10-14T00:24:56.000Z",
       "excerpt": "Talking line inspection and repairability inside an 80-year-old aircraft carrier"
-    },
-    {
-      "id": "16a4631f8790",
-      "source": "hackaday",
-      "title": "JawnCon 0x3 Kicks off in Philadelphia this Friday",
-      "url": "https://hackaday.com/2026/10/13/jawncon-0x3-kicks-off-in-philadelphia-this-friday/",
-      "date": "2026-10-13T23:00:05.000Z",
-      "excerpt": "Philadelphia’s homegrown hacker con returns this weekend, and this time it’s starting a day early to pack in even more talks, demos, and activities. Tickets are still available for anyone …read more"
-    },
-    {
-      "id": "5a7f83531d74",
-      "source": "hackaday",
-      "title": "ESP-SDR Can Now Transmit",
-      "url": "https://hackaday.com/2026/10/13/esp-sdr-can-now-transmit/",
-      "date": "2026-10-13T20:00:21.000Z",
-      "excerpt": "Well, that was fast! Last week, we reported on two apparently simultaneous hacks using the 2.4 GHz radio inside many ESP32 variants that enabled raw access to the radio samples, …read more"
-    },
-    {
-      "id": "a15a7199dad6",
-      "source": "hackaday",
-      "title": "Using a Waffle to Check the Health of your Wii U’s NAND Flash",
-      "url": "https://hackaday.com/2026/10/13/using-a-waffle-to-check-the-health-of-your-wii-us-nand-flash/",
-      "date": "2026-10-13T18:00:50.000Z",
-      "excerpt": "Game consoles tend to have a weak spot or two that will take certain units out sooner than they would due to normal parts aging. In the case of the …read more"
     },
     {
       "id": "6629b109e7ee",
@@ -172,14 +180,6 @@
       "url": "https://www.halteobsolescence.org/livre-blanc-obsolescence-presidentielle-2027/",
       "date": "2026-10-06T12:55:01.000Z",
       "excerpt": "L’association HOP - Halte à l’Obsolescence Programmée publie un nouveau livre blanc à l’approche des élections présidentielles de 2027. Son but : proposer aux décideurs politiques 40 mesures au service de l’environnement et des…"
-    },
-    {
-      "id": "b0eeb09536f2",
-      "source": "learnrepair",
-      "title": "Crest CA12 Amplifier Stuck In Protect. Let's Fix It",
-      "url": "https://www.youtube.com/watch?v=Ea8d_1gVyP4",
-      "date": "2026-10-05T09:40:09.000Z",
-      "excerpt": "I have a Crest CA12 Amplifier with a Protect Fault on one channel. This is final part of this repair, the first two parts are linked below Part One Here Part Two Here Discount Codes 👉Click the link or enter the search code [AYK1F1]on the…"
     },
     {
       "id": "4855dfeec236",
