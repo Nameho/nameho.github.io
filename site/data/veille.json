@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-15T09:51:59.511Z",
+  "updatedAt": "2026-10-16T09:45:09.492Z",
   "sources": [
     {
       "id": "ifixit",
@@ -46,52 +46,60 @@
   ],
   "items": [
     {
-      "id": "77fff86e5e59",
+      "id": "42ea9118c413",
       "source": "hackaday",
-      "title": "Building An M7 Pan Tilt Head Controller",
-      "url": "https://hackaday.com/2026/10/15/building-an-m7-pan-tilt-head-controller/",
-      "date": "2026-10-15T08:00:43.000Z",
-      "excerpt": "The Soonpho M7 Pan Tilt Head is a useful photography tool for remotely aiming a decently-sized camera. Only, [Kyle Housley] wanted a little more control than was available out of …read more"
+      "title": "Running DOOM (Sort Of) on a Sonoff Smart Switch",
+      "url": "https://hackaday.com/2026/10/16/running-doom-sort-of-on-a-sonoff-smart-switch/",
+      "date": "2026-10-16T08:00:46.000Z",
+      "excerpt": "It’s often said in this community that DOOM can be made to run on anything, and as time goes on, that’s becoming more and more accurate. We’re at the point …read more"
     },
     {
-      "id": "a374774b6e04",
+      "id": "6e973527e066",
       "source": "hackaday",
-      "title": "Pager Converted to Meshtastic Node",
-      "url": "https://hackaday.com/2026/10/14/pager-converted-to-meshtastic-node/",
-      "date": "2026-10-15T05:00:22.000Z",
-      "excerpt": "Text messaging has been around on cellular networks en masse for around three decades now. It’s so common that it’s difficult to remember a time without it. Its two-way quick …read more"
+      "title": "Another Wireless Chip has a Hidden SDR Revealed",
+      "url": "https://hackaday.com/2026/10/15/another-wireless-chip-has-a-hidden-sdr-revealed/",
+      "date": "2026-10-16T05:00:10.000Z",
+      "excerpt": "The news of the past couple of weeks has seen the ESP32 turned into an software-defined radio (SDR) thanks to a hidden baseband mode, an exciting development by anyone’s standards. …read more"
     },
     {
-      "id": "c2be07b344b7",
+      "id": "84718b02561e",
       "source": "hackaday",
-      "title": "AI Controls iPhone Via ESP32",
-      "url": "https://hackaday.com/2026/10/14/ai-controls-iphone-via-esp32/",
-      "date": "2026-10-15T02:00:25.000Z",
-      "excerpt": "Do you want to get an AI agent to do something to an iPhone? You could try and jailbreak the device and do some heavy software hacking, or… you could …read more"
+      "title": "Using Optical Waveguide Arrays to Make Sheets Sense Shapes",
+      "url": "https://hackaday.com/2026/10/15/using-optical-waveguide-arrays-to-make-sheets-sense-shapes/",
+      "date": "2026-10-16T02:00:18.000Z",
+      "excerpt": "Determining the shape of an object which can change dynamically is a bit of a challenge, one that especially vexes those who are really into Virtual Reality. Sensing the orientation …read more"
     },
     {
-      "id": "94d978057eba",
-      "source": "hackaday",
-      "title": "Single Button, Handheld Gaming Console",
-      "url": "https://hackaday.com/2026/10/14/single-button-handheld-gaming-console/",
-      "date": "2026-10-14T23:00:53.000Z",
-      "excerpt": "Those of us who grew up in the 70s and 80s might be familiar with the Atari 2600 console and its now relatively unrecognizable (by modern standards) controller with only …read more"
+      "id": "2f2ea65b7ef5",
+      "source": "ifixit",
+      "title": "Why Isn’t Everyone Turning Their Old Laptops into Mini Desktop PCs?",
+      "url": "https://www.ifixit.com/News/119691/why-isnt-everyone-turning-their-old-laptops-into-mini-desktop-pcs",
+      "date": "2026-10-16T00:16:06.000Z",
+      "excerpt": "Modular, repairable, upgradeable laptops are awesome (and extremely rare), especially now that Rammageddon is making new machines so crazy expensive. But one question remains: What do you do with the…"
     },
     {
-      "id": "76e044273358",
+      "id": "e424fd118600",
       "source": "hackaday",
-      "title": "Using an ESP32-C3’s RF Hardware for DVB-S2 Video Transmission",
-      "url": "https://hackaday.com/2026/10/14/using-an-esp32-c3s-rf-hardware-for-dvb-s2-video-transmission/",
-      "date": "2026-10-14T20:00:15.000Z",
-      "excerpt": "Generally the DVB-S and -S2 standards require a satellite somewhere in Earth orbit to provide a signal to receive, but you can also transmit your own DVB-S2 stream with any …read more"
+      "title": "45 Years Later, The Sinclair ULA Design Documents Surface",
+      "url": "https://hackaday.com/2026/10/15/45-years-later-the-sinclair-ula-design-documents-surface/",
+      "date": "2026-10-15T23:00:51.000Z",
+      "excerpt": "In the 8-bit home computer boom of the early 1980s, Sir Clive Sinclair’s machines were always among the cheapest on the market, often packing a surprising level of sophistication in …read more"
     },
     {
-      "id": "1916f01b26d2",
+      "id": "42615243214d",
       "source": "hackaday",
-      "title": "Tiny e-Paper Display Delivers 30 FPS of Game Boy Fun",
-      "url": "https://hackaday.com/2026/10/14/tiny-e-paper-display-delivers-30-fps-of-game-boy-fun/",
-      "date": "2026-10-14T18:30:02.000Z",
-      "excerpt": "Slow refresh, ghosting and low-contrast — wait, are we talking about passive matrix LCDs, or e-paper displays? That might be why e-paper Game Boy emulators are a thing: the limitations …read more"
+      "title": "Linux Kernel Drops AI Tag Requirement, Uses Meta AI For Code Reviews",
+      "url": "https://hackaday.com/2026/10/15/linux-kernel-drops-ai-tag-requirement-uses-meta-ai-for-code-reviews/",
+      "date": "2026-10-15T20:00:12.000Z",
+      "excerpt": "“Penguins” by TomaLaPlaya \" data-large-file=\" /> Since we last covered the way that the Linux Kernel project has been dealing with the influx of code created using LLM-based coding assistants, all the way back in April, …read more"
+    },
+    {
+      "id": "e4725ad3a68e",
+      "source": "hackaday",
+      "title": "C64 Hardware Simulator Isn’t (Just) For Playing Around",
+      "url": "https://hackaday.com/2026/10/15/c64-hardware-simulator-isnt-just-for-playing-around/",
+      "date": "2026-10-15T18:00:50.000Z",
+      "excerpt": "If you want to play old Commodore games, there are C-64 emulators available for just about any platform– but most of them are so high level, they’re really meant for …read more"
     },
     {
       "id": "797e3c59e19c",
@@ -236,14 +244,6 @@
       "url": "https://www.youtube.com/watch?v=g2exPic0sIM",
       "date": "2026-09-21T19:11:10.000Z",
       "excerpt": "Rediffusion de la Session \"En Direct\" de la chaîne Électro-Bidouilleur du Lundi 21 Septembre 2026. Merci à tous les participants! Les fichiers pertinents aux vidéos (code source, schémas, etc.) sont placés ici sous format .ZIP: La chaîne…"
-    },
-    {
-      "id": "94683c605272",
-      "source": "ifixit",
-      "title": "Inside the Tiny Unfixable Eye: iPhone 18 Pro and Pro Max Teardown",
-      "url": "https://www.ifixit.com/News/119329/inside-the-tiny-unfixable-eye-iphone-18-pro-and-pro-max-teardown",
-      "date": "2026-09-20T22:00:57.000Z",
-      "excerpt": "The iPhone 18 Pro’s little mechanical pupil is irresistible. A bunch of moving parts make for a good excuse to put our brand new camera under the microscope. We weren’t…"
     },
     {
       "id": "0baa6303524d",
