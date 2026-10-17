@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-16T09:45:09.492Z",
+  "updatedAt": "2026-10-17T09:18:34.913Z",
   "sources": [
     {
       "id": "ifixit",
@@ -46,28 +46,60 @@
   ],
   "items": [
     {
-      "id": "42ea9118c413",
+      "id": "4cf7d55fc913",
       "source": "hackaday",
-      "title": "Running DOOM (Sort Of) on a Sonoff Smart Switch",
-      "url": "https://hackaday.com/2026/10/16/running-doom-sort-of-on-a-sonoff-smart-switch/",
-      "date": "2026-10-16T08:00:46.000Z",
-      "excerpt": "It’s often said in this community that DOOM can be made to run on anything, and as time goes on, that’s becoming more and more accurate. We’re at the point …read more"
+      "title": "Making One Fender From Another",
+      "url": "https://hackaday.com/2026/10/17/making-one-fender-from-another/",
+      "date": "2026-10-17T08:00:21.000Z",
+      "excerpt": "There’s a tendency among cherished brands to licence their name and logo onto all sorts of novelty items in order to make a quick buck. Joining this trend is the …read more"
     },
     {
-      "id": "6e973527e066",
+      "id": "3590a353539a",
       "source": "hackaday",
-      "title": "Another Wireless Chip has a Hidden SDR Revealed",
-      "url": "https://hackaday.com/2026/10/15/another-wireless-chip-has-a-hidden-sdr-revealed/",
-      "date": "2026-10-16T05:00:10.000Z",
-      "excerpt": "The news of the past couple of weeks has seen the ESP32 turned into an software-defined radio (SDR) thanks to a hidden baseband mode, an exciting development by anyone’s standards. …read more"
+      "title": "TAKTO, Open Source Hand-Tracking Built Like LEGO",
+      "url": "https://hackaday.com/2026/10/16/takto-open-source-hand-tracking-built-like-lego/",
+      "date": "2026-10-17T05:00:12.000Z",
+      "excerpt": "Hand tracking in VR/AR can add a substantial amount of immersion and added interactivity. Unfortunately, most camera based tracking suffers when fingers get covered, intertwined, or simply out of view …read more"
     },
     {
-      "id": "84718b02561e",
+      "id": "1d7cff5e0c80",
       "source": "hackaday",
-      "title": "Using Optical Waveguide Arrays to Make Sheets Sense Shapes",
-      "url": "https://hackaday.com/2026/10/15/using-optical-waveguide-arrays-to-make-sheets-sense-shapes/",
-      "date": "2026-10-16T02:00:18.000Z",
-      "excerpt": "Determining the shape of an object which can change dynamically is a bit of a challenge, one that especially vexes those who are really into Virtual Reality. Sensing the orientation …read more"
+      "title": "The Trials And Tribulations Of Your First Badge",
+      "url": "https://hackaday.com/2026/10/16/the-trials-and-tribulations-of-your-first-badge/",
+      "date": "2026-10-17T02:00:25.000Z",
+      "excerpt": "On the face of it, making an event badge should be an easy process. After all, most of us can hand-assemble a microcontroller, some buttons, a battery, and a screen. …read more"
+    },
+    {
+      "id": "accb08d361b9",
+      "source": "hackaday",
+      "title": "Simplifying Slide Rule Calculations with Trig",
+      "url": "https://hackaday.com/2026/10/16/simplifying-slide-rule-calculations-with-trig/",
+      "date": "2026-10-16T23:00:06.000Z",
+      "excerpt": "[Bob the Science Guy] remembers how to use a slide rule. Even after all these years, it is pretty easy to remember how to multiply and divide. If you can’t …read more"
+    },
+    {
+      "id": "b6774b48312c",
+      "source": "hackaday",
+      "title": "The 10€ Gamepad",
+      "url": "https://hackaday.com/2026/10/16/the-10e-gamepad/",
+      "date": "2026-10-16T20:00:17.000Z",
+      "excerpt": "We aren’t sure what [Lazy_Duck] is doing with video games, but it must require a lot of controllers. Dismayed at the cost and complexity of commercial gamepads, they started soldering …read more"
+    },
+    {
+      "id": "b6dd00e9d868",
+      "source": "hackaday",
+      "title": "Fairbuds 2 Teardown Shows Little Glue, Easy Battery Swap",
+      "url": "https://hackaday.com/2026/10/16/fairbuds-2-teardown-shows-little-glue-easy-battery-swap/",
+      "date": "2026-10-16T18:30:12.000Z",
+      "excerpt": "In a world where wireless earbuds are increasingly seen as devices that you toss into the e-waste bin as soon as they stop working, it’s heartening to see companies take …read more"
+    },
+    {
+      "id": "303a64a997ef",
+      "source": "learnrepair",
+      "title": "What Do All The Strange Patterns On A Curve Trace Mean? PART 2. Huntron Tracker Octopus Taster",
+      "url": "https://www.youtube.com/watch?v=SrW6o9oAF0A",
+      "date": "2026-10-16T10:52:00.000Z",
+      "excerpt": "Many of us use a Curve Tracer as a comparison tool between two PCBs to help us find faults. To do this we are looking for differences between a good and bad PCB. But what do all those funny curves actually mean? In this video I look at…"
     },
     {
       "id": "2f2ea65b7ef5",
@@ -76,30 +108,6 @@
       "url": "https://www.ifixit.com/News/119691/why-isnt-everyone-turning-their-old-laptops-into-mini-desktop-pcs",
       "date": "2026-10-16T00:16:06.000Z",
       "excerpt": "Modular, repairable, upgradeable laptops are awesome (and extremely rare), especially now that Rammageddon is making new machines so crazy expensive. But one question remains: What do you do with the…"
-    },
-    {
-      "id": "e424fd118600",
-      "source": "hackaday",
-      "title": "45 Years Later, The Sinclair ULA Design Documents Surface",
-      "url": "https://hackaday.com/2026/10/15/45-years-later-the-sinclair-ula-design-documents-surface/",
-      "date": "2026-10-15T23:00:51.000Z",
-      "excerpt": "In the 8-bit home computer boom of the early 1980s, Sir Clive Sinclair’s machines were always among the cheapest on the market, often packing a surprising level of sophistication in …read more"
-    },
-    {
-      "id": "42615243214d",
-      "source": "hackaday",
-      "title": "Linux Kernel Drops AI Tag Requirement, Uses Meta AI For Code Reviews",
-      "url": "https://hackaday.com/2026/10/15/linux-kernel-drops-ai-tag-requirement-uses-meta-ai-for-code-reviews/",
-      "date": "2026-10-15T20:00:12.000Z",
-      "excerpt": "“Penguins” by TomaLaPlaya \" data-large-file=\" /> Since we last covered the way that the Linux Kernel project has been dealing with the influx of code created using LLM-based coding assistants, all the way back in April, …read more"
-    },
-    {
-      "id": "e4725ad3a68e",
-      "source": "hackaday",
-      "title": "C64 Hardware Simulator Isn’t (Just) For Playing Around",
-      "url": "https://hackaday.com/2026/10/15/c64-hardware-simulator-isnt-just-for-playing-around/",
-      "date": "2026-10-15T18:00:50.000Z",
-      "excerpt": "If you want to play old Commodore games, there are C-64 emulators available for just about any platform– but most of them are so high level, they’re really meant for …read more"
     },
     {
       "id": "797e3c59e19c",
@@ -164,14 +172,6 @@
       "url": "https://www.halteobsolescence.org/empreinte-environnementale-ia-senat/",
       "date": "2026-10-08T12:29:23.000Z",
       "excerpt": "Le 16 septembre 2026, la commission de l'aménagement du territoire et du développement durable du sénat a adopté le rapport d'information sur l’empreinte environnementale de l'intelligence artificielle, auquel HOP avait participé par le…"
-    },
-    {
-      "id": "3bdc8ebfa864",
-      "source": "learnrepair",
-      "title": "Vertical Smoke Machine Radio Remote Control Repair",
-      "url": "https://www.youtube.com/watch?v=bIJ42Va9IPo",
-      "date": "2026-10-07T12:50:19.000Z",
-      "excerpt": "I have a couple of RF remotes from Disco/Stage Smoke machines. One works and one doesn't. Can I get them both working quickly and save the show tomorrow night? Discount Codes 👉Click the link or enter the search code [AYK1F1]on the…"
     },
     {
       "id": "c54cd4402720",
