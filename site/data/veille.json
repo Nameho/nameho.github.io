@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-17T09:18:34.913Z",
+  "updatedAt": "2026-10-18T09:32:57.261Z",
   "sources": [
     {
       "id": "ifixit",
@@ -46,52 +46,60 @@
   ],
   "items": [
     {
-      "id": "4cf7d55fc913",
+      "id": "34aeade00328",
       "source": "hackaday",
-      "title": "Making One Fender From Another",
-      "url": "https://hackaday.com/2026/10/17/making-one-fender-from-another/",
-      "date": "2026-10-17T08:00:21.000Z",
-      "excerpt": "There’s a tendency among cherished brands to licence their name and logo onto all sorts of novelty items in order to make a quick buck. Joining this trend is the …read more"
+      "title": "Turning a Wi-Fi Adapter into an SDR",
+      "url": "https://hackaday.com/2026/10/18/turning-a-wi-fi-adapter-into-an-sdr/",
+      "date": "2026-10-18T08:00:22.000Z",
+      "excerpt": "Since the discovery of an undocumented I/Q sampling feature in ESP32 chips about two weeks ago, there’s been a flood of similar features being found in other wireless chips, including …read more"
     },
     {
-      "id": "3590a353539a",
+      "id": "9844e9d8ede7",
       "source": "hackaday",
-      "title": "TAKTO, Open Source Hand-Tracking Built Like LEGO",
-      "url": "https://hackaday.com/2026/10/16/takto-open-source-hand-tracking-built-like-lego/",
-      "date": "2026-10-17T05:00:12.000Z",
-      "excerpt": "Hand tracking in VR/AR can add a substantial amount of immersion and added interactivity. Unfortunately, most camera based tracking suffers when fingers get covered, intertwined, or simply out of view …read more"
+      "title": "Making a New Mechanism for a Reciprocating Pencil Sharpener",
+      "url": "https://hackaday.com/2026/10/17/making-a-new-mechanism-for-a-reciprocating-pencil-sharpener/",
+      "date": "2026-10-18T05:00:14.000Z",
+      "excerpt": "An engineer’s greatest tool is the writing utensil. Be it pen or pencil, we use them for everything from making diagrams to marking out cuts. But as with any practitioner …read more"
     },
     {
-      "id": "1d7cff5e0c80",
+      "id": "618cfc68101c",
       "source": "hackaday",
-      "title": "The Trials And Tribulations Of Your First Badge",
-      "url": "https://hackaday.com/2026/10/16/the-trials-and-tribulations-of-your-first-badge/",
-      "date": "2026-10-17T02:00:25.000Z",
-      "excerpt": "On the face of it, making an event badge should be an easy process. After all, most of us can hand-assemble a microcontroller, some buttons, a battery, and a screen. …read more"
+      "title": "Busting the Myth that Plastics are Chemically Inert in Water",
+      "url": "https://hackaday.com/2026/10/17/busting-the-myth-that-plastics-are-chemically-inert-in-water/",
+      "date": "2026-10-18T02:00:45.000Z",
+      "excerpt": "One of the often made claims about plastics is that they are chemically inert under most conditions, such as when exposed to water. This long-held belief has also challenged the …read more"
     },
     {
-      "id": "accb08d361b9",
+      "id": "67e63c7ba29a",
       "source": "hackaday",
-      "title": "Simplifying Slide Rule Calculations with Trig",
-      "url": "https://hackaday.com/2026/10/16/simplifying-slide-rule-calculations-with-trig/",
-      "date": "2026-10-16T23:00:06.000Z",
-      "excerpt": "[Bob the Science Guy] remembers how to use a slide rule. Even after all these years, it is pretty easy to remember how to multiply and divide. If you can’t …read more"
+      "title": "2026 Retrocomputing Challenge: Dollhouse Arcade Cabinet Runs Remote DOS Games",
+      "url": "https://hackaday.com/2026/10/17/2026-retrocomputing-challenge-dollhouse-arcade-cabinet-runs-remote-dos-games/",
+      "date": "2026-10-17T23:00:24.000Z",
+      "excerpt": "Classic DOS games never ran from within stand-up arcade cabinets in dollhouses, but [Juha Lilja] imagines a world in which they did. His Micro DOS arcade cabinet is described as …read more"
     },
     {
-      "id": "b6774b48312c",
+      "id": "559a6029f147",
       "source": "hackaday",
-      "title": "The 10€ Gamepad",
-      "url": "https://hackaday.com/2026/10/16/the-10e-gamepad/",
-      "date": "2026-10-16T20:00:17.000Z",
-      "excerpt": "We aren’t sure what [Lazy_Duck] is doing with video games, but it must require a lot of controllers. Dismayed at the cost and complexity of commercial gamepads, they started soldering …read more"
+      "title": "Building a Flying Drone With a Single Propeller",
+      "url": "https://hackaday.com/2026/10/17/building-a-flying-drone-with-a-single-propeller/",
+      "date": "2026-10-17T20:00:11.000Z",
+      "excerpt": "Technically all that you need in order to make a drone fly is a single motor and single propeller, but realistically it becomes basically impossible to fly it at that …read more"
     },
     {
-      "id": "b6dd00e9d868",
+      "id": "1d9390987163",
       "source": "hackaday",
-      "title": "Fairbuds 2 Teardown Shows Little Glue, Easy Battery Swap",
-      "url": "https://hackaday.com/2026/10/16/fairbuds-2-teardown-shows-little-glue-easy-battery-swap/",
-      "date": "2026-10-16T18:30:12.000Z",
-      "excerpt": "In a world where wireless earbuds are increasingly seen as devices that you toss into the e-waste bin as soon as they stop working, it’s heartening to see companies take …read more"
+      "title": "2026 Retrocomputing Challenge: Oldputer Gives Old Eyes Relief with E-ink Display",
+      "url": "https://hackaday.com/2026/10/17/2026-retrocomputing-challenge-oldputer-gives-old-eyes-relief-with-e-ink-display/",
+      "date": "2026-10-17T17:00:52.000Z",
+      "excerpt": "Modern computers are towers of glass and metal with very few large deviations from one to another. Monitor A will go against B, except you can’t tell them apart unless …read more"
+    },
+    {
+      "id": "3ad32d885618",
+      "source": "ifixit",
+      "title": "This International Repair Day, iFixit and Google Have Something for Your Repair Café",
+      "url": "https://www.ifixit.com/News/119810/international-repair-day-2026",
+      "date": "2026-10-17T15:00:00.000Z",
+      "excerpt": "One ThinkPad owner replaced the fan, refreshed the thermal paste, and reinstalled Windows. But their laptop still took minutes to boot. After installing ChromeOS Flex, it started in seconds. PCWorld’s…"
     },
     {
       "id": "303a64a997ef",
@@ -220,14 +228,6 @@
       "url": "https://www.youtube.com/watch?v=8HB54UkC2ZY",
       "date": "2026-09-26T20:25:21.000Z",
       "excerpt": "Plusieurs me l'ont demandé durant le Live du mois d'août, je vous présente le projet qui m'a tenu occupé cet été: Ma balise radio amateur à 10 GHz. Peut-être y trouverez-vous quelques astuces de conception ou de construction. Série de…"
-    },
-    {
-      "id": "9f3d9a2e500c",
-      "source": "ifixit",
-      "title": "Steam Frame Teardown: We’re Fans. Except of the Fan",
-      "url": "https://www.ifixit.com/News/119488/steam-frame-teardown-were-fans-except-of-the-fan",
-      "date": "2026-09-23T16:01:11.000Z",
-      "excerpt": "Finally, finally, the Steam Frame is here! Five years ago, rumors of an internal Valve project codenamed Deckard rocked the VR enthusiast world. Since then, gamers have salivated over the…"
     },
     {
       "id": "dc8e1c062d50",
