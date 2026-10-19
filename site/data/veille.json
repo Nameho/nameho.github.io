@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-18T09:32:57.261Z",
+  "updatedAt": "2026-10-19T10:43:14.717Z",
   "sources": [
     {
       "id": "ifixit",
@@ -46,52 +46,60 @@
   ],
   "items": [
     {
-      "id": "34aeade00328",
+      "id": "17aea437997b",
       "source": "hackaday",
-      "title": "Turning a Wi-Fi Adapter into an SDR",
-      "url": "https://hackaday.com/2026/10/18/turning-a-wi-fi-adapter-into-an-sdr/",
-      "date": "2026-10-18T08:00:22.000Z",
-      "excerpt": "Since the discovery of an undocumented I/Q sampling feature in ESP32 chips about two weeks ago, there’s been a flood of similar features being found in other wireless chips, including …read more"
+      "title": "Driving On the Moon at a Blistering 11.6 MPH",
+      "url": "https://hackaday.com/2026/10/19/driving-on-the-moon-at-a-blistering-11-6-mph/",
+      "date": "2026-10-19T08:00:17.000Z",
+      "excerpt": "As NASA continues humanity’s slow march back to the Moon, different pieces of the puzzle of establishing a more permanent base there are falling into place. One of these pieces …read more"
     },
     {
-      "id": "9844e9d8ede7",
+      "id": "077c77011c0b",
       "source": "hackaday",
-      "title": "Making a New Mechanism for a Reciprocating Pencil Sharpener",
-      "url": "https://hackaday.com/2026/10/17/making-a-new-mechanism-for-a-reciprocating-pencil-sharpener/",
-      "date": "2026-10-18T05:00:14.000Z",
-      "excerpt": "An engineer’s greatest tool is the writing utensil. Be it pen or pencil, we use them for everything from making diagrams to marking out cuts. But as with any practitioner …read more"
+      "title": "Thunderbolt Strikes Windows98",
+      "url": "https://hackaday.com/2026/10/18/thunderbolt-strikes-windows98/",
+      "date": "2026-10-19T05:00:51.000Z",
+      "excerpt": "If there’s one thing everyone hated about Windows 98, was the lack of USB4.0 support. We remember vividly the cries of anguish at the launch party when we found out …read more"
     },
     {
-      "id": "618cfc68101c",
+      "id": "110ae90e3ca8",
       "source": "hackaday",
-      "title": "Busting the Myth that Plastics are Chemically Inert in Water",
-      "url": "https://hackaday.com/2026/10/17/busting-the-myth-that-plastics-are-chemically-inert-in-water/",
-      "date": "2026-10-18T02:00:45.000Z",
-      "excerpt": "One of the often made claims about plastics is that they are chemically inert under most conditions, such as when exposed to water. This long-held belief has also challenged the …read more"
+      "title": "Hackaday Links: October 17, 2026",
+      "url": "https://hackaday.com/2026/10/18/hackaday-links-october-17-2026/",
+      "date": "2026-10-19T02:00:12.000Z",
+      "excerpt": "While Hackaday doesn’t maintain a crime blotter, we couldn’t help but start this week’s post off with a bit of civil disobedience — a retired professor from the University of …read more"
     },
     {
-      "id": "67e63c7ba29a",
+      "id": "1f588f0032d1",
       "source": "hackaday",
-      "title": "2026 Retrocomputing Challenge: Dollhouse Arcade Cabinet Runs Remote DOS Games",
-      "url": "https://hackaday.com/2026/10/17/2026-retrocomputing-challenge-dollhouse-arcade-cabinet-runs-remote-dos-games/",
-      "date": "2026-10-17T23:00:24.000Z",
-      "excerpt": "Classic DOS games never ran from within stand-up arcade cabinets in dollhouses, but [Juha Lilja] imagines a world in which they did. His Micro DOS arcade cabinet is described as …read more"
+      "title": "Off-Grid Refrigeration Using Fire and Salt",
+      "url": "https://hackaday.com/2026/10/18/off-grid-refrigeration-using-fire-and-salt/",
+      "date": "2026-10-18T23:00:48.000Z",
+      "excerpt": "Refrigeration has been a challenge for humanity since the start. Ancient civilizations in dry climates like Persia and Egypt could use evaporative cooling on a large scale with specialized architecture, …read more"
     },
     {
-      "id": "559a6029f147",
+      "id": "be3dac3de882",
       "source": "hackaday",
-      "title": "Building a Flying Drone With a Single Propeller",
-      "url": "https://hackaday.com/2026/10/17/building-a-flying-drone-with-a-single-propeller/",
-      "date": "2026-10-17T20:00:11.000Z",
-      "excerpt": "Technically all that you need in order to make a drone fly is a single motor and single propeller, but realistically it becomes basically impossible to fly it at that …read more"
+      "title": "The New Phobos Martian Moon Rover that Weighs in at Only 15 Grams",
+      "url": "https://hackaday.com/2026/10/18/the-new-phobos-martian-moon-rover-that-weighs-in-at-only-15-grams/",
+      "date": "2026-10-18T20:00:33.000Z",
+      "excerpt": "Although for many decades the planet Mars has been prodded, poked, driven upon, flown over and especially orbited by various spacecraft, landers and rovers sent over by a certain humanoid …read more"
     },
     {
-      "id": "1d9390987163",
+      "id": "70238fda99be",
       "source": "hackaday",
-      "title": "2026 Retrocomputing Challenge: Oldputer Gives Old Eyes Relief with E-ink Display",
-      "url": "https://hackaday.com/2026/10/17/2026-retrocomputing-challenge-oldputer-gives-old-eyes-relief-with-e-ink-display/",
-      "date": "2026-10-17T17:00:52.000Z",
-      "excerpt": "Modern computers are towers of glass and metal with very few large deviations from one to another. Monitor A will go against B, except you can’t tell them apart unless …read more"
+      "title": "Building a Microscope with a 3D View",
+      "url": "https://hackaday.com/2026/10/18/building-a-microscope-with-a-3d-view/",
+      "date": "2026-10-18T17:00:41.000Z",
+      "excerpt": "As electronic components grow ever smaller, a microscope has become an increasingly indispensable tool for any fine work; when inspecting electronics, though, especially solder joints, [Corebb] found a top-down view …read more"
+    },
+    {
+      "id": "b61d1a0fad29",
+      "source": "learnrepair",
+      "title": "My Friend Bought A Faulty Artcoustic PA-1800 Amplifier And Asked me To Fix It!",
+      "url": "https://www.youtube.com/watch?v=zKFS_yupUCM",
+      "date": "2026-10-18T10:11:28.000Z",
+      "excerpt": "I have a faulty amplifier Artcoustic PA-1800 bought by a friend. Guess who he asked to fix it? Discount Codes 👉Click the link or enter the search code [AYK1F1]on the AliExpress homepage or use the exclusive discount codes below. These…"
     },
     {
       "id": "3ad32d885618",
@@ -156,14 +164,6 @@
       "url": "https://www.youtube.com/watch?v=m0kVB1P55uU",
       "date": "2026-10-12T05:44:26.000Z",
       "excerpt": "LER And Friends - 11th of October 2026. We'll stream bi-weekly on sundays, starting at 17:00 BST."
-    },
-    {
-      "id": "148e859fdd0e",
-      "source": "learnrepair",
-      "title": "What do All The Strange Patterns On Curve Tracer Mean? Understand Huntron Tracker / Octopus Curves",
-      "url": "https://www.youtube.com/watch?v=_OWa5hT-qYY",
-      "date": "2026-10-09T11:33:00.000Z",
-      "excerpt": "Many of us use a Curve Tracer as a comparison tool between two PCBs to help us find faults. To do this we are looking for differences between a good and bad PCB. But what do all those funny curves actually mean? In this video I look at…"
     },
     {
       "id": "ee3e1608bf26",
