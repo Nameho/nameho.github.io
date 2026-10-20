@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-19T10:43:14.717Z",
+  "updatedAt": "2026-10-20T10:00:15.853Z",
   "sources": [
     {
       "id": "ifixit",
@@ -46,52 +46,68 @@
   ],
   "items": [
     {
-      "id": "17aea437997b",
-      "source": "hackaday",
-      "title": "Driving On the Moon at a Blistering 11.6 MPH",
-      "url": "https://hackaday.com/2026/10/19/driving-on-the-moon-at-a-blistering-11-6-mph/",
-      "date": "2026-10-19T08:00:17.000Z",
-      "excerpt": "As NASA continues humanity’s slow march back to the Moon, different pieces of the puzzle of establishing a more permanent base there are falling into place. One of these pieces …read more"
+      "id": "6e41333ca15f",
+      "source": "learnrepair",
+      "title": "Where Do You Connect The Black Meter Lead? How To Use A Multimeter Correctly",
+      "url": "https://www.youtube.com/watch?v=axu_BHugJHo",
+      "date": "2026-10-20T09:12:33.000Z",
+      "excerpt": "This video is in response to a viewers questions about where the black lead of a multimeter should be connected when fault finding a PCB. Let's take a look at the black meter lead and learn how to use it correctly. For All Your PCB needs…"
     },
     {
-      "id": "077c77011c0b",
+      "id": "6148d58bdfb3",
       "source": "hackaday",
-      "title": "Thunderbolt Strikes Windows98",
-      "url": "https://hackaday.com/2026/10/18/thunderbolt-strikes-windows98/",
-      "date": "2026-10-19T05:00:51.000Z",
-      "excerpt": "If there’s one thing everyone hated about Windows 98, was the lack of USB4.0 support. We remember vividly the cries of anguish at the launch party when we found out …read more"
+      "title": "Visualize Regular Expressions with Marbles",
+      "url": "https://hackaday.com/2026/10/20/visualize-regular-expressions-with-marbles/",
+      "date": "2026-10-20T08:00:52.000Z",
+      "excerpt": "If you are one of those people who visualize things physically better than in the abstract, then Regex Marble Run by [bottomless] might be for you. You enter a test …read more"
     },
     {
-      "id": "110ae90e3ca8",
+      "id": "c19e923be1ea",
       "source": "hackaday",
-      "title": "Hackaday Links: October 17, 2026",
-      "url": "https://hackaday.com/2026/10/18/hackaday-links-october-17-2026/",
-      "date": "2026-10-19T02:00:12.000Z",
-      "excerpt": "While Hackaday doesn’t maintain a crime blotter, we couldn’t help but start this week’s post off with a bit of civil disobedience — a retired professor from the University of …read more"
+      "title": "Birduino Plays Bird Calls on Demand with NFC-enabled Cards",
+      "url": "https://hackaday.com/2026/10/19/birduino-plays-bird-calls-on-demand-with-nfc-enabled-cards/",
+      "date": "2026-10-20T05:00:25.000Z",
+      "excerpt": "All [Hannah Robertson]’s Birduino needs is for one to tap an NFC-enabled card to the reader, and the device plays one of the vocalizations associated with the bird shown on …read more"
     },
     {
-      "id": "1f588f0032d1",
+      "id": "fe14e1cf0d16",
       "source": "hackaday",
-      "title": "Off-Grid Refrigeration Using Fire and Salt",
-      "url": "https://hackaday.com/2026/10/18/off-grid-refrigeration-using-fire-and-salt/",
-      "date": "2026-10-18T23:00:48.000Z",
-      "excerpt": "Refrigeration has been a challenge for humanity since the start. Ancient civilizations in dry climates like Persia and Egypt could use evaporative cooling on a large scale with specialized architecture, …read more"
+      "title": "Making Photovoltaic Solar Cells with a Microwave",
+      "url": "https://hackaday.com/2026/10/19/making-photovoltaic-solar-cells-with-a-microwave/",
+      "date": "2026-10-20T02:00:38.000Z",
+      "excerpt": "Although solar panels may seem like a kind of magic, they’re really quite simple devices, in their silicon form featuring nothing but the p-type silicon wafer and an n-type layer …read more"
     },
     {
-      "id": "be3dac3de882",
+      "id": "9f2339e45213",
       "source": "hackaday",
-      "title": "The New Phobos Martian Moon Rover that Weighs in at Only 15 Grams",
-      "url": "https://hackaday.com/2026/10/18/the-new-phobos-martian-moon-rover-that-weighs-in-at-only-15-grams/",
-      "date": "2026-10-18T20:00:33.000Z",
-      "excerpt": "Although for many decades the planet Mars has been prodded, poked, driven upon, flown over and especially orbited by various spacecraft, landers and rovers sent over by a certain humanoid …read more"
+      "title": "An RV on a Bike",
+      "url": "https://hackaday.com/2026/10/19/an-rv-on-a-bike/",
+      "date": "2026-10-19T23:00:30.000Z",
+      "excerpt": "Bicycles are the ultimate form of transportation freedom. They’re easy to repair, parts are cheap, and they will travel almost anywhere for free, as long as the rider has enough …read more"
     },
     {
-      "id": "70238fda99be",
+      "id": "fd76caff910b",
+      "source": "electrobidouilleur",
+      "title": "EB_#725 Remise en Marche - Gradateur de Secteur des Années 70. La sécurité, pas une priorité!",
+      "url": "https://www.youtube.com/watch?v=FCglsffP8bc",
+      "date": "2026-10-19T21:41:46.000Z",
+      "excerpt": "J'ai décidé de remettre en marche ce gradateur de secteur des années 70, que mon père utilisait dans un labo de chimie au travail. Que les normes ont évolué! Je lui fais donc une bonne mise à niveau! Chapitres de la vidéo: 0:00 Début de…"
+    },
+    {
+      "id": "e61186990edd",
       "source": "hackaday",
-      "title": "Building a Microscope with a 3D View",
-      "url": "https://hackaday.com/2026/10/18/building-a-microscope-with-a-3d-view/",
-      "date": "2026-10-18T17:00:41.000Z",
-      "excerpt": "As electronic components grow ever smaller, a microscope has become an increasingly indispensable tool for any fine work; when inspecting electronics, though, especially solder joints, [Corebb] found a top-down view …read more"
+      "title": "Meshtastic Sniffer for DragonOS",
+      "url": "https://hackaday.com/2026/10/19/meshtastic-sniffer-for-dragonos/",
+      "date": "2026-10-19T20:00:07.000Z",
+      "excerpt": "Meshtastic has gained a lot of popularity over the last few years thanks to its low barrier of entry. No licenses are needed and the hardware is dirt cheap, at …read more"
+    },
+    {
+      "id": "cd5c8ff84046",
+      "source": "hackaday",
+      "title": "An Open Micro-Maniplulator Improved",
+      "url": "https://hackaday.com/2026/10/19/an-open-micro-maniplulator-improved/",
+      "date": "2026-10-19T18:00:25.000Z",
+      "excerpt": "If you need a micro-manipulator, you probably already have a good idea of what it does. For example, you might be moving a probe over an IC die or wafer. …read more"
     },
     {
       "id": "b61d1a0fad29",
@@ -156,14 +172,6 @@
       "url": "https://www.youtube.com/watch?v=jnwDWUVpUYg",
       "date": "2026-10-12T07:19:45.000Z",
       "excerpt": "Rediffusion de la Session \"En Direct\" de la chaîne Électro-Bidouilleur du Dimanche 11 Octobre 2026. Merci à tous les participants! Les fichiers pertinents aux vidéos (code source, schémas, etc.) sont placés ici sous format .ZIP: La chaîne…"
-    },
-    {
-      "id": "19f9e514d5a6",
-      "source": "learnrepair",
-      "title": "TEC 26-10-11",
-      "url": "https://www.youtube.com/watch?v=m0kVB1P55uU",
-      "date": "2026-10-12T05:44:26.000Z",
-      "excerpt": "LER And Friends - 11th of October 2026. We'll stream bi-weekly on sundays, starting at 17:00 BST."
     },
     {
       "id": "ee3e1608bf26",
@@ -260,14 +268,6 @@
       "url": "https://www.framboise314.fr/remplacer-pile-minuteur-tefal-oleoclean/",
       "date": "2026-08-26T14:04:09.000Z",
       "excerpt": "Le minuteur de votre friteuse Tefal Oleoclean n’affiche plus rien ? Plus le moindre chiffre sur l’écran LCD et plus un seul bip à l’horizon ? C’est le symptôme classique de la pile interne arrivée en fin de vie. Face à ce boîtier muet…"
-    },
-    {
-      "id": "3a32f3438b30",
-      "source": "electrobidouilleur",
-      "title": "EB_#720 Électro-Bidouilleur \"En Direct\" - Rediffusion - Dimanche 23 Août 2026",
-      "url": "https://www.youtube.com/watch?v=GUHfAAh9p4g",
-      "date": "2026-08-23T19:10:29.000Z",
-      "excerpt": "Rediffusion de la Session \"En Direct\" de la chaîne Électro-Bidouilleur du Dimanche 23 Août 2026. Merci à tous les participants! Les fichiers pertinents aux vidéos (code source, schémas, etc.) sont placés ici sous format .ZIP: La chaîne…"
     },
     {
       "id": "2f0e4c1b6629",
