@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-21T10:05:41.983Z",
+  "updatedAt": "2026-10-22T10:07:49.906Z",
   "sources": [
     {
       "id": "ifixit",
@@ -46,44 +46,52 @@
   ],
   "items": [
     {
-      "id": "91b57b7317fb",
+      "id": "bd9c86aa5fb9",
       "source": "hackaday",
-      "title": "A Stereo Vision Board For Hardware Hackers",
-      "url": "https://hackaday.com/2026/10/21/a-stereo-vision-board-for-hardware-hackers/",
-      "date": "2026-10-21T08:00:50.000Z",
-      "excerpt": "It’s plenty easy to do lots of vision tasks with a single camera, but using two cameras gives you lots of magical abilities, like depth perception! If you’d like to …read more"
+      "title": "Trying to Get Linux Running on a Nokia E6",
+      "url": "https://hackaday.com/2026/10/22/trying-to-get-linux-running-on-a-nokia-e6/",
+      "date": "2026-10-22T08:00:17.000Z",
+      "excerpt": "The Nokia E6 is a smartphone from back in the old days when Symbian was a thing. [fluffleswaffled] has been doing the work to get the ancient handset running Linux …read more"
     },
     {
-      "id": "a58c4fd290ad",
+      "id": "0cb4c08be539",
       "source": "hackaday",
-      "title": "5 GHz Drone Video, With An ESP32",
-      "url": "https://hackaday.com/2026/10/20/5-ghz-drone-video-with-an-esp32/",
-      "date": "2026-10-21T05:00:05.000Z",
-      "excerpt": "With the ESP32 series of microcontrollers having had hidden software-defined radio (SDR) facility revealed, we’re now moving on from the announcement into projects making use of the finding. [Twotoz] has …read more"
+      "title": "Reading QR Codes by Hand",
+      "url": "https://hackaday.com/2026/10/21/reading-qr-codes-by-hand/",
+      "date": "2026-10-22T05:00:35.000Z",
+      "excerpt": "QR codes can be a handy way to send a link or contact details without all that tedious mucking about with typing in a link, but they aren’t very useful …read more"
     },
     {
-      "id": "838a9f9e9f78",
+      "id": "c288c44af1b8",
       "source": "hackaday",
-      "title": "Using Ultrasound and Microbubbles to Make Tiny Devices",
-      "url": "https://hackaday.com/2026/10/20/using-ultrasound-and-microbubbles-to-make-tiny-devices/",
-      "date": "2026-10-21T02:00:33.000Z",
-      "excerpt": "Although we generally do not look at bubbles in fluids as more than a curiosity – if not an outright annoyance – in certain contexts they can be very useful. …read more"
+      "title": "Making a Five-Segment Display with Platinum-Titanium Cathodes",
+      "url": "https://hackaday.com/2026/10/21/making-a-five-segment-display-with-platinum-titanium-cathodes/",
+      "date": "2026-10-22T02:00:41.000Z",
+      "excerpt": "Before the advent of effective semiconductor LEDs many display types existed to display things like numbers and other characters. The Nixie tube is a well-known one, along with VFDs and …read more"
     },
     {
-      "id": "680c81350580",
+      "id": "12925df75659",
       "source": "hackaday",
-      "title": "Lazarus and the Free Pascal Compiler Gain Dynamic Package Support",
-      "url": "https://hackaday.com/2026/10/20/lazarus-and-the-free-pascal-compiler-gain-dynamic-package-support/",
-      "date": "2026-10-20T23:00:18.000Z",
-      "excerpt": "If you have developed in Pascal or Delphi in the past decades, you’re probably familiar with the Lazarus IDE that provides an interface to the Free Pascal Compiler (FPC), much …read more"
+      "title": "Every Type of Current Sensor Explained",
+      "url": "https://hackaday.com/2026/10/21/every-type-of-current-sensor-explained/",
+      "date": "2026-10-21T23:00:21.000Z",
+      "excerpt": "Measuring electric currents is an essential element of many electrical systems, but doing so in a way that is as nonintrusive as possible is not an easy problem to solve. …read more"
     },
     {
-      "id": "7581a57bcc46",
+      "id": "5f104cc4b823",
       "source": "hackaday",
-      "title": "Going Whole-Hog on a First Satellite Ground Station",
-      "url": "https://hackaday.com/2026/10/20/going-whole-hog-on-a-first-satellite-ground-station/",
-      "date": "2026-10-20T20:00:21.000Z",
-      "excerpt": "When most radio enthusiasts start trying to pick up signals from satellites, they might put together a quick-and-dirty Yagi antenna and try to catch a repeater as is passes overhead, …read more"
+      "title": "Sega Genesis Controllers on the Philips CD-i",
+      "url": "https://hackaday.com/2026/10/21/sega-genesis-controllers-on-the-philips-cd-i/",
+      "date": "2026-10-21T20:00:14.000Z",
+      "excerpt": "The Philips CD-i was not popular upon its launch in 1991, and is barely acknowledged today. In the opinion of [MattKC], it had a particularly poor selection of controllers, too, …read more"
+    },
+    {
+      "id": "41e9f99c9cf7",
+      "source": "hackaday",
+      "title": "Knitting Yarn and Filament with FilaLoom",
+      "url": "https://hackaday.com/2026/10/21/knitting-yarn-and-filament-with-filaloom/",
+      "date": "2026-10-21T18:30:39.000Z",
+      "excerpt": "We don’t generally think of 3D printing and knitting in the same sentence. One uses threads and fine motor control, while the other requires great knowledge of pressing buttons and …read more"
     },
     {
       "id": "0dac4a213409",
@@ -92,14 +100,6 @@
       "url": "https://www.ifixit.com/News/119797/how-the-iphone-duos-crazy-repair-prices-compare",
       "date": "2026-10-20T19:10:27.000Z",
       "excerpt": "Apple has listed the prices for iPhone Duo repairs, and there’s good news and bad news. The good news is that you will be able to peel off the screen’s…"
-    },
-    {
-      "id": "04ff44bf9a71",
-      "source": "hackaday",
-      "title": "NASA’s Lunar Grounding Challenge is a Real Buzz",
-      "url": "https://hackaday.com/2026/10/20/nasas-lunar-grounding-challenge-is-a-real-buzz/",
-      "date": "2026-10-20T18:30:27.000Z",
-      "excerpt": "One could make a joke about how an astronaut walking on the lunar surface is rather akin to a cat walking on the carpet in the living room, but out …read more"
     },
     {
       "id": "6e41333ca15f",
