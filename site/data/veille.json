@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-22T10:07:49.906Z",
+  "updatedAt": "2026-10-23T10:00:48.784Z",
   "sources": [
     {
       "id": "ifixit",
@@ -46,52 +46,60 @@
   ],
   "items": [
     {
-      "id": "bd9c86aa5fb9",
+      "id": "2f8b1225ab7c",
       "source": "hackaday",
-      "title": "Trying to Get Linux Running on a Nokia E6",
-      "url": "https://hackaday.com/2026/10/22/trying-to-get-linux-running-on-a-nokia-e6/",
-      "date": "2026-10-22T08:00:17.000Z",
-      "excerpt": "The Nokia E6 is a smartphone from back in the old days when Symbian was a thing. [fluffleswaffled] has been doing the work to get the ancient handset running Linux …read more"
+      "title": "DOOM Ported to a $30 Clamp Meter",
+      "url": "https://hackaday.com/2026/10/23/doom-ported-to-a-30-clamp-meter/",
+      "date": "2026-10-23T08:00:17.000Z",
+      "excerpt": "DOOM. Boil it, mash it, stick it in a stew, it’s the game that runs on anything and everything. Now, the classic shooter is running on a rather unlikely target—a …read more"
     },
     {
-      "id": "0cb4c08be539",
+      "id": "b6eacd64dd09",
       "source": "hackaday",
-      "title": "Reading QR Codes by Hand",
-      "url": "https://hackaday.com/2026/10/21/reading-qr-codes-by-hand/",
-      "date": "2026-10-22T05:00:35.000Z",
-      "excerpt": "QR codes can be a handy way to send a link or contact details without all that tedious mucking about with typing in a link, but they aren’t very useful …read more"
+      "title": "Restoring a Soviet ES-4001 Mainframe Control Panel",
+      "url": "https://hackaday.com/2026/10/22/restoring-a-soviet-es-4001-mainframe-control-panel/",
+      "date": "2026-10-23T05:00:00.000Z",
+      "excerpt": "Recently the [Chornobyl Family] got their hands on an ES-4001 control panel for a 1970s-era Soviet mainframe, with the intention to restore it to full working order. Not just because …read more"
     },
     {
-      "id": "c288c44af1b8",
+      "id": "f75737e4c08c",
       "source": "hackaday",
-      "title": "Making a Five-Segment Display with Platinum-Titanium Cathodes",
-      "url": "https://hackaday.com/2026/10/21/making-a-five-segment-display-with-platinum-titanium-cathodes/",
-      "date": "2026-10-22T02:00:41.000Z",
-      "excerpt": "Before the advent of effective semiconductor LEDs many display types existed to display things like numbers and other characters. The Nixie tube is a well-known one, along with VFDs and …read more"
+      "title": "NASA Batteries Survive Extreme Cold and Heat",
+      "url": "https://hackaday.com/2026/10/22/nasa-batteries-survive-extreme-cold-and-heat/",
+      "date": "2026-10-23T02:00:05.000Z",
+      "excerpt": "One of the major limits of mass-produced batteries is the electrolyte. From lead-acid to lithium ion, there’s some temperature where the electrolyte will freeze and cause all sorts of problems, …read more"
     },
     {
-      "id": "12925df75659",
+      "id": "24506286d97d",
       "source": "hackaday",
-      "title": "Every Type of Current Sensor Explained",
-      "url": "https://hackaday.com/2026/10/21/every-type-of-current-sensor-explained/",
-      "date": "2026-10-21T23:00:21.000Z",
-      "excerpt": "Measuring electric currents is an essential element of many electrical systems, but doing so in a way that is as nonintrusive as possible is not an easy problem to solve. …read more"
+      "title": "Car’s Camera Footage Backed up to NAS",
+      "url": "https://hackaday.com/2026/10/22/cars-camera-footage-backed-up-to-nas/",
+      "date": "2026-10-22T23:00:13.000Z",
+      "excerpt": "For as many sensors, cameras, and computers as there are on modern cars, they ought to be a dream to poke around in and customize to one’s liking. Unfortunately they’re …read more"
     },
     {
-      "id": "5f104cc4b823",
+      "id": "b3aafeabb21e",
       "source": "hackaday",
-      "title": "Sega Genesis Controllers on the Philips CD-i",
-      "url": "https://hackaday.com/2026/10/21/sega-genesis-controllers-on-the-philips-cd-i/",
-      "date": "2026-10-21T20:00:14.000Z",
-      "excerpt": "The Philips CD-i was not popular upon its launch in 1991, and is barely acknowledged today. In the opinion of [MattKC], it had a particularly poor selection of controllers, too, …read more"
+      "title": "An Open Source Linear Capacitive Encoder",
+      "url": "https://hackaday.com/2026/10/22/an-open-source-linear-capacitive-encoder/",
+      "date": "2026-10-22T20:00:48.000Z",
+      "excerpt": "If you’ve ever pulled apart a set of digital calipers, you’ve probably marvelled at the capacitive encoder that does all the measuring work. There’s nothing stopping you from using the …read more"
     },
     {
-      "id": "41e9f99c9cf7",
+      "id": "83481dcfe890",
       "source": "hackaday",
-      "title": "Knitting Yarn and Filament with FilaLoom",
-      "url": "https://hackaday.com/2026/10/21/knitting-yarn-and-filament-with-filaloom/",
-      "date": "2026-10-21T18:30:39.000Z",
-      "excerpt": "We don’t generally think of 3D printing and knitting in the same sentence. One uses threads and fine motor control, while the other requires great knowledge of pressing buttons and …read more"
+      "title": "Keeping Old Wi-Fi Radios Alive With Stream Conversion",
+      "url": "https://hackaday.com/2026/10/22/keeping-old-wi-fi-radios-alive-with-stream-conversion/",
+      "date": "2026-10-22T18:30:40.000Z",
+      "excerpt": "There are plenty of Wi-Fi radios out there that were built over the last two decades or so. However, many older models are now becoming less useful because many internet …read more"
+    },
+    {
+      "id": "2455448d956d",
+      "source": "learnrepair",
+      "title": "What CAN Happen When Using A Curve Tracer To Diagnose A Fault! Artcoustic PA-1800 Repair",
+      "url": "https://www.youtube.com/watch?v=jHcENjTS4jk",
+      "date": "2026-10-22T10:08:28.000Z",
+      "excerpt": "I have a faulty amplifier Artcoustic PA-1800 bought by a friend. Guess who he asked to fix it? This is part two of this repair, however I made a short video about the strange topology of this amplifier here so please watch if you did not…"
     },
     {
       "id": "0dac4a213409",
@@ -164,14 +172,6 @@
       "url": "https://www.ifixit.com/News/119742/scars-can-be-mended-repair-lessons-from-the-uss-hornet",
       "date": "2026-10-14T00:24:56.000Z",
       "excerpt": "Talking line inspection and repairability inside an 80-year-old aircraft carrier"
-    },
-    {
-      "id": "6629b109e7ee",
-      "source": "learnrepair",
-      "title": "Aluminium PCB Rework : DJM KON 300 Moving Head LED Strobe Light Repair Did Not Go Totally To Plan!",
-      "url": "https://www.youtube.com/watch?v=H6JlnFKG_wE",
-      "date": "2026-10-12T10:22:12.000Z",
-      "excerpt": "I have to repair a fault on an Aluminium PCB. How can I do this and what equipment should I use? Well clearly not what I tried because this did not go as expected. Discount Codes 👉Click the link or enter the search code [AYK1F1]on the…"
     },
     {
       "id": "90bc4a89f7b6",
