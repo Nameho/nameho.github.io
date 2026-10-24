@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-23T10:00:48.784Z",
+  "updatedAt": "2026-10-24T09:30:22.983Z",
   "sources": [
     {
       "id": "ifixit",
@@ -46,52 +46,60 @@
   ],
   "items": [
     {
-      "id": "2f8b1225ab7c",
+      "id": "d1a6d6a295fe",
       "source": "hackaday",
-      "title": "DOOM Ported to a $30 Clamp Meter",
-      "url": "https://hackaday.com/2026/10/23/doom-ported-to-a-30-clamp-meter/",
-      "date": "2026-10-23T08:00:17.000Z",
-      "excerpt": "DOOM. Boil it, mash it, stick it in a stew, it’s the game that runs on anything and everything. Now, the classic shooter is running on a rather unlikely target—a …read more"
+      "title": "A Walkie Talkie Interface For Claude",
+      "url": "https://hackaday.com/2026/10/24/a-walkie-talkie-interface-for-claude/",
+      "date": "2026-10-24T08:00:14.000Z",
+      "excerpt": "[Bookmari] had a problem — working as a delivery driver, they wanted to work on various projects with Claude Code while out and about. Unfortunately, it simply wasn’t practical to …read more"
     },
     {
-      "id": "b6eacd64dd09",
+      "id": "e8c901b31141",
       "source": "hackaday",
-      "title": "Restoring a Soviet ES-4001 Mainframe Control Panel",
-      "url": "https://hackaday.com/2026/10/22/restoring-a-soviet-es-4001-mainframe-control-panel/",
-      "date": "2026-10-23T05:00:00.000Z",
-      "excerpt": "Recently the [Chornobyl Family] got their hands on an ES-4001 control panel for a 1970s-era Soviet mainframe, with the intention to restore it to full working order. Not just because …read more"
+      "title": "Using an Unmodded GBA as a Music Synth",
+      "url": "https://hackaday.com/2026/10/23/using-an-unmodded-gba-as-a-music-synth/",
+      "date": "2026-10-24T05:00:56.000Z",
+      "excerpt": "The style and sound of older video games is unique enough that they’re still copied in relatively modern games like Undertale, Celeste, or Shovel Knight. There’s also a vibrant chiptune community making music …read more"
     },
     {
-      "id": "f75737e4c08c",
+      "id": "8a414bfa5839",
       "source": "hackaday",
-      "title": "NASA Batteries Survive Extreme Cold and Heat",
-      "url": "https://hackaday.com/2026/10/22/nasa-batteries-survive-extreme-cold-and-heat/",
-      "date": "2026-10-23T02:00:05.000Z",
-      "excerpt": "One of the major limits of mass-produced batteries is the electrolyte. From lead-acid to lithium ion, there’s some temperature where the electrolyte will freeze and cause all sorts of problems, …read more"
+      "title": "RepRapMicron Uses Fibre Optics To Print Tiny Benchy in Resin",
+      "url": "https://hackaday.com/2026/10/23/reprapmicron-uses-fibre-optics-to-print-tiny-benchy-in-resin/",
+      "date": "2026-10-24T02:00:14.000Z",
+      "excerpt": "The RepRapMicron (also µRepRap) is pretty much the microscopic take on what RepRap did for more macroscale manufacturing, with the most recent innovation being a UV print head, called the …read more"
     },
     {
-      "id": "24506286d97d",
+      "id": "c06501c27b58",
       "source": "hackaday",
-      "title": "Car’s Camera Footage Backed up to NAS",
-      "url": "https://hackaday.com/2026/10/22/cars-camera-footage-backed-up-to-nas/",
-      "date": "2026-10-22T23:00:13.000Z",
-      "excerpt": "For as many sensors, cameras, and computers as there are on modern cars, they ought to be a dream to poke around in and customize to one’s liking. Unfortunately they’re …read more"
+      "title": "Automatic Coil Winder Takes the Tedium out of Actuators",
+      "url": "https://hackaday.com/2026/10/23/automatic-coil-winder-takes-the-tedium-out-of-actuators/",
+      "date": "2026-10-23T23:00:07.000Z",
+      "excerpt": "Anyone who’s ever built their own motors knows how tedious winding the coils soon becomes; in [Larry]’s case, the issue was even worse. He’s building his own flip-dot matrix display, …read more"
     },
     {
-      "id": "b3aafeabb21e",
+      "id": "8eaa1af69e18",
       "source": "hackaday",
-      "title": "An Open Source Linear Capacitive Encoder",
-      "url": "https://hackaday.com/2026/10/22/an-open-source-linear-capacitive-encoder/",
-      "date": "2026-10-22T20:00:48.000Z",
-      "excerpt": "If you’ve ever pulled apart a set of digital calipers, you’ve probably marvelled at the capacitive encoder that does all the measuring work. There’s nothing stopping you from using the …read more"
+      "title": "Reconstructing the Ancient Chinese Storm of Crows Weapon",
+      "url": "https://hackaday.com/2026/10/23/reconstructing-the-ancient-chinese-storm-of-crows-weapon/",
+      "date": "2026-10-23T20:00:09.000Z",
+      "excerpt": "The Chinese had been using large crossbows – akin to Greek and Roman ballistae – for warfare for many of the same reasons that European armies loved them. Their single, …read more"
     },
     {
-      "id": "83481dcfe890",
+      "id": "0e16663d6418",
       "source": "hackaday",
-      "title": "Keeping Old Wi-Fi Radios Alive With Stream Conversion",
-      "url": "https://hackaday.com/2026/10/22/keeping-old-wi-fi-radios-alive-with-stream-conversion/",
-      "date": "2026-10-22T18:30:40.000Z",
-      "excerpt": "There are plenty of Wi-Fi radios out there that were built over the last two decades or so. However, many older models are now becoming less useful because many internet …read more"
+      "title": "Running a Philips CD-i Off USB-C",
+      "url": "https://hackaday.com/2026/10/23/running-a-philips-cd-i-off-usb-c/",
+      "date": "2026-10-23T18:30:09.000Z",
+      "excerpt": "The Philips CD-i is a console with many shortcomings, and those include the power supply. For whatever reason, the engineering team decided it should use an 8P8C connector just like …read more"
+    },
+    {
+      "id": "fcec894c0ef6",
+      "source": "framboise314",
+      "title": "Meshtastic (Partie 1/2) : Créer son réseau LoRa avec la clé USB Elecrow Meshstick et un Raspberry Pi",
+      "url": "https://www.framboise314.fr/meshtastic-raspberry-pi-elecrow-meshstick/",
+      "date": "2026-10-23T15:54:46.000Z",
+      "excerpt": "Le réseau maillé décentralisé Meshtastic permet d’échanger des messages et des données de télémétrie via la modulation LoRa (bande des 868 MHz en Europe), en totale autonomie et hors réseau GSM. Face à la richesse du sujet, ce dossier…"
     },
     {
       "id": "2455448d956d",
@@ -284,14 +292,6 @@
       "url": "https://www.framboise314.fr/rtl-sdr-v4-scanner-radio-raspberry-pi-4/",
       "date": "2026-08-18T14:08:20.000Z",
       "excerpt": "Après avoir validé le bon fonctionnement de notre clé RTL-SDR V4 sous Windows 11 dans un précédent article, nous allons aujourd’hui passer à l’étape suivante : son installation sur Raspberry Pi. Pour ce tutoriel, j’ai choisi de travailler…"
-    },
-    {
-      "id": "1146da82b615",
-      "source": "framboise314",
-      "title": "RTL-SDR V4 sur Windows : Installer et configurer SDR# (Tuto Débutant)",
-      "url": "https://www.framboise314.fr/rtl-sdr-v4-windows-installation-sdrsharp/",
-      "date": "2026-08-16T12:42:47.000Z",
-      "excerpt": "Le monde des ondes radio vous intrigue ? Avec une simple clé USB comme le RTL-SDR V4, on peut transformer un ordinateur en véritable station de réception. Que ce soit pour écouter la bande FM, capter les avions en vol, ou même visualiser…"
     }
   ]
 }
