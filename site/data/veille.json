@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-24T09:30:22.983Z",
+  "updatedAt": "2026-10-25T09:46:55.064Z",
   "sources": [
     {
       "id": "ifixit",
@@ -46,52 +46,68 @@
   ],
   "items": [
     {
-      "id": "d1a6d6a295fe",
+      "id": "b54b110ac5ed",
       "source": "hackaday",
-      "title": "A Walkie Talkie Interface For Claude",
-      "url": "https://hackaday.com/2026/10/24/a-walkie-talkie-interface-for-claude/",
-      "date": "2026-10-24T08:00:14.000Z",
-      "excerpt": "[Bookmari] had a problem — working as a delivery driver, they wanted to work on various projects with Claude Code while out and about. Unfortunately, it simply wasn’t practical to …read more"
+      "title": "An Analog TV Station For Anyone",
+      "url": "https://hackaday.com/2026/10/25/an-analog-tv-station-for-anyone/",
+      "date": "2026-10-25T08:00:24.000Z",
+      "excerpt": "If you’re a collector of older TVs, you’re probably facing the problem in some form of having no transmissions to tune in to. With many sets you can use a …read more"
     },
     {
-      "id": "e8c901b31141",
+      "id": "bb8de0bee207",
       "source": "hackaday",
-      "title": "Using an Unmodded GBA as a Music Synth",
-      "url": "https://hackaday.com/2026/10/23/using-an-unmodded-gba-as-a-music-synth/",
-      "date": "2026-10-24T05:00:56.000Z",
-      "excerpt": "The style and sound of older video games is unique enough that they’re still copied in relatively modern games like Undertale, Celeste, or Shovel Knight. There’s also a vibrant chiptune community making music …read more"
+      "title": "Pushing Bluetooth out to 12 Kilometers",
+      "url": "https://hackaday.com/2026/10/24/pushing-bluetooth-out-to-12-kilometers/",
+      "date": "2026-10-25T05:00:51.000Z",
+      "excerpt": "Bluetooth is a short-range protocol that’s great for peripherals and finding your keys, but it’s limited range is mainly a product of how it’s usually implemented. A recent video from …read more"
     },
     {
-      "id": "8a414bfa5839",
+      "id": "eda08b1d5933",
       "source": "hackaday",
-      "title": "RepRapMicron Uses Fibre Optics To Print Tiny Benchy in Resin",
-      "url": "https://hackaday.com/2026/10/23/reprapmicron-uses-fibre-optics-to-print-tiny-benchy-in-resin/",
-      "date": "2026-10-24T02:00:14.000Z",
-      "excerpt": "The RepRapMicron (also µRepRap) is pretty much the microscopic take on what RepRap did for more macroscale manufacturing, with the most recent innovation being a UV print head, called the …read more"
+      "title": "Remembering the Weirdest Nintendo DSi Accessory",
+      "url": "https://hackaday.com/2026/10/24/remembering-the-weirdest-nintendo-dsi-accessory/",
+      "date": "2026-10-25T02:00:01.000Z",
+      "excerpt": "The Nintendo DSi was released in November 2008, and boasted a new feature not formerly seen on the brand’s handhelds—it had two cameras, inside and outside. It let the console …read more"
     },
     {
-      "id": "c06501c27b58",
+      "id": "c42b68b3291e",
       "source": "hackaday",
-      "title": "Automatic Coil Winder Takes the Tedium out of Actuators",
-      "url": "https://hackaday.com/2026/10/23/automatic-coil-winder-takes-the-tedium-out-of-actuators/",
-      "date": "2026-10-23T23:00:07.000Z",
-      "excerpt": "Anyone who’s ever built their own motors knows how tedious winding the coils soon becomes; in [Larry]’s case, the issue was even worse. He’s building his own flip-dot matrix display, …read more"
+      "title": "The Slurptop is Both Drool Worthy and Practical",
+      "url": "https://hackaday.com/2026/10/24/the-slurptop-is-both-drool-worthy-and-practical/",
+      "date": "2026-10-24T23:00:51.000Z",
+      "excerpt": "There are two kinds of cyberdeck: the kind someone makes on a lark and operates purely on ‘rule of cool’, and the kind designed to do practical work. The Slurptop …read more"
     },
     {
-      "id": "8eaa1af69e18",
+      "id": "353d29b1dd0a",
       "source": "hackaday",
-      "title": "Reconstructing the Ancient Chinese Storm of Crows Weapon",
-      "url": "https://hackaday.com/2026/10/23/reconstructing-the-ancient-chinese-storm-of-crows-weapon/",
-      "date": "2026-10-23T20:00:09.000Z",
-      "excerpt": "The Chinese had been using large crossbows – akin to Greek and Roman ballistae – for warfare for many of the same reasons that European armies loved them. Their single, …read more"
+      "title": "2026 Retrocomputing Challenge: I Would Do Anything For Serial Data",
+      "url": "https://hackaday.com/2026/10/24/2026-retrocomputing-challenge-i-would-do-anything-for-serial-data/",
+      "date": "2026-10-24T20:00:14.000Z",
+      "excerpt": "These days we take high-speed networking for granted, but it can be difficult to get vintage computers talking to modern machines. To help solve this problem [jaime] came up with …read more"
     },
     {
-      "id": "0e16663d6418",
+      "id": "14c8e3f37283",
       "source": "hackaday",
-      "title": "Running a Philips CD-i Off USB-C",
-      "url": "https://hackaday.com/2026/10/23/running-a-philips-cd-i-off-usb-c/",
-      "date": "2026-10-23T18:30:09.000Z",
-      "excerpt": "The Philips CD-i is a console with many shortcomings, and those include the power supply. For whatever reason, the engineering team decided it should use an 8P8C connector just like …read more"
+      "title": "That Weird 7-Pin S-Video Port on Old Laptops",
+      "url": "https://hackaday.com/2026/10/24/that-weird-7-pin-s-video-port-on-old-laptops/",
+      "date": "2026-10-24T17:00:21.000Z",
+      "excerpt": "Even though laptops from around the early 2000s came with just about every conceivable port on them, they still would often feature a somewhat unusual combined video output port. While …read more"
+    },
+    {
+      "id": "29672b3d6bec",
+      "source": "framboise314",
+      "title": "Meshtastic (Partie 2/2) : Test des nœuds portables Elecrow ThinkNode M9 et M5",
+      "url": "https://www.framboise314.fr/meshtastic-test-noeuds-portables-elecrow-thinknode-m9-m5/",
+      "date": "2026-10-24T14:15:21.000Z",
+      "excerpt": "Que ce soit suite à une panne matérielle des infrastructures, une cyberattaque, une coupure volontaire des réseaux cellulaires ou simplement lors d’une randonnée dans une zone blanche géographique, la perte soudaine de nos moyens de…"
+    },
+    {
+      "id": "f242e46b33e6",
+      "source": "learnrepair",
+      "title": "One PCB For Both SMD and Through Hole PTH Version Of A Project",
+      "url": "https://www.youtube.com/watch?v=kAODXJoq_-k",
+      "date": "2026-10-24T09:59:48.000Z",
+      "excerpt": "A Couple of months ago Detlef and myself looked at methods to design a PCB that could be populated with either SMD or PTH components, or any combination of both, to complete a project. This video is sponsored by PCBWay For All Your PCB…"
     },
     {
       "id": "fcec894c0ef6",
@@ -164,14 +180,6 @@
       "url": "https://www.ifixit.com/News/119691/why-isnt-everyone-turning-their-old-laptops-into-mini-desktop-pcs",
       "date": "2026-10-16T00:16:06.000Z",
       "excerpt": "Modular, repairable, upgradeable laptops are awesome (and extremely rare), especially now that Rammageddon is making new machines so crazy expensive. But one question remains: What do you do with the…"
-    },
-    {
-      "id": "797e3c59e19c",
-      "source": "learnrepair",
-      "title": "DB Technologies SUB 618 Active Subwoofer Will Not Start. Dead. No Power.",
-      "url": "https://www.youtube.com/watch?v=BhWWzQDOk3U",
-      "date": "2026-10-14T13:11:12.000Z",
-      "excerpt": "I have a Class D Amplifier from an active subwoofer. This one will not power up. Can we fix it? Discount Codes 👉Click the link or enter the search code [AYK1F1]on the AliExpress homepage or use the exclusive discount codes below. These…"
     },
     {
       "id": "d40dca9a7354",
@@ -284,14 +292,6 @@
       "url": "https://www.framboise314.fr/decoder-aprs-raspberry-pi-direwolf/",
       "date": "2026-08-19T14:46:13.000Z",
       "excerpt": "Transformer un Raspberry Pi 4 en station de réception radioamateur performante exige de la rigueur. Après avoir validé le fonctionnement de la clé RTL-SDR v4, ce nouveau dossier technique s’attaque au décodage des trames APRS (Automatic…"
-    },
-    {
-      "id": "7622dbc13c3d",
-      "source": "framboise314",
-      "title": "RTL-SDR V4 sur Raspberry Pi 4 : Installer et configurer GQRX",
-      "url": "https://www.framboise314.fr/rtl-sdr-v4-scanner-radio-raspberry-pi-4/",
-      "date": "2026-08-18T14:08:20.000Z",
-      "excerpt": "Après avoir validé le bon fonctionnement de notre clé RTL-SDR V4 sous Windows 11 dans un précédent article, nous allons aujourd’hui passer à l’étape suivante : son installation sur Raspberry Pi. Pour ce tutoriel, j’ai choisi de travailler…"
     }
   ]
 }
