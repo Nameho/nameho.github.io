@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-25T09:46:55.064Z",
+  "updatedAt": "2026-10-26T11:02:48.580Z",
   "sources": [
     {
       "id": "ifixit",
@@ -46,52 +46,76 @@
   ],
   "items": [
     {
-      "id": "b54b110ac5ed",
+      "id": "79cb31f3e75c",
       "source": "hackaday",
-      "title": "An Analog TV Station For Anyone",
-      "url": "https://hackaday.com/2026/10/25/an-analog-tv-station-for-anyone/",
-      "date": "2026-10-25T08:00:24.000Z",
-      "excerpt": "If you’re a collector of older TVs, you’re probably facing the problem in some form of having no transmissions to tune in to. With many sets you can use a …read more"
+      "title": "Hiding Virtualization From Other Software",
+      "url": "https://hackaday.com/2026/10/26/hiding-virtualization-from-other-software/",
+      "date": "2026-10-26T11:00:56.000Z",
+      "excerpt": "The Kernel-based Virtual Machine (KVM) allows Linux systems to function as hypervisors without needing any extra software, but VMs created with it don’t behave exactly like real hardware does. Sometimes …read more"
     },
     {
-      "id": "bb8de0bee207",
-      "source": "hackaday",
-      "title": "Pushing Bluetooth out to 12 Kilometers",
-      "url": "https://hackaday.com/2026/10/24/pushing-bluetooth-out-to-12-kilometers/",
-      "date": "2026-10-25T05:00:51.000Z",
-      "excerpt": "Bluetooth is a short-range protocol that’s great for peripherals and finding your keys, but it’s limited range is mainly a product of how it’s usually implemented. A recent video from …read more"
+      "id": "4503685a77bb",
+      "source": "learnrepair",
+      "title": "Active Speakers At A Swimming Pool Party: What Could Possibly Go Wrong? PA108A Speaker Repair",
+      "url": "https://www.youtube.com/watch?v=yFezzbnzzf0",
+      "date": "2026-10-26T10:05:28.000Z",
+      "excerpt": "My friend Detlef and his band were playing a gig at a pool party. Their active monitor speakers were at the pool edge. Surely nothing could possibly go wrong... Discount Codes 👉Click the link or enter the search code [AYK1F1]on the…"
     },
     {
-      "id": "eda08b1d5933",
+      "id": "0b82c50fa93d",
       "source": "hackaday",
-      "title": "Remembering the Weirdest Nintendo DSi Accessory",
-      "url": "https://hackaday.com/2026/10/24/remembering-the-weirdest-nintendo-dsi-accessory/",
-      "date": "2026-10-25T02:00:01.000Z",
-      "excerpt": "The Nintendo DSi was released in November 2008, and boasted a new feature not formerly seen on the brand’s handhelds—it had two cameras, inside and outside. It let the console …read more"
+      "title": "Hairy Armor For Combat Robot? It’s Not Terrible!",
+      "url": "https://hackaday.com/2026/10/26/hairy-armor-for-combat-robot-its-not-terrible/",
+      "date": "2026-10-26T08:00:59.000Z",
+      "excerpt": "[Angus] of Maker’s Muse enjoys combat robotics, in which contenders zip about in an arena, attempting to disable one another with weapons that lift, spin, and smash. He got a …read more"
     },
     {
-      "id": "c42b68b3291e",
+      "id": "13359996f588",
       "source": "hackaday",
-      "title": "The Slurptop is Both Drool Worthy and Practical",
-      "url": "https://hackaday.com/2026/10/24/the-slurptop-is-both-drool-worthy-and-practical/",
-      "date": "2026-10-24T23:00:51.000Z",
-      "excerpt": "There are two kinds of cyberdeck: the kind someone makes on a lark and operates purely on ‘rule of cool’, and the kind designed to do practical work. The Slurptop …read more"
+      "title": "Building a Swashplate-less Helicoper Rotor",
+      "url": "https://hackaday.com/2026/10/25/building-a-swashplate-less-helicoper-rotor/",
+      "date": "2026-10-26T05:00:22.000Z",
+      "excerpt": "A helicopter blade uses a swash plate and a set of linkages to change the angle of the blades. Not only does it vary the collective pitch to increase or …read more"
     },
     {
-      "id": "353d29b1dd0a",
+      "id": "a4c2ec5409bc",
       "source": "hackaday",
-      "title": "2026 Retrocomputing Challenge: I Would Do Anything For Serial Data",
-      "url": "https://hackaday.com/2026/10/24/2026-retrocomputing-challenge-i-would-do-anything-for-serial-data/",
-      "date": "2026-10-24T20:00:14.000Z",
-      "excerpt": "These days we take high-speed networking for granted, but it can be difficult to get vintage computers talking to modern machines. To help solve this problem [jaime] came up with …read more"
+      "title": "Transforming a Tungsten Ditelluride Monolayer into a Transistor",
+      "url": "https://hackaday.com/2026/10/25/transforming-a-tungsten-ditelluride-monolayer-into-a-transistor/",
+      "date": "2026-10-26T02:00:52.000Z",
+      "excerpt": "In the world of silicon semiconductors, the process of creating transistors and similar structures involves various rounds of modifications and additions in order to create the requisite functional layers. A …read more"
     },
     {
-      "id": "14c8e3f37283",
+      "id": "234b8c738283",
       "source": "hackaday",
-      "title": "That Weird 7-Pin S-Video Port on Old Laptops",
-      "url": "https://hackaday.com/2026/10/24/that-weird-7-pin-s-video-port-on-old-laptops/",
-      "date": "2026-10-24T17:00:21.000Z",
-      "excerpt": "Even though laptops from around the early 2000s came with just about every conceivable port on them, they still would often feature a somewhat unusual combined video output port. While …read more"
+      "title": "Hackaday Links: October 25, 2026",
+      "url": "https://hackaday.com/2026/10/25/hackaday-links-october-25-2026/",
+      "date": "2026-10-25T23:00:48.000Z",
+      "excerpt": "Some disappointing, but perhaps not entirely unsurprising news this week out of Denmark — after announcing last year that they would transition away from Microsoft’s proprietary software, the realities of …read more"
+    },
+    {
+      "id": "ba7ccac6f924",
+      "source": "ifixit",
+      "title": "iPhone Duo Teardown: The Most Repairable Foldable Has a Huge Screen Problem",
+      "url": "https://www.ifixit.com/News/119895/iphone-duo-teardown",
+      "date": "2026-10-25T21:38:06.000Z",
+      "excerpt": "Apple’s folding iPhone finally made it to our teardown table. Some owners’ screens didn’t make it through setup. After fifteen years of patents and rumors, the iPhone Duo is here,…"
+    },
+    {
+      "id": "4107ab3b83a2",
+      "source": "hackaday",
+      "title": "A 3D Printed Marble Clock, but it’s Scrolling Text",
+      "url": "https://hackaday.com/2026/10/25/a-3d-printed-marble-clock-but-its-scrolling-text/",
+      "date": "2026-10-25T20:00:33.000Z",
+      "excerpt": "With the topic of marble clocks having been quite well explored at this point, it raises the question of how easy it would be to take the basic principle and …read more"
+    },
+    {
+      "id": "f21ad7293100",
+      "source": "framboise314",
+      "title": "Vibe Coding sur Raspberry Pi : Cartographier sa couverture radio ADS-B (RTL-SDR) pour Meshtastic",
+      "url": "https://www.framboise314.fr/cartographier-couverture-radio-ads-b-raspberry-pi/",
+      "date": "2026-10-25T16:06:36.000Z",
+      "excerpt": "Avant de déployer un nœud Meshtastic (868 MHz), évaluer l’horizon radio imposé par votre environnement est une étape incontournable. Pour visualiser l’impact du relief local, une méthode possible consiste à détourner la réception des…"
     },
     {
       "id": "29672b3d6bec",
@@ -166,14 +190,6 @@
       "excerpt": "One ThinkPad owner replaced the fan, refreshed the thermal paste, and reinstalled Windows. But their laptop still took minutes to boot. After installing ChromeOS Flex, it started in seconds. PCWorld’s…"
     },
     {
-      "id": "303a64a997ef",
-      "source": "learnrepair",
-      "title": "What Do All The Strange Patterns On A Curve Trace Mean? PART 2. Huntron Tracker Octopus Taster",
-      "url": "https://www.youtube.com/watch?v=SrW6o9oAF0A",
-      "date": "2026-10-16T10:52:00.000Z",
-      "excerpt": "Many of us use a Curve Tracer as a comparison tool between two PCBs to help us find faults. To do this we are looking for differences between a good and bad PCB. But what do all those funny curves actually mean? In this video I look at…"
-    },
-    {
       "id": "2f2ea65b7ef5",
       "source": "ifixit",
       "title": "Why Isn’t Everyone Turning Their Old Laptops into Mini Desktop PCs?",
@@ -230,14 +246,6 @@
       "excerpt": "L’association HOP - Halte à l’Obsolescence Programmée publie un nouveau livre blanc à l’approche des élections présidentielles de 2027. Son but : proposer aux décideurs politiques 40 mesures au service de l’environnement et des…"
     },
     {
-      "id": "4855dfeec236",
-      "source": "ifixit",
-      "title": "“I Used to Just Call a Guy”: The Struggle to Get Repair Information",
-      "url": "https://www.ifixit.com/News/119622/i-used-to-just-call-a-guy-the-struggle-to-get-repair-information",
-      "date": "2026-10-05T08:10:50.000Z",
-      "excerpt": "Appliance repairer Jacob D'Hollander qualifies for repair information under EU Ecodesign rules. Eight months of requests later, only one brand group has delivered."
-    },
-    {
       "id": "e9e789195163",
       "source": "hop",
       "title": "80 % des smartphones vendus en Europe ne respectent pas ce critère obligatoire",
@@ -284,14 +292,6 @@
       "url": "https://www.framboise314.fr/remplacer-pile-minuteur-tefal-oleoclean/",
       "date": "2026-08-26T14:04:09.000Z",
       "excerpt": "Le minuteur de votre friteuse Tefal Oleoclean n’affiche plus rien ? Plus le moindre chiffre sur l’écran LCD et plus un seul bip à l’horizon ? C’est le symptôme classique de la pile interne arrivée en fin de vie. Face à ce boîtier muet…"
-    },
-    {
-      "id": "2f0e4c1b6629",
-      "source": "framboise314",
-      "title": "Tuto : Décodage APRS avec Raspberry Pi 4 et RTL-SDR",
-      "url": "https://www.framboise314.fr/decoder-aprs-raspberry-pi-direwolf/",
-      "date": "2026-08-19T14:46:13.000Z",
-      "excerpt": "Transformer un Raspberry Pi 4 en station de réception radioamateur performante exige de la rigueur. Après avoir validé le fonctionnement de la clé RTL-SDR v4, ce nouveau dossier technique s’attaque au décodage des trames APRS (Automatic…"
     }
   ]
 }
