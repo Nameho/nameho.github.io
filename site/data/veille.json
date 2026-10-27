@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-26T11:02:48.580Z",
+  "updatedAt": "2026-10-27T10:30:19.760Z",
   "sources": [
     {
       "id": "ifixit",
@@ -46,12 +46,52 @@
   ],
   "items": [
     {
-      "id": "79cb31f3e75c",
+      "id": "32ba40eb9754",
       "source": "hackaday",
-      "title": "Hiding Virtualization From Other Software",
-      "url": "https://hackaday.com/2026/10/26/hiding-virtualization-from-other-software/",
-      "date": "2026-10-26T11:00:56.000Z",
-      "excerpt": "The Kernel-based Virtual Machine (KVM) allows Linux systems to function as hypervisors without needing any extra software, but VMs created with it don’t behave exactly like real hardware does. Sometimes …read more"
+      "title": "ESP32 Rotary Display Makes Ideal Timer",
+      "url": "https://hackaday.com/2026/10/27/esp32-rotary-display-makes-ideal-timer/",
+      "date": "2026-10-27T08:00:35.000Z",
+      "excerpt": "We’re big fans of pushing hardware into situations it wasn’t designed for here at Hackaday, but sometimes you’ve got to appreciate a nicely designed gadget doing more or less exactly …read more"
+    },
+    {
+      "id": "0e02f713fc92",
+      "source": "hackaday",
+      "title": "The Oldest Windows App To Still Run On WIndows 11",
+      "url": "https://hackaday.com/2026/10/26/the-oldest-windows-app-to-still-run-on-windows-11/",
+      "date": "2026-10-27T05:00:21.000Z",
+      "excerpt": "In the open source world we are used to software being compiled from source for our particular distro, so while in a few cases an ancient release may still be …read more"
+    },
+    {
+      "id": "d7b081c2e655",
+      "source": "hackaday",
+      "title": "In Praise Of A Legendary Power Transistor",
+      "url": "https://hackaday.com/2026/10/26/in-praise-of-a-legendary-power-transistor/",
+      "date": "2026-10-27T02:00:15.000Z",
+      "excerpt": "There are some devices which achieve electronic immortality, it’s likely that you have used a few of them yourself. The 555 timer of course, or the 741 op-amp. [ElectronicsNotes] is …read more"
+    },
+    {
+      "id": "0920ca7d77ce",
+      "source": "hackaday",
+      "title": "Enable Resizable BAR on Unsupported Motherboards",
+      "url": "https://hackaday.com/2026/10/26/enable-resizable-bar-on-unsupported-motherboards/",
+      "date": "2026-10-26T23:00:42.000Z",
+      "excerpt": "Recently [Rod Burlamaqui] released the arc-rebar project on GitHub, enabling Intel GPUs to work significantly more efficiently if the system’s mainboard does not support resizable BAR. It does require a …read more"
+    },
+    {
+      "id": "e9f067c64b31",
+      "source": "hackaday",
+      "title": "Practice Japanese on an Inkplate 4Tempera eInk Device",
+      "url": "https://hackaday.com/2026/10/26/practice-japanese-on-an-inkplate-4tempera-eink-device/",
+      "date": "2026-10-26T20:00:01.000Z",
+      "excerpt": "Learning a new natural language can be a daunting proposition at the best of times, with repetition and immersion generally considered to be the best ways to build up not …read more"
+    },
+    {
+      "id": "f54a54996288",
+      "source": "hackaday",
+      "title": "Arduino Engine Runs Many Games",
+      "url": "https://hackaday.com/2026/10/26/arduino-engine-runs-many-games/",
+      "date": "2026-10-26T17:30:33.000Z",
+      "excerpt": "A few years ago, [Smashcat] ported a ZX Spectrum game called Manic Miner to the Arduino Uno. The Arduino has less memory than the original Spectrum did, so doing all this …read more"
     },
     {
       "id": "4503685a77bb",
@@ -62,52 +102,12 @@
       "excerpt": "My friend Detlef and his band were playing a gig at a pool party. Their active monitor speakers were at the pool edge. Surely nothing could possibly go wrong... Discount Codes 👉Click the link or enter the search code [AYK1F1]on the…"
     },
     {
-      "id": "0b82c50fa93d",
-      "source": "hackaday",
-      "title": "Hairy Armor For Combat Robot? It’s Not Terrible!",
-      "url": "https://hackaday.com/2026/10/26/hairy-armor-for-combat-robot-its-not-terrible/",
-      "date": "2026-10-26T08:00:59.000Z",
-      "excerpt": "[Angus] of Maker’s Muse enjoys combat robotics, in which contenders zip about in an arena, attempting to disable one another with weapons that lift, spin, and smash. He got a …read more"
-    },
-    {
-      "id": "13359996f588",
-      "source": "hackaday",
-      "title": "Building a Swashplate-less Helicoper Rotor",
-      "url": "https://hackaday.com/2026/10/25/building-a-swashplate-less-helicoper-rotor/",
-      "date": "2026-10-26T05:00:22.000Z",
-      "excerpt": "A helicopter blade uses a swash plate and a set of linkages to change the angle of the blades. Not only does it vary the collective pitch to increase or …read more"
-    },
-    {
-      "id": "a4c2ec5409bc",
-      "source": "hackaday",
-      "title": "Transforming a Tungsten Ditelluride Monolayer into a Transistor",
-      "url": "https://hackaday.com/2026/10/25/transforming-a-tungsten-ditelluride-monolayer-into-a-transistor/",
-      "date": "2026-10-26T02:00:52.000Z",
-      "excerpt": "In the world of silicon semiconductors, the process of creating transistors and similar structures involves various rounds of modifications and additions in order to create the requisite functional layers. A …read more"
-    },
-    {
-      "id": "234b8c738283",
-      "source": "hackaday",
-      "title": "Hackaday Links: October 25, 2026",
-      "url": "https://hackaday.com/2026/10/25/hackaday-links-october-25-2026/",
-      "date": "2026-10-25T23:00:48.000Z",
-      "excerpt": "Some disappointing, but perhaps not entirely unsurprising news this week out of Denmark — after announcing last year that they would transition away from Microsoft’s proprietary software, the realities of …read more"
-    },
-    {
       "id": "ba7ccac6f924",
       "source": "ifixit",
       "title": "iPhone Duo Teardown: The Most Repairable Foldable Has a Huge Screen Problem",
       "url": "https://www.ifixit.com/News/119895/iphone-duo-teardown",
       "date": "2026-10-25T21:38:06.000Z",
       "excerpt": "Apple’s folding iPhone finally made it to our teardown table. Some owners’ screens didn’t make it through setup. After fifteen years of patents and rumors, the iPhone Duo is here,…"
-    },
-    {
-      "id": "4107ab3b83a2",
-      "source": "hackaday",
-      "title": "A 3D Printed Marble Clock, but it’s Scrolling Text",
-      "url": "https://hackaday.com/2026/10/25/a-3d-printed-marble-clock-but-its-scrolling-text/",
-      "date": "2026-10-25T20:00:33.000Z",
-      "excerpt": "With the topic of marble clocks having been quite well explored at this point, it raises the question of how easy it would be to take the basic principle and …read more"
     },
     {
       "id": "f21ad7293100",
