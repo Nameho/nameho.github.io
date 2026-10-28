@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-27T10:30:19.760Z",
+  "updatedAt": "2026-10-28T11:18:32.165Z",
   "sources": [
     {
       "id": "ifixit",
@@ -46,52 +46,68 @@
   ],
   "items": [
     {
-      "id": "32ba40eb9754",
+      "id": "3e54f8496684",
       "source": "hackaday",
-      "title": "ESP32 Rotary Display Makes Ideal Timer",
-      "url": "https://hackaday.com/2026/10/27/esp32-rotary-display-makes-ideal-timer/",
-      "date": "2026-10-27T08:00:35.000Z",
-      "excerpt": "We’re big fans of pushing hardware into situations it wasn’t designed for here at Hackaday, but sometimes you’ve got to appreciate a nicely designed gadget doing more or less exactly …read more"
+      "title": "Emulate the 486 in Your Browser",
+      "url": "https://hackaday.com/2026/10/28/emulate-the-486-in-your-browser/",
+      "date": "2026-10-28T11:00:20.000Z",
+      "excerpt": "You might fondly remember the days of the Intel 486, but you probably don’t have one on your desk anymore. If you’d like to emulate that classic hardware, you can …read more"
     },
     {
-      "id": "0e02f713fc92",
+      "id": "34f1f895282e",
       "source": "hackaday",
-      "title": "The Oldest Windows App To Still Run On WIndows 11",
-      "url": "https://hackaday.com/2026/10/26/the-oldest-windows-app-to-still-run-on-windows-11/",
-      "date": "2026-10-27T05:00:21.000Z",
-      "excerpt": "In the open source world we are used to software being compiled from source for our particular distro, so while in a few cases an ancient release may still be …read more"
+      "title": "SLAM Navigation For an Arduino Powered Car",
+      "url": "https://hackaday.com/2026/10/28/slam-navigation-for-an-arduino-powered-car/",
+      "date": "2026-10-28T08:00:33.000Z",
+      "excerpt": "There are plenty of “robot” projects out there that are really just a small remote control platform of some sort. We often like to think of robots of having some …read more"
     },
     {
-      "id": "d7b081c2e655",
+      "id": "12bd4d3ecd73",
       "source": "hackaday",
-      "title": "In Praise Of A Legendary Power Transistor",
-      "url": "https://hackaday.com/2026/10/26/in-praise-of-a-legendary-power-transistor/",
-      "date": "2026-10-27T02:00:15.000Z",
-      "excerpt": "There are some devices which achieve electronic immortality, it’s likely that you have used a few of them yourself. The 555 timer of course, or the 741 op-amp. [ElectronicsNotes] is …read more"
+      "title": "Hacking a Marine Radio Dish",
+      "url": "https://hackaday.com/2026/10/27/hacking-a-marine-radio-dish/",
+      "date": "2026-10-28T05:00:31.000Z",
+      "excerpt": "Having watched some fun videos on repurposed satellite dishes on YouTube, [Melan] wanted to get in on the action, managed to source an Intellian i4 — a dish built for …read more"
     },
     {
-      "id": "0920ca7d77ce",
+      "id": "268bd01009d5",
       "source": "hackaday",
-      "title": "Enable Resizable BAR on Unsupported Motherboards",
-      "url": "https://hackaday.com/2026/10/26/enable-resizable-bar-on-unsupported-motherboards/",
-      "date": "2026-10-26T23:00:42.000Z",
-      "excerpt": "Recently [Rod Burlamaqui] released the arc-rebar project on GitHub, enabling Intel GPUs to work significantly more efficiently if the system’s mainboard does not support resizable BAR. It does require a …read more"
+      "title": "Airborne Particle Monitoring, the BIG way",
+      "url": "https://hackaday.com/2026/10/27/airborne-particle-monitoring-the-big-way/",
+      "date": "2026-10-28T02:00:01.000Z",
+      "excerpt": "Airborne micro particles can be a significant health hazard in a workshop, and thus it’s important to maintain a high standard of ventilation. But monitoring their concentration is also important, …read more"
     },
     {
-      "id": "e9f067c64b31",
+      "id": "7235aba044e2",
       "source": "hackaday",
-      "title": "Practice Japanese on an Inkplate 4Tempera eInk Device",
-      "url": "https://hackaday.com/2026/10/26/practice-japanese-on-an-inkplate-4tempera-eink-device/",
-      "date": "2026-10-26T20:00:01.000Z",
-      "excerpt": "Learning a new natural language can be a daunting proposition at the best of times, with repetition and immersion generally considered to be the best ways to build up not …read more"
+      "title": "How a Single University Project Started Everything",
+      "url": "https://hackaday.com/2026/10/27/how-a-single-university-project-started-everything/",
+      "date": "2026-10-27T23:00:07.000Z",
+      "excerpt": "If we care to cast an eye over the history of ubiquitous personal computing as we know it today, we might immediately point at the original IBM PC. After all, …read more"
     },
     {
-      "id": "f54a54996288",
+      "id": "40ddec98831f",
       "source": "hackaday",
-      "title": "Arduino Engine Runs Many Games",
-      "url": "https://hackaday.com/2026/10/26/arduino-engine-runs-many-games/",
-      "date": "2026-10-26T17:30:33.000Z",
-      "excerpt": "A few years ago, [Smashcat] ported a ZX Spectrum game called Manic Miner to the Arduino Uno. The Arduino has less memory than the original Spectrum did, so doing all this …read more"
+      "title": "2026 Retrocomputing Challenge: Explore Space with a Credit Card Reader",
+      "url": "https://hackaday.com/2026/10/27/2026-retrocomputing-challenge-explore-space-with-a-credit-card-reader/",
+      "date": "2026-10-27T20:00:33.000Z",
+      "excerpt": "The humble credit card reader — most of us have used hundreds, perhaps even thousands of them over the years. But even for folks like us, it’s not the sort …read more"
+    },
+    {
+      "id": "5f5ba3051c3a",
+      "source": "hop",
+      "title": "L’exclusion croissante des Mac sortis avant 2021",
+      "url": "https://www.halteobsolescence.org/mac-intel-compatibilite-applications/",
+      "date": "2026-10-27T17:06:17.000Z",
+      "excerpt": "Les ordinateurs Mac sortis avant 2021 sont progressivement mis de côté. Apple invite les développeur·euses à abandonner la compatibilité de leurs applications avec ces équipements. Cela intervient en parallèle de leur exclusion de la…"
+    },
+    {
+      "id": "511461228e1b",
+      "source": "hop",
+      "title": "Arrêt de serveurs Somfy : des alarmes à plus de 1000 € rendues inutiles",
+      "url": "https://www.halteobsolescence.org/arret-serveurs-somfy/",
+      "date": "2026-10-27T17:05:50.000Z",
+      "excerpt": "Fin mars 2027, la marque Somfy prévoit de mettre fin à certains serveurs nécessaires au fonctionnement de nombreuses alarmes. L’entreprise invoque l’arrêt des réseaux de 2G et 3G, une justification discutable. HOP a reçu de nombreux…"
     },
     {
       "id": "4503685a77bb",
@@ -236,22 +252,6 @@
       "url": "https://www.ifixit.com/News/119658/apple-watch-series-12-and-ultra-4-teardown-reveals-a-gap-in-right-to-repair-coverage",
       "date": "2026-10-06T19:31:33.000Z",
       "excerpt": "We just tore down the two latest Apple Watches. And Apple, we need to have a talk. Let’s cut to the chase: there’s no big repairability news here. The Series…"
-    },
-    {
-      "id": "37e638652ca9",
-      "source": "hop",
-      "title": "40 mesures pour l’environnement et les consommateur·ices en vue de 2027",
-      "url": "https://www.halteobsolescence.org/livre-blanc-obsolescence-presidentielle-2027/",
-      "date": "2026-10-06T12:55:01.000Z",
-      "excerpt": "L’association HOP - Halte à l’Obsolescence Programmée publie un nouveau livre blanc à l’approche des élections présidentielles de 2027. Son but : proposer aux décideurs politiques 40 mesures au service de l’environnement et des…"
-    },
-    {
-      "id": "e9e789195163",
-      "source": "hop",
-      "title": "80 % des smartphones vendus en Europe ne respectent pas ce critère obligatoire",
-      "url": "https://www.halteobsolescence.org/80-des-smartphones-vendus-en-europe-ne-respectent-pas-ce-critere-obligatoire/",
-      "date": "2026-09-29T14:48:46.000Z",
-      "excerpt": "Début septembre, nos collègues européens de la campagne Right to Repair ont publié une enquête sur la mise en place de l'indice de réparabilité des téléphones et l'obligation d'afficher les informations de réparation. HOP vous la…"
     },
     {
       "id": "1323b59ec2ef",
