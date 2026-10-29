@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-28T11:18:32.165Z",
+  "updatedAt": "2026-10-29T11:29:32.334Z",
   "sources": [
     {
       "id": "ifixit",
@@ -46,52 +46,60 @@
   ],
   "items": [
     {
-      "id": "3e54f8496684",
+      "id": "7280ca0296f5",
       "source": "hackaday",
-      "title": "Emulate the 486 in Your Browser",
-      "url": "https://hackaday.com/2026/10/28/emulate-the-486-in-your-browser/",
-      "date": "2026-10-28T11:00:20.000Z",
-      "excerpt": "You might fondly remember the days of the Intel 486, but you probably don’t have one on your desk anymore. If you’d like to emulate that classic hardware, you can …read more"
+      "title": "An AI Chatbot for the Apocalypse",
+      "url": "https://hackaday.com/2026/10/29/an-ai-chatbot-for-the-apocalypse/",
+      "date": "2026-10-29T11:00:01.000Z",
+      "excerpt": "You don’t have to be a full-on “prepper” to at least occasionally wonder what would happen if civilization collapsed. One thing you probably couldn’t do is go on the Internet …read more"
     },
     {
-      "id": "34f1f895282e",
+      "id": "ab13148b6843",
       "source": "hackaday",
-      "title": "SLAM Navigation For an Arduino Powered Car",
-      "url": "https://hackaday.com/2026/10/28/slam-navigation-for-an-arduino-powered-car/",
-      "date": "2026-10-28T08:00:33.000Z",
-      "excerpt": "There are plenty of “robot” projects out there that are really just a small remote control platform of some sort. We often like to think of robots of having some …read more"
+      "title": "Magnetic Lock Opens By Magic",
+      "url": "https://hackaday.com/2026/10/29/magnetic-lock-opens-by-magic/",
+      "date": "2026-10-29T08:00:39.000Z",
+      "excerpt": "Over on IEEE Spectrum, [Stephen Cass] has a project that would probably have seemed like a magic a few centuries ago. Imagine a box that uses a magnetic device to …read more"
     },
     {
-      "id": "12bd4d3ecd73",
+      "id": "b684eb125958",
       "source": "hackaday",
-      "title": "Hacking a Marine Radio Dish",
-      "url": "https://hackaday.com/2026/10/27/hacking-a-marine-radio-dish/",
-      "date": "2026-10-28T05:00:31.000Z",
-      "excerpt": "Having watched some fun videos on repurposed satellite dishes on YouTube, [Melan] wanted to get in on the action, managed to source an Intellian i4 — a dish built for …read more"
+      "title": "2026 Retrocomputing Challenge: Custom RISC-V Processor For Retro System",
+      "url": "https://hackaday.com/2026/10/28/2026-retrocomputing-challenge-custom-risc-v-processor-for-retro-system/",
+      "date": "2026-10-29T05:00:43.000Z",
+      "excerpt": "Although once little more than an academic endeavor, the RISC-V architecture is slowly supplanting applications that would have normally gone to ARM. Even a few microcontrollers have chips running this …read more"
     },
     {
-      "id": "268bd01009d5",
+      "id": "4cb7e99ebf07",
       "source": "hackaday",
-      "title": "Airborne Particle Monitoring, the BIG way",
-      "url": "https://hackaday.com/2026/10/27/airborne-particle-monitoring-the-big-way/",
-      "date": "2026-10-28T02:00:01.000Z",
-      "excerpt": "Airborne micro particles can be a significant health hazard in a workshop, and thus it’s important to maintain a high standard of ventilation. But monitoring their concentration is also important, …read more"
+      "title": "Battery Prototype Uses Superextensive Quantum Effects to Charge Faster",
+      "url": "https://hackaday.com/2026/10/28/battery-prototype-uses-superextensive-quantum-effects-to-charge-faster/",
+      "date": "2026-10-29T02:00:26.000Z",
+      "excerpt": "Although the term ‘quantum battery’ is a bit of a vague term, the cell that [Kieran Hymas] et al. demonstrate in a recent paper does seem to suggest that it …read more"
     },
     {
-      "id": "7235aba044e2",
+      "id": "cd7a4dc0e3b4",
       "source": "hackaday",
-      "title": "How a Single University Project Started Everything",
-      "url": "https://hackaday.com/2026/10/27/how-a-single-university-project-started-everything/",
-      "date": "2026-10-27T23:00:07.000Z",
-      "excerpt": "If we care to cast an eye over the history of ubiquitous personal computing as we know it today, we might immediately point at the original IBM PC. After all, …read more"
+      "title": "Hacking the Modern Tamagotchi With UART",
+      "url": "https://hackaday.com/2026/10/28/hacking-the-modern-tamagotchi-with-uart/",
+      "date": "2026-10-28T23:00:25.000Z",
+      "excerpt": "Although not technically the first virtual pet, the Tamagotchi handhelds certainly popularized the idea and made it a worldwide phenomenon. In the late 90s it was hard to go out …read more"
     },
     {
-      "id": "40ddec98831f",
+      "id": "ff8596a02a2c",
       "source": "hackaday",
-      "title": "2026 Retrocomputing Challenge: Explore Space with a Credit Card Reader",
-      "url": "https://hackaday.com/2026/10/27/2026-retrocomputing-challenge-explore-space-with-a-credit-card-reader/",
-      "date": "2026-10-27T20:00:33.000Z",
-      "excerpt": "The humble credit card reader — most of us have used hundreds, perhaps even thousands of them over the years. But even for folks like us, it’s not the sort …read more"
+      "title": "Does Running an E-Paper Display at 30 FPS Destroy It?",
+      "url": "https://hackaday.com/2026/10/28/does-running-an-e-paper-display-at-30-fps-destroy-it/",
+      "date": "2026-10-28T20:00:33.000Z",
+      "excerpt": "Although e-paper displays are famous for being low-power and lasting essentially forever if not damaged physically, the recent push to drive even cheaper e-paper displays at a framerate like 30 …read more"
+    },
+    {
+      "id": "3ee76b37ff2e",
+      "source": "learnrepair",
+      "title": "Ziboo 101 Mini Digital Multimeter Test And Review",
+      "url": "https://www.youtube.com/watch?v=720uYbcJc8s",
+      "date": "2026-10-28T11:22:55.000Z",
+      "excerpt": "Let's try the Ziboo 101 mini digital multimeter. Is this inexpensive compact multimeter any good? You can buy the Ziboo 101 here : For All Your PCB needs: free $5 discount coupon Discount Codes 👉Click the link or enter the search code…"
     },
     {
       "id": "5f5ba3051c3a",
@@ -188,14 +196,6 @@
       "url": "https://www.youtube.com/watch?v=FCglsffP8bc",
       "date": "2026-10-19T21:41:46.000Z",
       "excerpt": "J'ai décidé de remettre en marche ce gradateur de secteur des années 70, que mon père utilisait dans un labo de chimie au travail. Que les normes ont évolué! Je lui fais donc une bonne mise à niveau! Chapitres de la vidéo: 0:00 Début de…"
-    },
-    {
-      "id": "b61d1a0fad29",
-      "source": "learnrepair",
-      "title": "My Friend Bought A Faulty Artcoustic PA-1800 Amplifier And Asked me To Fix It!",
-      "url": "https://www.youtube.com/watch?v=zKFS_yupUCM",
-      "date": "2026-10-18T10:11:28.000Z",
-      "excerpt": "I have a faulty amplifier Artcoustic PA-1800 bought by a friend. Guess who he asked to fix it? Discount Codes 👉Click the link or enter the search code [AYK1F1]on the AliExpress homepage or use the exclusive discount codes below. These…"
     },
     {
       "id": "3ad32d885618",
