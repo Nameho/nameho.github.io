@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-29T11:29:32.334Z",
+  "updatedAt": "2026-10-30T11:21:45.534Z",
   "sources": [
     {
       "id": "ifixit",
@@ -46,52 +46,52 @@
   ],
   "items": [
     {
-      "id": "7280ca0296f5",
+      "id": "2223908639d0",
       "source": "hackaday",
-      "title": "An AI Chatbot for the Apocalypse",
-      "url": "https://hackaday.com/2026/10/29/an-ai-chatbot-for-the-apocalypse/",
-      "date": "2026-10-29T11:00:01.000Z",
-      "excerpt": "You don’t have to be a full-on “prepper” to at least occasionally wonder what would happen if civilization collapsed. One thing you probably couldn’t do is go on the Internet …read more"
+      "title": "The Sounds of the World, One Random Album at a Time",
+      "url": "https://hackaday.com/2026/10/30/the-sounds-of-the-world-one-random-album-at-a-time/",
+      "date": "2026-10-30T11:00:55.000Z",
+      "excerpt": "In the streaming era it’s easy to forget that there’s still a lot of stuff being broadcast over the radio for anyone who cares enough to dial in their receiver. …read more"
     },
     {
-      "id": "ab13148b6843",
+      "id": "956202f737e3",
       "source": "hackaday",
-      "title": "Magnetic Lock Opens By Magic",
-      "url": "https://hackaday.com/2026/10/29/magnetic-lock-opens-by-magic/",
-      "date": "2026-10-29T08:00:39.000Z",
-      "excerpt": "Over on IEEE Spectrum, [Stephen Cass] has a project that would probably have seemed like a magic a few centuries ago. Imagine a box that uses a magnetic device to …read more"
+      "title": "Snake On a Seven-Segment Display is Gloriously Bad",
+      "url": "https://hackaday.com/2026/10/30/snake-on-a-seven-segment-display-is-gloriously-bad/",
+      "date": "2026-10-30T08:00:20.000Z",
+      "excerpt": "You’ve no doubt heard the saying, “If something is worth doing, it’s worth doing well.” But there’s actually a counter-perspective to this particular philosophy that says it’s also worth doing …read more"
     },
     {
-      "id": "b684eb125958",
+      "id": "93eae29fdd99",
       "source": "hackaday",
-      "title": "2026 Retrocomputing Challenge: Custom RISC-V Processor For Retro System",
-      "url": "https://hackaday.com/2026/10/28/2026-retrocomputing-challenge-custom-risc-v-processor-for-retro-system/",
-      "date": "2026-10-29T05:00:43.000Z",
-      "excerpt": "Although once little more than an academic endeavor, the RISC-V architecture is slowly supplanting applications that would have normally gone to ARM. Even a few microcontrollers have chips running this …read more"
+      "title": "Is This The Only Instrument You Need?",
+      "url": "https://hackaday.com/2026/10/29/is-this-the-only-instrument-you-need/",
+      "date": "2026-10-30T05:00:10.000Z",
+      "excerpt": "When working on an electronic project it’s likely you will find yourself working with a variety of different instruments, be they logic analysers, oscilloscopes, or whatever. These can take up …read more"
     },
     {
-      "id": "4cb7e99ebf07",
+      "id": "2a18f4b0abe3",
       "source": "hackaday",
-      "title": "Battery Prototype Uses Superextensive Quantum Effects to Charge Faster",
-      "url": "https://hackaday.com/2026/10/28/battery-prototype-uses-superextensive-quantum-effects-to-charge-faster/",
-      "date": "2026-10-29T02:00:26.000Z",
-      "excerpt": "Although the term ‘quantum battery’ is a bit of a vague term, the cell that [Kieran Hymas] et al. demonstrate in a recent paper does seem to suggest that it …read more"
+      "title": "Putting a MiSTer Marquee on a Better Display",
+      "url": "https://hackaday.com/2026/10/29/putting-a-mister-marquee-on-a-better-display/",
+      "date": "2026-10-30T02:00:00.000Z",
+      "excerpt": "Some MiSTer users put a small secondary “marquee” display on the FPGA board that can show information about the system such as the currently loaded core and what game it …read more"
     },
     {
-      "id": "cd7a4dc0e3b4",
+      "id": "96c2cf6555c4",
       "source": "hackaday",
-      "title": "Hacking the Modern Tamagotchi With UART",
-      "url": "https://hackaday.com/2026/10/28/hacking-the-modern-tamagotchi-with-uart/",
-      "date": "2026-10-28T23:00:25.000Z",
-      "excerpt": "Although not technically the first virtual pet, the Tamagotchi handhelds certainly popularized the idea and made it a worldwide phenomenon. In the late 90s it was hard to go out …read more"
+      "title": "Replicating the Color-Changing Effect of the Lycurgus Cup",
+      "url": "https://hackaday.com/2026/10/29/replicating-the-color-changing-effect-of-the-lycurgus-cup/",
+      "date": "2026-10-29T23:00:39.000Z",
+      "excerpt": "Although most archaeological finds from ancient civilizations aren’t quite as exciting as what you might expect from the movies, occasionally you come across something that’s truly special. The Lycurgus Cup …read more"
     },
     {
-      "id": "ff8596a02a2c",
+      "id": "ea4fe1f18c8b",
       "source": "hackaday",
-      "title": "Does Running an E-Paper Display at 30 FPS Destroy It?",
-      "url": "https://hackaday.com/2026/10/28/does-running-an-e-paper-display-at-30-fps-destroy-it/",
-      "date": "2026-10-28T20:00:33.000Z",
-      "excerpt": "Although e-paper displays are famous for being low-power and lasting essentially forever if not damaged physically, the recent push to drive even cheaper e-paper displays at a framerate like 30 …read more"
+      "title": "An Attempt at a Useful Desktop OS For Microcontrollers",
+      "url": "https://hackaday.com/2026/10/29/an-attempt-at-a-useful-desktop-os-for-microcontrollers/",
+      "date": "2026-10-29T20:00:12.000Z",
+      "excerpt": "We’re living at an interesting time here in 2026, when microcontrollers are becoming powerful enough to surpass the capabilities of “real” computers from a time when those real computers were …read more"
     },
     {
       "id": "3ee76b37ff2e",
