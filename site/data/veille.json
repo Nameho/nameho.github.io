@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-01T11:48:33.534Z",
+  "updatedAt": "2026-11-02T13:27:10.482Z",
   "sources": [
     {
       "id": "ifixit",
@@ -46,60 +46,60 @@
   ],
   "items": [
     {
+      "id": "554959ebd729",
+      "source": "hackaday",
+      "title": "Static Radio For The Chumby One",
+      "url": "https://hackaday.com/2026/11/02/static-radio-for-the-chumby-one/",
+      "date": "2026-11-02T12:00:22.000Z",
+      "excerpt": "If you haven’t heard of Static Radio, it’s basically an online radio station made up of podcast content. [Brendan Fitzpatrick] decided to take an old 2009 Chumby One and turn …read more"
+    },
+    {
+      "id": "c1aa2ddba62e",
+      "source": "hackaday",
+      "title": "A Hackable Analog Phone System",
+      "url": "https://hackaday.com/2026/11/02/a-hackable-analog-phone-system/",
+      "date": "2026-11-02T09:00:29.000Z",
+      "excerpt": "Do you have old landline phones laying around the house, with touchtone buttons or rotary dials? Perhaps you’d like to do something with them! [Scott Dylewski] has built hardware to …read more"
+    },
+    {
+      "id": "a1bebcf26dcc",
+      "source": "hackaday",
+      "title": "Building The Stranger Things Lights For Halloween",
+      "url": "https://hackaday.com/2026/11/01/building-the-stranger-things-lights-for-halloween/",
+      "date": "2026-11-02T06:00:00.000Z",
+      "excerpt": "When Stranger Things came out all those years ago, one image left an indelible mark on pop culture. A set of Christmas lights, lined up with letters of the alphabet, such …read more"
+    },
+    {
+      "id": "9644ed141c98",
+      "source": "hackaday",
+      "title": "Hackaday Links: November 1, 2026",
+      "url": "https://hackaday.com/2026/11/01/hackaday-links-november-1-2026/",
+      "date": "2026-11-02T03:00:09.000Z",
+      "excerpt": "We’re less than a week away from the 2026 Hackaday Supercon, and things are getting a little… intense. So we trust you’ll forgive us if this week’s post weighs in …read more"
+    },
+    {
+      "id": "159578d2040b",
+      "source": "hackaday",
+      "title": "Cheap FPGA Board Becomes Retro-Style Computer",
+      "url": "https://hackaday.com/2026/11/01/cheap-fpga-board-becomes-retro-style-computer/",
+      "date": "2026-11-02T00:00:00.000Z",
+      "excerpt": "The Tang Nano 9K is a cheap FPGA development board that can usually be acquired for around $15 or so. [ThePartsBin] has been experimenting with this hardware and figured out …read more"
+    },
+    {
+      "id": "6d7fde1263c3",
+      "source": "hackaday",
+      "title": "A Game Engine For Microcontrollers",
+      "url": "https://hackaday.com/2026/11/01/a-game-engine-for-microcontrollers/",
+      "date": "2026-11-01T21:00:00.000Z",
+      "excerpt": "If you wanted to make a game that ran on a commodity microcontroller, you could be forgiven for not knowing where to start. Never fear, for [Fedyfausto] has just the …read more"
+    },
+    {
       "id": "2fba156e874b",
       "source": "learnrepair",
       "title": "This Amplifier Has A Problem With The Cooling Fans. Easy Job? Citronic Pro 1000 Repair",
       "url": "https://www.youtube.com/watch?v=dZT9zAzWu74",
       "date": "2026-11-01T11:00:04.000Z",
       "excerpt": "Sometimes a fault is not quite as obvious as you may think 👉Click on the link or enter the search code [AY0B53] on the AliExpress or use coupons below GLOBAL DISCOUNT CODES $3 off on orders over $18 / $6 off on orders over $18 for new…"
-    },
-    {
-      "id": "bb015685359e",
-      "source": "hackaday",
-      "title": "Building an ADS-B Receiver For Less Than You Think",
-      "url": "https://hackaday.com/2026/11/01/building-an-ads-b-receiver-for-less-than-you-think/",
-      "date": "2026-11-01T08:00:22.000Z",
-      "excerpt": "If you’ve ever wondered about the planes flying above your head, you could always listen in to ADS-B transmissions to learn more about them. [thefatmoop] has built a rig to …read more"
-    },
-    {
-      "id": "bb84bd0000cf",
-      "source": "hackaday",
-      "title": "Huge PalmOS Development Archive Goes Online, Thanks to Personal Backups",
-      "url": "https://hackaday.com/2026/10/31/huge-palmos-development-archive-goes-online-thanks-to-personal-backups/",
-      "date": "2026-11-01T05:00:00.000Z",
-      "excerpt": "Palm OS, an operating system for a range mobile devices that predated mobile phones, is largely forgotten today. Or at least, that’s what [Aaron Ardiri] thought. That all changed when …read more"
-    },
-    {
-      "id": "36e2248e74b8",
-      "source": "hackaday",
-      "title": "Upgrading an Action Camera with an External Battery",
-      "url": "https://hackaday.com/2026/10/31/upgrading-an-action-camera-with-an-external-battery/",
-      "date": "2026-11-01T02:00:00.000Z",
-      "excerpt": "[Evan Monsma], the prolific experimenter with cameras, found himself with an issue: he had a small Sony action camera with good performance in every respect but battery life, which was …read more"
-    },
-    {
-      "id": "00c1120b15d0",
-      "source": "hackaday",
-      "title": "Rooting an Amazon Echo Dot",
-      "url": "https://hackaday.com/2026/10/31/rooting-an-amazon-echo-dot/",
-      "date": "2026-10-31T23:00:00.000Z",
-      "excerpt": "The Amazon Echo Dot is one of Amazon’s so-called ‘smart speaker’ offerings that tie into their larger Alexa-fueled ecosystem, designed to be a pretty minimalistic device that gives you access …read more"
-    },
-    {
-      "id": "57ffc1868d30",
-      "source": "hackaday",
-      "title": "Voyager 1 Briefly Goes Silent, Scaring Everyone",
-      "url": "https://hackaday.com/2026/10/31/voyager-1-briefly-goes-silent-scaring-everyone/",
-      "date": "2026-10-31T20:00:00.000Z",
-      "excerpt": "It’s no big secret at this point that we are looking at the final years of the two venerable Voyager spacecraft. With their power supplies diminishing and their 1970s-era electronics …read more"
-    },
-    {
-      "id": "ea013cd03ace",
-      "source": "hackaday",
-      "title": "DIY WiFi Analyzer Sniffs Out Congestion and Coverage Issues, Suggests Fixes",
-      "url": "https://hackaday.com/2026/10/31/diy-wifi-analyzer-sniffs-out-congestion-and-coverage-issues-suggests-fixes/",
-      "date": "2026-10-31T17:00:53.000Z",
-      "excerpt": "[Roni Bandini]’s JEV WiFi Analyzer is an interesting experiment that glues together a single-board Linux computer, a USB WiFi adapter, and a specialized AI model to create a new kind …read more"
     },
     {
       "id": "311c4ab0872a",
