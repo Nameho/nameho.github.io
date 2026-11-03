@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-02T13:27:10.482Z",
+  "updatedAt": "2026-11-03T12:45:16.107Z",
   "sources": [
     {
       "id": "ifixit",
@@ -46,52 +46,60 @@
   ],
   "items": [
     {
-      "id": "554959ebd729",
-      "source": "hackaday",
-      "title": "Static Radio For The Chumby One",
-      "url": "https://hackaday.com/2026/11/02/static-radio-for-the-chumby-one/",
-      "date": "2026-11-02T12:00:22.000Z",
-      "excerpt": "If you haven’t heard of Static Radio, it’s basically an online radio station made up of podcast content. [Brendan Fitzpatrick] decided to take an old 2009 Chumby One and turn …read more"
+      "id": "d92ce8c1b52d",
+      "source": "learnrepair",
+      "title": "Artcoustic PA-1800 Repair Part Three : My Friend Bought A Faulty Amplifier For €50 Continued...",
+      "url": "https://www.youtube.com/watch?v=VRBO-DGEFow",
+      "date": "2026-11-03T10:29:11.000Z",
+      "excerpt": "I have a faulty amplifier Artcoustic PA-1800 bought by a friend. Guess who he asked to fix it? This is part three of this repair and I'm not even getting nowhere quickly Pt1 Reprise Pt2 👉Click on the link or enter the search code…"
     },
     {
-      "id": "c1aa2ddba62e",
+      "id": "a6db62b0fb03",
       "source": "hackaday",
-      "title": "A Hackable Analog Phone System",
-      "url": "https://hackaday.com/2026/11/02/a-hackable-analog-phone-system/",
-      "date": "2026-11-02T09:00:29.000Z",
-      "excerpt": "Do you have old landline phones laying around the house, with touchtone buttons or rotary dials? Perhaps you’d like to do something with them! [Scott Dylewski] has built hardware to …read more"
+      "title": "The Components for Life May Not Have Arrived By Comet",
+      "url": "https://hackaday.com/2026/11/03/the-components-for-life-may-not-have-arrived-by-comet/",
+      "date": "2026-11-03T09:00:56.000Z",
+      "excerpt": "When it comes to abiogenesis, i.e. the formation of the first biological cells on Earth, there are many theories on how this got kickstarted. One of the more popular theories …read more"
     },
     {
-      "id": "a1bebcf26dcc",
+      "id": "098e6307e8f6",
       "source": "hackaday",
-      "title": "Building The Stranger Things Lights For Halloween",
-      "url": "https://hackaday.com/2026/11/01/building-the-stranger-things-lights-for-halloween/",
-      "date": "2026-11-02T06:00:00.000Z",
-      "excerpt": "When Stranger Things came out all those years ago, one image left an indelible mark on pop culture. A set of Christmas lights, lined up with letters of the alphabet, such …read more"
+      "title": "NEMESIS Gives You Control Over Your Hyundai Head Unit",
+      "url": "https://hackaday.com/2026/11/02/nemesis-gives-you-control-over-your-hyundai-head-unit/",
+      "date": "2026-11-03T06:00:35.000Z",
+      "excerpt": "Whether it’s to make more money or because of licensing disagreements, car companies often restrict the abilities of the infotainment units in their vehicles. They can do so much more, …read more"
     },
     {
-      "id": "9644ed141c98",
+      "id": "6bc9ca8a959f",
       "source": "hackaday",
-      "title": "Hackaday Links: November 1, 2026",
-      "url": "https://hackaday.com/2026/11/01/hackaday-links-november-1-2026/",
-      "date": "2026-11-02T03:00:09.000Z",
-      "excerpt": "We’re less than a week away from the 2026 Hackaday Supercon, and things are getting a little… intense. So we trust you’ll forgive us if this week’s post weighs in …read more"
+      "title": "Flying an RC Airplane with Twin Airblower EDFs",
+      "url": "https://hackaday.com/2026/11/02/flying-an-rc-airplane-with-twin-airblower-edfs/",
+      "date": "2026-11-03T00:00:31.000Z",
+      "excerpt": "Shortly after [RCMakerLab] posted his question on potentially equipping an RC airplane with the electronic ducted fans (EDFs) from those airblower devices – are sold mostly as a replacement for …read more"
     },
     {
-      "id": "159578d2040b",
+      "id": "26d962ed8275",
       "source": "hackaday",
-      "title": "Cheap FPGA Board Becomes Retro-Style Computer",
-      "url": "https://hackaday.com/2026/11/01/cheap-fpga-board-becomes-retro-style-computer/",
-      "date": "2026-11-02T00:00:00.000Z",
-      "excerpt": "The Tang Nano 9K is a cheap FPGA development board that can usually be acquired for around $15 or so. [ThePartsBin] has been experimenting with this hardware and figured out …read more"
+      "title": "Investigating whether Zener Diodes work for ESD Protection",
+      "url": "https://hackaday.com/2026/11/02/investigating-whether-zener-diodes-work-for-esd-protection/",
+      "date": "2026-11-02T21:00:09.000Z",
+      "excerpt": "Sometimes the naming of parts in electronics can contribute to confusion about what they are good for, with the topic of Zener diodes in the context of fast surges like …read more"
     },
     {
-      "id": "6d7fde1263c3",
+      "id": "2bc28a610735",
       "source": "hackaday",
-      "title": "A Game Engine For Microcontrollers",
-      "url": "https://hackaday.com/2026/11/01/a-game-engine-for-microcontrollers/",
-      "date": "2026-11-01T21:00:00.000Z",
-      "excerpt": "If you wanted to make a game that ran on a commodity microcontroller, you could be forgiven for not knowing where to start. Never fear, for [Fedyfausto] has just the …read more"
+      "title": "Ask Hackaday: What Puts This Photo In The Pink?",
+      "url": "https://hackaday.com/2026/11/02/ask-hackaday-what-puts-this-photo-in-the-pink/",
+      "date": "2026-11-02T18:00:42.000Z",
+      "excerpt": "It’s an exciting time to be a camera hacker, because we are at a moment when even cheap camera hardware is starting to have high resolution sensors, and the awesome …read more"
+    },
+    {
+      "id": "13f6484d3842",
+      "source": "hackaday",
+      "title": "Solar Light Shows Why Replacing NiMH with Li-Ion is Dangerous",
+      "url": "https://hackaday.com/2026/11/02/solar-light-shows-why-replacing-nimh-with-li-ion-is-dangerous/",
+      "date": "2026-11-02T16:30:00.000Z",
+      "excerpt": "Recently [DiodeGoneWild] got his paws on a purportedly IP44-rated outdoor solar light with PIR motion sensor that also contains an 18650 Li-ion cell. Since it’s being sold in Czechia in …read more"
     },
     {
       "id": "2fba156e874b",
@@ -164,14 +172,6 @@
       "url": "https://www.framboise314.fr/meshtastic-test-noeuds-portables-elecrow-thinknode-m9-m5/",
       "date": "2026-10-24T14:15:21.000Z",
       "excerpt": "Que ce soit suite à une panne matérielle des infrastructures, une cyberattaque, une coupure volontaire des réseaux cellulaires ou simplement lors d’une randonnée dans une zone blanche géographique, la perte soudaine de nos moyens de…"
-    },
-    {
-      "id": "f242e46b33e6",
-      "source": "learnrepair",
-      "title": "One PCB For Both SMD and Through Hole PTH Version Of A Project",
-      "url": "https://www.youtube.com/watch?v=kAODXJoq_-k",
-      "date": "2026-10-24T09:59:48.000Z",
-      "excerpt": "A Couple of months ago Detlef and myself looked at methods to design a PCB that could be populated with either SMD or PTH components, or any combination of both, to complete a project. This video is sponsored by PCBWay For All Your PCB…"
     },
     {
       "id": "fcec894c0ef6",
