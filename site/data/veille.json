@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-03T12:45:16.107Z",
+  "updatedAt": "2026-11-04T12:57:39.913Z",
   "sources": [
     {
       "id": "ifixit",
@@ -46,60 +46,68 @@
   ],
   "items": [
     {
+      "id": "199c90b67e84",
+      "source": "hackaday",
+      "title": "A Ridiculous Journey to Set the Clock in a 2014 Renault",
+      "url": "https://hackaday.com/2026/11/04/a-ridiculous-journey-to-set-the-clock-in-a-2014-renault/",
+      "date": "2026-11-04T12:00:48.000Z",
+      "excerpt": "As difficult as it may be to believe, it’s not possible to adjust the time on a 2014 Renault Latitude’s in-dash navigation system unless you have an original SD card …read more"
+    },
+    {
+      "id": "8404f62eceac",
+      "source": "hackaday",
+      "title": "Reading Data from an Unwilling Blood Pressure Monitor",
+      "url": "https://hackaday.com/2026/11/04/reading-data-from-an-unwilling-blood-pressure-monitor/",
+      "date": "2026-11-04T09:00:46.000Z",
+      "excerpt": "Given the modern trend of interconnecting anything and everything, we have no doubt that somebody sells a blood pressure monitor that will push its measurements out to all sorts of …read more"
+    },
+    {
+      "id": "878f08a758ce",
+      "source": "hackaday",
+      "title": "As LLMs Devour the Storage Market, Fujifilm Bets on Tape",
+      "url": "https://hackaday.com/2026/11/03/as-llms-devour-the-storage-market-fujifilm-bets-on-tape/",
+      "date": "2026-11-04T06:00:13.000Z",
+      "excerpt": "One of the interesting things about the slow-moving AI apocalypse we seem to be trapped in is watching the knock-on effects reverberate through communities and economies. We’ve seen how — …read more"
+    },
+    {
+      "id": "22dbe9082a93",
+      "source": "hackaday",
+      "title": "Cat Feeder Ensures Fed Cats",
+      "url": "https://hackaday.com/2026/11/03/cat-feeder-ensures-fed-cats/",
+      "date": "2026-11-04T03:00:36.000Z",
+      "excerpt": "Automatic cat feeders are a dime a dozen, largely because this is an easy problem to solve. Dry cat food is easy for machines to manipulate, and the electronics needed …read more"
+    },
+    {
+      "id": "5a51b3716f0a",
+      "source": "hackaday",
+      "title": "Etching Press Aims To Impress",
+      "url": "https://hackaday.com/2026/11/03/etching-press-aims-to-impress/",
+      "date": "2026-11-04T00:00:31.000Z",
+      "excerpt": "There’s an old joke about inviting somebody up to your dorm room to ‘look at your etchings’ — but if you’re going to do that, you’d best have some etchings, …read more"
+    },
+    {
+      "id": "ce07a0828584",
+      "source": "hackaday",
+      "title": "Toddler Phone Calls Family and No One Else",
+      "url": "https://hackaday.com/2026/11/03/toddler-phone-calls-family-and-no-one-else/",
+      "date": "2026-11-03T21:00:25.000Z",
+      "excerpt": "The great thing about the modern world is how connected we are. It’s also the worst thing about the modern world, to be honest. [Allan Binder] wanted to give his …read more"
+    },
+    {
+      "id": "6d447a26414b",
+      "source": "framboise314",
+      "title": "Une carte Tesla P40 de 2016 pour faire tourner un modèle de vision à la maison",
+      "url": "https://www.framboise314.fr/tesla-p40-ia-vision-maison/",
+      "date": "2026-11-03T13:50:25.000Z",
+      "excerpt": "S’offrir 24 Go de mémoire vidéo à bas prix pour faire tourner de l’IA locale, c’est la promesse alléchante des Tesla P40 d’occasion. Seulement, face à cette architecture de 2016, la grande majorité des outils modernes jettent l’éponge…"
+    },
+    {
       "id": "d92ce8c1b52d",
       "source": "learnrepair",
       "title": "Artcoustic PA-1800 Repair Part Three : My Friend Bought A Faulty Amplifier For €50 Continued...",
       "url": "https://www.youtube.com/watch?v=VRBO-DGEFow",
       "date": "2026-11-03T10:29:11.000Z",
       "excerpt": "I have a faulty amplifier Artcoustic PA-1800 bought by a friend. Guess who he asked to fix it? This is part three of this repair and I'm not even getting nowhere quickly Pt1 Reprise Pt2 👉Click on the link or enter the search code…"
-    },
-    {
-      "id": "a6db62b0fb03",
-      "source": "hackaday",
-      "title": "The Components for Life May Not Have Arrived By Comet",
-      "url": "https://hackaday.com/2026/11/03/the-components-for-life-may-not-have-arrived-by-comet/",
-      "date": "2026-11-03T09:00:56.000Z",
-      "excerpt": "When it comes to abiogenesis, i.e. the formation of the first biological cells on Earth, there are many theories on how this got kickstarted. One of the more popular theories …read more"
-    },
-    {
-      "id": "098e6307e8f6",
-      "source": "hackaday",
-      "title": "NEMESIS Gives You Control Over Your Hyundai Head Unit",
-      "url": "https://hackaday.com/2026/11/02/nemesis-gives-you-control-over-your-hyundai-head-unit/",
-      "date": "2026-11-03T06:00:35.000Z",
-      "excerpt": "Whether it’s to make more money or because of licensing disagreements, car companies often restrict the abilities of the infotainment units in their vehicles. They can do so much more, …read more"
-    },
-    {
-      "id": "6bc9ca8a959f",
-      "source": "hackaday",
-      "title": "Flying an RC Airplane with Twin Airblower EDFs",
-      "url": "https://hackaday.com/2026/11/02/flying-an-rc-airplane-with-twin-airblower-edfs/",
-      "date": "2026-11-03T00:00:31.000Z",
-      "excerpt": "Shortly after [RCMakerLab] posted his question on potentially equipping an RC airplane with the electronic ducted fans (EDFs) from those airblower devices – are sold mostly as a replacement for …read more"
-    },
-    {
-      "id": "26d962ed8275",
-      "source": "hackaday",
-      "title": "Investigating whether Zener Diodes work for ESD Protection",
-      "url": "https://hackaday.com/2026/11/02/investigating-whether-zener-diodes-work-for-esd-protection/",
-      "date": "2026-11-02T21:00:09.000Z",
-      "excerpt": "Sometimes the naming of parts in electronics can contribute to confusion about what they are good for, with the topic of Zener diodes in the context of fast surges like …read more"
-    },
-    {
-      "id": "2bc28a610735",
-      "source": "hackaday",
-      "title": "Ask Hackaday: What Puts This Photo In The Pink?",
-      "url": "https://hackaday.com/2026/11/02/ask-hackaday-what-puts-this-photo-in-the-pink/",
-      "date": "2026-11-02T18:00:42.000Z",
-      "excerpt": "It’s an exciting time to be a camera hacker, because we are at a moment when even cheap camera hardware is starting to have high resolution sensors, and the awesome …read more"
-    },
-    {
-      "id": "13f6484d3842",
-      "source": "hackaday",
-      "title": "Solar Light Shows Why Replacing NiMH with Li-Ion is Dangerous",
-      "url": "https://hackaday.com/2026/11/02/solar-light-shows-why-replacing-nimh-with-li-ion-is-dangerous/",
-      "date": "2026-11-02T16:30:00.000Z",
-      "excerpt": "Recently [DiodeGoneWild] got his paws on a purportedly IP44-rated outdoor solar light with PIR motion sensor that also contains an 18650 Li-ion cell. Since it’s being sold in Czechia in …read more"
     },
     {
       "id": "2fba156e874b",
@@ -284,14 +292,6 @@
       "url": "https://www.youtube.com/watch?v=GDYgp0KCChQ",
       "date": "2026-09-01T14:44:41.000Z",
       "excerpt": "J'avais besoin d'une liaison de console texte en WiFi pour superviser à distance ma balise 10 GHz. Je vous présente la mini-plaquette ESP-01S qui, chargée du firmware esp-link, fait tout ce que j'ai besoin. La plaquette ESP-01S est…"
-    },
-    {
-      "id": "d19a723b8b18",
-      "source": "framboise314",
-      "title": "Remplacement de la pile du minuteur Tefal Oleoclean : Un cas d’école d’obsolescence programmée ?",
-      "url": "https://www.framboise314.fr/remplacer-pile-minuteur-tefal-oleoclean/",
-      "date": "2026-08-26T14:04:09.000Z",
-      "excerpt": "Le minuteur de votre friteuse Tefal Oleoclean n’affiche plus rien ? Plus le moindre chiffre sur l’écran LCD et plus un seul bip à l’horizon ? C’est le symptôme classique de la pile interne arrivée en fin de vie. Face à ce boîtier muet…"
     }
   ]
 }
