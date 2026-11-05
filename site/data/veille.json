@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-04T12:57:39.913Z",
+  "updatedAt": "2026-11-05T13:09:14.569Z",
   "sources": [
     {
       "id": "ifixit",
@@ -46,52 +46,60 @@
   ],
   "items": [
     {
-      "id": "199c90b67e84",
+      "id": "f7055af298f9",
       "source": "hackaday",
-      "title": "A Ridiculous Journey to Set the Clock in a 2014 Renault",
-      "url": "https://hackaday.com/2026/11/04/a-ridiculous-journey-to-set-the-clock-in-a-2014-renault/",
-      "date": "2026-11-04T12:00:48.000Z",
-      "excerpt": "As difficult as it may be to believe, it’s not possible to adjust the time on a 2014 Renault Latitude’s in-dash navigation system unless you have an original SD card …read more"
+      "title": "Finger Joint Cutter Uses a Jigsaw Blade, But Not As We Know It",
+      "url": "https://hackaday.com/2026/11/05/finger-joint-cutter-uses-a-jigsaw-blade-but-not-as-we-know-it/",
+      "date": "2026-11-05T12:00:32.000Z",
+      "excerpt": "Around these parts, finger joints (or box joints) are usually the product of laser cutting. [bluesyann] shows us a method of using a stationary jigsaw, a custom blade, and 3D-printed …read more"
     },
     {
-      "id": "8404f62eceac",
-      "source": "hackaday",
-      "title": "Reading Data from an Unwilling Blood Pressure Monitor",
-      "url": "https://hackaday.com/2026/11/04/reading-data-from-an-unwilling-blood-pressure-monitor/",
-      "date": "2026-11-04T09:00:46.000Z",
-      "excerpt": "Given the modern trend of interconnecting anything and everything, we have no doubt that somebody sells a blood pressure monitor that will push its measurements out to all sorts of …read more"
+      "id": "027677eb1b42",
+      "source": "learnrepair",
+      "title": "Unbelievable! What Some Repair Technicians Do. And I Always Seem To Get Asked To Fix It.",
+      "url": "https://www.youtube.com/watch?v=5KAcx55ETVQ",
+      "date": "2026-11-05T11:19:27.000Z",
+      "excerpt": "Is it just me or have all the easy repairs already been fixed and now all the jobs are like this one? 👉Click on the link or enter the search code [AY0B53] on the AliExpress or use coupons below GLOBAL DISCOUNT CODES $3 off on orders over…"
     },
     {
-      "id": "878f08a758ce",
+      "id": "950a25138543",
       "source": "hackaday",
-      "title": "As LLMs Devour the Storage Market, Fujifilm Bets on Tape",
-      "url": "https://hackaday.com/2026/11/03/as-llms-devour-the-storage-market-fujifilm-bets-on-tape/",
-      "date": "2026-11-04T06:00:13.000Z",
-      "excerpt": "One of the interesting things about the slow-moving AI apocalypse we seem to be trapped in is watching the knock-on effects reverberate through communities and economies. We’ve seen how — …read more"
+      "title": "Porting a “Crappy” Flash Game to the IBM 5150 and Beyond",
+      "url": "https://hackaday.com/2026/11/05/porting-a-crappy-flash-game-to-the-ibm-5150-and-beyond/",
+      "date": "2026-11-05T09:00:11.000Z",
+      "excerpt": "Flash is obsolete and the IBM 5150 is obsolete. Therefore, by the transitive property of algebra, you should be able to run flash games on IBM’s original PC, right? Okay, …read more"
     },
     {
-      "id": "22dbe9082a93",
+      "id": "81b3374bbe0a",
       "source": "hackaday",
-      "title": "Cat Feeder Ensures Fed Cats",
-      "url": "https://hackaday.com/2026/11/03/cat-feeder-ensures-fed-cats/",
-      "date": "2026-11-04T03:00:36.000Z",
-      "excerpt": "Automatic cat feeders are a dime a dozen, largely because this is an easy problem to solve. Dry cat food is easy for machines to manipulate, and the electronics needed …read more"
+      "title": "PiPedal Grants Guitar Effects, Amp Emulation, and More",
+      "url": "https://hackaday.com/2026/11/04/pipedal-grants-guitar-effects-amp-emulation-and-more/",
+      "date": "2026-11-05T06:00:54.000Z",
+      "excerpt": "Back in the day, if one wanted a particular guitar effect one would purchase an effects pedal or “stomp box”, and even a modest collection of them could be an …read more"
     },
     {
-      "id": "5a51b3716f0a",
+      "id": "b9bb963548ba",
       "source": "hackaday",
-      "title": "Etching Press Aims To Impress",
-      "url": "https://hackaday.com/2026/11/03/etching-press-aims-to-impress/",
-      "date": "2026-11-04T00:00:31.000Z",
-      "excerpt": "There’s an old joke about inviting somebody up to your dorm room to ‘look at your etchings’ — but if you’re going to do that, you’d best have some etchings, …read more"
+      "title": "The First Business Computer Hits 75!",
+      "url": "https://hackaday.com/2026/11/04/the-first-business-computer-hits-75/",
+      "date": "2026-11-05T03:00:15.000Z",
+      "excerpt": "Many of us will have followed the early history of electronic computing, from the urgent necessities of war, to universities, and then on into the wider world. Most of the …read more"
     },
     {
-      "id": "ce07a0828584",
+      "id": "5d16d120ce60",
       "source": "hackaday",
-      "title": "Toddler Phone Calls Family and No One Else",
-      "url": "https://hackaday.com/2026/11/03/toddler-phone-calls-family-and-no-one-else/",
-      "date": "2026-11-03T21:00:25.000Z",
-      "excerpt": "The great thing about the modern world is how connected we are. It’s also the worst thing about the modern world, to be honest. [Allan Binder] wanted to give his …read more"
+      "title": "Beautiful Laser Harp Hides Some Neat Tricks",
+      "url": "https://hackaday.com/2026/11/04/beautiful-laser-harp-hides-some-neat-tricks/",
+      "date": "2026-11-05T00:00:47.000Z",
+      "excerpt": "Laser harps aren’t quite a right of passage, in that not everyone builds them, but it’s likely everyone at least contemplates building one at one time or another. We’re lucky …read more"
+    },
+    {
+      "id": "dd728a7e9afc",
+      "source": "hackaday",
+      "title": "It’s DOOM, on a Toy Camera",
+      "url": "https://hackaday.com/2026/11/04/its-doom-on-a-toy-camera/",
+      "date": "2026-11-04T21:00:47.000Z",
+      "excerpt": "Dirt cheap toy cameras have long been a target for the curious camera hacker, and we’ve seen plenty of lens swaps and other hardware hacks. Until now their internals have …read more"
     },
     {
       "id": "6d447a26414b",
@@ -148,14 +156,6 @@
       "url": "https://www.halteobsolescence.org/arret-serveurs-somfy/",
       "date": "2026-10-27T17:05:50.000Z",
       "excerpt": "Fin mars 2027, la marque Somfy prévoit de mettre fin à certains serveurs nécessaires au fonctionnement de nombreuses alarmes. L’entreprise invoque l’arrêt des réseaux de 2G et 3G, une justification discutable. HOP a reçu de nombreux…"
-    },
-    {
-      "id": "4503685a77bb",
-      "source": "learnrepair",
-      "title": "Active Speakers At A Swimming Pool Party: What Could Possibly Go Wrong? PA108A Speaker Repair",
-      "url": "https://www.youtube.com/watch?v=yFezzbnzzf0",
-      "date": "2026-10-26T10:05:28.000Z",
-      "excerpt": "My friend Detlef and his band were playing a gig at a pool party. Their active monitor speakers were at the pool edge. Surely nothing could possibly go wrong... 👉Click on the link or enter the search code [AY0B53] on the AliExpress or…"
     },
     {
       "id": "ba7ccac6f924",
