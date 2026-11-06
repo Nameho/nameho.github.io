@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-05T13:09:14.569Z",
+  "updatedAt": "2026-11-06T12:54:55.588Z",
   "sources": [
     {
       "id": "ifixit",
@@ -46,12 +46,52 @@
   ],
   "items": [
     {
-      "id": "f7055af298f9",
+      "id": "4085e831d536",
       "source": "hackaday",
-      "title": "Finger Joint Cutter Uses a Jigsaw Blade, But Not As We Know It",
-      "url": "https://hackaday.com/2026/11/05/finger-joint-cutter-uses-a-jigsaw-blade-but-not-as-we-know-it/",
-      "date": "2026-11-05T12:00:32.000Z",
-      "excerpt": "Around these parts, finger joints (or box joints) are usually the product of laser cutting. [bluesyann] shows us a method of using a stationary jigsaw, a custom blade, and 3D-printed …read more"
+      "title": "The Goat Emoji Is 100% Valid Machine Code, and It Doesn’t Stop There",
+      "url": "https://hackaday.com/2026/11/06/the-goat-emoji-is-100-valid-machine-code-and-it-doesnt-stop-there/",
+      "date": "2026-11-06T12:00:33.000Z",
+      "excerpt": "Did you know emojis can be executables? Well, they are if you treat them like Intel 8088 or 8086 machine code, anyway. [GloriousCow] shared this clever revelation, demonstrating that executable …read more"
+    },
+    {
+      "id": "9bfb812d1ae2",
+      "source": "hackaday",
+      "title": "Making Xibalba 64, a New N64 Release in 2026",
+      "url": "https://hackaday.com/2026/11/06/making-xibalba-64-a-new-n64-release-in-2026/",
+      "date": "2026-11-06T09:00:03.000Z",
+      "excerpt": "[Dominic Szablewski] created something that we don’t see every day: a no-kidding new physical Nintendo 64 game for sale, complete with cartridge, manual, and box art. He wrote about what …read more"
+    },
+    {
+      "id": "33ea36c3ebb9",
+      "source": "hackaday",
+      "title": "Translating An Old Display To A New One",
+      "url": "https://hackaday.com/2026/11/05/translating-an-old-display-to-a-new-one/",
+      "date": "2026-11-06T03:00:11.000Z",
+      "excerpt": "A quick search through AliExpress will find PCBs that take HDMI or VGA and translate them to DSI lanes for TFT panels, and even boards that translate DSI to HDMI …read more"
+    },
+    {
+      "id": "7af0b7524f4b",
+      "source": "hackaday",
+      "title": "Reviving Google Cardboard, Without Google or Cardboard",
+      "url": "https://hackaday.com/2026/11/05/reviving-google-cardboard-without-google-or-cardboard/",
+      "date": "2026-11-06T00:00:19.000Z",
+      "excerpt": "Remember Google Cardboard? The late, unlamented practice of strapping a phone to your face so you could get motion sickness in a virtual environment? [brenpoly] wants you to reconsider, because …read more"
+    },
+    {
+      "id": "1fd11f2761e7",
+      "source": "hackaday",
+      "title": "Stunning Volumetric 3D Display Goes For a Spin",
+      "url": "https://hackaday.com/2026/11/05/stunning-volumetric-3d-display-goes-for-a-spin/",
+      "date": "2026-11-05T21:00:41.000Z",
+      "excerpt": "[AncientJames] gives us a detailed look at Vortex, one of his impressive volumetric displays made with two back-to-back LED panels that spin at high speed with a Raspberry Pi 4 …read more"
+    },
+    {
+      "id": "ef0837d07354",
+      "source": "hackaday",
+      "title": "A Tiny OS for a Tiny Board",
+      "url": "https://hackaday.com/2026/11/05/a-tiny-os-for-a-tiny-board/",
+      "date": "2026-11-05T19:30:34.000Z",
+      "excerpt": "As microntrollers have become ever more powerful, we have started to see an increasing number of operating systems written to take advantage of this extra power. Usually they’re aimed at …read more"
     },
     {
       "id": "027677eb1b42",
@@ -60,46 +100,6 @@
       "url": "https://www.youtube.com/watch?v=5KAcx55ETVQ",
       "date": "2026-11-05T11:19:27.000Z",
       "excerpt": "Is it just me or have all the easy repairs already been fixed and now all the jobs are like this one? 👉Click on the link or enter the search code [AY0B53] on the AliExpress or use coupons below GLOBAL DISCOUNT CODES $3 off on orders over…"
-    },
-    {
-      "id": "950a25138543",
-      "source": "hackaday",
-      "title": "Porting a “Crappy” Flash Game to the IBM 5150 and Beyond",
-      "url": "https://hackaday.com/2026/11/05/porting-a-crappy-flash-game-to-the-ibm-5150-and-beyond/",
-      "date": "2026-11-05T09:00:11.000Z",
-      "excerpt": "Flash is obsolete and the IBM 5150 is obsolete. Therefore, by the transitive property of algebra, you should be able to run flash games on IBM’s original PC, right? Okay, …read more"
-    },
-    {
-      "id": "81b3374bbe0a",
-      "source": "hackaday",
-      "title": "PiPedal Grants Guitar Effects, Amp Emulation, and More",
-      "url": "https://hackaday.com/2026/11/04/pipedal-grants-guitar-effects-amp-emulation-and-more/",
-      "date": "2026-11-05T06:00:54.000Z",
-      "excerpt": "Back in the day, if one wanted a particular guitar effect one would purchase an effects pedal or “stomp box”, and even a modest collection of them could be an …read more"
-    },
-    {
-      "id": "b9bb963548ba",
-      "source": "hackaday",
-      "title": "The First Business Computer Hits 75!",
-      "url": "https://hackaday.com/2026/11/04/the-first-business-computer-hits-75/",
-      "date": "2026-11-05T03:00:15.000Z",
-      "excerpt": "Many of us will have followed the early history of electronic computing, from the urgent necessities of war, to universities, and then on into the wider world. Most of the …read more"
-    },
-    {
-      "id": "5d16d120ce60",
-      "source": "hackaday",
-      "title": "Beautiful Laser Harp Hides Some Neat Tricks",
-      "url": "https://hackaday.com/2026/11/04/beautiful-laser-harp-hides-some-neat-tricks/",
-      "date": "2026-11-05T00:00:47.000Z",
-      "excerpt": "Laser harps aren’t quite a right of passage, in that not everyone builds them, but it’s likely everyone at least contemplates building one at one time or another. We’re lucky …read more"
-    },
-    {
-      "id": "dd728a7e9afc",
-      "source": "hackaday",
-      "title": "It’s DOOM, on a Toy Camera",
-      "url": "https://hackaday.com/2026/11/04/its-doom-on-a-toy-camera/",
-      "date": "2026-11-04T21:00:47.000Z",
-      "excerpt": "Dirt cheap toy cameras have long been a target for the curious camera hacker, and we’ve seen plenty of lens swaps and other hardware hacks. Until now their internals have …read more"
     },
     {
       "id": "6d447a26414b",
