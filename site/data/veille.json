@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-06T12:54:55.588Z",
+  "updatedAt": "2026-11-07T11:41:40.642Z",
   "sources": [
     {
       "id": "ifixit",
@@ -46,52 +46,52 @@
   ],
   "items": [
     {
-      "id": "4085e831d536",
+      "id": "1f607b532412",
       "source": "hackaday",
-      "title": "The Goat Emoji Is 100% Valid Machine Code, and It Doesn’t Stop There",
-      "url": "https://hackaday.com/2026/11/06/the-goat-emoji-is-100-valid-machine-code-and-it-doesnt-stop-there/",
-      "date": "2026-11-06T12:00:33.000Z",
-      "excerpt": "Did you know emojis can be executables? Well, they are if you treat them like Intel 8088 or 8086 machine code, anyway. [GloriousCow] shared this clever revelation, demonstrating that executable …read more"
+      "title": "A Bike-Friendly, DIY Action Cam Stereo Microphone",
+      "url": "https://hackaday.com/2026/11/07/a-bike-friendly-diy-action-cam-stereo-microphone/",
+      "date": "2026-11-07T09:00:02.000Z",
+      "excerpt": "[DJJules] had two problems. Being an avid biker, recording audio on a bike-mounted action camera was less than ideal due to wind. In addition, the built-in microphone on action cameras …read more"
     },
     {
-      "id": "9bfb812d1ae2",
+      "id": "2bb779469d51",
       "source": "hackaday",
-      "title": "Making Xibalba 64, a New N64 Release in 2026",
-      "url": "https://hackaday.com/2026/11/06/making-xibalba-64-a-new-n64-release-in-2026/",
-      "date": "2026-11-06T09:00:03.000Z",
-      "excerpt": "[Dominic Szablewski] created something that we don’t see every day: a no-kidding new physical Nintendo 64 game for sale, complete with cartridge, manual, and box art. He wrote about what …read more"
+      "title": "Automate That Halloween Treating",
+      "url": "https://hackaday.com/2026/11/06/automate-that-halloween-treating/",
+      "date": "2026-11-07T06:00:03.000Z",
+      "excerpt": "We live a Jetsons future of ubiquitous automation, in which the most trivial of human tasks has a machine to take the work out of it. Take doling out Halloween …read more"
     },
     {
-      "id": "33ea36c3ebb9",
+      "id": "b9356eba4578",
       "source": "hackaday",
-      "title": "Translating An Old Display To A New One",
-      "url": "https://hackaday.com/2026/11/05/translating-an-old-display-to-a-new-one/",
-      "date": "2026-11-06T03:00:11.000Z",
-      "excerpt": "A quick search through AliExpress will find PCBs that take HDMI or VGA and translate them to DSI lanes for TFT panels, and even boards that translate DSI to HDMI …read more"
+      "title": "DIY Rooftop Tent Sets Up In a Jiffy",
+      "url": "https://hackaday.com/2026/11/06/diy-rooftop-tent-sets-up-in-a-jiffy/",
+      "date": "2026-11-07T03:00:30.000Z",
+      "excerpt": "[CraftAndu] shares his DIY car rooftop tent design that looks like a pretty accessible build. It allowed him to test drive the concept to his satisfaction while spending a fraction …read more"
     },
     {
-      "id": "7af0b7524f4b",
+      "id": "d6eb71d49af1",
       "source": "hackaday",
-      "title": "Reviving Google Cardboard, Without Google or Cardboard",
-      "url": "https://hackaday.com/2026/11/05/reviving-google-cardboard-without-google-or-cardboard/",
-      "date": "2026-11-06T00:00:19.000Z",
-      "excerpt": "Remember Google Cardboard? The late, unlamented practice of strapping a phone to your face so you could get motion sickness in a virtual environment? [brenpoly] wants you to reconsider, because …read more"
+      "title": "It’s Alpine Linux, On A Kindle Paperwhite 3",
+      "url": "https://hackaday.com/2026/11/06/its-alpine-linux-on-a-kindle-paperwhite-3/",
+      "date": "2026-11-07T00:00:35.000Z",
+      "excerpt": "As computing power becomes cheaper and microprocessors become more capable, a steady trend over recent decades has been to see more everyday devices hiding Linux under the hood somewhere. Sadly …read more"
     },
     {
-      "id": "1fd11f2761e7",
+      "id": "c3cd53608505",
       "source": "hackaday",
-      "title": "Stunning Volumetric 3D Display Goes For a Spin",
-      "url": "https://hackaday.com/2026/11/05/stunning-volumetric-3d-display-goes-for-a-spin/",
-      "date": "2026-11-05T21:00:41.000Z",
-      "excerpt": "[AncientJames] gives us a detailed look at Vortex, one of his impressive volumetric displays made with two back-to-back LED panels that spin at high speed with a Raspberry Pi 4 …read more"
+      "title": "MousePods Reverse Engineers Head Tracking Data From Stubborn AirPods",
+      "url": "https://hackaday.com/2026/11/06/mousepods-reverse-engineers-head-tracking-data-from-stubborn-airpods/",
+      "date": "2026-11-06T21:00:14.000Z",
+      "excerpt": "[Matteo Gaudioso] released MousePods, a Python tool which accesses the motion sensors in Apple AirPods on Linux, turning them into mouse input. No Apple host required. Doing this required reverse-engineering …read more"
     },
     {
-      "id": "ef0837d07354",
+      "id": "a72674ff56e3",
       "source": "hackaday",
-      "title": "A Tiny OS for a Tiny Board",
-      "url": "https://hackaday.com/2026/11/05/a-tiny-os-for-a-tiny-board/",
-      "date": "2026-11-05T19:30:34.000Z",
-      "excerpt": "As microntrollers have become ever more powerful, we have started to see an increasing number of operating systems written to take advantage of this extra power. Usually they’re aimed at …read more"
+      "title": "Using Halftone Images in QR codes Without Upsetting Scanners",
+      "url": "https://hackaday.com/2026/11/06/using-halftone-images-in-qr-codes-without-upsetting-scanners/",
+      "date": "2026-11-06T19:33:30.000Z",
+      "excerpt": "Although quick-response (QR) codes are rather simple monochrome affairs, adding embellishments to them is a popular activity, if only to make QR codes not stick out like a sore thumb …read more"
     },
     {
       "id": "027677eb1b42",
