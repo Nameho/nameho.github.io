@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-07T11:41:40.642Z",
+  "updatedAt": "2026-11-08T11:54:37.509Z",
   "sources": [
     {
       "id": "ifixit",
@@ -46,52 +46,52 @@
   ],
   "items": [
     {
-      "id": "1f607b532412",
+      "id": "9af9b6f2d6ee",
       "source": "hackaday",
-      "title": "A Bike-Friendly, DIY Action Cam Stereo Microphone",
-      "url": "https://hackaday.com/2026/11/07/a-bike-friendly-diy-action-cam-stereo-microphone/",
-      "date": "2026-11-07T09:00:02.000Z",
-      "excerpt": "[DJJules] had two problems. Being an avid biker, recording audio on a bike-mounted action camera was less than ideal due to wind. In addition, the built-in microphone on action cameras …read more"
+      "title": "Making a Dog Car Wash Without (very) Fancy Tools",
+      "url": "https://hackaday.com/2026/11/07/making-a-dog-car-wash-without-very-fancy-tools/",
+      "date": "2026-11-08T06:00:42.000Z",
+      "excerpt": "[Stuff Made Here] got fed up with the hassle of washing their dog, and in traditional engineer fashion, decided that automating the process would solve the problem. However, as science …read more"
     },
     {
-      "id": "2bb779469d51",
+      "id": "bb2934a14802",
       "source": "hackaday",
-      "title": "Automate That Halloween Treating",
-      "url": "https://hackaday.com/2026/11/06/automate-that-halloween-treating/",
-      "date": "2026-11-07T06:00:03.000Z",
-      "excerpt": "We live a Jetsons future of ubiquitous automation, in which the most trivial of human tasks has a machine to take the work out of it. Take doling out Halloween …read more"
+      "title": "Artemis II Rocket Was Powerful Enough to Disrupt GPS",
+      "url": "https://hackaday.com/2026/11/07/artemis-ii-rocket-was-powerful-enough-to-disrupt-gps/",
+      "date": "2026-11-08T03:00:52.000Z",
+      "excerpt": "Rockets certainly have a substantial impact if you ever see a launch in person. The noise, shock waves, and even heat can be awe-inspiring. What is less obvious are the …read more"
     },
     {
-      "id": "b9356eba4578",
+      "id": "747476acfea5",
       "source": "hackaday",
-      "title": "DIY Rooftop Tent Sets Up In a Jiffy",
-      "url": "https://hackaday.com/2026/11/06/diy-rooftop-tent-sets-up-in-a-jiffy/",
-      "date": "2026-11-07T03:00:30.000Z",
-      "excerpt": "[CraftAndu] shares his DIY car rooftop tent design that looks like a pretty accessible build. It allowed him to test drive the concept to his satisfaction while spending a fraction …read more"
+      "title": "Play Text Adventures on an E-Paper Handheld",
+      "url": "https://hackaday.com/2026/11/07/play-text-adventures-on-an-e-paper-handheld/",
+      "date": "2026-11-08T00:00:30.000Z",
+      "excerpt": "Choose your own adventure books were one of the first media to become gamified in the computer era, and [Jeremy Ngai] wanted to bridge the experience further with an e-paper …read more"
     },
     {
-      "id": "d6eb71d49af1",
+      "id": "ef4c9af27e39",
       "source": "hackaday",
-      "title": "It’s Alpine Linux, On A Kindle Paperwhite 3",
-      "url": "https://hackaday.com/2026/11/06/its-alpine-linux-on-a-kindle-paperwhite-3/",
-      "date": "2026-11-07T00:00:35.000Z",
-      "excerpt": "As computing power becomes cheaper and microprocessors become more capable, a steady trend over recent decades has been to see more everyday devices hiding Linux under the hood somewhere. Sadly …read more"
+      "title": "Proper Linux, On An ESP32",
+      "url": "https://hackaday.com/2026/11/07/proper-linux-on-an-esp32/",
+      "date": "2026-11-07T21:00:19.000Z",
+      "excerpt": "The ESP32 series of microcontrollers feature a lot on these pages, offering as they do a significantly powerful processor and in most cases, wireless connectivity. One recent member of the …read more"
     },
     {
-      "id": "c3cd53608505",
+      "id": "bf965af061e2",
       "source": "hackaday",
-      "title": "MousePods Reverse Engineers Head Tracking Data From Stubborn AirPods",
-      "url": "https://hackaday.com/2026/11/06/mousepods-reverse-engineers-head-tracking-data-from-stubborn-airpods/",
-      "date": "2026-11-06T21:00:14.000Z",
-      "excerpt": "[Matteo Gaudioso] released MousePods, a Python tool which accesses the motion sensors in Apple AirPods on Linux, turning them into mouse input. No Apple host required. Doing this required reverse-engineering …read more"
+      "title": "Building a Homemade Induction Soldering Iron",
+      "url": "https://hackaday.com/2026/11/07/building-a-homemade-induction-soldering-iron/",
+      "date": "2026-11-07T19:30:38.000Z",
+      "excerpt": "Despite not being inherently any better at converting electricity into heat, induction-heated soldering irons often considerably outperform conventional irons with an identical power rating. They manage this by directly heating …read more"
     },
     {
-      "id": "a72674ff56e3",
+      "id": "0fc477f42eed",
       "source": "hackaday",
-      "title": "Using Halftone Images in QR codes Without Upsetting Scanners",
-      "url": "https://hackaday.com/2026/11/06/using-halftone-images-in-qr-codes-without-upsetting-scanners/",
-      "date": "2026-11-06T19:33:30.000Z",
-      "excerpt": "Although quick-response (QR) codes are rather simple monochrome affairs, adding embellishments to them is a popular activity, if only to make QR codes not stick out like a sore thumb …read more"
+      "title": "Supercon 2026: Streaming Live",
+      "url": "https://hackaday.com/2026/11/07/supercon-2026-streaming-live/",
+      "date": "2026-11-07T18:00:38.000Z",
+      "excerpt": "While we’d love to have you all join us in Pasadena for Supercon 2026, the next best thing is to connect up to the festivities remotely through the magic of …read more"
     },
     {
       "id": "027677eb1b42",
