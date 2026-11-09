@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-08T11:54:37.509Z",
+  "updatedAt": "2026-11-09T13:50:54.333Z",
   "sources": [
     {
       "id": "ifixit",
@@ -46,52 +46,60 @@
   ],
   "items": [
     {
-      "id": "9af9b6f2d6ee",
+      "id": "6a944e68a634",
       "source": "hackaday",
-      "title": "Making a Dog Car Wash Without (very) Fancy Tools",
-      "url": "https://hackaday.com/2026/11/07/making-a-dog-car-wash-without-very-fancy-tools/",
-      "date": "2026-11-08T06:00:42.000Z",
-      "excerpt": "[Stuff Made Here] got fed up with the hassle of washing their dog, and in traditional engineer fashion, decided that automating the process would solve the problem. However, as science …read more"
+      "title": "Web Satellite Tracker Plays the Music of the Spheres",
+      "url": "https://hackaday.com/2026/11/09/web-satellite-tracker-plays-the-music-of-the-spheres/",
+      "date": "2026-11-09T12:00:11.000Z",
+      "excerpt": "There are a dizzying number of satellites in orbit around the Earth these days, and more are being added at an incredible rate. Those of us with an interest in …read more"
     },
     {
-      "id": "bb2934a14802",
+      "id": "46a76ce6b6d0",
       "source": "hackaday",
-      "title": "Artemis II Rocket Was Powerful Enough to Disrupt GPS",
-      "url": "https://hackaday.com/2026/11/07/artemis-ii-rocket-was-powerful-enough-to-disrupt-gps/",
-      "date": "2026-11-08T03:00:52.000Z",
-      "excerpt": "Rockets certainly have a substantial impact if you ever see a launch in person. The noise, shock waves, and even heat can be awe-inspiring. What is less obvious are the …read more"
+      "title": "Determining Location by Listening for Airplanes",
+      "url": "https://hackaday.com/2026/11/09/determining-location-by-listening-for-airplanes/",
+      "date": "2026-11-09T09:00:31.000Z",
+      "excerpt": "Beyond what people deliberately disclose, there’s a surprising amount of information hidden in everyday messages, especially photos and videos. Even when people try to hide the location or time at …read more"
     },
     {
-      "id": "747476acfea5",
+      "id": "df58fcff1add",
       "source": "hackaday",
-      "title": "Play Text Adventures on an E-Paper Handheld",
-      "url": "https://hackaday.com/2026/11/07/play-text-adventures-on-an-e-paper-handheld/",
-      "date": "2026-11-08T00:00:30.000Z",
-      "excerpt": "Choose your own adventure books were one of the first media to become gamified in the computer era, and [Jeremy Ngai] wanted to bridge the experience further with an e-paper …read more"
+      "title": "A Smart Alarm Clock That Doesn’t Sell Your Soul",
+      "url": "https://hackaday.com/2026/11/08/a-smart-alarm-clock-that-doesnt-sell-your-soul/",
+      "date": "2026-11-09T06:00:41.000Z",
+      "excerpt": "Devices from the likes of Google and Amazon can be used as high-tech alarm clocks that can show the weather and family photos in addition to telling you what time …read more"
     },
     {
-      "id": "ef4c9af27e39",
+      "id": "8faa7bd5e70b",
       "source": "hackaday",
-      "title": "Proper Linux, On An ESP32",
-      "url": "https://hackaday.com/2026/11/07/proper-linux-on-an-esp32/",
-      "date": "2026-11-07T21:00:19.000Z",
-      "excerpt": "The ESP32 series of microcontrollers feature a lot on these pages, offering as they do a significantly powerful processor and in most cases, wireless connectivity. One recent member of the …read more"
+      "title": "Saving a Vintage High-Voltage Power Supply From the Scrap Heap",
+      "url": "https://hackaday.com/2026/11/08/saving-a-vintage-high-voltage-power-supply-from-the-scrap-heap/",
+      "date": "2026-11-09T03:00:42.000Z",
+      "excerpt": "[Mr Carlson’s Lab] saves a Fluke Model 407 high-voltage power supply from the scrap heap, and demonstrates carefully troubleshooting the vintage device to track the cause of the bad output …read more"
     },
     {
-      "id": "bf965af061e2",
+      "id": "3f2d91a40d25",
       "source": "hackaday",
-      "title": "Building a Homemade Induction Soldering Iron",
-      "url": "https://hackaday.com/2026/11/07/building-a-homemade-induction-soldering-iron/",
-      "date": "2026-11-07T19:30:38.000Z",
-      "excerpt": "Despite not being inherently any better at converting electricity into heat, induction-heated soldering irons often considerably outperform conventional irons with an identical power rating. They manage this by directly heating …read more"
+      "title": "Space Invaders on a VFD",
+      "url": "https://hackaday.com/2026/11/08/space-invaders-on-a-vfd/",
+      "date": "2026-11-09T00:00:01.000Z",
+      "excerpt": "When most people think of vacuum fluorescent displays (VFDs), they probably imagine the clock on a microwave or the equalizer on a piece of stereo equipment. But there was a …read more"
     },
     {
-      "id": "0fc477f42eed",
+      "id": "ab95a9e98ed4",
       "source": "hackaday",
-      "title": "Supercon 2026: Streaming Live",
-      "url": "https://hackaday.com/2026/11/07/supercon-2026-streaming-live/",
-      "date": "2026-11-07T18:00:38.000Z",
-      "excerpt": "While we’d love to have you all join us in Pasadena for Supercon 2026, the next best thing is to connect up to the festivities remotely through the magic of …read more"
+      "title": "Lillith Tells Your Future",
+      "url": "https://hackaday.com/2026/11/08/lillith-tells-your-future/",
+      "date": "2026-11-08T21:00:42.000Z",
+      "excerpt": "Maybe you are old enough to remember Zoltar in an arcade, or perhaps you’re just a fan of the movie Big. Either way, maybe you’d like to build an animated fortune …read more"
+    },
+    {
+      "id": "76f75353dc6d",
+      "source": "learnrepair",
+      "title": "TEC 26-11-08",
+      "url": "https://www.youtube.com/watch?v=9lqJyEnR0lQ",
+      "date": "2026-11-08T19:07:52.000Z",
+      "excerpt": "LER And Friends - 08th of November 2026. We'll stream once a month on sundays, starting at 17:00 GMT."
     },
     {
       "id": "027677eb1b42",
@@ -132,14 +140,6 @@
       "url": "https://www.youtube.com/watch?v=TSsxxs9t93A",
       "date": "2026-10-30T13:11:21.000Z",
       "excerpt": "I have a Marshall Bass State Guitar Amplifier Speaker to repair. It powers on but there is no sound. This amplifier contains a valve stage, so it is a nice opportunity to learn how vacuum tubes work and how to repair these circuits…"
-    },
-    {
-      "id": "3ee76b37ff2e",
-      "source": "learnrepair",
-      "title": "Ziboo 101 Mini Digital Multimeter Test And Review",
-      "url": "https://www.youtube.com/watch?v=720uYbcJc8s",
-      "date": "2026-10-28T11:22:55.000Z",
-      "excerpt": "Let's try the Ziboo 101 mini digital multimeter. Is this inexpensive compact multimeter any good? You can buy the Ziboo 101 here : For All Your PCB needs: free $5 discount coupon 👉Click on the link or enter the search code [AY0B53] on…"
     },
     {
       "id": "5f5ba3051c3a",
