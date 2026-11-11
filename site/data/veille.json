@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-10T13:26:01.449Z",
+  "updatedAt": "2026-11-11T12:40:59.279Z",
   "sources": [
     {
       "id": "ifixit",
@@ -46,12 +46,60 @@
   ],
   "items": [
     {
-      "id": "fe53c75ab309",
+      "id": "675ec9dcb530",
       "source": "hackaday",
-      "title": "Have You Ever Heard Of the Lobo MAX-80?",
-      "url": "https://hackaday.com/2026/11/10/have-you-ever-heard-of-the-lobo-max-80/",
-      "date": "2026-11-10T12:00:35.000Z",
-      "excerpt": "[Adrian Black]’s enthusiasm is palpable as he shows off something truly unusual: a Lobo MAX-80 computer from 1982. To call this machine rare would be an understatement, as the company …read more"
+      "title": "Why Engineers are Forced to Create Junk Designs",
+      "url": "https://hackaday.com/2026/11/11/why-engineers-are-forced-to-create-junk-designs/",
+      "date": "2026-11-11T12:00:45.000Z",
+      "excerpt": "It’s become a bit of a platitude to state that products were manufactured better in ‘the olden days’, but as [The Meandrous Engineer] covers in a recent video essay, the …read more"
+    },
+    {
+      "id": "13677af8403b",
+      "source": "hackaday",
+      "title": "This Coffee Machine is DOOMed",
+      "url": "https://hackaday.com/2026/11/10/this-coffee-machine-is-doomed/",
+      "date": "2026-11-11T06:00:18.000Z",
+      "excerpt": "Somehow, seeing DOOM on things that were never meant to run DOOM never gets old. It’s probably hard to get further into the “never meant to run DOOM” weeds than …read more"
+    },
+    {
+      "id": "4c27da50aab4",
+      "source": "hackaday",
+      "title": "Print & Place: Add Embedded Electronics While FDM Printing",
+      "url": "https://hackaday.com/2026/11/10/print-place-add-embedded-electronics-while-fdm-printing/",
+      "date": "2026-11-11T03:00:32.000Z",
+      "excerpt": "Although combining electronics and 3D-printed structures is fairly common, this usually entails some level of manual assembly. This contrasts strongly with the Print & Place approach demonstrated by [Oliver Child] …read more"
+    },
+    {
+      "id": "dbd960567f0a",
+      "source": "hackaday",
+      "title": "Watching the Watchers",
+      "url": "https://hackaday.com/2026/11/10/watching-the-watchers/",
+      "date": "2026-11-11T00:00:28.000Z",
+      "excerpt": "Although it used to be a much more rare event, now almost any time at dawn or dusk, provided clear weather, a human observer can walk outside, look up, and …read more"
+    },
+    {
+      "id": "8cba53624e62",
+      "source": "ifixit",
+      "title": "We Tore Down the MacBook PROLED XDR and Found the Secret of the Glowing Apple",
+      "url": "https://www.ifixit.com/News/120152/we-tore-down-the-macbook-proled-xdr-and-found-the-secret-of-the-glowing-apple",
+      "date": "2026-11-10T23:19:35.000Z",
+      "excerpt": "“Fancy new display” makes our screwdrivers nervous, and Apple’s latest MacBook has the fanciest display yet. The MacBook Pro with PROLED XDR is the first-ever touchscreen MacBook. It’s got a…"
+    },
+    {
+      "id": "2a0f31371a7c",
+      "source": "hackaday",
+      "title": "Gesture Controls With Only a Camera",
+      "url": "https://hackaday.com/2026/11/10/gesture-controls-with-only-a-camera/",
+      "date": "2026-11-10T21:00:32.000Z",
+      "excerpt": "Back in 2002, [Takahiro Yonemura] and others built a system that used a single webcam-like device to track a user’s hand and generate inputs for a computer. Given that this …read more"
+    },
+    {
+      "id": "dfb213a71842",
+      "source": "hackaday",
+      "title": "How CRISPR Could Mark Mutated Cancer Cells for Termination",
+      "url": "https://hackaday.com/2026/11/10/how-crispr-could-mark-mutated-cancer-cells-for-termination/",
+      "date": "2026-11-10T18:00:26.000Z",
+      "excerpt": "Over the past decades CRISPR, short for “clustered regularly interspaced short palindromic repeats”, has become somewhat of a household name, holding the promise of directly addressing genetic mutations by effectively …read more"
     },
     {
       "id": "a23bdbe1e13c",
@@ -60,46 +108,6 @@
       "url": "https://www.youtube.com/watch?v=J8O-SuTO1sE",
       "date": "2026-11-10T10:52:01.000Z",
       "excerpt": "I have a Lab Gruppen LAB1000 Amplifier that has badly distorted sound on one channel. Let's use this as a teaching aid - looking at what causes distortion and how we may be able to diagnose the fault 👉Click on the link or enter the…"
-    },
-    {
-      "id": "e25e68286059",
-      "source": "hackaday",
-      "title": "Hacking the Sidekick in 2026",
-      "url": "https://hackaday.com/2026/11/10/hacking-the-sidekick-in-2026/",
-      "date": "2026-11-10T09:00:48.000Z",
-      "excerpt": "The early 2000s saw a Cambrian Explosion of form factors for mobile devices, and one of the most feature-rich phones of the time was the Danger Hiptop, better known as …read more"
-    },
-    {
-      "id": "9dae45fdbc44",
-      "source": "hackaday",
-      "title": "Robotic Car Charger Locks On With Suction",
-      "url": "https://hackaday.com/2026/11/09/robotic-car-charger-locks-on-with-suction/",
-      "date": "2026-11-10T06:00:59.000Z",
-      "excerpt": "Not only does [Mew463]’s robotic car charger take care of plugging in his vehicle for him, it has some really clever features that are great to see in action. We’ve …read more"
-    },
-    {
-      "id": "f7731c759bb4",
-      "source": "hackaday",
-      "title": "You Wouldn’t Download A Car…",
-      "url": "https://hackaday.com/2026/11/09/you-wouldnt-download-a-car/",
-      "date": "2026-11-10T03:00:06.000Z",
-      "excerpt": "For as long as there have been sports cars, there have been blokes in tin sheds making their own sports cars. It’s a pursuit that has birthed famous marques and …read more"
-    },
-    {
-      "id": "db5cf316e450",
-      "source": "hackaday",
-      "title": "Free Your Harley From The Dealer",
-      "url": "https://hackaday.com/2026/11/09/free-your-harley-from-the-dealer/",
-      "date": "2026-11-10T00:00:08.000Z",
-      "excerpt": "Vehicles have come with diagnostic ports for many years now, and there are a host of easily available tools to interrogate them. Despite that, there are still proprietary aspects that …read more"
-    },
-    {
-      "id": "da7f108ced87",
-      "source": "hackaday",
-      "title": "From Phone, To SDR, No Extra Hardware",
-      "url": "https://hackaday.com/2026/11/09/from-phone-to-sdr-no-extra-hardware/",
-      "date": "2026-11-09T21:00:31.000Z",
-      "excerpt": "One of the more exciting recent developments has been the discovery that many radio chips used in common and cheap wireless network interfaces, microcontrollers, LoRa interfaces and others can be …read more"
     },
     {
       "id": "76f75353dc6d",
@@ -252,14 +260,6 @@
       "url": "https://www.halteobsolescence.org/empreinte-environnementale-ia-senat/",
       "date": "2026-10-08T12:29:23.000Z",
       "excerpt": "Le 16 septembre 2026, la commission de l'aménagement du territoire et du développement durable du sénat a adopté le rapport d'information sur l’empreinte environnementale de l'intelligence artificielle, auquel HOP avait participé par le…"
-    },
-    {
-      "id": "c54cd4402720",
-      "source": "ifixit",
-      "title": "Apple Watch Series 12 and Ultra 4 Teardown Reveals a Gap in Right to Repair Coverage",
-      "url": "https://www.ifixit.com/News/119658/apple-watch-series-12-and-ultra-4-teardown-reveals-a-gap-in-right-to-repair-coverage",
-      "date": "2026-10-06T19:31:33.000Z",
-      "excerpt": "We just tore down the two latest Apple Watches. And Apple, we need to have a talk. Let’s cut to the chase: there’s no big repairability news here. The Series…"
     },
     {
       "id": "1323b59ec2ef",
