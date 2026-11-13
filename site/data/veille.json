@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-12T13:43:32.412Z",
+  "updatedAt": "2026-11-13T13:03:37.380Z",
   "sources": [
     {
       "id": "ifixit",
@@ -46,12 +46,68 @@
   ],
   "items": [
     {
+      "id": "19be9624dbdf",
+      "source": "hackaday",
+      "title": "Fixing a Dead Socket LGA 1851 Mainboard with a Resistor",
+      "url": "https://hackaday.com/2026/11/13/fixing-a-dead-socket-lga-1851-mainboard-with-a-resistor/",
+      "date": "2026-11-13T12:00:12.000Z",
+      "excerpt": "Doing board level diagnosis on a PCB is hardly black magic, but some PCBs are definitely more daunting than others. The Socket LGA 1851 mainboard that [Fix the Pixel] got …read more"
+    },
+    {
+      "id": "0ea76a4a8170",
+      "source": "hackaday",
+      "title": "Hacked Nixie Clock Waits for the Bus",
+      "url": "https://hackaday.com/2026/11/13/hacked-nixie-clock-waits-for-the-bus/",
+      "date": "2026-11-13T09:00:23.000Z",
+      "excerpt": "Nixie clocks have become popular enough that these days there’s no shortage of turn-key options that let you experience that warm glow with a minimum of fuss. Many still come …read more"
+    },
+    {
+      "id": "04b705c43f4e",
+      "source": "hackaday",
+      "title": "A Desktop OS for the ESP32-P4",
+      "url": "https://hackaday.com/2026/11/12/a-desktop-os-for-the-esp32-p4/",
+      "date": "2026-11-13T06:00:58.000Z",
+      "excerpt": "The ESP32-P4 is Espressif’s high-end application processor, with two blistering fast RISC-V cores for a surprisingly reasonable price. As it’s a very capable computer in its own right, there have …read more"
+    },
+    {
+      "id": "995adc408571",
+      "source": "hackaday",
+      "title": "Hacking Meta’s Smart Glasses",
+      "url": "https://hackaday.com/2026/11/12/hacking-metas-smart-glasses/",
+      "date": "2026-11-13T03:00:45.000Z",
+      "excerpt": "Meta’s Ray-Ban smart glasses have attracted plenty of controversy in the relatively short time they have been available, given their potential for covert and unvanted surveillance. But given the chance …read more"
+    },
+    {
+      "id": "1fba02e9800b",
+      "source": "hackaday",
+      "title": "Watch That Sound: Your Own Chladni Plate",
+      "url": "https://hackaday.com/2026/11/12/watch-that-sound-your-own-chladni-plate/",
+      "date": "2026-11-13T00:00:30.000Z",
+      "excerpt": "What if you could see sound? A Chladni plate uses a speaker and small particles, like sand, to give you a visual representation of sound, and [CrazyScience] shows you how …read more"
+    },
+    {
+      "id": "4e1e125c603e",
+      "source": "hackaday",
+      "title": "Upgrade Your CoCo The Modern Way",
+      "url": "https://hackaday.com/2026/11/12/upgrade-your-coco-the-modern-way/",
+      "date": "2026-11-12T21:00:38.000Z",
+      "excerpt": "The Radio Shack TRS-80 Colour Computer may never have achieved the sales volume of its competitors from Commodore or Apple, but it offered a surprisingly capable set of hardware. There …read more"
+    },
+    {
+      "id": "19a93af64e06",
+      "source": "electrobidouilleur",
+      "title": "EB_#726 Mini-Plaquette - Filtre d'Alimentation CC à Découpage",
+      "url": "https://www.youtube.com/watch?v=GKzWMPtP9XY",
+      "date": "2026-11-12T14:28:13.000Z",
+      "excerpt": "Ces mini-plaquettes de filtrage d'alimentation CC sont peu chères et pourraient permettre d'éliminer le bruit de découpage. Mais en valent-t'elle la peine? Pour le savoir, j'en fais une simulation et des mesures pour en estimer…"
+    },
+    {
       "id": "414961d60b4d",
       "source": "learnrepair",
       "title": "How To Repair Amplifier Distortion - A Practical Guide LAB 1000 PART TWO",
       "url": "https://www.youtube.com/watch?v=g9JdlldhkxM",
       "date": "2026-11-12T13:03:48.000Z",
-      "excerpt": "I have a Lab Gruppen LAB1000 Amplifier that has badly distorted sound on one channel. Let's use this as a teaching aid - looking at what causes distortion and how we may be able to diagnose the fault 👉Click on the link or enter the…"
+      "excerpt": "I have a Lab Gruppen LAB1000 Amplifier that has badly distorted sound on one channel. Let's use this as a teaching aid - looking at what causes distortion and how we may be able to diagnose the fault Part one : 👉Click on the link or…"
     },
     {
       "id": "2ed0ddd40f89",
@@ -60,54 +116,6 @@
       "url": "https://www.ifixit.com/News/120266/what-gets-people-fixing",
       "date": "2026-11-12T12:37:09.000Z",
       "excerpt": "From reluctant gamers to first-time solderers, here’s what we learned about overcoming the barriers to repair at events across Europe. At a gaming convention in Strasbourg, iFixit Street Team member…"
-    },
-    {
-      "id": "293a80fb54be",
-      "source": "hackaday",
-      "title": "Tiny Transmitters Track Monarch Butterflies",
-      "url": "https://hackaday.com/2026/11/12/tiny-transmitters-track-monarch-butterflies/",
-      "date": "2026-11-12T12:00:29.000Z",
-      "excerpt": "Miniaturization is one thing, but how would you like to design a transmitter that attaches to a butterfly? That’s what the BlūMorpho transmitter is made to do, according to [Tom …read more"
-    },
-    {
-      "id": "dedfbc9e2cba",
-      "source": "hackaday",
-      "title": "Espresso, Meet Custom-Machined Stainless Steel Boiler",
-      "url": "https://hackaday.com/2026/11/12/espresso-meet-custom-machined-stainless-steel-boiler/",
-      "date": "2026-11-12T09:00:33.000Z",
-      "excerpt": "While pondering some repairs for his Gaggia Classic Pro espresso machine, [Hans Gaensbauer] ended up machining an entirely new boiler from stainless steel. It was a nontrivial undertaking, since the …read more"
-    },
-    {
-      "id": "2ad0ce6cf7e0",
-      "source": "hackaday",
-      "title": "A LEGO 3D Printer",
-      "url": "https://hackaday.com/2026/11/11/a-lego-3d-printer/",
-      "date": "2026-11-12T06:00:42.000Z",
-      "excerpt": "LEGO building blocks are a great toy, but every so often a hacker decides to take the little bricks outside of the toy room and make them an integral part …read more"
-    },
-    {
-      "id": "76652f07f458",
-      "source": "hackaday",
-      "title": "It’s Elite, For The Commodore Pet",
-      "url": "https://hackaday.com/2026/11/11/its-elite-for-the-commodore-pet/",
-      "date": "2026-11-12T03:00:20.000Z",
-      "excerpt": "A few times in the life of someone interested in technology, there comes along something which after seeing it, you know the field is never going to be the same …read more"
-    },
-    {
-      "id": "3b11ea35a2aa",
-      "source": "hackaday",
-      "title": "FLOSS Weekly Episode 883: Telnet Broke Us",
-      "url": "https://hackaday.com/2026/11/11/floss-weekly-episode-883-telnet-broke-us/",
-      "date": "2026-11-12T00:00:42.000Z",
-      "excerpt": "This week Jonathan chats with Sattyam Jain about Agent Audit Kit and Agent Airlock. We’re in a brave new world, where anyone can use AI to generate an AI agent. …read more"
-    },
-    {
-      "id": "a7c0bccabf7d",
-      "source": "hackaday",
-      "title": "Modular, 3D Printed Train Whistles For Everyone",
-      "url": "https://hackaday.com/2026/11/11/modular-3d-printed-train-whistles-for-everyone/",
-      "date": "2026-11-11T21:00:39.000Z",
-      "excerpt": "If the word “train” didn’t grab your attention, you’re probably not the target audience for this project. If it did, then there is no need to explain why [AeroKoi] has …read more"
     },
     {
       "id": "d3b1733d652a",
@@ -284,14 +292,6 @@
       "url": "https://www.youtube.com/watch?v=g2exPic0sIM",
       "date": "2026-09-21T19:11:10.000Z",
       "excerpt": "Rediffusion de la Session \"En Direct\" de la chaîne Électro-Bidouilleur du Lundi 21 Septembre 2026. Merci à tous les participants! Les fichiers pertinents aux vidéos (code source, schémas, etc.) sont placés ici sous format .ZIP: La chaîne…"
-    },
-    {
-      "id": "0baa6303524d",
-      "source": "electrobidouilleur",
-      "title": "EB_#721 Mini-Plaquette - La WiFi et console texte avec la ESP-01S",
-      "url": "https://www.youtube.com/watch?v=GDYgp0KCChQ",
-      "date": "2026-09-01T14:44:41.000Z",
-      "excerpt": "J'avais besoin d'une liaison de console texte en WiFi pour superviser à distance ma balise 10 GHz. Je vous présente la mini-plaquette ESP-01S qui, chargée du firmware esp-link, fait tout ce que j'ai besoin. La plaquette ESP-01S est…"
     }
   ]
 }
