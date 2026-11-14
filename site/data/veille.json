@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-13T13:03:37.380Z",
+  "updatedAt": "2026-11-14T12:08:03.905Z",
   "sources": [
     {
       "id": "ifixit",
@@ -46,52 +46,60 @@
   ],
   "items": [
     {
-      "id": "19be9624dbdf",
+      "id": "dcc61db15f6b",
       "source": "hackaday",
-      "title": "Fixing a Dead Socket LGA 1851 Mainboard with a Resistor",
-      "url": "https://hackaday.com/2026/11/13/fixing-a-dead-socket-lga-1851-mainboard-with-a-resistor/",
-      "date": "2026-11-13T12:00:12.000Z",
-      "excerpt": "Doing board level diagnosis on a PCB is hardly black magic, but some PCBs are definitely more daunting than others. The Socket LGA 1851 mainboard that [Fix the Pixel] got …read more"
+      "title": "Reverse Engineering Score Perfect to Rescue its Files",
+      "url": "https://hackaday.com/2026/11/14/reverse-engineering-score-perfect-to-rescue-its-files/",
+      "date": "2026-11-14T12:00:47.000Z",
+      "excerpt": "There are myriad challenges associated with data preservation – bit rot, loss of metadata, and hardware failures, among others – but one of the hardest is making sure that the …read more"
     },
     {
-      "id": "0ea76a4a8170",
+      "id": "b10aa473192b",
       "source": "hackaday",
-      "title": "Hacked Nixie Clock Waits for the Bus",
-      "url": "https://hackaday.com/2026/11/13/hacked-nixie-clock-waits-for-the-bus/",
-      "date": "2026-11-13T09:00:23.000Z",
-      "excerpt": "Nixie clocks have become popular enough that these days there’s no shortage of turn-key options that let you experience that warm glow with a minimum of fuss. Many still come …read more"
+      "title": "Making CO₂ Sensors Fail Visibly, Not Silently",
+      "url": "https://hackaday.com/2026/11/14/making-co%e2%82%82-sensors-fail-visibly-not-silently/",
+      "date": "2026-11-14T09:00:43.000Z",
+      "excerpt": "CO₂ buildup in a living area can be a serious problem, and a sensor that fails quietly cannot be relied upon. [William Collis] addressed this important issue by creating CO₂ monitors …read more"
     },
     {
-      "id": "04b705c43f4e",
+      "id": "94a6c631adbf",
       "source": "hackaday",
-      "title": "A Desktop OS for the ESP32-P4",
-      "url": "https://hackaday.com/2026/11/12/a-desktop-os-for-the-esp32-p4/",
-      "date": "2026-11-13T06:00:58.000Z",
-      "excerpt": "The ESP32-P4 is Espressif’s high-end application processor, with two blistering fast RISC-V cores for a surprisingly reasonable price. As it’s a very capable computer in its own right, there have …read more"
+      "title": "ESP32 Flight Tracker on Apple CRT",
+      "url": "https://hackaday.com/2026/11/13/esp32-flight-tracker-on-apple-crt/",
+      "date": "2026-11-14T06:00:58.000Z",
+      "excerpt": "It can show you an image of the plane, but it’s not exactly high-def. \" data-large-file=\" /> Sometimes we’re most taken by what’s on the screen; sometimes the screen itself is the most interesting part of the project. In this case, it’s…"
     },
     {
-      "id": "995adc408571",
+      "id": "dd6bdd36055e",
       "source": "hackaday",
-      "title": "Hacking Meta’s Smart Glasses",
-      "url": "https://hackaday.com/2026/11/12/hacking-metas-smart-glasses/",
-      "date": "2026-11-13T03:00:45.000Z",
-      "excerpt": "Meta’s Ray-Ban smart glasses have attracted plenty of controversy in the relatively short time they have been available, given their potential for covert and unvanted surveillance. But given the chance …read more"
+      "title": "Borland C++ 2.0 Compiler Source Reconstructed",
+      "url": "https://hackaday.com/2026/11/13/borland-c-2-0-compiler-source-reconstructed/",
+      "date": "2026-11-14T03:00:44.000Z",
+      "excerpt": "As the successor to Turbo C++, Borland C++ was a staple of professional IDEs for C and C++ development, starting with the initial 2.0 release in 1991. Being a commercial …read more"
     },
     {
-      "id": "1fba02e9800b",
+      "id": "726aee8b7945",
       "source": "hackaday",
-      "title": "Watch That Sound: Your Own Chladni Plate",
-      "url": "https://hackaday.com/2026/11/12/watch-that-sound-your-own-chladni-plate/",
-      "date": "2026-11-13T00:00:30.000Z",
-      "excerpt": "What if you could see sound? A Chladni plate uses a speaker and small particles, like sand, to give you a visual representation of sound, and [CrazyScience] shows you how …read more"
+      "title": "X Window System on the ESP32",
+      "url": "https://hackaday.com/2026/11/13/x-window-system-on-the-esp32/",
+      "date": "2026-11-14T00:00:18.000Z",
+      "excerpt": "There are a lot of things you can do with an Xserver, but run it on a microcontroller? Well, if that microcontroller is an ESP32-S3, [Sergey Zorin]– and Claude– have …read more"
     },
     {
-      "id": "4e1e125c603e",
+      "id": "37af61191eda",
+      "source": "electrobidouilleur",
+      "title": "Électro-Bidouilleur \"En Direct\" - Dimanche 15 Novembre 2026 @ 18h UTC",
+      "url": "https://www.youtube.com/watch?v=f8S9XSsfsHE",
+      "date": "2026-11-13T22:43:56.000Z",
+      "excerpt": "Session \"En Direct\" de la chaîne Électro-Bidouilleur du Dimanche 15 Novembre 2026 à 18h00 UTC (19h00 en France, 13h00 au Québec). Comme toujours, je tenterai de répondre à vos questions! Les fichiers pertinents aux vidéos (code source…"
+    },
+    {
+      "id": "5d8093103452",
       "source": "hackaday",
-      "title": "Upgrade Your CoCo The Modern Way",
-      "url": "https://hackaday.com/2026/11/12/upgrade-your-coco-the-modern-way/",
-      "date": "2026-11-12T21:00:38.000Z",
-      "excerpt": "The Radio Shack TRS-80 Colour Computer may never have achieved the sales volume of its competitors from Commodore or Apple, but it offered a surprisingly capable set of hardware. There …read more"
+      "title": "Using a Toothbrush’s NFC chip to Unlock a Computer",
+      "url": "https://hackaday.com/2026/11/13/using-a-toothbrushs-nfc-chip-to-unlock-a-computer/",
+      "date": "2026-11-13T21:00:24.000Z",
+      "excerpt": "Depending on which type of electric toothbrush you are using, the replaceable brushes may contain an NFC chip that the handle and possibly base station uses to track various details, …read more"
     },
     {
       "id": "19a93af64e06",
@@ -284,14 +292,6 @@
       "url": "https://www.youtube.com/watch?v=8HB54UkC2ZY",
       "date": "2026-09-26T20:25:21.000Z",
       "excerpt": "Plusieurs me l'ont demandé durant le Live du mois d'août, je vous présente le projet qui m'a tenu occupé cet été: Ma balise radio amateur à 10 GHz. Peut-être y trouverez-vous quelques astuces de conception ou de construction. Série de…"
-    },
-    {
-      "id": "2b477e45c473",
-      "source": "electrobidouilleur",
-      "title": "EB_#722 Électro-Bidouilleur \"En Direct\" - Rediffusion Lundi 21 Septembre 2026",
-      "url": "https://www.youtube.com/watch?v=g2exPic0sIM",
-      "date": "2026-09-21T19:11:10.000Z",
-      "excerpt": "Rediffusion de la Session \"En Direct\" de la chaîne Électro-Bidouilleur du Lundi 21 Septembre 2026. Merci à tous les participants! Les fichiers pertinents aux vidéos (code source, schémas, etc.) sont placés ici sous format .ZIP: La chaîne…"
     }
   ]
 }
