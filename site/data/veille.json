@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-14T12:08:03.905Z",
+  "updatedAt": "2026-11-15T12:41:47.135Z",
   "sources": [
     {
       "id": "ifixit",
@@ -46,44 +46,60 @@
   ],
   "items": [
     {
-      "id": "dcc61db15f6b",
+      "id": "9d9863b0fa01",
       "source": "hackaday",
-      "title": "Reverse Engineering Score Perfect to Rescue its Files",
-      "url": "https://hackaday.com/2026/11/14/reverse-engineering-score-perfect-to-rescue-its-files/",
-      "date": "2026-11-14T12:00:47.000Z",
-      "excerpt": "There are myriad challenges associated with data preservation – bit rot, loss of metadata, and hardware failures, among others – but one of the hardest is making sure that the …read more"
+      "title": "An MP3 Player, Implemented As A Factorio Blueprint",
+      "url": "https://hackaday.com/2026/11/15/an-mp3-player-implemented-as-a-factorio-blueprint/",
+      "date": "2026-11-15T12:00:56.000Z",
+      "excerpt": "Factorio is a factory simulation game that leads its players into many happy hours of building ever more complex factories, but it comes with a snag. Its built-in music is …read more"
     },
     {
-      "id": "b10aa473192b",
+      "id": "c981a9138527",
       "source": "hackaday",
-      "title": "Making CO₂ Sensors Fail Visibly, Not Silently",
-      "url": "https://hackaday.com/2026/11/14/making-co%e2%82%82-sensors-fail-visibly-not-silently/",
-      "date": "2026-11-14T09:00:43.000Z",
-      "excerpt": "CO₂ buildup in a living area can be a serious problem, and a sensor that fails quietly cannot be relied upon. [William Collis] addressed this important issue by creating CO₂ monitors …read more"
+      "title": "Reverse Engineer that USB Device in Style",
+      "url": "https://hackaday.com/2026/11/15/reverse-engineer-that-usb-device-in-style/",
+      "date": "2026-11-15T09:00:44.000Z",
+      "excerpt": "Proprietary device drivers, dedicated applications, and their ilk are the bane of the open-source hacker. If only we could snoop on every device out there, recording the “secret” USB transactions …read more"
     },
     {
-      "id": "94a6c631adbf",
+      "id": "c39762922f59",
       "source": "hackaday",
-      "title": "ESP32 Flight Tracker on Apple CRT",
-      "url": "https://hackaday.com/2026/11/13/esp32-flight-tracker-on-apple-crt/",
-      "date": "2026-11-14T06:00:58.000Z",
-      "excerpt": "It can show you an image of the plane, but it’s not exactly high-def. \" data-large-file=\" /> Sometimes we’re most taken by what’s on the screen; sometimes the screen itself is the most interesting part of the project. In this case, it’s…"
+      "title": "Bringing a Cloud Based Monitor Home",
+      "url": "https://hackaday.com/2026/11/14/bringing-a-cloud-based-monitor-home/",
+      "date": "2026-11-15T06:00:02.000Z",
+      "excerpt": "When setting up to grow plants hydroponically, it’s important to keep an eye on the numbers, temperature, pH, and electrical conductivity, to name a few. To do this, [Joziti] bought …read more"
     },
     {
-      "id": "dd6bdd36055e",
+      "id": "859b77cd4f3a",
       "source": "hackaday",
-      "title": "Borland C++ 2.0 Compiler Source Reconstructed",
-      "url": "https://hackaday.com/2026/11/13/borland-c-2-0-compiler-source-reconstructed/",
-      "date": "2026-11-14T03:00:44.000Z",
-      "excerpt": "As the successor to Turbo C++, Borland C++ was a staple of professional IDEs for C and C++ development, starting with the initial 2.0 release in 1991. Being a commercial …read more"
+      "title": "RPN Loved Honk If (or, Write Your Own PostScript Interpreter)",
+      "url": "https://hackaday.com/2026/11/14/rpn-loved-honk-if-or-write-your-own-postscript-interpreter/",
+      "date": "2026-11-15T03:00:49.000Z",
+      "excerpt": "Maybe you like old laser printers. Maybe you were a fan of [Don Lancaster]. Maybe you like Forth, HP calculators, and everything RPN. Whichever it is, why not write your …read more"
     },
     {
-      "id": "726aee8b7945",
+      "id": "77934d50453c",
       "source": "hackaday",
-      "title": "X Window System on the ESP32",
-      "url": "https://hackaday.com/2026/11/13/x-window-system-on-the-esp32/",
-      "date": "2026-11-14T00:00:18.000Z",
-      "excerpt": "There are a lot of things you can do with an Xserver, but run it on a microcontroller? Well, if that microcontroller is an ESP32-S3, [Sergey Zorin]– and Claude– have …read more"
+      "title": "DIVINER: Occult Synth Firmware for the Cardputer",
+      "url": "https://hackaday.com/2026/11/14/diviner-occult-synth-firmware-for-the-cardputer/",
+      "date": "2026-11-15T00:00:11.000Z",
+      "excerpt": "We see some strange software around these parts, but this is probably the strangest. DIVINER is a firmware for the M5 Cardputer, which is an interesting device in its own …read more"
+    },
+    {
+      "id": "62b7c76a8ab5",
+      "source": "hackaday",
+      "title": "Warm Analog DSP, on the ESP",
+      "url": "https://hackaday.com/2026/11/14/warm-analog-dsp-on-the-esp/",
+      "date": "2026-11-14T21:00:09.000Z",
+      "excerpt": "We love audio, and we love messing around with it. So when [mircemk] wrote in with his latest audio-mangling device, we had to give it a look. It’s a tube-sound …read more"
+    },
+    {
+      "id": "cf037dcce88f",
+      "source": "learnrepair",
+      "title": "What Test Equipment Do You Need For An Electronics Workshop? How To Set Up A Repair Work Bench",
+      "url": "https://www.youtube.com/watch?v=0uaufISGi_U",
+      "date": "2026-11-14T17:57:41.000Z",
+      "excerpt": "Way back in March 2021 I published my 11th ever video. What test gear do you need for electronics repair. Well quite some time has passed since then and that video is still popular! So let's make a new updated version. What was I using in…"
     },
     {
       "id": "37af61191eda",
@@ -92,14 +108,6 @@
       "url": "https://www.youtube.com/watch?v=f8S9XSsfsHE",
       "date": "2026-11-13T22:43:56.000Z",
       "excerpt": "Session \"En Direct\" de la chaîne Électro-Bidouilleur du Dimanche 15 Novembre 2026 à 18h00 UTC (19h00 en France, 13h00 au Québec). Comme toujours, je tenterai de répondre à vos questions! Les fichiers pertinents aux vidéos (code source…"
-    },
-    {
-      "id": "5d8093103452",
-      "source": "hackaday",
-      "title": "Using a Toothbrush’s NFC chip to Unlock a Computer",
-      "url": "https://hackaday.com/2026/11/13/using-a-toothbrushs-nfc-chip-to-unlock-a-computer/",
-      "date": "2026-11-13T21:00:24.000Z",
-      "excerpt": "Depending on which type of electric toothbrush you are using, the replaceable brushes may contain an NFC chip that the handle and possibly base station uses to track various details, …read more"
     },
     {
       "id": "19a93af64e06",
@@ -180,14 +188,6 @@
       "url": "https://www.framboise314.fr/tesla-p40-ia-vision-maison/",
       "date": "2026-11-03T13:50:25.000Z",
       "excerpt": "S’offrir 24 Go de mémoire vidéo à bas prix pour faire tourner de l’IA locale, c’est la promesse alléchante des Tesla P40 d’occasion. Seulement, face à cette architecture de 2016, la grande majorité des outils modernes jettent l’éponge…"
-    },
-    {
-      "id": "d92ce8c1b52d",
-      "source": "learnrepair",
-      "title": "Artcoustic PA-1800 Repair Part Three : My Friend Bought A Faulty Amplifier For €50 Continued...",
-      "url": "https://www.youtube.com/watch?v=VRBO-DGEFow",
-      "date": "2026-11-03T10:29:11.000Z",
-      "excerpt": "I have a faulty amplifier Artcoustic PA-1800 bought by a friend. Guess who he asked to fix it? This is part three of this repair and I'm not even getting nowhere quickly Pt1 Reprise Pt2 👉Click on the link or enter the search code…"
     },
     {
       "id": "5f5ba3051c3a",
