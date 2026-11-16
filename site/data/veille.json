@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-15T12:41:47.135Z",
+  "updatedAt": "2026-11-16T13:35:36.523Z",
   "sources": [
     {
       "id": "ifixit",
@@ -46,52 +46,60 @@
   ],
   "items": [
     {
-      "id": "9d9863b0fa01",
+      "id": "c37ff61b7f86",
       "source": "hackaday",
-      "title": "An MP3 Player, Implemented As A Factorio Blueprint",
-      "url": "https://hackaday.com/2026/11/15/an-mp3-player-implemented-as-a-factorio-blueprint/",
-      "date": "2026-11-15T12:00:56.000Z",
-      "excerpt": "Factorio is a factory simulation game that leads its players into many happy hours of building ever more complex factories, but it comes with a snag. Its built-in music is …read more"
+      "title": "ESP32 WIFI Jam Detector Finds the Raspberry",
+      "url": "https://hackaday.com/2026/11/16/esp32-wifi-jam-detector-finds-the-raspberry/",
+      "date": "2026-11-16T12:00:47.000Z",
+      "excerpt": "We’ve seen plenty of ESP32 WiFi projects that test wifi systems with attacks such as Deauth, and even jamming. Today’s project is a bit different. [TheDigital1] created an ESP32 project …read more"
     },
     {
-      "id": "c981a9138527",
+      "id": "03142145f28b",
       "source": "hackaday",
-      "title": "Reverse Engineer that USB Device in Style",
-      "url": "https://hackaday.com/2026/11/15/reverse-engineer-that-usb-device-in-style/",
-      "date": "2026-11-15T09:00:44.000Z",
-      "excerpt": "Proprietary device drivers, dedicated applications, and their ilk are the bane of the open-source hacker. If only we could snoop on every device out there, recording the “secret” USB transactions …read more"
+      "title": "Follow The Grid With An Arduino Uno",
+      "url": "https://hackaday.com/2026/11/16/follow-the-grid-with-an-arduino-uno/",
+      "date": "2026-11-16T09:00:13.000Z",
+      "excerpt": "We all know the frequency of our AC grid. 60Hz for Americans, or 50Hz for Europeans, for example. But the real story has some complexity. In a plural but interconnected …read more"
     },
     {
-      "id": "c39762922f59",
-      "source": "hackaday",
-      "title": "Bringing a Cloud Based Monitor Home",
-      "url": "https://hackaday.com/2026/11/14/bringing-a-cloud-based-monitor-home/",
-      "date": "2026-11-15T06:00:02.000Z",
-      "excerpt": "When setting up to grow plants hydroponically, it’s important to keep an eye on the numbers, temperature, pH, and electrical conductivity, to name a few. To do this, [Joziti] bought …read more"
+      "id": "37af61191eda",
+      "source": "electrobidouilleur",
+      "title": "EB_#727 Électro-Bidouilleur \"En Direct\" - Dimanche 15 Novembre 2026 - Rediffusion",
+      "url": "https://www.youtube.com/watch?v=f8S9XSsfsHE",
+      "date": "2026-11-16T07:52:35.000Z",
+      "excerpt": "Rediffusion de la Session \"En Direct\" de la chaîne Électro-Bidouilleur du Dimanche 15 Novembre 2026. Merci à tous les participants! Les fichiers pertinents aux vidéos (code source, schémas, etc.) sont placés ici sous format .ZIP: La…"
     },
     {
-      "id": "859b77cd4f3a",
+      "id": "1a5469f1b6e7",
       "source": "hackaday",
-      "title": "RPN Loved Honk If (or, Write Your Own PostScript Interpreter)",
-      "url": "https://hackaday.com/2026/11/14/rpn-loved-honk-if-or-write-your-own-postscript-interpreter/",
-      "date": "2026-11-15T03:00:49.000Z",
-      "excerpt": "Maybe you like old laser printers. Maybe you were a fan of [Don Lancaster]. Maybe you like Forth, HP calculators, and everything RPN. Whichever it is, why not write your …read more"
+      "title": "It’s A NAS, For Sony Mavica Disks",
+      "url": "https://hackaday.com/2026/11/15/its-a-nas-for-sony-mavica-disks/",
+      "date": "2026-11-16T06:00:27.000Z",
+      "excerpt": "At the dawn of the consumer digital camera age, manufacturers tested this new market with a wide array of interesting and unorthodox designs. This era only lasted a few years …read more"
     },
     {
-      "id": "77934d50453c",
+      "id": "dcc414b5ce5c",
       "source": "hackaday",
-      "title": "DIVINER: Occult Synth Firmware for the Cardputer",
-      "url": "https://hackaday.com/2026/11/14/diviner-occult-synth-firmware-for-the-cardputer/",
-      "date": "2026-11-15T00:00:11.000Z",
-      "excerpt": "We see some strange software around these parts, but this is probably the strangest. DIVINER is a firmware for the M5 Cardputer, which is an interesting device in its own …read more"
+      "title": "VapourDeck is the 486 Handheld You Didn’t Know You Needed",
+      "url": "https://hackaday.com/2026/11/15/vapourdeck-is-the-486-handheld-you-didnt-know-you-needed/",
+      "date": "2026-11-16T03:00:56.000Z",
+      "excerpt": "Do you need a 486-based handheld computer for DOS games? Well, we didn’t think so either — until we saw [Sprite_tm]’s impressive and excellently documented VapourDeck homebrew handheld PC. Now …read more"
     },
     {
-      "id": "62b7c76a8ab5",
+      "id": "ed7a13f20fbf",
       "source": "hackaday",
-      "title": "Warm Analog DSP, on the ESP",
-      "url": "https://hackaday.com/2026/11/14/warm-analog-dsp-on-the-esp/",
-      "date": "2026-11-14T21:00:09.000Z",
-      "excerpt": "We love audio, and we love messing around with it. So when [mircemk] wrote in with his latest audio-mangling device, we had to give it a look. It’s a tube-sound …read more"
+      "title": "Hackaday Links: November 15, 2026",
+      "url": "https://hackaday.com/2026/11/15/hackaday-links-november-15-2026/",
+      "date": "2026-11-16T00:00:27.000Z",
+      "excerpt": "Another Hackaday Supercon is in the history books. The new venue was amazing. We had more attendees than ever and still had room to spare. You can find many of …read more"
+    },
+    {
+      "id": "84ea7d5ae4d9",
+      "source": "hackaday",
+      "title": "Loop Antennas for Transmitting",
+      "url": "https://hackaday.com/2026/11/15/loop-antennas-for-transmitting/",
+      "date": "2026-11-15T21:00:35.000Z",
+      "excerpt": "Loop antennas are becoming increasingly popular as more radio fans find they can’t erect elaborate outdoor antennas. Like most things, of course, there are trade-offs. But, most often, loop antennas …read more"
     },
     {
       "id": "cf037dcce88f",
@@ -100,14 +108,6 @@
       "url": "https://www.youtube.com/watch?v=0uaufISGi_U",
       "date": "2026-11-14T17:57:41.000Z",
       "excerpt": "Way back in March 2021 I published my 11th ever video. What test gear do you need for electronics repair. Well quite some time has passed since then and that video is still popular! So let's make a new updated version. What was I using in…"
-    },
-    {
-      "id": "37af61191eda",
-      "source": "electrobidouilleur",
-      "title": "Électro-Bidouilleur \"En Direct\" - Dimanche 15 Novembre 2026 @ 18h UTC",
-      "url": "https://www.youtube.com/watch?v=f8S9XSsfsHE",
-      "date": "2026-11-13T22:43:56.000Z",
-      "excerpt": "Session \"En Direct\" de la chaîne Électro-Bidouilleur du Dimanche 15 Novembre 2026 à 18h00 UTC (19h00 en France, 13h00 au Québec). Comme toujours, je tenterai de répondre à vos questions! Les fichiers pertinents aux vidéos (code source…"
     },
     {
       "id": "19a93af64e06",
