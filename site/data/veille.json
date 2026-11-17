@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-16T13:35:36.523Z",
+  "updatedAt": "2026-11-17T14:19:51.964Z",
   "sources": [
     {
       "id": "ifixit",
@@ -46,20 +46,68 @@
   ],
   "items": [
     {
-      "id": "c37ff61b7f86",
+      "id": "ff2f82a24759",
       "source": "hackaday",
-      "title": "ESP32 WIFI Jam Detector Finds the Raspberry",
-      "url": "https://hackaday.com/2026/11/16/esp32-wifi-jam-detector-finds-the-raspberry/",
-      "date": "2026-11-16T12:00:47.000Z",
-      "excerpt": "We’ve seen plenty of ESP32 WiFi projects that test wifi systems with attacks such as Deauth, and even jamming. Today’s project is a bit different. [TheDigital1] created an ESP32 project …read more"
+      "title": "Newer Rigol Scopes Get a Custom Linux Firmware",
+      "url": "https://hackaday.com/2026/11/17/newer-rigol-scopes-get-a-custom-linux-firmware/",
+      "date": "2026-11-17T12:00:42.000Z",
+      "excerpt": "Electronics test equipment is a topic near and dear to many Hackaday readers. The average reader of this article is most likely within 50 feet of a multimeter, and it …read more"
     },
     {
-      "id": "03142145f28b",
+      "id": "233a0ff745db",
       "source": "hackaday",
-      "title": "Follow The Grid With An Arduino Uno",
-      "url": "https://hackaday.com/2026/11/16/follow-the-grid-with-an-arduino-uno/",
-      "date": "2026-11-16T09:00:13.000Z",
-      "excerpt": "We all know the frequency of our AC grid. 60Hz for Americans, or 50Hz for Europeans, for example. But the real story has some complexity. In a plural but interconnected …read more"
+      "title": "A 3D Printed Pixel Clock, with a Twist",
+      "url": "https://hackaday.com/2026/11/17/a-3d-printed-pixel-clock-with-a-twist/",
+      "date": "2026-11-17T09:00:56.000Z",
+      "excerpt": "The availability of cheap addressable RGB LED strips has been a huge boon for hardware hackers, as it makes many projects far more accessible. This usually requires a lot of …read more"
+    },
+    {
+      "id": "d297ad3577bc",
+      "source": "hackaday",
+      "title": "The Fastest Paddleboard in the World",
+      "url": "https://hackaday.com/2026/11/16/the-fastest-paddleboard-in-the-world/",
+      "date": "2026-11-17T06:00:50.000Z",
+      "excerpt": "The world is full of linguistic boundaries that seem obvious during regular communication but can break down upon closer inspection. Is a pizza an open-faced sandwich? Is an ebike a …read more"
+    },
+    {
+      "id": "a5d16e833ebc",
+      "source": "hackaday",
+      "title": "Water in the Ancient Desert",
+      "url": "https://hackaday.com/2026/11/16/water-in-the-ancient-desert/",
+      "date": "2026-11-17T03:00:29.000Z",
+      "excerpt": "The desert of the Iranian Plateau receives very little rainfall, and most of it falls in the mountains before flowing underneath the porous ground of the region. The ancient Persians …read more"
+    },
+    {
+      "id": "e5643e9202a6",
+      "source": "hackaday",
+      "title": "Can’t Get the Right Cassette Mechanism? Have a Go at Making Your Own!",
+      "url": "https://hackaday.com/2026/11/16/cant-get-the-right-cassette-mechanism-have-a-go-at-making-your-own/",
+      "date": "2026-11-17T00:00:27.000Z",
+      "excerpt": "In the world of cassette tape enthusiasts, it’s an oft-repeated factoid that there is only one tape deck mechanism still being manufactured. The truth may be a tiny bit murky …read more"
+    },
+    {
+      "id": "f6561605d177",
+      "source": "hop",
+      "title": "Le procès en obsolescence programmée contre Apple aura lieu en juin 2027",
+      "url": "https://www.halteobsolescence.org/annonce-proces-apple-2027/",
+      "date": "2026-11-16T23:29:00.000Z",
+      "excerpt": "Suite à une plainte déposée par l’association HOP – Halte à l’obsolescence programmée en décembre 2022, le procureur de la République de Paris a décidé de poursuivre l’entreprise californienne Apple en justice pour des faits de délits…"
+    },
+    {
+      "id": "fe2916becfed",
+      "source": "hackaday",
+      "title": "Binocular Chair Lets You Stargaze in Comfort",
+      "url": "https://hackaday.com/2026/11/16/binocular-chair-lets-you-stargaze-in-comfort/",
+      "date": "2026-11-16T21:00:55.000Z",
+      "excerpt": "Telescopes are great, but sometimes binoculars are the right tool for stargazing. Holding them in front of your face for a long night of observation can get onerous though, so …read more"
+    },
+    {
+      "id": "feb6b62263cc",
+      "source": "learnrepair",
+      "title": "Ultrasonic Cutter Knives - Are These Any Use In Electronics Repair? Awgem KH1 Craft Knife",
+      "url": "https://www.youtube.com/watch?v=FtglBKFKCuE",
+      "date": "2026-11-16T16:49:57.000Z",
+      "excerpt": "On a recent video a subscriber said I should get an ultrasonic knife. Seems I was not the only one who was not aware of these tools - so I got one. But are they any good? Awgem KH1 👉Click on the link or enter the search code [AY0B53] on…"
     },
     {
       "id": "37af61191eda",
@@ -68,38 +116,6 @@
       "url": "https://www.youtube.com/watch?v=f8S9XSsfsHE",
       "date": "2026-11-16T07:52:35.000Z",
       "excerpt": "Rediffusion de la Session \"En Direct\" de la chaîne Électro-Bidouilleur du Dimanche 15 Novembre 2026. Merci à tous les participants! Les fichiers pertinents aux vidéos (code source, schémas, etc.) sont placés ici sous format .ZIP: La…"
-    },
-    {
-      "id": "1a5469f1b6e7",
-      "source": "hackaday",
-      "title": "It’s A NAS, For Sony Mavica Disks",
-      "url": "https://hackaday.com/2026/11/15/its-a-nas-for-sony-mavica-disks/",
-      "date": "2026-11-16T06:00:27.000Z",
-      "excerpt": "At the dawn of the consumer digital camera age, manufacturers tested this new market with a wide array of interesting and unorthodox designs. This era only lasted a few years …read more"
-    },
-    {
-      "id": "dcc414b5ce5c",
-      "source": "hackaday",
-      "title": "VapourDeck is the 486 Handheld You Didn’t Know You Needed",
-      "url": "https://hackaday.com/2026/11/15/vapourdeck-is-the-486-handheld-you-didnt-know-you-needed/",
-      "date": "2026-11-16T03:00:56.000Z",
-      "excerpt": "Do you need a 486-based handheld computer for DOS games? Well, we didn’t think so either — until we saw [Sprite_tm]’s impressive and excellently documented VapourDeck homebrew handheld PC. Now …read more"
-    },
-    {
-      "id": "ed7a13f20fbf",
-      "source": "hackaday",
-      "title": "Hackaday Links: November 15, 2026",
-      "url": "https://hackaday.com/2026/11/15/hackaday-links-november-15-2026/",
-      "date": "2026-11-16T00:00:27.000Z",
-      "excerpt": "Another Hackaday Supercon is in the history books. The new venue was amazing. We had more attendees than ever and still had room to spare. You can find many of …read more"
-    },
-    {
-      "id": "84ea7d5ae4d9",
-      "source": "hackaday",
-      "title": "Loop Antennas for Transmitting",
-      "url": "https://hackaday.com/2026/11/15/loop-antennas-for-transmitting/",
-      "date": "2026-11-15T21:00:35.000Z",
-      "excerpt": "Loop antennas are becoming increasingly popular as more radio fans find they can’t erect elaborate outdoor antennas. Like most things, of course, there are trade-offs. But, most often, loop antennas …read more"
     },
     {
       "id": "cf037dcce88f",
@@ -172,14 +188,6 @@
       "url": "https://www.youtube.com/watch?v=9lqJyEnR0lQ",
       "date": "2026-11-08T19:07:52.000Z",
       "excerpt": "LER And Friends - 08th of November 2026. We'll stream once a month on sundays, starting at 17:00 GMT."
-    },
-    {
-      "id": "027677eb1b42",
-      "source": "learnrepair",
-      "title": "Unbelievable! What Some Repair Technicians Do. And I Always Seem To Get Asked To Fix It.",
-      "url": "https://www.youtube.com/watch?v=5KAcx55ETVQ",
-      "date": "2026-11-05T11:19:27.000Z",
-      "excerpt": "Is it just me or have all the easy repairs already been fixed and now all the jobs are like this one? 👉Click on the link or enter the search code [AY0B53] on the AliExpress or use coupons below GLOBAL DISCOUNT CODES $3 off on orders over…"
     },
     {
       "id": "6d447a26414b",
@@ -276,14 +284,6 @@
       "url": "https://www.halteobsolescence.org/lecons-arret-2g-3g/",
       "date": "2026-10-08T17:01:38.000Z",
       "excerpt": "L’arrêt des réseaux de télécommunication de 2G-3G a des conséquences sociales, économiques et environnementales calamiteuses. Ce cas doit faire précédent. HOP formule des propositions concrètes pour un encadrement effectif par les…"
-    },
-    {
-      "id": "e5f3a331b255",
-      "source": "hop",
-      "title": "Le Sénat se penche sur l’empreinte environnementale de l’intelligence artificielle",
-      "url": "https://www.halteobsolescence.org/empreinte-environnementale-ia-senat/",
-      "date": "2026-10-08T12:29:23.000Z",
-      "excerpt": "Le 16 septembre 2026, la commission de l'aménagement du territoire et du développement durable du sénat a adopté le rapport d'information sur l’empreinte environnementale de l'intelligence artificielle, auquel HOP avait participé par le…"
     },
     {
       "id": "1323b59ec2ef",
