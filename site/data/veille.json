@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-17T14:19:51.964Z",
+  "updatedAt": "2026-11-18T13:54:19.477Z",
   "sources": [
     {
       "id": "ifixit",
@@ -46,44 +46,60 @@
   ],
   "items": [
     {
-      "id": "ff2f82a24759",
+      "id": "088051c1431d",
       "source": "hackaday",
-      "title": "Newer Rigol Scopes Get a Custom Linux Firmware",
-      "url": "https://hackaday.com/2026/11/17/newer-rigol-scopes-get-a-custom-linux-firmware/",
-      "date": "2026-11-17T12:00:42.000Z",
-      "excerpt": "Electronics test equipment is a topic near and dear to many Hackaday readers. The average reader of this article is most likely within 50 feet of a multimeter, and it …read more"
+      "title": "Local Prusa Connect Cuts Out the Cloud",
+      "url": "https://hackaday.com/2026/11/18/local-prusa-connect-cuts-out-the-cloud/",
+      "date": "2026-11-18T12:00:03.000Z",
+      "excerpt": "One of the ways 3D printing has changed over the last few years has come in the form of cloud services that exist alongside your printer. In some cases they …read more"
     },
     {
-      "id": "233a0ff745db",
+      "id": "a012e342dbe4",
       "source": "hackaday",
-      "title": "A 3D Printed Pixel Clock, with a Twist",
-      "url": "https://hackaday.com/2026/11/17/a-3d-printed-pixel-clock-with-a-twist/",
-      "date": "2026-11-17T09:00:56.000Z",
-      "excerpt": "The availability of cheap addressable RGB LED strips has been a huge boon for hardware hackers, as it makes many projects far more accessible. This usually requires a lot of …read more"
+      "title": "Not-So-Large Language Model Fits On a Floppy Disk",
+      "url": "https://hackaday.com/2026/11/18/not-so-large-language-model-fits-on-a-floppy-disk/",
+      "date": "2026-11-18T09:00:50.000Z",
+      "excerpt": "At some point when hackers start pushing edge cases, nomenclature gets weird, like Large Language Models, or LLMs. At some point, the word “large” obviously becomes impossible to justify, but …read more"
     },
     {
-      "id": "d297ad3577bc",
+      "id": "e9c61c138a5b",
       "source": "hackaday",
-      "title": "The Fastest Paddleboard in the World",
-      "url": "https://hackaday.com/2026/11/16/the-fastest-paddleboard-in-the-world/",
-      "date": "2026-11-17T06:00:50.000Z",
-      "excerpt": "The world is full of linguistic boundaries that seem obvious during regular communication but can break down upon closer inspection. Is a pizza an open-faced sandwich? Is an ebike a …read more"
+      "title": "Linux in a Browser Tab",
+      "url": "https://hackaday.com/2026/11/17/linux-in-a-browser-tab/",
+      "date": "2026-11-18T06:00:44.000Z",
+      "excerpt": "Linux was once distributed on CDs and DVDs stuck to the front of computer magazines. Now, technology has advanced to the point where you can simply run a Linux kernel …read more"
     },
     {
-      "id": "a5d16e833ebc",
+      "id": "e1e3f0a1ea5d",
       "source": "hackaday",
-      "title": "Water in the Ancient Desert",
-      "url": "https://hackaday.com/2026/11/16/water-in-the-ancient-desert/",
-      "date": "2026-11-17T03:00:29.000Z",
-      "excerpt": "The desert of the Iranian Plateau receives very little rainfall, and most of it falls in the mountains before flowing underneath the porous ground of the region. The ancient Persians …read more"
+      "title": "Coding on Windows? Redmond May Already Know.",
+      "url": "https://hackaday.com/2026/11/17/coding-on-windows-redmond-may-already-know/",
+      "date": "2026-11-18T03:00:42.000Z",
+      "excerpt": "File this one under “shocked, but not that shocked”– hacker [Xusheng Li] did some digging on a recent Windows 11 build and found that it seems to be phoning home …read more"
     },
     {
-      "id": "e5643e9202a6",
+      "id": "47b7af270fe8",
       "source": "hackaday",
-      "title": "Can’t Get the Right Cassette Mechanism? Have a Go at Making Your Own!",
-      "url": "https://hackaday.com/2026/11/16/cant-get-the-right-cassette-mechanism-have-a-go-at-making-your-own/",
-      "date": "2026-11-17T00:00:27.000Z",
-      "excerpt": "In the world of cassette tape enthusiasts, it’s an oft-repeated factoid that there is only one tape deck mechanism still being manufactured. The truth may be a tiny bit murky …read more"
+      "title": "A Pen Plotter to Draw You Up (on) the Wall",
+      "url": "https://hackaday.com/2026/11/17/a-pen-plotter-to-draw-you-up-on-the-wall/",
+      "date": "2026-11-18T00:00:35.000Z",
+      "excerpt": "Back in our day you were told not to draw on the walls; nowadays we have robots for that– like Mural 2.0 by [Nik Ivanov]. If the name doesn’t give …read more"
+    },
+    {
+      "id": "5a50739e26ee",
+      "source": "hackaday",
+      "title": "Custom Firmware for Fortinet FortiGate 60 Firewall/Router",
+      "url": "https://hackaday.com/2026/11/17/custom-firmware-for-fortinet-fortigate-60-firewall-router/",
+      "date": "2026-11-17T21:00:26.000Z",
+      "excerpt": "When [Matt Williams] found an old enterprise firewall in the trash, he knew he had to do something with it. After cracking it open, he found that this 2000s-era Fortinet FortiGate …read more"
+    },
+    {
+      "id": "ffabbc21425d",
+      "source": "ifixit",
+      "title": "HomeView Teardown: A Surprising Step Backward",
+      "url": "https://www.ifixit.com/News/120317/homeview-teardown-a-surprising-step-backward",
+      "date": "2026-11-17T20:37:32.000Z",
+      "excerpt": "Apple’s first iPad-stuck-to-a-HomePod smarthome hub landed on our teardown table this week, and we figured we knew what we were getting into. We’ve taken apart plenty of iPads and HomePods.…"
     },
     {
       "id": "f6561605d177",
@@ -92,14 +108,6 @@
       "url": "https://www.halteobsolescence.org/annonce-proces-apple-2027/",
       "date": "2026-11-16T23:29:00.000Z",
       "excerpt": "Suite à une plainte déposée par l’association HOP – Halte à l’obsolescence programmée en décembre 2022, le procureur de la République de Paris a décidé de poursuivre l’entreprise californienne Apple en justice pour des faits de délits…"
-    },
-    {
-      "id": "fe2916becfed",
-      "source": "hackaday",
-      "title": "Binocular Chair Lets You Stargaze in Comfort",
-      "url": "https://hackaday.com/2026/11/16/binocular-chair-lets-you-stargaze-in-comfort/",
-      "date": "2026-11-16T21:00:55.000Z",
-      "excerpt": "Telescopes are great, but sometimes binoculars are the right tool for stargazing. Holding them in front of your face for a long night of observation can get onerous though, so …read more"
     },
     {
       "id": "feb6b62263cc",
@@ -260,14 +268,6 @@
       "url": "https://www.youtube.com/watch?v=FCglsffP8bc",
       "date": "2026-10-19T21:41:46.000Z",
       "excerpt": "J'ai décidé de remettre en marche ce gradateur de secteur des années 70, que mon père utilisait dans un labo de chimie au travail. Que les normes ont évolué! Je lui fais donc une bonne mise à niveau! Chapitres de la vidéo: 0:00 Début de…"
-    },
-    {
-      "id": "3ad32d885618",
-      "source": "ifixit",
-      "title": "This International Repair Day, iFixit and Google Have Something for Your Repair Café",
-      "url": "https://www.ifixit.com/News/119810/international-repair-day-2026",
-      "date": "2026-10-17T15:00:00.000Z",
-      "excerpt": "One ThinkPad owner replaced the fan, refreshed the thermal paste, and reinstalled Windows. But their laptop still took minutes to boot. After installing ChromeOS Flex, it started in seconds. PCWorld’s…"
     },
     {
       "id": "90bc4a89f7b6",
