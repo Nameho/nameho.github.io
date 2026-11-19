@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-18T13:54:19.477Z",
+  "updatedAt": "2026-11-19T14:22:55.861Z",
   "sources": [
     {
       "id": "ifixit",
@@ -46,52 +46,68 @@
   ],
   "items": [
     {
-      "id": "088051c1431d",
+      "id": "0df6ed23cf03",
       "source": "hackaday",
-      "title": "Local Prusa Connect Cuts Out the Cloud",
-      "url": "https://hackaday.com/2026/11/18/local-prusa-connect-cuts-out-the-cloud/",
-      "date": "2026-11-18T12:00:03.000Z",
-      "excerpt": "One of the ways 3D printing has changed over the last few years has come in the form of cloud services that exist alongside your printer. In some cases they …read more"
+      "title": "How Apple’s HomeView Actively Resists Repairs",
+      "url": "https://hackaday.com/2026/11/19/how-apples-homeview-actively-resists-repairs/",
+      "date": "2026-11-19T12:00:06.000Z",
+      "excerpt": "Over the past years there have been hopeful noises about Apple devices becoming easier to service and repair, but as [iFixit] found with their teardown of the new HomeView devices, …read more"
     },
     {
-      "id": "a012e342dbe4",
-      "source": "hackaday",
-      "title": "Not-So-Large Language Model Fits On a Floppy Disk",
-      "url": "https://hackaday.com/2026/11/18/not-so-large-language-model-fits-on-a-floppy-disk/",
-      "date": "2026-11-18T09:00:50.000Z",
-      "excerpt": "At some point when hackers start pushing edge cases, nomenclature gets weird, like Large Language Models, or LLMs. At some point, the word “large” obviously becomes impossible to justify, but …read more"
+      "id": "e28682a4c4d5",
+      "source": "framboise314",
+      "title": "Test de la presse à chaud automatique HTVRONT A100",
+      "url": "https://www.framboise314.fr/test-presse-automatique-htvront-a100-h1-mini/",
+      "date": "2026-11-19T10:35:46.000Z",
+      "excerpt": "Personnaliser T-shirts, casquettes et mugs demande souvent d’encombrer son établi avec plusieurs machines. Pour ce nouveau test, j’ai mis à l’épreuve la presse à chaud automatique multifonction HTVRONT A100. Sa promesse ? Regrouper ces…"
     },
     {
-      "id": "e9c61c138a5b",
+      "id": "42bfac3e6181",
       "source": "hackaday",
-      "title": "Linux in a Browser Tab",
-      "url": "https://hackaday.com/2026/11/17/linux-in-a-browser-tab/",
-      "date": "2026-11-18T06:00:44.000Z",
-      "excerpt": "Linux was once distributed on CDs and DVDs stuck to the front of computer magazines. Now, technology has advanced to the point where you can simply run a Linux kernel …read more"
+      "title": "Mesh2Cad Automates Re-Modelling",
+      "url": "https://hackaday.com/2026/11/19/mesh2cad-automates-re-modelling/",
+      "date": "2026-11-19T09:00:52.000Z",
+      "excerpt": "It’s happened to all of us, we find an STL that would just about solve our problems, but the mesh isn’t quite right. Sometimes mesh-editing is good enough, other times …read more"
     },
     {
-      "id": "e1e3f0a1ea5d",
+      "id": "796dd3cc1b21",
       "source": "hackaday",
-      "title": "Coding on Windows? Redmond May Already Know.",
-      "url": "https://hackaday.com/2026/11/17/coding-on-windows-redmond-may-already-know/",
-      "date": "2026-11-18T03:00:42.000Z",
-      "excerpt": "File this one under “shocked, but not that shocked”– hacker [Xusheng Li] did some digging on a recent Windows 11 build and found that it seems to be phoning home …read more"
+      "title": "Sega Dreamcast Plays Nintendo 64 Cartridges",
+      "url": "https://hackaday.com/2026/11/18/sega-dreamcast-plays-nintendo-64-cartridges/",
+      "date": "2026-11-19T06:00:01.000Z",
+      "excerpt": "In many ways, the Sega Dreamcast was the most forward-thinking console ever produced. It included a built-in Internet connection in a time when the Internet was just becoming widely accessible, …read more"
     },
     {
-      "id": "47b7af270fe8",
+      "id": "e9e05a823bce",
       "source": "hackaday",
-      "title": "A Pen Plotter to Draw You Up (on) the Wall",
-      "url": "https://hackaday.com/2026/11/17/a-pen-plotter-to-draw-you-up-on-the-wall/",
-      "date": "2026-11-18T00:00:35.000Z",
-      "excerpt": "Back in our day you were told not to draw on the walls; nowadays we have robots for that– like Mural 2.0 by [Nik Ivanov]. If the name doesn’t give …read more"
+      "title": "How Hough Transforms Enable Computers to See",
+      "url": "https://hackaday.com/2026/11/18/how-hough-transforms-enable-computers-to-see/",
+      "date": "2026-11-19T03:00:48.000Z",
+      "excerpt": "Although identifying what we can see with our eyes feels like the most natural thing in the world, the responsible cognitive processes running on our brain’s wetware are quite a …read more"
     },
     {
-      "id": "5a50739e26ee",
+      "id": "2f6c14f85f6e",
       "source": "hackaday",
-      "title": "Custom Firmware for Fortinet FortiGate 60 Firewall/Router",
-      "url": "https://hackaday.com/2026/11/17/custom-firmware-for-fortinet-fortigate-60-firewall-router/",
-      "date": "2026-11-17T21:00:26.000Z",
-      "excerpt": "When [Matt Williams] found an old enterprise firewall in the trash, he knew he had to do something with it. After cracking it open, he found that this 2000s-era Fortinet FortiGate …read more"
+      "title": "Tracking Down a Mystery Beep By Giving a Coding Agent a Few Ears",
+      "url": "https://hackaday.com/2026/11/18/tracking-down-a-mystery-beep-by-giving-a-coding-agent-a-few-ears/",
+      "date": "2026-11-19T00:00:53.000Z",
+      "excerpt": "[Simon Willison] recently used a coding agent in an unusual way. A software system temporarily used the microphones on devices scattered around the room to triangulate the source of a …read more"
+    },
+    {
+      "id": "4cb3ee82c310",
+      "source": "hackaday",
+      "title": "The Mega Tamagotchi Manga Reader",
+      "url": "https://hackaday.com/2026/11/18/the-mega-tamagotchi-manga-reader/",
+      "date": "2026-11-18T21:00:49.000Z",
+      "excerpt": "You could read manga in the classic bound paper format. But then you’d have to carry around lots of volumes that take up lots of space. The way around this …read more"
+    },
+    {
+      "id": "8c23ea8d268e",
+      "source": "learnrepair",
+      "title": "How To Repair Amplifier Distortion Part 3 - A Practical Guide LAB 1000 Distorting On One Channel",
+      "url": "https://www.youtube.com/watch?v=kEkdX36nVrc",
+      "date": "2026-11-18T16:24:29.000Z",
+      "excerpt": "I have a Lab Gruppen LAB1000 Amplifier that has badly distorted sound on one channel. Let's use this as a teaching aid - looking at what causes distortion and how we may be able to diagnose the fault Part 1 Part 2 AliExpress Black Friday!…"
     },
     {
       "id": "ffabbc21425d",
@@ -115,7 +131,7 @@
       "title": "Ultrasonic Cutter Knives - Are These Any Use In Electronics Repair? Awgem KH1 Craft Knife",
       "url": "https://www.youtube.com/watch?v=FtglBKFKCuE",
       "date": "2026-11-16T16:49:57.000Z",
-      "excerpt": "On a recent video a subscriber said I should get an ultrasonic knife. Seems I was not the only one who was not aware of these tools - so I got one. But are they any good? Awgem KH1 👉Click on the link or enter the search code [AY0B53] on…"
+      "excerpt": "On a recent video a subscriber said I should get an ultrasonic knife. Seems I was not the only one who was not aware of these tools - so I got one. But are they any good? Awgem KH1 AliExpress Black Friday! Until Dec 3rd US codes $3 off on…"
     },
     {
       "id": "37af61191eda",
@@ -147,7 +163,7 @@
       "title": "How To Repair Amplifier Distortion - A Practical Guide LAB 1000 PART TWO",
       "url": "https://www.youtube.com/watch?v=g9JdlldhkxM",
       "date": "2026-11-12T13:03:48.000Z",
-      "excerpt": "I have a Lab Gruppen LAB1000 Amplifier that has badly distorted sound on one channel. Let's use this as a teaching aid - looking at what causes distortion and how we may be able to diagnose the fault Part one : 👉Click on the link or…"
+      "excerpt": "I have a Lab Gruppen LAB1000 Amplifier that has badly distorted sound on one channel. Let's use this as a teaching aid - looking at what causes distortion and how we may be able to diagnose the fault Part one : AliExpress Black Friday!…"
     },
     {
       "id": "2ed0ddd40f89",
@@ -187,15 +203,7 @@
       "title": "How To Repair Amplifier Distortion - A Practical Guide LAB 1000 Distorting On One Channel",
       "url": "https://www.youtube.com/watch?v=J8O-SuTO1sE",
       "date": "2026-11-10T10:52:01.000Z",
-      "excerpt": "I have a Lab Gruppen LAB1000 Amplifier that has badly distorted sound on one channel. Let's use this as a teaching aid - looking at what causes distortion and how we may be able to diagnose the fault 👉Click on the link or enter the…"
-    },
-    {
-      "id": "76f75353dc6d",
-      "source": "learnrepair",
-      "title": "TEC 26-11-08",
-      "url": "https://www.youtube.com/watch?v=9lqJyEnR0lQ",
-      "date": "2026-11-08T19:07:52.000Z",
-      "excerpt": "LER And Friends - 08th of November 2026. We'll stream once a month on sundays, starting at 17:00 GMT."
+      "excerpt": "I have a Lab Gruppen LAB1000 Amplifier that has badly distorted sound on one channel. Let's use this as a teaching aid - looking at what causes distortion and how we may be able to diagnose the fault AliExpress Black Friday! Until Dec 3rd…"
     },
     {
       "id": "6d447a26414b",
@@ -244,14 +252,6 @@
       "url": "https://www.framboise314.fr/meshtastic-test-noeuds-portables-elecrow-thinknode-m9-m5/",
       "date": "2026-10-24T14:15:21.000Z",
       "excerpt": "Que ce soit suite à une panne matérielle des infrastructures, une cyberattaque, une coupure volontaire des réseaux cellulaires ou simplement lors d’une randonnée dans une zone blanche géographique, la perte soudaine de nos moyens de…"
-    },
-    {
-      "id": "fcec894c0ef6",
-      "source": "framboise314",
-      "title": "Meshtastic (Partie 1/2) : Créer son réseau LoRa avec la clé USB Elecrow Meshstick et un Raspberry Pi",
-      "url": "https://www.framboise314.fr/meshtastic-raspberry-pi-elecrow-meshstick/",
-      "date": "2026-10-23T15:54:46.000Z",
-      "excerpt": "Le réseau maillé décentralisé Meshtastic permet d’échanger des messages et des données de télémétrie via la modulation LoRa (bande des 868 MHz en Europe), en totale autonomie et hors réseau GSM. Face à la richesse du sujet, ce dossier…"
     },
     {
       "id": "0dac4a213409",
