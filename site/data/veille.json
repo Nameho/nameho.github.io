@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-20T13:58:28.495Z",
+  "updatedAt": "2026-11-21T13:26:20.006Z",
   "sources": [
     {
       "id": "ifixit",
@@ -46,52 +46,60 @@
   ],
   "items": [
     {
-      "id": "50b09610a31e",
+      "id": "7a88d1f64894",
       "source": "hackaday",
-      "title": "Hacking The Contra Pocket Player",
-      "url": "https://hackaday.com/2026/11/20/hacking-the-contra-pocket-player/",
-      "date": "2026-11-20T12:00:20.000Z",
-      "excerpt": "The My Arcade Contra Pocket Player is a fun little handheld that lets you play the arcade versions of Contra and Super Contra… and nothing else. However, [Rob Simon] put …read more"
+      "title": "Custom Firmware For The CMU200",
+      "url": "https://hackaday.com/2026/11/21/custom-firmware-for-the-cmu200/",
+      "date": "2026-11-21T12:00:03.000Z",
+      "excerpt": "The Rhode & Schwarz CMU200 and CMU300 communications analyzers are useful tools for a variety of tasks in the RF space. However, [iu2frl] decided that they could be a little …read more"
     },
     {
-      "id": "456da782c8c9",
+      "id": "d155576e4c3b",
       "source": "hackaday",
-      "title": "One Hundred Gratuitous Case Fans? We’re Fans of This.",
-      "url": "https://hackaday.com/2026/11/20/one-hundred-gratuitous-case-fans-were-fans-of-this/",
-      "date": "2026-11-20T09:00:32.000Z",
-      "excerpt": "Sometimes you can’t help but boast about a project once you have it in your hands. [Sasa Karanovic] proudly declared that his new fan controller could handle “one hundred fans, …read more"
+      "title": "HDMI to CSI For Anyone",
+      "url": "https://hackaday.com/2026/11/21/hdmi-to-csi-for-anyone/",
+      "date": "2026-11-21T09:00:32.000Z",
+      "excerpt": "Digitizing an HDMI source should in theory be straightforward, but the interfaces on offer are often disappointing. But happily there’s another way, which is to transform the HDMI into CSI …read more"
     },
     {
-      "id": "936f39ed70a1",
+      "id": "621757b23964",
       "source": "hackaday",
-      "title": "Crashing Microcontrollers Competitively",
-      "url": "https://hackaday.com/2026/11/19/crashing-microcontrollers-competitively/",
-      "date": "2026-11-20T06:00:17.000Z",
-      "excerpt": "[Ani] has produced rather an interesting game. Kacken Open Air (KOA) is a browser-based game, wherein players compete for access to a limited resource—namely, festival toilets. So far, so amusing, …read more"
+      "title": "Printable Homelab Racks You Can Design In A Browser",
+      "url": "https://hackaday.com/2026/11/20/printable-homelab-racks-you-can-design-in-a-browser/",
+      "date": "2026-11-21T06:00:12.000Z",
+      "excerpt": "If you’re whipping up a homelab, you might find that you’ve got a mess of little machines and cables all over your desk or other working area. If you’re wanting …read more"
     },
     {
-      "id": "f7ba2b2ed227",
+      "id": "61e0b2bc5216",
       "source": "hackaday",
-      "title": "DabbleCAD Takes Design Offline",
-      "url": "https://hackaday.com/2026/11/19/dabblecad-takes-design-offline/",
-      "date": "2026-11-20T03:00:57.000Z",
-      "excerpt": "These days, there are all kind of online-only and in-browser CAD packages. DabbleCAD is the opposite of all that—a simple, offline, open-source design solution. DabbleCAD handles 3D design in a …read more"
+      "title": "Improving Aluminium Anodes for Lithium Batteries With Manganese",
+      "url": "https://hackaday.com/2026/11/20/improving-aluminium-anodes-for-lithium-batteries-with-magnesium/",
+      "date": "2026-11-21T03:00:30.000Z",
+      "excerpt": "Generally lithium-ion cells feature graphite anodes, but their chemical stability comes with the trade-off of poor capacity. Metal alloy anodes such as aluminium, silver and magnesium provide many advantages here, …read more"
     },
     {
-      "id": "6a850b323fc3",
+      "id": "d28612d514a7",
       "source": "hackaday",
-      "title": "Preventing a Garage Door Opener From Rebooting When Offline",
-      "url": "https://hackaday.com/2026/11/19/preventing-a-garage-door-opener-from-rebooting-when-offline/",
-      "date": "2026-11-20T00:00:48.000Z",
-      "excerpt": "It’s always great when a smart garage door opener allows for easy local integration into a smart home network, but it’s not so nice when said device still insists on …read more"
+      "title": "Decapitation Seems Like a Great Way to Start X-Mas Decorating",
+      "url": "https://hackaday.com/2026/11/20/decapitation-seems-like-a-great-way-to-start-x-mas-decorating/",
+      "date": "2026-11-21T00:00:51.000Z",
+      "excerpt": "American cultural osmosis being what it is, it’s likely more people know the story of Frosty the Snowman than have ever actually had the chance to build a snowman. What …read more"
     },
     {
-      "id": "0233c12d9759",
+      "id": "f628920b733e",
       "source": "hackaday",
-      "title": "A Big Ol’ LED Matrix Cube",
-      "url": "https://hackaday.com/2026/11/19/a-big-ol-led-matrix-cube/",
-      "date": "2026-11-19T21:00:39.000Z",
-      "excerpt": "You could have a featureless cube in your house, but that would be boring, and we wouldn’t write a Hackaday article about it. Alternatively, you could whip up a cube …read more"
+      "title": "Old FireWire Audio Interface Gets USB C Upgrade",
+      "url": "https://hackaday.com/2026/11/20/old-firewire-audio-interface-gets-usb-c-upgrade/",
+      "date": "2026-11-20T21:00:28.000Z",
+      "excerpt": "[bonsembiante] had a PreSonus Firestudio Project on hand. It’s a very capable audio interface with 8 inputs and 8 outputs, along with MIDI to boot. However, it’s got one problem—it …read more"
+    },
+    {
+      "id": "72abeccce770",
+      "source": "learnrepair",
+      "title": "Build This Cheap And Safe DIY IC Tester For High Voltage SMPS Cips TNY... TOP... 3BR Series",
+      "url": "https://www.youtube.com/watch?v=mrWKELB-OH0",
+      "date": "2026-11-20T19:10:43.000Z",
+      "excerpt": "An easy to build go-no go IC tester for common SMPS ICs often used in standby supplies and low powered applications - but without the dangerous high voltages! AliExpress Black Friday! Until Dec 3rd US codes $3 off on orders over $15…"
     },
     {
       "id": "046684f33b55",
@@ -204,14 +212,6 @@
       "url": "https://www.ifixit.com/News/120152/we-tore-down-the-macbook-proled-xdr-and-found-the-secret-of-the-glowing-apple",
       "date": "2026-11-10T23:19:35.000Z",
       "excerpt": "“Fancy new display” makes our screwdrivers nervous, and Apple’s latest MacBook has the fanciest display yet. The MacBook Pro with PROLED XDR is the first-ever touchscreen MacBook. It’s got a…"
-    },
-    {
-      "id": "a23bdbe1e13c",
-      "source": "learnrepair",
-      "title": "How To Repair Amplifier Distortion - A Practical Guide LAB 1000 Distorting On One Channel",
-      "url": "https://www.youtube.com/watch?v=J8O-SuTO1sE",
-      "date": "2026-11-10T10:52:01.000Z",
-      "excerpt": "I have a Lab Gruppen LAB1000 Amplifier that has badly distorted sound on one channel. Let's use this as a teaching aid - looking at what causes distortion and how we may be able to diagnose the fault AliExpress Black Friday! Until Dec 3rd…"
     },
     {
       "id": "6d447a26414b",
