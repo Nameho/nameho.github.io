@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-21T13:26:20.006Z",
+  "updatedAt": "2026-11-22T13:17:59.536Z",
   "sources": [
     {
       "id": "ifixit",
@@ -46,52 +46,60 @@
   ],
   "items": [
     {
-      "id": "7a88d1f64894",
+      "id": "57c17fb8b38c",
       "source": "hackaday",
-      "title": "Custom Firmware For The CMU200",
-      "url": "https://hackaday.com/2026/11/21/custom-firmware-for-the-cmu200/",
-      "date": "2026-11-21T12:00:03.000Z",
-      "excerpt": "The Rhode & Schwarz CMU200 and CMU300 communications analyzers are useful tools for a variety of tasks in the RF space. However, [iu2frl] decided that they could be a little …read more"
+      "title": "Potatoes Grow in Simulated Lunar Soil as Well as on Earth",
+      "url": "https://hackaday.com/2026/11/22/potatoes-grow-in-simulated-lunar-soil-as-well-as-on-earth/",
+      "date": "2026-11-22T12:00:53.000Z",
+      "excerpt": "Popularized by a certain book about a Martian, growing potatoes in very non-Earth-like environments has become somewhat of a meme. Perhaps unsurprisingly, it’s not so far from actual science being …read more"
     },
     {
-      "id": "d155576e4c3b",
+      "id": "e2fc6cde619d",
       "source": "hackaday",
-      "title": "HDMI to CSI For Anyone",
-      "url": "https://hackaday.com/2026/11/21/hdmi-to-csi-for-anyone/",
-      "date": "2026-11-21T09:00:32.000Z",
-      "excerpt": "Digitizing an HDMI source should in theory be straightforward, but the interfaces on offer are often disappointing. But happily there’s another way, which is to transform the HDMI into CSI …read more"
+      "title": "Quick WIFI Adapter Through USB",
+      "url": "https://hackaday.com/2026/11/22/quick-wifi-adapter-through-usb/",
+      "date": "2026-11-22T09:00:44.000Z",
+      "excerpt": "There’s breaking news! Quick, check your computer and look it up! What? Your computer doesn’t have internet right now because its WiFi chip fried itself? Well, it’s a good thing …read more"
     },
     {
-      "id": "621757b23964",
+      "id": "02cdfba0ed42",
       "source": "hackaday",
-      "title": "Printable Homelab Racks You Can Design In A Browser",
-      "url": "https://hackaday.com/2026/11/20/printable-homelab-racks-you-can-design-in-a-browser/",
-      "date": "2026-11-21T06:00:12.000Z",
-      "excerpt": "If you’re whipping up a homelab, you might find that you’ve got a mess of little machines and cables all over your desk or other working area. If you’re wanting …read more"
+      "title": "A Replacement PCB for the Echo Dot",
+      "url": "https://hackaday.com/2026/11/22/a-replacement-pcb-for-the-echo-dot/",
+      "date": "2026-11-22T09:00:03.000Z",
+      "excerpt": "The Amazon Echo and other voice-controlled home assistants provide so much promise of a Jetsons style future of machines at your service. They would be a must-have accessory, were it not …read more"
     },
     {
-      "id": "61e0b2bc5216",
+      "id": "475939429eab",
       "source": "hackaday",
-      "title": "Improving Aluminium Anodes for Lithium Batteries With Manganese",
-      "url": "https://hackaday.com/2026/11/20/improving-aluminium-anodes-for-lithium-batteries-with-magnesium/",
-      "date": "2026-11-21T03:00:30.000Z",
-      "excerpt": "Generally lithium-ion cells feature graphite anodes, but their chemical stability comes with the trade-off of poor capacity. Metal alloy anodes such as aluminium, silver and magnesium provide many advantages here, …read more"
+      "title": "Building a Robotic Hand on a Budget",
+      "url": "https://hackaday.com/2026/11/21/building-a-robotic-hand-on-a-budget/",
+      "date": "2026-11-22T06:00:20.000Z",
+      "excerpt": "For all the recent advances in robot control enabled by machine learning, there are still a few problems which remain stubbornly difficult: locomotion, for example, or whole-body balance for humanoids. …read more"
     },
     {
-      "id": "d28612d514a7",
+      "id": "4753c9f1b76c",
       "source": "hackaday",
-      "title": "Decapitation Seems Like a Great Way to Start X-Mas Decorating",
-      "url": "https://hackaday.com/2026/11/20/decapitation-seems-like-a-great-way-to-start-x-mas-decorating/",
-      "date": "2026-11-21T00:00:51.000Z",
-      "excerpt": "American cultural osmosis being what it is, it’s likely more people know the story of Frosty the Snowman than have ever actually had the chance to build a snowman. What …read more"
+      "title": "Capturing and Mineralizing Atmospheric Carbon Dioxide",
+      "url": "https://hackaday.com/2026/11/21/capturing-and-mineralizing-atmospheric-carbon-dioxide/",
+      "date": "2026-11-22T03:00:36.000Z",
+      "excerpt": "Although the various panicked noises about there being ‘too much’ CO2 in the atmosphere might make one think that we’re pretty much breathing in pure CO2 at this point, Earth’s …read more"
     },
     {
-      "id": "f628920b733e",
+      "id": "d0c62c235360",
       "source": "hackaday",
-      "title": "Old FireWire Audio Interface Gets USB C Upgrade",
-      "url": "https://hackaday.com/2026/11/20/old-firewire-audio-interface-gets-usb-c-upgrade/",
-      "date": "2026-11-20T21:00:28.000Z",
-      "excerpt": "[bonsembiante] had a PreSonus Firestudio Project on hand. It’s a very capable audio interface with 8 inputs and 8 outputs, along with MIDI to boot. However, it’s got one problem—it …read more"
+      "title": "Thermite Powered Instant Phone Charger",
+      "url": "https://hackaday.com/2026/11/21/thermite-powered-instant-phone-charger/",
+      "date": "2026-11-22T00:00:29.000Z",
+      "excerpt": "Thermite is an amazing material, using mostly easily obtainable ingredients like aluminium and iron(III) oxide in a redox reaction to create a rather spectacular amount of thermal energy in very …read more"
+    },
+    {
+      "id": "eeedb1bf0f67",
+      "source": "framboise314",
+      "title": "Framboise 314 présent au Salon ROBOTIK 2026 à Orchies",
+      "url": "https://www.framboise314.fr/salon-robotik-2026-orchies-raspberry-pi/",
+      "date": "2026-11-21T14:57:43.000Z",
+      "excerpt": "Les samedi 28 et dimanche 29 novembre 2026, la Pévèle Carembault Arena d’Orchies (Nord) accueille la 8e édition du Salon ROBOTIK, rendez-vous incontournable des technologies et de l’industrie du futur en Hauts-de-France. Temps fort de la…"
     },
     {
       "id": "72abeccce770",
@@ -252,14 +260,6 @@
       "url": "https://www.framboise314.fr/cartographier-couverture-radio-ads-b-raspberry-pi/",
       "date": "2026-10-25T16:06:36.000Z",
       "excerpt": "Avant de déployer un nœud Meshtastic (868 MHz), évaluer l’horizon radio imposé par votre environnement est une étape incontournable. Pour visualiser l’impact du relief local, une méthode possible consiste à détourner la réception des…"
-    },
-    {
-      "id": "29672b3d6bec",
-      "source": "framboise314",
-      "title": "Meshtastic (Partie 2/2) : Test des nœuds portables Elecrow ThinkNode M9 et M5",
-      "url": "https://www.framboise314.fr/meshtastic-test-noeuds-portables-elecrow-thinknode-m9-m5/",
-      "date": "2026-10-24T14:15:21.000Z",
-      "excerpt": "Que ce soit suite à une panne matérielle des infrastructures, une cyberattaque, une coupure volontaire des réseaux cellulaires ou simplement lors d’une randonnée dans une zone blanche géographique, la perte soudaine de nos moyens de…"
     },
     {
       "id": "fd76caff910b",
