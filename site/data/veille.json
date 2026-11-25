@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T15:49:11.248Z",
+  "updatedAt": "2026-11-25T15:32:58.652Z",
   "sources": [
     {
       "id": "ifixit",
@@ -46,52 +46,68 @@
   ],
   "items": [
     {
-      "id": "9f9f9da964b5",
-      "source": "hackaday",
-      "title": "Getting Started With Hobbyist-Level 3D Scanning Technologies",
-      "url": "https://hackaday.com/2026/11/24/getting-started-with-hobbyist-level-3d-scanning-technologies/",
-      "date": "2026-11-24T15:00:13.000Z",
-      "excerpt": "Going from a physical object to a 3D model on your computer would go so much faster than manual modelling if you could just hold the object up to said …read more"
+      "id": "2cf63122648e",
+      "source": "hop",
+      "title": "Rendre la durabilité économiquement viable",
+      "url": "https://www.halteobsolescence.org/rendre-la-durabilite-economiquement-viable/",
+      "date": "2026-11-25T15:04:30.000Z",
+      "excerpt": "Le Club de la Durabilité, inspiré par HOP, sort son nouveau guide : Rendre la durabilité économiquement viable. L’article Rendre la durabilité économiquement viable est apparu en premier sur HOP ."
     },
     {
-      "id": "0219d05519c8",
+      "id": "3916c8177aef",
       "source": "hackaday",
-      "title": "Troubleshooting Ethernet Networks with the ESP32",
-      "url": "https://hackaday.com/2026/11/24/troubleshooting-ethernet-networks-with-the-esp32/",
-      "date": "2026-11-24T12:00:35.000Z",
-      "excerpt": "While there are cheap handheld testers that can tell you if an Ethernet jack is wired improperly or if the cable itself has a broken conductor, figuring out if there’s …read more"
+      "title": "First Smartphone? Think Blue",
+      "url": "https://hackaday.com/2026/11/25/first-smartphone-think-blue/",
+      "date": "2026-11-25T15:00:24.000Z",
+      "excerpt": "If you ask most people when the smartphone arrived, they will usually say 2007 with the first iPhone. Others might argue for a BlackBerry or a Nokia Communicator. But the …read more"
     },
     {
-      "id": "33d0b954376d",
-      "source": "hackaday",
-      "title": "RF Remote Cloning Without the Benefit of an SDR",
-      "url": "https://hackaday.com/2026/11/24/rf-remote-cloning-without-the-benefit-of-an-sdr/",
-      "date": "2026-11-24T09:00:27.000Z",
-      "excerpt": "It’s difficult to overstate just how transformative the RTL-SDR project was for the hobbyist. It wasn’t that software-defined radios didn’t exist before that, of course. It’s that folks like us …read more"
+      "id": "ab1c35cd7bf2",
+      "source": "ifixit",
+      "title": "The iFixit Team’s Declassified Holiday Survival Guide",
+      "url": "https://www.ifixit.com/News/120448/the-ifixit-teams-declassified-holiday-survival-guide",
+      "date": "2026-11-25T13:06:48.000Z",
+      "excerpt": "Yes, the holiday season is all about spending time and sharing food with those you love, but there’s another stone-cold classic activity for us nerds when we visit family and…"
     },
     {
-      "id": "2aface42ed99",
+      "id": "db2eeacc31bc",
       "source": "hackaday",
-      "title": "It isn’t that the Trackpad Sings Well…",
-      "url": "https://hackaday.com/2026/11/23/it-isnt-that-the-trackpad-sings-well/",
-      "date": "2026-11-24T06:00:06.000Z",
-      "excerpt": "[Samuel Johnson] once remarked something about when a dog walks on its hind legs, it isn’t that it is done well, it is that it’s done at all. We imagine …read more"
+      "title": "Game Boy Museum on a Cart Gives the Gift of Knowledge",
+      "url": "https://hackaday.com/2026/11/25/game-boy-museum-on-a-cart-gives-the-gift-of-knowledge/",
+      "date": "2026-11-25T12:00:10.000Z",
+      "excerpt": "A square image of the GB Museum Game Boy cartridge. \" data-image-caption=\"\" data-large-file=\" /> What’s in a name? Clearly a device named the Game Boy was designed to play games. The handheld game system has successfully done so for…"
     },
     {
-      "id": "efda3de497ae",
+      "id": "c3dc2f3d023b",
       "source": "hackaday",
-      "title": "ESP Microcontrollers as Analog Radios",
-      "url": "https://hackaday.com/2026/11/23/esp-microcontrollers-as-analog-radios/",
-      "date": "2026-11-24T03:00:48.000Z",
-      "excerpt": "The release of the hidden SDR functionality in the radio section of Espressif microcontrollers has led to an explosion of SDR hacking, both transmit and receive. We’ve seen SDR front …read more"
+      "title": "Touching a Spinner Makes Things Feel Sticky or Slippery, in VR",
+      "url": "https://hackaday.com/2026/11/25/touching-a-spinner-makes-things-feel-sticky-or-slippery-in-vr/",
+      "date": "2026-11-25T09:00:29.000Z",
+      "excerpt": "Every now and again, folks get an idea for a new kind of feedback that is as strange as it is intriguing. Surf-Roll is exactly that — it simulates feelings …read more"
     },
     {
-      "id": "8b614a98941c",
+      "id": "68c54de25d7f",
       "source": "hackaday",
-      "title": "That Java Phone Can Still Go Online",
-      "url": "https://hackaday.com/2026/11/23/that-java-phone-can-still-go-online/",
-      "date": "2026-11-24T00:00:34.000Z",
-      "excerpt": "The first generation of internet-connected mobile phones weren’t smartphones; instead, they were so-called feature phones, somewhere between a basic phone-only device and the type of phone we know today. They …read more"
+      "title": "The 3D Printer Scam Targeting UK Hackerspaces",
+      "url": "https://hackaday.com/2026/11/24/the-3d-printer-scam-targeting-uk-hackerspaces/",
+      "date": "2026-11-25T06:00:18.000Z",
+      "excerpt": "It’s likely that most Hackaday readers will be familiar with online scams, from those faraway princes with an embarrassing matter of needing to shift some oil millions, to too-good-to-be-true offers …read more"
+    },
+    {
+      "id": "55f2f5280cae",
+      "source": "hackaday",
+      "title": "Keeping your Molten Salt Reactor Fuel Fresh with Helium Bubbles",
+      "url": "https://hackaday.com/2026/11/24/keeping-your-molten-salt-reactor-fuel-fresh-with-helium-bubbles/",
+      "date": "2026-11-25T03:00:01.000Z",
+      "excerpt": "MSRE plant diagram: (1) Reactor vessel, (2) Heat exchanger, (3) Fuel pump, (4) Freeze flange, (5) Thermal shield, (6) Coolant pump, (7) Radiator, (8) Coolant drain tank, (9) Fans, (10) Fuel drain tanks, (11) Flush tank, (12) Containment…"
+    },
+    {
+      "id": "b7dfd7660c7b",
+      "source": "hackaday",
+      "title": "The Ladybird Browser Reaches Alpha",
+      "url": "https://hackaday.com/2026/11/24/the-ladybird-browser-reaches-alpha/",
+      "date": "2026-11-25T00:00:08.000Z",
+      "excerpt": "If we learned one thing form the browser wars of the 2000s, it’s that having a single ecosystem dominate the internet is best avoided. Yet here we are in 2026, …read more"
     },
     {
       "id": "41c89d10913b",
@@ -254,14 +270,6 @@
       "excerpt": "Fin mars 2027, la marque Somfy prévoit de mettre fin à certains serveurs nécessaires au fonctionnement de nombreuses alarmes. L’entreprise invoque l’arrêt des réseaux de 2G et 3G, une justification discutable. HOP a reçu de nombreux…"
     },
     {
-      "id": "ba7ccac6f924",
-      "source": "ifixit",
-      "title": "iPhone Duo Teardown: The Most Repairable Foldable Has a Huge Screen Problem",
-      "url": "https://www.ifixit.com/News/119895/iphone-duo-teardown",
-      "date": "2026-10-25T21:38:06.000Z",
-      "excerpt": "Apple’s folding iPhone finally made it to our teardown table. Some owners’ screens didn’t make it through setup. After fifteen years of patents and rumors, the iPhone Duo is here,…"
-    },
-    {
       "id": "fd76caff910b",
       "source": "electrobidouilleur",
       "title": "EB_#725 Remise en Marche - Gradateur de Secteur des Années 70. La sécurité, pas une priorité!",
@@ -276,14 +284,6 @@
       "url": "https://www.youtube.com/watch?v=jnwDWUVpUYg",
       "date": "2026-10-12T07:19:45.000Z",
       "excerpt": "Rediffusion de la Session \"En Direct\" de la chaîne Électro-Bidouilleur du Dimanche 11 Octobre 2026. Merci à tous les participants! Les fichiers pertinents aux vidéos (code source, schémas, etc.) sont placés ici sous format .ZIP: La chaîne…"
-    },
-    {
-      "id": "ee3e1608bf26",
-      "source": "hop",
-      "title": "HOP appelle à tirer des leçons de l’arrêt de la 2G-3G",
-      "url": "https://www.halteobsolescence.org/lecons-arret-2g-3g/",
-      "date": "2026-10-08T17:01:38.000Z",
-      "excerpt": "L’arrêt des réseaux de télécommunication de 2G-3G a des conséquences sociales, économiques et environnementales calamiteuses. Ce cas doit faire précédent. HOP formule des propositions concrètes pour un encadrement effectif par les…"
     },
     {
       "id": "1323b59ec2ef",
