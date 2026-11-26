@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T15:32:58.652Z",
+  "updatedAt": "2026-11-26T15:07:41.441Z",
   "sources": [
     {
       "id": "ifixit",
@@ -46,6 +46,62 @@
   ],
   "items": [
     {
+      "id": "dfaf7996837f",
+      "source": "hackaday",
+      "title": "Scientific Analysis of Nontraditional Garden Watering Method",
+      "url": "https://hackaday.com/2026/11/26/scientific-analysis-of-nontraditional-garden-watering-method/",
+      "date": "2026-11-26T15:00:07.000Z",
+      "excerpt": "Around two years ago, [SuburbanBiology] built an unconventional system to keep his garden properly watered. Instead of relying solely on a metered municipal water supply or even collecting and storing …read more"
+    },
+    {
+      "id": "bf024fc2853c",
+      "source": "learnrepair",
+      "title": "Soldering And Desoldering Tools & Equipment: What Do You Need in 2026? From Expensive to Cheap",
+      "url": "https://www.youtube.com/watch?v=Dh2uIqwhpfE",
+      "date": "2026-11-26T12:12:06.000Z",
+      "excerpt": "Way back in March 2021 I published my 10th ever video : Soldering And Desoldering Tools And Equipment. So what has changed in five and a half years. Am I still using the same equipment? Let's revisit this topic... The original 2021…"
+    },
+    {
+      "id": "a160a298d291",
+      "source": "hackaday",
+      "title": "NASA’s Perseverance and Odyssey Teams Investigate Technical Issues",
+      "url": "https://hackaday.com/2026/11/26/nasas-perseverance-and-odyssey-teams-investigate-technical-issues/",
+      "date": "2026-11-26T12:00:24.000Z",
+      "excerpt": "Teams over at NASA are currently dealing with two major issues affecting the Perseverance rover and the 2001 Mars Odyssey orbiter, with the former losing one of its two UHF radios and …read more"
+    },
+    {
+      "id": "6c8c36bcfff7",
+      "source": "hackaday",
+      "title": "A Toolkit For Identifying RFID Tags",
+      "url": "https://hackaday.com/2026/11/26/a-toolkit-for-identifying-rfid-tags/",
+      "date": "2026-11-26T09:00:16.000Z",
+      "excerpt": "Let’s say you happen across a random RFID or NFC tag. You look at it… it’s in a form factor you haven’t seen before and it’s not easily describable enough …read more"
+    },
+    {
+      "id": "a3193d6688ed",
+      "source": "hackaday",
+      "title": "Sega Saturn Portable Pays Homage to the Sega CDX Design",
+      "url": "https://hackaday.com/2026/11/25/sega-saturn-portable-pays-homage-to-the-sega-cdx-design/",
+      "date": "2026-11-26T06:00:08.000Z",
+      "excerpt": "Photo of a modified Sega Saturn console that fits into a portable CD player. \" data-image-caption=\"\" data-large-file=\" /> Back in the 90’s the Sega Corporation put out game hardware for every type of video game player under the sun. There…"
+    },
+    {
+      "id": "9d0eb5a5ea45",
+      "source": "hackaday",
+      "title": "Self-Sensing Artificial Muscles From Liquid Crystal Elastomer With Graphene",
+      "url": "https://hackaday.com/2026/11/25/self-sensing-artificial-muscles-from-liquid-crystal-elastomer-with-graphene/",
+      "date": "2026-11-26T03:00:35.000Z",
+      "excerpt": "Although we tend to be more aware of the large muscles in our bodies that enable our legs and arms to move, the real stars are the many small muscles …read more"
+    },
+    {
+      "id": "7496aa1a3456",
+      "source": "hackaday",
+      "title": "Camera Upgrades for 3D Printers",
+      "url": "https://hackaday.com/2026/11/25/camera-upgrades-for-3d-printers/",
+      "date": "2026-11-26T00:00:27.000Z",
+      "excerpt": "3D printing has come a long way over the years, from being a fussy, barely usable mess to essentially being plug-and-play for a large variety of plastics. And the industry …read more"
+    },
+    {
       "id": "2cf63122648e",
       "source": "hop",
       "title": "Rendre la durabilité économiquement viable",
@@ -54,60 +110,12 @@
       "excerpt": "Le Club de la Durabilité, inspiré par HOP, sort son nouveau guide : Rendre la durabilité économiquement viable. L’article Rendre la durabilité économiquement viable est apparu en premier sur HOP ."
     },
     {
-      "id": "3916c8177aef",
-      "source": "hackaday",
-      "title": "First Smartphone? Think Blue",
-      "url": "https://hackaday.com/2026/11/25/first-smartphone-think-blue/",
-      "date": "2026-11-25T15:00:24.000Z",
-      "excerpt": "If you ask most people when the smartphone arrived, they will usually say 2007 with the first iPhone. Others might argue for a BlackBerry or a Nokia Communicator. But the …read more"
-    },
-    {
       "id": "ab1c35cd7bf2",
       "source": "ifixit",
       "title": "The iFixit Team’s Declassified Holiday Survival Guide",
       "url": "https://www.ifixit.com/News/120448/the-ifixit-teams-declassified-holiday-survival-guide",
       "date": "2026-11-25T13:06:48.000Z",
       "excerpt": "Yes, the holiday season is all about spending time and sharing food with those you love, but there’s another stone-cold classic activity for us nerds when we visit family and…"
-    },
-    {
-      "id": "db2eeacc31bc",
-      "source": "hackaday",
-      "title": "Game Boy Museum on a Cart Gives the Gift of Knowledge",
-      "url": "https://hackaday.com/2026/11/25/game-boy-museum-on-a-cart-gives-the-gift-of-knowledge/",
-      "date": "2026-11-25T12:00:10.000Z",
-      "excerpt": "A square image of the GB Museum Game Boy cartridge. \" data-image-caption=\"\" data-large-file=\" /> What’s in a name? Clearly a device named the Game Boy was designed to play games. The handheld game system has successfully done so for…"
-    },
-    {
-      "id": "c3dc2f3d023b",
-      "source": "hackaday",
-      "title": "Touching a Spinner Makes Things Feel Sticky or Slippery, in VR",
-      "url": "https://hackaday.com/2026/11/25/touching-a-spinner-makes-things-feel-sticky-or-slippery-in-vr/",
-      "date": "2026-11-25T09:00:29.000Z",
-      "excerpt": "Every now and again, folks get an idea for a new kind of feedback that is as strange as it is intriguing. Surf-Roll is exactly that — it simulates feelings …read more"
-    },
-    {
-      "id": "68c54de25d7f",
-      "source": "hackaday",
-      "title": "The 3D Printer Scam Targeting UK Hackerspaces",
-      "url": "https://hackaday.com/2026/11/24/the-3d-printer-scam-targeting-uk-hackerspaces/",
-      "date": "2026-11-25T06:00:18.000Z",
-      "excerpt": "It’s likely that most Hackaday readers will be familiar with online scams, from those faraway princes with an embarrassing matter of needing to shift some oil millions, to too-good-to-be-true offers …read more"
-    },
-    {
-      "id": "55f2f5280cae",
-      "source": "hackaday",
-      "title": "Keeping your Molten Salt Reactor Fuel Fresh with Helium Bubbles",
-      "url": "https://hackaday.com/2026/11/24/keeping-your-molten-salt-reactor-fuel-fresh-with-helium-bubbles/",
-      "date": "2026-11-25T03:00:01.000Z",
-      "excerpt": "MSRE plant diagram: (1) Reactor vessel, (2) Heat exchanger, (3) Fuel pump, (4) Freeze flange, (5) Thermal shield, (6) Coolant pump, (7) Radiator, (8) Coolant drain tank, (9) Fans, (10) Fuel drain tanks, (11) Flush tank, (12) Containment…"
-    },
-    {
-      "id": "b7dfd7660c7b",
-      "source": "hackaday",
-      "title": "The Ladybird Browser Reaches Alpha",
-      "url": "https://hackaday.com/2026/11/24/the-ladybird-browser-reaches-alpha/",
-      "date": "2026-11-25T00:00:08.000Z",
-      "excerpt": "If we learned one thing form the browser wars of the 2000s, it’s that having a single ecosystem dominate the internet is best avoided. Yet here we are in 2026, …read more"
     },
     {
       "id": "41c89d10913b",
@@ -196,14 +204,6 @@
       "url": "https://www.youtube.com/watch?v=f8S9XSsfsHE",
       "date": "2026-11-16T07:52:35.000Z",
       "excerpt": "Rediffusion de la Session \"En Direct\" de la chaîne Électro-Bidouilleur du Dimanche 15 Novembre 2026. Merci à tous les participants! Les fichiers pertinents aux vidéos (code source, schémas, etc.) sont placés ici sous format .ZIP: La…"
-    },
-    {
-      "id": "cf037dcce88f",
-      "source": "learnrepair",
-      "title": "What Test Equipment Do You Need For An Electronics Workshop? How To Set Up A Repair Work Bench",
-      "url": "https://www.youtube.com/watch?v=0uaufISGi_U",
-      "date": "2026-11-14T17:57:41.000Z",
-      "excerpt": "Way back in March 2021 I published my 11th ever video. What test gear do you need for electronics repair. Well quite some time has passed since then and that video is still popular! So let's make a new updated version. What was I using in…"
     },
     {
       "id": "19a93af64e06",
