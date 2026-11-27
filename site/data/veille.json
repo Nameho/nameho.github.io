@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-26T15:07:41.441Z",
+  "updatedAt": "2026-11-27T14:59:10.658Z",
   "sources": [
     {
       "id": "ifixit",
@@ -46,12 +46,52 @@
   ],
   "items": [
     {
-      "id": "dfaf7996837f",
+      "id": "0d4de37533a2",
       "source": "hackaday",
-      "title": "Scientific Analysis of Nontraditional Garden Watering Method",
-      "url": "https://hackaday.com/2026/11/26/scientific-analysis-of-nontraditional-garden-watering-method/",
-      "date": "2026-11-26T15:00:07.000Z",
-      "excerpt": "Around two years ago, [SuburbanBiology] built an unconventional system to keep his garden properly watered. Instead of relying solely on a metered municipal water supply or even collecting and storing …read more"
+      "title": "Classic Pokemon Goes Widescreen",
+      "url": "https://hackaday.com/2026/11/27/classic-pokemon-goes-widescreen/",
+      "date": "2026-11-27T12:00:12.000Z",
+      "excerpt": "There are a great many handheld gaming platforms on the market these days, many of which are specifically designed for emulating old console games. They can be a great way …read more"
+    },
+    {
+      "id": "52950f67738f",
+      "source": "hackaday",
+      "title": "The Happy Mac that Apple Never Made",
+      "url": "https://hackaday.com/2026/11/27/the-happy-mac-that-apple-never-made/",
+      "date": "2026-11-27T09:00:17.000Z",
+      "excerpt": "The plethora of different machines available in the 80s are one of the things that makes retrocomputing fun, but sometimes we run across ideas that never quite made it to …read more"
+    },
+    {
+      "id": "da53ac3b83c0",
+      "source": "hackaday",
+      "title": "A Modular 6502 Computer",
+      "url": "https://hackaday.com/2026/11/26/a-modular-6502-computer/",
+      "date": "2026-11-27T06:00:46.000Z",
+      "excerpt": "Back in the day, there were plenty of nice compact microcomputers out there that featured the 6502 CPU. There were also simpler computers that put the chip on a bare …read more"
+    },
+    {
+      "id": "6a31f4602bef",
+      "source": "hackaday",
+      "title": "When Decoupling Capacitors Go Wrong",
+      "url": "https://hackaday.com/2026/11/26/when-decoupling-capacitors-go-wrong/",
+      "date": "2026-11-27T03:00:47.000Z",
+      "excerpt": "Popular wisdom holds that decoupling capacitors are good, and thus more decoupling capacitors is better. Unfortunately physics disagrees on that notion, as [Ben Eater] discusses in a recent video, following …read more"
+    },
+    {
+      "id": "4b5c79210a51",
+      "source": "hackaday",
+      "title": "Diagnosing a Failed LG Fridge Ice Maker",
+      "url": "https://hackaday.com/2026/11/26/diagnosing-a-failed-lg-fridge-ice-maker/",
+      "date": "2026-11-27T00:00:23.000Z",
+      "excerpt": "Although a useful feature for people who use ice cubes a lot, an automatic ice cube maker feature in a refrigerator can be a bit of a pain if they …read more"
+    },
+    {
+      "id": "98ae5e8c043f",
+      "source": "hackaday",
+      "title": "Another Split Flap Display You Can Print Yourself",
+      "url": "https://hackaday.com/2026/11/26/another-split-flap-display-you-can-print-yourself/",
+      "date": "2026-11-26T21:00:35.000Z",
+      "excerpt": "Split flap displays were once widely popular in everything from airport terminal displays to alarm clocks. Now they’re a little bit out of vogue in the mainstream, but that doesn’t …read more"
     },
     {
       "id": "bf024fc2853c",
@@ -60,46 +100,6 @@
       "url": "https://www.youtube.com/watch?v=Dh2uIqwhpfE",
       "date": "2026-11-26T12:12:06.000Z",
       "excerpt": "Way back in March 2021 I published my 10th ever video : Soldering And Desoldering Tools And Equipment. So what has changed in five and a half years. Am I still using the same equipment? Let's revisit this topic... The original 2021…"
-    },
-    {
-      "id": "a160a298d291",
-      "source": "hackaday",
-      "title": "NASA’s Perseverance and Odyssey Teams Investigate Technical Issues",
-      "url": "https://hackaday.com/2026/11/26/nasas-perseverance-and-odyssey-teams-investigate-technical-issues/",
-      "date": "2026-11-26T12:00:24.000Z",
-      "excerpt": "Teams over at NASA are currently dealing with two major issues affecting the Perseverance rover and the 2001 Mars Odyssey orbiter, with the former losing one of its two UHF radios and …read more"
-    },
-    {
-      "id": "6c8c36bcfff7",
-      "source": "hackaday",
-      "title": "A Toolkit For Identifying RFID Tags",
-      "url": "https://hackaday.com/2026/11/26/a-toolkit-for-identifying-rfid-tags/",
-      "date": "2026-11-26T09:00:16.000Z",
-      "excerpt": "Let’s say you happen across a random RFID or NFC tag. You look at it… it’s in a form factor you haven’t seen before and it’s not easily describable enough …read more"
-    },
-    {
-      "id": "a3193d6688ed",
-      "source": "hackaday",
-      "title": "Sega Saturn Portable Pays Homage to the Sega CDX Design",
-      "url": "https://hackaday.com/2026/11/25/sega-saturn-portable-pays-homage-to-the-sega-cdx-design/",
-      "date": "2026-11-26T06:00:08.000Z",
-      "excerpt": "Photo of a modified Sega Saturn console that fits into a portable CD player. \" data-image-caption=\"\" data-large-file=\" /> Back in the 90’s the Sega Corporation put out game hardware for every type of video game player under the sun. There…"
-    },
-    {
-      "id": "9d0eb5a5ea45",
-      "source": "hackaday",
-      "title": "Self-Sensing Artificial Muscles From Liquid Crystal Elastomer With Graphene",
-      "url": "https://hackaday.com/2026/11/25/self-sensing-artificial-muscles-from-liquid-crystal-elastomer-with-graphene/",
-      "date": "2026-11-26T03:00:35.000Z",
-      "excerpt": "Although we tend to be more aware of the large muscles in our bodies that enable our legs and arms to move, the real stars are the many small muscles …read more"
-    },
-    {
-      "id": "7496aa1a3456",
-      "source": "hackaday",
-      "title": "Camera Upgrades for 3D Printers",
-      "url": "https://hackaday.com/2026/11/25/camera-upgrades-for-3d-printers/",
-      "date": "2026-11-26T00:00:27.000Z",
-      "excerpt": "3D printing has come a long way over the years, from being a fussy, barely usable mess to essentially being plug-and-play for a large variety of plastics. And the industry …read more"
     },
     {
       "id": "2cf63122648e",
