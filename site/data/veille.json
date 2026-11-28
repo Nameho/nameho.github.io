@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-27T14:59:10.658Z",
+  "updatedAt": "2026-11-28T14:08:53.737Z",
   "sources": [
     {
       "id": "ifixit",
@@ -46,52 +46,52 @@
   ],
   "items": [
     {
-      "id": "0d4de37533a2",
+      "id": "78d6a90bd21c",
       "source": "hackaday",
-      "title": "Classic Pokemon Goes Widescreen",
-      "url": "https://hackaday.com/2026/11/27/classic-pokemon-goes-widescreen/",
-      "date": "2026-11-27T12:00:12.000Z",
-      "excerpt": "There are a great many handheld gaming platforms on the market these days, many of which are specifically designed for emulating old console games. They can be a great way …read more"
+      "title": "Robot Jellyfish Swims On Solar Power",
+      "url": "https://hackaday.com/2026/11/28/robot-jellyfish-swims-on-solar-power/",
+      "date": "2026-11-28T12:00:55.000Z",
+      "excerpt": "Jellyfish are fun, gloopy creatures that have a unique swimming style very much of their own. [Robert Skinner] has managed to emulate the vibes of these unique creatures with a …read more"
     },
     {
-      "id": "52950f67738f",
+      "id": "7f62b663d119",
       "source": "hackaday",
-      "title": "The Happy Mac that Apple Never Made",
-      "url": "https://hackaday.com/2026/11/27/the-happy-mac-that-apple-never-made/",
-      "date": "2026-11-27T09:00:17.000Z",
-      "excerpt": "The plethora of different machines available in the 80s are one of the things that makes retrocomputing fun, but sometimes we run across ideas that never quite made it to …read more"
+      "title": "Who Resurrected the Electric Car?",
+      "url": "https://hackaday.com/2026/11/28/who-resurrected-the-electric-car/",
+      "date": "2026-11-28T09:00:04.000Z",
+      "excerpt": "There are a few cars that serve as touchstones of the state-of-the-art, even if they weren’t necessarily a commercial success. Some only survive as memories, but a restored EV1 has …read more"
     },
     {
-      "id": "da53ac3b83c0",
+      "id": "238201042037",
       "source": "hackaday",
-      "title": "A Modular 6502 Computer",
-      "url": "https://hackaday.com/2026/11/26/a-modular-6502-computer/",
-      "date": "2026-11-27T06:00:46.000Z",
-      "excerpt": "Back in the day, there were plenty of nice compact microcomputers out there that featured the 6502 CPU. There were also simpler computers that put the chip on a bare …read more"
+      "title": "Repurposing Lava Lamps To Cook Dinner",
+      "url": "https://hackaday.com/2026/11/27/repurposing-lava-lamps-to-cook-dinner/",
+      "date": "2026-11-28T06:00:39.000Z",
+      "excerpt": "Should you cook anything with a lava lamp? Probably not. Can you? Well, [Nate Scovill] seemed to think he could, and he set out to demonstrate just that. From the …read more"
     },
     {
-      "id": "6a31f4602bef",
+      "id": "71d65eae8d97",
       "source": "hackaday",
-      "title": "When Decoupling Capacitors Go Wrong",
-      "url": "https://hackaday.com/2026/11/26/when-decoupling-capacitors-go-wrong/",
-      "date": "2026-11-27T03:00:47.000Z",
-      "excerpt": "Popular wisdom holds that decoupling capacitors are good, and thus more decoupling capacitors is better. Unfortunately physics disagrees on that notion, as [Ben Eater] discusses in a recent video, following …read more"
+      "title": "A Detailed Breakdown of the 2021 Texas Power Crisis",
+      "url": "https://hackaday.com/2026/11/27/a-detailed-breakdown-of-the-2021-texas-power-crisis/",
+      "date": "2026-11-28T03:00:46.000Z",
+      "excerpt": "Although the Texas grid operator managed to prevent a full-blown collapse of the electrical grid in February 2021, they only managed to do so after exhausting every measure at their …read more"
     },
     {
-      "id": "4b5c79210a51",
+      "id": "46097d19a417",
       "source": "hackaday",
-      "title": "Diagnosing a Failed LG Fridge Ice Maker",
-      "url": "https://hackaday.com/2026/11/26/diagnosing-a-failed-lg-fridge-ice-maker/",
-      "date": "2026-11-27T00:00:23.000Z",
-      "excerpt": "Although a useful feature for people who use ice cubes a lot, an automatic ice cube maker feature in a refrigerator can be a bit of a pain if they …read more"
+      "title": "ESP32 Remote Access Done Light",
+      "url": "https://hackaday.com/2026/11/27/esp32-remote-access-done-light/",
+      "date": "2026-11-28T00:00:09.000Z",
+      "excerpt": "The team behind Pinscope had a problem. They needed an ESP32 to stay securely connected to a server, but they didn’t have enough spare RAM on the chip to do …read more"
     },
     {
-      "id": "98ae5e8c043f",
+      "id": "18405886c6cd",
       "source": "hackaday",
-      "title": "Another Split Flap Display You Can Print Yourself",
-      "url": "https://hackaday.com/2026/11/26/another-split-flap-display-you-can-print-yourself/",
-      "date": "2026-11-26T21:00:35.000Z",
-      "excerpt": "Split flap displays were once widely popular in everything from airport terminal displays to alarm clocks. Now they’re a little bit out of vogue in the mainstream, but that doesn’t …read more"
+      "title": "How to Make a Nixie Tube",
+      "url": "https://hackaday.com/2026/11/27/how-to-make-a-nixie-tube/",
+      "date": "2026-11-27T21:00:20.000Z",
+      "excerpt": "Recently [polymatt] had a poke at one of the all-time favorites in the retro community, by making his own Nixie tube. Over the course of two weeks he tried to …read more"
     },
     {
       "id": "bf024fc2853c",
